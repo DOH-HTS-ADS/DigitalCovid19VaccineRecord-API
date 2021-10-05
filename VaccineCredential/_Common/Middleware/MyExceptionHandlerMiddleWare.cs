@@ -1,10 +1,10 @@
-﻿using System;
-using System.Threading.Tasks;
-using Application.Common.Exceptions;
+﻿using Application.Common.Exceptions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using System;
+using System.Threading.Tasks;
 
 namespace VaccineCredential.Api.Common.Middleware
 {
@@ -13,11 +13,13 @@ namespace VaccineCredential.Api.Common.Middleware
         private readonly RequestDelegate _next;
 
         #region Constructors
+
         public MyExceptionHandlerMiddleWare(RequestDelegate next)
         {
             _next = next;
         }
-        #endregion
+
+        #endregion Constructors
 
         public async Task Invoke(HttpContext context)
         {
@@ -42,10 +44,12 @@ namespace VaccineCredential.Api.Common.Middleware
                     code = StatusCodes.Status422UnprocessableEntity;
                     result = JsonConvert.SerializeObject(validationException.Failures, new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() });
                     break;
+
                 case BadRequestException badRequestException:
                     code = StatusCodes.Status400BadRequest;
                     result = badRequestException.Message;
                     break;
+
                 case NotFoundException _:
                     code = StatusCodes.Status404NotFound;
                     break;

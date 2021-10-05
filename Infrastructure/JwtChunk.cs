@@ -1,13 +1,7 @@
-﻿using System;
+﻿using Application.Common.Interfaces;
+using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Security.Cryptography;
 using System.Text;
-using Application.Common.Interfaces;
-using Org.BouncyCastle.Crypto;
-using Org.BouncyCastle.Crypto.Parameters;
-using Org.BouncyCastle.OpenSsl;
-using Org.BouncyCastle.Security;
 
 namespace Infrastructure
 {
@@ -47,15 +41,15 @@ namespace Infrastructure
                 }
                 shcs.Add(shc);
             }
-            if(shcs.Count > 1)
+            if (shcs.Count > 1)
             {
                 throw new ArgumentException("Too Many Chunks");
             }
             return shcs;
         }
+
         public string Combine(List<string> chunks)
         {
-
             var numChunks = chunks.Count;
 
             var stringBuilder = new StringBuilder();
@@ -68,17 +62,14 @@ namespace Infrastructure
                 {
                     chunkData = chunk.Split("/")[3];
                 }
-                for (var i = 0; i < chunkData.Length; i = i + 2)
+                for (var i = 0; i < chunkData.Length; i += 2)
                 {
-
                     var jwtCharOrd = Int32.Parse(chunkData.Substring(i, 2));
                     var jwtChar = jwtCharOrd + 45;
                     stringBuilder.Append((char)jwtChar);
                 }
-               
             }
             return stringBuilder.ToString(); ;
         }
-
     }
 }

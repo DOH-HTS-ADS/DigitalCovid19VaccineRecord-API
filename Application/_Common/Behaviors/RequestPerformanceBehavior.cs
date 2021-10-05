@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using Application.Common.Interfaces;
+﻿using Application.Common.Interfaces;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Application.Common.Behaviors
 {
-    public class RequestPerformanceBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest,TResponse>
+    public class RequestPerformanceBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     {
         private const int _threshold = 500;
         private readonly Stopwatch _timer;

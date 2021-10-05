@@ -4,14 +4,11 @@ using Application.Options;
 using Application.VaccineCredential.Queries.GetVaccineCredential;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.IO.Compression;
 
 namespace Infrastructure
 {
     public class CredentialCreator : ICredentialCreator
     {
-
         private readonly KeySettings _keySettings;
         private readonly IJwtSign _jwtSign;
 
@@ -20,80 +17,78 @@ namespace Infrastructure
             _keySettings = keySettings;
             _jwtSign = jwtSign;
         }
+
         public Vci GetCredential(Vc vc)
         {
             var data = new Vci()
             {
-                vc = vc,
-                iss = _keySettings.Issuer,
-                nbf = _jwtSign.ToUnixTimestamp(DateTime.Now)
+                Vc = vc,
+                Iss = _keySettings.Issuer,
+                Nbf = _jwtSign.ToUnixTimestamp(DateTime.Now)
             };
             return data;
-        }        
+        }
 
         public GoogleWallet GetGoogleCredential(Vci cred, string shc)
         {
             var patientDetail = new PatientDetails()
             {
-                dateOfBirth = cred.vc.credentialSubject.fhirBundle.entry[0].resource.birthDate,
-                identityAssuranceLevel = "IAL1.4",
-                patientName = $"{ cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].given[0]} {cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].family}"
+                DateOfBirth = cred.Vc.CredentialSubject.FhirBundle.Entry[0].Resource.BirthDate,
+                IdentityAssuranceLevel = "IAL1.4",
+                PatientName = $"{ cred.Vc.CredentialSubject.FhirBundle.Entry[0].Resource.Name[0].Given[0]} {cred.Vc.CredentialSubject.FhirBundle.Entry[0].Resource.Name[0].Family}"
             };
 
             var vaccinationRecords = new List<VaccinationRecord>();
 
-
-            for (int inx = 1; inx < cred.vc.credentialSubject.fhirBundle.entry.Count; inx++)
+            for (int inx = 1; inx < cred.Vc.CredentialSubject.FhirBundle.Entry.Count; inx++)
             {
-                var dose = cred.vc.credentialSubject.fhirBundle.entry[inx];
-                var lotNumber = dose.resource.lotNumber;
+                var dose = cred.Vc.CredentialSubject.FhirBundle.Entry[inx];
+                var lotNumber = dose.Resource.LotNumber;
                 if (string.IsNullOrWhiteSpace(lotNumber)) { lotNumber = null; }
 
                 var vaccinationRecord = new VaccinationRecord()
                 {
-                    code = dose.resource.vaccineCode.coding[0].code.ToString(),
-                    doseDateTime = dose.resource.occurrenceDateTime,
-                    doseLabel = "Dose",
-                    lotNumber = lotNumber,
-                    manufacturer = Utils.VaccineTypeNames.GetValueOrDefault(dose.resource.vaccineCode.coding[0].code.ToString()),
-                    description = Utils.VaccineTypeNames.GetValueOrDefault(dose.resource.vaccineCode.coding[0].code.ToString())
+                    Code = dose.Resource.VaccineCode.Coding[0].Code.ToString(),
+                    DoseDateTime = dose.Resource.OccurrenceDateTime,
+                    DoseLabel = "Dose",
+                    LotNumber = lotNumber,
+                    Manufacturer = Utils.VaccineTypeNames.GetValueOrDefault(dose.Resource.VaccineCode.Coding[0].Code.ToString()),
+                    Description = Utils.VaccineTypeNames.GetValueOrDefault(dose.Resource.VaccineCode.Coding[0].Code.ToString())
                 };
 
                 vaccinationRecords.Add(vaccinationRecord);
             }
 
-
-
             var vaccinationDetail = new VaccinationDetails()
             {
-                vaccinationRecord = vaccinationRecords
+                VaccinationRecord = vaccinationRecords
             };
 
             var logo = new Logo()
             {
-                sourceUri = new SourceUri()
+                SourceUri = new SourceUri()
                 {
-                    description = "State of California",
-                    uri = _keySettings.GoogleWalletLogo
+                    Description = "State of California",
+                    Uri = _keySettings.GoogleWalletLogo
                 }
             };
 
             var cardObject = new CovidCardObject()
             {
-                id = _keySettings.GoogleIssuerId + $".{Guid.NewGuid()}",
-                issuerId = _keySettings.GoogleIssuerId,
-                cardColorHex = "#FFFFFF",
-                logo = logo,
-                patientDetails = patientDetail,
-                title = "COVID-19 Vaccination Card",
-                vaccinationDetails = vaccinationDetail,
-                barcode = new Barcode
+                Id = _keySettings.GoogleIssuerId + $".{Guid.NewGuid()}",
+                IssuerId = _keySettings.GoogleIssuerId,
+                CardColorHex = "#FFFFFF",
+                Logo = logo,
+                PatientDetails = patientDetail,
+                Title = "COVID-19 Vaccination Card",
+                VaccinationDetails = vaccinationDetail,
+                Barcode = new Barcode
                 {
-                    type = "qrCode",//Enum.GetName(typeof(BarcodeType), BarcodeType.QR_CODE),
-                    value = shc,
-                    
-                    renderEncoding = Enum.GetName(typeof(BarcodeRenderEncoding), BarcodeRenderEncoding.UTF_8),
-                    alternateText = ""
+                    Type = "qrCode",//Enum.GetName(typeof(BarcodeType), BarcodeType.QR_CODE),
+                    Value = shc,
+
+                    RenderEncoding = Enum.GetName(typeof(BarcodeRenderEncoding), BarcodeRenderEncoding.UTF_8),
+                    AlternateText = ""
                 }
             };
 
@@ -104,12 +99,12 @@ namespace Infrastructure
 
             var data = new GoogleWallet()
             {
-                iss = _keySettings.GoogleIssuer,
-                iat = _jwtSign.ToUnixTimestamp(DateTime.Now),
-                aud = "google",
-                typ = "savetogooglepay",
-                origins = new List<object>(),
-                payload = new Payload() { covidCardObjects = cardObjects }
+                Iss = _keySettings.GoogleIssuer,
+                Iat = _jwtSign.ToUnixTimestamp(DateTime.Now),
+                Aud = "google",
+                Typ = "savetogooglepay",
+                Origins = new List<object>(),
+                Payload = new Payload() { CovidCardObjects = cardObjects }
             };
             return data;
         }

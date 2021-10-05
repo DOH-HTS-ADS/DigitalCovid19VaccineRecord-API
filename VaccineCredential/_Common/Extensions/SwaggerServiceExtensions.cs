@@ -2,9 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.SwaggerGen;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
 using VaccineCredential.Api.Options;
@@ -14,6 +12,7 @@ namespace VaccineCredential.Api.Common.Extensions
     public static class SwaggerServiceExtensions
     {
         #region Public static Methods
+
         public static IServiceCollection AddMySwaggerDocumentation(this IServiceCollection services, IConfiguration configuration)
         {
             //Get swagger configuration settings
@@ -72,6 +71,7 @@ namespace VaccineCredential.Api.Common.Extensions
             });
             return app;
         }
-        #endregion
+
+        #endregion Public static Methods
     }
 }

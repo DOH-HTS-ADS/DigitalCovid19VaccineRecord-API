@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection;
+﻿using Application.Common.Behaviors;
+using Application.Options;
 using FluentValidation;
-using Application.Common.Behaviors;
-using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using Application.Options;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
+using System.Reflection;
 
 namespace Application
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddMyApplication(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddMyApplication(this IServiceCollection services)
         {
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
@@ -22,7 +18,7 @@ namespace Application
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestPerformanceBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
 
-            services.AddSingleton(resolver => resolver.GetRequiredService<IOptions<AppSettings>>().Value);           
+            services.AddSingleton(resolver => resolver.GetRequiredService<IOptions<AppSettings>>().Value);
             return services;
         }
     }

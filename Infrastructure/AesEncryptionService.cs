@@ -14,6 +14,7 @@ namespace Infrastructure
         private readonly IBase64UrlUtility _b64Url;
         private readonly string PreString = "PreCheck";
         private readonly string PostString = "PostCheck";
+
         public AesEncryptionService(IBase64UrlUtility b64Url)
         {
             _b64Url = b64Url;
@@ -21,7 +22,6 @@ namespace Infrastructure
 
         public string Encrypt(string text, string keyString)
         {
-
             var key = Encoding.UTF8.GetBytes(keyString);
 
             using var aesAlg = Aes.Create("AesManaged");
@@ -44,8 +44,6 @@ namespace Infrastructure
 
             return _b64Url.Encode(result);
         }
-
-
 
         public string Decrypt(string cipherText, string keyString)
         {
@@ -82,7 +80,6 @@ namespace Infrastructure
             return result;
         }
 
-
         public string EncryptGcm(string text, string keyString)
         {
             var key = Encoding.UTF8.GetBytes(keyString);
@@ -100,15 +97,13 @@ namespace Infrastructure
             return _b64Url.Encode(finalArray);
         }
 
-
-
         public string DecryptGcm(string cipherText, string keyString)
         {
             var fullCipher = _b64Url.Decode(cipherText);
 
             var key = Encoding.UTF8.GetBytes(keyString);
 
-            var nonce = new byte [NONCE_MAX_SIZE];
+            var nonce = new byte[NONCE_MAX_SIZE];
             var tag = new byte[TAG_MAX_SIZE];
             var ciphertext = new byte[fullCipher.Length - nonce.Length - tag.Length];
             var plaintext = new byte[ciphertext.Length];
@@ -123,13 +118,12 @@ namespace Infrastructure
             return outText;
         }
 
-
-
         /* based on code from stackoverflow: https://stackoverflow.com/questions/57857330/how-can-i-get-sha3-512-hash-in-c
          * from https://stackoverflow.com/users/10632330/apepenkov
          * Thanks to NineBerry(https://stackoverflow.com/users/101087/nineberry) for the idea/implementation.
          * https://stackoverflow.com/a/57857735
         */
+
         public string Hash(string text)
         {
             byte[] hash = new byte[64];
@@ -143,7 +137,6 @@ namespace Infrastructure
 
             string hashString = GetHashString(hash);
             return hashString;
-
         }
 
         private static string GetHashString(byte[] array)
@@ -151,8 +144,6 @@ namespace Infrastructure
             string hashString = BitConverter.ToString(array);
             hashString = hashString.Replace("-", "").ToLowerInvariant();
             return hashString;
-
         }
-
     }
 }

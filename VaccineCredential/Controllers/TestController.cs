@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Application.Common.Interfaces;
+﻿using Application.Common.Interfaces;
 using Application.Options;
 using Application.VaccineCredential.Queries.GetVaccineCredential;
-using Application.VaccineCredential.Queries.GetVaccineStatus;
-using Infrastructure;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
 
 namespace VaccineCredential.Api.Controllers
 {
@@ -17,15 +13,15 @@ namespace VaccineCredential.Api.Controllers
     {
         private readonly AppSettings _appSettings;
         private readonly IAesEncryptionService _aesEncryptionService;
+
         public TestController(AppSettings appSettings, IAesEncryptionService aesEncryptionService)
         {
             _appSettings = appSettings;
             _aesEncryptionService = aesEncryptionService;
         }
-        
-        
+
         [HttpPost("testing", Name = nameof(Testing))]
-        private async Task<ActionResult> Testing([FromBody] GetVaccineCredentialQuery request)
+        private async Task<ActionResult> Testing()
         {
             //Send command off and return the updated employee
             _appSettings.MaxQrTries = "100000";
@@ -34,7 +30,7 @@ namespace VaccineCredential.Api.Controllers
             foreach (var line in testCsv)
             {
                 var id = $"{DateTime.Now.Ticks}~{pin}~{line.Trim()}";
-                request = new GetVaccineCredentialQuery
+                var request = new GetVaccineCredentialQuery
                 {
                     Id = _aesEncryptionService.Encrypt(id, _appSettings.CodeSecret),
                     Pin = pin,
@@ -51,11 +47,8 @@ namespace VaccineCredential.Api.Controllers
                 {
                     System.IO.File.WriteAllText($"c:\\temp\\errors\\{line.Trim()}.txt", Newtonsoft.Json.JsonConvert.SerializeObject(vm));
                 }
-
             }
             return Ok();
         }
-
-     
     }
 }

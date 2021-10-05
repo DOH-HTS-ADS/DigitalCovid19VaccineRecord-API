@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Application.Common.Models;
+﻿using Application.Common.Models;
 using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -16,13 +12,13 @@ namespace VaccineCredential.Api.Controllers
         private IMediator _mediator;
         private IMapper _mapper;
 
-        protected IMediator Mediator => _mediator ?? (_mediator = HttpContext.RequestServices.GetService<IMediator>());
-        protected IMapper Mapper => _mapper ?? (_mapper = HttpContext.RequestServices.GetService<IMapper>());
+        protected IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
+        protected IMapper Mapper => _mapper ??= HttpContext.RequestServices.GetService<IMapper>();
 
         protected StatusCodeResult HandleRateLimit(RateLimit rateLimit)
         {
-            StatusCodeResult scr= null;
-            if(rateLimit.Limit < 0)
+            StatusCodeResult scr = null;
+            if (rateLimit.Limit < 0)
             {
                 return scr;
             }

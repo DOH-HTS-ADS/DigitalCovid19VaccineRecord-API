@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Application.VaccineCredential.Queries.GetVaccineCredential
 {
@@ -22,93 +18,96 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
         UPC_A,
         TEXT_ONLY
     }
+
     public enum BarcodeRenderEncoding
     {
         RENDER_ENCODING_UNSPECIFIED,
         UTF_8
     }
+
     public class TranslatedString
     {
-        public string language { get; set; }
-        public string value { get; set; }
+        public string Language { get; set; }
+        public string Value { get; set; }
     }
+
     public class LocalizedString
     {
-        public List<TranslatedString> translatedValues { get; set; }
-        public TranslatedString defaultValue { get; set; }
+        public List<TranslatedString> TranslatedValues { get; set; }
+        public TranslatedString DefaultValue { get; set; }
     }
+
     public class Barcode
     {
-        public string alternateText { get; set; }
-        public LocalizedString showCodeText { get; set; }
-        public string type { get; set; }
+        public string AlternateText { get; set; }
+        public LocalizedString ShowCodeText { get; set; }
+        public string Type { get; set; }
 
-        public string renderEncoding {get;set;}
-        public string value { get; set; }
+        public string RenderEncoding { get; set; }
+        public string Value { get; set; }
     }
 
     public class SourceUri
     {
-        public string description { get; set; }
-        public string uri { get; set; }
+        public string Description { get; set; }
+        public string Uri { get; set; }
     }
 
     public class Logo
     {
-        public SourceUri sourceUri { get; set; }
+        public SourceUri SourceUri { get; set; }
     }
 
     public class PatientDetails
     {
-        public string dateOfBirth { get; set; }
-        public string identityAssuranceLevel { get; set; }
-        public string patientId { get; set; }
-        public string patientName { get; set; }
+        public string DateOfBirth { get; set; }
+        public string IdentityAssuranceLevel { get; set; }
+        public string PatientId { get; set; }
+        public string PatientName { get; set; }
     }
 
     public class VaccinationRecord
     {
-        public string code { get; set; }
-        public string contactInfo { get; set; }
-        public string description { get; set; }
-        public string doseDateTime { get; set; }
-        public string doseLabel { get; set; }
-        public string lotNumber { get; set; }
-        public string manufacturer { get; set; }
-        public string provider { get; set; }
+        public string Code { get; set; }
+        public string ContactInfo { get; set; }
+        public string Description { get; set; }
+        public string DoseDateTime { get; set; }
+        public string DoseLabel { get; set; }
+        public string LotNumber { get; set; }
+        public string Manufacturer { get; set; }
+        public string Provider { get; set; }
     }
 
     public class VaccinationDetails
     {
-        public List<VaccinationRecord> vaccinationRecord { get; set; }
+        public List<VaccinationRecord> VaccinationRecord { get; set; }
     }
 
     public class CovidCardObject
     {
-        public string id { get; set; }
-        public string issuerId { get; set; }
-        public Barcode barcode { get; set; }
-        public string cardColorHex { get; set; }
-        public string expiration { get; set; }
-        public Logo logo { get; set; }
-        public PatientDetails patientDetails { get; set; }
-        public string title { get; set; }
-        public VaccinationDetails vaccinationDetails { get; set; }
+        public string Id { get; set; }
+        public string IssuerId { get; set; }
+        public Barcode Barcode { get; set; }
+        public string CardColorHex { get; set; }
+        public string Expiration { get; set; }
+        public Logo Logo { get; set; }
+        public PatientDetails PatientDetails { get; set; }
+        public string Title { get; set; }
+        public VaccinationDetails VaccinationDetails { get; set; }
     }
 
     public class Payload
     {
-        public List<CovidCardObject> covidCardObjects { get; set; }
+        public List<CovidCardObject> CovidCardObjects { get; set; }
     }
 
     public class GoogleWallet
     {
-        public string iss { get; set; }
-        public string aud { get; set; }
-        public long iat { get; set; }
-        public string typ { get; set; }
-        public List<object> origins { get; set; }
-        public Payload payload { get; set; }
+        public string Iss { get; set; }
+        public string Aud { get; set; }
+        public long Iat { get; set; }
+        public string Typ { get; set; }
+        public List<object> Origins { get; set; }
+        public Payload Payload { get; set; }
     }
 }
-

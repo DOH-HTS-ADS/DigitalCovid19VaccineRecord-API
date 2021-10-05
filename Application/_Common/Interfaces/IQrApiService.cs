@@ -1,6 +1,4 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using Application.VaccineCredential.Queries.GetVaccineStatus;
+﻿using System.Threading.Tasks;
 
 namespace Application.Common.Interfaces
 {

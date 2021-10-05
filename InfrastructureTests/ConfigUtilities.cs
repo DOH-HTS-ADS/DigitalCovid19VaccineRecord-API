@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using System;
 using System.IO;
 using System.Reflection;
-using Microsoft.Extensions.Configuration;
 
 namespace InfrastructureTests
 {
@@ -9,6 +9,7 @@ namespace InfrastructureTests
     {
         //private const string EditorRoleName = "Editors";
         private static IConfiguration _configuration;
+
         private static IConfigurationSection _config;
 
         public static string GetConfigValue(string keyName)
@@ -23,7 +24,7 @@ namespace InfrastructureTests
         {
             if (_configuration != null) return _configuration;
 
-            // the type specified here is just so the secrets library can 
+            // the type specified here is just so the secrets library can
             // find the UserSecretId we added in the csproj file
             var jsonConfig = Path.Combine(Environment.CurrentDirectory, "appsettings.json");
 
@@ -39,8 +40,6 @@ namespace InfrastructureTests
 
             var key = config["Key"];
             if (string.IsNullOrEmpty(key)) key = Environment.GetEnvironmentVariable("KEY");
-
-           
 
             _configuration = Retry.Do(() => builder.Build(), TimeSpan.FromSeconds(2), 10);
 

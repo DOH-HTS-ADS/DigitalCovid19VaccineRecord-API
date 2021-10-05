@@ -1,22 +1,20 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-
+using System;
+using System.IO;
 
 namespace VaccineCredential.Api
 {
     public class Program
     {
         #region Public Statics
+
         public static IConfiguration Configuration { get; } = GetConfiguration();
+
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseContentRoot(Directory.GetCurrentDirectory())
@@ -24,9 +22,11 @@ namespace VaccineCredential.Api
                 .UseConfiguration(Configuration)
                 .UseStartup<Startup>()
                 .Build();
-        #endregion
+
+        #endregion Public Statics
 
         #region Main Entry
+
         public static int Main(string[] args)
         {
             var host = BuildWebHost(args);
@@ -35,9 +35,11 @@ namespace VaccineCredential.Api
             host.Run();
             return 0;
         }
-        #endregion
+
+        #endregion Main Entry
 
         #region Private Statics
+
         private static IConfiguration GetConfiguration()
         {
             //Get base config
@@ -54,6 +56,7 @@ namespace VaccineCredential.Api
 
             return configuration.Build();
         }
-        #endregion
+
+        #endregion Private Statics
     }
 }

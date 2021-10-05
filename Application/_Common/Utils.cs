@@ -1,21 +1,18 @@
-﻿using Application.Common.Models;
-using Application.Common.Interfaces;
+﻿using Application.Common.Interfaces;
 using Application.Options;
 using Application.VaccineCredential.Queries.GetVaccineStatus;
-using Microsoft.AspNetCore.WebUtilities;
-using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Logging;
 using SendGrid.Helpers.Mail;
-using Snowflake.Data.Client;
 using System;
+using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
+using System.Security;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
-using System.Security;
-using System.Collections.Generic;
-using System.Collections.Immutable;
 
 namespace Application.Common
 {
@@ -32,12 +29,15 @@ namespace Application.Common
         }.ToImmutableDictionary();
 
         private static AppSettings _appSettings;
+
         private static int messageCalls = 0;
-        private static int noMatchCalls = 0;
+
+        //private static int noMatchCalls = 0;
         public Utils(AppSettings appSettings)
         {
             _appSettings = appSettings;
         }
+
         public static int ValidatePin(string pin)
         {
             //Business Rules:  1)  4 digit pin
@@ -93,7 +93,6 @@ namespace Application.Common
             return false;
         }
 
-
         public static bool HasConsecutive(string s, int max)
         {
             int cnt = 0;
@@ -113,7 +112,6 @@ namespace Application.Common
                 {
                     break;
                 }
-
             }
 
             return cnt >= max - 1;
@@ -121,15 +119,15 @@ namespace Application.Common
 
         public static string ParseLotNumber(string s)
         {   // Check if lot number is Alpha numeric
-            if (s == null) {  return null; }                       
-            
+            if (s == null) { return null; }
+
             var regex = "^[a-zA-Z0-9-]*$";
             var regexContainsNumber = "[\\d]";
             var tokens = s.Split(" ");
 
-            foreach(var t in tokens)
+            foreach (var t in tokens)
             {
-                if(Regex.IsMatch(t, regex) && Regex.IsMatch(t, regexContainsNumber))
+                if (Regex.IsMatch(t, regex) && Regex.IsMatch(t, regexContainsNumber))
                 {
                     return t;
                 }
@@ -140,9 +138,9 @@ namespace Application.Common
 
         public static string TrimString(string s, int i)
         {
-            if (s == null) {  return null; }
+            if (s == null) { return null; }
 
-            if(s.Length > i)
+            if (s.Length > i)
             {
                 s = s.Substring(0, i);
             }
@@ -155,7 +153,7 @@ namespace Application.Common
         //        3 if sms send successs
         //        4 if email error
         //        5 is sms error
-        public async Task<int> ProcessStatusRequest(ILogger logger, IEmailService _emailService, SendGridSettings _sendGridSettings, IMessagingService _messagingService, IAesEncryptionService _aesEncryptionService, GetVaccineCredentialStatusQuery request, ISnowFlakeService _snowFlakeService, SnowflakeDbConnection conn,  CancellationToken cancellationToken, long tryCount = 1)
+        public static async Task<int> ProcessStatusRequest(AppSettings _appSettings, ILogger logger, IEmailService _emailService, SendGridSettings _sendGridSettings, IMessagingService _messagingService, IAesEncryptionService _aesEncryptionService, GetVaccineCredentialStatusQuery request, IAzureSynapseService _azureSynapseService, SqlConnection conn, CancellationToken cancellationToken, long tryCount = 1)
         {
             Interlocked.Increment(ref messageCalls);
             int ret = 0;
@@ -176,11 +174,11 @@ namespace Application.Common
             string response;
             if (conn == null)
             {
-                response = await _snowFlakeService.GetVaccineCredentialStatusAsync(request, cancellationToken);
+                response = await _azureSynapseService.GetVaccineCredentialStatusAsync(request, cancellationToken);
             }
             else
             {
-                response = await _snowFlakeService.GetVaccineCredentialStatusAsync(conn, request, cancellationToken);
+                response = await _azureSynapseService.GetVaccineCredentialStatusAsync(conn, request, cancellationToken);
             }
 
             var logMessage = $"searchCriteria:{Sanitize(request.FirstName.Substring(0, 1))}.{Sanitize(request.LastName.Substring(0, 1))}. response:{Sanitize(response)}";
@@ -188,7 +186,7 @@ namespace Application.Common
             if (!string.IsNullOrEmpty(response))
             {
                 //Generate link url with the GUID and send text or email based on the request preference.
-                //Encyrpt the response with  aesencrypt 
+                //Encyrpt the response with  aesencrypt
                 var code = DateTime.Now.Ticks + "~" + request.Pin + "~" + response;
                 var encrypted = _aesEncryptionService.EncryptGcm(code, _appSettings.CodeSecret);
 
@@ -241,7 +239,7 @@ namespace Application.Common
             }
             else
             {
-                var noMatchCallsCurrent = Interlocked.Increment(ref noMatchCalls);
+                //var noMatchCallsCurrent = Interlocked.Increment(ref noMatchCalls);
                 ret = 1;
                 if (string.IsNullOrWhiteSpace(request.PhoneNumber))
                 {
@@ -249,7 +247,7 @@ namespace Application.Common
                 }
                 else
                 {
-                    logMessage = $"RQ_SMS {logMessage}"; 
+                    logMessage = $"RQ_SMS {logMessage}";
                 }
                 //Email sms request that we could not find you
                 if (!string.IsNullOrWhiteSpace(request.PhoneNumber))
@@ -270,7 +268,6 @@ namespace Application.Common
                         message.PlainTextContent = FormatNotFoundSms(request.Language);
                         message.HtmlContent = FormatNotFoundHtml(request.Language);
                         await _emailService.SendEmailAsync(message, emailRecipient);
-                       
                     }
                 }
             }
@@ -281,25 +278,30 @@ namespace Application.Common
                     case 0:
                         logger.LogInformation($"CACHEDREQUEST {logMessage}.");
                         break;
+
                     case 1:
                         logger.LogInformation($"BADREQUEST-NOTFOUND {logMessage}.");
                         break;
+
                     case 2:
                         logger.LogInformation($"VALIDREQUEST-EMAILSENT {logMessage}.");
                         break;
+
                     case 3:
                         logger.LogInformation($"VALIDREQUEST-SMSSENT {logMessage}.");
                         break;
+
                     case 4:
                         logger.LogWarning($"VALIDREQUEST-EMAILFAILED {logMessage}.");
                         break;
+
                     case 5:
                     case 6:
                         logger.LogWarning($"VALIDREQUEST-SMSFAILED {logMessage}.");
                         break;
+
                     default:
                         break;
-
                 }
             }
             else
@@ -309,6 +311,7 @@ namespace Application.Common
 
             return ret;
         }
+
         /*
          es: Spanish
          cn: Chinese Simplified
@@ -318,6 +321,7 @@ namespace Application.Common
          ae: Arabic
          ph: Tagalog
          */
+
         public static string FormatSms(int linkExpireHours, string url, string lang)
         {
             return lang switch
@@ -539,6 +543,7 @@ namespace Application.Common
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>"
             };
         }
+
         public static string UppercaseFirst(string s)
         {
             // Check for empty string.
@@ -558,6 +563,7 @@ namespace Application.Common
             formattedName = formattedName.Trim();
             return formattedName;
         }
+
         public static bool InPercentRange(int currentMessageCallCount, int percentToVA)
         {
             if (currentMessageCallCount % 100 < percentToVA)
@@ -567,10 +573,9 @@ namespace Application.Common
             return false;
         }
 
-
         public static string Sanitize(string text)
         {
-            if(text == null)
+            if (text == null)
             {
                 text = "";
             }

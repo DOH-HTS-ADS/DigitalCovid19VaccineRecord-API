@@ -59,7 +59,6 @@ namespace Application.VaccineCredential.Queries.GetVaccineStatus
                 .NotEmpty()
                 .MinimumLength(2)
                 .MaximumLength(2);
-
         }
     }
 }

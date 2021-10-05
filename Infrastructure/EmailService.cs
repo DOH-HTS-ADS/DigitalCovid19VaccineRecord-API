@@ -3,7 +3,6 @@ using Application.Options;
 using Microsoft.Extensions.Logging;
 using SendGrid;
 using SendGrid.Helpers.Mail;
-using System.Net;
 using System.Threading.Tasks;
 
 namespace Infrastructure
@@ -22,6 +21,7 @@ namespace Infrastructure
         }
 
         #region IEmailService Implementation
+
         public void SendEmail(SendGridMessage message, string emailRecipient)
         {
             if (_sgSettings.SandBox != "0")
@@ -38,9 +38,9 @@ namespace Infrastructure
                 message.SetSandBoxMode(true);
             }
             var resp = await _client.SendEmailAsync(message);
-            return resp.IsSuccessStatusCode ;
+            return resp.IsSuccessStatusCode;
         }
-        #endregion
 
+        #endregion IEmailService Implementation
     }
 }

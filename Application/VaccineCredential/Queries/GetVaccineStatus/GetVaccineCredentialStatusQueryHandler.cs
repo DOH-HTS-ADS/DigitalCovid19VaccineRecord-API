@@ -1,23 +1,20 @@
-﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using Application.Common;
 using Application.Common.Interfaces;
-using AutoMapper;
+using Application.Options;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Application.Options;
-using Microsoft.Extensions.Caching.Memory;
-using System.Security.Cryptography;
-using Application.Common;
-using Application.Common.Models;
-using System.Web;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Application.VaccineCredential.Queries.GetVaccineStatus
 {
     public class GetVaccineCredentialStatusQueryHandler : IRequestHandler<GetVaccineCredentialStatusQuery, StatusModel>
     {
-        private readonly ISnowFlakeService _snowFlakeService;
+        //private readonly ISnowFlakeService _snowFlakeService;
+        private readonly IAzureSynapseService _azureSynapseService;
+
         private readonly IEmailService _emailService;
         private readonly SendGridSettings _sendGridSettings;
         private readonly ILogger<GetVaccineCredentialStatusQueryHandler> _logger;
@@ -26,10 +23,12 @@ namespace Application.VaccineCredential.Queries.GetVaccineStatus
         private readonly IAesEncryptionService _aesEncryptionService;
         private readonly IQueueService _queueService;
         private readonly IRateLimitService _rateLimitService;
-        
-        public GetVaccineCredentialStatusQueryHandler(IRateLimitService rateLimitService, IQueueService queueService,  IAesEncryptionService aesEncryptionService, SendGridSettings sendGridSettings, IMessagingService messagingService, AppSettings appSettings, IEmailService emailService,  ISnowFlakeService snowFlakeService, ILogger<GetVaccineCredentialStatusQueryHandler> logger)
+
+        //public GetVaccineCredentialStatusQueryHandler(IRateLimitService rateLimitService, IQueueService queueService,  IAesEncryptionService aesEncryptionService, SendGridSettings sendGridSettings, IMessagingService messagingService, AppSettings appSettings, IEmailService emailService,  ISnowFlakeService snowFlakeService, ILogger<GetVaccineCredentialStatusQueryHandler> logger)
+        public GetVaccineCredentialStatusQueryHandler(IRateLimitService rateLimitService, IQueueService queueService, IAesEncryptionService aesEncryptionService, SendGridSettings sendGridSettings, IMessagingService messagingService, AppSettings appSettings, IEmailService emailService, IAzureSynapseService azureSynapseService, ILogger<GetVaccineCredentialStatusQueryHandler> logger)
         {
-            _snowFlakeService = snowFlakeService;
+            //_snowFlakeService = snowFlakeService;
+            _azureSynapseService = azureSynapseService;
             _logger = logger;
             _messagingService = messagingService;
             _appSettings = appSettings;
@@ -61,10 +60,10 @@ namespace Application.VaccineCredential.Queries.GetVaccineStatus
                 return statusModel;
             }
 
-            var utils = new Utils(_appSettings);
+            //var utils = new Utils(_appSettings);
             //validate pin
             var pinStatus = Utils.ValidatePin(request.Pin);
-            if ( pinStatus != 0)
+            if (pinStatus != 0)
             {
                 _logger.LogInformation("invalid pin.");
                 statusModel.InvalidPin = true;
@@ -76,7 +75,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineStatus
             request.PhoneNumber = request.PhoneNumber.Trim();
             request.EmailAddress = request.EmailAddress.Trim();
             request.Language = request.Language.Trim();
-             
+
             if (_appSettings.UseMessageQueue != "0")
             {
                 statusModel.ViewStatus = await _queueService.AddMessageAsync(JsonConvert.SerializeObject(request));
@@ -84,7 +83,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineStatus
             }
             else
             {
-                var r = await utils.ProcessStatusRequest(_logger,_emailService, _sendGridSettings, _messagingService, _aesEncryptionService, request, _snowFlakeService, null, cancellationToken);
+                var r = await Utils.ProcessStatusRequest(_appSettings, _logger, _emailService, _sendGridSettings, _messagingService, _aesEncryptionService, request, _azureSynapseService, null, cancellationToken);
                 statusModel.ViewStatus = r < 4;
             }
             return statusModel;

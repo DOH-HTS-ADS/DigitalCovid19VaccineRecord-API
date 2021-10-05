@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace IntegrationTester
+﻿namespace IntegrationTester
 {
     using Application.Common;
     using Newtonsoft.Json;
@@ -10,13 +8,10 @@ namespace IntegrationTester
     using System.IO;
     using System.Linq;
     using System.Net.Http;
-    using System.Net.Http.Headers;
     using System.Threading.Tasks;
 
     namespace IntegerationTester
     {
-
-
         public class Program
         {
             public static void Main(string[] argc)
@@ -38,7 +33,7 @@ namespace IntegrationTester
                 }
 
                 LogAndDisplay(logFile, $"log={logFile} apiUrl={apiUrl} loops={numberOfLoops}");
-                HttpClient client = new HttpClient();
+                HttpClient client = new();
                 var tasks = new List<Task<HttpResponseMessage>>();
                 var timer = new Stopwatch();
                 timer.Start();
@@ -86,14 +81,13 @@ namespace IntegrationTester
                     {
                         LogAndDisplay(logFile, $"Error {e}");
                     }
-
                 }
 
                 LogAndDisplay(logFile, $"Total time is {timer.Elapsed}  successCount:{successCount}");
             }
 
+            private static readonly Random random = new((int)(DateTime.Now.Ticks % Int32.MaxValue));
 
-            private static readonly Random random = new Random((int)(DateTime.Now.Ticks % Int32.MaxValue));
             public static string RandomString(int length)
             {
                 const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -105,6 +99,7 @@ namespace IntegrationTester
                 }
                 return retstring;
             }
+
             public static int RandomInteger(string chars)
             {
                 var numString = new string(Enumerable.Repeat(chars, 2)
@@ -112,7 +107,6 @@ namespace IntegrationTester
 
                 return Int32.Parse(numString);
             }
-
 
             private static bool GetArgs(string[] argc, ref string logFile, ref string apiUrl, ref int loops, ref string inFirstName, ref string inLastName, ref string inEmail, ref string inDOB, ref string inId, ref string inPin)
             {
@@ -148,7 +142,6 @@ namespace IntegrationTester
             {
                 Console.WriteLine(message);
                 File.WriteAllText(logFile, message);
-
             }
 
             private static void StatusLoops(int numberOfLoops, string inFirstName, string inLastName, string inDOB, string inEmail, string apiUrl, string logFile, HttpClient client, List<Task<HttpResponseMessage>> tasks)
@@ -185,7 +178,7 @@ namespace IntegrationTester
                         data.EmailAddress = inEmail;
                     }
                     LogAndDisplay(logFile, $"{i} url={url}  {JsonConvert.SerializeObject(data) }");
-                    StringContent content = new StringContent(JsonConvert.SerializeObject(data), System.Text.Encoding.UTF8, "application/json");
+                    StringContent content = new(JsonConvert.SerializeObject(data), System.Text.Encoding.UTF8, "application/json");
                     var responseTask = client.PostAsync(url, content);
                     tasks.Add(responseTask);
 
@@ -194,10 +187,8 @@ namespace IntegrationTester
                         LogAndDisplay(logFile, $"Started up {i + 1} connections");
                     }
                 };
-
-
-
             }
+
             private static void QrLoops(int numberOfLoops, string inId, string inPin, string apiUrl, string logFile, HttpClient client, List<Task<HttpResponseMessage>> tasks)
             {
                 for (var i = 0; i < numberOfLoops; i++)
@@ -211,7 +202,7 @@ namespace IntegrationTester
                     };
                     var url = $"{apiUrl}/vaccineCredential";
                     LogAndDisplay(logFile, $"{i} url={url}  {JsonConvert.SerializeObject(data) }");
-                    StringContent content = new StringContent(JsonConvert.SerializeObject(data), System.Text.Encoding.UTF8, "application/json");
+                    StringContent content = new(JsonConvert.SerializeObject(data), System.Text.Encoding.UTF8, "application/json");
                     var responseTask = client.PostAsync(url, content);
                     tasks.Add(responseTask);
 
@@ -221,12 +212,12 @@ namespace IntegrationTester
                     }
                 };
             }
+
             public class Qr
             {
                 public string Id { get; set; }
                 public string Pin { get; set; }
             }
-
 
             public class Data
             {
@@ -238,7 +229,6 @@ namespace IntegrationTester
                 public string DateOfBirth { get; set; }
                 public string Language { get; set; }
             }
-
         }
     }
 }

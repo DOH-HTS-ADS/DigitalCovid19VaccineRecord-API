@@ -1,5 +1,4 @@
-﻿
-namespace Application.Common.Interfaces
+﻿namespace Application.Common.Interfaces
 {
     public interface IAesEncryptionService
     {
@@ -8,8 +7,8 @@ namespace Application.Common.Interfaces
         string Decrypt(string data, string secretKey);
 
         public string EncryptGcm(string text, string keyString);
-        public string DecryptGcm(string cipherText, string keyString);
 
+        public string DecryptGcm(string cipherText, string keyString);
 
         public string Hash(string text);
     }

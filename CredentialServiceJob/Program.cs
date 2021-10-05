@@ -1,24 +1,21 @@
-﻿using System;
+﻿using Application.Common;
 using Application.Common.Interfaces;
-using Application.Options;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
-using Azure.Storage.Queues;
-using System.Threading;
-using Application.VaccineCredential.Queries.GetVaccineStatus;
-using Newtonsoft.Json;
-using Application.Common;
-using System.Diagnostics;
-using System.Collections.Generic;
-using Azure.Storage.Queues.Models;
-using Microsoft.Extensions.Logging;
-using Snowflake.Data.Client;
 using Application.Common.Models;
+using Application.Options;
+using Application.VaccineCredential.Queries.GetVaccineStatus;
+using Azure.Storage.Queues;
+using Azure.Storage.Queues.Models;
+using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
+using System;
+using System.Diagnostics;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace CredentialServiceJob
 {
-
     public interface IQueueProcessor
     {
         void MainProcess();
@@ -26,9 +23,9 @@ namespace CredentialServiceJob
 
     public class Program : IQueueProcessor
     {
-        private static ISnowFlakeService _snowFlakeService;
+        private static IAzureSynapseService _azureSynapseService;
         private static IAesEncryptionService _aesEncryptionService;
-        private static SnowFlakeSettings _snowFlakeSettings;
+        private static AzureSynapseSettings _azureSynapseSettings;
         private static AppSettings _appSettings;
         private static SendGridSettings _sendGridSettings;
         private static IMessagingService _messagingService;
@@ -40,13 +37,12 @@ namespace CredentialServiceJob
         private static int messageMinuteCount = 0;
         private static QueueClient queueClient;
         private static int taskCount = 0;
-        
 
-        public Program(KeySettings kSettings,TwilioSettings tSettings, ILogger<Program> logger,MessageQueueSettings mqSettings, ISnowFlakeService sfService, IAesEncryptionService encService, SnowFlakeSettings sfs, AppSettings appSettings, SendGridSettings sgs, IMessagingService ms, IEmailService emailService)
+        public Program(KeySettings kSettings, TwilioSettings tSettings, ILogger<Program> logger, MessageQueueSettings mqSettings, IAzureSynapseService azsService, IAesEncryptionService encService, AzureSynapseSettings azss, AppSettings appSettings, SendGridSettings sgs, IMessagingService ms, IEmailService emailService)
         {
-            _snowFlakeService = sfService;
+            _azureSynapseService = azsService;
             _aesEncryptionService = encService;
-            _snowFlakeSettings = sfs;
+            _azureSynapseSettings = azss;
             _appSettings = appSettings;
             _sendGridSettings = sgs;
             _messagingService = ms;
@@ -55,12 +51,11 @@ namespace CredentialServiceJob
             _logger = logger;
 
             _mqSettings.Validate();
-            _snowFlakeSettings.Validate();
+            _azureSynapseSettings.Validate();
             _appSettings.Validate();
             _sendGridSettings.Validate();
             kSettings.Validate();
             tSettings.Validate();
-
         }
 
         public static void Main()
@@ -73,7 +68,7 @@ namespace CredentialServiceJob
 
         public void MainProcess()
         {
-            if(Convert.ToInt32(_mqSettings.NumberThreads) <= 0)
+            if (Convert.ToInt32(_mqSettings.NumberThreads) <= 0)
             {
                 return;
             }
@@ -81,9 +76,8 @@ namespace CredentialServiceJob
             {
                 MessageEncoding = QueueMessageEncoding.Base64
             };
-            
-            queueClient = new QueueClient(_mqSettings.ConnectionString, _mqSettings.QueueName, qOptions);
 
+            queueClient = new QueueClient(_mqSettings.ConnectionString, _mqSettings.QueueName, qOptions);
 
             var timer = new Stopwatch();
             var prop = queueClient.GetProperties();
@@ -95,8 +89,9 @@ namespace CredentialServiceJob
             {
                 loopCount++;
                 try
-                {   
-                    if (loopCount % 10 == 1) {
+                {
+                    if (loopCount % 10 == 1)
+                    {
                         _logger.LogInformation($"taskCount is {taskCount}  messages completed {messageCount}");
                     }
 
@@ -109,15 +104,14 @@ namespace CredentialServiceJob
 
                     minuteStart = ThrottleSpeed(minuteStart, ref messageMinuteCount);
 
-                    var messages = queueClient.ReceiveMessages(32,TimeSpan.FromSeconds(Convert.ToInt32(_mqSettings.InvisibleSeconds)));  //this message is invisible to all else for default of 30 seconds.
+                    var messages = queueClient.ReceiveMessages(32, TimeSpan.FromSeconds(Convert.ToInt32(_mqSettings.InvisibleSeconds)));  //this message is invisible to all else for default of 30 seconds.
                     if (messages.Value.Length > 0)
                     {
                         if (!timer.IsRunning)
                         {
                             timer.Start();
                         }
-                        var conn = new SnowflakeDbConnection();
-                        conn.ConnectionString = _snowFlakeSettings.ConnectionString;
+                        var conn = new SqlConnection() { ConnectionString = _azureSynapseSettings.ConnectionString };
                         conn.Open();
                         var connThreadCount = new ConnectionThreadCount()
                         {
@@ -135,7 +129,7 @@ namespace CredentialServiceJob
                             objects[0] = message;
                             objects[1] = queueClient;
                             objects[2] = connThreadCount;
-                            Task.Run(() => ProcessMessage(objects));                            
+                            Task.Run(() => ProcessMessage(objects));
                         }
                     }
                     else
@@ -143,7 +137,7 @@ namespace CredentialServiceJob
                         if (taskCount == 0 && timer.IsRunning)
                         {
                             timer.Stop();
-                            _logger.LogInformation($"TimerStopped: totalTime was {timer.Elapsed} messageCount:{messageCount} elapsedSeconds:{timer.ElapsedMilliseconds/1000} rate is { 60 * messageCount / (timer.ElapsedMilliseconds/1000)} per minute");
+                            _logger.LogInformation($"TimerStopped: totalTime was {timer.Elapsed} messageCount:{messageCount} elapsedSeconds:{timer.ElapsedMilliseconds / 1000} rate is { 60 * messageCount / (timer.ElapsedMilliseconds / 1000)} per minute");
                         }
                         if (loopCount % 10 == 1)
                         {
@@ -159,7 +153,7 @@ namespace CredentialServiceJob
                         Thread.Sleep(Convert.ToInt32(_mqSettings.SleepSeconds) * 1000);
                     }
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     _logger.LogInformation("Error: " + e.Message);
                 }
@@ -178,7 +172,7 @@ namespace CredentialServiceJob
                 minuteStart = DateTime.Now;
                 messageMinuteCount = 0;
             }
-            else if(nowTime > minuteEnd)
+            else if (nowTime > minuteEnd)
             {
                 _logger.LogInformation($"ThrottleSpeed: Throttle cleared messageMinuteCount:{messageMinuteCount} MaxDequePerMin:{_mqSettings.MaxDequeuePerMinute} timeintomin:{nowTime - minuteStart}");
                 minuteStart = DateTime.Now;
@@ -212,27 +206,27 @@ namespace CredentialServiceJob
                     _logger.LogInformation($"messageid:{message.MessageId} failed Delete:{failedDelete}  failedProcess:{failedProcess}");
                 }
             }
-            catch {}
+            catch { }
         }
 
         public static async Task ProcessMessage(Object requestObject)
         {
-            GetVaccineCredentialStatusQuery request = null;
+            GetVaccineCredentialStatusQuery request;
             var arrayObject = (object[])requestObject;
             var message = (QueueMessage)arrayObject[0];
             var conn = (ConnectionThreadCount)arrayObject[2];
-            var util = new Utils(_appSettings);
+            //var util = new Utils(_appSettings);
             int processResult = Int32.MaxValue;
             try
             {
                 request = JsonConvert.DeserializeObject<GetVaccineCredentialStatusQuery>(message.Body.ToString());
 
                 var cancellationToken = new CancellationToken();
-                processResult = await util.ProcessStatusRequest(_logger, _emailService, _sendGridSettings, _messagingService, _aesEncryptionService, request, _snowFlakeService, conn.Connection, cancellationToken, message.DequeueCount);
+                processResult = await Utils.ProcessStatusRequest(_appSettings, _logger, _emailService, _sendGridSettings, _messagingService, _aesEncryptionService, request, _azureSynapseService, conn.Connection, cancellationToken, message.DequeueCount);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                 _logger.LogError($"ProcessMessage exception:{e.Message} {e.StackTrace}");
+                _logger.LogError($"ProcessMessage exception:{e.Message} {e.StackTrace}");
             }
 
             await DeleteMessageIfNeeded(message, processResult);

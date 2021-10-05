@@ -1,22 +1,20 @@
-﻿using System;
+﻿using Application.Common.Interfaces;
+using Application.Common.Models;
+using Application.Options;
+using Newtonsoft.Json;
+using Org.BouncyCastle.Asn1;
+using Org.BouncyCastle.Asn1.Pkcs;
+using Org.BouncyCastle.Crypto;
+using Org.BouncyCastle.Crypto.Parameters;
+using Org.BouncyCastle.Crypto.Signers;
+using Org.BouncyCastle.OpenSsl;
+using Org.BouncyCastle.Security;
+using Org.BouncyCastle.X509;
+using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
-using System.Text.Json;
-using Application.Common.Models;
-using Application.Common.Interfaces;
-using Application.Options;
-using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
-using Org.BouncyCastle.Crypto;
-using Org.BouncyCastle.Crypto.Signers;
-using Org.BouncyCastle.OpenSsl;
-using Org.BouncyCastle.X509;
-using Org.BouncyCastle.Crypto.Parameters;
-using Org.BouncyCastle.Security;
-using System.Collections.Generic;
-using Org.BouncyCastle.Asn1;
-using Org.BouncyCastle.Asn1.Pkcs;
 
 namespace Infrastructure
 {
@@ -37,7 +35,7 @@ namespace Infrastructure
             var header = new { alg = "RS256", typ = "JWT" };
 
             byte[] headerBytes = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(header, Formatting.None));
-          
+
             segments.Add(_base64UrlUtility.Encode(headerBytes));
             segments.Add(_base64UrlUtility.Encode(payload));
 
@@ -60,18 +58,17 @@ namespace Infrastructure
             segments.Add(_base64UrlUtility.Encode(signature));
             return string.Join(".", segments.ToArray());
         }
-       
 
         public string Signature(byte[] payload)
         {
             var thumb = GetThumbprint(_keySettings.Certificate);
             var kid = GetKid(thumb);
 
-            var header = @$"{{""zip"":""DEF"",""alg"":""ES256"",""kid"":""{kid}""}}".Replace(" ","");
+            var header = @$"{{""zip"":""DEF"",""alg"":""ES256"",""kid"":""{kid}""}}".Replace(" ", "");
             var header64 = _base64UrlUtility.Encode(Encoding.ASCII.GetBytes(header));
             var payload64 = _base64UrlUtility.Encode(payload);
             using var textReader = new StringReader(_keySettings.PrivateKey);
-           
+
             var pseudoKeyPair = (AsymmetricCipherKeyPair)new PemReader(textReader).ReadObject();
             var privateKey = pseudoKeyPair.Private;
 
@@ -89,9 +86,10 @@ namespace Infrastructure
 
             return header64 + "." + payload64 + "." + signedData64;
         }
-        public static byte [] SignData(byte[] data, AsymmetricKeyParameter privateKey)
+
+        public static byte[] SignData(byte[] data, AsymmetricKeyParameter privateKey)
         {
-            byte[] combinedBytes = new byte[0];
+            byte[] combinedBytes = Array.Empty<byte>();
             int tries = 0;
             int maxTries = 100;
             var signer = new ECDsaSigner();
@@ -101,7 +99,7 @@ namespace Infrastructure
             // about 0.7% of the time it is 63 bytes.
             while (combinedBytes.Length != 64 && tries++ < maxTries)
             {
-                var bis =  signer.GenerateSignature(data);
+                var bis = signer.GenerateSignature(data);
                 var r = bis[0];
                 var s = bis[1];
                 var rBytes = r.ToByteArrayUnsigned();
@@ -110,15 +108,13 @@ namespace Infrastructure
                 Buffer.BlockCopy(rBytes, 0, combinedBytes, 0, rBytes.Length);
                 Buffer.BlockCopy(sBytes, 0, combinedBytes, rBytes.Length, sBytes.Length);
             }
-            if(tries >= 100)
+            if (tries >= 100)
             {
                 throw new ArgumentException("Invalid Signed Data");
             }
             return combinedBytes;
-
         }
 
-        
         public long ToUnixTimestamp(DateTime date)
         {
             var epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
@@ -126,11 +122,10 @@ namespace Infrastructure
             return time.Ticks / TimeSpan.TicksPerSecond;
         }
 
-
         public Thumbprint GetThumbprint(string certificate)//(string crv, string kty, string x, string y)
         {
             using var textReader = new StringReader(certificate);
-            
+
             var bcCertificate = (X509Certificate)new PemReader(textReader).ReadObject();
             var publicKeyBytes = bcCertificate.CertificateStructure.SubjectPublicKeyInfo.PublicKeyData.GetBytes();
             var length = (publicKeyBytes.Length - 1) / 2;
@@ -149,10 +144,10 @@ namespace Infrastructure
             // see rfc7638 JWK Members Used in the Thumbprint Computation
             var thumbprint = new Thumbprint
             {
-                crv = crv,
-                kty = kty,
-                x = xCoord,
-                y = yCoord
+                Crv = crv,
+                Kty = kty,
+                X = xCoord,
+                Y = yCoord
             };
             return thumbprint;
         }

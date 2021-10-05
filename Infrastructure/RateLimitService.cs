@@ -1,16 +1,14 @@
 ﻿using Application.Common.Interfaces;
 using Application.Common.Models;
 using Microsoft.Extensions.Caching.Distributed;
-using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Infrastructure
 {
-    class CacheData
+    internal class CacheData
     {
         public DateTime DateAdded { get; set; }
         public int Count { get; set; }
@@ -21,19 +19,19 @@ namespace Infrastructure
     {
         private readonly ILogger<RateLimit> _logger;
         private readonly IDistributedCache _cache;
+
         public RateLimitService(IDistributedCache cache, ILogger<RateLimit> logger)
         {
             _logger = logger;
             _cache = cache;
         }
 
-
         public async Task<RateLimit> RateLimitAsync(string id, int maxCount, TimeSpan span)
         {
-            RateLimit rateLimit = new RateLimit();
+            RateLimit rateLimit = new();
             DateTime now = DateTime.Now;
             rateLimit.Limit = maxCount;
-            if(rateLimit.Limit < 0)
+            if (rateLimit.Limit < 0)
             {
                 return rateLimit;
             }
@@ -60,7 +58,7 @@ namespace Infrastructure
                     rateLimit.TimeRemaining = cacheData.ExpireDate - now;
                 }
                 rateLimit.Remaining = maxCount - cacheData.Count;
-                if(rateLimit.TimeRemaining.TotalMilliseconds <= 0)
+                if (rateLimit.TimeRemaining.TotalMilliseconds <= 0)
                 {
                     now = DateTime.Now;
                     rateLimit.TimeRemaining = span;
@@ -74,7 +72,8 @@ namespace Infrastructure
                     AbsoluteExpirationRelativeToNow = rateLimit.TimeRemaining
                 };
                 await _cache.SetStringAsync(id, JsonConvert.SerializeObject(cacheData), options);
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 _logger.LogError($"RateLimit Exception e {ex.Message} {ex.StackTrace}");
             }

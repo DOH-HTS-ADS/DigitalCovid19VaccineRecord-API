@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Application.Common.Models
 {
@@ -15,8 +11,8 @@ namespace Application.Common.Models
         public string Crv { get; set; }
         public string X { get; set; }
         public string Y { get; set; }
-
     }
+
     public class Jwks
     {
         public List<Key> Keys { get; set; }

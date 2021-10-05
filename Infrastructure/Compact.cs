@@ -8,16 +8,14 @@ namespace Infrastructure
 {
     public class Compact : ICompact
     {
-
         public byte[] Compress(string data)
         {
-
             var deflater = new Deflater(1, true);
             byte[] bytes = Encoding.UTF8.GetBytes(data);
 
-            using MemoryStream inms = new MemoryStream(bytes);
-            using MemoryStream outms = new MemoryStream();
-            using DeflaterOutputStream dos = new DeflaterOutputStream(outms, deflater);
+            using MemoryStream inms = new(bytes);
+            using MemoryStream outms = new();
+            using DeflaterOutputStream dos = new(outms, deflater);
             inms.CopyTo(dos);
 
             dos.Finish();
@@ -27,16 +25,15 @@ namespace Infrastructure
             return encoded;
         }
 
-
         public string Decompress(byte[] data)
         {
-            Inflater decompressor = new Inflater(true);
+            Inflater decompressor = new(true);
             decompressor.SetInput(data);
 
-            // Create an expandable byte array to hold the decompressed data  
-            MemoryStream bos = new MemoryStream(data.Length);
+            // Create an expandable byte array to hold the decompressed data
+            MemoryStream bos = new(data.Length);
 
-            // Decompress the data  
+            // Decompress the data
             byte[] buf = new byte[1024];
             while (!decompressor.IsFinished)
             {
@@ -44,17 +41,18 @@ namespace Infrastructure
                 bos.Write(buf, 0, count);
             }
 
-            // Get the decompressed data  
+            // Get the decompressed data
             var str = Encoding.UTF8.GetString(bos.ToArray());
             return str;
         }
 
         public static Stream GenerateStreamFromString(string s)
         {
-            var stream =  new MemoryStream(Encoding.UTF8.GetBytes(s ?? ""));
-            stream.Position = 0;
-            return stream;            
+            var stream = new MemoryStream(Encoding.UTF8.GetBytes(s ?? ""))
+            {
+                Position = 0
+            };
+            return stream;
         }
-
     }
 }

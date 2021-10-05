@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Application.VaccineCredential.Queries.GetVaccineCredential;
+﻿using Application.VaccineCredential.Queries.GetVaccineCredential;
 using Application.VaccineCredential.Queries.GetVaccineStatus;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace VaccineCredential.Api.Controllers
 {
@@ -12,7 +11,6 @@ namespace VaccineCredential.Api.Controllers
     [Route("")]
     public class VaccineCredentialController : BaseController
     {
-
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(string), StatusCodes.Status422UnprocessableEntity)]
@@ -33,7 +31,6 @@ namespace VaccineCredential.Api.Controllers
                 return BadRequest();
             }
         }
-
 
         [ProducesResponseType(typeof(VaccineCredentialViewModel), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]

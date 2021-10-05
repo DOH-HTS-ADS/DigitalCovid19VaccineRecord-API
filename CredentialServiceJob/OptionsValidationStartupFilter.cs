@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Application.Common.Interfaces;
+﻿using Application.Common.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using System;
+using System.Collections.Generic;
 
 namespace CredentialServiceJob
 {
@@ -13,13 +11,16 @@ namespace CredentialServiceJob
         private readonly IEnumerable<IOptionsValidatable> _validatableObjects;
 
         #region Constructor
+
         public OptionsValidationStartupFilter(IEnumerable<IOptionsValidatable> validationObjects)
         {
             _validatableObjects = validationObjects;
         }
-        #endregion
+
+        #endregion Constructor
 
         #region IStartupFilter Implementation
+
         public Action<IApplicationBuilder> Configure(Action<IApplicationBuilder> next)
         {
             foreach (var validatableObject in _validatableObjects)
@@ -30,6 +31,7 @@ namespace CredentialServiceJob
             //don't alter the configuration
             return next;
         }
-        #endregion
+
+        #endregion IStartupFilter Implementation
     }
 }

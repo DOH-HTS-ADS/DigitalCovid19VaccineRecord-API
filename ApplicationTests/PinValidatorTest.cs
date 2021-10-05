@@ -16,24 +16,19 @@ namespace ApplicationTests
         [InlineData("3333", 4)]
         [InlineData("1234", 5)]
         [InlineData("3456", 5)]
-
         [InlineData("1911", 0)]
         [InlineData("3666", 0)]
         [InlineData("1837", 0)]
-
         [InlineData("5437", 0)]
         [InlineData("7893", 0)]
         [InlineData("7895", 0)]
         [InlineData("7890", 0)]
         [InlineData("1112", 0)]
-
         [InlineData("1231", 0)]
         [InlineData("9993", 0)]
-
-
         public void ValidatePinShouldReturnAppropriateStatus(string pin, int pinStatus)
         {
-            var util = new Utils(new Application.Options.AppSettings());
+            //var util = new Utils(new Application.Options.AppSettings());
             var res = Utils.ValidatePin(pin);
             Assert.Equal(pinStatus, res);
         }
@@ -59,7 +54,7 @@ namespace ApplicationTests
             Assert.Equal(expected, res);
         }
 
-        [InlineData(0,0,false)]
+        [InlineData(0, 0, false)]
         [InlineData(110, 0, false)]
         [InlineData(100000005, 0, false)]
         [InlineData(1, 0, false)]
@@ -75,14 +70,13 @@ namespace ApplicationTests
         [InlineData(1, 3, true)]
         [InlineData(2, 3, true)]
         [InlineData(3, 3, false)]
-
         [Theory]
         public void InPercentShouldReturnCorrectBoolean(int count, int percent, bool expected)
         {
             var result = Utils.InPercentRange(count, percent);
             Assert.Equal(expected, result);
 
-            for(int i = 0; i < 100; i++)
+            for (int i = 0; i < 100; i++)
             {
                 result = Utils.InPercentRange(i, 1);
                 if (i == 0)
@@ -106,9 +100,6 @@ namespace ApplicationTests
                 result = Utils.InPercentRange(i, 0);
                 Assert.False(result);
             }
-
         }
     }
 }
-
-

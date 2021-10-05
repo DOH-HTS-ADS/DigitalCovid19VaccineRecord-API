@@ -1,7 +1,6 @@
-﻿using System;
+﻿using MediatR;
+using System;
 using System.ComponentModel.DataAnnotations;
-using MediatR;
-
 
 namespace Application.VaccineCredential.Queries.GetVaccineStatus
 {
@@ -24,7 +23,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineStatus
         /// </summary>
         [Required]
         public DateTime? DateOfBirth { get; set; }
-             
+
         /// <summary>
         /// User's Phone Number
         /// </summary>
@@ -35,17 +34,16 @@ namespace Application.VaccineCredential.Queries.GetVaccineStatus
         /// </summary>
         public string EmailAddress { get; set; }
 
-        /// <summary>        
+        /// <summary>
         /// REQUIRED. Secret Pin
         /// </summary>
         [Required]
         public string Pin { get; set; }
 
-        /// <summary>        
+        /// <summary>
         /// REQUIRED. Language
         /// </summary>
         [Required]
         public string Language { get; set; }
-
     }
 }

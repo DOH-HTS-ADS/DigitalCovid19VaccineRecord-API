@@ -4,83 +4,83 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
 {
     public class Name
     {
-        public string family { get; set; }
-        public List<string> given { get; set; }
+        public string Family { get; set; }
+        public List<string> Given { get; set; }
     }
 
     public class Coding
     {
-        public string system { get; set; }
-        public string code { get; set; }
+        public string System { get; set; }
+        public string Code { get; set; }
     }
 
     public class VaccineCode
     {
-        public List<Coding> coding { get; set; }
+        public List<Coding> Coding { get; set; }
     }
 
     public class Patient
     {
-        public string reference { get; set; }
+        public string Reference { get; set; }
     }
 
     public class Actor
     {
-        public string display { get; set; }
+        public string Display { get; set; }
     }
 
     public class Performer
     {
-        public Actor actor { get; set; }
+        public Actor Actor { get; set; }
     }
 
     public class Resource
     {
-        public string resourceType { get; set; }
-        public List<Name> name { get; set; }
-        public string birthDate { get; set; }
-        public string status { get; set; }
-        public VaccineCode vaccineCode { get; set; }
-        public Patient patient { get; set; }
-        public string occurrenceDateTime { get; set; }
-        public string lotNumber { get; set; }
-        public List<Performer> performer { get; set; }
+        public string ResourceType { get; set; }
+        public List<Name> Name { get; set; }
+        public string BirthDate { get; set; }
+        public string Status { get; set; }
+        public VaccineCode VaccineCode { get; set; }
+        public Patient Patient { get; set; }
+        public string OccurrenceDateTime { get; set; }
+        public string LotNumber { get; set; }
+        public List<Performer> Performer { get; set; }
     }
 
     public class Entry
     {
-        public string fullUrl { get; set; }
-        public Resource resource { get; set; }
+        public string FullUrl { get; set; }
+        public Resource Resource { get; set; }
     }
 
     public class FhirBundle
     {
-        public string resourceType { get; set; }
-        public string type { get; set; }
-        public List<Entry> entry { get; set; }
+        public string ResourceType { get; set; }
+        public string Type { get; set; }
+        public List<Entry> Entry { get; set; }
     }
 
     public class CredentialSubject
     {
-        public string fhirVersion { get; set; }
-        public FhirBundle fhirBundle { get; set; }
+        public string FhirVersion { get; set; }
+        public FhirBundle FhirBundle { get; set; }
     }
 
     public class Vc
     {
-        public List<string> type { get; set; }
-        public CredentialSubject credentialSubject { get; set; }
+        public List<string> Type { get; set; }
+        public CredentialSubject CredentialSubject { get; set; }
     }
 
     public class Vci
     {
-        public string iss { get; set; }
-        public long nbf { get; set; }
-        public Vc vc { get; set; }
+        public string Iss { get; set; }
+        public long Nbf { get; set; }
+        public Vc Vc { get; set; }
     }
 
     public class VerifiableCredentials
     {
-        public List<string> verifiableCredential { get; set; }
+        public List<string> VerifiableCredential { get; set; }
     }
 }

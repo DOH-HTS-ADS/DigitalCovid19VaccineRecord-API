@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Application.Common.Interfaces;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-using Application.Common.Interfaces;
 
 namespace Application.Options
 {
@@ -12,7 +8,6 @@ namespace Application.Options
         [Display(Name = "KeySettings.PrivateKey")]
         [Required(AllowEmptyStrings = false)]
         public string PrivateKey { get; set; }
-
 
         [Display(Name = "KeySettings.Certificate")]
         [Required(AllowEmptyStrings = false)]
@@ -25,7 +20,6 @@ namespace Application.Options
         [Display(Name = "KeySettings.GooglePrivateKey")]
         [Required(AllowEmptyStrings = false)]
         public string GooglePrivateKey { get; set; }
-
 
         [Display(Name = "KeySettings.GoogleCertificate")]
         [Required(AllowEmptyStrings = false)]
@@ -43,10 +37,12 @@ namespace Application.Options
         public string GoogleWalletLogo { get; set; }
 
         #region IOptionsValidatable Implementation
+
         public void Validate()
         {
             Validator.ValidateObject(this, new ValidationContext(this), validateAllProperties: true);
         }
-        #endregion
+
+        #endregion IOptionsValidatable Implementation
     }
 }

@@ -1,5 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
-using MediatR;
+﻿using MediatR;
+using System.ComponentModel.DataAnnotations;
 
 namespace Application.VaccineCredential.Queries.GetVaccineCredential
 {
@@ -11,7 +11,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
         [Required]
         public string Id { get; set; }
 
-        /// <summary>        
+        /// <summary>
         /// REQUIRED. Secret Pin
         /// </summary>
         [Required]
@@ -22,7 +22,5 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
         /// For exmple: 'A' for Apple, 'G' for Google
         /// </summary>
         public string WalletCode { get; set; }
-
-
     }
 }

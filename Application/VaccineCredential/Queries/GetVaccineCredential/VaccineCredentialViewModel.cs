@@ -1,9 +1,5 @@
-﻿using System;
+﻿using Application.Common.Models;
 using System.Collections.Generic;
-using System.Text;
-using System.Text.Json.Serialization;
-using Application.Common.Models;
-using Application.VaccineCredential.Queries;
 
 namespace Application.VaccineCredential.Queries.GetVaccineCredential
 {
@@ -19,7 +15,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string DOB { get; set; }
-        public List<Dose> Doses {get;set;}
+        public List<Dose> Doses { get; set; }
     }
 
     public class Dose
@@ -28,7 +24,6 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
         public string Doa { get; set; }
         public string Provider { get; set; }
         public string LotNumber { get; set; }
-
     }
 
     public class VaccineCredentialModel

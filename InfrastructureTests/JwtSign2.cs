@@ -1,23 +1,22 @@
-﻿using System;
-using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.IdentityModel.Tokens;
+using Org.BouncyCastle.Asn1.Sec;
+using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Cryptography;
 using Xunit;
-using Org.BouncyCastle.Asn1.Sec;
 
 namespace InfrastructureTests
 {
     public class JwtSign2
     {
-
         [Fact]
         public void DoIt()
         {
-            Mainx(new string[] { });
+            Mainx();
         }
-        
-        private void Mainx(string[] args)
+
+        private static void Mainx()
         {
             string privateKey = ConfigUtilities.GetConfigValue("Hex:PrivateKey");
             string publicKey = ConfigUtilities.GetConfigValue("Hex:PublicKey");
@@ -82,14 +81,14 @@ namespace InfrastructureTests
         {
             var now = DateTime.UtcNow;
             var tokenHandler = new JwtSecurityTokenHandler();
-                var jwtToken = tokenHandler.CreateJwtSecurityToken(
-                issuer: "me",
-                audience: "you",
-                subject: null,
-                notBefore: now,
-                expires: now.AddMinutes(30),
-                issuedAt: now,
-                signingCredentials: new SigningCredentials(new ECDsaSecurityKey(eCDsa), SecurityAlgorithms.EcdsaSha256));
+            var jwtToken = tokenHandler.CreateJwtSecurityToken(
+            issuer: "me",
+            audience: "you",
+            subject: null,
+            notBefore: now,
+            expires: now.AddMinutes(30),
+            issuedAt: now,
+            signingCredentials: new SigningCredentials(new ECDsaSecurityKey(eCDsa), SecurityAlgorithms.EcdsaSha256));
 
             jwtToken.Header.Add("kid", "aaaaa");
             var token = tokenHandler.WriteToken(jwtToken);

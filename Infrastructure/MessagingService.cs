@@ -1,12 +1,9 @@
-﻿using Application.Options;
-using Application.Common.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Application.Common.Interfaces;
+using Application.Options;
 using Microsoft.Extensions.Logging;
+using System;
 using System.Threading;
+using System.Threading.Tasks;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 
@@ -16,21 +13,22 @@ namespace Infrastructure
     {
         private readonly ILogger<MessagingService> _logger;
         private readonly TwilioSettings _twilioSettings;
-        
+
         #region Constructor
+
         public MessagingService(ILogger<MessagingService> logger, TwilioSettings twilioSettings)
         {
             _logger = logger;
             _twilioSettings = twilioSettings;
         }
 
-        #endregion
+        #endregion Constructor
 
         #region IMessageService Implementation
 
         public void SendMessage(string toPhoneNumber, string text, CancellationToken cancellationToken)
         {
-            if(_twilioSettings.SandBox != "0")
+            if (_twilioSettings.SandBox != "0")
             {
                 return;
             }
@@ -69,7 +67,7 @@ namespace Infrastructure
             catch (Exception ex)
             {
                 _logger.LogError("Error in texting. Message: " + ex.Message);
-                if(ex.Message.Contains("violates a blacklist rule.") || ex.Message.Contains("is not a mobile number") || ex.Message.Contains("is not a valid phone number") || ex.Message.Contains("SMS has not been enabled for the region indicated by the 'To' number"))
+                if (ex.Message.Contains("violates a blacklist rule.") || ex.Message.Contains("is not a mobile number") || ex.Message.Contains("is not a valid phone number") || ex.Message.Contains("SMS has not been enabled for the region indicated by the 'To' number"))
                 {
                     response = "BADNUMBER";
                 }
@@ -78,6 +76,6 @@ namespace Infrastructure
             return response;
         }
 
-        #endregion
+        #endregion IMessageService Implementation
     }
 }

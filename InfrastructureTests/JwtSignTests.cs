@@ -46,7 +46,7 @@ namespace InfrastructureTests
             jwtSign = new JwtSign(b64Utility, _keySettings);
             this.output = output;
         }
- 
+
         [Fact]
         public void ConvertToUnixTimeTest()
         {
@@ -57,7 +57,6 @@ namespace InfrastructureTests
         [Fact]
         public void TestSignAndVerify()
         {
-
             var data = new byte[] { 6, 5, 4, 3, 2 };
 
             var keyPair = GetKeyPair();
@@ -65,24 +64,22 @@ namespace InfrastructureTests
             for (int i = 0; i < 100; i++)
             {
                 var (_, r, s) = SignData(data, keyPair.Private);
-                ver = Verify(r,s, data, keyPair.Public);
+                ver = Verify(r, s, data, keyPair.Public);
                 output.WriteLine($"ver={ver}");
             }
             Assert.True(ver);
-
         }
 
+        [Fact]
         public void TestRsaSignAndVerify()
         {
-
             var data = new byte[] { 6, 5, 4, 3, 2 };
 
             var jwt = jwtSign.SignWithRsaKey(data);
-            var ver = RsaVerify(data,Encoding.UTF8.GetBytes(jwt.Split('.')[2]));
+            var ver = RsaVerify(data, Encoding.UTF8.GetBytes(jwt.Split('.')[2]));
             Assert.StartsWith("ey", jwt);
             Assert.True(ver);
         }
-
 
         public (byte[], BigInteger, BigInteger) SignData(byte[] data, AsymmetricKeyParameter privateKey)
         {
@@ -93,16 +90,16 @@ namespace InfrastructureTests
             var r = bis[0];
             var s = bis[1];
             output.WriteLine($"r={r}, s={s}");
-             var rBytes = r.ToByteArrayUnsigned();
+            var rBytes = r.ToByteArrayUnsigned();
             var sBytes = s.ToByteArrayUnsigned();
             output.WriteLine($"rlength={rBytes.Length}, slength={sBytes.Length}");
             var combinedBytes = new Byte[rBytes.Length + sBytes.Length];
             Buffer.BlockCopy(rBytes, 0, combinedBytes, 0, rBytes.Length);
             Buffer.BlockCopy(sBytes, 0, combinedBytes, rBytes.Length, sBytes.Length);
-            return (combinedBytes,r,s);
-
+            return (combinedBytes, r, s);
         }
-        public static bool Verify(BigInteger r, BigInteger s,  byte[] data, AsymmetricKeyParameter publicKey)
+
+        public static bool Verify(BigInteger r, BigInteger s, byte[] data, AsymmetricKeyParameter publicKey)
         {
             var signer = new ECDsaSigner();
 
@@ -122,7 +119,7 @@ namespace InfrastructureTests
         public void GenerateJwksJson()
         {
             using var textReader = new StringReader(certificateString);
-           
+
             Org.BouncyCastle.X509.X509Certificate bcCertificate = (X509Certificate)new PemReader(textReader).ReadObject();
             var publicKeyBytes = bcCertificate.CertificateStructure.SubjectPublicKeyInfo.PublicKeyData.GetBytes();
             var length = (publicKeyBytes.Length - 1) / 2;
@@ -164,7 +161,6 @@ namespace InfrastructureTests
             output.WriteLine(jsonString);
         }
 
-  
         // get key pair from two local files
         private AsymmetricCipherKeyPair GetKeyPair()
         {
@@ -185,7 +181,6 @@ namespace InfrastructureTests
             }
 
             return new AsymmetricCipherKeyPair(publicKey, privateKey);
-
         }
     }
 }

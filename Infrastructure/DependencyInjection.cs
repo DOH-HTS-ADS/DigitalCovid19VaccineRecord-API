@@ -1,14 +1,12 @@
 ﻿using Application.Common.Interfaces;
 using Application.Options;
-using Infrastructure.SnowFlake;
+using Azure.Storage.Queues;
+using Infrastructure.AzureSynapse;
 using Infrastructure.QrApi;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using SendGrid;
-using Twilio;
-using Microsoft.AspNetCore.Hosting;
-using Azure.Storage.Queues;
 
 namespace Infrastructure
 {
@@ -20,7 +18,7 @@ namespace Infrastructure
             services.AddMemoryCache();
 
             // Bind all Infrastructure configuration settings
-            services.Configure<SnowFlakeSettings>(o => configuration.GetSection("SnowFlakeSettings").Bind(o));
+            services.Configure<AzureSynapseSettings>(o => configuration.GetSection("AzureSynapseSettings").Bind(o));
             services.Configure<TwilioSettings>(o => configuration.GetSection("TwilioSettings").Bind(o));
             services.Configure<SendGridSettings>(o => configuration.GetSection("SendGridSettings").Bind(o));
             services.Configure<KeySettings>(o => configuration.GetSection("KeySettings").Bind(o));
@@ -29,7 +27,7 @@ namespace Infrastructure
 
             // Explicitly register the Infrastructure configuration setting objects by delegating to the IOptions object
             // This will allow us to DI the settings directly, without IOptions
-            services.AddSingleton(resolver => resolver.GetRequiredService<IOptions<SnowFlakeSettings>>().Value);
+            services.AddSingleton(resolver => resolver.GetRequiredService<IOptions<AzureSynapseSettings>>().Value);
             services.AddSingleton(resolver => resolver.GetRequiredService<IOptions<TwilioSettings>>().Value);
             services.AddSingleton(resolver => resolver.GetRequiredService<IOptions<SendGridSettings>>().Value);
             services.AddSingleton(resolver => resolver.GetRequiredService<IOptions<KeySettings>>().Value);
@@ -37,18 +35,17 @@ namespace Infrastructure
             services.AddSingleton(resolver => resolver.GetRequiredService<IOptions<AppSettings>>().Value);
 
             // Register IOptionsValidatables in order to validate all settings
-            services.AddSingleton<ISettingsValidate>(resolver => resolver.GetRequiredService<IOptions<SnowFlakeSettings>>().Value);
+            services.AddSingleton<ISettingsValidate>(resolver => resolver.GetRequiredService<IOptions<AzureSynapseSettings>>().Value);
             services.AddSingleton<ISettingsValidate>(resolver => resolver.GetRequiredService<IOptions<TwilioSettings>>().Value);
             services.AddSingleton<ISettingsValidate>(resolver => resolver.GetRequiredService<IOptions<SendGridSettings>>().Value);
             services.AddSingleton<ISettingsValidate>(resolver => resolver.GetRequiredService<IOptions<KeySettings>>().Value);
             services.AddSingleton<ISettingsValidate>(resolver => resolver.GetRequiredService<IOptions<MessageQueueSettings>>().Value);
             services.AddSingleton<ISettingsValidate>(resolver => resolver.GetRequiredService<IOptions<AppSettings>>().Value);
 
-
             AddSendGridClient(services);
             AddQueryClient(services);
             // Register service objects
-            services.AddTransient<ISnowFlakeService, SnowFlakeService>();
+            services.AddTransient<IAzureSynapseService, AzureSynapseService>();
             services.AddTransient<IMessagingService, MessagingService>();
             services.AddTransient<IEmailService, EmailService>();
             services.AddTransient<IJwtSign, JwtSign>();
@@ -66,6 +63,7 @@ namespace Infrastructure
         }
 
         #region Private Helpers
+
         private static void AddSendGridClient(IServiceCollection services)
         {
             var options = services.BuildServiceProvider().GetService<IOptions<SendGridSettings>>().Value;
@@ -75,6 +73,7 @@ namespace Infrastructure
 
             services.AddTransient(x => client);
         }
+
         private static void AddQueryClient(IServiceCollection services)
         {
             var options = services.BuildServiceProvider().GetService<IOptions<MessageQueueSettings>>().Value;
@@ -84,12 +83,13 @@ namespace Infrastructure
             {
                 MessageEncoding = QueueMessageEncoding.Base64
             };
-            var clientCredential = new QueueClient(options.ConnectionString, options.QueueName,  qOptions);
+            var clientCredential = new QueueClient(options.ConnectionString, options.QueueName, qOptions);
             var clientAlternate = new QueueClient(options.ConnectionString, options.AlternateQueueName, qOptions);
 
             services.AddSingleton(x => clientCredential);
             services.AddSingleton(x => clientAlternate);
         }
-        #endregion
+
+        #endregion Private Helpers
     }
 }

@@ -2,11 +2,9 @@ namespace InfrastructureTests
 {
     public class CredentialCreatorTest
     {
-
         //[Fact]
         //public void GivenNameArrayLength1IfNoMiddleInitial()
         //{
-
         //    var request = new GetVaccineCredentialQuery
         //    {
         //        FirstName = "First Name",

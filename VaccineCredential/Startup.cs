@@ -1,5 +1,3 @@
-using System.Linq;
-using System.Text;
 using Application;
 using Application.Common.Interfaces;
 using AutoMapper;
@@ -12,14 +10,14 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Mvc;
-
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using System.Linq;
+using System.Text;
 using VaccineCredential.Api.Common.Extensions;
 using VaccineCredential.Api.Common.Filters;
 using VaccineCredential.Api.Common.Middleware;
@@ -35,12 +33,14 @@ namespace VaccineCredential.Api
         private IServiceCollection _services;
 
         #region Constructor
+
         public Startup(IConfiguration configuration, IWebHostEnvironment environment)
         {
             Configuration = configuration;
             Environment = environment;
         }
-        #endregion
+
+        #endregion Constructor
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -55,10 +55,9 @@ namespace VaccineCredential.Api
                 }));
             }
 
-
             services.AddStackExchangeRedisCache(options =>
             {
-                options.Configuration =  System.Environment.GetEnvironmentVariable("AppSettings:RedisConnectionString");
+                options.Configuration = System.Environment.GetEnvironmentVariable("AppSettings:RedisConnectionString");
                 options.InstanceName = "main";
             });
             // Add Option settings Startup filter in order to help validate Setting configs
@@ -86,7 +85,7 @@ namespace VaccineCredential.Api
 
             // Add Project Dependencies
             services.AddMyInfrastructure(Configuration);
-            services.AddMyApplication(Configuration);
+            services.AddMyApplication();
 
             services.AddScoped<ICurrentUserService, CurrentUserService>();
 
@@ -95,7 +94,7 @@ namespace VaccineCredential.Api
             services
                 .AddControllers(options =>
                 {
-                    //All routes possibly can throw these errors by default, 
+                    //All routes possibly can throw these errors by default,
                     //so lets document them so they are added/documented in swagger to each route by default
                     //All routes possibly can throw these errors, so lets document them so they are added/documented to each route by default
                     options.Filters.Add(new ProducesResponseTypeAttribute(typeof(string), StatusCodes.Status400BadRequest));
@@ -159,7 +158,8 @@ namespace VaccineCredential.Api
                 ForwardedHeaders.XForwardedProto
             });
             var netcoreEnv = System.Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-            if (!string.IsNullOrEmpty(netcoreEnv) && !netcoreEnv.ToLower().Contains("production")) { 
+            if (!string.IsNullOrEmpty(netcoreEnv) && !netcoreEnv.ToLower().Contains("production"))
+            {
                 app.UseMySwaggerDocumentation(Configuration);
             }
 
@@ -176,6 +176,7 @@ namespace VaccineCredential.Api
         }
 
         #region Private Helpers
+
         private void RegisterMyServicesPage(IApplicationBuilder app)
         {
             app.Map("/services", builder => builder.Run(async context =>
@@ -198,7 +199,6 @@ namespace VaccineCredential.Api
             }));
         }
 
-        
-        #endregion
+        #endregion Private Helpers
     }
 }

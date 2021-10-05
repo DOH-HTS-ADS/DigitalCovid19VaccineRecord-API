@@ -1,8 +1,6 @@
 using Infrastructure;
-using Microsoft.Extensions.Configuration;
 using System;
 using System.Linq;
-using System.Security.Cryptography;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -10,11 +8,9 @@ namespace InfrastructureTests
 {
     public class AesEncryptionTests
     {
-
         private readonly ITestOutputHelper _logger;
 
-
-          public AesEncryptionTests(ITestOutputHelper logger)
+        public AesEncryptionTests(ITestOutputHelper logger)
         {
             _logger = logger;
         }
@@ -24,15 +20,13 @@ namespace InfrastructureTests
         {
             var code = ConfigUtilities.GetConfigValue("AppSettings:CodeSecret");
             var encryptService = new AesEncryptionService(new Base64UrlUtility());
-            var text = "";
-            var actualEncrypted = "";
 
             for (int i = 0; i < 9999; i++)
             {
                 try
                 {
-                    text = $"{DateTime.Now.Ticks}~{Convert.ToString(i).PadLeft(4, '0')}~{RandomString(random.Next(3, 40))}";
-                    actualEncrypted = encryptService.EncryptGcm(text, code);
+                    var text = $"{DateTime.Now.Ticks}~{Convert.ToString(i).PadLeft(4, '0')}~{RandomString(random.Next(3, 40))}";
+                    var actualEncrypted = encryptService.EncryptGcm(text, code);
                     var length = actualEncrypted.Length;
                     var decrypted = encryptService.DecryptGcm(actualEncrypted, code);
                     _logger.WriteLine($"lengthEncrypted:{actualEncrypted.Length} text:{text} decrypted:{decrypted}");
@@ -43,7 +37,6 @@ namespace InfrastructureTests
                     _logger.WriteLine($"{ex.Message}");
                 }
             }
-
         }
 
         [Fact]
@@ -57,11 +50,11 @@ namespace InfrastructureTests
             var encrypted = encryptService.Encrypt(text, secret);
             var decrypted = encryptService.Decrypt(encrypted, secret);
             var dateBack = Convert.ToInt64(decrypted.Split("~")[0]);
-            var relidBack = decrypted.Substring(dateBack.ToString().Length + 1);
+            //var relidBack = decrypted.Substring(dateBack.ToString().Length + 1);
+            var relidBack = decrypted[(dateBack.ToString().Length + 1)..];
             Assert.Equal(text, decrypted);
             Assert.Equal(date, dateBack);
             Assert.Equal(relid, relidBack);
-
         }
 
         [Fact]
@@ -69,30 +62,28 @@ namespace InfrastructureTests
         {
             var code = ConfigUtilities.GetConfigValue("AppSettings:CodeSecret");
             var encryptService = new AesEncryptionService(new Base64UrlUtility());
-            var text = "";
-            var actualEncrypted = "";
-            var usedEncrypted = "";
+
             for (int i = 0; i < 9999; i++)
             {
                 try
                 {
-                    text = $"{DateTime.Now.Ticks}~{Convert.ToString(i).PadLeft(4, '0')}~{RandomString(random.Next(3, 40))}";
-                    actualEncrypted = encryptService.Encrypt(text, code);
+                    var text = $"{DateTime.Now.Ticks}~{Convert.ToString(i).PadLeft(4, '0')}~{RandomString(random.Next(3, 40))}";
+                    var actualEncrypted = encryptService.Encrypt(text, code);
                     var length = actualEncrypted.Length;
-                    usedEncrypted = actualEncrypted.Substring(0, length - (i % length));
+                    var usedEncrypted = actualEncrypted.Substring(0, length - (i % length));
                     var decrypted = encryptService.Decrypt("Z9Phep5GUxkzV3SIQ1m_pNfcPzFMfupsE-pzQwzFYKJNnglz1viGMx-ShAEfN3oe8cGEGZGWpbuXr7oP0D6zyYTs58WS6H4jqaBVdXos", code);
                     _logger.WriteLine($"lengthEncrypted:{actualEncrypted.Length} text:{text} decrypted:{decrypted}");
                     Assert.Equal(text, decrypted);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     _logger.WriteLine($"{ex.Message}");
                 }
             }
         }
 
+        private static readonly Random random = new((int)(DateTime.Now.Ticks % Int32.MaxValue));
 
-        private static readonly Random random = new Random((int)(DateTime.Now.Ticks % Int32.MaxValue));
         public static string RandomString(int length)
         {
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ! 23~`'\":;<,>.?/\\| ";// 0123456789";
@@ -104,6 +95,7 @@ namespace InfrastructureTests
             }
             return retstring;
         }
+
         public static int RandomInteger(string chars)
         {
             var numString = new string(Enumerable.Repeat(chars, 2)
@@ -112,7 +104,7 @@ namespace InfrastructureTests
             return Int32.Parse(numString);
         }
 
-        //[Fact]
+        [Fact]
         public void SearchCriteriaDecrypt()
         {
             var encryptService = new AesEncryptionService(new Base64UrlUtility());
@@ -127,14 +119,14 @@ namespace InfrastructureTests
                 {
                     cinx += keyword.Length;
                     var lastIndex = line.IndexOf(" ", cinx);
-                    var code = lastIndex < 0 ? line[cinx..] : line.Substring(cinx, lastIndex-cinx);                    
+                    //var code = lastIndex < 0 ? line[cinx..] : line.Substring(cinx..lastIndex-cinx);
+                    var code = lastIndex < 0 ? line[cinx..] : line[cinx..(lastIndex - cinx)];
                     text[inx] = line.Replace($"{keyword}{code}", "");
                     var searchCrit = encryptService.Decrypt(code, secretKey);
                     text[inx] = searchCrit + " " + text[inx];
                 }
             }
             System.IO.File.WriteAllLines("c:\\temp\\decryptOut.txt", text);
-
         }
     }
 }

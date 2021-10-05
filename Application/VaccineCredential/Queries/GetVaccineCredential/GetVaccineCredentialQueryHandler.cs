@@ -1,27 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using Application.Common;
 using Application.Common.Interfaces;
-using AutoMapper;
+using Application.Common.Models;
+using Application.Options;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Application.Options;
+using System;
+using System.Collections.Generic;
 using System.Text;
-using System.Security.Cryptography;
-using Application.Common.Models;
-using Microsoft.Extensions.Caching.Distributed;
-using System.Diagnostics;
-using Application.Common;
-using System.Web;
-using System.Security;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Application.VaccineCredential.Queries.GetVaccineCredential
 {
     public class GetVaccineCredentialQueryHandler : IRequestHandler<GetVaccineCredentialQuery, VaccineCredentialModel>
     {
-        private readonly ISnowFlakeService _snowFlakeService;
+        private readonly IAzureSynapseService _azureSynapseService;
         private readonly ILogger<GetVaccineCredentialQueryHandler> _logger;
         private readonly IJwtSign _jwtSign;
         private readonly IJwtChunk _jwtChunk;
@@ -33,10 +27,9 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
         private readonly IRateLimitService _rateLimitService;
         private readonly int NUMBER_OF_DOSES = 5;
 
-
-        public GetVaccineCredentialQueryHandler(IRateLimitService rateLimitService, AppSettings appSettings, IAesEncryptionService aesEncryptionService, IQrApiService qrApiService, ICompact compactor, ICredentialCreator credCreator, IJwtSign jwtSign, IJwtChunk jwtChunk, ISnowFlakeService snowFlakeService, ILogger<GetVaccineCredentialQueryHandler> logger)
+        public GetVaccineCredentialQueryHandler(IRateLimitService rateLimitService, AppSettings appSettings, IAesEncryptionService aesEncryptionService, IQrApiService qrApiService, ICompact compactor, ICredentialCreator credCreator, IJwtSign jwtSign, IJwtChunk jwtChunk, IAzureSynapseService azureSynapseService, ILogger<GetVaccineCredentialQueryHandler> logger)
         {
-            _snowFlakeService = snowFlakeService;
+            _azureSynapseService = azureSynapseService;
             _logger = logger;
             _jwtSign = jwtSign;
             _jwtChunk = jwtChunk;
@@ -46,11 +39,9 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
             _aesEncryptionService = aesEncryptionService;
             _appSettings = appSettings;
             _rateLimitService = rateLimitService;
-
         }
 
-        public async Task<VaccineCredentialModel> Handle(GetVaccineCredentialQuery request,
-            CancellationToken cancellationToken)
+        public async Task<VaccineCredentialModel> Handle(GetVaccineCredentialQuery request, CancellationToken cancellationToken)
         {
             var message = $"The id is {Utils.Sanitize(request.Id)}";
             _logger.LogInformation(message);
@@ -68,7 +59,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
             string pin;
             DateTime dateCreated;
             // 0.  Decrypt id with secretkey to get date~id
-            
+
             try
             {
                 var decrypted = "";
@@ -77,7 +68,8 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                     //try new way first
                     decrypted = _aesEncryptionService.DecryptGcm(request.Id, _appSettings.CodeSecret);
                 }
-                catch{
+                catch
+                {
                     //if fails try old way if configured to do so
                     if (_appSettings.TryLegacyEncryption == "1")
                     {
@@ -95,22 +87,22 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                 _logger.LogInformation($"id:{id} had error: {exception.Message}.");
                 return vaccineCredentialModel;
             }
-            if(request.Pin != pin)
+            if (request.Pin != pin)
             {
                 _logger.LogInformation($"id:{id} has invalid pin.");
                 return vaccineCredentialModel;
-
             }
             if (dateCreated < DateTime.Now.Subtract(new TimeSpan(Convert.ToInt32(_appSettings.LinkExpireHours), 0, 0)))
             {
                 _logger.LogInformation($"id:{id} has expired since its more than {_appSettings.LinkExpireHours} hours old.");
                 return vaccineCredentialModel;
             }
-            
+
             // Get Vaccine Credential
-            Vc responseVc = await _snowFlakeService.GetVaccineCredentialSubjectAsync(id, cancellationToken);            
+            //Vc responseVc = await _snowFlakeService.GetVaccineCredentialSubjectAsync(id, cancellationToken);
+            Vc responseVc = await _azureSynapseService.GetVaccineCredentialSubjectAsync(id, cancellationToken);
             _logger.LogInformation($"id:{id} being retrieved responseFoundVc={responseVc != null}.");
-            
+
             if (responseVc != null)
             {
                 try
@@ -119,42 +111,42 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                     Vci cred = _credCreator.GetCredential(responseVc);
 
                     //make sure cred only has at most 5 doses. (fhirBundle index starts at 0)
-                    if(cred.vc.credentialSubject.fhirBundle.entry.Count > NUMBER_OF_DOSES + 1)
+                    if (cred.Vc.CredentialSubject.FhirBundle.Entry.Count > NUMBER_OF_DOSES + 1)
                     {
-                        var cntRemove = cred.vc.credentialSubject.fhirBundle.entry.Count - (NUMBER_OF_DOSES + 1);
-                        cred.vc.credentialSubject.fhirBundle.entry.RemoveRange(1, cntRemove);
+                        var cntRemove = cred.Vc.CredentialSubject.FhirBundle.Entry.Count - (NUMBER_OF_DOSES + 1);
+                        cred.Vc.CredentialSubject.FhirBundle.Entry.RemoveRange(1, cntRemove);
                     }
 
                     var dob = "";
-                    if (DateTime.TryParse(cred.vc.credentialSubject.fhirBundle.entry[0].resource.birthDate, out DateTime dateOfBirth))
+                    if (DateTime.TryParse(cred.Vc.CredentialSubject.FhirBundle.Entry[0].Resource.BirthDate, out DateTime dateOfBirth))
                     {
                         dob = dateOfBirth.ToString("MM/dd/yyyy");
                     }
 
                     var doses = new List<Dose>();
-                    for (int ix = 1; ix < cred.vc.credentialSubject.fhirBundle.entry.Count; ix++)
-                        {
-                        var d = cred.vc.credentialSubject.fhirBundle.entry[ix];
+                    for (int ix = 1; ix < cred.Vc.CredentialSubject.FhirBundle.Entry.Count; ix++)
+                    {
+                        var d = cred.Vc.CredentialSubject.FhirBundle.Entry[ix];
                         var doa = "";
-                        if (DateTime.TryParse(d.resource.occurrenceDateTime, out var d2))
+                        if (DateTime.TryParse(d.Resource.OccurrenceDateTime, out var d2))
                         {
                             doa = d2.ToString("MM/dd/yyyy");
                         }
-                        d.resource.lotNumber = Utils.TrimString(Utils.ParseLotNumber(d.resource.lotNumber), 20);
-                        d.resource.performer = null; //Remove performer
+                        d.Resource.LotNumber = Utils.TrimString(Utils.ParseLotNumber(d.Resource.LotNumber), 20);
+                        d.Resource.Performer = null; //Remove performer
                         // Provider set to null U11106
                         var dose = new Dose
                         {
                             Doa = doa,
-                            LotNumber = d.resource.lotNumber,
+                            LotNumber = d.Resource.LotNumber,
                             Provider = null,
-                            Type = Utils.VaccineTypeNames[d.resource.vaccineCode.coding[0].code]
+                            Type = Utils.VaccineTypeNames[d.Resource.VaccineCode.Coding[0].Code]
                         };
                         doses.Add(dose);
                     }
-                    var firstName = cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].given[0];
+                    var firstName = cred.Vc.CredentialSubject.FhirBundle.Entry[0].Resource.Name[0].Given[0];
 
-                    var lastName = cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].family;
+                    var lastName = cred.Vc.CredentialSubject.FhirBundle.Entry[0].Resource.Name[0].Family;
 
                     var jsonVaccineCredential = JsonConvert.SerializeObject(cred, Formatting.None, new JsonSerializerSettings
                     {
@@ -163,13 +155,13 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
 
                     // 2. Compress it
                     var compressedJson = _compactor.Compress(jsonVaccineCredential);
-                    
+
                     // 3. Get the signature
                     var signature = _jwtSign.Signature(compressedJson);
-                    
+
                     var verifiableCredentials = new VerifiableCredentials
                     {
-                        verifiableCredential = new List<string> { signature }
+                        VerifiableCredential = new List<string> { signature }
                     };
 
                     var jsonVerifiableResult = JsonConvert.SerializeObject(verifiableCredentials, Formatting.Indented, new JsonSerializerSettings
@@ -178,19 +170,19 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                     });
 
                     var shcs = _jwtChunk.Chunk(signature);
-                    
+
                     var pngQr = await _qrApiService.GetQrCodeAsync(shcs[0]);
-                    
+
                     // Wallet Content
                     string walletContent = string.Empty;
-
                     if (!string.IsNullOrEmpty(request.WalletCode))
                     {
                         switch (request.WalletCode.ToUpper())
                         {
                             case "A":
-                                walletContent = $"{_appSettings.AppleWalletUrl}{shcs[0].Replace("shc:/","")}";
+                                walletContent = $"{_appSettings.AppleWalletUrl}{shcs[0].Replace("shc:/", "")}";
                                 break;
+
                             case "G":
                                 var googleWalletContent = _credCreator.GetGoogleCredential(cred, shcs[0]);
                                 var jsonGoogleWallet = JsonConvert.SerializeObject(googleWalletContent, Formatting.None, new JsonSerializerSettings
@@ -200,9 +192,10 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
 
                                 walletContent = $"{_appSettings.GoogleWalletUrl}{ _jwtSign.SignWithRsaKey(Encoding.UTF8.GetBytes(jsonGoogleWallet))}";
                                 break;
+
                             default:
                                 break;
-                        } 
+                        }
                     }
 
                     vaccineCredentialModel.VaccineCredentialViewModel = new VaccineCredentialViewModel
@@ -227,7 +220,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                 catch (Exception e)
                 {
                     _logger.LogInformation($"CORRUPTDATA-QR returning ... for  id:{id}  error:{e.Message}  {e.StackTrace}");
-                    vaccineCredentialModel.CorruptData = true ;
+                    vaccineCredentialModel.CorruptData = true;
                 }
             }
             _logger.LogInformation($"MISSING-QR returning ... for  id:{id}");
@@ -236,9 +229,8 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
 
         private async Task<RateLimit> CallRegulate(string id)
         {
-
             var rateLimit = await _rateLimitService.RateLimitAsync(
-                id, 
+                id,
                 Convert.ToInt32(_appSettings.MaxQrTries),
                 TimeSpan.FromSeconds(Convert.ToInt32(_appSettings.MaxQrSeconds)));
 

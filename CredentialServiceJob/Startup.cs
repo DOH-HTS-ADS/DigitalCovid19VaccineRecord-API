@@ -1,9 +1,8 @@
 ﻿using Application.Common.Interfaces;
 using Application.Options;
 using Infrastructure;
-using Infrastructure.SnowFlake;
+using Infrastructure.AzureSynapse;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -11,16 +10,11 @@ using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.Options;
 using SendGrid;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CredentialServiceJob
 {
     public class Startup
     {
-
         public IServiceCollection ConfigureService()
         {
             var services = ConfigureServices();
@@ -44,7 +38,7 @@ namespace CredentialServiceJob
                  .AddTransient<IStartupFilter, OptionsValidationStartupFilter>()
 
                  .Configure<SendGridSettings>(o => Configuration.GetSection("SendGridSettings").Bind(o))
-                 .Configure<SnowFlakeSettings>(o => Configuration.GetSection("SnowFlakeSettings").Bind(o))
+                 .Configure<AzureSynapseSettings>(o => Configuration.GetSection("AzureSynapseSettings").Bind(o))
                  .Configure<AppSettings>(o => Configuration.GetSection("AppSettings").Bind(o))
                  .Configure<TwilioSettings>(o => Configuration.GetSection("TwilioSettings").Bind(o))
                  .Configure<MessageQueueSettings>(o => Configuration.GetSection("MessageQueueSettings").Bind(o))
@@ -58,14 +52,14 @@ namespace CredentialServiceJob
                  }))
 
                  .AddSingleton(r => r.GetRequiredService<IOptions<SendGridSettings>>().Value)
-                 .AddSingleton(r => r.GetRequiredService<IOptions<SnowFlakeSettings>>().Value)
+                 .AddSingleton(r => r.GetRequiredService<IOptions<AzureSynapseSettings>>().Value)
                  .AddSingleton(r => r.GetRequiredService<IOptions<AppSettings>>().Value)
                  .AddSingleton(r => r.GetRequiredService<IOptions<TwilioSettings>>().Value)
                  .AddSingleton(r => r.GetRequiredService<IOptions<MessageQueueSettings>>().Value)
                  .AddSingleton(r => r.GetRequiredService<IOptions<KeySettings>>().Value)
 
                  .AddSingleton<ISettingsValidate>(r => r.GetRequiredService<IOptions<SendGridSettings>>().Value)
-                 .AddSingleton<ISettingsValidate>(r => r.GetRequiredService<IOptions<SnowFlakeSettings>>().Value)
+                 .AddSingleton<ISettingsValidate>(r => r.GetRequiredService<IOptions<AzureSynapseSettings>>().Value)
                  .AddSingleton<ISettingsValidate>(r => r.GetRequiredService<IOptions<AppSettings>>().Value)
                  .AddSingleton<ISettingsValidate>(r => r.GetRequiredService<IOptions<TwilioSettings>>().Value)
                  .AddSingleton<ISettingsValidate>(r => r.GetRequiredService<IOptions<MessageQueueSettings>>().Value)
@@ -75,7 +69,7 @@ namespace CredentialServiceJob
                  .AddSingleton<IBase64UrlUtility, Base64UrlUtility>()
                  .AddSingleton<IAesEncryptionService, AesEncryptionService>()
                  .AddSingleton<IAesEncryptionService, AesEncryptionService>()
-                 .AddSingleton<ISnowFlakeService, SnowFlakeService>()
+                 .AddSingleton<IAzureSynapseService, AzureSynapseService>()
                  .AddSingleton<IMessagingService, MessagingService>()
                  .AddSingleton<IQueueProcessor, Program>()
                  .BuildServiceProvider();
@@ -105,9 +99,8 @@ namespace CredentialServiceJob
             // required to run the application
             services.AddTransient<EmailService>();
             services.AddTransient<Base64UrlUtility>();
-            services.AddTransient<SnowFlakeService>();
+            services.AddTransient<AzureSynapseService>();
             services.AddTransient<AesEncryptionService>();
-
 
             return services;
         }
@@ -121,6 +114,5 @@ namespace CredentialServiceJob
 
             return builder.Build();
         }
-
     }
 }
