@@ -59,7 +59,7 @@ The API, the middle tier between the UI and Backend to verify users’ vaccine c
 #Installation and Setup
 - Clone the GitHub repository via command line
 
-- git clone https://github.com/StateOfCalifornia/DigitalVaccineRecord-API.git
+- git clone https://github.com/DOH-HTS-ADS/DigitalCovid19VaccineRecord-API.git
 
 - Set VaccineCredentialAPI as start up project
 - Update secrets.json
