@@ -40,3 +40,23 @@ stages:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'drop'
         publishLocation: 'Container'
+
+- stage: dev_deployment
+  displayName: Deploy solution to Development
+  dependsOn: [build]
+  jobs:
+    - deployment: dev_deployment
+      displayName: Deploy to Development Environment
+      environment: Development
+      strategy: 
+        runOnce:
+          deploy:
+            steps:
+            - task: DownloadBuildArtifacts@1
+              displayName: Download Atrifact
+              inputs:
+                buildType: 'current'
+                downloadType: 'single'
+                artifactName: 'drop'
+                downloadPath: '$(System.ArtifactsDirectory)'
+            
