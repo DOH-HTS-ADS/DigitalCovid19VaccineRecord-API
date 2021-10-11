@@ -59,4 +59,51 @@ stages:
                 downloadType: 'single'
                 artifactName: 'drop'
                 downloadPath: '$(System.ArtifactsDirectory)'
-            
+            - task: AzureRmWebAppDeployment@4
+              displayName: Azure App Service Deploy
+              inputs:
+                ConnectionType: 'AzureRM'
+                azureSubscription: 'doh-sub-vaccs-01 (c47773b2-99d9-4614-8b2c-737ab9ec3e73)-1813'
+                appType: 'webApp'
+                WebAppName: 'app-waverify-api-dev'
+                packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'
+
+- stage: qa_deployment
+  displayName: Deploy solution to QA
+  dependsOn: [dev_deployment]
+  jobs:
+    - deployment: qa_deployment
+      displayName: Deploy to QA Environment
+      environment: QA
+      strategy: 
+        runOnce:
+          deploy:
+            steps:
+            - task: AzureRmWebAppDeployment@4
+              displayName: Azure App Service Deploy
+              inputs:
+                ConnectionType: 'AzureRM'
+                azureSubscription: 'doh-sub-vaccs-01 (c47773b2-99d9-4614-8b2c-737ab9ec3e73)-1813'
+                appType: 'webApp'
+                WebAppName: 'app-waverify-api-qa'
+                packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'
+
+- stage: prod_deployment
+  displayName: Deploy solution to Production
+  dependsOn: [qa_deployment]
+  jobs:
+    - deployment: prod_deployment
+      displayName: Deploy to Production Environment
+      environment: Production
+      strategy: 
+        runOnce:
+          deploy:
+            steps:
+            - task: AzureRmWebAppDeployment@4
+              displayName: Azure App Service Deploy
+              inputs:
+                ConnectionType: 'AzureRM'
+                azureSubscription: 'doh-sub-vaccs-01 (c47773b2-99d9-4614-8b2c-737ab9ec3e73)-1813'
+                appType: 'webApp'
+                WebAppName: 'app-waverify-api-prod'
+                packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'         
