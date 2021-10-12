@@ -38,8 +38,7 @@ stages:
       displayName: Publish Artifact
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-        ArtifactName: 'drop'
-        publishLocation: 'Container'
+      condition: succeededOrFailed()
 
 - stage: dev_deployment
   displayName: Deploy solution to Development
