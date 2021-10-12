@@ -26,20 +26,19 @@ stages:
       inputs:
         command: 'build'
         projects: '**/*.csproj'
-        arguments: '--configuration $(BuildConfiguration)'
+        arguments: '--configuration Release'
     - task: DotNetCoreCLI@2
       displayName: Publish
       inputs:
         command: 'publish'
         publishWebProjects: true
-        arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
+        arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
         zipAfterPublish: True
     - task: PublishBuildArtifacts@1
       displayName: Publish Artifact
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-        ArtifactName: 'drop'
-        publishLocation: 'Container'
+      condition: succeededOrFailed()
 
 - stage: dev_deployment
   displayName: Deploy solution to Development
