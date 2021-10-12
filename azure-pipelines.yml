@@ -20,12 +20,12 @@ stages:
       displayName: Restore
       inputs:
         command: 'restore'
-        projects: '**/*.csproj'
+        projects: '$(Parameters.RestoreBuildProjects)'
     - task: DotNetCoreCLI@2
       displayName: Build
       inputs:
         command: 'build'
-        projects: '**/*.csproj'
+        projects: '$(Parameters.RestoreBuildProjects)'
         arguments: '--configuration $(BuildConfiguration)'
     - task: DotNetCoreCLI@2
       displayName: Publish
