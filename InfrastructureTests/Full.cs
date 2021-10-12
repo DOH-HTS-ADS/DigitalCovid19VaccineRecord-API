@@ -50,7 +50,7 @@ namespace InfrastructureTests
             _keySettings = new();
             _keySettings.PrivateKey = privateKeyString;
             _keySettings.Certificate = certificateString;
-            _keySettings.Issuer = "https://myvaccinerecord.cdph.ca.gov/creds";
+            _keySettings.Issuer = "http://localhost:1267/";
             _jwt = new JwtSign(_b64, _keySettings);
             _compact = new Compact();
             _output = output;
