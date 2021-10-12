@@ -26,7 +26,7 @@ stages:
       inputs:
         command: 'build'
         projects: '**/CredentialServiceJob/CredentialServiceJob.csproj'
-        arguments: '--configuration Release'
+        arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
     - task: DotNetCoreCLI@2
       displayName: Publish
       inputs:
