@@ -20,6 +20,8 @@ stages:
       displayName: Restore
       inputs:
         command: 'restore'
+        feedsToUse: 'select'
+        vstsFeed: '6b075761-2854-45d2-ab54-85dacaa0f185'
         projects: '**/*.csproj'
     - task: DotNetCoreCLI@2
       displayName: Build
