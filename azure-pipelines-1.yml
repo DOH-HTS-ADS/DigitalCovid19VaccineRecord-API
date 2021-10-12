@@ -65,7 +65,7 @@ stages:
                 appType: 'webApp'
                 WebAppName: 'app-waverify-api-dev'
                 VirtualApplication: '/CredentialServiceJob'
-                packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+                packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'
 
 - stage: qa_deployment
   displayName: Deploy solution to QA
