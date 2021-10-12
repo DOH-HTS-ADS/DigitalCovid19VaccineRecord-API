@@ -14,7 +14,7 @@ stages:
   displayName: Build and Publish
   jobs:  
   - job: Build
-    displayName: Build and Publish API
+    displayName: Build and Publish WebJob
     steps:
     - task: DotNetCoreCLI@2
       displayName: Restore
