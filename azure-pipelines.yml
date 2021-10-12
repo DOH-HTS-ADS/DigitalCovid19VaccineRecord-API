@@ -1,52 +1,109 @@
-# ASP.NET Core (.NET Framework)
-# Build and test ASP.NET Core projects targeting the full .NET Framework.
-# Add steps that publish symbols, save build artifacts, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
 
 trigger:
 - main
 
 pool:
-  vmImage: 'windows-latest'
+  name: Azure Pipelines
 
-variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
+stages:
+- stage: build
+  displayName: Build solution
+  jobs:  
+  - job: Build
+    displayName: Build and publish solution
+    steps:
+    - task: DotNetCoreCLI@2
+      displayName: Restore
+      inputs:
+        command: 'restore'
+        projects: '**/*.csproj'
+    - task: DotNetCoreCLI@2
+      displayName: Build
+      inputs:
+        command: 'build'
+        projects: '**/*.csproj'
+        arguments: '--configuration $(BuildConfiguration)'
+    - task: DotNetCoreCLI@2
+      displayName: Publish
+      inputs:
+        command: 'publish'
+        publishWebProjects: true
+        arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
+        zipAfterPublish: True
+    - task: PublishBuildArtifacts@1
+      displayName: Publish Artifact
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
 
-steps:
+- stage: dev_deployment
+  displayName: Deploy solution to Development
+  dependsOn: [build]
+  jobs:
+    - deployment: dev_deployment
+      displayName: Deploy to Development Environment
+      environment: Development
+      strategy: 
+        runOnce:
+          deploy:
+            steps:
+            - task: DownloadBuildArtifacts@1
+              displayName: Download Atrifact
+              inputs:
+                buildType: 'current'
+                downloadType: 'single'
+                artifactName: 'drop'
+                downloadPath: '$(System.ArtifactsDirectory)'
+            - task: AzureRmWebAppDeployment@4
+              displayName: Azure App Service Deploy
+              inputs:
+                ConnectionType: 'AzureRM'
+                azureSubscription: 'doh-sub-vaccs-01 (c47773b2-99d9-4614-8b2c-737ab9ec3e73)-1813'
+                appType: 'webApp'
+                WebAppName: 'app-waverify-api-dev'
+                packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'
 
-- task: UseDotNet@2
-  inputs:
-    packageType: 'sdk'
-    version: '5.0.x'
-- task: NuGetToolInstaller@1
-  inputs:
-    versionSpec: '5.8.1'
-    checkLatest: true
+- stage: qa_deployment
+  displayName: Deploy solution to QA
+  dependsOn: [dev_deployment]
+  jobs:
+    - deployment: qa_deployment
+      displayName: Deploy to QA Environment
+      environment: QA
+      strategy: 
+        runOnce:
+          deploy:
+            steps:
+            - task: AzureRmWebAppDeployment@4
+              displayName: Azure App Service Deploy
+              inputs:
+                ConnectionType: 'AzureRM'
+                azureSubscription: 'doh-sub-vaccs-01 (c47773b2-99d9-4614-8b2c-737ab9ec3e73)-1813'
+                appType: 'webApp'
+                WebAppName: 'app-waverify-api-qa'
+                packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'
 
-- task: NuGetCommand@2
-  inputs:
-    restoreSolution: '$(solution)'
-
-- task: VSBuild@1
-  inputs:
-    solution: '$(solution)'
-    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
-
-
-- task: DotNetCoreCLI@2
-  displayName: Publish
-  inputs:
-    command: publish
-    publishWebProjects: True
-    arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
-    zipAfterPublish: false
-
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact'
-  inputs:
-    PathtoPublish: '$(build.artifactstagingdirectory)'
-  condition: succeededOrFailed()    
+- stage: prod_deployment
+  displayName: Deploy solution to Production
+  dependsOn: [qa_deployment]
+  jobs:
+    - deployment: prod_deployment
+      displayName: Deploy to Production Environment
+      environment: Production
+      strategy: 
+        runOnce:
+          deploy:
+            steps:
+            - task: AzureRmWebAppDeployment@4
+              displayName: Azure App Service Deploy
+              inputs:
+                ConnectionType: 'AzureRM'
+                azureSubscription: 'doh-sub-vaccs-01 (c47773b2-99d9-4614-8b2c-737ab9ec3e73)-1813'
+                appType: 'webApp'
+                WebAppName: 'app-waverify-api-prod'
+                packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'         
