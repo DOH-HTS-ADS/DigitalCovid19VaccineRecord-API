@@ -20,21 +20,19 @@ stages:
       displayName: Restore
       inputs:
         command: 'restore'
-        feedsToUse: 'select'
-        vstsFeed: '6b075761-2854-45d2-ab54-85dacaa0f185'
         projects: '**/*.csproj'
     - task: DotNetCoreCLI@2
       displayName: Build
       inputs:
         command: 'build'
         projects: '**/*.csproj'
-        arguments: '--configuration $(BuildConfiguration)'
+        arguments: '--configuration Release'
     - task: DotNetCoreCLI@2
       displayName: Publish
       inputs:
         command: 'publish'
         publishWebProjects: true
-        arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
+        arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
         zipAfterPublish: True
     - task: PublishBuildArtifacts@1
       displayName: Publish Artifact
