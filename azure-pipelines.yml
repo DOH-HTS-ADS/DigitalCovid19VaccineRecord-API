@@ -33,29 +33,21 @@ stages:
         command: 'publish'
         publishWebProjects: true
         arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
-        zipAfterPublish: false
+        zipAfterPublish: true
     - task: DotNetCoreCLI@2
       displayName: Build WebJobs
       inputs:
         command: 'build'
-        projects: '**/CredentialServiceJob.csproj'
+        projects: 'CredentialServiceJob/CredentialServiceJob.csproj'
         arguments: '--configuration Release'
     - task: DotNetCoreCLI@2
       displayName: Publish WebJob
       inputs:
         command: 'publish'
         publishWebProjects: false
-        projects: '**/CredentialServiceJob.csproj'
-        arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/App_Data/jobs/continuous/CredentialServiceJob'
+        projects: 'CredentialServiceJob/CredentialServiceJob.csproj'
+        arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/VaccineCredential/App_Data\jobs\continuous\CredentialServiceJob'
         zipAfterPublish: false
-        modifyOutputPath: false
-    - task: ArchiveFiles@2
-      inputs:
-        rootFolderOrFile: '$(Build.ArtifactStagingDirectory)'
-        includeRootFolder: false
-        archiveType: 'zip'
-        archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-        replaceExistingArchive: true
     - task: PublishBuildArtifacts@1
       displayName: Publish Artifact
       condition: succeededOrFailed()
@@ -90,14 +82,14 @@ stages:
                 appType: 'webApp'
                 WebAppName: 'app-waverify-api-dev'
                 packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'
-            #- task: AzureRmWebAppDeployment@4
-            #  displayName: Deploy WebJob
-            #  inputs:
-            #    ConnectionType: 'AzureRM'
-            #    azureSubscription: 'doh-sub-vaccs-01 (c47773b2-99d9-4614-8b2c-737ab9ec3e73)-1813'
-            #    appType: 'webApp'
-            #    WebAppName: 'app-waverify-api-dev'
-            #    packageForLinux: '$(System.ArtifactsDirectory)/**/publish_output/App_Data/jobs/continuous/CredentialServiceJob/**.zip'
+            - task: AzureRmWebAppDeployment@4
+              displayName: Deploy WebJob
+              inputs:
+                ConnectionType: 'AzureRM'
+                azureSubscription: 'doh-sub-vaccs-01 (c47773b2-99d9-4614-8b2c-737ab9ec3e73)-1813'
+                appType: 'webApp'
+                WebAppName: 'app-waverify-api-dev'
+                packageForLinux: '$(System.ArtifactsDirectory)/**/VaccineCredential'
 
 - stage: qa_deployment
   displayName: Deploy solution to QA
