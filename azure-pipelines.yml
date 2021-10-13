@@ -26,42 +26,34 @@ stages:
       inputs:
         command: 'build'
         projects: '**/*.csproj'
-        arguments: '--configuration Release'
+        arguments: '--configuration $(BuildConfiguration)'
     - task: DotNetCoreCLI@2
       displayName: Publish API
       inputs:
         command: 'publish'
         publishWebProjects: true
-        arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
+        arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
         zipAfterPublish: false
     - task: DotNetCoreCLI@2
       displayName: Build WebJob
       inputs:
         command: 'build'
         projects: 'CredentialServiceJob/CredentialServiceJob.csproj'
-        arguments: '--configuration Release'
+        arguments: '--configuration $(BuildConfiguration)'
     - task: DotNetCoreCLI@2
       displayName: Publish WebJob
       inputs:
         command: 'publish'
         publishWebProjects: false
         projects: 'CredentialServiceJob/CredentialServiceJob.csproj'
-        arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/App_Data\jobs\continuous\CredentialServiceJob'
+        arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)/VaccineCredential/App_Data\jobs\continuous\CredentialServiceJob'
         zipAfterPublish: false
-    - task: ArchiveFiles@2
-      inputs:
-        rootFolderOrFile: '$(Build.ArtifactStagingDirectory)/VaccineCredential'
-        includeRootFolder: false
-        archiveType: 'zip'
-        archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-        replaceExistingArchive: true
     - task: PublishBuildArtifacts@1
       displayName: Publish Artifact
       condition: succeededOrFailed()
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'drop'
-        publishLocation: 'Container'
 
 - stage: dev_deployment
   displayName: Deploy solution to Development
@@ -88,7 +80,8 @@ stages:
                 azureSubscription: 'doh-sub-vaccs-01 (c47773b2-99d9-4614-8b2c-737ab9ec3e73)-1813'
                 appType: 'webApp'
                 WebAppName: 'app-waverify-api-dev'
-                packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'
+                #packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'
+                packageForLinux: '$(System.ArtifactsDirectory)/**/VaccineCredential'
             #- task: AzureRmWebAppDeployment@4
             #  displayName: Deploy WebJob
             #  inputs:
