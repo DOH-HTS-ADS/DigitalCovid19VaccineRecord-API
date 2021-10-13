@@ -87,7 +87,7 @@ stages:
                 appType: 'webApp'
                 WebAppName: 'app-waverify-api-dev'
                 VirtualApplication: '/CredentialServiceJob'
-                packageForLinux: '$(System.ArtifactsDirectory)/VaccineCredential/App_Data/jobs/continuous/CredentialServiceJob/CredentialServiceJob'
+                packageForLinux: '$(System.ArtifactsDirectory)/VaccineCredential/App_Data\jobs\continuous\CredentialServiceJob\CredentialServiceJob'
 
 - stage: qa_deployment
   displayName: Deploy solution to QA
