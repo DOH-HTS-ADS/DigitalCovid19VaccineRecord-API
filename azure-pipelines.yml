@@ -80,7 +80,7 @@ stages:
                 appType: 'webApp'
                 WebAppName: 'app-waverify-api-dev'
                 packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'
-            - task: AzureRmWebAppDeployment@4
+            #- task: AzureRmWebAppDeployment@4
               #displayName: Deploy WebJob
               #inputs:
                 #ConnectionType: 'AzureRM'
