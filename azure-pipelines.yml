@@ -32,6 +32,7 @@ stages:
       inputs:
         command: 'build'
         projects: 'CredentialServiceJob/CredentialServiceJob.csproj'
+        arguments: '--configuration Release'
     - task: DotNetCoreCLI@2
       displayName: Publish API
       inputs:
