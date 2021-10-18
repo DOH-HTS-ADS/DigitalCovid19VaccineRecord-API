@@ -34,6 +34,18 @@ namespace CredentialServiceJob
             builder.AddUserSecrets<Program>();
 
             Configuration = builder.Build();
+
+            services.AddTransient<IStartupFilter, OptionsValidationStartupFilter>();
+            services.AddMyInfrastructure(Configuration);
+            services.AddLogging(configure => configure.AddApplicationInsightsWebJobs(c => c.InstrumentationKey = Environment.GetEnvironmentVariable("APPINSIGHTS_INSTRUMENTATIONKEY"))
+            .AddConsole(configure =>
+                {
+                    // print out only 1 line per message( without this 2 are printed)
+                    configure.FormatterName = ConsoleFormatterNames.Systemd;
+                }));
+            services.AddSingleton<IQueueProcessor, Program>();
+            services.BuildServiceProvider();
+            /*
             services
                  .AddTransient<IStartupFilter, OptionsValidationStartupFilter>()
 
@@ -74,7 +86,7 @@ namespace CredentialServiceJob
                  .AddSingleton<IQueueProcessor, Program>()
                  .BuildServiceProvider();
 
-            AddSendGridClient(services);
+            AddSendGridClient(services);*/
 
             return services;
         }
