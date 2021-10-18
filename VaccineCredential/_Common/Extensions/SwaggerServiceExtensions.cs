@@ -36,7 +36,7 @@ namespace VaccineCredential.Api.Common.Extensions
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "California Department of Technology",
+                        Name = "Washington Department of Health",
                         Url = new Uri("http://www.dotnetdetail.net")
                     },
                 });

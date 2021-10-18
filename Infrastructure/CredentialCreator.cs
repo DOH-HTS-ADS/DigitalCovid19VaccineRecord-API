@@ -68,7 +68,7 @@ namespace Infrastructure
             {
                 SourceUri = new SourceUri()
                 {
-                    Description = "State of California",
+                    Description = "State of Washington",
                     Uri = _keySettings.GoogleWalletLogo
                 }
             };

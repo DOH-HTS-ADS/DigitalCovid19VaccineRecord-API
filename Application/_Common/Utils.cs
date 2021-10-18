@@ -326,14 +326,14 @@ namespace Application.Common
         {
             return lang switch
             {
-                "es" => $"Gracias por visitar el portal del Registro digital de vacunación contra el COVID-19 del estado de California. El enlace para recuperar su código de registro de vacunación contra el COVID-19 tiene una validez de {linkExpireHours} horas. Una vez accedido y guardado en su dispositivo, el código QR no expirará.\nVer el registro de vacunación: {url}",
+                "es" => $"Gracias por visitar el portal del Registro digital de vacunación contra el COVID-19 del estado de Washington. El enlace para recuperar su código de registro de vacunación contra el COVID-19 tiene una validez de {linkExpireHours} horas. Una vez accedido y guardado en su dispositivo, el código QR no expirará.\nVer el registro de vacunación: {url}",
                 "cn" => $"感谢访问加利福尼亚州数字新冠肺炎疫苗接种记录门户网站。您的新冠肺炎疫苗接种记录的链接在 {linkExpireHours} 小时内有效。访问并保存到设备后，二维码将不会过期。\n查看疫苗接种记录: {url}",
                 "tw" => $"感謝您造訪加州的數位 COVID-19 疫苗接種記錄入口網站。用來擷取新冠肺炎疫苗接種記錄代碼之連結的有效期間為 {linkExpireHours} 小時。存取並儲存到裝置後，二維碼就不會過期。\n檢視疫苗接種記錄: {url}",
                 "kr" => $"캘리포니아주의 디지털 코로나19 백신 기록 포털에 방문해 주셔서 감사합니다. 코로나19 백신 기록 코드를 되찾을 수 있는 링크는 {linkExpireHours}시간 동안 유효합니다. 액세스하여 기기에 저장한 QR 코드는 만료되지 않습니다.\n백신 기록 보기: {url}",
-                "vi" => $"Cảm ơn quý vị đã truy cập vào cổng thông tin Hồ sơ Vắc xin COVID-19 Kỹ thuật số của Tiểu bang California. Đường liên kết để truy xuất mã hồ sơ vắc xin COVID-19 của quý vị chỉ có giá trị trong {linkExpireHours} giờ. Sau khi truy cập và lưu vào thiết bị, mã QR của quý vị sẽ không hết hạn.\nXem Hồ sơ Vắc xin: {url}",
+                "vi" => $"Cảm ơn quý vị đã truy cập vào cổng thông tin Hồ sơ Vắc xin COVID-19 Kỹ thuật số của Tiểu bang Washington. Đường liên kết để truy xuất mã hồ sơ vắc xin COVID-19 của quý vị chỉ có giá trị trong {linkExpireHours} giờ. Sau khi truy cập và lưu vào thiết bị, mã QR của quý vị sẽ không hết hạn.\nXem Hồ sơ Vắc xin: {url}",
                 "ae" => $"نشكرك على زيارة البوابة الإلكترونية للسجل الرقمي للقاح فيروس كورونا (كوفيد-19) بولاية كاليفورنيا. يُعد الرابط الخاص باسترداد رمز سجل لقاح فيروس كورونا (كوفيد-19) الخاص بك ساريًا لمدة {linkExpireHours} ساعة. بمجرد الوصول إليه وحفظه على جهازك، لن تنتهي صلاحية رمز الاستجابة السريعة. \nعرض سجل اللقاح :{url}",
-                "ph" => $"Salamat sa pagbisita sa portal ng Digital na Rekord ng Bakuna para sa COVID-19 ng Estado ng California.  {linkExpireHours} na oras lang may bisa ang link para kunin ang iyong code ng bakuna para sa COVID-19. Kapag na-access na at na-save sa iyong device, hindi mag-e-expire ang QR code.\nTingnan ang Rekord ng Bakuna: {url}",
-                _ => $"Thank you for visiting the State of California's Digital COVID-19 Vaccine Record portal. The link to retrieve your COVID-19 vaccine record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire. \nView Vaccine Record: {url}",
+                "ph" => $"Salamat sa pagbisita sa portal ng Digital na Rekord ng Bakuna para sa COVID-19 ng Estado ng Washington.  {linkExpireHours} na oras lang may bisa ang link para kunin ang iyong code ng bakuna para sa COVID-19. Kapag na-access na at na-save sa iyong device, hindi mag-e-expire ang QR code.\nTingnan ang Rekord ng Bakuna: {url}",
+                _ => $"Thank you for visiting the State of Washington's Digital COVID-19 Vaccine Record portal. The link to retrieve your COVID-19 vaccine record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire. \nView Vaccine Record: {url}",
             };
         }
 
@@ -343,15 +343,15 @@ namespace Application.Common
             {
                 "es" => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 style='color: #f06724'>Registro digital de vacunación contra el COVID-19</h3>" +
-                            $"<p>Gracias por visitar el portal del Registro digital de vacunación contra el COVID-19 del estado de California. El enlace para recuperar su código de registro de vacunación contra el COVID-19 tiene una validez de {linkExpireHours} horas. Una vez accedido y guardado en su dispositivo, el código QR no expirará.</p>" +
+                            $"<p>Gracias por visitar el portal del Registro digital de vacunación contra el COVID-19 del estado de Washington. El enlace para recuperar su código de registro de vacunación contra el COVID-19 tiene una validez de {linkExpireHours} horas. Una vez accedido y guardado en su dispositivo, el código QR no expirará.</p>" +
                             $"<p><a href='{url}'>Ver el registro de vacunación </a></p>" +
                             $"<p>Obtenga más información sobre cómo <a href='{_appSettings.CDCUrl}'>protegerse y proteger a los demás</a> de parte de los Centros para el Control y la Prevención de Enfermedades. </p>" +
                             $"<p><b>¿Tiene preguntas?</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>Visite nuestra página de preguntas frecuentes</a> para obtener más información sobre su registro digital de vacunación contra el COVID-19.</p>" +
                             $"<p><b>Manténgase informado.</b></p>" +
-                            $"<p><a href='{_appSettings.CovidWebUrl}'>Consulte la información más reciente</a> sobre el COVID-19 en California.</p><br/>" +
+                            $"<p><a href='{_appSettings.CovidWebUrl}'>Consulte la información más reciente</a> sobre el COVID-19 en Washington.</p><br/>" +
                             $"<hr>" +
-                            $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Estado de California</p>" +
+                            $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Estado de Washington</p>" +
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
                 "cn" => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 style='color: #f06724'>数字新冠肺炎疫苗接种记录</h3>" +
@@ -385,21 +385,21 @@ namespace Application.Common
                             $"<p><b>질문이 있습니까?</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>FAQ 페이지에서</a> 디지털 COVID-19 백신 접종 기록에 대해 더 알아보십시오.</p>" +
                             $"<p><b>최신 정보를 얻으십시오.</b></p>" +
-                            $"<p><a href='{_appSettings.CovidWebUrl}'>COVID-19 in California에서</a>최신 정보를 보십시오.</p><br/>" +
+                            $"<p><a href='{_appSettings.CovidWebUrl}'>COVID-19 in Washington에서</a>최신 정보를 보십시오.</p><br/>" +
                             $"<hr>" +
                             $"<footer><p style='text-align:center'>공식 캘리포니아주 행정청 이메일</p>" +
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
                 "vi" => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 style='color: #f06724'>Hồ sơ Vắc xin COVID-19 Kỹ thuật số</h3>" +
-                            $"<p>Cảm ơn quý vị đã truy cập vào cổng thông tin Hồ sơ Vắc xin COVID-19 Kỹ thuật số của Tiểu bang California. Đường liên kết để truy xuất mã hồ sơ vắc xin COVID-19 của quý vị chỉ có giá trị trong {linkExpireHours} giờ. Sau khi truy cập và lưu vào thiết bị, mã QR của quý vị sẽ không hết hạn.</p>" +
+                            $"<p>Cảm ơn quý vị đã truy cập vào cổng thông tin Hồ sơ Vắc xin COVID-19 Kỹ thuật số của Tiểu bang Washington. Đường liên kết để truy xuất mã hồ sơ vắc xin COVID-19 của quý vị chỉ có giá trị trong {linkExpireHours} giờ. Sau khi truy cập và lưu vào thiết bị, mã QR của quý vị sẽ không hết hạn.</p>" +
                             $"<p><a href='{url}'>Xem Hồ sơ Vắc xin</a></p>" +
                             $"<p>Tìm hiểu thêm về cách <a href='{_appSettings.CDCUrl}'>bảo vệ bản thân và người khác</a> từ Trung tâm Kiểm soát và Phòng ngừa Dịch bệnh. </p>" +
                             $"<p><b>Nếu quý vị có thắc mắc?</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>Truy cập trang Các Câu hỏi Thường Gặp</a> để tìm hiểu thêm về Hồ sơ Vắc xin COVID-19 Kỹ thuật số của quý vị.</p>" +
                             $"<p><b>Hãy luôn Cập nhật.</b></p>" +
-                            $"<p><a href='{_appSettings.CovidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19 ở California.</p><br/>" +
+                            $"<p><a href='{_appSettings.CovidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19 ở Washington.</p><br/>" +
                             $"<hr>" +
-                            $"<footer><p style='text-align:center'>Email chính thức của Tiểu bang California</p>" +
+                            $"<footer><p style='text-align:center'>Email chính thức của Tiểu bang Washington</p>" +
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
                 "ae" => $"<img dir='rtl' src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 dir='rtl' style='color: #f06724'>السجل الرقمي للقاح فيروس كورونا (كوفيد-19)</h3>" +
@@ -415,27 +415,27 @@ namespace Application.Common
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
                 "ph" => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 style='color: #f06724'>Digital na Rekord ng Bakuna para sa COVID-19</h3>" +
-                            $"<p>Salamat sa pagbisita sa portal ng Digital na Rekord ng Bakuna para sa COVID-19 ng Estado ng California. {linkExpireHours} na oras lang may bisa ang link para kunin ang iyong code ng bakuna para sa COVID-19. Kapag na-access na at na-save sa iyong device, hindi mag-e-expire ang QR code.</p>" +
+                            $"<p>Salamat sa pagbisita sa portal ng Digital na Rekord ng Bakuna para sa COVID-19 ng Estado ng Washington. {linkExpireHours} na oras lang may bisa ang link para kunin ang iyong code ng bakuna para sa COVID-19. Kapag na-access na at na-save sa iyong device, hindi mag-e-expire ang QR code.</p>" +
                             $"<p><a href='{url}'>Tingnan ang Rekord ng Bakuna</a></p>" +
                             $"<p>Matuto pa mula sa Centers for Disease Control and Prevention kung paano <a href='{_appSettings.CDCUrl}'>mapoprotektahan ang iyong sarili at ang ibang tao.</a></p>" +
                             $"<p><b>May mga tanong?</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>Bisitahin ang aming page ng FAQ</a> para alamin pa ang tungkol sa iyong Digital na Record ng Bakuna sa COVID-19.</p>" +
                             $"<p><b>Makibalita.</b></p>" +
-                            $"<p><a href='{_appSettings.CovidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> sa COVID-19 sa California.</p><br/>" +
+                            $"<p><a href='{_appSettings.CovidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> sa COVID-19 sa Washington.</p><br/>" +
                             $"<hr>" +
-                            $"<footer><p style='text-align:center'>Opisyal na Email ng Departamento ng Estado ng California</p>" +
+                            $"<footer><p style='text-align:center'>Opisyal na Email ng Departamento ng Estado ng Washington</p>" +
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
                 _ => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 style='color: #f06724'>Digital COVID-19 Vaccine Record</h3>" +
-                            $"<p>Thank you for visiting the State of California's Digital COVID-19 Vaccine Record portal. The link to retrieve your COVID-19 vaccine record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.</p>" +
+                            $"<p>Thank you for visiting the State of Washington's Digital COVID-19 Vaccine Record portal. The link to retrieve your COVID-19 vaccine record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.</p>" +
                             $"<p><a href='{url}'>View Vaccine Record</a></p>" +
                             $"<p>Learn more about how to <a href='{_appSettings.CDCUrl}'>protect yourself and others</a> from the Centers for Disease Control and Prevention.</p>" +
                             $"<p><b>Have questions?</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>Visit our FAQ page</a> to learn more about your Digital COVID-19 Vaccine Record.</p>" +
                             $"<p><b>Stay Informed.</b></p>" +
-                            $"<p><a href='{_appSettings.CovidWebUrl}'>View the latest information</a> on COVID-19 in California.</p><br/>" +
+                            $"<p><a href='{_appSettings.CovidWebUrl}'>View the latest information</a> on COVID-19 in Washington.</p><br/>" +
                             $"<hr>" +
-                            $"<footer><p style='text-align:center'>Official California State Department Email</p>" +
+                            $"<footer><p style='text-align:center'>Official Washington State Department Email</p>" +
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>"
             };
         }
@@ -465,9 +465,9 @@ namespace Application.Common
                             $"<p><b>¿Tiene preguntas?</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>Visite nuestra página de preguntas frecuentes</a> para obtener más información sobre su registro digital de vacunación contra el COVID-19.</p>" +
                             $"<p><b>Manténgase informado.</b></p>" +
-                            $"<p><a href='{_appSettings.CovidWebUrl}'>Consulte la información más reciente</a> sobre el COVID-19 en California.</p><br/>" +
+                            $"<p><a href='{_appSettings.CovidWebUrl}'>Consulte la información más reciente</a> sobre el COVID-19 en Washington.</p><br/>" +
                             $"<hr>" +
-                            $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Estado de California</p>" +
+                            $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Estado de Washington</p>" +
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
                 "cn" => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 style='color: #f06724'>数字新冠肺炎疫苗接种记录</h3>" +
@@ -495,7 +495,7 @@ namespace Application.Common
                             $"<p><b>질문이 있습니까?</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>FAQ 페이지에서</a> 디지털 COVID-19 백신 접종 기록에 대해 더 알아보십시오.</p>" +
                             $"<p><b>최신 정보를 얻으십시오.</b></p>" +
-                            $"<p><a href='{_appSettings.CovidWebUrl}'>COVID-19 in California에서</a>최신 정보를 보십시오.</p><br/>" +
+                            $"<p><a href='{_appSettings.CovidWebUrl}'>COVID-19 in Washington에서</a>최신 정보를 보십시오.</p><br/>" +
                             $"<hr>" +
                             $"<footer><p style='text-align:center'>공식 캘리포니아주 행정청 이메일</p>" +
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
@@ -505,9 +505,9 @@ namespace Application.Common
                             $"<p><b>Nếu quý vị có thắc mắc?</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>Truy cập trang Các Câu hỏi Thường Gặp</a> để tìm hiểu thêm về Hồ sơ Vắc xin COVID-19 Kỹ thuật số của quý vị.</p>" +
                             $"<p><b>Hãy luôn Cập nhật.</b></p>" +
-                            $"<p><a href='{_appSettings.CovidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19 ở California.</p><br/>" +
+                            $"<p><a href='{_appSettings.CovidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19 ở Washington.</p><br/>" +
                             $"<hr>" +
-                            $"<footer><p style='text-align:center'>Email chính thức của Tiểu bang California</p>" +
+                            $"<footer><p style='text-align:center'>Email chính thức của Tiểu bang Washington</p>" +
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
                 "ae" => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png' dir='rtl'><br/>" +
                             $"<h3 dir='rtl' style='color: #f06724'>السجل الرقمي للقاح فيروس كورونا (كوفيد-19)</h3>" +
@@ -526,9 +526,9 @@ namespace Application.Common
                             $"<p><b>May mga tanong?</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>Bisitahin ang aming page ng FAQ</a> para alamin pa ang tungkol sa iyong Digital na Record ng Bakuna sa COVID-19.</p>" +
                             $"<p><b>Makibalita.</b></p>" +
-                            $"<p><a href='{_appSettings.CovidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> sa COVID-19 sa California.</p><br/>" +
+                            $"<p><a href='{_appSettings.CovidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> sa COVID-19 sa Washington.</p><br/>" +
                             $"<hr>" +
-                            $"<footer><p style='text-align:center'>Opisyal na Email ng Departamento ng Estado ng California</p>" +
+                            $"<footer><p style='text-align:center'>Opisyal na Email ng Departamento ng Estado ng Washington</p>" +
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
                 _ => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 style='color: #f06724'>Digital COVID-19 Vaccine Record</h3>" +
@@ -537,9 +537,9 @@ namespace Application.Common
                             $"<p><b>Have questions?</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>Visit our FAQ page</a> to learn more about your Digital COVID-19 Vaccine Record.</p>" +
                             $"<p><b>Stay Informed.</b></p>" +
-                            $"<p><a href='{_appSettings.CovidWebUrl}'>View the latest information</a> on COVID-19 in California.</p><br/>" +
+                            $"<p><a href='{_appSettings.CovidWebUrl}'>View the latest information</a> on COVID-19 in Washington.</p><br/>" +
                             $"<hr>" +
-                            $"<footer><p style='text-align:center'>Official California State Department Email</p>" +
+                            $"<footer><p style='text-align:center'>Official Washington State Department Email</p>" +
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>"
             };
         }
