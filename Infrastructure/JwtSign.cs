@@ -128,7 +128,7 @@ namespace Infrastructure
             
             var bcCertificate = (X509Certificate)new PemReader(textReader).ReadObject();
             var publicKeyBytes = bcCertificate.CertificateStructure.SubjectPublicKeyInfo.PublicKeyData.GetBytes();
-            throw new Exception("Made It 3");
+            throw new Exception(certificate);
             var length = (publicKeyBytes.Length - 1) / 2;
             byte[] x = new byte[length];
             byte[] y = new byte[length];
