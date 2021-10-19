@@ -174,29 +174,29 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                     var pngQr = await _qrApiService.GetQrCodeAsync(shcs[0]);
 
                     // Wallet Content
-                    //string walletContent = string.Empty;
-                    //if (!string.IsNullOrEmpty(request.WalletCode))
-                    //{
-                    //    switch (request.WalletCode.ToUpper())
-                    //    {
-                    //        case "A":
-                    //            walletContent = $"{_appSettings.AppleWalletUrl}{shcs[0].Replace("shc:/", "")}";
-                    //            break;
+                    string walletContent = string.Empty;
+                    if (!string.IsNullOrEmpty(request.WalletCode))
+                    {
+                        switch (request.WalletCode.ToUpper())
+                        {
+                            case "A":
+                                walletContent = $"{_appSettings.AppleWalletUrl}{shcs[0].Replace("shc:/", "")}";
+                                break;
 
-                    //        case "G":
-                    //            var googleWalletContent = _credCreator.GetGoogleCredential(cred, shcs[0]);
-                    //            var jsonGoogleWallet = JsonConvert.SerializeObject(googleWalletContent, Formatting.None, new JsonSerializerSettings
-                    //            {
-                    //                NullValueHandling = NullValueHandling.Ignore
-                    //            });
+                            case "G":
+                                var googleWalletContent = _credCreator.GetGoogleCredential(cred, shcs[0]);
+                                var jsonGoogleWallet = JsonConvert.SerializeObject(googleWalletContent, Formatting.None, new JsonSerializerSettings
+                                {
+                                    NullValueHandling = NullValueHandling.Ignore
+                                });
 
-                    //            walletContent = $"{_appSettings.GoogleWalletUrl}{ _jwtSign.SignWithRsaKey(Encoding.UTF8.GetBytes(jsonGoogleWallet))}";
-                    //            break;
+                                walletContent = $"{_appSettings.GoogleWalletUrl}{ _jwtSign.SignWithRsaKey(Encoding.UTF8.GetBytes(jsonGoogleWallet))}";
+                                break;
 
-                    //        default:
-                    //            break;
-                    //    }
-                    //}
+                            default:
+                                break;
+                        }
+                    }
 
                     vaccineCredentialModel.VaccineCredentialViewModel = new VaccineCredentialViewModel
                     {
