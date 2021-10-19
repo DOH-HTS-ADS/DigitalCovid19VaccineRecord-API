@@ -5,30 +5,38 @@ namespace Application.Options
 {
     public class AppSettings : ISettingsValidate
     {
-        [Display(Name = "AppSettings.WebUrl")]
         [Required(AllowEmptyStrings = false)]
-        public string WebUrl { get; set; }
+        public string AppleWalletUrl { get; set; }
 
         [Required(AllowEmptyStrings = false)]
-        public string QrCodeApi { get; set; }
+        public string CDCUrl { get; set; }
 
         [Required(AllowEmptyStrings = false)]
         public string CodeSecret { get; set; }
 
-        [Required(AllowEmptyStrings = true)]
-        public string DeveloperSms { get; set; }
+        [Required(AllowEmptyStrings = false)]
+        public string ContactUsUrl { get; set; }
+
+        [Required(AllowEmptyStrings = false)]
+        public string CovidWebUrl { get; set; }
 
         [Required(AllowEmptyStrings = true)]
         public string DeveloperEmail { get; set; }
+
+        [Required(AllowEmptyStrings = true)]
+        public string DeveloperSms { get; set; }
+
+        [Required(AllowEmptyStrings = false)]
+        public string EmailLogoUrl { get; set; }
+
+        [Required(AllowEmptyStrings = false)]
+        public string GoogleWalletUrl { get; set; }
 
         [Required(AllowEmptyStrings = false)]
         public string LinkExpireHours { get; set; }
 
         [Required(AllowEmptyStrings = false)]
-        public string UseMessageQueue { get; set; }
-
-        [Required(AllowEmptyStrings = false)]
-        public string MaxStatusTries { get; set; }
+        public string MaxQrSeconds { get; set; }
 
         [Required(AllowEmptyStrings = false)]
         public string MaxQrTries { get; set; }
@@ -37,7 +45,10 @@ namespace Application.Options
         public string MaxStatusSeconds { get; set; }
 
         [Required(AllowEmptyStrings = false)]
-        public string MaxQrSeconds { get; set; }
+        public string MaxStatusTries { get; set; }
+
+        [Required(AllowEmptyStrings = false)]
+        public string QrCodeApi { get; set; }
 
         [Required(AllowEmptyStrings = false)]
         public string RedisConnectionString { get; set; }
@@ -49,27 +60,19 @@ namespace Application.Options
         public string SendNotFoundSms { get; set; }
 
         [Required(AllowEmptyStrings = false)]
-        public string AppleWalletUrl { get; set; }
+        public string SupportPhoneNumber { get; set; }
+
+        public string TryLegacyEncryption { get; set; }
 
         [Required(AllowEmptyStrings = false)]
-        public string GoogleWalletUrl { get; set; }
-
-        [Required(AllowEmptyStrings = false)]
-        public string VirtualAssistantUrl { get; set; }
-
-        [Required(AllowEmptyStrings = false)]
-        public string EmailLogoUrl { get; set; }
-
-        [Required(AllowEmptyStrings = false)]
-        public string CovidWebUrl { get; set; }
+        public string UseMessageQueue { get; set; }
 
         [Required(AllowEmptyStrings = false)]
         public string VaccineFAQUrl { get; set; }
 
+        [Display(Name = "AppSettings.WebUrl")]
         [Required(AllowEmptyStrings = false)]
-        public string CDCUrl { get; set; }
-
-        public string TryLegacyEncryption { get; set; }
+        public string WebUrl { get; set; }
 
         #region IOptionsValidatable Implementation
 

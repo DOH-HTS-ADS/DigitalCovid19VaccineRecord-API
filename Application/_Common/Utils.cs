@@ -333,7 +333,7 @@ namespace Application.Common
                 "vi" => $"Cảm ơn quý vị đã truy cập vào cổng thông tin Hồ sơ Vắc xin COVID-19 Kỹ thuật số của Tiểu bang Washington. Đường liên kết để truy xuất mã hồ sơ vắc xin COVID-19 của quý vị chỉ có giá trị trong {linkExpireHours} giờ. Sau khi truy cập và lưu vào thiết bị, mã QR của quý vị sẽ không hết hạn.\nXem Hồ sơ Vắc xin: {url}",
                 "ae" => $"نشكرك على زيارة البوابة الإلكترونية للسجل الرقمي للقاح فيروس كورونا (كوفيد-19) بولاية كاليفورنيا. يُعد الرابط الخاص باسترداد رمز سجل لقاح فيروس كورونا (كوفيد-19) الخاص بك ساريًا لمدة {linkExpireHours} ساعة. بمجرد الوصول إليه وحفظه على جهازك، لن تنتهي صلاحية رمز الاستجابة السريعة. \nعرض سجل اللقاح :{url}",
                 "ph" => $"Salamat sa pagbisita sa portal ng Digital na Rekord ng Bakuna para sa COVID-19 ng Estado ng Washington.  {linkExpireHours} na oras lang may bisa ang link para kunin ang iyong code ng bakuna para sa COVID-19. Kapag na-access na at na-save sa iyong device, hindi mag-e-expire ang QR code.\nTingnan ang Rekord ng Bakuna: {url}",
-                _ => $"Thank you for visiting the State of Washington's Digital COVID-19 Vaccine Record portal. The link to retrieve your COVID-19 vaccine record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire. \nView Vaccine Record: {url}",
+                _ => $"Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 verification is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.\nView Vaccine Record: {url}",
             };
         }
 
@@ -426,16 +426,16 @@ namespace Application.Common
                             $"<footer><p style='text-align:center'>Opisyal na Email ng Departamento ng Estado ng Washington</p>" +
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
                 _ => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>Digital COVID-19 Vaccine Record</h3>" +
-                            $"<p>Thank you for visiting the State of Washington's Digital COVID-19 Vaccine Record portal. The link to retrieve your COVID-19 vaccine record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.</p>" +
+                            $"<h3 style='color: #f06724'>Digital COVID-19 Verification Record</h3>" +
+                            $"<p>Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 vaccine record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.</p>" +
                             $"<p><a href='{url}'>View Vaccine Record</a></p>" +
                             $"<p>Learn more about how to <a href='{_appSettings.CDCUrl}'>protect yourself and others</a> from the Centers for Disease Control and Prevention.</p>" +
                             $"<p><b>Have questions?</b></p>" +
-                            $"<p><a href='{_appSettings.VaccineFAQUrl}'>Visit our FAQ page</a> to learn more about your Digital COVID-19 Vaccine Record.</p>" +
+                            $"<p>Visit our <a href='{_appSettings.VaccineFAQUrl}'>(FAQ)</a> page to learn more about your Digital COVID-19 Verification Record.</p>" +
                             $"<p><b>Stay Informed.</b></p>" +
-                            $"<p><a href='{_appSettings.CovidWebUrl}'>View the latest information</a> on COVID-19 in Washington.</p><br/>" +
+                            $"<p><a href='{_appSettings.CovidWebUrl}'>View the latest information</a> on COVID-19.</p><br/>" +
                             $"<hr>" +
-                            $"<footer><p style='text-align:center'>Official Washington State Department Email</p>" +
+                            $"<footer><p style='text-align:center'>Official Washington State Department of Health Email</p>" +
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>"
             };
         }
@@ -444,14 +444,14 @@ namespace Application.Common
         {
             return lang switch
             {
-                "es" => $"Recientemente solicitó un registro de vacunación de COVID-19 digital desde MyVaccineRecord.CDPH.ca.gov. Desafortunadamente, la información que dio no coincide con la información que tenemos en nuestro sistema. \nComunicarse con el servicio de ayuda de COVID-19 del CDPH: \n{_appSettings.VirtualAssistantUrl}",
-                "cn" => $"您最近向 MyVaccineRecord.CDPH.ca.gov 索取了数字新冠肺炎疫苗接种记录。很遗憾，您提供的信息与我们系统中的信息不匹配。\n联系 CDPH COVID-19 服务台: \n{_appSettings.VirtualAssistantUrl}",
-                "tw" => $"您最近向 MyVaccineRecord.CDPH.ca.gov 申請了數位 COVID-19 疫苗接種記錄。很遺憾，您提供的資訊與我們系統中的資訊不匹配。\n聯絡 CDPH COVID-19 服務台 :\n{_appSettings.VirtualAssistantUrl}",
-                "kr" => $"최근에 MyVaccineRecord.CDPH.ca.gov에서 COVID-19 백신 기록을 요청하셨습니다.안타깝게도 귀하가 제공하신 정보는 당사 시스템의 정 보와 일치하지 않습니다. \nCDPH COVID-19 헬프 데스크에 문의하십시오. \n{_appSettings.VirtualAssistantUrl}",
-                "vi" => $"Quý vị đang yêu cầu hồ sơ vắc xin COVID-19 kỹ thuật số từ MyVaccineRecord.CDPH.ca.gov. Rất tiếc, thông tin mà quý vị cung cấp không có trên hệ thống của chúng tôi. \nLiên hệ với Bộ phận Trợ giúp CDPH COVID-19: \n{_appSettings.VirtualAssistantUrl}",
-                "ae" => $"طلبت مؤخرا سجل لقاح كوفيد-19 الرقمي من MyVaccineRecord.CDPH.ca.gov. لسوء الحظ،‏ لا تطابق المعلومات التي قدمتها  أي معلومات موجودة في نظامنا. \nاتصل بمكتب المساعدة CDPH COVID-19: \n{_appSettings.VirtualAssistantUrl}",
-                "ph" => $"Humiling ka kamakailan ng digital na rekord ng bakuna para sa COVID-19 mula sa MyVaccineRecord.CDPH.ca.gov. Sa kasamaang-palad, hindi tumutugma sa impormasyon sa aming system ang impormasyong ibinigay mo. \nMakipag-ugnay sa CDPH COVID-19 Help Desk: \n{_appSettings.VirtualAssistantUrl}",
-                _ => $"You recently requested a digital COVID-19 vaccine record from MyVaccineRecord.CDPH.ca.gov. Unfortunately, the information you provided does not match information in our system. \nContact CDPH COVID-19 Virtual Assistant for help in matching your record to your contact information: \n{_appSettings.VirtualAssistantUrl}"
+                "es" => $"Recientemente solicitó un registro de vacunación de COVID-19 digital desde MyVaccineRecord.CDPH.ca.gov. Desafortunadamente, la información que dio no coincide con la información que tenemos en nuestro sistema. \nComunicarse con el servicio de ayuda de COVID-19 del CDPH: \n{_appSettings.SupportPhoneNumber}",
+                "cn" => $"您最近向 MyVaccineRecord.CDPH.ca.gov 索取了数字新冠肺炎疫苗接种记录。很遗憾，您提供的信息与我们系统中的信息不匹配。\n联系 CDPH COVID-19 服务台: \n{_appSettings.SupportPhoneNumber}",
+                "tw" => $"您最近向 MyVaccineRecord.CDPH.ca.gov 申請了數位 COVID-19 疫苗接種記錄。很遺憾，您提供的資訊與我們系統中的資訊不匹配。\n聯絡 CDPH COVID-19 服務台 :\n{_appSettings.SupportPhoneNumber}",
+                "kr" => $"최근에 MyVaccineRecord.CDPH.ca.gov에서 COVID-19 백신 기록을 요청하셨습니다.안타깝게도 귀하가 제공하신 정보는 당사 시스템의 정 보와 일치하지 않습니다. \nCDPH COVID-19 헬프 데스크에 문의하십시오. \n{_appSettings.SupportPhoneNumber}",
+                "vi" => $"Quý vị đang yêu cầu hồ sơ vắc xin COVID-19 kỹ thuật số từ MyVaccineRecord.CDPH.ca.gov. Rất tiếc, thông tin mà quý vị cung cấp không có trên hệ thống của chúng tôi. \nLiên hệ với Bộ phận Trợ giúp CDPH COVID-19: \n{_appSettings.SupportPhoneNumber}",
+                "ae" => $"طلبت مؤخرا سجل لقاح كوفيد-19 الرقمي من MyVaccineRecord.CDPH.ca.gov. لسوء الحظ،‏ لا تطابق المعلومات التي قدمتها  أي معلومات موجودة في نظامنا. \nاتصل بمكتب المساعدة CDPH COVID-19: \n{_appSettings.SupportPhoneNumber}",
+                "ph" => $"Humiling ka kamakailan ng digital na rekord ng bakuna para sa COVID-19 mula sa MyVaccineRecord.CDPH.ca.gov. Sa kasamaang-palad, hindi tumutugma sa impormasyon sa aming system ang impormasyong ibinigay mo. \nMakipag-ugnay sa CDPH COVID-19 Help Desk: \n{_appSettings.SupportPhoneNumber}",
+                _ => $"You recently requested a digital COVID-19 verification record from the state. Unfortunately, the information you provided does not match information in our system.\nContact us at {_appSettings.SupportPhoneNumber}, press # for help in matching your record to your contact information."
             };
         }
 
@@ -461,7 +461,7 @@ namespace Application.Common
             {
                 "es" => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 style='color: #f06724'>Registro digital de vacunación contra el COVID-19</h3>" +
-                            $"<p>Hace poco solicitó un registro digital de vacunación contra el COVID-19 a <a href='{_appSettings.WebUrl}'>MyVaccineRecord.CDPH.ca.gov</a>. Desafortunadamente, la información que proporcionó no coincide con la información que tenemos en el sistema. Puede <a href='{_appSettings.WebUrl}'>enviar otra solicitud</a> con otro número de teléfono o dirección de correo electrónico, o puede comunicarse con el <a href='{_appSettings.VirtualAssistantUrl}'>asistente virtual para COVID-19 del CDPH</a> para obtener ayuda para hacer que su registro coincida con su información de contacto.</p><br/>" +
+                            $"<p>Hace poco solicitó un registro digital de vacunación contra el COVID-19 a <a href='{_appSettings.WebUrl}'>MyVaccineRecord.CDPH.ca.gov</a>. Desafortunadamente, la información que proporcionó no coincide con la información que tenemos en el sistema. Puede <a href='{_appSettings.WebUrl}'>enviar otra solicitud</a> con otro número de teléfono o dirección de correo electrónico, o puede comunicarse con el <a href='{_appSettings.ContactUsUrl}'>asistente virtual para COVID-19 del CDPH</a> para obtener ayuda para hacer que su registro coincida con su información de contacto.</p><br/>" +
                             $"<p><b>¿Tiene preguntas?</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>Visite nuestra página de preguntas frecuentes</a> para obtener más información sobre su registro digital de vacunación contra el COVID-19.</p>" +
                             $"<p><b>Manténgase informado.</b></p>" +
@@ -471,7 +471,7 @@ namespace Application.Common
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
                 "cn" => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 style='color: #f06724'>数字新冠肺炎疫苗接种记录</h3>" +
-                            $"<p>您最近从 <a href='{_appSettings.WebUrl}'>MyVaccineRecord.CDPH.ca.gov</a> 请求了数字新冠肺炎疫苗接种记录。很遗憾，您提供的信息与系统中的信息不符。您可以使用不同的电话号码或电子邮件地址<a href='{_appSettings.WebUrl}'>提交另一个请求</a>，或者您可以联系 <a href='{_appSettings.VirtualAssistantUrl}'>CDPH 新冠肺炎虚拟助手</a>以帮助将您的记录与您的联系信息进行匹配。</p><br/>" +
+                            $"<p>您最近从 <a href='{_appSettings.WebUrl}'>MyVaccineRecord.CDPH.ca.gov</a> 请求了数字新冠肺炎疫苗接种记录。很遗憾，您提供的信息与系统中的信息不符。您可以使用不同的电话号码或电子邮件地址<a href='{_appSettings.WebUrl}'>提交另一个请求</a>，或者您可以联系 <a href='{_appSettings.ContactUsUrl}'>CDPH 新冠肺炎虚拟助手</a>以帮助将您的记录与您的联系信息进行匹配。</p><br/>" +
                             $"<p><b>有问题吗？</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>访问我们的常见问题页面</a> 以了解有关您的数字新冠肺炎疫苗接种记录的更多信息。</p>" +
                             $"<p><b>保持关注。</b></p>" +
@@ -481,7 +481,7 @@ namespace Application.Common
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
                 "tw" => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 style='color: #f06724'>數位 COVID-19 疫苗接種記錄</h3>" +
-                            $"<p>您最近從 <a href='{_appSettings.WebUrl}'>MyVaccineRecord.CDPH.ca.gov</a> 申請了 COVID-19 疫苗接種數位記錄。很遺憾，您提供的資訊與我們系統的資訊不相符。您可以使用不同的電話號碼或電子郵件地址<a href='{_appSettings.WebUrl}'>提交另一次申請</a>，或者可以聯絡 <a href='{_appSettings.VirtualAssistantUrl}'>CDPH COVID-19 虛擬助理</a>協助比對您的記錄與聯絡資訊。</p><br/>" +
+                            $"<p>您最近從 <a href='{_appSettings.WebUrl}'>MyVaccineRecord.CDPH.ca.gov</a> 申請了 COVID-19 疫苗接種數位記錄。很遺憾，您提供的資訊與我們系統的資訊不相符。您可以使用不同的電話號碼或電子郵件地址<a href='{_appSettings.WebUrl}'>提交另一次申請</a>，或者可以聯絡 <a href='{_appSettings.ContactUsUrl}'>CDPH COVID-19 虛擬助理</a>協助比對您的記錄與聯絡資訊。</p><br/>" +
                             $"<p><b>有問題嗎？</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>造訪常見問題頁面</a>，進一步瞭解您的 COVID-19 疫苗接種數位記錄。</p>" +
                             $"<p><b>隨時注意最新資訊。</b></p>" +
@@ -491,7 +491,7 @@ namespace Application.Common
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
                 "kr" => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 style='color: #f06724'>디지털 코로나19 백신 기록</h3>" +
-                            $"<p>최근에 <a href='{_appSettings.WebUrl}'>MyVaccineRecord.CDPH.ca.gov</a>에서 COVID-19 백신 기록을 신청하셨습니다. 안타깝게도 귀하가 제공하신 정보는 당사 시스템의 정보와 일치하지 않습니다. 다른 전화 번호나 이메일 주소로 <a href='{_appSettings.WebUrl}'>신청서를 새로 제출</a>하거나 <a href='{_appSettings.VirtualAssistantUrl}'>CDPH COVID-19 가상 어시스턴트</a>에 문의하여 귀하의 기록이 연락처 정보와 연결되도록 도움을 받을 수 있습니다.</p><br/>" +
+                            $"<p>최근에 <a href='{_appSettings.WebUrl}'>MyVaccineRecord.CDPH.ca.gov</a>에서 COVID-19 백신 기록을 신청하셨습니다. 안타깝게도 귀하가 제공하신 정보는 당사 시스템의 정보와 일치하지 않습니다. 다른 전화 번호나 이메일 주소로 <a href='{_appSettings.WebUrl}'>신청서를 새로 제출</a>하거나 <a href='{_appSettings.ContactUsUrl}'>CDPH COVID-19 가상 어시스턴트</a>에 문의하여 귀하의 기록이 연락처 정보와 연결되도록 도움을 받을 수 있습니다.</p><br/>" +
                             $"<p><b>질문이 있습니까?</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>FAQ 페이지에서</a> 디지털 COVID-19 백신 접종 기록에 대해 더 알아보십시오.</p>" +
                             $"<p><b>최신 정보를 얻으십시오.</b></p>" +
@@ -501,7 +501,7 @@ namespace Application.Common
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
                 "vi" => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 style='color: #f06724'>Hồ sơ Vắc xin COVID-19 Kỹ thuật số</h3>" +
-                            $"<p>Quý vị đang yêu cầu hồ sơ vắc xin COVID-19 kỹ thuật số từ <a href='{_appSettings.WebUrl}'>MyVaccineRecord.CDPH.ca.gov</a>. Rất tiếc, thông tin mà quý vị cung cấp không có trên hệ thống. Quý vị có thể <a href='{_appSettings.WebUrl}'>gửi yêu cầu khác</a> bằng số điện thoại hoặc địa chỉ email khác hoặc có thể liên hệ <a href='{_appSettings.VirtualAssistantUrl}'>Trợ lý Ảo CDPH COVID-19</a> để được giúp tìm hồ sơ bằng thông tin mà quý vị cung cấp.</p><br/>" +
+                            $"<p>Quý vị đang yêu cầu hồ sơ vắc xin COVID-19 kỹ thuật số từ <a href='{_appSettings.WebUrl}'>MyVaccineRecord.CDPH.ca.gov</a>. Rất tiếc, thông tin mà quý vị cung cấp không có trên hệ thống. Quý vị có thể <a href='{_appSettings.WebUrl}'>gửi yêu cầu khác</a> bằng số điện thoại hoặc địa chỉ email khác hoặc có thể liên hệ <a href='{_appSettings.ContactUsUrl}'>Trợ lý Ảo CDPH COVID-19</a> để được giúp tìm hồ sơ bằng thông tin mà quý vị cung cấp.</p><br/>" +
                             $"<p><b>Nếu quý vị có thắc mắc?</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>Truy cập trang Các Câu hỏi Thường Gặp</a> để tìm hiểu thêm về Hồ sơ Vắc xin COVID-19 Kỹ thuật số của quý vị.</p>" +
                             $"<p><b>Hãy luôn Cập nhật.</b></p>" +
@@ -512,7 +512,7 @@ namespace Application.Common
                 "ae" => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png' dir='rtl'><br/>" +
                             $"<h3 dir='rtl' style='color: #f06724'>السجل الرقمي للقاح فيروس كورونا (كوفيد-19)</h3>" +
                             $"<p dir='rtl'>لقد طلبت مؤخرًا سجل لقاح رقميًا لكوفيد-19 من <a href='{_appSettings.WebUrl}'>MyVaccineRecord.CDPH.ca.gov</a>. وللأسف، لا تتطابق المعلومات التي قدمتها مع المعلومات الموجودة في نظامنا.</p>" +
-                            $"<p dir='rtl'>يمكنك <a href='{_appSettings.WebUrl}'>إرسال طلب آخر</a> باستخدام رقم هاتف أو عنوان بريد إلكتروني مختلف، أو يمكنك الاتصال<a href='{_appSettings.VirtualAssistantUrl}'> بالمساعد الافتراضي الخاص بكوفيد-19 التابع لإدارة كاليفورنيا للصحة العامة </a>(CDPH)للمساعدة في مطابقة السجل الخاص بك مع معلومات الاتصال الخاصة بك.</p><br/>" +
+                            $"<p dir='rtl'>يمكنك <a href='{_appSettings.WebUrl}'>إرسال طلب آخر</a> باستخدام رقم هاتف أو عنوان بريد إلكتروني مختلف، أو يمكنك الاتصال<a href='{_appSettings.ContactUsUrl}'> بالمساعد الافتراضي الخاص بكوفيد-19 التابع لإدارة كاليفورنيا للصحة العامة </a>(CDPH)للمساعدة في مطابقة السجل الخاص بك مع معلومات الاتصال الخاصة بك.</p><br/>" +
                             $"<p dir='rtl'><b>هل لديك أي أسئلة؟</b></p>" +
                             $"<p dir='rtl'><a href='{_appSettings.VaccineFAQUrl}'>تفضل بزيارة صفحة الأسئلة الشائعة لدينا</a > لمعرفة المزيد حول سجل اللقاح الرقمي لكوفيد-19 الخاص بك.</p>" +
                             $"<p dir='rtl'><b>ابقَ على اطلاع.</b></p>" +
@@ -522,7 +522,7 @@ namespace Application.Common
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
                 "ph" => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 style='color: #f06724'>Digital na Rekord ng Bakuna para sa COVID-19</h3>" +
-                            $"<p>Kamakailan kayong humiling ng digital na record ng bakuna sa COVID-19 mula sa <a href='{_appSettings.WebUrl}'>MyVaccineRecord.CDPH.ca.gov</a>. Sa kasawiang-palad, ang impormasyong ibinigay ninyo ay hindi tumutugma sa impormasyon sa aming system. Puwede kayong <a href='{_appSettings.WebUrl}'>magsumite ng isa pang kahilingan</a> gamit ang ibang numero ng telepono o email address, o puwede ninyong i-contact ang <a href='{_appSettings.VirtualAssistantUrl}'>CDPH COVID-19 Virtual Assistant</a> para sa tulong sa pagtutugma ng inyong record sa inyong contact information.</p><br/>" +
+                            $"<p>Kamakailan kayong humiling ng digital na record ng bakuna sa COVID-19 mula sa <a href='{_appSettings.WebUrl}'>MyVaccineRecord.CDPH.ca.gov</a>. Sa kasawiang-palad, ang impormasyong ibinigay ninyo ay hindi tumutugma sa impormasyon sa aming system. Puwede kayong <a href='{_appSettings.WebUrl}'>magsumite ng isa pang kahilingan</a> gamit ang ibang numero ng telepono o email address, o puwede ninyong i-contact ang <a href='{_appSettings.ContactUsUrl}'>CDPH COVID-19 Virtual Assistant</a> para sa tulong sa pagtutugma ng inyong record sa inyong contact information.</p><br/>" +
                             $"<p><b>May mga tanong?</b></p>" +
                             $"<p><a href='{_appSettings.VaccineFAQUrl}'>Bisitahin ang aming page ng FAQ</a> para alamin pa ang tungkol sa iyong Digital na Record ng Bakuna sa COVID-19.</p>" +
                             $"<p><b>Makibalita.</b></p>" +
@@ -531,15 +531,15 @@ namespace Application.Common
                             $"<footer><p style='text-align:center'>Opisyal na Email ng Departamento ng Estado ng Washington</p>" +
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>",
                 _ => $"<img src='{_appSettings.WebUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>Digital COVID-19 Vaccine Record</h3>" +
-                            $"<p>You recently requested a digital COVID-19 vaccine record from <a href='{_appSettings.WebUrl}'>MyVaccineRecord.CDPH.ca.gov</a>. Unfortunately, the information you provided does not match information in our system. " +
-                            $"You can <a href='{_appSettings.WebUrl}'>submit another request</a> with a different phone number or email address, or you can contact the <a href='{_appSettings.VirtualAssistantUrl}'>CDPH COVID-19 Virtual Assistant</a> for help in matching your record to your contact information.</p><br/>" +
+                            $"<h3 style='color: #f06724'>Digital COVID-19 Verification Record</h3>" +
+                            $"<p>You recently requested a Digital COVID-19 Verification Record from the <a href='{_appSettings.WebUrl}'>Digital COVID-19 Verification Record system</a>. Unfortunately, the information you provided does not match information in the state system. " +
+                            $"<p>You can submit another request in the <a href='{_appSettings.WebUrl}'>Digital COVID-19 Verification Record system</a> with a different mobile phone number or email address, you can <a href='{_appSettings.ContactUsUrl}'>contact us</a> for help in matching your record to your contact information, or you can contact your provider to ensure your information has been submitted to the state system.</p>" +
                             $"<p><b>Have questions?</b></p>" +
-                            $"<p><a href='{_appSettings.VaccineFAQUrl}'>Visit our FAQ page</a> to learn more about your Digital COVID-19 Vaccine Record.</p>" +
+                            $"<p>Visit our Frequently Asked Questions <a href='{_appSettings.VaccineFAQUrl}'>(FAQ)</a> page to learn more about your Digital COVID-19 Verification Record.</p>" +
                             $"<p><b>Stay Informed.</b></p>" +
-                            $"<p><a href='{_appSettings.CovidWebUrl}'>View the latest information</a> on COVID-19 in Washington.</p><br/>" +
+                            $"<p><a href='{_appSettings.CovidWebUrl}'>View the latest information</a> on COVID-19.</p><br/>" +
                             $"<hr>" +
-                            $"<footer><p style='text-align:center'>Official Washington State Department Email</p>" +
+                            $"<footer><p style='text-align:center'>Official Washington State Department of Health Email</p>" +
                             $"<p style='text-align:center'><img src='{_appSettings.EmailLogoUrl}'></p></footer>"
             };
         }
