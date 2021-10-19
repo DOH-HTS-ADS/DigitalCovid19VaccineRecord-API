@@ -125,7 +125,7 @@ namespace Infrastructure
         public Thumbprint GetThumbprint(string certificate)//(string crv, string kty, string x, string y)
         {
             using var textReader = new StringReader(certificate);
-            throw new Exception("Made It");
+            
             var bcCertificate = (X509Certificate)new PemReader(textReader).ReadObject();
             var publicKeyBytes = bcCertificate.CertificateStructure.SubjectPublicKeyInfo.PublicKeyData.GetBytes();
             var length = (publicKeyBytes.Length - 1) / 2;
@@ -149,6 +149,9 @@ namespace Infrastructure
                 X = xCoord,
                 Y = yCoord
             };
+
+            throw new Exception("Made It 2");
+
             return thumbprint;
         }
 
