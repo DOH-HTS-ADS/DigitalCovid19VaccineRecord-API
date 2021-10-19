@@ -61,7 +61,6 @@ namespace Infrastructure
 
         public string Signature(byte[] payload)
         {
-            throw new Exception(_keySettings.Certificate);
             var thumb = GetThumbprint(_keySettings.Certificate);
             var kid = GetKid(thumb);
 

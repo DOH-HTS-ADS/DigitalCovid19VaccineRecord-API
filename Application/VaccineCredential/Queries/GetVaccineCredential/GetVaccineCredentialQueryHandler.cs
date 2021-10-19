@@ -156,6 +156,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                     // 2. Compress it
                     var compressedJson = _compactor.Compress(jsonVaccineCredential);
 
+                    throw new Exception(jsonVaccineCredential);
                     // 3. Get the signature
                     var signature = _jwtSign.Signature(compressedJson);
 
