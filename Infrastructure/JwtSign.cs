@@ -125,10 +125,13 @@ namespace Infrastructure
         public Thumbprint GetThumbprint(string certificate)//(string crv, string kty, string x, string y)
         {
             using var textReader = new StringReader(certificate);
-            PemReader reader = new PemReader(textReader);
-            if(reader == null)
+            if(textReader == null)
             {
-                throw new Exception("reader is null");
+                throw new Exception("textReader is null");
+            }
+            else
+            {
+                throw new Exception("textReader is not null");
             }
             var bcCertificate = (X509Certificate)new PemReader(textReader).ReadObject();
             
