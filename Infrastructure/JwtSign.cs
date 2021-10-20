@@ -125,12 +125,13 @@ namespace Infrastructure
         public Thumbprint GetThumbprint(string certificate)//(string crv, string kty, string x, string y)
         {
             using var textReader = new StringReader(certificate);
-
-            var bcCertificate = (X509Certificate)new PemReader(textReader).ReadObject();
-            if (bcCertificate == null)
+            PemReader reader = new PemReader(textReader);
+            if(reader == null)
             {
-                throw new Exception("bcCertificate is null");
+                throw new Exception("reader is null");
             }
+            var bcCertificate = (X509Certificate)new PemReader(textReader).ReadObject();
+            
             var publicKeyBytes = bcCertificate.CertificateStructure.SubjectPublicKeyInfo.PublicKeyData.GetBytes();
             
             var length = (publicKeyBytes.Length - 1) / 2;
