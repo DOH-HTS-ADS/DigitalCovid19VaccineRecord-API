@@ -155,7 +155,6 @@ namespace Application.Common
         //        5 is sms error
         public static async Task<int> ProcessStatusRequest(AppSettings _appSettings, ILogger logger, IEmailService _emailService, SendGridSettings _sendGridSettings, IMessagingService _messagingService, IAesEncryptionService _aesEncryptionService, GetVaccineCredentialStatusQuery request, IAzureSynapseService _azureSynapseService, SqlConnection conn, CancellationToken cancellationToken, long tryCount = 1)
         {
-            throw new Exception(_appSettings.SupportPhoneNumber);
             Interlocked.Increment(ref messageCalls);
             int ret = 0;
             var smsRecipient = request.PhoneNumber;
@@ -255,7 +254,7 @@ namespace Application.Common
                 {
                     if (_appSettings.SendNotFoundSms != "0")
                     {
-                        await _messagingService.SendMessageAsync(smsRecipient, FormatNotFoundSms(request.Language), cancellationToken);
+                        await _messagingService.SendMessageAsync(smsRecipient, FormatNotFoundSms(request.Language, _appSettings.SupportPhoneNumber), cancellationToken);
                     }
                 }
                 else
@@ -266,7 +265,7 @@ namespace Application.Common
                         message.AddTo(emailRecipient, $"{UppercaseFirst(request.FirstName)} {UppercaseFirst(request.LastName)}");
                         message.SetFrom(_sendGridSettings.SenderEmail, _sendGridSettings.Sender);
                         message.SetSubject("Digital COVID-19 Vaccine Record");
-                        message.PlainTextContent = FormatNotFoundSms(request.Language);
+                        message.PlainTextContent = FormatNotFoundSms(request.Language, _appSettings.SupportPhoneNumber);
                         message.HtmlContent = FormatNotFoundHtml(request.Language);
                         await _emailService.SendEmailAsync(message, emailRecipient);
                     }
@@ -441,18 +440,18 @@ namespace Application.Common
             };
         }
 
-        public static string FormatNotFoundSms(string lang)
+        public static string FormatNotFoundSms(string lang, string phoneNumber)
         {
             return lang switch
             {
-                "es" => $"Recientemente solicitó un registro de vacunación de COVID-19 digital desde MyVaccineRecord.CDPH.ca.gov. Desafortunadamente, la información que dio no coincide con la información que tenemos en nuestro sistema. \nComunicarse con el servicio de ayuda de COVID-19 del CDPH: \n{_appSettings.SupportPhoneNumber}",
-                "cn" => $"您最近向 MyVaccineRecord.CDPH.ca.gov 索取了数字新冠肺炎疫苗接种记录。很遗憾，您提供的信息与我们系统中的信息不匹配。\n联系 CDPH COVID-19 服务台: \n{_appSettings.SupportPhoneNumber}",
-                "tw" => $"您最近向 MyVaccineRecord.CDPH.ca.gov 申請了數位 COVID-19 疫苗接種記錄。很遺憾，您提供的資訊與我們系統中的資訊不匹配。\n聯絡 CDPH COVID-19 服務台 :\n{_appSettings.SupportPhoneNumber}",
-                "kr" => $"최근에 MyVaccineRecord.CDPH.ca.gov에서 COVID-19 백신 기록을 요청하셨습니다.안타깝게도 귀하가 제공하신 정보는 당사 시스템의 정 보와 일치하지 않습니다. \nCDPH COVID-19 헬프 데스크에 문의하십시오. \n{_appSettings.SupportPhoneNumber}",
-                "vi" => $"Quý vị đang yêu cầu hồ sơ vắc xin COVID-19 kỹ thuật số từ MyVaccineRecord.CDPH.ca.gov. Rất tiếc, thông tin mà quý vị cung cấp không có trên hệ thống của chúng tôi. \nLiên hệ với Bộ phận Trợ giúp CDPH COVID-19: \n{_appSettings.SupportPhoneNumber}",
-                "ae" => $"طلبت مؤخرا سجل لقاح كوفيد-19 الرقمي من MyVaccineRecord.CDPH.ca.gov. لسوء الحظ،‏ لا تطابق المعلومات التي قدمتها  أي معلومات موجودة في نظامنا. \nاتصل بمكتب المساعدة CDPH COVID-19: \n{_appSettings.SupportPhoneNumber}",
+                "es" => $"Recientemente solicitó un registro de vacunación de COVID-19 digital desde MyVaccineRecord.CDPH.ca.gov. Desafortunadamente, la información que dio no coincide con la información que tenemos en nuestro sistema. \nComunicarse con el servicio de ayuda de COVID-19 del CDPH: \n{phoneNumber}",
+                "cn" => $"您最近向 MyVaccineRecord.CDPH.ca.gov 索取了数字新冠肺炎疫苗接种记录。很遗憾，您提供的信息与我们系统中的信息不匹配。\n联系 CDPH COVID-19 服务台: \n{phoneNumber}",
+                "tw" => $"您最近向 MyVaccineRecord.CDPH.ca.gov 申請了數位 COVID-19 疫苗接種記錄。很遺憾，您提供的資訊與我們系統中的資訊不匹配。\n聯絡 CDPH COVID-19 服務台 :\n{phoneNumber}",
+                "kr" => $"최근에 MyVaccineRecord.CDPH.ca.gov에서 COVID-19 백신 기록을 요청하셨습니다.안타깝게도 귀하가 제공하신 정보는 당사 시스템의 정 보와 일치하지 않습니다. \nCDPH COVID-19 헬프 데스크에 문의하십시오. \n{phoneNumber}",
+                "vi" => $"Quý vị đang yêu cầu hồ sơ vắc xin COVID-19 kỹ thuật số từ MyVaccineRecord.CDPH.ca.gov. Rất tiếc, thông tin mà quý vị cung cấp không có trên hệ thống của chúng tôi. \nLiên hệ với Bộ phận Trợ giúp CDPH COVID-19: \n{phoneNumber}",
+                "ae" => $"طلبت مؤخرا سجل لقاح كوفيد-19 الرقمي من MyVaccineRecord.CDPH.ca.gov. لسوء الحظ،‏ لا تطابق المعلومات التي قدمتها  أي معلومات موجودة في نظامنا. \nاتصل بمكتب المساعدة CDPH COVID-19: \n{phoneNumber}",
                 "ph" => $"Humiling ka kamakailan ng digital na rekord ng bakuna para sa COVID-19 mula sa MyVaccineRecord.CDPH.ca.gov. Sa kasamaang-palad, hindi tumutugma sa impormasyon sa aming system ang impormasyong ibinigay mo. \nMakipag-ugnay sa CDPH COVID-19 Help Desk: \n{_appSettings.SupportPhoneNumber}",
-                _ => $"You recently requested a digital COVID-19 verification record from the state. Unfortunately, the information you provided does not match information in our system.\nContact us at {_appSettings.SupportPhoneNumber}, press # for help in matching your record to your contact information."
+                _ => $"You recently requested a digital COVID-19 verification record from the state. Unfortunately, the information you provided does not match information in our system.\nContact us at {phoneNumber}, press # for help in matching your record to your contact information."
             };
         }
 
