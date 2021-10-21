@@ -51,7 +51,7 @@ stages:
         command: 'publish'
         publishWebProjects: false
         projects: 'CredentialServiceJob/CredentialServiceJob.csproj'
-        arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/VaccineCredential/App_Data\jobs\continuous -r win-x64 --self-contained false'
+        arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/VaccineCredential/App_Data\jobs\continuous -r win-x86 --self-contained false'
         zipAfterPublish: false
     - task: PublishBuildArtifacts@1
       displayName: Publish Artifact
