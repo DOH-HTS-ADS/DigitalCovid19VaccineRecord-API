@@ -28,14 +28,11 @@ namespace Application.Common
             { "213", "COVID-19, unspecified" },
         }.ToImmutableDictionary();
 
-        private static AppSettings _appSettings;
-
         private static int messageCalls = 0;
 
         //private static int noMatchCalls = 0;
         public Utils(AppSettings appSettings)
         {
-            _appSettings = appSettings;
         }
 
         public static int ValidatePin(string pin)
@@ -223,7 +220,7 @@ namespace Application.Common
                     message.SetFrom(_sendGridSettings.SenderEmail, _sendGridSettings.Sender);
                     message.SetSubject("Digital COVID-19 Vaccine Record");
                     message.PlainTextContent = FormatSms(Convert.ToInt32(_appSettings.LinkExpireHours), url, request.Language);
-                    message.HtmlContent = FormatHtml(url, request.Language, Convert.ToInt32(_appSettings.LinkExpireHours));
+                    message.HtmlContent = FormatHtml(_appSettings, url, request.Language, Convert.ToInt32(_appSettings.LinkExpireHours));
                     if (conn == null)
                     {
                         _emailService.SendEmail(message, emailRecipient);
@@ -266,7 +263,7 @@ namespace Application.Common
                         message.SetFrom(_sendGridSettings.SenderEmail, _sendGridSettings.Sender);
                         message.SetSubject("Digital COVID-19 Vaccine Record");
                         message.PlainTextContent = FormatNotFoundSms(request.Language, _appSettings.SupportPhoneNumber);
-                        message.HtmlContent = FormatNotFoundHtml(request.Language);
+                        message.HtmlContent = FormatNotFoundHtml(_appSettings, request.Language);
                         await _emailService.SendEmailAsync(message, emailRecipient);
                     }
                 }
@@ -337,7 +334,7 @@ namespace Application.Common
             };
         }
 
-        public static string FormatHtml(string url, string lang, int linkExpireHours)
+        public static string FormatHtml(AppSettings _appSettings, string url, string lang, int linkExpireHours)
         {
             return lang switch
             {
@@ -450,12 +447,12 @@ namespace Application.Common
                 "kr" => $"최근에 MyVaccineRecord.CDPH.ca.gov에서 COVID-19 백신 기록을 요청하셨습니다.안타깝게도 귀하가 제공하신 정보는 당사 시스템의 정 보와 일치하지 않습니다. \nCDPH COVID-19 헬프 데스크에 문의하십시오. \n{phoneNumber}",
                 "vi" => $"Quý vị đang yêu cầu hồ sơ vắc xin COVID-19 kỹ thuật số từ MyVaccineRecord.CDPH.ca.gov. Rất tiếc, thông tin mà quý vị cung cấp không có trên hệ thống của chúng tôi. \nLiên hệ với Bộ phận Trợ giúp CDPH COVID-19: \n{phoneNumber}",
                 "ae" => $"طلبت مؤخرا سجل لقاح كوفيد-19 الرقمي من MyVaccineRecord.CDPH.ca.gov. لسوء الحظ،‏ لا تطابق المعلومات التي قدمتها  أي معلومات موجودة في نظامنا. \nاتصل بمكتب المساعدة CDPH COVID-19: \n{phoneNumber}",
-                "ph" => $"Humiling ka kamakailan ng digital na rekord ng bakuna para sa COVID-19 mula sa MyVaccineRecord.CDPH.ca.gov. Sa kasamaang-palad, hindi tumutugma sa impormasyon sa aming system ang impormasyong ibinigay mo. \nMakipag-ugnay sa CDPH COVID-19 Help Desk: \n{_appSettings.SupportPhoneNumber}",
+                "ph" => $"Humiling ka kamakailan ng digital na rekord ng bakuna para sa COVID-19 mula sa MyVaccineRecord.CDPH.ca.gov. Sa kasamaang-palad, hindi tumutugma sa impormasyon sa aming system ang impormasyong ibinigay mo. \nMakipag-ugnay sa CDPH COVID-19 Help Desk: \n{phoneNumber}",
                 _ => $"You recently requested a digital COVID-19 verification record from the state. Unfortunately, the information you provided does not match information in our system.\nContact us at {phoneNumber}, press # for help in matching your record to your contact information."
             };
         }
 
-        public static string FormatNotFoundHtml(string lang)
+        public static string FormatNotFoundHtml(AppSettings _appSettings,string lang)
         {
             return lang switch
             {
