@@ -1,13 +1,18 @@
-# What is Digital COVID-19 Vaccine Record (DCVR)?
+# What is Digital COVID-19 Verification Record (WA Verify)?
 
-In June 2021, the California Department of Technology (CDT) launched the Digital COVID-19 Vaccine Record (DCVR) Portal, implementing the SMART Health Card framework. A Digital Vaccine Record is an electronic vaccination record drawn from the data stored in the California immunization registry. The digital record shows the same information as a resident's paper CDC vaccine card: name, date of birth, vaccination dates, and type of vaccine received. The digital record also includes a QR code that, when scanned by a SMART Health Card reader, will display to the reader your name, date of birth, vaccine dates, and vaccine type. The QR code also confirms the vaccine record as an official record of the state of California. 
+In October 2021, the Washington State Department of Health launched the Digital COVID-19 Verification Record (WA Verify), which implements the SMART Health Card framework. This portal was built leveraging the California Department of Technology (CDT) Digital COVID-19 Vaccine Record (DCVR) Portal solution that was launched in June 2021 and was provided to Washington State as open source. 
+
+A Digital COVID-19 Verification Record is an electronic vaccination record drawn from the data stored in the Washington Immunization Information System (WAIIS). The digital record shows the same information as a resident's paper CDC vaccine card: name, date of birth, vaccination dates, and type of vaccine received. The digital record also includes a QR code that, when scanned by a SMART Health Card reader, will display to the reader your name, date of birth, vaccine dates, and vaccine type. The QR code also confirms the vaccine record as an official record of the State of Washington.
+ 
 
 # Application Architecture
 
-California's implementation of the application is a three-tier, logically and physically separated architecture: 
-1.	A web application using the React JavaScript Library, 
-2.	A middle tier written in Microsoft .NET Core with a Node.js API, and 
-3.	A backend data tier using Snowflake. 
+Washington's implementation of the application is a n-tier, logically and physically separated architecture: 
+1.	A web application UI using the React JavaScript Library,
+2.	A middle tier API written in Microsoft .NET Core with Node JS
+3.	A middle tier Azure Function written in JavaScript with Node JS
+4.	A backend data tier using Azure Synapse Analytics Database
+
 
 # Twilio SMS and SendGrid API 
 - Once the API determines that information submitted matches an existing record in the immunization registry, a 'found' message is sent via Twilio (SMS) or SendGrid (email). 
@@ -34,22 +39,21 @@ Please view the readme file in each repo for further details.
 ```
 
 # Functionality Overview 
-The DCVR is most useful as an official, digital copy of an individual's CDC card. It is an official document issued by the State of California and is sufficient as proof of a vaccination record if a person cannot produce their CDC card.  
+The Digital COVID-19 Verification Record (WA Verify) is most useful as an official, digital copy of an individual's CDC card. It is an official document issued by the State of Washington and is sufficient as proof of a vaccination record if a person cannot produce their CDC card.
 
-Users who scan the QR code will see a long string of text, starting with the prefix "shc:/", which indicates that the information to follow is a SMART Health Card. (iPhone users who try scanning this with their camera get the "no usable data found" message because as of this writing, there is no application on the iPhone associated with the "shc:" prefix.) The long string of text is known as an "FHIR bundle" - FHIR stands for Fast Health Interoperability Resources and is an emerging collection of standards designed to improve healthcare data interoperability. More information is at fhir.org. 
+Users who scan the QR code will see a long string of text, starting with the prefix "shc:/", which indicates that the information to follow is a SMART Health Card. (iPhone users who try scanning this with their camera get the "no usable data found" message because as of this writing, there is no application on the iPhone associated with the "shc:" prefix.) The long string of text is known as a "FHIR bundle" - FHIR stands for Fast Health Interoperability Resources and is an emerging collection of standards designed to improve healthcare data interoperability. More information is at fhir.org.
 
-The State of California cryptographically signs this bundle; any reader can validate that signature by using the state's public key, published on the My Vaccine Record page at https://myvaccinerecord.cdph.ca.gov/creds/.well-known/jwks.json . The QR code includes the same information presented on the digital vaccine record webpage: your name, date of birth, and the date(s) of your vaccination(s). When a SMART Health Card-compatible reader scans the QR code, it gives the reader the ability to verify the signature, confirming the authenticity of underlying information. (If the FHIR bundle had been modified, the signature verification would fail, resulting in an unsuccessful scan.)
+The State of Washington cryptographically signs this bundle; any reader can validate that signature by using the state's public key, published on the My Vaccine Record page at https://waverify.doh.wa.gov/creds/.well-known/jwks.json . The QR code includes the same information presented on the digital vaccine record webpage: your name, date of birth, and the date(s) of your vaccination(s). When a SMART Health Card-compatible reader scans the QR code, it gives the reader the ability to verify the signature, confirming the authenticity of underlying information. (If the FHIR bundle had been modified, the signature verification would fail, resulting in an unsuccessful scan.)
 
-In this way, a reader can know for certain that an individual with the name presented, born on the day indicated, actually received the vaccination(s) mentioned in the QR code. Those vaccination(s) are registered in the California Immunization Registry. 
+In this way, a reader can know for certain that an individual with the name presented, born on the day indicated, actually received the vaccination(s) mentioned in the QR code. Those vaccination(s) are registered in the California Immunization Registry.
+It's worth mentioning what the SMART Health Card is not: it's not proof of identity, it is a confirmation of a vaccination record belonging to the individual named, born on the date specified. Any venue or organization that wants to rely on the SMART Health Card as proof of vaccination should match the information contained on an identity document (driver's license, for example).
 
-It's worth mentioning what the SMART Health Card is not: it's not proof of identity, it is a confirmation of a vaccination record belonging to the individual named, born on the date specified. Any venue or organization that wants to rely on the SMART Health Card as proof of vaccination should match the information contained on an identity document (driver's license, for example). 
-
-A final note on the digital vaccine record system design and ongoing improvements to the system. In order to generate a digital vaccine record, we need to match the contact information you provide with contact information already on file with the California Immunization Registry. In most cases, the vaccination provider submitted the resident's contact information with the report of their vaccination. In those cases, the resident will successfully retrieve their digital vaccine record 100% of the time. However, if your contact information is missing from the immunization registry, we cannot match your information with the vaccination record, and therefore cannot send you a link. We worked hard before launch to ensure that we had as much contact information in the system as possible and have made great strides since we launched. By working closely with the vaccination providers, we've added even more contact information for several million California residents; as a result, we have improved the match rate on digital vaccine record requests. As we get more reports from residents who remain unable to retrieve their digital vaccine records, we are in close contact with each provider so that we can continue to make progress. In the meantime, any resident who wants to can reach out to their provider directly and ask that they send updated contact information to the state's immunization registry or can reach out to CDPH and upload a copy of their CDC card so that the state can update their records. (Submitted information will need to be verified and may take a bit of time before it's reflected in the system.)
+A final note on the Digital COVID-19 Verification Record (WA Verify) design and ongoing improvements to the system. In order to generate a digital vaccine record, we need to match the contact information you provide with contact information already on file with the Washington Immunization Information System (WAIIS). In most cases, the vaccination provider submitted the resident's contact information with the report of their vaccination. In those cases, the resident will successfully retrieve their digital vaccine record 100% of the time. However, if your contact information is missing from the immunization registry, we cannot match your information with the vaccination record, and therefore cannot send you a link. We worked hard before launch to ensure that we had as much contact information in the system as possible and have made great strides since we launched. By working closely with the vaccination providers, we've added even more contact information for several million Washington residents; as a result, we have improved the match rate on digital vaccine record requests. As we get more reports from residents who remain unable to retrieve their digital vaccine records, we are in close contact with each provider so that we can continue to make progress. In the meantime, any resident who wants to can reach out to their provider directly and ask that they send updated contact information to the Washington Immunization Information System (WAIIS) or can reach out to Washington State Department of Health and upload a copy of their CDC card so that the state can update their records. (Submitted information will need to be verified and may take a bit of time before it's reflected in the system.)
 
 ---
 
-# Introduction
-The API, the middle tier between the UI and Backend to verify users’ vaccine credentials are a match in the database.
+# Introduction to the Digital COVID-19 Verification Record (WA Verify) API
+The Digital COVID-19 Verification Record (WA Verify) API is the middle tier component between the UI and Backend used to verify users’ vaccine credentials are a match in the database.
 
 #Recommended Software & Tools:
 - Visual Studio 2019 or greater
@@ -247,7 +251,8 @@ return vaccineCredential;
 |--|--|--|
 |AppSettings__CDCUrl|Url to CDC for covid19|https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html|
 |AppSettings__CodeSecret|Used to encrypt the URL to retrieve QR Code. It is AES Secret(32 hex characters long) |D93CF.....290|
-|AppSettings__CovidWebUrl|Url for covid19 pate|https://covid19.yourstate.gov|
+|AppSettings__ContactUsUrl|url for FAQ|https://[your web url]/faq|
+|AppSettings__CovidWebUrl|Url for State/Agency covid19 page|https://covid19.yourstate.gov|
 |AppSettings__DeveloperEmail|If set, all email messages will be sent to this email instead of using the email address entered by users. This flag should only be used in local development environment. It should be blank when the system deployed in Azure||
 |AppSettings__DeveloperSms|If set, all SMS messages will be sent to this phone number instead of using the phone number entered by users. This flag should only be used in local development environment. It should be blank when the system deployed in Azure||
 |AppSettings__EmailLogoUrl|url for email logo|https://emaillogourl.gov/imgs/emaillogolg.png|
@@ -263,9 +268,8 @@ return vaccineCredential;
 |AppSettings__SendNotFoundEmail|Indicates whether to send Not Found email|"0": not send, "1": send|
 |AppSettings__SendNotFoundSms|Indicates whether to send Not Found SMS text|"0": not send, "1": send|
 |AppSettings__UseMessageQueue|Indicates if requests are put in the Credential Request queue for processing later or in real time|"0": no, "1": yes|
-|AppSettings__VaccineFAQUrl|Url for FAQ Page|https://website.gov/faq|
-|AppSettings__VirtualAssistantUrl|url for virtual assistant|https://virtaulassistant.gov/?id=17|
-|AppSettings__WebUrl|Url of the Vaccine Credential front end application|http://mainsite.gov|
+|AppSettings__VaccineFAQUrl|Url for FAQ Page|https://[your web url]/faq|
+|AppSettings__WebUrl|Url of the Vaccine Credential front end application|http://[your web url]|
 |MessageQueueSettings__ConnectionString|URL to the Credential Request queue|DefaultEndpointsProtocol=https;AccountName=[ACCOUNT NAME];AccountKey=[ACCOUNT KEY];EndpointSuffix=core.windows.net|
 |MessageQueueSettings__MaxDequeuePerMinute|Number of items in the Credential Request queue that should be processed per minute|1000|
 |MessageQueueSettings__MessageExpireHours|Number of hours that an un-processable item should be removed from the Credential Request queue|72|
@@ -276,21 +280,19 @@ return vaccineCredential;
 |KeySettings__Certificate|The certificate (Elliptical Curve P-256). It is the public key pair of the private key used to sign the QR Code. Used in the creds|https://[your web url]/creds/.well-known/jwks.json|
 |KeySettings__Issuer|The URL of the public key|https://[your web url]/creds|
 |Keysettings__PrivateKey|The private key (Elliptical Curve P-256) used to sign the QR Code JWT|-----BEGIN EC PRIVATE KEY-----\nM......Ipa0Q==\n-----END EC PRIVATE KEY-----|
-|KeySettings__GoogleCertificate|It is the public key pair of the private key used to sign the Google Health Card||
+|KeySettings__GoogleCertificate|It is the public key pair of the private key for the Google service account used to sign the Google Health Card||
 |KeySettings__GoogleIssuer|The Google service account's issuer that is created under CDT Organization. It is linked to the GoogleIssuerId||
 |KeySettings__GoogleIssuerId|The Google Merchant Center account that is used to add the generate Vaccine Credential to the Google Pay application|3388000000013279970|
-|KeySettings__GooglePrivateKey|The Google service account's private key (RS256) used in signing the Vaccine Credential for Google Health Card|MIIEo..................Uh+jDJj7GxFMqUk=|
-|KeySettings__GoogleWalletLogo|The link to the California Logo that is used in the Google Health Card|https://[Your web url]/imgs/ca-logo-660w.png|
+|KeySettings__GooglePrivateKey|The Google service account's private rsa key (RS256) used in signing the Vaccine Credential for Google Health Card|MIIEo..................Uh+jDJj7GxFMqUk=|
+|KeySettings__GoogleWalletLogo|The link to the State/Agency Logo that is used in the Google Health Card|https://[your web url]/imgs/ca-logo-660w.png|
 |SendGridSettings__Key|The SendGrid API Key to send emails|SG.Az12........RHcJaS4|
 |SendGridSettings__Sender|The email sender friendly name|[State] Department of Public Health|
 |SendGridSettings__SenderEmail|The sender email|no-reply@[Department].[State].gov|
-|SnowFlakeSettings__ConnectionString|The Snowflake connection string|ACCOUNT=[account url];WAREHOUSE=[Warehouse];ROLE=[role];USER=[YOUR_USER];PASSWORD=[YOUR_PASSWORD];DB=[Database];SCHEMA=[Schema]|
-|SnowFlakeSettings__IdQuery|The query string to retrieve Vaccine Credential by a RECIP_ID|select * from table_x where id= ?|
-|SnowFlakeSettings__StatusEmailQuery|The query string to call Snowflake function to search by email|select check_credentials_by_email_2(?, ?, ?, ?)|
-|SnowFlakeSettings__StatusPhoneQuery|The query string to call Snowflake function to search by phone|select check_credentials_by_phone_2(?, ?, ?, ?)|
-|SnowFlakeSettings__RelaxedEmailQuery|The query string to call the Snowflake function to search by email with non-strict matching |select check_credentials_by_email_relaxed_3(?, ?, ?, ?)|
-|SnowFlakeSettings__RelaxedPhoneQuery|The query string to call Snowflake function to search by phone with non-strict matching|select check_credentials_by_phone_relaxed_3(?, ?, ?, ?)|
-|SnowFlakeSettings__UseRelaxed|Flag to turn on/off relaxed queries|"0": not use, "1": use|
+|AzureSynapseSettings__ConnectionString|The Azure Synapse Analytical Database connection string|Server=[synapse_server_name,port];Database=[synapse_database_name];Uid=[Azure_system_managed_id];Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;Authentication=ActiveDirectoryMSI|
+|AzureSynapseSettings__IdQuery|The query string to retrieve Vaccine Credential by a record ID|[schema].[stored_proc_name]|
+|AzureSynapseSettings__StatusQuery|Name of Azure Synapse stored procedure used to perform strict match search by mobile phone or email|[schema].[stored_proc_name]|
+|AzureSynapseSettings__RelaxedQuery|Name of Azure Synapse stored procedure used to perform relaxed matching search by email or mobile phone |[schema].[stored_proc_name]|
+|AzureSynapseSettings__UseRelaxed|Flag to turn on/off relaxed queries|"0": not use, "1": use|
 |TwilioSettings__AccountSID|Twilio Account id|AC.......55f|
 |TwilioSettings__AuthToken|Twilio Authorized Token|d3a.....cba|
 |TwilioSettings__FromPhone|Twilio's sender phone number|+183......29|
