@@ -213,7 +213,7 @@ Expect Output:
 
 4) Update the ```secrets.json``` with information from API ReadMe above.
 
-5) Edit ``` SnowFlakeService.cs ``` under Infrastructure > SnowFlake
+5) Edit ``` AzureSynapseService.cs ``` under Infrastructure > AzureSynapse
 a) edit function as:
 ```
  public async Task<string> GetVaccineCredentialStatusAsync(GetVaccineCredentialStatusQuery request, CancellationToken cancellationToken)
