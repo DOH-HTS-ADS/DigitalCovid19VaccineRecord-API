@@ -66,36 +66,34 @@ The API, the middle tier between the UI and Backend to verify users’ vaccine c
 
 ```
 {
-  "TwilioSettings:FromPhone": "Your sender Phone",
-  "TwilioSettings:AuthToken": "Your Auth ID",
-  "TwilioSettings:AccountSID": "Your Account SID",
-  "TwilioSettings:SandBox": 0,
+  "TwilioSettings:FromPhone": "", //Your Twilio Sender Phone
+  "TwilioSettings:AuthToken": "", //Your Twilio Auth ID
+  "TwilioSettings:AccountSID": "", //Your Twilio Account SID
+  "TwilioSettings:SandBox": 0, //0=False,1=True
+  
+  "AzureSynapseSettings:UseRelaxed": 1, //0=False,1=True
+  "AzureSynapseSettings:ConnectionString": "", //Example:Server=servername,port_number;Database=database_name;Authentication=Active Directory Password;User Id=AD_Account_Id;Password=AD_Account_PW;
+  "AzureSynapseSettings:IdQuery": "", //Your ID Stored Procedure Name
+  "AzureSynapseSettings:RelaxedQuery": "", //Your Relaxed Query Stored Procedure Name
+  "AzureSynapseSettings:StatusQuery": "", //Your Strict Match Stored Procedure Name
 
-  "SnowFlakeSettings:UseRelaxed": 1,
-  "SnowFlakeSettings:ConnectionString": "",
-  "SnowFlakeSettings:IdQuery": "",
-  "SnowFlakeSettings:RelaxedEmailQuery": "",
-  "SnowFlakeSettings:RelaxedPhoneQuery": "",
-  "SnowFlakeSettings:StatusEmailQuery": "",
-  "SnowFlakeSettings:StatusPhoneQuery": "",
+  "SendGridSettings:SenderEmail": "",
+  "SendGridSettings:Sender": "",
+  "SendGridSettings:Key": "", //Your SendGrid Account Key
+  "SendGridSettings:SandBox": 0, //0=False,1=True
 
-  "SendGridSettings:SenderEmail": "no-reply@email.com",
-  "SendGridSettings:Sender": "Vaccine Credential",
-  "SendGridSettings:Key": "Your send grid key SG.....",
-  "SendGridSettings:SandBox": 0,
+  "KeySettings:PrivateKey": "", //Your Eliptical Curve Private Key. Line breaks in key should be replaced with \n
+  "KeySettings:Issuer": "", //Example:https://waverify.doh.wa.gov/creds
+  "KeySettings:Certificate": "", //Your Eliptical Curve Certificate. Line breaks in cert should be replaced with \n
 
-  "KeySettings:PrivateKey": "Your Eliptical Curve Private Key",
-  "KeySettings:Issuer": "Your Issuer",
-  "KeySettings:Certificate": "Your Eliptical Curve Certificate",
-
-  "AppSettings:WebUrl": "Your localhost url UI app",
-  "AppSettings:QrCodeApi": "Your localhost url Function app",
-  "AppSettings:DeveloperSms": "",
-  "AppSettings:DeveloperEmail": "",
-  "AppSettings:CodeSecret": "Your code secret must be HEX Code 32 characters",
+  "AppSettings:WebUrl": "", //Your local host UI app Url. Example: http://localhost:7770
+  "AppSettings:QrCodeApi": "", //Your localhost Function app Url. Example: http://localhost:7771/api/QRCreate
+  "AppSettings:DeveloperSms": "", //When ppopulated, sends all SMS text to configured mobile number
+  "AppSettings:DeveloperEmail": "", //When populated, sends all emails to configured email address
+  "AppSettings:CodeSecret": "", //Your code secret must be HEX Code 32 characters
   "AppSettings:LinkExpireHours": 2,
   "AppSettings:CacheMinutes": 1,
-  "AppSettings:UseMessageQueue": 0,
+  "AppSettings:UseMessageQueue": 0, //0=False,1=True
   "AppSettings:MaxStatusTries": -1,
   "AppSettings:MaxStatusSeconds": 60,
   "AppSettings:MaxQrTries": -1,
@@ -105,10 +103,10 @@ The API, the middle tier between the UI and Backend to verify users’ vaccine c
   "AppSettings:SendNotFoundSms": 1,
   "AppSettings:AppleWalletUrl": "https://redirect.health.apple.com/SMARTHealthCard/",
   "AppSettings:GoogleWalletUrl": "https://pay.google.com/gp/v/save/",
-  "AppSettings:UseBatchMode": "0",
+  "AppSettings:UseBatchMode": "0", //0=False,1=True
 
-  "MessageQueueSettings:ConnectionString": "DefaultEndpointsProtocol=https;AccountName=fake;AccountKey=fake;EndpointSuffix=core.windows.net",
-  "MessageQueueSettings:QueueName": "yourqueue",
+  "MessageQueueSettings:ConnectionString": "", //Azure Storage Account connection string. Example: DefaultEndpointsProtocol=https;AccountName=fake;AccountKey=fake;EndpointSuffix=core.windows.net
+  "MessageQueueSettings:QueueName": "", //Azure storage account queue name
   "MessageQueueSettings:MaxDequeuePerMinute": 800,
   "MessageQueueSettings:NumberThreads": 500,
   "MessageQueueSettings:SleepSeconds": 3,
@@ -116,11 +114,11 @@ The API, the middle tier between the UI and Backend to verify users’ vaccine c
   "MessageQueueSettings:MessageExpireHours": 72,
   "MessageQueueSettings:InvisibleSeconds": "600",
 
-  "KeySettings:GooglePrivateKey": "",
-  "KeySettings:GoogleCertificate": "",
-  "KeySettings:GoogleIssuer": "",
-  "KeySettings:GoogleIssuerId": "",
-  "KeySettings:GoogleWalletLogo": ""
+  "KeySettings:GooglePrivateKey": "", //Private RSA key for your Google API Console service. -----PRIVATE RSA KEY----- paddings should be removed.
+  "KeySettings:GoogleCertificate": "", //Public cert for your Google API console service account. Line breaks should be repalced with \n
+  "KeySettings:GoogleIssuer": "", //Google API Console service account email address
+  "KeySettings:GoogleIssuerId": "", //Google Merchant Account Id
+  "KeySettings:GoogleWalletLogo": "" //Example: https://www.gstatic.com/images/icons/material/system_gm/2x/healing_black_48dp.png
 }
 ```
 
