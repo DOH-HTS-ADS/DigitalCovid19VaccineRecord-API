@@ -1,0 +1,166 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  name: Azure Pipelines
+
+stages:
+- stage: build
+  displayName: Build solution
+  jobs:  
+  - job: Build
+    displayName: Build and publish solution
+    steps:
+    - task: UseDotNet@2
+      displayName: 'Use .NET Core SDK 5.0'
+      inputs:
+        packageType: 'sdk'
+        version: '5.0.x'
+    - task: DotNetCoreCLI@2
+      displayName: Restore
+      inputs:
+        command: 'restore'
+        projects: '**/*.csproj'
+    - task: DotNetCoreCLI@2
+      displayName: Build API
+      inputs:
+        command: 'build'
+        projects: '**/*.csproj'
+        arguments: '--configuration Release'
+    - task: DotNetCoreCLI@2
+      displayName: Publish API
+      inputs:
+        command: 'publish'
+        publishWebProjects: true
+        arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
+        zipAfterPublish: false
+    - task: DotNetCoreCLI@2
+      displayName: Build WebJob
+      inputs:
+        command: 'build'
+        projects: 'CredentialServiceJob/CredentialServiceJob.csproj'
+        arguments: '--configuration Release'
+    - task: DotNetCoreCLI@2
+      displayName: Publish WebJob
+      inputs:
+        command: 'publish'
+        publishWebProjects: false
+        projects: 'CredentialServiceJob/CredentialServiceJob.csproj'
+        arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/VaccineCredential/App_Data\jobs\continuous -r win-x86 --self-contained false'
+        zipAfterPublish: false
+    - task: PublishBuildArtifacts@1
+      displayName: Publish Artifact
+      condition: succeededOrFailed()
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+
+- stage: dev_deployment
+  displayName: Deploy solution to Development
+  dependsOn: [build]
+  jobs:
+    - deployment: dev_deployment
+      displayName: Deploy to Development Environment
+      environment: Development
+      strategy: 
+        runOnce:
+          deploy:
+            steps:
+            - task: DownloadBuildArtifacts@1
+              displayName: Download Atrifact
+              inputs:
+                buildType: 'current'
+                downloadType: 'single'
+                artifactName: 'drop'
+                downloadPath: '$(System.ArtifactsDirectory)'
+            - task: PowerShell@2
+              displayName: 'Replace appsettings.json values for Development'
+              inputs:
+                targetType: 'inline'
+                script: |
+                  $config_dest = "$(System.ArtifactsDirectory)/**/VaccineCredential/appsettings.json"
+                  $content = "{`"SwaggerSettings`":{`"ProjectName`":`"Digital COVID-19 Verififcation Record API`",`"Version`": `"v1`",`"DocumentName`":`"Digital COVID-19 Verififcation Record API Specification`",`"Title`": `"Washington Department of Health's Digital COVID-19 Verififcation Record API`",`"Description`": `"Digital COVID-19 Verififcation Record API Swagger surface`",`"Contact`":{`"Name`": `"Digital COVID-19 Verification Record System`",`"Email`": `"donotreply@doh.wa.gov`",`"Url`": `"http://dev-waverify.doh.wa.gov`"}},`"Logging`":{`"ApplicationInsights`":{`"LogLevel`":{`"Default`":`"Information`",`"Microsoft`": `"Error`"}},`"LogLevel`":{`"Default`":`"Information`",`"Microsoft`": `"Warning`",`"Microsoft.Hosting.Lifetime`":`"Information`"}},`"BuildSettings`":{`"Properties`":{`"Version`": `"1.0.0`",`"Environment`": `"Development`"}},`"AllowedHosts`": `"*`"}"
+                  echo $content | Set-Content $config_dest;
+            - task: AzureRmWebAppDeployment@4
+              displayName: Azure App Service Deploy
+              inputs:
+                ConnectionType: 'AzureRM'
+                azureSubscription: 'doh-sub-vaccs-01 (c47773b2-99d9-4614-8b2c-737ab9ec3e73)-1813'
+                appType: 'webApp'
+                WebAppName: 'app-waverify-api-dev'
+                packageForLinux: '$(System.ArtifactsDirectory)/**/VaccineCredential'
+
+- stage: qa_deployment
+  displayName: Deploy solution to QA
+  dependsOn: [dev_deployment]
+  jobs:
+    - deployment: qa_deployment
+      displayName: Deploy to QA Environment
+      environment: QA
+      strategy: 
+        runOnce:
+          deploy:
+            steps:
+            - task: DownloadBuildArtifacts@1
+              displayName: Download Atrifact
+              inputs:
+                buildType: 'current'
+                downloadType: 'single'
+                artifactName: 'drop'
+                downloadPath: '$(System.ArtifactsDirectory)'
+            - task: PowerShell@2
+              displayName: 'Replace appsettings.json values for QA'
+              inputs:
+                targetType: 'inline'
+                script: |
+                  $config_dest = "$(System.ArtifactsDirectory)/**/VaccineCredential/appsettings.json"
+                  $content = "{`"SwaggerSettings`":{`"ProjectName`":`"Digital COVID-19 Verififcation Record API`",`"Version`": `"v1`",`"DocumentName`":`"Digital COVID-19 Verififcation Record API Specification`",`"Title`":`"Washington Department of Health's Digital COVID-19 Verififcation Record API`",`"Description`":`"Digital COVID-19 Verififcation Record API Swagger surface`",`"Contact`":{`"Name`":`"Digital COVID-19 Verification Record System`",`"Email`": `"donotreply@doh.wa.gov`",`"Url`": `"http://qa-waverify.doh.wa.gov`"}},`"Logging`":{`"ApplicationInsights`":{`"LogLevel`":{`"Default`":`"Information`",`"Microsoft`": `"Error`"}},`"LogLevel`":{`"Default`":`"Information`",`"Microsoft`": `"Warning`",`"Microsoft.Hosting.Lifetime`":`"Information`"}},`"BuildSettings`":{`"Properties`":{`"Version`": `"1.0.0`",`"Environment`": `"QA`"}},`"AllowedHosts`": `"*`"}"
+                  echo $content | Set-Content $config_dest;
+            - task: AzureRmWebAppDeployment@4
+              displayName: Azure App Service Deploy
+              inputs:
+                ConnectionType: 'AzureRM'
+                azureSubscription: 'doh-sub-vaccs-01 (c47773b2-99d9-4614-8b2c-737ab9ec3e73)-1813'
+                appType: 'webApp'
+                WebAppName: 'app-waverify-api-qa'
+                packageForLinux: '$(System.ArtifactsDirectory)/**/VaccineCredential'
+
+- stage: prod_deployment
+  displayName: Deploy solution to Production
+  dependsOn: [qa_deployment]
+  jobs:
+    - deployment: prod_deployment
+      displayName: Deploy to Production Environment
+      environment: Production
+      strategy: 
+        runOnce:
+          deploy:
+            steps:
+            - task: DownloadBuildArtifacts@1
+              displayName: Download Atrifact
+              inputs:
+                buildType: 'current'
+                downloadType: 'single'
+                artifactName: 'drop'
+                downloadPath: '$(System.ArtifactsDirectory)'
+            - task: PowerShell@2
+              displayName: 'Replace appsettings.json values for Production'
+              inputs:
+                targetType: 'inline'
+                script: |
+                  $config_dest = "$(System.ArtifactsDirectory)/**/VaccineCredential/appsettings.json"
+                  $content = "{`"SwaggerSettings`":{`"ProjectName`":`"Digital COVID-19 Verififcation Record API`",`"Version`": `"v1`",`"DocumentName`":`"Digital COVID-19 Verififcation Record API Specification`",`"Title`":`"Washington Department of Health's Digital COVID-19 Verififcation Record API`",`"Description`":`"Digital COVID-19 Verififcation Record API Swagger surface`",`"Contact`":{`"Name`":`"Digital COVID-19 Verification Record System`",`"Email`": `"donotreply@doh.wa.gov`",`"Url`": `"http://waverify.doh.wa.gov`"}},`"Logging`":{`"ApplicationInsights`":{`"LogLevel`":{`"Default`":`"Information`",`"Microsoft`": `"Error`"}},`"LogLevel`":{`"Default`":`"Information`",`"Microsoft`": `"Warning`",`"Microsoft.Hosting.Lifetime`":`"Information`"}},`"BuildSettings`":{`"Properties`":{`"Version`": `"1.0.0`",`"Environment`": `"Production`"}},`"AllowedHosts`": `"*`"}"
+                  echo $content | Set-Content $config_dest;
+            - task: AzureRmWebAppDeployment@4
+              displayName: Azure App Service Deploy
+              inputs:
+                ConnectionType: 'AzureRM'
+                azureSubscription: 'doh-sub-vaccs-01 (c47773b2-99d9-4614-8b2c-737ab9ec3e73)-1813'
+                appType: 'webApp'
+                WebAppName: 'app-waverify-api-prod'
+                packageForLinux: '$(System.ArtifactsDirectory)/**/VaccineCredential'         
