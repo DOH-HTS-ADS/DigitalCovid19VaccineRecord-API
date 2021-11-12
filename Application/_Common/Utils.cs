@@ -299,7 +299,7 @@ namespace Application.Common
         {
             return lang switch
             {
-                "es" => $"Gracias por visitar el portal del Registro digital de vacunación contra el COVID-19 del estado de Washington. El enlace para recuperar su código de registro de vacunación contra el COVID-19 tiene una validez de {linkExpireHours} horas. Una vez accedido y guardado en su dispositivo, el código QR no expirará.",
+                "es" => $"Gracias por visitar el sistema de registro digital de verificación de la COVID-19. El enlace para recuperar su verificación de COVID-19 es válido por {linkExpireHours} horas. Una vez que acceda y se guarde en su dispositivo, el código QR no vencerá.",
                 "cn" => $"感谢访问加利福尼亚州数字新冠肺炎疫苗接种记录门户网站。您的新冠肺炎疫苗接种记录的链接在 {linkExpireHours} 小时内有效。访问并保存到设备后，二维码将不会过期",
                 "tw" => $"感謝您造訪加州的數位 COVID-19 疫苗接種記錄入口網站。用來擷取新冠肺炎疫苗接種記錄代碼之連結的有效期間為 {linkExpireHours} 小時。存取並儲存到裝置後，二維碼就不會過期",
                 "kr" => $"캘리포니아주의 디지털 코로나19 백신 기록 포털에 방문해 주셔서 감사합니다. 코로나19 백신 기록 코드를 되찾을 수 있는 링크는 {linkExpireHours}시간 동안 유효합니다. 액세스하여 기기에 저장한 QR 코드는 만료되지 않습니다.",
@@ -351,16 +351,16 @@ namespace Application.Common
             return lang switch
             {
                 "es" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>Registro digital de vacunación contra el COVID-19</h3>" +
-                            $"<p>Gracias por visitar el portal del Registro digital de vacunación contra el COVID-19 del estado de Washington. El enlace para recuperar su código de registro de vacunación contra el COVID-19 tiene una validez de {linkExpireHours} horas. Una vez accedido y guardado en su dispositivo, el código QR no expirará.</p>" +
-                            $"<p><a href='{url}'>Ver el registro de vacunación </a></p>" +
-                            $"<p>Obtenga más información sobre cómo <a href='{cdcUrl}'>protegerse y proteger a los demás</a> de parte de los Centros para el Control y la Prevención de Enfermedades. </p>" +
-                            $"<p><b>¿Tiene preguntas?</b></p>" +
-                            $"<p><a href='{vaccineFAQUrl}'>Visite nuestra página de preguntas frecuentes</a> para obtener más información sobre su registro digital de vacunación contra el COVID-19.</p>" +
+                            $"<h3 style='color: #f06724'>Registro digital de verificación de la COVID-19</h3>" +
+                            $"<p>Gracias por visitar el sistema de registro digital de verificación de la COVID-19. El enlace para recuperar su código de registro de vacunación de la COVID-19 es válido por {linkExpireHours} horas. Una vez que acceda y se guarde en su dispositivo, el código QR no vencerá.</p>" +
+                            $"<p><a href='{url}'>Consulte los registros de vacunación</a> (solo en inglés).</p>" +
+                            $"<p>Obtenga más información sobre cómo <a href='{cdcUrl}'>protegerse usted y proteger a otros</a> (solo en inglés) de los Centros para el Control y la Prevención de Enfermedades.</p>" +
+                            $"<p><b>¿Tiene alguna pregunta?</b></p>" +
+                            $"<p>Visite nuestra página de <a href='{vaccineFAQUrl}'>preguntas frecuentes</a> (solo en inglés) para obtener más información sobre el registro digital de vacunación contra la COVID-19.</p>" +
                             $"<p><b>Manténgase informado.</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> sobre el COVID-19 en Washington.</p><br/>" +
+                            $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> (solo en inglés) sobre la COVID-19.</p><br/>" +
                             $"<hr>" +
-                            $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Estado de Washington</p>" +
+                            $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Salud del Estado de Washington</p>" +
                             $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "cn" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 style='color: #f06724'>数字新冠肺炎疫苗接种记录</h3>" +
@@ -453,7 +453,7 @@ namespace Application.Common
         {
             return lang switch
             {
-                "es" => $"Recientemente solicitó un registro de vacunación de COVID-19 digital desde MyVaccineRecord.CDPH.ca.gov. Desafortunadamente, la información que dio no coincide con la información que tenemos en nuestro sistema. \nComunicarse con el servicio de ayuda de COVID-19 del CDPH: \n{phoneNumber}",
+                "es" => $"Recientemente solicitó un registro digital de verificación de la COVID-19 del estado. Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema. Comuníquese al 800-525-0127 y, luego, presione asterisco (#) para obtener ayuda a fin de que coincida la información de contacto con los registros.",
                 "cn" => $"您最近向 MyVaccineRecord.CDPH.ca.gov 索取了数字新冠肺炎疫苗接种记录。很遗憾，您提供的信息与我们系统中的信息不匹配。\n联系 CDPH COVID-19 服务台: \n{phoneNumber}",
                 "tw" => $"您最近向 MyVaccineRecord.CDPH.ca.gov 申請了數位 COVID-19 疫苗接種記錄。很遺憾，您提供的資訊與我們系統中的資訊不匹配。\n聯絡 CDPH COVID-19 服務台 :\n{phoneNumber}",
                 "kr" => $"최근에 MyVaccineRecord.CDPH.ca.gov에서 COVID-19 백신 기록을 요청하셨습니다.안타깝게도 귀하가 제공하신 정보는 당사 시스템의 정 보와 일치하지 않습니다. \nCDPH COVID-19 헬프 데스크에 문의하십시오. \n{phoneNumber}",
@@ -487,14 +487,15 @@ namespace Application.Common
             return lang switch
             {
                 "es" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>Registro digital de vacunación contra el COVID-19</h3>" +
-                            $"<p>Hace poco solicitó un registro digital de vacunación contra el COVID-19 a <a href='{webUrl}'>MyVaccineRecord.CDPH.ca.gov</a>. Desafortunadamente, la información que proporcionó no coincide con la información que tenemos en el sistema. Puede <a href='{webUrl}'>enviar otra solicitud</a> con otro número de teléfono o dirección de correo electrónico, o puede comunicarse con el <a href='{contactUsUrl}'>asistente virtual para COVID-19 del CDPH</a> para obtener ayuda para hacer que su registro coincida con su información de contacto.</p><br/>" +
-                            $"<p><b>¿Tiene preguntas?</b></p>" +
-                            $"<p><a href='{vaccineFAQUrl}'>Visite nuestra página de preguntas frecuentes</a> para obtener más información sobre su registro digital de vacunación contra el COVID-19.</p>" +
+                            $"<h3 style='color: #f06724'>Registro digital de verificación de la COVID-19</h3>" +
+                            $"<p>Recientemente solicitó un registro digital de verificación de la COVID-19 del <a href='{webUrl}'>sistema de registro digital de verificación de la COVID-19</a> (solo en inglés). Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema estatal.  </p><br/>" +
+                            $"<p>Puede presentar otra solicitud en el sistema de <a href='{webUrl}'>registro digital de verificación de la COVID-19</a> (solo en inglés) con un número de teléfono o dirección de correo electrónico diferente; puede <a href='{contactUsUrl}'>comunicarse con nosotros</a> (solo en inglés) para que lo ayudemos a fin de que coincida la información de contacto con los registros; o bien, puede comunicarse con su proveedor para asegurarse de que la información ha sido enviada al sistema estatal. </p>" +
+                            $"<p><b>¿Tiene alguna pregunta?</b></p>" +
+                            $"<p>Visite nuestra página de <a href='{vaccineFAQUrl}'>preguntas frecuentes</a> (solo en inglés) para obtener más información sobre el registro digital de verificación de la COVID-19.</p>" +
                             $"<p><b>Manténgase informado.</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> sobre el COVID-19 en Washington.</p><br/>" +
+                            $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> (solo en inglés) sobre la COVID-19.</p><br/>" +
                             $"<hr>" +
-                            $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Estado de Washington</p>" +
+                            $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Salud del Estado de Washington.</p>" +
                             $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "cn" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                             $"<h3 style='color: #f06724'>数字新冠肺炎疫苗接种记录</h3>" +
