@@ -300,12 +300,12 @@ namespace Application.Common
             return lang switch
             {
                 "es" => $"Gracias por visitar el sistema de registro digital de verificación de la COVID-19. El enlace para recuperar su verificación de COVID-19 es válido por {linkExpireHours} horas. Una vez que acceda y se guarde en su dispositivo, el código QR no vencerá.",
-                "cn" => $"感谢访问加利福尼亚州数字新冠肺炎疫苗接种记录门户网站。您的新冠肺炎疫苗接种记录的链接在 {linkExpireHours} 小时内有效。访问并保存到设备后，二维码将不会过期",
-                "tw" => $"感謝您造訪加州的數位 COVID-19 疫苗接種記錄入口網站。用來擷取新冠肺炎疫苗接種記錄代碼之連結的有效期間為 {linkExpireHours} 小時。存取並儲存到裝置後，二維碼就不會過期",
-                "kr" => $"캘리포니아주의 디지털 코로나19 백신 기록 포털에 방문해 주셔서 감사합니다. 코로나19 백신 기록 코드를 되찾을 수 있는 링크는 {linkExpireHours}시간 동안 유효합니다. 액세스하여 기기에 저장한 QR 코드는 만료되지 않습니다.",
-                "vi" => $"Cảm ơn quý vị đã truy cập vào cổng thông tin Hồ sơ Vắc xin COVID-19 Kỹ thuật số của Tiểu bang Washington. Đường liên kết để truy xuất mã hồ sơ vắc xin COVID-19 của quý vị chỉ có giá trị trong {linkExpireHours} giờ. Sau khi truy cập và lưu vào thiết bị, mã QR của quý vị sẽ không hết hạn.",
-                "ae" => $"نشكرك على زيارة البوابة الإلكترونية للسجل الرقمي للقاح فيروس كورونا (كوفيد-19) بولاية كاليفورنيا. يُعد الرابط الخاص باسترداد رمز سجل لقاح فيروس كورونا (كوفيد-19) الخاص بك ساريًا لمدة {linkExpireHours} ساعة. بمجرد الوصول إليه وحفظه على جهازك، لن تنتهي صلاحية رمز الاستجابة السريعة.",
-                "ph" => $"Salamat sa pagbisita sa portal ng Digital na Rekord ng Bakuna para sa COVID-19 ng Estado ng Washington.  {linkExpireHours} na oras lang may bisa ang link para kunin ang iyong code ng bakuna para sa COVID-19. Kapag na-access na at na-save sa iyong device, hindi mag-e-expire ang QR code.",
+                "cn" => $"欢迎访问数字 COVID-19 验证记录系统。用于检索您 COVID-19 验证的链接在 {linkExpireHours} 小时内有效。在您获取到 QR 码并将其储存到您的设备后，此 QR 码将不会过期。",
+                "tw" => $"歡迎造訪數位 COVID-19 驗證記錄系統。用於檢索您的 COVID-19 驗證的連結在 {linkExpireHours} 小時內有效。一旦您存取 QR 代碼並將其儲存到您的裝置後，此 QR 代碼將不會過期。",
+                "kr" => $"디지털 COVID-19 인증 기록 시스템을 방문해 주셔서 감사합니다. COVID-19 인증을 조회하는 링크는 {linkExpireHours}시간 동안 유효합니다. 확인하고 기기에 저장하면 QR 코드는 만료되지 않습니다.",
+                "vi" => $"Cảm ơn bạn đã truy cập vào hệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số. Đường liên kết để truy xuất thông tin xác nhận COVID-19 của bạn có hiệu lực trong vòng {linkExpireHours} giờ. Sau khi đã truy cập và lưu vào thiết bị của bạn, mã QR sẽ không hết hạn.",
+                "ae" => $"شكرًا لك على زيارة نظام سجل التحقق الرقمي من فيروس كوفيد-19. يظل رابط الحصول على التحقق من فيروس كوفيد-19 الخاص بك صالحًا لمدة 24 ساعة. وب{linkExpireHours}رد الوصول إليه وحفظه على جهازك، لن تنتهي صلاحية رمز الاستجابة السريعة (QR).",
+                "ph" => $"Salamat sa pagbisita sa system ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19. May bisa ang link para makuha ang iyong pagberipika ng pagpapabakuna sa COVID-19 nang {linkExpireHours} na oras. Kapag na-aaccess at na-save na ito sa iyong device, hindi mag-e-expire ang QR code.",            
                 _ => $"Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 verification is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.",
             };
         }
@@ -351,101 +351,101 @@ namespace Application.Common
             return lang switch
             {
                 "es" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>Registro digital de verificación de la COVID-19</h3>" +
-                            $"<p>Gracias por visitar el sistema de registro digital de verificación de la COVID-19. El enlace para recuperar su código de registro de vacunación de la COVID-19 es válido por {linkExpireHours} horas. Una vez que acceda y se guarde en su dispositivo, el código QR no vencerá.</p>" +
-                            $"<p><a href='{url}'>Consulte los registros de vacunación</a> (solo en inglés).</p>" +
-                            $"<p>Obtenga más información sobre cómo <a href='{cdcUrl}'>protegerse usted y proteger a otros</a> (solo en inglés) de los Centros para el Control y la Prevención de Enfermedades.</p>" +
-                            $"<p><b>¿Tiene alguna pregunta?</b></p>" +
-                            $"<p>Visite nuestra página de <a href='{vaccineFAQUrl}'>preguntas frecuentes</a> (solo en inglés) para obtener más información sobre el registro digital de vacunación contra la COVID-19.</p>" +
-                            $"<p><b>Manténgase informado.</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> (solo en inglés) sobre la COVID-19.</p><br/>" +
-                            $"<hr>" +
-                            $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Salud del Estado de Washington</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<h3 style='color: #f06724'>Registro digital de verificación de la COVID-19</h3>" +
+                    $"<p>Gracias por visitar el sistema de registro digital de verificación de la COVID-19. El enlace para recuperar su código de registro de vacunación de la COVID-19 es válido por {linkExpireHours} horas. Una vez que acceda y se guarde en su dispositivo, el código QR no vencerá.</p>" +
+                    $"<p><a href='{url}'>Consulte los registros de vacunación</a></p>" +
+                    $"<p>Obtenga más información sobre cómo <a href='{cdcUrl}'>protegerse usted y proteger a otros</a> de los Centros para el Control y la Prevención de Enfermedades.</p>" +
+                    $"<p><b>¿Tiene alguna pregunta?</b></p>" +
+                    $"<p>Visite nuestra página de <a href='{vaccineFAQUrl}'>preguntas frecuentes</a> para obtener más información sobre el registro digital de vacunación contra la COVID-19.</p>" +
+                    $"<p><b>Manténgase informado.</b></p>" +
+                    $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> sobre la COVID-19.</p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Salud del Estado de Washington</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "cn" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>数字新冠肺炎疫苗接种记录</h3>" +
-                            $"<p>感谢访问加利福尼亚州数字新冠肺炎疫苗接种记录门户网站。您的新冠肺炎疫苗接种记录的链接在 {linkExpireHours} 小时内有效。访问并保存到设备后，二维码将不会过期。</p>" +
-                            $"<p><a href='{url}'>查看疫苗接种记录</a></p>" +
-                            $"<p>从疾病控制和预防中心了解有关如何<a href='{cdcUrl}'>保护自己和他人</a>的更多信息。</p>" +
-                            $"<p><b>有问题吗？</b></p>" +
-                            $"<p><a href='{vaccineFAQUrl}'>访问我们的常见问题页面</a> 以了解有关您的数字新冠肺炎疫苗接种记录的更多信息。</p>" +
-                            $"<p><b>保持关注。</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>查看有关加利福尼亚州新冠肺炎疫情的</a>最新信息。</p><br/>" +
-                            $"<hr>" +
-                            $"<footer><p style='text-align:center'>加州事务部官方电子邮件</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<h3 style='color: #f06724'>数字 COVID-19 验证记录</h3>" +
+                    $"<p>欢迎访问数字 COVID-19 验证记录系统。用于检索您 COVID-19 疫苗记录码的链接在 {linkExpireHours} 小时内有效。在您获取到 QR 码并将其储存到您的设备后，此 QR 码将不会过期。</p>" +
+                    $"<p><a href='{url}'>查看疫苗记录</a></p>" +
+                    $"<p>从 Centers for Disease Control and Prevention（CDC，疾病控制与预防中心）了解更多关于如何<a href='{cdcUrl}'>保护自己和他人</a> 的相关信息。</p>" +
+                    $"<p><b>仍有疑问？</b></p>" +
+                    $"<p>请访问我们的常见问题解答 (<a href='{vaccineFAQUrl}'>FAQ</a>) 页面，以了解有关您的数字 COVID-19 疫苗记录的更多信息。</p>" +
+                    $"<p><b>保持关注。</b></p>" +
+                    $"<p><a href='{covidWebUrl}'>查看 COVID-19 最新信息</a>。</p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Washington State Department of Health (华盛顿州卫生部）官方电子邮件</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "tw" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>數位 COVID-19 疫苗接種記錄</h3>" +
-                            $"<p>感謝您造訪加州的數位新冠肺炎疫苗接種記錄入口網站。用來擷取新冠肺炎疫苗接種記錄代碼之連結的有效期間為 {linkExpireHours} 小時。存取並儲存到裝置後，二維碼就不會過期。</p>" +
-                            $"<p><a href='{url}'>檢視疫苗接種記錄</a></p>" +
-                            $"<p>透過疾病管制與預防中心進一步瞭解如何<a href='{cdcUrl}'>保護自己和他人。</a></p>" +
-                            $"<p><b>有問題嗎？</b></p>" +
-                            $"<p><a href='{vaccineFAQUrl}'>造訪常見問題頁面</a>，進一步瞭解您的 COVID-19 疫苗接種數位記錄。</p>" +
-                            $"<p><b>隨時注意最新資訊。</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>檢視加州關於</a> COVID-19 的最新資訊。</p><br/>" +
-                            $"<hr>" +
-                            $"<footer><p style='text-align:center'>官方加州部門電子郵件</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<h3 style='color: #f06724'>數位 COVID-19 驗證記錄</h3>" +
+                    $"<p>歡迎造訪數位 COVID-19 驗證記錄系統。用於檢索您的 COVID-19 疫苗記錄碼的連結在 {linkExpireHours} 小時內有效。一旦您存取 QR 代碼並將其儲存到您的裝置後，此 QR 代碼將不會過期。</p>" +
+                    $"<p><a href='{url}'>檢視疫苗記錄</a></p>" +
+                    $"<p>從 Centers for Disease Control and Prevention（CDC，疾病控制與預防中心）瞭解更多關於如何<a href='{cdcUrl}'>保護自己和他人</a> 的相關資訊。</p>" +
+                    $"<p><b>仍有疑問？</b></p>" +
+                    $"<p>請造訪我們的常見問題解答 (<a href='{vaccineFAQUrl}'>FAQ</a>)頁面，以瞭解有關您的數位 COVID-19 疫苗記錄的更多資訊。</p>" +
+                    $"<p><b>保持關注。</b></p>" +
+                    $"<p><a href='{covidWebUrl}'>檢視 COVID-19 最新資訊</a>。</p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Washington State Department of Health （華盛頓州衛生部）官方電子郵件 </p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "kr" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>디지털 코로나19 백신 기록</h3>" +
-                            $"<p>캘리포니아주의 디지털 코로나19 백신 기록 포털에 방문해 주셔서 감사합니다.코로나19 백신 기록 코드를 되찾을 수 있는 링크는 {linkExpireHours}시간 동안 유효합니다.액세스하여 기기에 저장한 QR 코드는 만료되지 않습니다.</p>" +
-                            $"<p><a href='{url}'>백신 기록 보기</a></p>" +
-                            $"<p><a href='{cdcUrl}'>스스로와 다른 사람을 보호하는</a> 방법에 대해 질병통제예방센터(CDC)에서 자세히 알아보십시오.</p>" +
-                            $"<p><b>질문이 있습니까?</b></p>" +
-                            $"<p><a href='{vaccineFAQUrl}'>FAQ 페이지에서</a> 디지털 COVID-19 백신 접종 기록에 대해 더 알아보십시오.</p>" +
-                            $"<p><b>최신 정보를 얻으십시오.</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>COVID-19 in Washington에서</a>최신 정보를 보십시오.</p><br/>" +
-                            $"<hr>" +
-                            $"<footer><p style='text-align:center'>공식 캘리포니아주 행정청 이메일</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<h3 style='color: #f06724'>디지털 COVID-19 인증 기록</h3>" +
+                    $"<p>디지털 COVID-19 인증 기록 시스템을 방문해 주셔서 감사합니다. COVID-19 백신 기록 코드를 조회하는 링크는 {linkExpireHours}시간 동안 유효합니다. 확인하고 기기에 저장하면 QR 코드는 만료되지 않습니다. </p>" +
+                    $"<p><a href='{url}'>백신 기록 보기</a></p>" +
+                    $"<p>Centers for Disease Control and Prevention(질병통제예방센터)에서 <a href='{cdcUrl}'>나와 타인을 보호</a> 하는 방법에 대해 자세히 확인해 보십시오.</p>" +
+                    $"<p><b>궁금한 사항이 있으신가요?</b></p>" +
+                    $"<p>디지털 COVID-19 백신 기록에 대해 자세히 알아보려면 자주 묻는 질문 (<a href='{vaccineFAQUrl}'>FAQ</a>) 페이지를 참조해 주십시오.</p>" +
+                    $"<p><b>최신 정보를 확인하십시오.</b></p>" +
+                    $"<p>COVID-19 관련 <a href='{covidWebUrl}'>최신 정보 보기</a></p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Washington State Department of Health (워싱턴주 보건부) 공식 이메일</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "vi" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>Hồ sơ Vắc xin COVID-19 Kỹ thuật số</h3>" +
-                            $"<p>Cảm ơn quý vị đã truy cập vào cổng thông tin Hồ sơ Vắc xin COVID-19 Kỹ thuật số của Tiểu bang Washington. Đường liên kết để truy xuất mã hồ sơ vắc xin COVID-19 của quý vị chỉ có giá trị trong {linkExpireHours} giờ. Sau khi truy cập và lưu vào thiết bị, mã QR của quý vị sẽ không hết hạn.</p>" +
-                            $"<p><a href='{url}'>Xem Hồ sơ Vắc xin</a></p>" +
-                            $"<p>Tìm hiểu thêm về cách <a href='{cdcUrl}'>bảo vệ bản thân và người khác</a> từ Trung tâm Kiểm soát và Phòng ngừa Dịch bệnh. </p>" +
-                            $"<p><b>Nếu quý vị có thắc mắc?</b></p>" +
-                            $"<p><a href='{vaccineFAQUrl}'>Truy cập trang Các Câu hỏi Thường Gặp</a> để tìm hiểu thêm về Hồ sơ Vắc xin COVID-19 Kỹ thuật số của quý vị.</p>" +
-                            $"<p><b>Hãy luôn Cập nhật.</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19 ở Washington.</p><br/>" +
-                            $"<hr>" +
-                            $"<footer><p style='text-align:center'>Email chính thức của Tiểu bang Washington</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<h3 style='color: #f06724'>Hồ sơ Xác nhận COVID-19 kỹ thuật số</h3>" +
+                    $"<p>Cảm ơn bạn đã truy cập vào hệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số. Đường liên kết để truy xuất mã hồ sơ vắc-xin COVID-19 của bạn có hiệu lực trong vòng {linkExpireHours} giờ. Sau khi đã truy cập và lưu vào thiết bị của bạn, mã QR sẽ không hết hạn.</p>" +
+                    $"<p><a href='{url}'>Xem Hồ sơ Vắc-xin</a></p>" +
+                    $"<p>Tìm hiểu thêm về cách <a href='{cdcUrl}'>tự bảo vệ mình và bảo vệ người khác</a> từ Centers for Disease Control and Prevention (CDC, Trung Tâm Kiểm Soát và Phòng Ngừa Dịch Bệnh).</p>" +
+                    $"<p><b>Có câu hỏi?</b></p>" +
+                    $"<p>Truy cập vào trang Các Câu Hỏi Thường Gặp (<a href='{vaccineFAQUrl}'>FAQ</a>) để tìm hiểu thêm về Hồ Sơ Vắc-xin COVID-19 kỹ thuật số của bạn.</p>" +
+                    $"<p><b>Luôn cập nhật thông tin.</b></p>" +
+                    $"<p><a href='{covidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19.</p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Email chính thức của Washington State Department of Health (Sở Y Tế Tiểu Bang Washington)</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ae" => $"<img dir='rtl' src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 dir='rtl' style='color: #f06724'>السجل الرقمي للقاح فيروس كورونا (كوفيد-19)</h3>" +
-                            $"<p dir='rtl'>نشكرك على زيارة البوابة الإلكترونية للسجل الرقمي للقاح فيروس كورونا (كوفيد-19) بولاية كاليفورنيا. يُعد الرابط الخاص باسترداد رمز سجل لقاح فيروس كورونا (كوفيد-19) الخاص بك ساريًا لمدة {linkExpireHours} ساعة. بمجرد الوصول إليه وحفظه على جهازك، لن تنتهي صلاحية رمز الاستجابة السريعة.</p>" +
-                            $"<p dir='rtl'><a href='{url}'>عرض سجل اللقاح</a></p>" +
-                            $"<p dir='rtl'>تعرَّف على المزيد حول <a href='{cdcUrl}'></a> من مراكز مكافحة الأمراض والوقاية منها. </p>" +
-                            $"<p dir='rtl'><b>هل لديك أي أسئلة؟</b></p>" +
-                            $"<p dir='rtl'><a href='{vaccineFAQUrl}'>تفضل بزيارة صفحة الأسئلة الشائعة لدينا</a > لمعرفة المزيد حول سجل اللقاح الرقمي لكوفيد-19 الخاص بك.</p>" +
-                            $"<p dir='rtl'><b>ابقَ على اطلاع.</b></p>" +
-                            $"<p dir='rtl'><a href='{covidWebUrl}'>اطلع على أحدث معلومات</a> كوفيد-19 في كاليفورنيا.</p>" +
-                            $"<hr>" +
-                            $"<footer><p dir='rtl' style='text-align:center'>البريد الإلكتروني الرسمي لوزارة الخارجية الخاص بولاية كاليفورنيا</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<h3 dir='rtl' style='color: #f06724'>سجل التحقق الرقمي من فيروس كوفيد-19</h3>" +
+                    $"<p dir='rtl'>شكرًا لك على زيارة نظام سجل التحقق الرقمي من فيروس كوفيد-19. يظل رابط الحصول على رمز سجل لقاح فيروس كوفيد-19 صالحًا لمدة {linkExpireHours} ساعة. وبمجرد الوصول إليه وحفظه على جهازك، لن تنتهي صلاحية رمز الاستجابة السريعة (QR).</p>" +
+                    $"<p dir='rtl'><a href='{url}'>عرض سجل اللقاح</a></p>" +
+                    $"<p dir='rtl'>تتعرَّف على مزيدٍ من المعلومات  عن <a href='{cdcUrl}'>كيفية حماية نفسك والآخرين</a> من خلال Centers for Disease Control and Prevention ( CDC، مراكز مكافحة الأمراض والوقاية منها).</p>" +
+                    $"<p dir='rtl'><b>هل لديك أي أسئلة؟</b></p>" +
+                    $"<p dir='rtl'>قم بزيارة صفحة <a href='{vaccineFAQUrl}'>الأسئلة</a> الشائعة  الخاصة بنا للاطلاع على مزيدٍ من المعلومات حول السجل الرقمي للقاح كوفيد-19 الخاص بك.</p>" +
+                    $"<p dir='rtl'><b>ابقَ مطلعًا.</b></p>" +
+                    $"<p dir='rtl'><a href='{covidWebUrl}'>عرض آخر المعلومات</a> عن فيروس كوفيد-19.</p>" +
+                    $"<hr>" +
+                    $"<footer><p dir='rtl' style='text-align:center'>البريد الإلكتروني الرسمي الخاص بـ Washington State Department of Health (إدارة الصحة في ولاية واشنطن)</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ph" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>Digital na Rekord ng Bakuna para sa COVID-19</h3>" +
-                            $"<p>Salamat sa pagbisita sa portal ng Digital na Rekord ng Bakuna para sa COVID-19 ng Estado ng Washington. {linkExpireHours} na oras lang may bisa ang link para kunin ang iyong code ng bakuna para sa COVID-19. Kapag na-access na at na-save sa iyong device, hindi mag-e-expire ang QR code.</p>" +
-                            $"<p><a href='{url}'>Tingnan ang Rekord ng Bakuna</a></p>" +
-                            $"<p>Matuto pa mula sa Centers for Disease Control and Prevention kung paano <a href='{cdcUrl}'>mapoprotektahan ang iyong sarili at ang ibang tao.</a></p>" +
-                            $"<p><b>May mga tanong?</b></p>" +
-                            $"<p><a href='{vaccineFAQUrl}'>Bisitahin ang aming page ng FAQ</a> para alamin pa ang tungkol sa iyong Digital na Record ng Bakuna sa COVID-19.</p>" +
-                            $"<p><b>Makibalita.</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> sa COVID-19 sa Washington.</p><br/>" +
-                            $"<hr>" +
-                            $"<footer><p style='text-align:center'>Opisyal na Email ng Departamento ng Estado ng Washington</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<h3 style='color: #f06724'>Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</h3>" +
+                    $"<p>Salamat sa pagbisita sa system ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19. May bisa ang link para makuha ang iyong code sa pagberipika ng bakuna sa COVID-19 nang {linkExpireHours} na oras. Kapag na-aaccess at na-save na ito sa iyong device, hindi mag-e-expire ang QR code.</p>" +
+                    $"<p><a href='{url}'>Tingnan ang Rekord ng Bakuna</a></p>" +
+                    $"<p>Matuto pa tungkol sa kung paano <a href='{cdcUrl}'>protektahan ang iyong sarili at ang ibang tao</a> mula sa impormasyon mula sa Centers for Disease Control and Prevention (Mga Sentro sa Pagkontrol at Pag-iwas sa Sakit).</p>" +
+                    $"<p><b>May mga tanong?</b></p>" +
+                    $"<p>Bisitahin ang aming page ng Mga Madalas Itanong (<a href='{vaccineFAQUrl}'>FAQ</a>) para matuto pa tungkol sa iyong Digital na Rekord ng Bakuna sa COVID-19.</p>" +
+                    $"<p><b>Manatiling May Kaalaman.</b></p>" +
+                    $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> tungkol sa COVID-19.</p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Opisyal na Email ng Washington State Department of Health (Departamento ng Kalusugan ng Estado ng Washington)</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 _ => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>Digital COVID-19 Verification Record</h3>" +
-                            $"<p>Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 vaccine record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.</p>" +
-                            $"<p><a href='{url}'>View Vaccine Record</a></p>" +
-                            $"<p>Learn more about how to <a href='{cdcUrl}'>protect yourself and others</a> from the Centers for Disease Control and Prevention.</p>" +
-                            $"<p><b>Have questions?</b></p>" +
-                            $"<p>Visit our <a href='{vaccineFAQUrl}'>(FAQ)</a> page to learn more about your Digital COVID-19 Verification Record.</p>" +
-                            $"<p><b>Stay Informed.</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>View the latest information</a> on COVID-19.</p><br/>" +
-                            $"<hr>" +
-                            $"<footer><p style='text-align:center'>Official Washington State Department of Health e-mail</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>"
+                  $"<h3 style='color: #f06724'>Digital COVID-19 Verification Record</h3>" +
+                  $"<p>Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 vaccine record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.</p>" +
+                  $"<p><a href='{url}'>View Vaccine Record</a></p>" +
+                  $"<p>Learn more about how to <a href='{cdcUrl}'>protect yourself and others</a> from the Centers for Disease Control and Prevention.</p>" +
+                  $"<p><b>Have questions?</b></p>" +
+                  $"<p>Visit our <a href='{vaccineFAQUrl}'>(FAQ)</a> page to learn more about your Digital COVID-19 Verification Record.</p>" +
+                  $"<p><b>Stay Informed.</b></p>" +
+                  $"<p><a href='{covidWebUrl}'>View the latest information</a> on COVID-19.</p><br/>" +
+                  $"<hr>" +
+                  $"<footer><p style='text-align:center'>Official Washington State Department of Health e-mail</p>" +
+                  $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>"
             };
         }
 
@@ -453,14 +453,14 @@ namespace Application.Common
         {
             return lang switch
             {
-                "es" => $"Recientemente solicitó un registro digital de verificación de la COVID-19 del estado. Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema. Comuníquese al 800-525-0127 y, luego, presione asterisco (#) para obtener ayuda a fin de que coincida la información de contacto con los registros.",
-                "cn" => $"您最近向 MyVaccineRecord.CDPH.ca.gov 索取了数字新冠肺炎疫苗接种记录。很遗憾，您提供的信息与我们系统中的信息不匹配。\n联系 CDPH COVID-19 服务台: \n{phoneNumber}",
-                "tw" => $"您最近向 MyVaccineRecord.CDPH.ca.gov 申請了數位 COVID-19 疫苗接種記錄。很遺憾，您提供的資訊與我們系統中的資訊不匹配。\n聯絡 CDPH COVID-19 服務台 :\n{phoneNumber}",
-                "kr" => $"최근에 MyVaccineRecord.CDPH.ca.gov에서 COVID-19 백신 기록을 요청하셨습니다.안타깝게도 귀하가 제공하신 정보는 당사 시스템의 정 보와 일치하지 않습니다. \nCDPH COVID-19 헬프 데스크에 문의하십시오. \n{phoneNumber}",
-                "vi" => $"Quý vị đang yêu cầu hồ sơ vắc xin COVID-19 kỹ thuật số từ MyVaccineRecord.CDPH.ca.gov. Rất tiếc, thông tin mà quý vị cung cấp không có trên hệ thống của chúng tôi. \nLiên hệ với Bộ phận Trợ giúp CDPH COVID-19: \n{phoneNumber}",
-                "ae" => $"طلبت مؤخرا سجل لقاح كوفيد-19 الرقمي من MyVaccineRecord.CDPH.ca.gov. لسوء الحظ،‏ لا تطابق المعلومات التي قدمتها  أي معلومات موجودة في نظامنا. \nاتصل بمكتب المساعدة CDPH COVID-19: \n{phoneNumber}",
-                "ph" => $"Humiling ka kamakailan ng digital na rekord ng bakuna para sa COVID-19 mula sa MyVaccineRecord.CDPH.ca.gov. Sa kasamaang-palad, hindi tumutugma sa impormasyon sa aming system ang impormasyong ibinigay mo. \nMakipag-ugnay sa CDPH COVID-19 Help Desk: \n{_appSettings.SupportPhoneNumber}",
-                _ => $"You recently requested a digital COVID-19 verification record from the state. Unfortunately, the information you provided does not match information in our system.\nContact us at {phoneNumber}, press # for help in matching your record to your contact information."
+                "es" => $"Recientemente solicitó un registro digital de verificación de la COVID-19 del estado. Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema. Comuníquese al {phoneNumber} y, luego, presione asterisco (#) para obtener ayuda a fin de que coincida la información de contacto con los registros.",
+                "cn" => $"您最近向州政府请求过数字 COVID-19 验证记录。很遗憾，您提供的信息与我们系统中的信息不符。请拨打 {phoneNumber} 与我们联系，按 # 可获取将您的记录与您的联系信息进行匹配的援助。",
+                "tw" => $"您最近向州政府請求過數位 COVID-19 驗證記錄。很遺憾，您提供的資訊與我們系統中的資訊不符。請撥打 {phoneNumber} 與我們連絡，按 # 獲取援助以將您的記錄與您的連絡資訊進行匹配。 ",
+                "kr" => $"귀하는 최근 주정부에 디지털 COVID-19 인증 기록을 요청하셨습니다. 유감스럽게도 귀하가 제공하신 정보는 저희 시스템상 정보와 일치하지 않습니다. {phoneNumber} 번으로 전화하여, # 버튼을 누르고 귀하의 기록과 연락처 정보 일치를 확인하는 데 도움을 받으시기 바랍니다.",
+                "vi" => $"Gần đây bạn yêu cầu hồ sơ xác nhận COVID-19 kỹ thuật số từ tiểu bang. Rất tiếc, thông tin mà bạn cung cấp không khớp với thông tin có trong hệ thống của chúng tôi. Hãy liên hệ với chúng tôi theo số {phoneNumber}, nhấn # để được trợ giúp khớp thông tin hồ sơ với thông tin liên lạc của bạn.",
+                "ae" => $"لقد قمت مؤخرًا بطلب الحصول على سجل التحقق الرقمي من فيروس كوفيد-19 من الولاية. ولكن للأسف، المعلومات التي قمت بتقديمها لا تتطابق مع المعلومات الموجودة على نظامنا. تواصل معنا على الرقم التالي {phoneNumber}  واضغط على الرمز \"#\" للحصول على مساعدة في تحقيق التطابق بين سجلك ومعلومات التواصل الخاصة بك.",
+                "ph" => $"Kamakailan kang humiling ng digital na rekord sa pagberipika ng pagpapabakuna sa COVID-19 mula sa estado. Sa kasamaang-palad, hindi tumutugma ang ibinigay mong impormasyon sa impormasyong nasa system namin. Makipag-ugnayan sa amin sa {phoneNumber}, at pindutin ang # para sa tulong sa pagtugma ng iyong rekord sa iyong impormasyon sa pakikipag-ugnayan.",
+                _ => $"You recently requested a digital COVID-19 verification record from the state. Unfortunately, the information you provided does not match information in our system.\nContact us at {phoneNumber}, press # for help in matching your record to your contact information.
             };
         }
 
@@ -487,88 +487,93 @@ namespace Application.Common
             return lang switch
             {
                 "es" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>Registro digital de verificación de la COVID-19</h3>" +
-                            $"<p>Recientemente solicitó un registro digital de verificación de la COVID-19 del <a href='{webUrl}'>sistema de registro digital de verificación de la COVID-19</a> (solo en inglés). Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema estatal.  </p><br/>" +
-                            $"<p>Puede presentar otra solicitud en el sistema de <a href='{webUrl}'>registro digital de verificación de la COVID-19</a> (solo en inglés) con un número de teléfono o dirección de correo electrónico diferente; puede <a href='{contactUsUrl}'>comunicarse con nosotros</a> (solo en inglés) para que lo ayudemos a fin de que coincida la información de contacto con los registros; o bien, puede comunicarse con su proveedor para asegurarse de que la información ha sido enviada al sistema estatal. </p>" +
-                            $"<p><b>¿Tiene alguna pregunta?</b></p>" +
-                            $"<p>Visite nuestra página de <a href='{vaccineFAQUrl}'>preguntas frecuentes</a> (solo en inglés) para obtener más información sobre el registro digital de verificación de la COVID-19.</p>" +
-                            $"<p><b>Manténgase informado.</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> (solo en inglés) sobre la COVID-19.</p><br/>" +
-                            $"<hr>" +
-                            $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Salud del Estado de Washington.</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<h3 style='color: #f06724'>Registro digital de vacunación contra el COVID-19</h3>" +
+                    $"<p>Hace poco solicitó un registro digital de vacunación contra el COVID-19 a <a href='{webUrl}'>MyVaccineRecord.CDPH.ca.gov</a>. Desafortunadamente, la información que proporcionó no coincide con la información que tenemos en el sistema. Puede <a href='{webUrl}'>enviar otra solicitud</a> con otro número de teléfono o dirección de correo electrónico, o puede comunicarse con el <a href='{contactUsUrl}'>asistente virtual para COVID-19 del CDPH</a> para obtener ayuda para hacer que su registro coincida con su información de contacto.</p><br/>" +
+                    $"<p>Puede presentar otra solicitud en el sistema de <a href='{webUrl}'>registro digital de verificación de la COVID-19</a> con un número de teléfono o dirección de correo electrónico diferente; puede <a href='{contactUsUrl}'>comunicarse con nosotros</a> para que lo ayudemos a fin de que coincida la información de contacto con los registros; o bien, puede comunicarse con su proveedor para asegurarse de que la información ha sido enviada al sistema estatal.</p>" +
+                    $"<p><b>¿Tiene preguntas?</b></p>" +
+                    $"<p>Visite nuestra página de <a href='{vaccineFAQUrl}'>preguntas frecuentes</a> para obtener más información sobre el registro digital de verificación de la COVID-19.</p>" +
+                    $"<p><b>Manténgase informado.</b></p>" +
+                    $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> sobre el COVID-19.</p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Salud del Estado de Washington</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "cn" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>数字新冠肺炎疫苗接种记录</h3>" +
-                            $"<p>您最近从 <a href='{webUrl}'>MyVaccineRecord.CDPH.ca.gov</a> 请求了数字新冠肺炎疫苗接种记录。很遗憾，您提供的信息与系统中的信息不符。您可以使用不同的电话号码或电子邮件地址<a href='{webUrl}'>提交另一个请求</a>，或者您可以联系 <a href='{contactUsUrl}'>CDPH 新冠肺炎虚拟助手</a>以帮助将您的记录与您的联系信息进行匹配。</p><br/>" +
-                            $"<p><b>有问题吗？</b></p>" +
-                            $"<p><a href='{vaccineFAQUrl}'>访问我们的常见问题页面</a> 以了解有关您的数字新冠肺炎疫苗接种记录的更多信息。</p>" +
-                            $"<p><b>保持关注。</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>查看有关加利福尼亚州新冠肺炎疫情的</a>最新信息。</p><br/>" +
-                            $"<hr>" +
-                            $"<footer><p style='text-align:center'>加州事务部官方电子邮件</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<h3 style='color: #f06724'>数字 COVID-19 验证记录</h3>" +
+                    $"<p>您最近向 <a href='{webUrl}'>数字 COVID-19 验证记录系统</a> 请求过数字 COVID-19 验证记录。很遗憾，您提供的信息与州系统中的信息不符。</p><br/>" +
+                    $"<p>您可以使用不同的手机号码或电子邮件地址在 <a href='{webUrl}'>数字 COVID-19 验证记录</a> 系统中提交另一个请求，您还可以 <a href='{contactUsUrl}'>联系我们</a> 寻求帮助，将您的记录与您的联系信息进行匹配，或者您可以联系您的医疗保健提供者以确保您的信息已提交至州系统。</p>" +
+                    $"<p><b>仍有疑问？</b></p>" +
+                    $"<p>请访问我们的常见问题解答 (<a href='{vaccineFAQUrl}'>FAQ</a>) 页面，以了解有关您的数字 COVID-19 验证记录的更多信息。</p>" +
+                    $"<p><b>保持关注。</b></p>" +
+                    $"<p><a href='{covidWebUrl}'>查看 COVID-19 最新信息</a>。</p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Washington State Department of Health （华盛顿州卫生部）官方电子邮件</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "tw" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>數位 COVID-19 疫苗接種記錄</h3>" +
-                            $"<p>您最近從 <a href='{webUrl}'>MyVaccineRecord.CDPH.ca.gov</a> 申請了 COVID-19 疫苗接種數位記錄。很遺憾，您提供的資訊與我們系統的資訊不相符。您可以使用不同的電話號碼或電子郵件地址<a href='{webUrl}'>提交另一次申請</a>，或者可以聯絡 <a href='{contactUsUrl}'>CDPH COVID-19 虛擬助理</a>協助比對您的記錄與聯絡資訊。</p><br/>" +
-                            $"<p><b>有問題嗎？</b></p>" +
-                            $"<p><a href='{vaccineFAQUrl}'>造訪常見問題頁面</a>，進一步瞭解您的 COVID-19 疫苗接種數位記錄。</p>" +
-                            $"<p><b>隨時注意最新資訊。</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>檢視加州關於</a> COVID-19 的最新資訊。</p><br/>" +
-                            $"<hr>" +
-                            $"<footer><p style='text-align:center'>官方加州部門電子郵件</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<h3 style='color: #f06724'>數位 COVID-19 驗證記錄</h3>" +
+                    $"<p>您最近向 <a href='{webUrl}'>數位 COVID-19 驗證記錄系統</a> 請求過數位 COVID-19 驗證記錄。很遺憾，您提供的資訊與州系統中的資訊不符。</p><br/>" +
+                    $"<p>您可以使用不同的手機號碼或電子郵件地址在 <a href='{webUrl}'>數位 COVID-19 驗證記錄</a> 系統中提交另一個請求，您還可以 <a href='{contactUsUrl}'>與我們連絡</a> 尋求幫助，將您的記錄與您的連絡資訊進行匹配，或者您可以連絡您的醫療保健提供者以確保您的資訊已提交至州系統。</p>" +
+                    $"<p><b>仍有疑問？</b></p>" +
+                    $"<p>請造訪我們的常見問題解答 (<a href='{vaccineFAQUrl}'>FAQ</a>) 頁面，瞭解有關您的數位 COVID-19 驗證記錄的更多資訊。</p>" +
+                    $"<p><b>保持關注。</b></p>" +
+                    $"<p><a href='{covidWebUrl}'>檢視最新資訊</a>，與 COVID-19 密切相關的資訊。</p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Washington State Department of Health （華盛頓州衛生部）官方電子郵件</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "kr" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>디지털 코로나19 백신 기록</h3>" +
-                            $"<p>최근에 <a href='{webUrl}'>MyVaccineRecord.CDPH.ca.gov</a>에서 COVID-19 백신 기록을 신청하셨습니다. 안타깝게도 귀하가 제공하신 정보는 당사 시스템의 정보와 일치하지 않습니다. 다른 전화 번호나 이메일 주소로 <a href='{webUrl}'>신청서를 새로 제출</a>하거나 <a href='{contactUsUrl}'>CDPH COVID-19 가상 어시스턴트</a>에 문의하여 귀하의 기록이 연락처 정보와 연결되도록 도움을 받을 수 있습니다.</p><br/>" +
-                            $"<p><b>질문이 있습니까?</b></p>" +
-                            $"<p><a href='{vaccineFAQUrl}'>FAQ 페이지에서</a> 디지털 COVID-19 백신 접종 기록에 대해 더 알아보십시오.</p>" +
-                            $"<p><b>최신 정보를 얻으십시오.</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>COVID-19 in Washington에서</a>최신 정보를 보십시오.</p><br/>" +
-                            $"<hr>" +
-                            $"<footer><p style='text-align:center'>공식 캘리포니아주 행정청 이메일</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<h3 style='color: #f06724'>디지털 COVID-19 인증 기록</h3>" +
+                    $"<p>귀하는 최근 <a href='{webUrl}'>디지털 COVID-19 인증 기록 시스템</a> 에 디지털 COVID-19 인증 기록을 요청하셨습니다. 유감스럽게도 귀하가 제공하신 정보는 주정부 시스템상 정보와 일치하지 않습니다.</p><br/>" +
+                    $"<p>다른 휴대전화 번호나 이메일 주소로 <a href='{webUrl}'>디지털 COVID-19 인증 기록 시스템</a> 에 별도의 요청을 제출하실 수 있습니다. <a href='{contactUsUrl}'>저희에게 연락</a> 하여 귀하의 기록을 연락처 정보와 일치시키는 데 도움을 받으시거나, 담당 의료서비스 제공자에게 문의하여 귀하의 정보가 주정부 시스템에 제출되었는지 확인하실 수 있습니다.</p>" +
+                    $"<p><b>궁금한 사항이 있으신가요?</b></p>" +
+                    $"<p>디지털 COVID-19 인증 기록에 대해 자세히 알아보려면 자주 묻는 질문 (<a href='{vaccineFAQUrl}'>FAQ서</a>) 페이지를 참조해 주십시오.</p>" +
+                    $"<p><b>최신 정보를 확인하십시오.</b></p>" +
+                    $"<p>COVID-19 관련 <a href='{covidWebUrl}'>최신 정보 보기</a></p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Washington State Department of Health (워싱턴주 보건부) 공식 이메일</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "vi" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>Hồ sơ Vắc xin COVID-19 Kỹ thuật số</h3>" +
-                            $"<p>Quý vị đang yêu cầu hồ sơ vắc xin COVID-19 kỹ thuật số từ <a href='{webUrl}'>MyVaccineRecord.CDPH.ca.gov</a>. Rất tiếc, thông tin mà quý vị cung cấp không có trên hệ thống. Quý vị có thể <a href='{webUrl}'>gửi yêu cầu khác</a> bằng số điện thoại hoặc địa chỉ email khác hoặc có thể liên hệ <a href='{contactUsUrl}'>Trợ lý Ảo CDPH COVID-19</a> để được giúp tìm hồ sơ bằng thông tin mà quý vị cung cấp.</p><br/>" +
-                            $"<p><b>Nếu quý vị có thắc mắc?</b></p>" +
-                            $"<p><a href='{vaccineFAQUrl}'>Truy cập trang Các Câu hỏi Thường Gặp</a> để tìm hiểu thêm về Hồ sơ Vắc xin COVID-19 Kỹ thuật số của quý vị.</p>" +
-                            $"<p><b>Hãy luôn Cập nhật.</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19 ở Washington.</p><br/>" +
-                            $"<hr>" +
-                            $"<footer><p style='text-align:center'>Email chính thức của Tiểu bang Washington</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<h3 style='color: #f06724'>Hồ sơ Xác nhận COVID-19 kỹ thuật số</h3>" +
+                    $"<p>Gần đây bạn yêu cầu Hồ sơ Xác nhận COVID-19 kỹ thuật số từ <a href='{webUrl}'>Mhệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số</a>. Rất tiếc, thông tin mà bạn cung cấp không khớp với thông tin có trong hệ thống của tiểu bang.</p><br/>" +
+                    $"<p>Bạn có thể gửi yêu cầu khác trong hệ thống <a href='{webUrl}'>Hồ sơ Xác nhận COVID-19 kỹ thuật số</a> với một số điện thoại di động hoặc địa chỉ email khác, bạn có thể <a href='{contactUsUrl}'>liên hệ với chúng tôi</a> để được trợ giúp khớp thông tin hồ sơ với thông tin liên lạc của bạn, hoặc bạn có thể liên lạc với nhà cung cấp của mình để đảm bảo rằng thông tin của bạn đã được gửi đến hệ thống của tiểu bang.</p>" +
+                    $"<p><b>Có câu hỏi?</b></p>" +
+                    $"<p>Truy cập vào trang Câu Hỏi Thường Gặp <a href='{vaccineFAQUrl}'>FAQ</a> để tìm hiểu thêm về Hồ Sơ Xác nhận COVID-19 kỹ thuật số của bạn.</p>" +
+                    $"<p><b>Luôn cập nhật thông tin.</b></p>" +
+                    $"<p><a href='{covidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19.</p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Email chính thức của Washington State Department of Health (Sở Y Tế Tiểu Bang Washington)</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ae" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' dir='rtl'><br/>" +
-                            $"<h3 dir='rtl' style='color: #f06724'>السجل الرقمي للقاح فيروس كورونا (كوفيد-19)</h3>" +
-                            $"<p dir='rtl'>لقد طلبت مؤخرًا سجل لقاح رقميًا لكوفيد-19 من <a href='{webUrl}'>MyVaccineRecord.CDPH.ca.gov</a>. وللأسف، لا تتطابق المعلومات التي قدمتها مع المعلومات الموجودة في نظامنا.</p>" +
-                            $"<p dir='rtl'>يمكنك <a href='{webUrl}'>إرسال طلب آخر</a> باستخدام رقم هاتف أو عنوان بريد إلكتروني مختلف، أو يمكنك الاتصال<a href='{contactUsUrl}'> بالمساعد الافتراضي الخاص بكوفيد-19 التابع لإدارة كاليفورنيا للصحة العامة </a>(CDPH)للمساعدة في مطابقة السجل الخاص بك مع معلومات الاتصال الخاصة بك.</p><br/>" +
-                            $"<p dir='rtl'><b>هل لديك أي أسئلة؟</b></p>" +
-                            $"<p dir='rtl'><a href='{vaccineFAQUrl}'>تفضل بزيارة صفحة الأسئلة الشائعة لدينا</a > لمعرفة المزيد حول سجل اللقاح الرقمي لكوفيد-19 الخاص بك.</p>" +
-                            $"<p dir='rtl'><b>ابقَ على اطلاع.</b></p>" +
-                            $"<p dir='rtl'><a href='{covidWebUrl}'>اطلع على أحدث معلومات</a> كوفيد-19 في كاليفورنيا.</p>" +
-                            $"<hr>" +
-                            $"<footer><p dir='rtl' style='text-align:center'>البريد الإلكتروني الرسمي لوزارة الخارجية الخاص بولاية كاليفورنيا</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<h3 dir='rtl' style='color: #f06724'>سجل التحقق الرقمي من فيروس كوفيد-19</h3>" +
+                    $"<p dir='rtl'>لقد قمت مؤخرًا بطلب الحصول على سجل التحقق الرقمي من فيروس <a href='{webUrl}'>كوفيد-19 من نظام سجل التحقق الرقمي من فيروس كوفيد-19</a> . ولكن للأسف، المعلومات التي قمت بتقديمها لا تتوافق مع المعلومات الموجودة على نظام الولاية.</p>" +
+                    $"<p dir='rtl'>يمكنك التقدم بطلب آخر في نظام <a href='{webUrl}'>كوفيد-19 من نظام سجل التحقق الرقمي من فيروس كوفيد-19</a> باستخدام رقم هاتف محمول أو بريد إلكتروني مختلف، أو  يمكنك <a href='{contactUsUrl}'>التواصل معنا</a> للحصول على مساعدة في تحقيق التطابق بين سجلك ومعلومات التواصل الخاصة بك، أو يمكنك التواصل مع مُقدِّم الخدمة المعنّي بك للتأكد من إرسال معلوماتك إلى نظام الولاية.</p><br/>" +
+                    $"<p dir='rtl'><b>هل لديك أي أسئلة؟ </b></p>" +
+                    $"<p dir='rtl'>قم بزيارة صفحة <a href='{vaccineFAQUrl}'>الأسئلة</a> الشائعة  الخاصة بنا للاطلاع على مزيدٍ من المعلومات حول السجل الرقمي للقاح كوفيد-19 الخاص بك.</p>" +
+                    $"<p dir='rtl'><b>ابقَ مطلعًا.</b></p>" +
+                    $"<p dir='rtl'><a href='{covidWebUrl}'>عرض آخر المعلومات</a> عن فيروس كوفيد-19.</p>" +
+                    $"<hr>" +
+                    $"<footer><p dir='rtl' style='text-align:center'>البريد الإلكتروني الرسمي الخاص بـ Washington State Department of Health (إدارة الصحة في ولاية واشنطن)</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ph" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>Digital na Rekord ng Bakuna para sa COVID-19</h3>" +
-                            $"<p>Kamakailan kayong humiling ng digital na record ng bakuna sa COVID-19 mula sa <a href='{webUrl}'>MyVaccineRecord.CDPH.ca.gov</a>. Sa kasawiang-palad, ang impormasyong ibinigay ninyo ay hindi tumutugma sa impormasyon sa aming system. Puwede kayong <a href='{webUrl}'>magsumite ng isa pang kahilingan</a> gamit ang ibang numero ng telepono o email address, o puwede ninyong i-contact ang <a href='{contactUsUrl}'>CDPH COVID-19 Virtual Assistant</a> para sa tulong sa pagtutugma ng inyong record sa inyong contact information.</p><br/>" +
-                            $"<p><b>May mga tanong?</b></p>" +
-                            $"<p><a href='{vaccineFAQUrl}'>Bisitahin ang aming page ng FAQ</a> para alamin pa ang tungkol sa iyong Digital na Record ng Bakuna sa COVID-19.</p>" +
-                            $"<p><b>Makibalita.</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> sa COVID-19 sa Washington.</p><br/>" +
-                            $"<hr>" +
-                            $"<footer><p style='text-align:center'>Opisyal na Email ng Departamento ng Estado ng Washington</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<h3 style='color: #f06724'>Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</h3>" +
+                    $"<p>Kamakailan kang humiling ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19 mula <a href='{webUrl}'>system ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</a>. Sa kasamaang-palad, hindi tumutugma ang ibinigay mong impormasyon sa impormasyong nasa system ng estado.</p><br/>" +
+                    $"<p>Maaari kang magsumite sa isa pang kahilingan sa system ng <a href='{webUrl}'>Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</a> gamit ang ibang numero ng mobile na telepono o email address, <a href='{contactUsUrl}'>makipag-ugnayan sa amin</a> para sa tulong sa pagtugma ng iyong rekord sa impormasyon sa pakikipag-ugnayan mo, o makipag-ugnayan sa iyong provider para tiyaking isinumite sa system ng estado ang iyong impormasyon.</p>" +
+                    $"<p><b>May mga tanong?</b></p>" +
+                    $"<p>Bisitahin ang aming page ng Mga Madalas Itanong (<a href='{vaccineFAQUrl}'>FAQ</a>) para matuto pa tungkol sa iyong Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19.</p>" +
+                    $"<p><b>Manatiling May Kaalaman.</b></p>" +
+                    $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> tungkol sa COVID-19.</p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Opisyal na Email ng Washington State Department of Health (Departamento ng Kalusugan ng Estado ng Washington)</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 _ => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                            $"<h3 style='color: #f06724'>Digital COVID-19 Verification Record</h3>" +
-                            $"<p>You recently requested a Digital COVID-19 Verification Record from the <a href='{webUrl}'>Digital COVID-19 Verification Record system</a>. Unfortunately, the information you provided does not match information in the state system. " +
-                            $"<p>You can submit another request in the <a href='{webUrl}'>Digital COVID-19 Verification Record system</a> with a different mobile phone number or email address, you can <a href='{contactUsUrl}'>contact us</a> for help in matching your record to your contact information, or you can contact your provider to ensure your information has been submitted to the state system.</p>" +
-                            $"<p><b>Have questions?</b></p>" +
-                            $"<p>Visit our Frequently Asked Questions <a href='{vaccineFAQUrl}'>(FAQ)</a> page to learn more about your Digital COVID-19 Verification Record.</p>" +
-                            $"<p><b>Stay Informed.</b></p>" +
-                            $"<p><a href='{covidWebUrl}'>View the latest information</a> on COVID-19.</p><br/>" +
-                            $"<hr>" +
-                            $"<footer><p style='text-align:center'>Official Washington State Department of Health e-mail</p>" +
-                            $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>"
+                    $"<h3 style='color: #f06724'>Digital COVID-19 Verification Record</h3>" +
+                    $"<p>You recently requested a Digital COVID-19 Verification Record from the <a href='{webUrl}'>Digital COVID-19 Verification Record system</a>. Unfortunately, the information you provided does not match information in the state system. " +
+                    $"<p>You can submit another request in the <a href='{webUrl}'>Digital COVID-19 Verification Record system</a> with a different mobile phone number or email address, you can <a href='{contactUsUrl}'>contact us</a> for help in matching your record to your contact information, or you can contact your provider to ensure your information has been submitted to the state system.</p>" +
+                    $"<p><b>Have questions?</b></p>" +
+                    $"<p>Visit our Frequently Asked Questions <a href='{vaccineFAQUrl}'>(FAQ)</a> page to learn more about your Digital COVID-19 Verification Record.</p>" +
+                    $"<p><b>Stay Informed.</b></p>" +
+                    $"<p><a href='{covidWebUrl}'>View the latest information</a> on COVID-19.</p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Official Washington State Department of Health e-mail</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>"
             };
         }
 
