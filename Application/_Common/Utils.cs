@@ -300,7 +300,7 @@ namespace Application.Common
             return lang switch
             {
                 "es" => $"Gracias por visitar el sistema de registro digital de verificación de la COVID-19. El enlace para recuperar su verificación de COVID-19 es válido por {linkExpireHours} horas. Una vez que acceda y se guarde en su dispositivo, el código QR no vencerá.",
-                "zh" => $"欢迎访问数字 COVID-19 验证记录系统。用于检索您 COVID-19 验证的链接在 {linkExpireHours} 小时内有效。在您获取到 QR 码并将其储存到您的设备后，此 QR 码将不会过期。",
+                "zh-CN" => $"欢迎访问数字 COVID-19 验证记录系统。用于检索您 COVID-19 验证的链接在 {linkExpireHours} 小时内有效。在您获取到 QR 码并将其储存到您的设备后，此 QR 码将不会过期。",
                 "zh-TW" => $"歡迎造訪數位 COVID-19 驗證記錄系統。用於檢索您的 COVID-19 驗證的連結在 {linkExpireHours} 小時內有效。一旦您存取 QR 代碼並將其儲存到您的裝置後，此 QR 代碼將不會過期。",
                 "ko" => $"디지털 COVID-19 인증 기록 시스템을 방문해 주셔서 감사합니다. COVID-19 인증을 조회하는 링크는 {linkExpireHours}시간 동안 유효합니다. 확인하고 기기에 저장하면 QR 코드는 만료되지 않습니다.",
                 "vi" => $"Cảm ơn bạn đã truy cập vào hệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số. Đường liên kết để truy xuất thông tin xác nhận COVID-19 của bạn có hiệu lực trong vòng {linkExpireHours} giờ. Sau khi đã truy cập và lưu vào thiết bị của bạn, mã QR sẽ không hết hạn.",
@@ -315,7 +315,7 @@ namespace Application.Common
             return lang switch
             {
                 "es" => $"{url}",
-                "zh" => $"{url}",
+                "zh-CN" => $"{url}",
                 "zh-TW" => $"{url}",
                 "ko" => $"{url}",
                 "vi" => $"{url}",
@@ -362,7 +362,7 @@ namespace Application.Common
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Salud del Estado de Washington</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
-                "zh" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
+                "zh-CN" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>数字 COVID-19 验证记录</h3>" +
                     $"<p>欢迎访问数字 COVID-19 验证记录系统。用于检索您 COVID-19 疫苗记录码的链接在 {linkExpireHours} 小时内有效。在您获取到 QR 码并将其储存到您的设备后，此 QR 码将不会过期。</p>" +
                     $"<p><a href='{url}'>查看疫苗记录</a></p>" +
@@ -454,13 +454,13 @@ namespace Application.Common
             return lang switch
             {
                 "es" => $"Recientemente solicitó un registro digital de verificación de la COVID-19 del estado. Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema. Comuníquese al {phoneNumber} y, luego, presione asterisco (#) para obtener ayuda a fin de que coincida la información de contacto con los registros.",
-                "zh" => $"您最近向州政府请求过数字 COVID-19 验证记录。很遗憾，您提供的信息与我们系统中的信息不符。请拨打 {phoneNumber} 与我们联系，按 # 可获取将您的记录与您的联系信息进行匹配的援助。",
+                "zh-CN" => $"您最近向州政府请求过数字 COVID-19 验证记录。很遗憾，您提供的信息与我们系统中的信息不符。请拨打 {phoneNumber} 与我们联系，按 # 可获取将您的记录与您的联系信息进行匹配的援助。",
                 "zh-TW" => $"您最近向州政府請求過數位 COVID-19 驗證記錄。很遺憾，您提供的資訊與我們系統中的資訊不符。請撥打 {phoneNumber} 與我們連絡，按 # 獲取援助以將您的記錄與您的連絡資訊進行匹配。 ",
                 "ko" => $"귀하는 최근 주정부에 디지털 COVID-19 인증 기록을 요청하셨습니다. 유감스럽게도 귀하가 제공하신 정보는 저희 시스템상 정보와 일치하지 않습니다. {phoneNumber} 번으로 전화하여, # 버튼을 누르고 귀하의 기록과 연락처 정보 일치를 확인하는 데 도움을 받으시기 바랍니다.",
                 "vi" => $"Gần đây bạn yêu cầu hồ sơ xác nhận COVID-19 kỹ thuật số từ tiểu bang. Rất tiếc, thông tin mà bạn cung cấp không khớp với thông tin có trong hệ thống của chúng tôi. Hãy liên hệ với chúng tôi theo số {phoneNumber}, nhấn # để được trợ giúp khớp thông tin hồ sơ với thông tin liên lạc của bạn.",
-                "ar" => $"لقد قمت مؤخرًا بطلب الحصول على سجل التحقق الرقمي من فيروس كوفيد-19 من الولاية. ولكن للأسف، المعلومات التي قمت بتقديمها لا تتطابق مع المعلومات الموجودة على نظامنا. تواصل معنا على الرقم التالي {phoneNumber}  واضغط على الرمز \"#\" للحصول على مساعدة في تحقيق التطابق بين سجلك ومعلومات التواصل الخاصة بك.",
+                "ar" => $"لقد قمت مؤخرًا بطلب الحصول على سجل التحقق الرقمي من فيروس كوفيد-19 من الولاية. ولكن للأسف، المعلومات التي قمت بتقديمها لا تتطابق مع المعلومات الموجودة على نظامنا. تواصل معنا على الرقم التالي {phoneNumber} واضغط على الرمز (#) للحصول على مساعدة في تحقيق التطابق بين سجلك ومعلومات التواصل الخاصة",
                 "tl" => $"Kamakailan kang humiling ng digital na rekord sa pagberipika ng pagpapabakuna sa COVID-19 mula sa estado. Sa kasamaang-palad, hindi tumutugma ang ibinigay mong impormasyon sa impormasyong nasa system namin. Makipag-ugnayan sa amin sa {phoneNumber}, at pindutin ang # para sa tulong sa pagtugma ng iyong rekord sa iyong impormasyon sa pakikipag-ugnayan.",
-                _ => $"You recently requested a digital COVID-19 verification record from the state. Unfortunately, the information you provided does not match information in our system.\nContact us at {phoneNumber}, press # for help in matching your record to your contact information.
+                _ => $"You recently requested a digital COVID-19 verification record from the state. Unfortunately, the information you provided does not match information in our system. Contact us at {phoneNumber}, press # for help in matching your record to your contact information."
             };
         }
 
@@ -497,7 +497,7 @@ namespace Application.Common
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Salud del Estado de Washington</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
-                "zh" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
+                "zh-CN" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>数字 COVID-19 验证记录</h3>" +
                     $"<p>您最近向 <a href='{webUrl}'>数字 COVID-19 验证记录系统</a> 请求过数字 COVID-19 验证记录。很遗憾，您提供的信息与州系统中的信息不符。</p><br/>" +
                     $"<p>您可以使用不同的手机号码或电子邮件地址在 <a href='{webUrl}'>数字 COVID-19 验证记录</a> 系统中提交另一个请求，您还可以 <a href='{contactUsUrl}'>联系我们</a> 寻求帮助，将您的记录与您的联系信息进行匹配，或者您可以联系您的医疗保健提供者以确保您的信息已提交至州系统。</p>" +
