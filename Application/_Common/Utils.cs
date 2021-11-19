@@ -308,6 +308,7 @@ namespace Application.Common
                 "tl" => $"Salamat sa pagbisita sa system ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19. May bisa ang link para makuha ang iyong pagberipika ng pagpapabakuna sa COVID-19 nang {linkExpireHours} na oras. Kapag na-aaccess at na-save na ito sa iyong device, hindi mag-e-expire ang QR code.",     
                 "ru" => $"Благодарим вас за то, что воспользовались системой цифровых записей о вакцинации от COVID-19. Ссылка для получения подтверждения вакцинации от COVID-19 действительна в течение {linkExpireHours} часов. После перехода по ссылке и сохранения записи на вашем устройстве QR-код все еще будет действительным.",
                 "ja" => $"コロナワクチン接種電子記録システムをご利用いただきありがとうございます。コロナワクチン接種記録を入手するためのリンクは{linkExpireHours}時間有効です。リンクにアクセスし、お使いのデバイスにワクチン接種記録を保存すると、QRコードは無期限でご利用いただけます。",
+                "fr" => $"Merci d'avoir consulté le système d'attestation numérique de vaccination COVID-19. Le lien pour récupérer votre attestation de vaccination COVID-19 est valable pendant {linkExpireHours} heures. Une fois que vous l'avez enregistré sur votre appareil, le code QR n'expire pas.",
                 _ => $"Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 verification is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.",
             };
         }
@@ -325,6 +326,7 @@ namespace Application.Common
                 "tl" => $"{url}",
                 "ru" => $"{url}",
                 "ja" => $"{url}",
+                "fr" => $"{url}",
                 _ => $"{url}",
             };
         }
@@ -462,6 +464,18 @@ namespace Application.Common
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health（ワシントン州保健局）の公式電子メール</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                "fr" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
+                    $"<h3 style='color: #f06724'>Attestation numérique de vaccination COVID-19</h3>" +
+                    $"<p>Merci d'avoir consulté le système d'attestation numérique de vaccination COVID-19. Le lien pour récupérer le code QR de votre attestation de vaccination COVID-19 est valable pendant {linkExpireHours} heures. Une fois que vous l'avez enregistré sur votre appareil, le code QR n'expire pas. </p>" +
+                    $"<p><a href='{url}'>Afficher l'attestation de vaccination</a></p>" +
+                    $"<p>Pour en savoir plus sur la façon de <a href='{cdcUrl}'>vous protéger et protéger les autres</a>, consultez le site Internet des Centers for Disease Control and Prevention (centres de contrôle et de prévention des maladies).</p>" +
+                    $"<p><b>Vous avez des questions?</b></p>" +
+                    $"<p>Consultez notre Foire Aux Questions (<a href='{vaccineFAQUrl}'>FAQ</a>)  pour en savoir plus sur votre attestation numérique de vaccination COVID-19.</p>" +
+                    $"<p><b>Informez-vous.</b></p>" +
+                    $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>E-mail officiel du Washington State Department of Health (ministère de la Santé de l'État de Washington)</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 _ => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                   $"<h3 style='color: #f06724'>Digital COVID-19 Verification Record</h3>" +
                   $"<p>Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 vaccine record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.</p>" +
@@ -490,6 +504,7 @@ namespace Application.Common
                 "tl" => $"Kamakailan kang humiling ng digital na rekord sa pagberipika ng pagpapabakuna sa COVID-19 mula sa estado. Sa kasamaang-palad, hindi tumutugma ang ibinigay mong impormasyon sa impormasyong nasa system namin. Makipag-ugnayan sa amin sa {phoneNumber}, at pindutin ang # para sa tulong sa pagtugma ng iyong rekord sa iyong impormasyon sa pakikipag-ugnayan.",
                 "ru" => $"Недавно вы запросили у штата цифровую запись о вакцинации от COVID-19. К сожалению, предоставленная вами информация не совпадает с информацией в нашей системе. Свяжитесь с нами по телефону {phoneNumber} и нажмите #, чтобы получить помощь в сверке данных, указанных в вашей записи, с вашей контактной информацией.",
                 "ja" => $"あなたはワシントン州のコロナワクチン接種電子記録を依頼されましたが、入力された情報はシステムに登録されている情報と一致しません。{phoneNumber}に電話して#を押すと、ご自身の記録と連絡先情報を一致させるためのサポートが受けられます。 ",
+                "fr" => $"Vous avez récemment demandé une attestation numérique de vaccination COVID-19 délivrée par l'État. Malheureusement, les informations que vous avez fournies ne correspondent pas à celles qui figurent dans notre système. Contactez-nous au {phoneNumber}, appuyez sur # pour obtenir de l'aide afin d'associer votre attestation à vos coordonnées. ",
                 _ => $"You recently requested a digital COVID-19 verification record from the state. Unfortunately, the information you provided does not match information in our system. Contact us at {phoneNumber}, press # for help in matching your record to your contact information."
             };
         }
@@ -614,6 +629,17 @@ namespace Application.Common
                     $"<p>新型コロナ感染症について<a href='{covidWebUrl}'>最新情報を見る</a>。</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health（ワシントン州保健局）の公式電子メール</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                "fr" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
+                    $"<h3 style='color: #f06724'>Attestation numérique de vaccination COVID-19</h3>" +
+                    $"<p>Vous avez récemment demandé une attestation numérique de vaccination COVID-19 auprès du <a href='{webUrl}'>Attestation numérique de vaccination COVID-19 System</a> (système d'attestations numériques de vaccination COVID-19) . Malheureusement, les informations que vous avez fournies ne correspondent pas à celles qui figurent dans le système de l'État.</p><br/>" +
+                    $"<p>Vous pouvez soumettre une autre demande dans le système <a href='{webUrl}'>Attestation numérique de vaccination COVID-19</a> en indiquant un autre numéro de téléphone mobile ou une autre adresse e-mail, vous pouvez <a href='{contactUsUrl}'>nous contacter</a> pour obtenir de l'aide afin d'associer votre attestation à vos coordonnées, ou vous pouvez contacter votre professionnel de santé pour vérifier que vos informations ont été transmises au système de l'État.</p>" +
+                    $"<p><b>Vous avez des questions?</b></p>" +
+                    $"<p>Consultez notre page Foire Aux Questions (<a href='{vaccineFAQUrl}'>FAQ</a>) pour en savoir plus sur votre attestation numérique de vaccination COVID-19.</p>" +
+                    $"<p><b>Informez-vous.</b></p>" +
+                    $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>E-mail officiel du Washington State Department of Health (ministère de la Santé de l'État de Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 _ => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Digital COVID-19 Verification Record</h3>" +
