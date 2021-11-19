@@ -26,6 +26,7 @@ namespace Application.Common
             { "211", "Novavax" },
             { "212", "J&J" },
             { "213", "COVID-19, unspecified" },
+            { "218", "Pfizer" }
         }.ToImmutableDictionary();
 
         private static AppSettings _appSettings;
