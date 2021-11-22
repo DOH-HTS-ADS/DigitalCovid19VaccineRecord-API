@@ -682,7 +682,7 @@ namespace Application.Common
                     $"<p><b>ਕੀ ਤੁਹਾਡੇ ਕੋਈ ਸਵਾਲ ਹਨ?</b></p>" +
                     $"<p>ਆਪਣੇ ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੈਕਸੀਨ ਰਿਕਾਰਡ ਬਾਰੇ ਹੋਰ ਜਾਣਨ ਲਈ ਸਾਡੇ <a href='{vaccineFAQUrl}'>ਅਕਸਰ ਪੁੱਛੇ ਜਾਣ ਵਾਲੇ ਸਵਾਲ</a>(FAQ)  ਪੰਨੇ 'ਤੇ ਜਾਓ।</p>" +
                     $"<p><b>ਸੂਚਿਤ ਰਹੋ।</b></p>" +
-                    $"<p>ਕੋਵਿਡ-19 ਬਾਰੇੇ<a href='{covidWebUrl}'>ਨਵੀਨਤਮ ਜਾਣਕਾਰੀ ਵੇਖੋ</a> </p><br/>" +
+                    $"<p>ਕੋਵਿਡ-19 ਬਾਰੇੇ <a href='{covidWebUrl}'>ਨਵੀਨਤਮ ਜਾਣਕਾਰੀ ਵੇਖੋ</a></p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (ਵਾਸ਼ਿੰਗਟਨ ਸਟੇਟ ਸਿਹਤ ਵਿਭਾਗ) ਦਾ ਅਧਿਕਾਰਤ ਈਮੇਲ ਪਤਾ</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
@@ -1249,7 +1249,7 @@ namespace Application.Common
                     $"<p><b>ਕੀ ਤੁਹਾਡੇ ਕੋਈ ਸਵਾਲ ਹਨ?</b></p>" +
                     $"<p>ਆਪਣੇ ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਬਾਰੇ ਹੋਰ ਜਾਣਨ ਲਈ ਸਾਡੇ <a href='{vaccineFAQUrl}'>ਅਕਸਰ ਪੁੱਛੇ ਜਾਣ ਵਾਲੇ ਸਵਾਲ</a>(FAQ)  ਪੰਨੇ 'ਤੇ ਜਾਓ।</p>" +
                     $"<p><b>ਸੂਚਿਤ ਰਹੋ।</b></p>" +
-                    $"<p>ਕੋਵਿਡ-19 ਬਾਰੇ<a href='{covidWebUrl}'>ਨਵੀਨਤਮ ਜਾਣਕਾਰੀ ਵੇਖੋ</a></p><br/>" +
+                    $"<p>ਕੋਵਿਡ-19 ਬਾਰੇ <a href='{covidWebUrl}'>ਨਵੀਨਤਮ ਜਾਣਕਾਰੀ ਵੇਖੋ</a></p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (ਵਾਸ਼ਿੰਗਟਨ ਸਟੇਟ ਸਿਹਤ ਵਿਭਾਗ) ਦਾ ਅਧਿਕਾਰਤ ਈਮੇਲ ਪਤਾ</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
