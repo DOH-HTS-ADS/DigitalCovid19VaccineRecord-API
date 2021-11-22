@@ -94,7 +94,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineStatus
             if (_appSettings.UseMessageQueue != "0")
             {
                 statusModel.ViewStatus = await _queueService.AddMessageAsync(JsonConvert.SerializeObject(request));
-                _logger.LogInformation($"REQUEST QUEUED: statusModel.ViewStatus={statusModel.ViewStatus}; searchCriteria={request.FirstName.Substring(0, 1)}.{request.LastName.Substring(0, 1)}. {((DateTime)request.DateOfBirth).ToString("MM/dd/yyyy")} {request.PhoneNumber}{request.EmailAddress} {request.Pin}; request.Id={request.Id}");
+                _logger.LogInformation($"REQUEST QUEUED: statusModel.ViewStatus={statusModel.ViewStatus}; searchCriteria={request.FirstName.Substring(0, 1)}.{request.LastName.Substring(0, 1)}. {((DateTime)request.DateOfBirth).ToString("MM/dd/yyyy")} {request.PhoneNumber}{request.EmailAddress} {request.Pin} {request.Language}; request.Id={request.Id}");
             }
             else
             {
