@@ -571,7 +571,7 @@ namespace Application.Common
                     $"<h3 style='color: #f06724'>Certificatul digital COVID-19</h3>" +
                     $"<p>Vă mulțumim că ați accesat sistemul de certificate digitale COVID-19. Linkul de unde puteți prelua fișa de vaccinare COVID-19 este valabil timp de {linkExpireHours} de ore. După ce l-ați accesat și l-ați salvat în telefon, codul QR nu va expira.</p>" + 
                     $"<p><a href='{url}'>Vizualizați fișa de vaccinare</a></p>" +
-                    $"<p> <a href='{cdcUrl} Aflați mai multe despre cum să vă protejați pe dvs. și pe ceilalți  de la Centers for Disease Control and Prevention (Centrele pentru controlul și prevenirea bolilor).</a></p>" +
+                    $"<p>Aflați mai multe despre cum să <a href='{cdcUrl}'>vă protejați pe dvs. și pe ceilalți</a> de la Centers for Disease Control and Prevention (Centrele pentru controlul și prevenirea bolilor).</p>" +
                     $"<p><b>Aveți întrebări?</b></p>" +
                     $"<p>Accesați pagina Întrebări frecvente (<a href='{vaccineFAQUrl}'>Întrebări frecvente</a>) pentru a afla mai multe despre certificatul digital COVID-19.</p>" +
                     $"<p><b>Rămâneți informat.</b></p>" +
