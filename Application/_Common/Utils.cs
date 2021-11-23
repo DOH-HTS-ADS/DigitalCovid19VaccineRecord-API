@@ -699,16 +699,16 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>د واشنګټن ایالت د روغتیا ریاست (Washington State Department of Health) رسمي بریښنالیک</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ur" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</h3>" +
-                    $"<p>کووڈ-19 تصدیقی ریکارڈ کا سسٹم ملاحظہ کرنے کا شکریہ۔ کووڈ-19 ویکسین ریکارڈ کا کوڈ وصول کرنے کا لنک {linkExpireHours} گھنٹوں تک کام کرے گا۔ رسائی لے کر ڈیوائس میں محفوظ کرنے کے بعد کیو آر کوڈ کی میعاد ختم نہیں ہو گی۔</p>" +
-                    $"<p><a href='{url}'>ویکسین ریکارڈ دیکھیں</a></p>" +
-                    $"<p>Centers for Disease Control and Prevention (مراکز برائے امراض پر قابو اور انسداد) سے مزید سیکھیں کہ<a/> خود کو اور دوسروں کو کیسے محفوظ رکھا جائے<a href='{cdcUrl}'> ۔</p>" +
-                    $"<p><b>سوالات ہیں؟</b></p>" +
-                    $"<p>اپنے ڈیجیٹل کووڈ-19 ویکسین ریکارڈ کے متعلق مزید جاننے کے لئے ہمارا عمومی سوالات (<a href='{vaccineFAQUrl}'>FAQ</a>)  کا صفحہ ملاحظہ کریں۔</p>" +
-                    $"<p><b>آگاہ رہیں۔</b></p>" +
-                    $"<p>کووڈ-19 کے متعلق<a/> تازہ ترین معلومات دیکھیں<a href='{covidWebUrl}'> </p><br/>" +
+                    $"<h3 dir='rtl' style='color: #f06724'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</h3>" +
+                    $"<p dir='rtl'>کووڈ-19 تصدیقی ریکارڈ کا سسٹم ملاحظہ کرنے کا شکریہ۔ کووڈ-19 ویکسین ریکارڈ کا کوڈ وصول کرنے کا لنک {linkExpireHours} گھنٹوں تک کام کرے گا۔ رسائی لے کر ڈیوائس میں محفوظ کرنے کے بعد کیو آر کوڈ کی میعاد ختم نہیں ہو گی۔</p>" +
+                    $"<p dir='rtl'><a href='{url}'>ویکسین ریکارڈ دیکھیں</a></p>" +
+                    $"<p dir='rtl'>Centers for Disease Control and Prevention (مراکز برائے امراض پر قابو اور انسداد) سے مزید سیکھیں کہ<a/> خود کو اور دوسروں کو کیسے محفوظ رکھا جائے<a href='{cdcUrl}'> ۔</p>" +
+                    $"<p dir='rtl'><b>سوالات ہیں؟</b></p>" +
+                    $"<p dir='rtl'>اپنے ڈیجیٹل کووڈ-19 ویکسین ریکارڈ کے متعلق مزید جاننے کے لئے ہمارا عمومی سوالات (<a href='{vaccineFAQUrl}'>FAQ</a>)  کا صفحہ ملاحظہ کریں۔</p>" +
+                    $"<p dir='rtl'><b>آگاہ رہیں۔</b></p>" +
+                    $"<p dir='rtl'>کووڈ-19 کے متعلق<a/> تازہ ترین معلومات دیکھیں<a href='{covidWebUrl}'> </p><br/>" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>Washington State Department of Health (ریاست واشنگٹن محکمۂ صحت) کی سرکاری ای میل</p>" +
+                    $"<footer><p dir='rtl' style='text-align:center'>Washington State Department of Health (ریاست واشنگٹن محکمۂ صحت) کی سرکاری ای میل</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ne" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड</h3>" +
@@ -1265,16 +1265,16 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>د واشنګټن ایالت د روغتیا ریاست (Washington State Department of Health) رسمي بریښنالیک</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ur" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</h3>" +
-                    $"<p>آپ نے حال ہی میں <a/>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ سسٹم<a href='{webUrl}'>  سے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کی درخواست کی ہے۔ بدقسمتی سے آپ کی فراہم کردہ معلومات ریاستی سسٹم میں موجود معلومات سے مماثلت نہیں رکھتی۔ </p><br/>" +
-                    $"<p>آپ کوئی اور موبائل فون نمبر یا ای میل ایڈریس استعمال کرتے ہوئے <a/>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ<a href='{webUrl}'>  سسٹم میں دوبارہ درخواست جمع کروا سکتے ہیں، آپ اپنے ریکارڈ کو اپنے رابطے کی معلومات سے ملانے کے لئے <a/>ہم سے رابطہ<a href='{contactUsUrl}'>  کر سکتے ہیں، یا آپ اپنے معالج سے رابطہ کر کے یقینی بنا سکتے ہیں کہ آپ کی معلومات ریاستی نظام میں جمع کروا دی گئی ہیں۔</p>" +
-                    $"<p><b>سوالات ہیں؟</b></p>" +
-                    $"<p>اپنے ڈیجیٹل کووڈ-19 ویکسین ریکارڈ کے متعلق مزید جاننے کے لئے ہمارا عمومی سوالات (<a href='{vaccineFAQUrl}'>FAQ</a>)  کا صفحہ ملاحظہ کریں۔</p>" +
-                    $"<p><b>آگاہ رہیں۔</b></p>" +
-                    $"<p>کووڈ-19 کے متعلق<a/> تازہ ترین معلومات دیکھیں<a href='{covidWebUrl}'></p><br/>" +
+                    $"<h3 dir='rtl' style='color: #f06724'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</h3>" +
+                    $"<p dir='rtl'>آپ نے حال ہی میں <a/>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ سسٹم<a href='{webUrl}'>  سے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کی درخواست کی ہے۔ بدقسمتی سے آپ کی فراہم کردہ معلومات ریاستی سسٹم میں موجود معلومات سے مماثلت نہیں رکھتی۔ </p><br/>" +
+                    $"<p dir='rtl'>آپ کوئی اور موبائل فون نمبر یا ای میل ایڈریس استعمال کرتے ہوئے <a/>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ<a href='{webUrl}'>  سسٹم میں دوبارہ درخواست جمع کروا سکتے ہیں، آپ اپنے ریکارڈ کو اپنے رابطے کی معلومات سے ملانے کے لئے <a/>ہم سے رابطہ<a href='{contactUsUrl}'>  کر سکتے ہیں، یا آپ اپنے معالج سے رابطہ کر کے یقینی بنا سکتے ہیں کہ آپ کی معلومات ریاستی نظام میں جمع کروا دی گئی ہیں۔</p>" +
+                    $"<p dir='rtl'><b>سوالات ہیں؟</b></p>" +
+                    $"<p dir='rtl'>اپنے ڈیجیٹل کووڈ-19 ویکسین ریکارڈ کے متعلق مزید جاننے کے لئے ہمارا عمومی سوالات (<a href='{vaccineFAQUrl}'>FAQ</a>)  کا صفحہ ملاحظہ کریں۔</p>" +
+                    $"<p dir='rtl'><b>آگاہ رہیں۔</b></p>" +
+                    $"<p dir='rtl'>کووڈ-19 کے متعلق<a/> تازہ ترین معلومات دیکھیں<a href='{covidWebUrl}'></p><br/>" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>Washington State Department of Health (DOH، ریاست واشنگٹن محکمۂ صحت) کی سرکاری ای میل</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<footer><p dir='rtl' style='text-align:center'>Washington State Department of Health (DOH، ریاست واشنگٹن محکمۂ صحت) کی سرکاری ای میل</p>" +
+                    $"<p dir='rtl' style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ne" =>
                     $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड</h3>" +
