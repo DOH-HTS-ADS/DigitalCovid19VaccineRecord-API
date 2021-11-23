@@ -702,11 +702,11 @@ namespace Application.Common
                     $"<h3 dir='rtl' style='color: #f06724'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</h3>" +
                     $"<p dir='rtl'>کووڈ-19 تصدیقی ریکارڈ کا سسٹم ملاحظہ کرنے کا شکریہ۔ کووڈ-19 ویکسین ریکارڈ کا کوڈ وصول کرنے کا لنک {linkExpireHours} گھنٹوں تک کام کرے گا۔ رسائی لے کر ڈیوائس میں محفوظ کرنے کے بعد کیو آر کوڈ کی میعاد ختم نہیں ہو گی۔</p>" +
                     $"<p dir='rtl'><a href='{url}'>ویکسین ریکارڈ دیکھیں</a></p>" +
-                    $"<p dir='rtl'>Centers for Disease Control and Prevention (مراکز برائے امراض پر قابو اور انسداد) سے مزید سیکھیں کہ<a/> خود کو اور دوسروں کو کیسے محفوظ رکھا جائے<a href='{cdcUrl}'> ۔</p>" +
+                    $"<p dir='rtl'>Centers for Disease Control and Prevention (مراکز برائے امراض پر قابو اور انسداد) سے مزید سیکھیں کہ <a href='{cdcUrl}'>خود کو اور دوسروں کو کیسے محفوظ رکھا جائے</a></p>" +
                     $"<p dir='rtl'><b>سوالات ہیں؟</b></p>" +
                     $"<p dir='rtl'>اپنے ڈیجیٹل کووڈ-19 ویکسین ریکارڈ کے متعلق مزید جاننے کے لئے ہمارا عمومی سوالات (<a href='{vaccineFAQUrl}'>FAQ</a>)  کا صفحہ ملاحظہ کریں۔</p>" +
                     $"<p dir='rtl'><b>آگاہ رہیں۔</b></p>" +
-                    $"<p dir='rtl'>کووڈ-19 کے متعلق<a/> تازہ ترین معلومات دیکھیں<a href='{covidWebUrl}'> </p><br/>" +
+                    $"<p dir='rtl'>کووڈ-19 کے متعلق <a href='{covidWebUrl}'>تازہ ترین معلومات دیکھیں<a/> </p><br/>" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>Washington State Department of Health (ریاست واشنگٹن محکمۂ صحت) کی سرکاری ای میل</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
@@ -1013,7 +1013,7 @@ namespace Application.Common
             {
                 "es" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Registro digital de vacunación contra el COVID-19</h3>" +
-                    $"<p>Hace poco solicitó un registro digital de vacunación contra el COVID-19 a <a href='{webUrl}'>MyVaccineRecord.CDPH.ca.gov</a>. Desafortunadamente, la información que proporcionó no coincide con la información que tenemos en el sistema. Puede <a href='{webUrl}'>enviar otra solicitud</a> con otro número de teléfono o dirección de correo electrónico, o puede comunicarse con el <a href='{contactUsUrl}'>asistente virtual para COVID-19 del CDPH</a> para obtener ayuda para hacer que su registro coincida con su información de contacto.</p><br/>" +
+                    $"<p>Recientemente solicitó un registro digital de verificación de la COVID-19 del <a href='{webUrl}'>sistema de registro digital de verificación de la COVID-19</a>. Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema estatal.</p><br/>" +
                     $"<p>Puede presentar otra solicitud en el sistema de <a href='{webUrl}'>registro digital de verificación de la COVID-19</a> con un número de teléfono o dirección de correo electrónico diferente; puede <a href='{contactUsUrl}'>comunicarse con nosotros</a> para que lo ayudemos a fin de que coincida la información de contacto con los registros; o bien, puede comunicarse con su proveedor para asegurarse de que la información ha sido enviada al sistema estatal.</p>" +
                     $"<p><b>¿Tiene preguntas?</b></p>" +
                     $"<p>Visite nuestra página de <a href='{vaccineFAQUrl}'>preguntas frecuentes</a> para obtener más información sobre el registro digital de verificación de la COVID-19.</p>" +
@@ -1266,12 +1266,12 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ur" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</h3>" +
-                    $"<p dir='rtl'>آپ نے حال ہی میں <a/>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ سسٹم<a href='{webUrl}'>  سے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کی درخواست کی ہے۔ بدقسمتی سے آپ کی فراہم کردہ معلومات ریاستی سسٹم میں موجود معلومات سے مماثلت نہیں رکھتی۔ </p><br/>" +
-                    $"<p dir='rtl'>آپ کوئی اور موبائل فون نمبر یا ای میل ایڈریس استعمال کرتے ہوئے <a/>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ<a href='{webUrl}'>  سسٹم میں دوبارہ درخواست جمع کروا سکتے ہیں، آپ اپنے ریکارڈ کو اپنے رابطے کی معلومات سے ملانے کے لئے <a/>ہم سے رابطہ<a href='{contactUsUrl}'>  کر سکتے ہیں، یا آپ اپنے معالج سے رابطہ کر کے یقینی بنا سکتے ہیں کہ آپ کی معلومات ریاستی نظام میں جمع کروا دی گئی ہیں۔</p>" +
+                    $"<p dir='rtl'>آپ نے حال ہی میں <a href='{webUrl}'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ سسٹم</a> سے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کی درخواست کی ہے۔ بدقسمتی سے آپ کی فراہم کردہ معلومات ریاستی سسٹم میں موجود معلومات سے مماثلت نہیں رکھتی۔ </p><br/>" +
+                    $"<p dir='rtl'>آپ کوئی اور موبائل فون نمبر یا ای میل ایڈریس استعمال کرتے ہوئے <a href='{webUrl}'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</a>  سسٹم میں دوبارہ درخواست جمع کروا سکتے ہیں، آپ اپنے ریکارڈ کو اپنے رابطے کی معلومات سے ملانے کے لئے <a href='{contactUsUrl}'>ہم سے رابطہ</a>  کر سکتے ہیں، یا آپ اپنے معالج سے رابطہ کر کے یقینی بنا سکتے ہیں کہ آپ کی معلومات ریاستی نظام میں جمع کروا دی گئی ہیں۔</p>" +
                     $"<p dir='rtl'><b>سوالات ہیں؟</b></p>" +
                     $"<p dir='rtl'>اپنے ڈیجیٹل کووڈ-19 ویکسین ریکارڈ کے متعلق مزید جاننے کے لئے ہمارا عمومی سوالات (<a href='{vaccineFAQUrl}'>FAQ</a>)  کا صفحہ ملاحظہ کریں۔</p>" +
                     $"<p dir='rtl'><b>آگاہ رہیں۔</b></p>" +
-                    $"<p dir='rtl'>کووڈ-19 کے متعلق<a/> تازہ ترین معلومات دیکھیں<a href='{covidWebUrl}'></p><br/>" +
+                    $"<p dir='rtl'>کووڈ-19 کے متعلق <a href='{covidWebUrl}'>تازہ ترین معلومات دیکھیں</a></p><br/>" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>Washington State Department of Health (DOH، ریاست واشنگٹن محکمۂ صحت) کی سرکاری ای میل</p>" +
                     $"<p dir='rtl' style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
