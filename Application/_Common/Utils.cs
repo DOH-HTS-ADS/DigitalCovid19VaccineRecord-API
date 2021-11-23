@@ -582,7 +582,7 @@ namespace Application.Common
                     $"<h3 style='color: #f06724'>Comprovante digital de vacinação contra a COVID-19</h3>" +
                     $"<p>Obrigado por visitar o sistema do Comprovante digital de vacinação contra a COVID-19. O link para recuperar o seu código de acesso ao comprovante de vacinação contra a COVID-19 é válido por {linkExpireHours} horas. Após acessar o código QR e salvá-lo em seu dispositivo, ele não expirará.</p>" + 
                     $"<p><a href='{url}'>Ver o comprovante de vacinação</a></p>" +
-                    $"<p>Saiba mais sobre como <a href='{cdcUrl}>proteger a si mesmo e aos outros</a> com o Centers for Disease Control and Prevention (CDC, Centro para Controle e Prevenção de Doenças).</p>" +
+                    $"<p>Saiba mais sobre como <a href='{cdcUrl}'>proteger a si mesmo e aos outros</a> com o Centers for Disease Control and Prevention (CDC, Centro para Controle e Prevenção de Doenças).</p>" +
                     $"<p><b>Tem dúvidas?</b></p>" +
                     $"<p>Acesse a nossa página de Perguntas frequentes (<a href='{vaccineFAQUrl}'>FAQ</a>) para saber mais sobre o seu Comprovante digital de vacinação contra a COVID-19.</p>" +
                     $"<p><b>Mantenha-se informado.</b></p>" +
