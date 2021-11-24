@@ -52,10 +52,12 @@ namespace Infrastructure.AzureSynapse
                 conn.Open();
                 _logger.LogInformation($"CALLING: {_azureSynapseSettings.IdQuery}; request.Id={requestId}");
                 var rdVc = await cmdVc.ExecuteReaderAsync(cancellationToken);
+                _logger.LogInformation($"RESPONSE RECEIVED: {_azureSynapseSettings.IdQuery}; request.Id={requestId}");
 
                 if (await rdVc.ReadAsync(cancellationToken))
                 {
                     var jsonString = rdVc.GetString(0);
+                    _logger.LogInformation($"DESERIALIZED OBJECT: {rdVc.GetString(0)}; request.Id={requestId}");
                     var vaccineCredentialobject = JsonConvert.DeserializeObject<VcObject>(jsonString);
                     vaccineCredential = vaccineCredentialobject.Vc;
                 }
@@ -78,8 +80,9 @@ namespace Infrastructure.AzureSynapse
 
                 conn.Open();
 
-                _logger.LogInformation($"CALLING: {_azureSynapseSettings.StatusQuery}; request.Id={request.Id}");
+                _logger.LogInformation($"CALLING: {_azureSynapseSettings.StatusQuery}; commandText={cmdVc.CommandText}; request.Id={request.Id}");
                 var rdVc = await cmdVc.ExecuteScalarAsync(cancellationToken);
+                _logger.LogInformation($"RESPONSE RECEIVED: {_azureSynapseSettings.StatusQuery}; rdVc={rdVc}; request.Id={request.Id}");
 
                 if (rdVc != null)
                 {
@@ -90,8 +93,9 @@ namespace Infrastructure.AzureSynapse
                 {
                     //prepare for call to relaxed...
                     cmdVc = CreateCommand(conn, request, _azureSynapseSettings.RelaxedQuery);
-                    _logger.LogInformation($"CALLING: {_azureSynapseSettings.RelaxedQuery}; request.Id={request.Id}");
+                    _logger.LogInformation($"CALLING: {_azureSynapseSettings.RelaxedQuery}; commandText={cmdVc.CommandText}; request.Id={request.Id}");
                     rdVc = await cmdVc.ExecuteScalarAsync(cancellationToken);
+                    _logger.LogInformation($"RESPONSE RECEIVED: {_azureSynapseSettings.RelaxedQuery}; rdVc={rdVc}; request.Id={request.Id}");
                     if (rdVc != null)
                     {
                         Guid = Convert.ToString(rdVc);
