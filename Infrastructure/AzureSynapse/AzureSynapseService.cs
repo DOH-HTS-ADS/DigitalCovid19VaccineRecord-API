@@ -9,6 +9,7 @@ using System;
 using System.Data.Common;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace Infrastructure.AzureSynapse
 {
@@ -50,7 +51,7 @@ namespace Infrastructure.AzureSynapse
                 cmdVc.Parameters.AddWithValue("@UserId", id);
 
                 conn.Open();
-                _logger.LogInformation($"CALLING: {_azureSynapseSettings.IdQuery}; request.Id={requestId}");
+                _logger.LogInformation($"CALLING: {_azureSynapseSettings.IdQuery}; parameters={string.Join(",", cmdVc.Parameters.Cast<SqlParameter>().ToList().Select(p => $"{p.ParameterName}={p.Value}"))};request.Id={requestId}");
                 var rdVc = await cmdVc.ExecuteReaderAsync(cancellationToken);
                 _logger.LogInformation($"RESPONSE RECEIVED: {_azureSynapseSettings.IdQuery}; request.Id={requestId}");
 
@@ -79,8 +80,7 @@ namespace Infrastructure.AzureSynapse
                 var cmdVc = CreateCommand(conn, request, _azureSynapseSettings.StatusQuery);
 
                 conn.Open();
-
-                _logger.LogInformation($"CALLING: {_azureSynapseSettings.StatusQuery}; commandText={cmdVc.CommandText}; request.Id={request.Id}");
+                _logger.LogInformation($"CALLING: {_azureSynapseSettings.StatusQuery}; commandText={cmdVc.CommandText}; parameters={string.Join(",", cmdVc.Parameters.Cast<SqlParameter>().ToList().Select(p => $"{p.ParameterName}={p.Value}"))}; request.Id={request.Id}");
                 var rdVc = await cmdVc.ExecuteScalarAsync(cancellationToken);
                 _logger.LogInformation($"RESPONSE RECEIVED: {_azureSynapseSettings.StatusQuery}; rdVc={rdVc}; request.Id={request.Id}");
 
