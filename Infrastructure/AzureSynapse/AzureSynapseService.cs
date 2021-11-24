@@ -54,7 +54,7 @@ namespace Infrastructure.AzureSynapse
                 _logger.LogInformation($"CALLING: {_azureSynapseSettings.IdQuery}; parameters:@UserId={id}; request.Id={requestId}");
                 var rdVc = await cmdVc.ExecuteReaderAsync(cancellationToken);
                 _logger.LogInformation($"RESPONSE RECEIVED: {_azureSynapseSettings.IdQuery}; request.Id={requestId}");
-
+                
                 if (await rdVc.ReadAsync(cancellationToken))
                 {
                     var jsonString = rdVc.GetString(0);
@@ -94,8 +94,9 @@ namespace Infrastructure.AzureSynapse
                     //prepare for call to relaxed...
                     cmdVc = CreateCommand(conn, request, _azureSynapseSettings.RelaxedQuery);
                     _logger.LogInformation($"CALLING: {_azureSynapseSettings.RelaxedQuery}; commandText={cmdVc.CommandText}; parameters={string.Join(",", cmdVc.Parameters.Cast<SqlParameter>().ToList().Select(p => $"{p.ParameterName}={p.Value}"))}; request.Id={request.Id}");
-                    rdVc = await cmdVc.ExecuteScalarAsync(cancellationToken);
-                    _logger.LogInformation($"RESPONSE RECEIVED: {_azureSynapseSettings.RelaxedQuery}; rdVc={rdVc}; request.Id={request.Id}");
+                    //rdVc = await cmdVc.ExecuteScalarAsync(cancellationToken);
+                    var rdVc2 = await cmdVc.ExecuteReaderAsync(cancellationToken);
+                    _logger.LogInformation($"RESPONSE RECEIVED: {_azureSynapseSettings.RelaxedQuery}; rdVc: UserId={rdVc2.GetSqlString(0)}, msg={rdVc2.GetSqlString(1)}; request.Id={request.Id}");
                     if (rdVc != null)
                     {
                         Guid = Convert.ToString(rdVc);
