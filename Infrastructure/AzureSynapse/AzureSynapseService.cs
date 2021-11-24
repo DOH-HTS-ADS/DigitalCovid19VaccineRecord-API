@@ -94,7 +94,7 @@ namespace Infrastructure.AzureSynapse
                     //prepare for call to relaxed...
                     cmdVc = CreateCommand(conn, request, _azureSynapseSettings.RelaxedQuery);
                     _logger.LogInformation($"CALLING: {_azureSynapseSettings.RelaxedQuery}; commandText={cmdVc.CommandText}; parameters={string.Join(",", cmdVc.Parameters.Cast<SqlParameter>().ToList().Select(p => $"{p.ParameterName}={p.Value}"))}; request.Id={request.Id}");
-                    //rdVc = await cmdVc.ExecuteScalarAsync(cancellationToken);
+
                     var rdVc2 = await cmdVc.ExecuteReaderAsync(cancellationToken);
                     _logger.LogInformation($"RESPONSE RECEIVED: {_azureSynapseSettings.RelaxedQuery}; request.Id={request.Id}");
                     
