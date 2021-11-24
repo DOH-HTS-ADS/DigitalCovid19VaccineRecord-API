@@ -96,11 +96,17 @@ namespace Infrastructure.AzureSynapse
                     _logger.LogInformation($"CALLING: {_azureSynapseSettings.RelaxedQuery}; commandText={cmdVc.CommandText}; parameters={string.Join(",", cmdVc.Parameters.Cast<SqlParameter>().ToList().Select(p => $"{p.ParameterName}={p.Value}"))}; request.Id={request.Id}");
                     //rdVc = await cmdVc.ExecuteScalarAsync(cancellationToken);
                     var rdVc2 = await cmdVc.ExecuteReaderAsync(cancellationToken);
-                    _logger.LogInformation($"RESPONSE RECEIVED: {_azureSynapseSettings.RelaxedQuery}; rdVc: UserId={rdVc2.GetSqlString(0)}, msg={rdVc2.GetSqlString(1)}; request.Id={request.Id}");
-                    if (rdVc != null)
+                    _logger.LogInformation($"RESPONSE RECEIVED: {_azureSynapseSettings.RelaxedQuery}; request.Id={request.Id}");
+                    
+                    if (await rdVc2.ReadAsync(cancellationToken))
                     {
-                        Guid = Convert.ToString(rdVc);
-                    }
+                        if (rdVc2 != null)
+                        {
+                            Guid = Convert.ToString(rdVc2.GetString(0));
+                            _logger.LogInformation($"RELAXED QUERY RESULT: {_azureSynapseSettings.RelaxedQuery}; rdVc: UserId={rdVc2.GetString(0)}, msg={rdVc2.GetString(1)}; request.Id={request.Id}");
+
+                        }
+                    } 
                 }
             }
 
