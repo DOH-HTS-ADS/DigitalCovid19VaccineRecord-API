@@ -38,32 +38,32 @@ namespace VaccineCredential.Api.Controllers
         [HttpPost("vaccineCredential", Name = nameof(VaccineCredentialRequest))]
         public async Task<ActionResult> VaccineCredentialRequest([FromBody][Bind("Id,Pin,WalletCode")] GetVaccineCredentialQuery request)
         {
-            if (ModelState.IsValid)
-            {
-                //Send command off and return the updated employee
-                var vm = await Mediator.Send(request);
-                var statusCodeResult = HandleRateLimit(vm.RateLimit);
-                if (statusCodeResult != null)
-                {
-                    return statusCodeResult;
-                }
-                else if (vm.CorruptData)
-                {
-                    return UnprocessableEntity();
-                }
-                else if (vm.VaccineCredentialViewModel == null)
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    return Ok(vm.VaccineCredentialViewModel);
-                }
-            }
-            else
-            {
+            //if (ModelState.IsValid)
+            //{
+            //    //Send command off and return the updated employee
+            //    var vm = await Mediator.Send(request);
+            //    var statusCodeResult = HandleRateLimit(vm.RateLimit);
+            //    if (statusCodeResult != null)
+            //    {
+            //        return statusCodeResult;
+            //    }
+            //    else if (vm.CorruptData)
+            //    {
+            //        return UnprocessableEntity();
+            //    }
+            //    else if (vm.VaccineCredentialViewModel == null)
+            //    {
+            //        return NotFound();
+            //    }
+            //    else
+            //    {
+            //        return Ok(vm.VaccineCredentialViewModel);
+            //    }
+            //}
+            //else
+            //{
                 return UnprocessableEntity();
-            }
+            //}
         }
 
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]

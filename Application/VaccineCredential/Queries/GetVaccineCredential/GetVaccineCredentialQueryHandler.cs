@@ -104,7 +104,6 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
             {
                 try
                 {
-                    throw new Exception("Testing 422 error messages");
                     // 1.  Get the json credential in clean ( no spacing ) format.
                     Vci cred = _credCreator.GetCredential(responseVc);
 
