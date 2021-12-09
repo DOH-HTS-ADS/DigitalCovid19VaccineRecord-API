@@ -38,6 +38,7 @@ namespace VaccineCredential.Api.Controllers
         [HttpPost("vaccineCredential", Name = nameof(VaccineCredentialRequest))]
         public async Task<ActionResult> VaccineCredentialRequest([FromBody][Bind("Id,Pin,WalletCode")] GetVaccineCredentialQuery request)
         {
+            throw new System.Exception("Testing 500 error");
             //if (ModelState.IsValid)
             //{
             //    //Send command off and return the updated employee
@@ -62,7 +63,7 @@ namespace VaccineCredential.Api.Controllers
             //}
             //else
             //{
-                return UnprocessableEntity();
+            //    return UnprocessableEntity();
             //}
         }
 
