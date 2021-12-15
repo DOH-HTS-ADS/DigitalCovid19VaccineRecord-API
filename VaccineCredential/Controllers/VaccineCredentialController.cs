@@ -72,33 +72,33 @@ namespace VaccineCredential.Api.Controllers
         [HttpPost("vaccineCredentialStatus", Name = nameof(VaccineCredentialStatusRequest))]
         public async Task<ActionResult> VaccineCredentialStatusRequest([FromBody][Bind("FirstName,LastName,DateOfBirth,PhoneNumber,EmailAddress,Pin,Language")] GetVaccineCredentialStatusQuery request)
         {
-            //if (ModelState.IsValid)
-            //{
-            //    //Send command off and return the updated employee
-            //    request.Id = System.Guid.NewGuid().ToString();
-            //    var vm = await Mediator.Send(request);
-            //    var statusCodeResult = HandleRateLimit(vm.RateLimit);
-            //    if (vm.InvalidPin)
-            //    {
-            //        return UnprocessableEntity("Invalid Pin");
-            //    }
-            //    else if (statusCodeResult != null)
-            //    {
-            //        return statusCodeResult;
-            //    }
-            //    else if (vm.ViewStatus)
-            //    {
-            //        return Ok();
-            //    }
-            //    else
-            //    {
-            //        return NotFound();
-            //    }
-            //}
-            //else
-            //{
+            if (ModelState.IsValid)
+            {
+                //Send command off and return the updated employee
+                request.Id = System.Guid.NewGuid().ToString();
+                var vm = await Mediator.Send(request);
+                var statusCodeResult = HandleRateLimit(vm.RateLimit);
+                if (vm.InvalidPin)
+                {
+                    return UnprocessableEntity("Invalid Pin");
+                }
+                else if (statusCodeResult != null)
+                {
+                    return statusCodeResult;
+                }
+                else if (vm.ViewStatus)
+                {
+                    return Ok();
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
+            else
+            {
                 return UnprocessableEntity();
-            //}
+            }
         }
     }
 }
