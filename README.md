@@ -284,7 +284,7 @@ return vaccineCredential;
 |KeySettings__GoogleIssuer|The Google service account's issuer that is created under CDT Organization. It is linked to the GoogleIssuerId||
 |KeySettings__GoogleIssuerId|The Google Merchant Center account that is used to add the generate Vaccine Credential to the Google Pay application|3388000000013279970|
 |KeySettings__GooglePrivateKey|The Google service account's private rsa key (RS256) used in signing the Vaccine Credential for Google Health Card|MIIEo..................Uh+jDJj7GxFMqUk=|
-|KeySettings__GoogleWalletLogo|The link to the State/Agency Logo that is used in the Google Health Card|https://[your web url]/imgs/ca-logo-660w.png<br />NOTE: Logo must be reviewed, approved and white listed by Google Pay Support any time the image is changed. You can do this by contacting support via https://pay.google.com/business/console or emailing them at google-pay-passes-support@google.com 
+|KeySettings__GoogleWalletLogo|The link to the State/Agency Logo that is used in the Google Health Card|https://[your web url]/imgs/[yourlogofile]<br />NOTE: Logo must be reviewed, approved and white listed by Google Pay Support any time the image is changed. You can do this by contacting support via https://pay.google.com/business/console or emailing them at google-pay-passes-support@google.com 
 |SendGridSettings__Key|The SendGrid API Key to send emails|SG.Az12........RHcJaS4|
 |SendGridSettings__Sender|The email sender friendly name|[State] Department of Public Health|
 |SendGridSettings__SenderEmail|The sender email|no-reply@[Department].[State].gov|
