@@ -211,7 +211,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                         WalletContent = walletContent
                     };
 
-                    _logger.LogInformation($"RECEIVED-QR: id={id}; subject={firstName.Substring(0, 1)}.{lastName.Substring(0, 1)}.; request.Id={request.Id}");
+                    _logger.LogInformation($"RECEIVED-QR: id={id}; subject={firstName.Substring(0, 1)}.{lastName.Substring(0, 1)}.; walletContent={walletContent}; request.Id={request.Id}");
                     return vaccineCredentialModel;
                 }
                 catch (Exception e)
