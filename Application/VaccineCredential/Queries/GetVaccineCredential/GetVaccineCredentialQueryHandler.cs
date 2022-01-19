@@ -187,7 +187,6 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                                 {
                                     NullValueHandling = NullValueHandling.Ignore
                                 });
-                                _logger.LogInformation($"RECEIVED-QR: wallet={jsonGoogleWallet}; request.Id={request.Id}");
 
                                 walletContent = $"{_appSettings.GoogleWalletUrl}{ _jwtSign.SignWithRsaKey(Encoding.UTF8.GetBytes(jsonGoogleWallet))}";
                                 break;
