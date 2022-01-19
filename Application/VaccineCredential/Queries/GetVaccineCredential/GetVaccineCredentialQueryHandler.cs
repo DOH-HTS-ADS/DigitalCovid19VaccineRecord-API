@@ -187,6 +187,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                                 {
                                     NullValueHandling = NullValueHandling.Ignore
                                 });
+                                _logger.LogInformation($"RECEIVED-QR: wallet={jsonGoogleWallet}; request.Id={request.Id}");
 
                                 walletContent = $"{_appSettings.GoogleWalletUrl}{ _jwtSign.SignWithRsaKey(Encoding.UTF8.GetBytes(jsonGoogleWallet))}";
                                 break;
@@ -211,7 +212,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                         WalletContent = walletContent
                     };
 
-                    _logger.LogInformation($"RECEIVED-QR: id={id}; subject={firstName.Substring(0, 1)}.{lastName.Substring(0, 1)}.; walletContent={walletContent}; request.Id={request.Id}");
+                    _logger.LogInformation($"RECEIVED-QR: id={id}; subject={firstName.Substring(0, 1)}.{lastName.Substring(0, 1)}.; request.Id={request.Id}");
                     return vaccineCredentialModel;
                 }
                 catch (Exception e)
