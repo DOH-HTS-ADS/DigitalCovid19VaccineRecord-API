@@ -687,16 +687,16 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Washington State Department of Health (ਵਾਸ਼ਿੰਗਟਨ ਸਟੇਟ ਸਿਹਤ ਵਿਭਾਗ) ਦਾ ਅਧਿਕਾਰਤ ਈਮੇਲ ਪਤਾ</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ps" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>د ډیجیټل COVID-19 تائید ثبت</h3>" +
+                    $"<h3 dir='rtl' style='color: #f06724'>د ډیجیټل COVID-19 تائید ثبت</h3>" +
                     $"<p>د ډیجیټل COVID-19 تائید ثبت سیسټم لیدو لپاره ستاسو مننه. ستاسو د COVID-19 واکسین ثبت کوډ بیرته ترلاسه کولو لینک د {linkExpireHours} ساعتونو لپاره د اعتبار وړ دی. یوځل چې ستاسو وسیلې ته لاسرسی ولري او خوندي شي، نو د QR کوډ به پای ته ونه رسیږي.</p>" +
-                    $"<p><a href='{url}'>د واکسین ریکارډ وګورئ </a></p>" +
-                    $"<p><a href='{cdcUrl}'>خپل ځان او نور خلک</a> څنګه وساتئ په اړه نور معلومات د ناروغیو کنټرول او مخنیوي مرکزونو (Centers for Disease Control and Prevention) څخه زده کړئ.</p>" +
-                    $"<p><b>ایا پوښتنې لرئ؟</b></p>" +
-                    $"<p>د خپل ډیجیټل COVID-19 واکسین ثبت په اړه د نورې زده کړې لپاره زموږ په مکرر ډول پوښتل شوي پوښتنو (<a href='{vaccineFAQUrl}'>FAQ</a>)  پاڼې څخه لیدنه وکړئ.</p>" +
-                    $"<p><b>باخبر اوسئ.</b></p>" +
-                    $"<p>دCOVID-19 په<a href='{covidWebUrl}'>اړه تازه معلومات وګورئ</a> .</p><br/>" +
+                    $"<p dir='rtl'><a href='{url}'>د واکسین ریکارډ وګورئ </a></p>" +
+                    $"<p dir='rtl'><a href='{cdcUrl}'>خپل ځان او نور خلک</a> څنګه وساتئ په اړه نور معلومات د ناروغیو کنټرول او مخنیوي مرکزونو (Centers for Disease Control and Prevention) څخه زده کړئ.</p>" +
+                    $"<p dir='rtl'><b>ایا پوښتنې لرئ؟</b></p>" +
+                    $"<p dir='rtl'>د خپل ډیجیټل COVID-19 واکسین ثبت په اړه د نورې زده کړې لپاره زموږ په مکرر ډول پوښتل شوي پوښتنو (<a href='{vaccineFAQUrl}'>FAQ</a>)  پاڼې څخه لیدنه وکړئ.</p>" +
+                    $"<p dir='rtl'><b>باخبر اوسئ.</b></p>" +
+                    $"<p dir='rtl'>دCOVID-19 په<a href='{covidWebUrl}'>اړه تازه معلومات وګورئ</a> .</p><br/>" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>د واشنګټن ایالت د روغتیا ریاست (Washington State Department of Health) رسمي بریښنالیک</p>" +
+                    $"<footer><p dir='rtl' style='text-align:center'>د واشنګټن ایالت د روغتیا ریاست (Washington State Department of Health) رسمي بریښنالیک</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ur" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</h3>" +
@@ -1254,16 +1254,16 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Washington State Department of Health (ਵਾਸ਼ਿੰਗਟਨ ਸਟੇਟ ਸਿਹਤ ਵਿਭਾਗ) ਦਾ ਅਧਿਕਾਰਤ ਈਮੇਲ ਪਤਾ</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ps" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>د ډیجیټل COVID-19 تائید ثبت</h3>" +
-                    $"<p>تاسو پدې وروستیو کې <a href='{webUrl}'>د ډیجیټل COVID-19 تائید ثبت سیسټم څخه د ډیجیټل COVID-19 تائید ثبت غوښتنه کړې</a> . له بده مرغه، هغه معلومات چې تاسو چمتو کړي د دولتي سیسټم کې د معلوماتو سره سمون نلري. </p><br/>" +
-                    $"<p>تاسو کولی شئ د <a href='{webUrl}'>ډیجیټل COVID-19 تائید ثبت</a> سیسټم کې د مختلف ګرځنده تلیفون شمیرې یا بریښنالیک ادرس سره بله غوښتنه وسپارئ، تاسو کولی شي خپل ثبت د خپل اړیکې معلوماتو سره د سمولو مرستې لپاره <a href='{contactUsUrl}'>زموږ سره اړیکه ونیسئ</a> ، یا تاسو کولی شئ له خپل چمتو کونکي سره اړیکه ونیسئ ترڅو ډاډمن شي چې ستاسو معلومات دولتي سیسټم ته سپارل شوي دي.</p>" +
-                    $"<p><b>ایا پوښتنې لرئ؟</b></p>" +
-                    $"<p>د خپل ډیجیټل COVID-19 واکسین ثبت په اړه د نورې زده کړې لپاره زموږ په مکرر ډول پوښتل شوي پوښتنو (<a href='{vaccineFAQUrl}'>FAQ</a>) پاڼې څخه لیدنه وکړئ.</p>" +
-                    $"<p><b>باخبر اوسئ.</b></p>" +
-                    $"<p>د COVID-19.په اړه <a href='{covidWebUrl}'>تازه معلومات وګورئ</a> .</p><br/>" +
+                    $"<h3 dir='rtl' style='color: #f06724'>د ډیجیټل COVID-19 تائید ثبت</h3>" +
+                    $"<p dir='rtl'>تاسو پدې وروستیو کې <a href='{webUrl}'>د ډیجیټل COVID-19 تائید ثبت سیسټم څخه د ډیجیټل COVID-19 تائید ثبت غوښتنه کړې</a> . له بده مرغه، هغه معلومات چې تاسو چمتو کړي د دولتي سیسټم کې د معلوماتو سره سمون نلري. </p><br/>" +
+                    $"<p dir='rtl'>تاسو کولی شئ د <a href='{webUrl}'>ډیجیټل COVID-19 تائید ثبت</a> سیسټم کې د مختلف ګرځنده تلیفون شمیرې یا بریښنالیک ادرس سره بله غوښتنه وسپارئ، تاسو کولی شي خپل ثبت د خپل اړیکې معلوماتو سره د سمولو مرستې لپاره <a href='{contactUsUrl}'>زموږ سره اړیکه ونیسئ</a> ، یا تاسو کولی شئ له خپل چمتو کونکي سره اړیکه ونیسئ ترڅو ډاډمن شي چې ستاسو معلومات دولتي سیسټم ته سپارل شوي دي.</p>" +
+                    $"<p dir='rtl'><b>ایا پوښتنې لرئ؟</b></p>" +
+                    $"<p dir='rtl'>د خپل ډیجیټل COVID-19 واکسین ثبت په اړه د نورې زده کړې لپاره زموږ په مکرر ډول پوښتل شوي پوښتنو (<a href='{vaccineFAQUrl}'>FAQ</a>) پاڼې څخه لیدنه وکړئ.</p>" +
+                    $"<p dir='rtl'><b>باخبر اوسئ.</b></p>" +
+                    $"<p dir='rtl'>د COVID-19.په اړه <a href='{covidWebUrl}'>تازه معلومات وګورئ</a> .</p><br/>" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>د واشنګټن ایالت د روغتیا ریاست (Washington State Department of Health) رسمي بریښنالیک</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
+                    $"<footer><p dir='rtl' style='text-align:center'>د واشنګټن ایالت د روغتیا ریاست (Washington State Department of Health) رسمي بریښنالیک</p>" +
+                    $"<p dir='rtl' style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ur" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</h3>" +
                     $"<p dir='rtl'>آپ نے حال ہی میں <a href='{webUrl}'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ سسٹم</a> سے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کی درخواست کی ہے۔ بدقسمتی سے آپ کی فراہم کردہ معلومات ریاستی سسٹم میں موجود معلومات سے مماثلت نہیں رکھتی۔ </p><br/>" +
