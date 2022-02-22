@@ -688,7 +688,7 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ps" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>د ډیجیټل COVID-19 تائید ثبت</h3>" +
-                    $"<p>د ډیجیټل COVID-19 تائید ثبت سیسټم لیدو لپاره ستاسو مننه. ستاسو د COVID-19 واکسین ثبت کوډ بیرته ترلاسه کولو لینک د {linkExpireHours} ساعتونو لپاره د اعتبار وړ دی. یوځل چې ستاسو وسیلې ته لاسرسی ولري او خوندي شي، نو د QR کوډ به پای ته ونه رسیږي.</p>" +
+                    $"<p dir='rtl'>د ډیجیټل COVID-19 تائید ثبت سیسټم لیدو لپاره ستاسو مننه. ستاسو د COVID-19 واکسین ثبت کوډ بیرته ترلاسه کولو لینک د {linkExpireHours} ساعتونو لپاره د اعتبار وړ دی. یوځل چې ستاسو وسیلې ته لاسرسی ولري او خوندي شي، نو د QR کوډ به پای ته ونه رسیږي.</p>" +
                     $"<p dir='rtl'><a href='{url}'>د واکسین ریکارډ وګورئ </a></p>" +
                     $"<p dir='rtl'><a href='{cdcUrl}'>خپل ځان او نور خلک</a> څنګه وساتئ په اړه نور معلومات د ناروغیو کنټرول او مخنیوي مرکزونو (Centers for Disease Control and Prevention) څخه زده کړئ.</p>" +
                     $"<p dir='rtl'><b>ایا پوښتنې لرئ؟</b></p>" +
