@@ -941,6 +941,7 @@ namespace Application.Common
 
         public static string FormatNotFoundSms(string lang, string phoneNumber)
         {
+            phoneNumber = "\u200e" + phoneNumber;
             return lang switch
             {
                 "es" => $"Recientemente solicitó un registro digital de verificación de la COVID-19 del estado. Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema. Comuníquese al {phoneNumber} y, luego, presione asterisco (#) para obtener ayuda a fin de que coincida la información de contacto con los registros.",
