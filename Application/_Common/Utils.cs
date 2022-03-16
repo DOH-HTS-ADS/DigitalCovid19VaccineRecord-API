@@ -424,8 +424,8 @@ namespace Application.Common
             return lang switch
             {
                 "es" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Registro digital de verificación de la COVID-19</h3>" +
-                    $"<p>Gracias por visitar el sistema de registro digital de verificación de la COVID-19. El enlace para recuperar su código de registro de vacunación de la COVID-19 es válido por {linkExpireHours} horas. Una vez que acceda y se guarde en su dispositivo, el código QR no vencerá.</p>" +
+                    $"<h3 style='color: #f06724'>Registro digital de verificación de COVID-19</h3>" +
+                    $"<p>Gracias por visitar el sistema de registro digital de verificación de COVID-19. El enlace para recuperar su código de registro de vacunación de COVID-19 es válido por {linkExpireHours} horas. Una vez que acceda y se guarde en su dispositivo, el código QR no vencerá.</p>" +
                     $"<p><a href='{url}'>Consulte los registros de vacunación</a></p>" +
                     $"<p>Obtenga más información sobre cómo <a href='{cdcUrl}'>protegerse usted y proteger a otros</a> de los Centros para el Control y la Prevención de Enfermedades.</p>" +
                     $"<p><b>¿Tiene alguna pregunta?</b></p>" +
@@ -941,6 +941,7 @@ namespace Application.Common
 
         public static string FormatNotFoundSms(string lang, string phoneNumber)
         {
+            phoneNumber = "\u200e" + phoneNumber;
             return lang switch
             {
                 "es" => $"Recientemente solicitó un registro digital de verificación de la COVID-19 del estado. Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema. Comuníquese al {phoneNumber} y, luego, presione asterisco (#) para obtener ayuda a fin de que coincida la información de contacto con los registros.",
@@ -1012,13 +1013,13 @@ namespace Application.Common
             return lang switch
             {
                 "es" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Registro digital de vacunación contra el COVID-19</h3>" +
-                    $"<p>Recientemente solicitó un registro digital de verificación de la COVID-19 del <a href='{webUrl}'>sistema de registro digital de verificación de la COVID-19</a>. Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema estatal.</p><br/>" +
-                    $"<p>Puede presentar otra solicitud en el sistema de <a href='{webUrl}'>registro digital de verificación de la COVID-19</a> con un número de teléfono o dirección de correo electrónico diferente; puede <a href='{contactUsUrl}'>comunicarse con nosotros</a> para que lo ayudemos a fin de que coincida la información de contacto con los registros; o bien, puede comunicarse con su proveedor para asegurarse de que la información ha sido enviada al sistema estatal.</p>" +
+                    $"<h3 style='color: #f06724'>Registro digital de verificación de COVID-19</h3>" +
+                    $"<p>Recientemente solicitó un registro digital de verificación de COVID-19 del <a href='{webUrl}'>sistema de registro digital de verificación de COVID-19</a>. Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema estatal.</p><br/>" +
+                    $"<p>Puede presentar otra solicitud en el sistema de <a href='{webUrl}'>registro digital de verificación de COVID-19</a> con un número de teléfono o dirección de correo electrónico diferente; puede <a href='{contactUsUrl}'>comunicarse con nosotros</a> para que lo ayudemos a fin de que su información de contacto coincida con los registros; o bien, puede comunicarse con su proveedor para asegurarse de que la información ha sido enviada al sistema estatal.</p>" +
                     $"<p><b>¿Tiene preguntas?</b></p>" +
-                    $"<p>Visite nuestra página de <a href='{vaccineFAQUrl}'>preguntas frecuentes</a> para obtener más información sobre el registro digital de verificación de la COVID-19.</p>" +
+                    $"<p>Visite nuestra página de <a href='{vaccineFAQUrl}'>preguntas frecuentes</a> para obtener más información sobre el registro digital de verificación de COVID-19.</p>" +
                     $"<p><b>Manténgase informado.</b></p>" +
-                    $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> sobre el COVID-19.</p><br/>" +
+                    $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> sobre la COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Salud del Estado de Washington</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
