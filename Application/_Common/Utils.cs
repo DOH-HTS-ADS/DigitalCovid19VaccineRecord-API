@@ -302,7 +302,7 @@ namespace Application.Common
         {
             return lang switch
             {
-                "es" => $"Gracias por visitar el sistema de registro digital de verificación de la COVID-19. El enlace para recuperar su verificación de COVID-19 es válido por {linkExpireHours} horas. Una vez que acceda y se guarde en su dispositivo, el código QR no vencerá.",
+                "es" => $"Gracias por visitar el sistema de registro digital de verificación de COVID-19. El enlace para recuperar su verificación de COVID-19 es válido por {linkExpireHours} horas. Una vez que acceda y se guarde en su dispositivo, el código QR no vencerá.",
                 "zh" => $"欢迎访问数字 COVID-19 验证记录系统。用于检索您 COVID-19 验证的链接在 {linkExpireHours} 小时内有效。在您获取到 QR 码并将其储存到您的设备后，此 QR 码将不会过期。",
                 "zh-TW" => $"歡迎造訪數位 COVID-19 驗證記錄系統。用於檢索您的 COVID-19 驗證的連結在 {linkExpireHours} 小時內有效。一旦您存取 QR 代碼並將其儲存到您的裝置後，此 QR 代碼將不會過期。",
                 "ko" => $"디지털 COVID-19 인증 기록 시스템을 방문해 주셔서 감사합니다. COVID-19 인증을 조회하는 링크는 {linkExpireHours}시간 동안 유효합니다. 확인하고 기기에 저장하면 QR 코드는 만료되지 않습니다.",
