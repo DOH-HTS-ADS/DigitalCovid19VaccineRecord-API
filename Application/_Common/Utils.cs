@@ -429,7 +429,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Consulte los registros de vacunación</a></p>" +
                     $"<p>Obtenga más información sobre cómo <a href='{cdcUrl}'>protegerse usted y proteger a otros</a> de los Centros para el Control y la Prevención de Enfermedades.</p>" +
                     $"<p><b>¿Tiene alguna pregunta?</b></p>" +
-                    $"<p>Visite nuestra página de <a href='{vaccineFAQUrl}'>preguntas frecuentes</a> para obtener más información sobre el registro digital de vacunación contra la COVID-19.</p>" +
+                    $"<p>Visite nuestra página de <a href='{vaccineFAQUrl}'>preguntas frecuentes</a> para obtener más información sobre el Registro digital de vacunación contra la COVID-19.</p>" +
                     $"<p><b>Manténgase informado.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> sobre la COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1017,7 +1017,7 @@ namespace Application.Common
                     $"<p>Recientemente solicitó un Registro digital de verificación de COVID-19 del <a href='{webUrl}'>sistema de Registro digital de verificación de COVID-19</a>. Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema estatal.</p><br/>" +
                     $"<p>Puede presentar otra solicitud en el sistema de <a href='{webUrl}'>Registro digital de verificación de COVID-19</a> con un número de teléfono o dirección de correo electrónico diferente; puede <a href='{contactUsUrl}'>comunicarse con nosotros</a> para que lo ayudemos a fin de que su información de contacto coincida con los registros; o bien, puede comunicarse con su proveedor para asegurarse de que la información ha sido enviada al sistema estatal.</p>" +
                     $"<p><b>¿Tiene preguntas?</b></p>" +
-                    $"<p>Visite nuestra página de <a href='{vaccineFAQUrl}'>preguntas frecuentes</a> para obtener más información sobre el registro digital de verificación de COVID-19.</p>" +
+                    $"<p>Visite nuestra página de <a href='{vaccineFAQUrl}'>preguntas frecuentes</a> para obtener más información sobre el Registro digital de verificación de COVID-19.</p>" +
                     $"<p><b>Manténgase informado.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> sobre la COVID-19.</p><br/>" +
                     $"<hr>" +
