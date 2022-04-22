@@ -145,6 +145,8 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
 
                     var lastName = cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].family;
 
+                    var suffix = String.IsNullOrEmpty(cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].suffix[0]) ? null : cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].suffix[0];
+
                     var jsonVaccineCredential = JsonConvert.SerializeObject(cred, Formatting.None, new JsonSerializerSettings
                     {
                         NullValueHandling = NullValueHandling.Ignore
@@ -202,6 +204,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                         DOB = dob,
                         FirstName = firstName,
                         LastName = lastName,
+                        Suffix = suffix,
                         FileNameSmartCard = "WACovid19HealthCard.smart-health-card",
                         FileContentSmartCard = Convert.ToBase64String(Encoding.UTF8.GetBytes(jsonVerifiableResult)),
                         MimeTypeSmartCard = "application/smart-health-card",

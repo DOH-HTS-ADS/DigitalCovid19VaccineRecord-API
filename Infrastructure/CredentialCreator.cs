@@ -35,7 +35,7 @@ namespace Infrastructure
             {
                 dateOfBirth = cred.vc.credentialSubject.fhirBundle.entry[0].resource.birthDate,
                 identityAssuranceLevel = "IAL1.4",
-                patientName = $"{ cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].given[0]} {cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].family}"
+                patientName = String.IsNullOrEmpty(cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].suffix[0]) ? $"{ cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].given[0]} {cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].family}" : $"{ cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].given[0]} {cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].family} {cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].suffix}"
             };
 
             var vaccinationRecords = new List<VaccinationRecord>();
