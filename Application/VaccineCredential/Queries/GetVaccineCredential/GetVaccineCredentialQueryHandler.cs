@@ -25,7 +25,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
         private readonly IAesEncryptionService _aesEncryptionService;
         private readonly AppSettings _appSettings;
         private readonly IRateLimitService _rateLimitService;
-        private readonly int NUMBER_OF_DOSES = 5;
+        //private readonly int NUMBER_OF_DOSES = 5;
 
         public GetVaccineCredentialQueryHandler(IRateLimitService rateLimitService, AppSettings appSettings, IAesEncryptionService aesEncryptionService, IQrApiService qrApiService, ICompact compactor, ICredentialCreator credCreator, IJwtSign jwtSign, IJwtChunk jwtChunk, IAzureSynapseService azureSynapseService, ILogger<GetVaccineCredentialQueryHandler> logger)
         {
@@ -108,9 +108,9 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                     Vci cred = _credCreator.GetCredential(responseVc);
 
                     //make sure cred only has at most 5 doses. (fhirBundle index starts at 0)
-                    if (cred.vc.credentialSubject.fhirBundle.entry.Count > NUMBER_OF_DOSES + 1)
+                    if (cred.vc.credentialSubject.fhirBundle.entry.Count > Convert.ToInt32(_appSettings.NumberOfDoses) + 1)
                     {
-                        var cntRemove = cred.vc.credentialSubject.fhirBundle.entry.Count - (NUMBER_OF_DOSES + 1);
+                        var cntRemove = cred.vc.credentialSubject.fhirBundle.entry.Count - (Convert.ToInt32(_appSettings.NumberOfDoses) + 1);
                         cred.vc.credentialSubject.fhirBundle.entry.RemoveRange(1, cntRemove);
                     }
 
