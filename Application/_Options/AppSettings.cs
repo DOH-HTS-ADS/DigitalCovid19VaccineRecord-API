@@ -48,6 +48,9 @@ namespace Application.Options
         public string MaxStatusTries { get; set; }
 
         [Required(AllowEmptyStrings = false)]
+        public string NumberOfDoses { get; set; }
+
+        [Required(AllowEmptyStrings = false)]
         public string QrCodeApi { get; set; }
 
         [Required(AllowEmptyStrings = false)]

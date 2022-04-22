@@ -14,6 +14,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
         public string MimeTypeSmartCard { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string Suffix { get; set; }
         public string DOB { get; set; }
         public List<Dose> Doses { get; set; }
     }

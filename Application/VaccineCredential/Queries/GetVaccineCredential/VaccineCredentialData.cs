@@ -6,6 +6,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
     {
         public string family { get; set; }
         public List<string> given { get; set; }
+        public List<string> suffix { get; set; }
     }
 
     public class Coding

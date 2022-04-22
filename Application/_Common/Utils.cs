@@ -28,7 +28,19 @@ namespace Application.Common
             { "213", "COVID-19, unspecified" },
             { "217", "Pfizer" },
             { "218", "Pfizer" },
-            { "219", "Pfizer" }
+            { "219", "Pfizer" },
+            { "500", "Non-US Unknown / Unspecified" },
+            { "501", "Non-US Unknown / Unspecified" },
+            { "502", "Bharat Biotech International Limited" },
+            { "503", "Non-US Unknown / Unspecified" },
+            { "504", "Non-US Unknown / Unspecified" },
+            { "505", "Non-US Unknown / Unspecified" },
+            { "506", "Non-US Unknown / Unspecified" },
+            { "507", "Non-US Unknown / Unspecified" },
+            { "508", "Non-US Unknown / Unspecified" },
+            { "509", "Non-US Unknown / Unspecified" },
+            { "510", "Sinopharm-Biotech" },
+            { "511", "Sinovac" }
         }.ToImmutableDictionary();
 
         private static AppSettings _appSettings;
