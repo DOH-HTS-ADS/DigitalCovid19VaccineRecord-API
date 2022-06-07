@@ -477,7 +477,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>백신 기록 보기</a></p>" +
                     $"<p>Centers for Disease Control and Prevention(질병통제예방센터)에서 <a href='{cdcUrl}'>나와 타인을 보호</a> 하는 방법에 대해 자세히 확인해 보십시오.</p>" +
                     $"<p><b>궁금한 사항이 있으신가요?</b></p>" +
-                    $"<p>디지털 COVID-19 백신 기록에 대해 자세히 알아보려면 자주 묻는 질문(<a href='{vaccineFAQUrl}'>الأسئلة الشائعةFAQ</a>) 페이지를 참조해 주십시오.</p>" +
+                    $"<p>디지털 COVID-19 백신 기록에 대해 자세히 알아보려면 자주 묻는 질문(<a href='{vaccineFAQUrl}'>FAQ</a>) 페이지를 참조해 주십시오.</p>" +
                     $"<p><b>최신 정보를 확인하십시오.</b></p>" +
                     $"<p>COVID-19 관련 <a href='{covidWebUrl}'>최신 정보 보기</a></p><br/>" +
                     $"<hr>" +
@@ -1062,7 +1062,7 @@ namespace Application.Common
                     $"<p>귀하는 최근 <a href='{webUrl}'>디지털 COVID-19 인증 기록 시스템</a> 에 디지털 COVID-19 인증 기록을 요청하셨습니다. 유감스럽게도 귀하가 제공하신 정보는 주정부 시스템상 정보와 일치하지 않습니다.</p><br/>" +
                     $"<p>다른 휴대전화 번호나 이메일 주소로 <a href='{webUrl}'>디지털 COVID-19 인증 기록 시스템</a> 에 별도의 요청을 제출하실 수 있습니다. <a href='{contactUsUrl}'>저희에게 연락</a> 하여 귀하의 기록을 연락처 정보와 일치시키는 데 도움을 받으시거나, 담당 의료서비스 제공자에게 문의하여 귀하의 정보가 주정부 시스템에 제출되었는지 확인하실 수 있습니다.</p>" +
                     $"<p><b>궁금한 사항이 있으신가요?</b></p>" +
-                    $"<p>디지털 COVID-19 인증 기록에 대해 자세히 알아보려면 자주 묻는 질문 (<a href='{vaccineFAQUrl}'>FAQ서</a>) 페이지를 참조해 주십시오.</p>" +
+                    $"<p>디지털 COVID-19 인증 기록에 대해 자세히 알아보려면 자주 묻는 질문(<a href='{vaccineFAQUrl}'>FAQ</a>) 페이지를 참조해 주십시오.</p>" +
                     $"<p><b>최신 정보를 확인하십시오.</b></p>" +
                     $"<p>COVID-19 관련 <a href='{covidWebUrl}'>최신 정보 보기</a></p><br/>" +
                     $"<hr>" +
