@@ -477,7 +477,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>백신 기록 보기</a></p>" +
                     $"<p>Centers for Disease Control and Prevention(질병통제예방센터)에서 <a href='{cdcUrl}'>나와 타인을 보호</a> 하는 방법에 대해 자세히 확인해 보십시오.</p>" +
                     $"<p><b>궁금한 사항이 있으신가요?</b></p>" +
-                    $"<p>디지털 COVID-19 백신 기록에 대해 자세히 알아보려면 자주 묻는 질문 (<a href='{vaccineFAQUrl}'>FAQ</a>) 페이지를 참조해 주십시오.</p>" +
+                    $"<p>디지털 COVID-19 백신 기록에 대해 자세히 알아보려면 자주 묻는 질문(<a href='{vaccineFAQUrl}'>الأسئلة الشائعةFAQ</a>) 페이지를 참조해 주십시오.</p>" +
                     $"<p><b>최신 정보를 확인하십시오.</b></p>" +
                     $"<p>COVID-19 관련 <a href='{covidWebUrl}'>최신 정보 보기</a></p><br/>" +
                     $"<hr>" +
