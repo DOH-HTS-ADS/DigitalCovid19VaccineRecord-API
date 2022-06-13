@@ -488,7 +488,7 @@ namespace Application.Common
                     $"<p>Cảm ơn bạn đã truy cập vào hệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số. Đường liên kết để truy xuất mã hồ sơ vắc-xin COVID-19 của bạn có hiệu lực trong vòng {linkExpireHours} giờ. Sau khi đã truy cập và lưu vào thiết bị của bạn, mã QR sẽ không hết hạn.</p>" +
                     $"<p><a href='{url}'>Xem Hồ sơ Vắc-xin</a></p>" +
                     $"<p>Tìm hiểu thêm về cách <a href='{cdcUrl}'>tự bảo vệ mình và bảo vệ người khác</a> từ Centers for Disease Control and Prevention (CDC, Trung Tâm Kiểm Soát và Phòng Ngừa Dịch Bệnh).</p>" +
-                    $"<p><b>Có câu hỏi?</b></p>" +
+                    $"<p><b>Bạn có câu hỏi?</b></p>" +
                     $"<p>Truy cập vào trang Các Câu Hỏi Thường Gặp (<a href='{vaccineFAQUrl}'>FAQ</a>) để tìm hiểu thêm về Hồ Sơ Vắc-xin COVID-19 kỹ thuật số của bạn.</p>" +
                     $"<p><b>Luôn cập nhật thông tin.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19.</p><br/>" +
