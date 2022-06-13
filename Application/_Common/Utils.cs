@@ -532,12 +532,12 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Официальный адрес электронной почты Washington State Department of Health (Департамент здравоохранения штата Вашингтон)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ja" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>コロナワクチン接種電子記録</h3>" +
-                    $"<p>コロナワクチン接種電子記録システムをご利用いただきありがとうございます。コロナワクチン接種記録を取得するためのリンクは{linkExpireHours}時間有効です。リンクにアクセスし、お使いのデバイスにワクチン接種記録を保存すると、QRコードは無期限でご利用いただけます。</p>" +
+                    $"<h3 style='color: #f06724'>COVID-19ワクチン接種電子記録</h3>" +
+                    $"<p>COVID-19ワクチン接種電子記録システムをご利用いただきありがとうございます。COVID-19ワクチン接種記録を取得するためのリンクは {linkExpireHours} 時間有効です。リンクにアクセスし、お使 いのデバイスにワクチン接種記録を保存すると、QRコードは無期限でご利用いただけます。</p>" +
                     $"<p><a href='{url}'>ワクチン接種記録を表示</a></p>" +
                     $"<p>Centers for Disease Control and Prevention（CDC、疾病管理予防センター）の<a href='{cdcUrl}'>自分自身と他の人を保護する方法</a>で詳細をご覧ください。</p>" +
                     $"<p><b>何か質問はありますか？</b></p>" +
-                    $"<p>コロナワクチン接種電子記録についての詳細は、<a href='{vaccineFAQUrl}'>よくある質問（FAQ)</a>ページをご覧ください。</p>" +
+                    $"<p>COVID-19ワクチン接種電子記録についての詳細は、<a href='{vaccineFAQUrl}'>]よくある質問（FAQ)</a>ページをご覧ください。</p>" +
                     $"<p><b>最新の情報を入手する </b></p>" +
                     $"<p>新型コロナ感染症について<a href='{covidWebUrl}'>最新情報を見る</a>。</p><br/>" +
                     $"<hr>" +
