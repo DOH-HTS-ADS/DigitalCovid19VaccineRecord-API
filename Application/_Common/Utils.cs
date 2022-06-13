@@ -317,19 +317,19 @@ namespace Application.Common
                 "es" => $"Gracias por visitar el sistema de Registro digital de verificación de COVID-19. El enlace para recuperar su verificación de COVID-19 es válido por {linkExpireHours} horas. Una vez que acceda y se guarde en su dispositivo, el código QR no vencerá.",
                 "zh" => $"欢迎访问数字 COVID-19 验证记录系统。用于检索您 COVID-19 验证的链接在 {linkExpireHours} 小时内有效。在您获取到 QR 码并将其储存到您的设备后，此 QR 码将不会过期。",
                 "zh-TW" => $"歡迎造訪數位 COVID-19 驗證記錄系統。用於檢索您的 COVID-19 驗證的連結在 {linkExpireHours} 小時內有效。一旦您存取 QR 代碼並將其儲存到您的裝置後，此 QR 代碼將不會過期。",
-                "ko" => $"디지털 COVID-19 인증 기록 시스템을 방문해 주셔서 감사합니다. COVID-19 인증을 조회하는 링크는 {linkExpireHours}시간 동안 유효합니다. 확인하고 기기에 저장하면 QR 코드는 만료되지 않습니다.",
+                "ko" => $"COVID-19ワクチン接種電子記録システムをご利用いただきありがとうございます。COVID-19ワクチン接種記録を入手するためのリンクは {linkExpireHours}시간 동안 유효합니다. 확인하고 기기에 저장하면 QR 코드는 만료되지 않습니다.",
                 "vi" => $"Cảm ơn bạn đã truy cập vào hệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số. Đường liên kết để truy xuất thông tin xác nhận COVID-19 của bạn có hiệu lực trong vòng {linkExpireHours} giờ. Sau khi đã truy cập và lưu vào thiết bị của bạn, mã QR sẽ không hết hạn.",
                 "ar" => $"شكرًا لك على زيارة نظام سجل التحقق الرقمي من فيروس كوفيد-19. يظل رابط الحصول على التحقق من فيروس كوفيد-19 الخاص بك صالحًا لمدة 24 ساعة. وب{linkExpireHours}رد الوصول إليه وحفظه على جهازك، لن تنتهي صلاحية رمز الاستجابة السريعة (QR).",
                 "tl" => $"Salamat sa pagbisita sa system ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19. May bisa ang link para makuha ang iyong pagberipika ng pagpapabakuna sa COVID-19 nang {linkExpireHours} na oras. Kapag na-aaccess at na-save na ito sa iyong device, hindi mag-e-expire ang QR code.",
                 "ru" => $"Благодарим вас за то, что воспользовались системой цифровых записей о вакцинации от COVID-19. Ссылка для получения подтверждения вакцинации от COVID-19 действительна в течение {linkExpireHours} часов. После перехода по ссылке и сохранения записи на вашем устройстве QR-код все еще будет действительным.",
-                "ja" => $"コロナワクチン接種電子記録システムをご利用いただきありがとうございます。コロナワクチン接種記録を入手するためのリンクは{linkExpireHours}時間有効です。リンクにアクセスし、お使いのデバイスにワクチン接種記録を保存すると、QRコードは無期限でご利用いただけます。",
-                "fr" => $"Merci d'avoir consulté le système d'attestation numérique de vaccination COVID-19. Le lien pour récupérer votre attestation de vaccination COVID-19 est valable pendant {linkExpireHours} heures. Une fois que vous l'avez enregistré sur votre appareil, le code QR n'expire pas.",
+                "ja" => $"コロナワクチン接種電子記録システムをご利用いただきありがとうございます。コロナワクチン接種記録を入手するためのリンクは {linkExpireHours} 時間有効です。リンクにアクセスし、お使いのデバイスにワクチン接種記録を保存すると、QRコードは無期限でご利用いただけます。",
+                "fr" => $"Merci d'avoir consulté le système d'Attestation numérique de vaccination COVID-19. Le lien pour récupérer votre attestation de vaccination COVID-19 est valable pendant {linkExpireHours} heures. Une fois que vous l'avez enregistré sur votre appareil, le code QR n'expire pas.",
                 "tr" => $"Dijital COVID-19 Doğrulama Kaydı sistemini ziyaret ettiğiniz için teşekkür ederiz. COVID-19 doğrulamanızı alacağınız bağlantı sadece {linkExpireHours} saat geçerlidir. Bir kez erişilip cihazınıza kaydedildikten sonra kare kodun süresi dolmaz.",
                 "uk" => $"Дякуємо, що скористалися системою електронних записів про підтвердження вакцинації від COVID-19. Посилання для отримання запису про підтвердження вакцинації від COVID-19 дійсне протягом {linkExpireHours} годин. Після переходу за посиланням і збереження запису на вашому пристрої, QR-код усе ще буде дійсним.",
                 "ro" => $"Vă mulțumim că ați accesat sistemul de certificate digitale COVID-19. Linkul de unde puteți prelua certificatul COVID-19 este valabil timp de {linkExpireHours} de ore. După ce l-ați accesat și l-ați salvat în telefon, codul QR nu va expira. Vizualizați fișa de vaccinare .",
-                "pt" => $"Obrigado por acessar o sistema do Comprovante digital de vacinação contra a COVID-19. O link para obter o seu comprovante de vacinação contra a COVID-19 é válido por {linkExpireHours} horas. Após acessar o código QR e salvá-lo em seu dispositivo, ele não expirará. Ver o comprovante de vacinação ",
+                "pt" => $"Obrigado por acessar o sistema do Comprovante digital de vacinação contra a COVID-19. O link para obter o seu comprovante de vacinação contra a COVID-19 é válido por {linkExpireHours} horas. Após acessar o código QR e salvá-lo em seu dispositivo, ele não expirará.",
                 "hi" => $"डिजिटल COVID-19 सत्यापन रिकॉर्ड प्रणाली पर जाने के लिए धन्यवाद। आपके COVID-19 सत्यापन को पुनः प्राप्त करने की लिंक {linkExpireHours} घंटे के लिए वैध है। आपके डिवाइस पर एक्सेस करने और सहेजने के बाद, QR कोड की समय-सीमा समाप्त नहीं होगी। वैक्सीन रिकॉर्ड देखें ",
-                "de" => $"Danke für Ihren Besuch beim COVID-19-Digitalzertifikat-System. Der Link zum Abrufen Ihres COVID-19-Zertifikats ist {linkExpireHours} Stunden lang gültig. Nachdem Sie den QR-Code aufgerufen und auf Ihrem Gerät gespeichert haben, läuft der Code nicht ab. Impfpass anzeigen",
+                "de" => $"Danke für Ihren Besuch beim COVID-19-Digitalzertifikat-System. Der Link zum Abrufen Ihres COVID-19-Zertifikats ist {linkExpireHours} Stunden lang gültig. Nachdem Sie den QR-Code aufgerufen und auf Ihrem Gerät gespeichert haben, läuft der Code nicht ab.",
                 "ti" => $"ን ዲጂታላዊ ናይ ኮቪድ-19 መረጋገጺ መዝገብ ብምብጻሕኩም ነመስግነኩም። ናይ ኮቪድ-19 መረጋገጺ መርከቢ ሊንክ ድማ ን {linkExpireHours} ሰዓታት ቅቡል እዩ። ሓንሳብ ምስ ኣተኹምን ኣብ መሳርሒትኩም ምስ ተዓቀበን ድማ፡ እቲ ናይ QR code ዕለቱ ኣይወድቕን እዩ።",
                 "te" => $"డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్ సిస్టమ్​ని సందర్శించినందుకు మీకు ధన్యవాదాలు. మీ కొవిడ్-19 ధృవీకరణను తిరిగి పొందే లింక్ {linkExpireHours} గంటలపాటు చెల్లుబాటు అవుతుంది. మీరు యాక్సెస్ చేసుకొని, మీ పరికరంలో సేవ్ చేసిన తరువాత, QR కోడ్ గడువు తీరదు.",
                 "sw" => $"Asante kwa kutembelea mfumo wa Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19. Kiungo cha kupata uthibitishaji wako wa COVID-19 kitakuwa amilifu kwa saa {linkExpireHours}. Mara tu imefikiwa na kuhifadhiwa kwenye kifaa chako, msimbo wa QR hautaisha muda. Tazama Rekodi ya Chanjo.",
@@ -488,7 +488,7 @@ namespace Application.Common
                     $"<p>Cảm ơn bạn đã truy cập vào hệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số. Đường liên kết để truy xuất mã hồ sơ vắc-xin COVID-19 của bạn có hiệu lực trong vòng {linkExpireHours} giờ. Sau khi đã truy cập và lưu vào thiết bị của bạn, mã QR sẽ không hết hạn.</p>" +
                     $"<p><a href='{url}'>Xem Hồ sơ Vắc-xin</a></p>" +
                     $"<p>Tìm hiểu thêm về cách <a href='{cdcUrl}'>tự bảo vệ mình và bảo vệ người khác</a> từ Centers for Disease Control and Prevention (CDC, Trung Tâm Kiểm Soát và Phòng Ngừa Dịch Bệnh).</p>" +
-                    $"<p><b>Có câu hỏi?</b></p>" +
+                    $"<p><b>Bạn có câu hỏi?</b></p>" +
                     $"<p>Truy cập vào trang Các Câu Hỏi Thường Gặp (<a href='{vaccineFAQUrl}'>FAQ</a>) để tìm hiểu thêm về Hồ Sơ Vắc-xin COVID-19 kỹ thuật số của bạn.</p>" +
                     $"<p><b>Luôn cập nhật thông tin.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19.</p><br/>" +
@@ -532,12 +532,12 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Официальный адрес электронной почты Washington State Department of Health (Департамент здравоохранения штата Вашингтон)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ja" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>コロナワクチン接種電子記録</h3>" +
-                    $"<p>コロナワクチン接種電子記録システムをご利用いただきありがとうございます。コロナワクチン接種記録を取得するためのリンクは{linkExpireHours}時間有効です。リンクにアクセスし、お使いのデバイスにワクチン接種記録を保存すると、QRコードは無期限でご利用いただけます。</p>" +
+                    $"<h3 style='color: #f06724'>COVID-19ワクチン接種電子記録</h3>" +
+                    $"<p>COVID-19ワクチン接種電子記録システムをご利用いただきありがとうございます。COVID-19ワクチン接種記録を取得するためのリンクは {linkExpireHours} 時間有効です。リンクにアクセスし、お使 いのデバイスにワクチン接種記録を保存すると、QRコードは無期限でご利用いただけます。</p>" +
                     $"<p><a href='{url}'>ワクチン接種記録を表示</a></p>" +
                     $"<p>Centers for Disease Control and Prevention（CDC、疾病管理予防センター）の<a href='{cdcUrl}'>自分自身と他の人を保護する方法</a>で詳細をご覧ください。</p>" +
                     $"<p><b>何か質問はありますか？</b></p>" +
-                    $"<p>コロナワクチン接種電子記録についての詳細は、<a href='{vaccineFAQUrl}'>よくある質問（FAQ)</a>ページをご覧ください。</p>" +
+                    $"<p>COVID-19ワクチン接種電子記録についての詳細は、<a href='{vaccineFAQUrl}'>]よくある質問（FAQ)</a>ページをご覧ください。</p>" +
                     $"<p><b>最新の情報を入手する </b></p>" +
                     $"<p>新型コロナ感染症について<a href='{covidWebUrl}'>最新情報を見る</a>。</p><br/>" +
                     $"<hr>" +
@@ -545,11 +545,11 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "fr" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Attestation numérique de vaccination COVID-19</h3>" +
-                    $"<p>Merci d'avoir consulté le système d'attestation numérique de vaccination COVID-19. Le lien pour récupérer le code QR de votre attestation de vaccination COVID-19 est valable pendant {linkExpireHours} heures. Une fois que vous l'avez enregistré sur votre appareil, le code QR n'expire pas. </p>" +
+                    $"<p>Merci d'avoir consulté le système d'Attestation numérique de vaccination COVID-19. Le lien pour récupérer le code QR de votre attestation de vaccination COVID-19 est valable pendant {linkExpireHours} heures. Une fois que vous l'avez enregistré sur votre appareil, le code QR n'expire pas. </p>" +
                     $"<p><a href='{url}'>Afficher l'attestation de vaccination</a></p>" +
                     $"<p>Pour en savoir plus sur la façon de <a href='{cdcUrl}'>vous protéger et protéger les autres</a>, consultez le site Internet des Centers for Disease Control and Prevention (centres de contrôle et de prévention des maladies).</p>" +
                     $"<p><b>Vous avez des questions?</b></p>" +
-                    $"<p>Consultez notre Foire Aux Questions (<a href='{vaccineFAQUrl}'>FAQ</a>)  pour en savoir plus sur votre attestation numérique de vaccination COVID-19.</p>" +
+                    $"<p>Consultez notre Foire Aux Questions (<a href='{vaccineFAQUrl}'>FAQ</a>)  pour en savoir plus sur votre Attestation numérique de vaccination COVID-19.</p>" +
                     $"<p><b>Informez-vous.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -964,8 +964,8 @@ namespace Application.Common
                 "ar" => $"لقد قمت مؤخرًا بطلب الحصول على سجل التحقق الرقمي من فيروس كوفيد-19 من الولاية. ولكن للأسف، المعلومات التي قمت بتقديمها لا تتطابق مع المعلومات الموجودة على نظامنا. تواصل معنا على الرقم التالي {phoneNumber} واضغط على الرمز (#) للحصول على مساعدة في تحقيق التطابق بين سجلك ومعلومات التواصل الخاصة",
                 "tl" => $"Kamakailan kang humiling ng digital na rekord sa pagberipika ng pagpapabakuna sa COVID-19 mula sa estado. Sa kasamaang-palad, hindi tumutugma ang ibinigay mong impormasyon sa impormasyong nasa system namin. Makipag-ugnayan sa amin sa {phoneNumber}, at pindutin ang # para sa tulong sa pagtugma ng iyong rekord sa iyong impormasyon sa pakikipag-ugnayan.",
                 "ru" => $"Недавно вы запросили у штата цифровую запись о вакцинации от COVID-19. К сожалению, предоставленная вами информация не совпадает с информацией в нашей системе. Свяжитесь с нами по телефону {phoneNumber} и нажмите #, чтобы получить помощь в сверке данных, указанных в вашей записи, с вашей контактной информацией.",
-                "ja" => $"あなたはワシントン州のコロナワクチン接種電子記録を依頼されましたが、入力された情報はシステムに登録されている情報と一致しません。{phoneNumber}に電話して#を押すと、ご自身の記録と連絡先情報を一致させるためのサポートが受けられます。 ",
-                "fr" => $"Vous avez récemment demandé une attestation numérique de vaccination COVID-19 délivrée par l'État. Malheureusement, les informations que vous avez fournies ne correspondent pas à celles qui figurent dans notre système. Contactez-nous au {phoneNumber}, appuyez sur # pour obtenir de l'aide afin d'associer votre attestation à vos coordonnées. ",
+                "ja" => $"あなたはワシントン州のCOVID-19ワクチン接種電子記録を依頼されましたが、入力された情報はシステムに登録されている情報と一致しません。{phoneNumber} に電話して#を押すと、ご自身の記録と連絡先情報を一致させるためのサポートが受けられます。",
+                "fr" => $"Vous avez récemment demandé une Attestation numérique de vaccination COVID-19 délivrée par l'État. Malheureusement, les informations que vous avez fournies ne correspondent pas à celles qui figurent dans notre système. Contactez-nous au {phoneNumber}, appuyez sur # pour obtenir de l'aide afin d'associer votre attestation à vos coordonnées. ",
                 "tr" => $"Yakın zamanda eyaletten dijital bir COVID-19 doğrulama kaydı istediniz. Maalesef verdiğiniz bilgiler sistemimizdeki bilgilerle eşleşmiyor. {phoneNumber} numarasından bize ulaşın ve kaydınızın iletişim bilgileriyle eşleşmesi konusunda yardım almak için # tuşuna basın.",
                 "uk" => $"Нещодавно ви надіслали запит на отримання доступу до електронного запису про підтвердження вакцинації від COVID-19 державного зразка. На жаль, інформація, яку ви надали, не співпадає з інформацією в нашій системі. Зв’яжіться з нами за номером {phoneNumber} і натисніть #, щоб допомогти звірити контактну інформацію у вашому записі.",
                 "ro" => $"Ați solicitat recent un certificat digital COVID-19 de la stat. Din păcate, informațiile furnizate de dvs. nu corespund cu datele din sistemul nostru. Contactați-ne la {phoneNumber} și apăsați # pentru asistență privind potrivirea dintre fișa dvs. și datele de contact.",
@@ -1070,7 +1070,7 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "vi" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Hồ sơ Xác nhận COVID-19 kỹ thuật số</h3>" +
-                    $"<p>Gần đây bạn yêu cầu Hồ sơ Xác nhận COVID-19 kỹ thuật số từ <a href='{webUrl}'>Mhệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số</a>. Rất tiếc, thông tin mà bạn cung cấp không khớp với thông tin có trong hệ thống của tiểu bang.</p><br/>" +
+                    $"<p>Gần đây bạn yêu cầu Hồ sơ Xác nhận COVID-19 kỹ thuật số từ <a href='{webUrl}'>hệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số</a>. Rất tiếc, thông tin mà bạn cung cấp không khớp với thông tin có trong hệ thống của tiểu bang.</p><br/>" +
                     $"<p>Bạn có thể gửi yêu cầu khác trong hệ thống <a href='{webUrl}'>Hồ sơ Xác nhận COVID-19 kỹ thuật số</a> với một số điện thoại di động hoặc địa chỉ email khác, bạn có thể <a href='{contactUsUrl}'>liên hệ với chúng tôi</a> để được trợ giúp khớp thông tin hồ sơ với thông tin liên lạc của bạn, hoặc bạn có thể liên lạc với nhà cung cấp của mình để đảm bảo rằng thông tin của bạn đã được gửi đến hệ thống của tiểu bang.</p>" +
                     $"<p><b>Có câu hỏi?</b></p>" +
                     $"<p>Truy cập vào trang Câu Hỏi Thường Gặp <a href='{vaccineFAQUrl}'>FAQ</a> để tìm hiểu thêm về Hồ Sơ Xác nhận COVID-19 kỹ thuật số của bạn.</p>" +
@@ -1115,11 +1115,11 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Официальный адрес электронной почты Washington State Department of Health (Департамент здравоохранения штата Вашингтон)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ja" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>コロナワクチン接種電子記録</h3>" +
-                    $"<p>あなたは<a href='{webUrl}'>コロナワクチン接種電子記録システム</a>からコロナワクチン接種電子記録を依頼されましたが、入力された情報はワシントン州のシステムに登録されている情報と一致しません。</p><br/>" +
+                    $"<h3 style='color: #f06724'>COVID-19ワクチン接種電子記録</h3>" +
+                    $"<p>あなたは<a href='{webUrl}'>COVID-19ワクチン接種電子記録システム</a>からCOVID-19ワクチン接種電子記録を依頼されましたが、入力された情報はワシントン州のシステムに登録されている情報と一致しません。</p><br/>" +
                     $"<p>別の携帯電話番号または電子メールアドレスを使用して<a href='{webUrl}'>コロナワクチン接種電子記録</a>システムにあらためて依頼を送信できます。あなたの記録と連絡先情報を一致させる上でサポートが必要な場合は<a href='{contactUsUrl}'>問い合わせください</a>。またはワクチン提供機関に連絡して、あなたの情報がワシントン州のシステムに送信済みであるか確認できます。</p>" +
                     $"<p><b>ご不明な点がありますか？</b></p>" +
-                    $"<p>コロナワクチン接種電子記録についての詳細は、<a href='{vaccineFAQUrl}'>よくある質問（FAQ)</a>ページをご覧ください。</p>" +
+                    $"<p>COVID-19ワクチン接種電子記録についての詳細は、<a href='{vaccineFAQUrl}'>よくある質問（FAQ)</a>ページをご覧ください。</p>" +
                     $"<p><b>最新の情報を入手する </b></p>" +
                     $"<p>新型コロナ感染症について<a href='{covidWebUrl}'>最新情報を見る</a>。</p><br/>" +
                     $"<hr>" +
@@ -1127,10 +1127,10 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "fr" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Attestation numérique de vaccination COVID-19</h3>" +
-                    $"<p>Vous avez récemment demandé une attestation numérique de vaccination COVID-19 auprès du <a href='{webUrl}'>Attestation numérique de vaccination COVID-19 System</a> (système d'attestations numériques de vaccination COVID-19) . Malheureusement, les informations que vous avez fournies ne correspondent pas à celles qui figurent dans le système de l'État.</p><br/>" +
-                    $"<p>Vous pouvez soumettre une autre demande dans le système <a href='{webUrl}'>Attestation numérique de vaccination COVID-19</a> en indiquant un autre numéro de téléphone mobile ou une autre adresse e-mail, vous pouvez <a href='{contactUsUrl}'>nous contacter</a> pour obtenir de l'aide afin d'associer votre attestation à vos coordonnées, ou vous pouvez contacter votre professionnel de santé pour vérifier que vos informations ont été transmises au système de l'État.</p>" +
+                    $"<p>Vous avez récemment demandé une Attestation numérique de vaccination COVID-19 auprès du système d'<a href='{webUrl}'>Attestation numérique de vaccination COVID-19</a>. Malheureusement, les informations que vous avez fournies ne correspondent pas à celles qui figurent dans le système de l'État.</p><br/>" +
+                    $"<p>Vous pouvez soumettre une autre demande dans le système d'<a href='{webUrl}'>Attestation numérique de vaccination COVID-19</a> en indiquant un autre numéro de téléphone mobile ou une autre adresse e-mail, vous pouvez <a href='{contactUsUrl}'>nous contacter</a> pour obtenir de l'aide afin d'associer votre attestation à vos coordonnées, ou vous pouvez contacter votre professionnel de santé pour vérifier que vos informations ont été transmises au système de l'État.</p>" +
                     $"<p><b>Vous avez des questions?</b></p>" +
-                    $"<p>Consultez notre page Foire Aux Questions (<a href='{vaccineFAQUrl}'>FAQ</a>) pour en savoir plus sur votre attestation numérique de vaccination COVID-19.</p>" +
+                    $"<p>Consultez notre page Foire Aux Questions (<a href='{vaccineFAQUrl}'>FAQ</a>) pour en savoir plus sur votre Attestation numérique de vaccination COVID-19.</p>" +                    
                     $"<p><b>Informez-vous.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1170,10 +1170,10 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "pt" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Comprovante digital de vacinação contra a COVID-19</h3>" +
-                    $"<p>Recentemente, você solicitou um comprovante do <a href='{webUrl}'>sistema de Comprovante digital de vacinação contra a COVID-19</a>. Infelizmente, as informações fornecidas não correspondem às informações em nosso sistema.</p><br/>" + 
+                    $"<p>Recentemente, você solicitou um Comprovante digital de vacinação contra a COVID-19 <a href='{webUrl}'>sistema de Comprovante digital de vacinação contra a COVID-19</a>. Infelizmente, as informações fornecidas não correspondem às informações em nosso sistema.</p><br/>" + 
                     $"<p>É possível enviar outra solicitação ao sistema de <a href='{webUrl}'>Comprovante digital de vacinação contra a COVID-19</a> com um número de celular ou endereço de e-mail diferente. <a href='{contactUsUrl}'>Entre em contato conosco</a> para obter ajuda com a correspondência entre os dados de contato e as informações em seu comprovante, ou entre em contato com o seu provedor para garantir que suas informações foram enviadas para o sistema do estado.</p>" +
                     $"<p><b>Tem dúvidas?</b></p>" +
-                    $"<p>Acesse a nossa página de Perguntas frequentes (<a href='{vaccineFAQUrl}'>FAQ</a>) para saber mais sobre o seu Comprovante digital de vacinação contra a COVID-19.</p>" +
+                    $"<p>Visite a nossa página de Perguntas frequentes (<a href='{vaccineFAQUrl}'>FAQ</a>) para saber mais sobre o seu Comprovante digital de vacinação contra a COVID-19.</p>" +
                     $"<p><b>Mantenha-se informado.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Veja as informações mais recentes</a> sobre a COVID-19.</p><br/>" +
                     $"<hr>" +
