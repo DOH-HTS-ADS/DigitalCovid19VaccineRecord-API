@@ -1070,7 +1070,7 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "vi" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Hồ sơ Xác nhận COVID-19 kỹ thuật số</h3>" +
-                    $"<p>Gần đây bạn yêu cầu Hồ sơ Xác nhận COVID-19 kỹ thuật số từ <a href='{webUrl}'>Mhệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số</a>. Rất tiếc, thông tin mà bạn cung cấp không khớp với thông tin có trong hệ thống của tiểu bang.</p><br/>" +
+                    $"<p>Gần đây bạn yêu cầu Hồ sơ Xác nhận COVID-19 kỹ thuật số từ <a href='{webUrl}'>hệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số</a>. Rất tiếc, thông tin mà bạn cung cấp không khớp với thông tin có trong hệ thống của tiểu bang.</p><br/>" +
                     $"<p>Bạn có thể gửi yêu cầu khác trong hệ thống <a href='{webUrl}'>Hồ sơ Xác nhận COVID-19 kỹ thuật số</a> với một số điện thoại di động hoặc địa chỉ email khác, bạn có thể <a href='{contactUsUrl}'>liên hệ với chúng tôi</a> để được trợ giúp khớp thông tin hồ sơ với thông tin liên lạc của bạn, hoặc bạn có thể liên lạc với nhà cung cấp của mình để đảm bảo rằng thông tin của bạn đã được gửi đến hệ thống của tiểu bang.</p>" +
                     $"<p><b>Có câu hỏi?</b></p>" +
                     $"<p>Truy cập vào trang Câu Hỏi Thường Gặp <a href='{vaccineFAQUrl}'>FAQ</a> để tìm hiểu thêm về Hồ Sơ Xác nhận COVID-19 kỹ thuật số của bạn.</p>" +
