@@ -545,11 +545,11 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "fr" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Attestation numérique de vaccination COVID-19</h3>" +
-                    $"<p>Merci d'avoir consulté le système d'attestation numérique de vaccination COVID-19. Le lien pour récupérer le code QR de votre attestation de vaccination COVID-19 est valable pendant {linkExpireHours} heures. Une fois que vous l'avez enregistré sur votre appareil, le code QR n'expire pas. </p>" +
+                    $"<p>Merci d'avoir consulté le système d'Attestation numérique de vaccination COVID-19. Le lien pour récupérer le code QR de votre attestation de vaccination COVID-19 est valable pendant {linkExpireHours} heures. Une fois que vous l'avez enregistré sur votre appareil, le code QR n'expire pas. </p>" +
                     $"<p><a href='{url}'>Afficher l'attestation de vaccination</a></p>" +
                     $"<p>Pour en savoir plus sur la façon de <a href='{cdcUrl}'>vous protéger et protéger les autres</a>, consultez le site Internet des Centers for Disease Control and Prevention (centres de contrôle et de prévention des maladies).</p>" +
                     $"<p><b>Vous avez des questions?</b></p>" +
-                    $"<p>Consultez notre Foire Aux Questions (<a href='{vaccineFAQUrl}'>FAQ</a>)  pour en savoir plus sur votre attestation numérique de vaccination COVID-19.</p>" +
+                    $"<p>Consultez notre Foire Aux Questions (<a href='{vaccineFAQUrl}'>FAQ</a>)  pour en savoir plus sur votre Attestation numérique de vaccination COVID-19.</p>" +
                     $"<p><b>Informez-vous.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><br/>" +
                     $"<hr>" +
