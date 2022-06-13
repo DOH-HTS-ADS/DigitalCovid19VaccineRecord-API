@@ -1127,10 +1127,10 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "fr" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Attestation numérique de vaccination COVID-19</h3>" +
-                    $"<p>Vous avez récemment demandé une attestation numérique de vaccination COVID-19 auprès du <a href='{webUrl}'>Attestation numérique de vaccination COVID-19 System</a> (système d'attestations numériques de vaccination COVID-19) . Malheureusement, les informations que vous avez fournies ne correspondent pas à celles qui figurent dans le système de l'État.</p><br/>" +
-                    $"<p>Vous pouvez soumettre une autre demande dans le système <a href='{webUrl}'>Attestation numérique de vaccination COVID-19</a> en indiquant un autre numéro de téléphone mobile ou une autre adresse e-mail, vous pouvez <a href='{contactUsUrl}'>nous contacter</a> pour obtenir de l'aide afin d'associer votre attestation à vos coordonnées, ou vous pouvez contacter votre professionnel de santé pour vérifier que vos informations ont été transmises au système de l'État.</p>" +
+                    $"<p>Vous avez récemment demandé une Attestation numérique de vaccination COVID-19 auprès du système d'<a href='{webUrl}'>Attestation numérique de vaccination COVID-19</a>. Malheureusement, les informations que vous avez fournies ne correspondent pas à celles qui figurent dans le système de l'État.</p><br/>" +
+                    $"<p>Vous pouvez soumettre une autre demande dans le système d'<a href='{webUrl}'>Attestation numérique de vaccination COVID-19</a> en indiquant un autre numéro de téléphone mobile ou une autre adresse e-mail, vous pouvez <a href='{contactUsUrl}'>nous contacter</a> pour obtenir de l'aide afin d'associer votre attestation à vos coordonnées, ou vous pouvez contacter votre professionnel de santé pour vérifier que vos informations ont été transmises au système de l'État.</p>" +
                     $"<p><b>Vous avez des questions?</b></p>" +
-                    $"<p>Consultez notre page Foire Aux Questions (<a href='{vaccineFAQUrl}'>FAQ</a>) pour en savoir plus sur votre attestation numérique de vaccination COVID-19.</p>" +
+                    $"<p>Consultez notre page Foire Aux Questions (<a href='{vaccineFAQUrl}'>FAQ</a>) pour en savoir plus sur votre Attestation numérique de vaccination COVID-19.</p>" +                    
                     $"<p><b>Informez-vous.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><br/>" +
                     $"<hr>" +
