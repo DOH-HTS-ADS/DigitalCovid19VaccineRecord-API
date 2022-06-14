@@ -1088,7 +1088,8 @@ namespace Application.Common
                     $"<p dir='rtl'><b>هل لديك أي أسئلة؟ </b></p>" +
                     $"<p dir='rtl'>قم بزيارة صفحة <a href='{vaccineFAQUrl}'>الأسئلة الشائعة</a> (متوفر باللغة الإنجليزية فقط) الخاصة بنا للاطلاع على مزيدٍ من المعلومات حول السجل الرقمي للقاح كوفيد-19 الخاص بك.</p>" +
                     $"<p dir='rtl'><b>ابقَ مطلعًا.</b></p>" +
-                    $"<p dir='rtl'><a href='{covidWebUrl}'>عرض آخر المعلومات</a> عن فيروس كوفيد-19.</p>" +
+                    $"<p dir='rtl'><a href='{covidWebUrl}'>عرض آخر المعلومات </a> (متوفر باللغة الإنجليزية فقط) عن فيروس كوفيد-19.</p>" +
+                    
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>البريد الإلكتروني الرسمي الخاص بـ Washington State Department of Health (إدارة الصحة في ولاية واشنطن)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
