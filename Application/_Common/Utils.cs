@@ -1139,10 +1139,10 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "tr" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Dijital COVID-19 Doğrulama Kaydı</h3>" +
-                    $"<p>Yakın zamanda <a href='{webUrl}'>Dijital COVID-19 Doğrulama Kaydı sisteminden</a> bir Dijital COVID-19 doğrulama kaydı istediniz. Maalesef verdiğiniz bilgiler eyalet sistemindeki bilgilerle eşleşmiyor.</p><br/>" +
+                    $"<p>Yakın zamanda <a href='{webUrl}'>Dijital COVID-19 Doğrulama Kaydı sisteminden</a> bir Dijital COVID-19 Doğrulama Kaydı istediniz. Maalesef verdiğiniz bilgiler eyalet sistemindeki bilgilerle eşleşmiyor.</p><br/>" +
                     $"<p><a href='{webUrl}'>Dijital COVID-19 Doğrulama Kaydı</a> sisteminden farklı bir cep telefonu numarası ya da e-posta adresi ile başka bir istekte bulabilir, kaydınızı iletişim bilgilerinizle eşleştirme konusunda yardım almak için <a href='{contactUsUrl}'>bize ulaşabilir</a> ya da bilgilerinizin eyalet sistemine gönderildiğinden emin olmak için sağlayıcınızla iletişime geçebilirsiniz.</p>" +
                     $"<p><b>Sorularınız mı var?</b></p>" +
-                    $"<p>Dijital COVID-19 Aşı Kaydınız hakkında daha fazla bilgi almak için Sıkça Sorulan Sorular <a href='{vaccineFAQUrl}'>(SSS)</a> bölümümüzü ziyaret edin.</p>" +
+                    $"<p>Dijital COVID-19 Doğrulama Kaydı’nız hakkında daha fazla bilgi almak için Sıkça Sorulan Sorular <a href='{vaccineFAQUrl}'>(SSS)</a> bölümümüzü ziyaret edin.</p>" +
                     $"<p><b>Güncel bilgilere sahip olun.</b></p>" +
                     $"<p>COVID-19 <a href='{covidWebUrl}'>hakkında en güncel bilgileri görüntüleyin</a>.</p><br/>" +
                     $"<hr>" +
