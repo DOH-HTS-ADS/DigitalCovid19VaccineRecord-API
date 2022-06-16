@@ -1194,7 +1194,7 @@ namespace Application.Common
                 "de" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>COVID-19-Digitalzertifikat</h3>" +
                     $"<p>Sie haben kürzlich ein COVID-19-Digitalzertifikat vom <a href='{webUrl}'>COVID-19-Digitalzertifikat-System</a> angefordert. Leider stimmen die von Ihnen gemachten Angaben nicht mit den Informationen im System des Bundesstaats überein.</p><br/>" +
-                    $"<p>Sie können im <a href='{webUrl}'>COVID-19-Digitalzertifika</a>-System eine erneute Anfrage mit einer anderen Handynummer oder E-Mail-Adresse senden, Sie können <a href='{contactUsUrl}'>Kontakt</a> zu uns aufnehmen, damit wir Ihnen bei der Zuordnung Ihres Zertifikats zu Ihren Kontaktdaten helfen, oder Sie können Ihren Anbieter kontaktieren, sich zu vergewissern, dass Ihre Daten an das System des Bundesstaats übermittelt wurden.</p>" +
+                    $"<p>Sie können im <a href='{webUrl}'>COVID-19-Digitalzertifikat</a>-System eine erneute Anfrage mit einer anderen Handynummer oder E-Mail-Adresse senden, Sie können <a href='{contactUsUrl}'>Kontakt</a> zu uns aufnehmen, damit wir Ihnen bei der Zuordnung Ihres Zertifikats zu Ihren Kontaktdaten helfen, oder Sie können Ihren Anbieter kontaktieren, sich zu vergewissern, dass Ihre Daten an das System des Bundesstaats übermittelt wurden.</p>" +
                     $"<p><b>Haben Sie Fragen?</b></p>" +
                     $"<p>Besuchen Sie unsere Seite mit häufig gestellten Fragen (<a href='{vaccineFAQUrl}'>FAQ</a>), um mehr über Ihr COVID-19-Digitalzertifikat zu erfahren.</p>" +
                     $"<p><b>Bleiben Sie auf dem Laufenden.</b></p>" +
