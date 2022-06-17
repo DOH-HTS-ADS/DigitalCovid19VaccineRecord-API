@@ -537,7 +537,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>ワクチン接種記録を表示</a></p>" +
                     $"<p>Centers for Disease Control and Prevention（CDC、疾病管理予防センター）の<a href='{cdcUrl}'>自分自身と他の人を保護する方法</a>で詳細をご覧ください。</p>" +
                     $"<p><b>何か質問はありますか？</b></p>" +
-                    $"<p>COVID-19ワクチン接種電子記録についての詳細は、<a href='{vaccineFAQUrl}'>]よくある質問（FAQ)</a>ページをご覧ください。</p>" +
+                    $"<p>COVID-19ワクチン接種電子記録についての詳細は、<a href='{vaccineFAQUrl}'>よくある質問（FAQ)</a>ページをご覧ください。</p>" +
                     $"<p><b>最新の情報を入手する </b></p>" +
                     $"<p>新型コロナ感染症について<a href='{covidWebUrl}'>最新情報を見る</a>。</p><br/>" +
                     $"<hr>" +
