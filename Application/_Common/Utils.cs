@@ -40,7 +40,18 @@ namespace Application.Common
             { "508", "Non-US Unknown / Unspecified" },
             { "509", "Non-US Unknown / Unspecified" },
             { "510", "Sinopharm-Biotech" },
-            { "511", "Sinovac" }
+            { "511", "Sinovac" },
+            { "517", "Non-US Unknown / Unspecified" },
+            { "516", "Non-US Unknown / Unspecified" },
+            { "515", "Non-US Unknown / Unspecified" },
+            { "514", "Non-US Unknown / Unspecified" },
+            { "513", "Non-US Unknown / Unspecified" },
+            { "512", "Medicago" },
+            { "228", "Moderna" },
+            { "227", "Moderna" },
+            { "221", "Moderna" },
+            { "225", "Sanofi Pasteur" },
+            { "226", "Sanofi Pasteur" }
         }.ToImmutableDictionary();
 
         private static AppSettings _appSettings;
