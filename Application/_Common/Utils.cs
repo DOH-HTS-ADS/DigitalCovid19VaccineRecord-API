@@ -346,7 +346,7 @@ namespace Application.Common
                 "sw" => $"Asante kwa kutembelea mfumo wa Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19. Kiungo cha kupata uthibitishaji wako wa COVID-19 kitakuwa amilifu kwa saa {linkExpireHours}. Mara tu imefikiwa na kuhifadhiwa kwenye kifaa chako, msimbo wa QR hautaisha muda. Tazama Rekodi ya Chanjo.",
                 "so" => $"Waad ku mahadsan tahay soo booqashadaada nidaamka Diiwaanka Xaqiijinta Tallaalka COVID-19 ee Dhijitaalka ah. Lifaaqa aad kula soo baxeyso xaqiijintaada tallaalka COVID-19 ayaa ansax ah oo shaqeynayo {linkExpireHours} saacadood. Marki la galo oo lagu keydiyo taleefankaaga, koodhka jawaabta degdegga ma dhacayo.",
                 "sm" => $"Faafetai mo le asiasi mai i faamaumauga faamaonia o le KOVITI-19. O le fesootaiga e maua ai faamaumauga o le KOVITI-19 e {linkExpireHours} itula lona aoga. A maua uma faamatalaga, ia faamauina, lelei ma sefe i lau masini, o le QR code e mafai ona faaogaina e le toe muta.",
-                "pa" => $"ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਸਿਸਟਮ 'ਤੇ ਆਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਤੁਹਾਡੀ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਨੂੰ ਮੁੜ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਲਿੰਕ {linkExpireHours} ਘੰਟਿਆਂ ਲਈ ਵੈਧ ਹੈ। ਇੱਕ ਵਾਰ ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ ਐਕਸੈਸ ਕਰਨ ਅਤੇ ਸੁਰੱਖਿਅਤ ਹੋਣ ਤੋਂ ਬਾਅਦ, QR ਕੋਡ ਦੀ ਮਿਆਦ ਖ਼ਤਮ ਨਹੀਂ ਹੋਵੇਗੀ। ਵੈਕਸੀਨ ਰਿਕਾਰਡ ਵੇਖੋ ",
+                "pa" => $"ਡਿਜ਼ੀਟਲ ਕੋਵਿਡ-19 ਵੈਰੀਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਸਿਸਟਮ 'ਤੇ ਆਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਤੁਹਾਡੀ ਕੋਵਿਡ-19 ਵੈਰੀਫਿਕੇਸ਼ਨ ਨੂੰ ਮੁੜ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਲਿੰਕ {linkExpireHours} ਘੰਟਿਆਂ ਲਈ ਵੈਧ ਹੈ। ਇੱਕ ਵਾਰ ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ ਐਕਸੈਸ ਕਰਨ ਅਤੇ ਸੁਰੱਖਿਅਤ ਹੋਣ ਤੋਂ ਬਾਅਦ, QR ਕੋਡ ਦੀ ਮਿਆਦ ਖ਼ਤਮ ਨਹੀਂ ਹੋਵੇਗੀ।",
                 "ps" => $"د ډیجیټل COVID-19 تائید ثبت سیسټم لیدو لپاره ستاسو مننه. ستاسو د COVID-19 تائید ترلاسه کولو لینک د {linkExpireHours} ساعتونو لپاره اعتبار لري. یوځل چې ستاسو وسیلې ته لاسرسی ولري او خوندي شي، نو د QR کوډ به پای ته ونه رسیږي. ",
                 "ur" => $"کووڈ-19 تصدیقی ریکارڈ کا سسٹم ملاحظہ کرنے کا شکریہ۔ کووڈ-19 تصدیق وصول کرنے کا لنک {linkExpireHours} گھنٹے تک کام کرے گا۔ رسائی لے کر ڈیوائس میں محفوظ کرنے کے بعد کیو آر کوڈ کی میعاد ختم نہیں ہو گی۔ ویکسین ریکارڈ دیکھیں",
                 "ne" => $"डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड प्रणाली हेर्नुभएको धन्यवाद। तपाईंको कोभिड-19 प्रमाणीकरण पुनः प्राप्ति गर्ने लिङ्क {linkExpireHours} घण्टाको लागि मान्य छ। पहुँच गरेर तपाईंको यन्त्रमा बचत भइसकेपछि, QR कोडको म्याद समाप्त हुने छैन। ",
@@ -698,8 +698,8 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Imeli aloaia a le Washington State Department of Health (Matagaluega o le Soifua Maloloina a le Setete o Uosigitone)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "pa" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡਿਕਾਰਡ</h3>" +
-                    $"<p>ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡਿਕਾਰਡ ਸਿਸਟਮ 'ਤੇ ਆਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਤੁਹਾਡੇ ਕੋਵਿਡ-19 ਵੈਕਸੀਨ ਰਿਕਾਰਡ ਕੋਡ ਨੂੰ ਮੁੜ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਲਿੰਕ {linkExpireHours} ਘੰਟਿਆਂ ਲਈ ਵੈਧ ਹੈ। ਇੱਕ ਵਾਰ ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ ਐਕਸੈਸ ਕਰਨ ਅਤੇ ਸੁਰੱਖਿਅਤ ਹੋਣ ਤੋਂ ਬਾਅਦ, QR ਕੋਡ ਦੀ ਮਿਆਦ ਖ਼ਤਮ ਨਹੀਂ ਹੋਵੇਗੀ।</p>" +
+                    $"<h3 style='color: #f06724'>ਡਿਜ਼ੀਟਲ ਕੋਵਿਡ-19 ਵੈਰੀਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ</h3>" +
+                    $"<p>ਡਿਜ਼ੀਟਲ ਕੋਵਿਡ-19 ਵੈਰੀਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਸਿਸਟਮ 'ਤੇ ਆਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਤੁਹਾਡੇ ਕੋਵਿਡ-19 ਵੈਕਸੀਨ ਰਿਕਾਰਡ ਕੋਡ ਨੂੰ ਮੁੜ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਲਿੰਕ {linkExpireHours} ਘੰਟਿਆਂ ਲਈ ਵੈਧ ਹੈ। ਇੱਕ ਵਾਰ ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ ਐਕਸੈਸ ਕਰਨ ਅਤੇ ਸੁਰੱਖਿਅਤ ਹੋਣ ਤੋਂ ਬਾਅਦ, QR ਕੋਡ ਦੀ ਮਿਆਦ ਖ਼ਤਮ ਨਹੀਂ ਹੋਵੇਗੀ।</p>" +
                     $"<p><a href='{url}'>ਵੈਕਸੀਨ ਰਿਕਾਰਡ ਵੇਖੋ </a></p>" +
                     $"<p>Centers for Disease Control and Prevention (ਬਿਮਾਰੀ ਨਿਯੰਤ੍ਰਣ ਅਤੇ ਰੋਕਥਾਮ ਕੇਂਦਰ) ਤੋਂ <a href='{cdcUrl}'>ਆਪਣੀ ਅਤੇ ਦੂਜਿਆਂ ਦੀ ਰੱਖਿਆ ਕਰਨ</a>  ਦੇ ਤਰੀਕੇ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰੋ।</p>" +
                     $"<p><b>ਕੀ ਤੁਹਾਡੇ ਕੋਈ ਸਵਾਲ ਹਨ?</b></p>" +
