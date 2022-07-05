@@ -1105,11 +1105,11 @@ namespace Application.Common
                     $"<footer><p dir='rtl' style='text-align:center'>البريد الإلكتروني الرسمي الخاص بـ Washington State Department of Health (إدارة الصحة في ولاية واشنطن)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "tl" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</h3>" +
-                    $"<p>Kamakailan kang humiling ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19 mula <a href='{webUrl}'>system ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</a>. Sa kasamaang-palad, hindi tumutugma ang ibinigay mong impormasyon sa impormasyong nasa system ng estado.</p><br/>" +
-                    $"<p>Maaari kang magsumite sa isa pang kahilingan sa system ng <a href='{webUrl}'>Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</a> gamit ang ibang numero ng mobile na telepono o email address, <a href='{contactUsUrl}'>makipag-ugnayan sa amin</a> para sa tulong sa pagtugma ng iyong rekord sa impormasyon sa pakikipag-ugnayan mo, o makipag-ugnayan sa iyong provider para tiyaking isinumite sa system ng estado ang iyong impormasyon.</p>" +
-                    $"<p><b>May mga tanong?</b></p>" +
-                    $"<p>Bisitahin ang aming page ng Mga Madalas Itanong (<a href='{vaccineFAQUrl}'>FAQ</a>) para matuto pa tungkol sa iyong Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19.</p>" +
+                    $"<h3 style='color: #f06724'>Digital na Talaan ng Pagberipika para sa COVID-19</h3>" +
+                    $"<p>Kamakailan kang humiling ng Digital na Talaan ng Pagberipika para sa COVID-19 mula sa <a href='{webUrl}'>system ng Digital na Talaan ng Pagberipika para sa COVID-1</a>. Sa kasamaang-palad, hindi tugma ang impormasyong ibinigay mo sa impormasyong nasa system ng estado.</p><br/>" +
+                    $"<p>Maaari kang magsumite ng isa pang kahilingan sa system ng <a href='{webUrl}'>]Digital na Talaan ng Pagberipika para sa COVID-1</a> gamit ang ibang numero ng mobile na telepono o email address, maaari kang <a href='{contactUsUrl}'>makipag-ugnayan sa amin</a> para sa tulong sa pagtugma ng talaan mo sa iyong impormasyon sa pakikipag-ugnayan, o maaari kang makipag-ugnayan sa provider mo para tiyaking naisumite sa system ng estado ang iyong impormasyon.</p>" +
+                    $"<p><b>May tanong?</b></p>" +
+                    $"<p>Pumunta sa aming page ng Mga Madalas Itanong (<a href='{vaccineFAQUrl}'>FAQ</a>) para alamin pa ang tungkol sa iyong Digital na Talaan ng Pagberipika para sa COVID-19.</p>" +
                     $"<p><b>Manatiling May Kaalaman.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> tungkol sa COVID-19.</p><br/>" +
                     $"<hr>" +
