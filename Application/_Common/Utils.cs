@@ -519,16 +519,16 @@ namespace Application.Common
                     $"<footer><p dir='rtl' style='text-align:center'>البريد الإلكتروني الرسمي الخاص بـ Washington State Department of Health (إدارة الصحة في ولاية واشنطن)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "tl" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</h3>" +
-                    $"<p>Salamat sa pagbisita sa system ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19. May bisa ang link para makuha ang iyong code sa pagberipika ng bakuna sa COVID-19 nang {linkExpireHours} na oras. Kapag na-aaccess at na-save na ito sa iyong device, hindi mag-e-expire ang QR code.</p>" +
-                    $"<p><a href='{url}'>Tingnan ang Rekord ng Bakuna</a></p>" +
-                    $"<p>Matuto pa tungkol sa kung paano <a href='{cdcUrl}'>protektahan ang iyong sarili at ang ibang tao</a> mula sa impormasyon mula sa Centers for Disease Control and Prevention (Mga Sentro sa Pagkontrol at Pag-iwas sa Sakit).</p>" +
-                    $"<p><b>May mga tanong?</b></p>" +
-                    $"<p>Bisitahin ang aming page ng Mga Madalas Itanong (<a href='{vaccineFAQUrl}'>FAQ</a>) para matuto pa tungkol sa iyong Digital na Rekord ng Bakuna sa COVID-19.</p>" +
+                    $"<h3 style='color: #f06724'>Digital na Talaan ng Pagberipika para sa COVID-19</h3>" +
+                    $"<p>Salamat sa pagbisita sa system ng Digital na Talaan ng Pagberipika para sa COVID-19. May bisa ang link para makuha ang iyong code ng talaan ng bakuna sa COVID-19 sa loob ng {linkExpireHours} na oras. Kapag na-access at na-save na ito sa iyong device, hindi mawawalan ng bisa ang QR code.</p>" +
+                    $"<p><a href='{url}'>Tingnan ang Talaan ng Bakuna</a></p>" +
+                    $"<p>Alamin pa ang tungkol sa kung paano <a href='{cdcUrl}'>protektahan ang iyong sarili at ang ibang tao</a> mula sa Centers for Disease Control and Prevention (Mga Sentro sa Pagkontrol at Pag-iwas sa Sakit).</p>" +
+                    $"<p><b>May tanong?</b></p>" +
+                    $"<p>Pumunta sa aming page ng Mga Madalas Itanong (<a href='{vaccineFAQUrl}'>FAQ</a>) para alamin pa ang tungkol sa iyong Digital na Talaan ng Bakuna sa COVID-19.</p>" +
                     $"<p><b>Manatiling May Kaalaman.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> tungkol sa COVID-19.</p><br/>" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>Opisyal na Email ng Washington State Department of Health (Departamento ng Kalusugan ng Estado ng Washington)</p>" +
+                    $"<footer><p style='text-align:center'>Opisyal na Email ng Washington State Department of Health (Kagawaran ng Kalusugan ng Estado ng Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ru" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Цифровая запись о вакцинации от COVID-19 </h3>" +
