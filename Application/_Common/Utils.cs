@@ -614,12 +614,12 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>E-mail do representante oficial do Washington State Department of Health (Departamento de Saúde do estado de Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                "hi" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>डिजिटल COVID-19 सत्यापन रिकॉर्ड </h3>" +
-                    $"<p>डिजिटल COVID-19 सत्यापन रिकॉर्ड प्रणाली पर जाने के लिए धन्यवाद। आपके COVID-19 वैक्सीन रिकॉर्ड कोड को पुनः प्राप्त करने की लिंक {linkExpireHours} घंटे के लिए वैध है। आपके डिवाइस पर एक्सेस करने और सहेजने के बाद, QR कोड की समय-सीमा समाप्त नहीं होगी।</p>" +
+                    $"<h3 style='color: #f06724'>डिजिटल COVID-19 वेरिफिकेशन रिकॉर्ड</h3>" +
+                    $"<p>डिजिटल COVID-19 वेरिफिकेशन रिकॉर्ड प्रणाली पर जाने के लिए धन्यवाद। आपके COVID-19 वैक्सीन रिकॉर्ड कोड को पुनः प्राप्त करने की लिंक {linkExpireHours} घंटे के लिए वैध है। आपके डिवाइस पर एक्सेस करने और सहेजने के बाद, QR कोड की समय-सीमा समाप्त नहीं होगी।</p>" +
                     $"<p><a href='{url}'>वैक्सीन रिकॉर्ड देखें </a></p>" +
                     $"<p>Centers for Disease Control and Prevention(रोग नियंत्रण और रोकथाम केंद्र) से <a href='{cdcUrl}'>स्वयं और दूसरों की रक्षा</a> करने के तरीके के बारे में और जानें।</p>" +
                     $"<p><b>आपके कोई प्रश्न हैं?</b></p>" +
-                    $"<p>अपने डिजिटल COVID-19 वैक्सीन रिकॉर्ड के बारे में अधिक जानने के लिए हमारे अक्सर पूछे जाने वाले प्रश्नों (<a href='{vaccineFAQUrl}'>FAQ</a>) के पृष्ठ पर जाएँ।</p>" +
+                    $"<p>अपने डिजिटल COVID-19 वैक्सीन रिकॉर्ड के बारे में अधिक जानने के लिए हमारे अक्सर पूछे जाने वाले प्रश्नों (<a href='{vaccineFAQUrl}'>FAQ</a>) के पेज पर जाएँ।</p>" +
                     $"<p><b>सूचित रहें।</b></p>" +
                     $"<p>COVID-19 के बारे में <a href='{covidWebUrl}'>नवीनतम जानकारी देखें</a>। </p><br/>" +
                     $"<hr>" +
