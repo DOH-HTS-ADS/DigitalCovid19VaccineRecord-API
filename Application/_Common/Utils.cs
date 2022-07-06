@@ -819,7 +819,7 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "fj" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19</h3>" +
-                    $"<p>Vinaka vakalevu na nomu sikova mai na iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19. Na isema mo rawa ni raica tale kina na na ivakadinadina ni veika e vauca na COVID-19 me baleti iko ena rawa ni vakayagataki ga ena loma ni {linkExpireHours} na aua. Ni sa laurai oti qai maroroi ina nomu kompiuta se talevoni, ena rawa ni vakayagataki tiko ga na QR code.</p>" +
+                    $"<p>Vinaka vakalevu na nomu sikova mai iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19. Na isema mo rawa ni raica tale kina na na ivakadinadina ni veika e vauca na COVID-19 me baleti iko ena rawa ni vakayagataki ga ena loma ni {linkExpireHours} na aua. Ni sa laurai oti qai maroroi ina nomu kompiuta se talevoni, ena rawa ni vakayagataki tiko ga na QR code.</p>" +
                     $"<p><a href='{url}'><a href='{url}'>Raica na iVolatukutuku ni veika e vauca na iCula<a href='{url}'></a></p>" +
                     $"<p>Vulica e levu tale na tikina ena sala mo <a href='{cdcUrl}'>taqomaki iko kina vei ira eso tale</a>  mai na Centers for Disease Control and Prevention (Tabana ni Tatarovi kei na Veitaqomaki mai na Mate).</p>" +
                     $"<p><b>Taro?</b></p>" +
