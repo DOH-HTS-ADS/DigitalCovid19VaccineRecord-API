@@ -1108,14 +1108,14 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "tl" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Digital na Talaan ng Pagberipika para sa COVID-19</h3>" +
-                    $"<p>Kamakailan kang humiling ng Digital na Talaan ng Pagberipika para sa COVID-19 mula sa <a href='{webUrl}'>system ng Digital na Talaan ng Pagberipika para sa COVID-1</a>. Sa kasamaang-palad, hindi tugma ang impormasyong ibinigay mo sa impormasyong nasa system ng estado.</p><br/>" +
-                    $"<p>Maaari kang magsumite ng isa pang kahilingan sa system ng <a href='{webUrl}'>]Digital na Talaan ng Pagberipika para sa COVID-1</a> gamit ang ibang numero ng mobile na telepono o email address, maaari kang <a href='{contactUsUrl}'>makipag-ugnayan sa amin</a> para sa tulong sa pagtugma ng talaan mo sa iyong impormasyon sa pakikipag-ugnayan, o maaari kang makipag-ugnayan sa provider mo para tiyaking naisumite sa system ng estado ang iyong impormasyon.</p>" +
+                    $"<p>Kamakailan kang humiling ng Digital na Talaan ng Pagberipika para sa COVID-19 mula sa <a href='{webUrl}'>system ng Digital na Talaan ng Pagberipika para sa COVID-19</a>. Sa kasamaang-palad, hindi tugma ang impormasyong ibinigay mo sa impormasyong nasa system ng estado.</p><br/>" +
+                    $"<p>Maaari kang magsumite ng isa pang kahilingan sa system ng <a href='{webUrl}'>Digital na Talaan ng Pagberipika para sa COVID-19</a> ] gamit ang ibang numero ng mobile na telepono o email address, maaari kang <a href='{contactUsUrl}'>makipag-ugnayan sa amin</a> para sa tulong sa pagtugma ng talaan mo sa iyong impormasyon sa pakikipag-ugnayan, o maaari kang makipag-ugnayan sa provider mo para tiyaking naisumite sa system ng estado ang iyong impormasyon.</p>" +
                     $"<p><b>May tanong?</b></p>" +
                     $"<p>Pumunta sa aming page ng Mga Madalas Itanong (<a href='{vaccineFAQUrl}'>FAQ</a>) para alamin pa ang tungkol sa iyong Digital na Talaan ng Pagberipika para sa COVID-19.</p>" +
                     $"<p><b>Manatiling May Kaalaman.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> tungkol sa COVID-19.</p><br/>" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>Opisyal na Email ng Washington State Department of Health (Departamento ng Kalusugan ng Estado ng Washington)</p>" +
+                    $"<footer><p style='text-align:center'>Opisyal na Email ng Washington State Department of Health (Kagawaran ng Kalusugan ng Estado ng Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ru" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Цифровая запись о вакцинации от COVID-19</h3>" +
