@@ -1460,10 +1460,10 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "to" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Digital COVID-19 Verification Record (Lēkooti Fakamo’oni Huhu Malu'i COVID-19)</h3>" +
-                    $"<p>Na’a ke toki kolé ni mai ‘a e foomu Lēkooti Fakamo’oni ho’o Huhu Malu’i COVID-19 meí he <a href='{webUrl}'>fa’unga tauhi Lēkooti Fakamo’oni ki he Huhu Malu’i COVID-19</a>. Me’apango, ko e fakamatala ‘oku ke ‘omí ‘oku ‘ikai tatau ia mo e fakamatala ‘oku mau tauhí. </p><br/>" +
+                    $"<p>Na’a ke toki kolé ni mai ‘a e foomu Lēkooti Fakamo’oni Huhu Malu’i COVID-19 meí he <a href='{webUrl}'>fa’unga tauhi Lēkooti Fakamo’oni Huhu Malu’i COVID-19</a>. Me’apango, ko e fakamatala ‘oku ke ‘omí ‘oku ‘ikai tatau ia mo e fakamatala ‘oku mau tauhí.</p><br/>" +
                     $"<p>Te ke lava ‘o fakahū ha’o toe kole ‘I he fa’unga <a href='{webUrl}'>Lēkooti Fakamo’oni Huhu Malu’i COVID-19</a> ’aki ha fika telefoni kehe pe tu’asila ‘imeili, te ke lava ‘o fetu’utaki mai  ki ha tokoni ki hono fakahoa ho’o lēkooti ki ho’o fakamatalá, pe ko ho’o fetu’utaki ho’o toketā ke fakapapau’i ‘oku fakahū atu ho’o fakamatalá.</p>" +
                     $"<p><b>‘I ai ha ngaahi fehu’i?</b></p>" +
-                    $"<p>Vakai ki he’emau peesi Ngaahi Fehu’i ‘oku Fa’a ‘Eke Mai (<a href='{vaccineFAQUrl}'>Ngaahi Fehu’i ‘oku fa’a ‘Eke Mai</a>)  ke toe ‘ilo lahiange fekau’aki mo ho’o Lēkooti Huhu Malu’i COVID-19.</p>" +
+                    $"<p>Vakai ki he’emau peesi Ngaahi Fehu’i ‘oku Fa’a ‘Eke Mai (<a href='{vaccineFAQUrl}'>Ngaahi Fehu’i ‘oku fa’a ‘Eke Mai</a>) ke toe ‘ilo lahiange fekau’aki mo ho’o Lēkooti Fakamo’oni Huhu Malu’i COVID-19.</p>" +
                     $"<p><b>‘Ilo’i Maʻu Pē.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Vakai ki he fakamatala fakamuimui tahá</a> ’i he COVID-19.</p><br/>" +
                     $"<hr>" +
