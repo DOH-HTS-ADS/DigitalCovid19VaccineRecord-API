@@ -686,12 +686,12 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Iimeelka Rasmiga Ee Washington State Department of Health (Waaxda Caafimaadka Gobolka Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "sm" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Faamaumauga Faamaonia o le KOVITI-19</h3>" +
-                    $"<p>Faafetai mo le asiasi mai i faamaumauga faamaonia o le KOVITI-19. O le fesootaiga e maua ai faamaumauga o le KOVITI-19 e {linkExpireHours} itula lona aoga. A maua uma faamatalaga, ia faamauina, lelei ma sefe i lau masini, o le QR code e mafai ona faaogaina e le toe muta.</p>" +
+                    $"<h3 style='color: #f06724'>Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagi</h3>" +
+                    $"<p>Faafetai mo le asiasi mai i le polokalama o Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagi. O le fesootaiga e maua ai fa’amaumauga o le KOVITI-19 e {linkExpireHours} itula lona aoga. A maua uma faamatalaga, ia faamauina, lelei ma sefe i lau masini, o le QR code e mafai ona faaogaina e le toe muta.</p>" +
                     $"<p><a href='{url}'>Silasila i faamaumauga o Tui puipui </a></p>" +
                     $"<p>Ia silafia lelei auala e <a href='{cdcUrl}'>puipuia ai oe ma isi</a> e ala mai i le Centers for Disease Control and Prevention (poo le Ofisa Tutotonu mo le Vaaiga o le Pepesi o Faamaʻi ma le Puipuia mai Faamaʻi).</p>" +
                     $"<p><b>E iai ni fesili?</b></p>" +
-                    $"<p>Asiasi ane i mataupu e masani ona fesiligia (<a href='{vaccineFAQUrl}'>FAQ</a>) itulau e faalauteleina ai lou silafia i Faamatalaga ma faamaumauga o le KOVITI-19.</p>" +
+                    $"<p>Asiasi ane i mataupu e masani ona fesiligia (<a href='{vaccineFAQUrl}'>Fesili Masani ma Tal</a>) itulau e faalauteleina ai lou silafia i Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga i Upega Tafa’ilagi</p>" +
                     $"<p><b>Ia silafia pea.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Silasila i faamatalaga lata mai</a> o le KOVITI-19.</p><br/>" +
                     $"<hr>" +
