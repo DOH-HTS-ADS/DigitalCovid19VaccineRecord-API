@@ -337,7 +337,7 @@ namespace Application.Common
                 "fr" => $"Merci d'avoir consulté le système d'Attestation numérique de vaccination COVID-19. Le lien pour récupérer votre attestation de vaccination COVID-19 est valable pendant {linkExpireHours} heures. Une fois que vous l'avez enregistré sur votre appareil, le code QR n'expire pas.",
                 "tr" => $"Dijital COVID-19 Doğrulama Kaydı sistemini ziyaret ettiğiniz için teşekkür ederiz. COVID-19 doğrulamanızı alacağınız bağlantı sadece {linkExpireHours} saat geçerlidir. Bir kez erişilip cihazınıza kaydedildikten sonra kare kodun süresi dolmaz.",
                 "uk" => $"Дякуємо, що скористалися системою «Електронний запис про підтвердження вакцинації від COVID-19». Посилання для отримання запису про підтвердження вакцинації від COVID-19 дійсне протягом {linkExpireHours} годин. Після переходу за посиланням і збереження запису на вашому пристрої QR-код усе ще буде дійсним.",
-                "ro" => $"Vă mulțumim că ați accesat sistemul de certificate digitale COVID-19. Linkul de unde puteți prelua certificatul COVID-19 este valabil timp de {linkExpireHours} de ore. După ce l-ați accesat și l-ați salvat în telefon, codul QR nu va expira. Vizualizați fișa de vaccinare .",
+                "ro" => $"Vă mulțumim că ați accesat sistemul pentru Certificat digital COVID-19. Linkul de unde puteți prelua certificatul COVID-19 este valabil timp de {linkExpireHours} de ore. După ce l-ați accesat și l-ați salvat în telefon, codul QR nu va expira.",
                 "pt" => $"Obrigado por acessar o sistema do Comprovante digital de vacinação contra a COVID-19. O link para obter o seu comprovante de vacinação contra a COVID-19 é válido por {linkExpireHours} horas. Após acessar o código QR e salvá-lo em seu dispositivo, ele não expirará.",
                 "hi" => $"डिजिटल COVID-19 वेरिफिकेशन रिकॉर्ड प्रणाली पर जाने के लिए धन्यवाद। आपके COVID-19 वेरिफिकेशन को पुनः प्राप्त करने का लिंक {linkExpireHours} घंटे के लिए वैध है। आपके डिवाइस पर उपयोग करने और सहेजने के बाद, QR कोड की समय-सीमा समाप्त नहीं होगी।",
                 "de" => $"Danke für Ihren Besuch beim COVID-19-Digitalzertifikat-System. Der Link zum Abrufen Ihres COVID-19-Zertifikats ist {linkExpireHours} Stunden lang gültig. Nachdem Sie den QR-Code aufgerufen und auf Ihrem Gerät gespeichert haben, läuft der Code nicht ab.",
@@ -345,7 +345,7 @@ namespace Application.Common
                 "te" => $"డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్ సిస్టమ్​ని సందర్శించినందుకు మీకు ధన్యవాదాలు. మీ కొవిడ్-19 ధృవీకరణను తిరిగి పొందే లింక్ {linkExpireHours} గంటలపాటు చెల్లుబాటు అవుతుంది. మీరు యాక్సెస్ చేసుకొని, మీ పరికరంలో సేవ్ చేసిన తరువాత, QR కోడ్ గడువు తీరదు.",
                 "sw" => $"Asante kwa kutembelea mfumo wa Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19. Kiungo cha kupata uthibitishaji wako wa COVID-19 kitakuwa amilifu kwa saa {linkExpireHours}. Mara tu imefikiwa na kuhifadhiwa kwenye kifaa chako, msimbo wa QR hautaisha muda. Tazama Rekodi ya Chanjo.",
                 "so" => $"Waad ku mahadsan tahay soo booqashadaada nidaamka Diiwaanka Xaqiijinta Tallaalka COVID-19 ee Dhijitaalka ah. Lifaaqa aad kula soo baxeyso xaqiijintaada tallaalka COVID-19 ayaa ansax ah oo shaqeynayo {linkExpireHours} saacadood. Marki la galo oo lagu keydiyo taleefankaaga, koodhka jawaabta degdegga ma dhacayo.",
-                "sm" => $"Faafetai mo le asiasi mai i faamaumauga faamaonia o le KOVITI-19. O le fesootaiga e maua ai faamaumauga o le KOVITI-19 e {linkExpireHours} itula lona aoga. A maua uma faamatalaga, ia faamauina, lelei ma sefe i lau masini, o le QR code e mafai ona faaogaina e le toe muta.",
+                "sm" => $"Faafetai mo le asiasi mai i f]Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagi . O le fesootaiga e maua ai faamaumauga o le KOVITI-19 e {linkExpireHours} itula lona aoga. A maua uma faamatalaga, ia faamauina, lelei ma sefe i lau masini, o le QR code e mafai ona faaogaina e le toe muta.",
                 "pa" => $"ਡਿਜ਼ੀਟਲ ਕੋਵਿਡ-19 ਵੈਰੀਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਸਿਸਟਮ 'ਤੇ ਆਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਤੁਹਾਡੀ ਕੋਵਿਡ-19 ਵੈਰੀਫਿਕੇਸ਼ਨ ਨੂੰ ਮੁੜ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਲਿੰਕ {linkExpireHours} ਘੰਟਿਆਂ ਲਈ ਵੈਧ ਹੈ। ਇੱਕ ਵਾਰ ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ ਐਕਸੈਸ ਕਰਨ ਅਤੇ ਸੁਰੱਖਿਅਤ ਹੋਣ ਤੋਂ ਬਾਅਦ, QR ਕੋਡ ਦੀ ਮਿਆਦ ਖ਼ਤਮ ਨਹੀਂ ਹੋਵੇਗੀ।",
                 "ps" => $"د ډیجیټل COVID-19 تائید ثبت سیسټم لیدو لپاره ستاسو مننه. ستاسو د COVID-19 تائید ترلاسه کولو لینک د {linkExpireHours} ساعتونو لپاره اعتبار لري. یوځل چې ستاسو وسیلې ته لاسرسی ولري او خوندي شي، نو د QR کوډ به پای ته ونه رسیږي. ",
                 "ur" => $"کووڈ-19 تصدیقی ریکارڈ کا سسٹم ملاحظہ کرنے کا شکریہ۔ کووڈ-19 تصدیق وصول کرنے کا لنک {linkExpireHours} گھنٹے تک کام کرے گا۔ رسائی لے کر ڈیوائس میں محفوظ کرنے کے بعد کیو آر کوڈ کی میعاد ختم نہیں ہو گی۔ ویکسین ریکارڈ دیکھیں",
@@ -591,8 +591,8 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Офіційна електронна адреса Washington State Department of Health (Департаменту охорони здоров’я штату Вашингтон)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ro" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Certificatul digital COVID-19</h3>" +
-                    $"<p>Vă mulțumim că ați accesat sistemul de certificate digitale COVID-19. Linkul de unde puteți prelua fișa de vaccinare COVID-19 este valabil timp de {linkExpireHours} de ore. După ce l-ați accesat și l-ați salvat în telefon, codul QR nu va expira.</p>" + 
+                    $"<h3 style='color: #f06724'>Certificat digital COVID-19</h3>" +
+                    $"<p>Vă mulțumim că ați accesat sistemul pentru Certificat digital COVID-19. Linkul de unde puteți prelua fișa de vaccinare COVID-19 este valabil timp de {linkExpireHours} de ore. După ce l-ați accesat și l-ați salvat în telefon, codul QR nu va expira.</p>" + 
                     $"<p><a href='{url}'>Vizualizați fișa de vaccinare</a></p>" +
                     $"<p>Aflați mai multe despre cum să <a href='{cdcUrl}'>vă protejați pe dvs. și pe ceilalți</a> de la Centers for Disease Control and Prevention (Centrele pentru controlul și prevenirea bolilor).</p>" +
                     $"<p><b>Aveți întrebări?</b></p>" +
@@ -686,12 +686,12 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Iimeelka Rasmiga Ee Washington State Department of Health (Waaxda Caafimaadka Gobolka Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "sm" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Faamaumauga Faamaonia o le KOVITI-19</h3>" +
-                    $"<p>Faafetai mo le asiasi mai i faamaumauga faamaonia o le KOVITI-19. O le fesootaiga e maua ai faamaumauga o le KOVITI-19 e {linkExpireHours} itula lona aoga. A maua uma faamatalaga, ia faamauina, lelei ma sefe i lau masini, o le QR code e mafai ona faaogaina e le toe muta.</p>" +
+                    $"<h3 style='color: #f06724'>Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagi</h3>" +
+                    $"<p>Faafetai mo le asiasi mai i le polokalama o Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagi. O le fesootaiga e maua ai fa’amaumauga o le KOVITI-19 e {linkExpireHours} itula lona aoga. A maua uma faamatalaga, ia faamauina, lelei ma sefe i lau masini, o le QR code e mafai ona faaogaina e le toe muta.</p>" +
                     $"<p><a href='{url}'>Silasila i faamaumauga o Tui puipui </a></p>" +
                     $"<p>Ia silafia lelei auala e <a href='{cdcUrl}'>puipuia ai oe ma isi</a> e ala mai i le Centers for Disease Control and Prevention (poo le Ofisa Tutotonu mo le Vaaiga o le Pepesi o Faamaʻi ma le Puipuia mai Faamaʻi).</p>" +
                     $"<p><b>E iai ni fesili?</b></p>" +
-                    $"<p>Asiasi ane i mataupu e masani ona fesiligia (<a href='{vaccineFAQUrl}'>FAQ</a>) itulau e faalauteleina ai lou silafia i Faamatalaga ma faamaumauga o le KOVITI-19.</p>" +
+                    $"<p>Asiasi ane i mataupu e masani ona fesiligia (<a href='{vaccineFAQUrl}'>Fesili Masani ma Tal</a>) itulau e faalauteleina ai lou silafia i Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga i Upega Tafa’ilagi</p>" +
                     $"<p><b>Ia silafia pea.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Silasila i faamatalaga lata mai</a> o le KOVITI-19.</p><br/>" +
                     $"<hr>" +
@@ -931,7 +931,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Saib Ntaub Ntawv Sau Tseg Txog Tshuaj Tiv Thaiv Kab Mob </a></p>" +
                     $"<p>Kawm paub txiv txog txoj hauv kev los <a href='{cdcUrl}'>pov thaiv koj tus kheej thiab lwm tus neeg</a> los ntawm Centers for Disease Control and Prevention (Cov Chaw Tswj thiab Pov Thaiv Kab Mob).</p>" +
                     $"<p><b>Puas muaj cov lus nug?</b></p>" +
-                    $"<p>Mus saib peb nplooj vev xaib muaj Cov Lus Nug Uas Nquag Nug (<a href='{vaccineFAQUrl}'>FAQ</a>) txhawm rau kawm paub ntxiv txog koj li Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj.</p>" +
+                    $"<p>Mus saib peb nplooj vev xaib muaj Cov Lus Nug Uas Nquag Nug (<a href='{vaccineFAQUrl}'>FAQ</a>) ) txhawm rau kawm paub ntxiv txog koj li Ntaub Ntawv Sau Tseg Txog Tshuaj Tiv Thaiv Kab Mob COVID-19 Ua Dis Cis Tauj</p>" +
                     $"<p><b>Soj Qab Saib Kev Paub.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Saib cov ntaub ntawv tawm tshiab tshaj plaws</a> txog kab mob COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -989,7 +989,7 @@ namespace Application.Common
                 "te" => $"మీరు ఇటీవల రాష్ట్రం నుంచి డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్​ని అభ్యర్ధించారు. దురదృష్టవశాత్తు, మీరు అందించిన సమాచారం మా సిస్టమ్​లోని సమాచారంతో జతకావడం లేదు. మీ రికార్డ్​ని మీ సంప్రదించు సమాచారంతో జతచేయడంలో సాయపడేందుకు, దయచేసి మాకు {phoneNumber} ద్వారా కాల్ చేసి, # ప్రెస్ చేయండి.",
                 "sw" => $"Hivi karibuni uliomba rekodi ya kidijitali ya uthibitishaji wa COVID-19 kutoka kwa jimbo. Kwa bahati mbaya, maelezo uliyotoa hayalingani na maelezo yaliyopo kwenye mfumo wetu. Wasiliana nasi kupitia {phoneNumber}, kisha ubofye # ili kupata usaidizi wa kulinganisha rekodi yako na maelezo yako ya mawasiliano.",
                 "so" => $"Waxaad dhawaan gobolka ka codsatay diiwaanka xaqiijinta tallaalka COVID-19 ee dhijitaalka ah. Nasiib daro, macluumaadka aad bixisay ma waafaqsana macluumaadka kujira nidaamkeena. Nagala soo xiriir {phoneNumber}, kadib riix # si aad u hesho caawimaada islahaysiinta diiwaankaaga iyo macluumaadkaaga xiriirka.",
-                "sm" => $"Sa e talosagaina talu ai nei ni faamaumauga faamaonia o le KOVITI-19 mai le settee. E faamalie atu o faamatalaga na e tuuina mai e le tutusa ma faamaumauga i totonu o le matou polokalame. Faafesootai mai le numera {phoneNumber}, oomi # e maua ai se fesoasoani ina tutusa ou faamaumauga ma faamatalaga tusitusia.",
+                "sm" => $"Sa e talosagaina talu ai nei ni fa’amaumauga fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagi mai le setete. E faamalie atu o faamatalaga na e tuuina mai e le tutusa ma faamaumauga i totonu o le matou polokalame. Faafesootai mai le numera {phoneNumber}, oomi # e maua ai se fesoasoani ina tutusa ou faamaumauga ma faamatalaga tusitusia.",
                 "pa" => $"ਤੁਸੀਂ ਹਾਲ ਹੀ ਵਿੱਚ ਸਟੇਟ ਤੋਂ ਇੱਕ ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡਿਕਾਰਡ ਲਈ ਬੇਨਤੀ ਕੀਤੀ ਸੀ। ਬਦਕਿਸਮਤੀ ਨਾਲ, ਤੁਹਾਡੇ ਦੁਆਰਾ ਪ੍ਰਦਾਨ ਕੀਤੀ ਗਈ ਜਾਣਕਾਰੀ ਸਾਡੇ ਸਿਸਟਮ ਵਿੱਚ ਮੌਜੂਦ ਜਾਣਕਾਰੀ ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ। ਆਪਣੇ ਰਿਕਾਰਡ ਨੂੰ ਆਪਣੀ ਸੰਪਰਕ ਜਾਣਕਾਰੀ ਨਾਲ ਮਿਲਾਉਣ ਵਿੱਚ ਮਦਦ ਲਈ ਸਾਡੇ ਨਾਲ {phoneNumber} 'ਤੇ ਸੰਪਰਕ ਕਰੋ, ਅਤੇ # ਦਬਾਓ।",
                 "ps" => $"تاسو پدې وروستیو کې له دولت څخه د ډیجیټل COVID-19 تائید ثبت غوښتنه کړې. له بده مرغه، هغه معلومات چې تاسو چمتو کړي زموږ په سیسټم کې د معلوماتو سره سمون نلري. موږ سره په {phoneNumber} اړیکه ونیسئ، ستاسو د اړیکو معلوماتو سره ستاسو د ثبت په سمون کې د مرستې لپاره # کېښکلئ.",
                 "ur" => $"آپ نے حال ہی میں ریاست سے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کی درخواست کی ہے۔ بدقسمتی سے آپ کی فراہم کردہ معلومات ہمارے سسٹم میں موجود معلومات سے میل نہیں کھاتی۔ اپنے ریکارڈ کو رابطے کی معلومات سے ملانے کے لئے ہم سے {phoneNumber} پر رابطہ کریں اور # دبائیں۔",
@@ -1009,7 +1009,7 @@ namespace Application.Common
                 "om" => $"Dhiyeenyatti naannicha irraa mirkaneessa ragaa dijitaalaa COVID-19 gaafattaniirtu. Akka carraa ta’ee, odeeffannoon isin laattan kan siistama keenya keessa jiruun wal hin simu. Ragaa keessan qunnamtii odeeffannoo keessan wajjin akka wal simu gochuuf gargaarsa yoo barbaaddan, {phoneNumber} irratti nu qunnamaa, # tuqaa.",
                 "to" => $"Na’a ke toki kole ni mai ha tatau ho’o lēkooti fakamo’oni huhu malu’i COVID-19. Me’apango, ko e fakamatala ‘oku ke ‘omí ‘oku ‘ikai tatau ia mo e fakamatala ‘oku mau tauhí. Fetu’utaki mai ki he {phoneNumber}, lomi ‘a e # ki ha tokoni ki hono fakahoa ho’o lēkootí ki ho’o fakamatala fetu’utakí.",
                 "ta" => $"நீங்கள் சமீபத்தில் மாநிலத்திடம் மின்னணு Covid-19 சரிபார்ப்புப் பதிவைக் கோரியுள்ளீர்கள். துரதிர்ஷ்டவசமாக, நீங்கள் வழங்கிய தகவல் எங்கள் அமைப்பில் உள்ள தகவலுடன் பொருந்தவில்லை. {phoneNumber} என்ற எண்ணில் எங்களைத் தொடர்பு கொள்ளவும், உங்கள் பதிவை உங்கள் தொடர்புத் தகவலுடன் பொருத்துவதற்கான உதவிக்கு # ஐ அழுத்தவும்.",
-                "hmn" => $"Tsis ntev los no koj tau thov cov ntaub ntawv sau tseg txog kev txheeb xyuas kab mob COVID-19 dis cis tauj los ntawm lub xeev. Hmoov tsis zoo, cov ntaub ntawv uas koj tau muab tsis raug raws li cov ntaub ntawv uas nyob rau hauv peb txheej teg kev ua hauj lwm. Txuas lus rau peb ntawm tus xov tooj {phoneNumber}, nias # rau kev pab ua kom koj cov ntaub ntawv sau tseg raug raws li koj cov ntaub ntawv sib txuas lus.",
+                "hmn" => $"Tsis ntev los no koj tau thov kev txheeb xyuas ntaub ntawv sau tseg txog kab mob COVID-19 ua dis cis tauj los ntawm lub xeev. Hmoov tsis zoo, cov ntaub ntawv uas koj tau muab tsis raug raws li cov ntaub ntawv uas nyob rau hauv peb txheej teg kev ua hauj lwm. Txuas lus rau peb ntawm tus xov tooj {phoneNumber}, nias # rau kev pab ua kom koj cov ntaub ntawv sau tseg raug raws li koj cov ntaub ntawv sib txuas lus.",
                 "th" => $"คุณเพิ่งขอบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัลจากรัฐ ขออภัย ข้อมูลที่คุณให้ไม่ตรงกับข้อมูลในระบบของเรา โปรดติดต่อเราที่ {phoneNumber} แล้วกด # เพื่อขอความช่วยเหลือในการจับคู่บันทึกของคุณกับข้อมูลการติดต่อของคุณ",
                 _ => $"You recently requested a digital COVID-19 verification record from the state. Unfortunately, the information you provided does not match information in our system. Contact us at {phoneNumber}, press # for help in matching your record to your contact information."
             };
@@ -1109,7 +1109,7 @@ namespace Application.Common
                 "tl" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Digital na Talaan ng Pagberipika para sa COVID-19</h3>" +
                     $"<p>Kamakailan kang humiling ng Digital na Talaan ng Pagberipika para sa COVID-19 mula sa <a href='{webUrl}'>system ng Digital na Talaan ng Pagberipika para sa COVID-19</a>. Sa kasamaang-palad, hindi tugma ang impormasyong ibinigay mo sa impormasyong nasa system ng estado.</p><br/>" +
-                    $"<p>Maaari kang magsumite ng isa pang kahilingan sa system ng <a href='{webUrl}'>Digital na Talaan ng Pagberipika para sa COVID-19</a> ] gamit ang ibang numero ng mobile na telepono o email address, maaari kang <a href='{contactUsUrl}'>makipag-ugnayan sa amin</a> para sa tulong sa pagtugma ng talaan mo sa iyong impormasyon sa pakikipag-ugnayan, o maaari kang makipag-ugnayan sa provider mo para tiyaking naisumite sa system ng estado ang iyong impormasyon.</p>" +
+                    $"<p>Maaari kang magsumite ng isa pang kahilingan sa system ng <a href='{webUrl}'>Digital na Talaan ng Pagberipika para sa COVID-19</a> gamit ang ibang numero ng mobile na telepono o email address, maaari kang <a href='{contactUsUrl}'>makipag-ugnayan sa amin</a> para sa tulong sa pagtugma ng talaan mo sa iyong impormasyon sa pakikipag-ugnayan, o maaari kang makipag-ugnayan sa provider mo para tiyaking naisumite sa system ng estado ang iyong impormasyon.</p>" +
                     $"<p><b>May tanong?</b></p>" +
                     $"<p>Pumunta sa aming page ng Mga Madalas Itanong (<a href='{vaccineFAQUrl}'>FAQ</a>) para alamin pa ang tungkol sa iyong Digital na Talaan ng Pagberipika para sa COVID-19.</p>" +
                     $"<p><b>Manatiling May Kaalaman.</b></p>" +
@@ -1173,8 +1173,8 @@ namespace Application.Common
                    $"<footer><p style='text-align:center'>Офіційна електронна адреса Washington State Department of Health (Департаменту охорони здоров’я штату Вашингтон)</p>" +
                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ro" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Certificatul digital COVID-19</h3>" +
-                    $"<p>Ați solicitat recent un certificat digital COVID-19 de la <a href='{webUrl}'>sistemul de certificate digitale COVID-19</a>. Din păcate, informațiile furnizate de dvs. nu corespund cu datele din sistemul de stat.</p><br/>" + 
+                    $"<h3 style='color: #f06724'>Certificat digital COVID-19</h3>" +
+                    $"<p>Ați solicitat recent un Certificat digital COVID-19 de la <a href='{webUrl}'>sistemul pentru Certificat digital COVID-19</a>. Din păcate, informațiile furnizate de dvs. nu corespund cu datele din sistemul de stat.</p><br/>" + 
                     $"<p>Puteți să trimiteți o nouă solicitare către sistemul de <a href='{webUrl}'>certificate digitale COVID-19</a> de la un alt număr de telefon mobil sau de pe o altă adresă de e-mail, puteți să ne <a href='{contactUsUrl}'>contactați</a> pentru asistență la potrivirea fișei dvs. de vaccinare cu informațiile de contact sau puteți să luați legătura cu furnizorul serviciilor medicale pentru a vă asigura ca datele dvs. au fost introduse în sistemul de stat.</p>" +
                     $"<p><b>Aveți întrebări?</b></p>" +
                     $"<p>Accesați pagina Întrebări frecvente (<a href='{vaccineFAQUrl}'>Întrebări frecvente</a>) pentru a afla mai multe despre certificatul digital COVID-19.</p>" +
@@ -1261,11 +1261,11 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Iimeelka Rasmiga Ee Washington State Department of Health (Waaxda Caafimaadka Gobolka Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "sm" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Faamaumauga Faamaonia o le KOVITI-19</h3>" +
-                    $"<p>Sa e talosagaina talu ai nei ni faamaumauga faamaonia o le KOVITI-19 <a href='{webUrl}'>Polokalame o faamaumauga o le KOVITI-19</a>. E faamalie atu, o faamatalaga na e tuuina mai, e le tutusa ma faamaumauga i le polokalame a le setete </p><br/>" +
-                    $"<p>E mafai ona toe talosagaina ni <a href='{webUrl}'>Faamaumauga Faamaonia o le KOVITI-19</a> e manaomia se numera telefoni feaveai ese, poo se tuatusi imeli, e mafai foi <a href='{contactUsUrl}'>faafesootai mai matou</a> mo se fesoasoani e faamautinoa ou faaamaumauga pe faafesootai le auaunaga ina ia faamautuina ua mauaina uma ou faamatalaga i polokalame a le setete.</p>" +
+                    $"<h3 style='color: #f06724'>Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa'ilagi</h3>" +
+                    $"<p>Sa e talosagaina talu ai nei ni Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagimai le <a href='{webUrl}'>Polokalama o Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o le Upega Tafa’ilag</a>. E faamalie atu, o faamatalaga na e tuuina mai, e le tutusa ma faamaumauga i le polokalame a le setete.</p><br/>" +
+                    $"<p>E mafai ona toe talosaga i le vaega o <a href='{webUrl}'>Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagi</a> o se polokalama e manaomia ai se numera telefoni feaveai ese, poo se tuatusi imeli, e mafai foi <a href='{contactUsUrl}'>faafesootai mai matou</a> mo se fesoasoani e faamautinoa ou faaamaumauga pe faafesootai le auaunaga ina ia faamautuina ua mauaina uma ou faamatalaga i polokalame a le setete.</p>" +
                     $"<p><b>E iai ni fesili?</b></p>" +
-                    $"<p>Asiasi ane i mataupu e masani ona fesiligia (<a href='{vaccineFAQUrl}'>FAQ</a>) itulau e faalauteleina ai lou silafia i Faamatalaga ma faamaumauga o le KOVITI-19.</p>" +
+                    $"<p>Asiasi ane i mataupu e masani ona fesiligia (<a href='{vaccineFAQUrl}'>FAQ</a>) e faalauteleina ai lou silafia i Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagi.</p>" +
                     $"<p><b>Ia silafia Pea.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Silasila i faamatalaga lata mai</a> o le KOVITI-19.</p><br/>" +
                     $"<hr>" +
