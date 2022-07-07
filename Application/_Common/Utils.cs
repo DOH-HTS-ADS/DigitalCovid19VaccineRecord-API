@@ -931,7 +931,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Saib Ntaub Ntawv Sau Tseg Txog Tshuaj Tiv Thaiv Kab Mob </a></p>" +
                     $"<p>Kawm paub txiv txog txoj hauv kev los <a href='{cdcUrl}'>pov thaiv koj tus kheej thiab lwm tus neeg</a> los ntawm Centers for Disease Control and Prevention (Cov Chaw Tswj thiab Pov Thaiv Kab Mob).</p>" +
                     $"<p><b>Puas muaj cov lus nug?</b></p>" +
-                    $"<p>Mus saib peb nplooj vev xaib muaj Cov Lus Nug Uas Nquag Nug (<a href='{vaccineFAQUrl}'>FAQ</a>) txhawm rau kawm paub ntxiv txog koj li Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj.</p>" +
+                    $"<p>Mus saib peb nplooj vev xaib muaj Cov Lus Nug Uas Nquag Nug (<a href='{vaccineFAQUrl}'>FAQ</a>) ) txhawm rau kawm paub ntxiv txog koj li Ntaub Ntawv Sau Tseg Txog Tshuaj Tiv Thaiv Kab Mob COVID-19 Ua Dis Cis Tauj</p>" +
                     $"<p><b>Soj Qab Saib Kev Paub.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Saib cov ntaub ntawv tawm tshiab tshaj plaws</a> txog kab mob COVID-19.</p><br/>" +
                     $"<hr>" +
