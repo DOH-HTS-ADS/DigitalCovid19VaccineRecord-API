@@ -1173,8 +1173,8 @@ namespace Application.Common
                    $"<footer><p style='text-align:center'>Офіційна електронна адреса Washington State Department of Health (Департаменту охорони здоров’я штату Вашингтон)</p>" +
                    $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ro" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Certificatul digital COVID-19</h3>" +
-                    $"<p>Ați solicitat recent un certificat digital COVID-19 de la <a href='{webUrl}'>sistemul de certificate digitale COVID-19</a>. Din păcate, informațiile furnizate de dvs. nu corespund cu datele din sistemul de stat.</p><br/>" + 
+                    $"<h3 style='color: #f06724'>Certificat digital COVID-19</h3>" +
+                    $"<p>Ați solicitat recent un Certificat digital COVID-19 de la <a href='{webUrl}'>sistemul pentru Certificat digital COVID-19</a>. Din păcate, informațiile furnizate de dvs. nu corespund cu datele din sistemul de stat.</p><br/>" + 
                     $"<p>Puteți să trimiteți o nouă solicitare către sistemul de <a href='{webUrl}'>certificate digitale COVID-19</a> de la un alt număr de telefon mobil sau de pe o altă adresă de e-mail, puteți să ne <a href='{contactUsUrl}'>contactați</a> pentru asistență la potrivirea fișei dvs. de vaccinare cu informațiile de contact sau puteți să luați legătura cu furnizorul serviciilor medicale pentru a vă asigura ca datele dvs. au fost introduse în sistemul de stat.</p>" +
                     $"<p><b>Aveți întrebări?</b></p>" +
                     $"<p>Accesați pagina Întrebări frecvente (<a href='{vaccineFAQUrl}'>Întrebări frecvente</a>) pentru a afla mai multe despre certificatul digital COVID-19.</p>" +
