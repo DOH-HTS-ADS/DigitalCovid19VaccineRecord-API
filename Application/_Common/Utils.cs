@@ -591,8 +591,8 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Офіційна електронна адреса Washington State Department of Health (Департаменту охорони здоров’я штату Вашингтон)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ro" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Certificatul digital COVID-19</h3>" +
-                    $"<p>Vă mulțumim că ați accesat sistemul de certificate digitale COVID-19. Linkul de unde puteți prelua fișa de vaccinare COVID-19 este valabil timp de {linkExpireHours} de ore. După ce l-ați accesat și l-ați salvat în telefon, codul QR nu va expira.</p>" + 
+                    $"<h3 style='color: #f06724'>Certificat digital COVID-19</h3>" +
+                    $"<p>Vă mulțumim că ați accesat sistemul pentru Certificat digital COVID-19. Linkul de unde puteți prelua fișa de vaccinare COVID-19 este valabil timp de {linkExpireHours} de ore. După ce l-ați accesat și l-ați salvat în telefon, codul QR nu va expira.</p>" + 
                     $"<p><a href='{url}'>Vizualizați fișa de vaccinare</a></p>" +
                     $"<p>Aflați mai multe despre cum să <a href='{cdcUrl}'>vă protejați pe dvs. și pe ceilalți</a> de la Centers for Disease Control and Prevention (Centrele pentru controlul și prevenirea bolilor).</p>" +
                     $"<p><b>Aveți întrebări?</b></p>" +
