@@ -1262,10 +1262,10 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "sm" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa'ilagi</h3>" +
-                    $"<p>Sa e talosagaina talu ai nei ni Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagimai le <a href='{webUrl}'>Polokalama o Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o le Upega Tafa’ilag</a>. E faamalie atu, o faamatalaga na e tuuina mai, e le tutusa ma faamaumauga i le polokalame a le setete.</p><br/>" +
+                    $"<p>Sa e talosagaina talu ai nei ni Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagimai le <a href='{webUrl}'>Polokalama o Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o le Upega Tafa’ilagi</a>. E faamalie atu, o faamatalaga na e tuuina mai, e le tutusa ma faamaumauga i le polokalame a le setete.</p><br/>" +
                     $"<p>E mafai ona toe talosaga i le vaega o <a href='{webUrl}'>Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagi</a> o se polokalama e manaomia ai se numera telefoni feaveai ese, poo se tuatusi imeli, e mafai foi <a href='{contactUsUrl}'>faafesootai mai matou</a> mo se fesoasoani e faamautinoa ou faaamaumauga pe faafesootai le auaunaga ina ia faamautuina ua mauaina uma ou faamatalaga i polokalame a le setete.</p>" +
                     $"<p><b>E iai ni fesili?</b></p>" +
-                    $"<p>Asiasi ane i mataupu e masani ona fesiligia (<a href='{vaccineFAQUrl}'>FAQ</a>) e faalauteleina ai lou silafia i Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagi.</p>" +
+                    $"<p>Asiasi ane i mataupu e masani ona fesiligia (<a href='{vaccineFAQUrl}'>Fesili Masani ma Tali</a>) e faalauteleina ai lou silafia i Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagi.</p>" +
                     $"<p><b>Ia silafia Pea.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Silasila i faamatalaga lata mai</a> o le KOVITI-19.</p><br/>" +
                     $"<hr>" +
