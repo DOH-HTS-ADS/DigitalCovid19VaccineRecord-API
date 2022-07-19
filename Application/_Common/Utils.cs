@@ -627,7 +627,7 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Offizielle E-Mail-Adresse des Washington State Department of Health (Gesundheitsministerium des Bundesstaates Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ti" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>ዲጂታላዊ ናይ ኮቪድ-19 ክታበት መረጋገጺ መዝገብ</h3>" +
+                    $"<h3 style='color: #f06724'>ዲጂታላዊ ናይ ኮቪድ-19 ክታበት መረጋገጺ መዝገብ</h3>" + 
                     $"<p>ን ዲጂታላዊ ናይ ኮቪድ-19 መረጋገጺ መዝገብ ብምብጻሕኩም ነመስግነኩም። ናይ ኮቪድ-19 ክታበት መረጋገጺ መርከቢ ሊንክ ድማ ን {linkExpireHours} ሰዓታት ቅቡል እዩ። ሓንሳብ ምስ ኣተኹምን ኣብ መሳርሒትኩም ምስ ተዓቀበን ድማ፡ እቲ ናይ QR code ዕለቱ ኣይወድቕን እዩ።</p>" +
                     $"<p><a href='{url}'>ናይ ክታበት መዝገብ ርኣይዎ</a></p>" +
                     $"<p>ካብ Centers for disease Control and Prevention (CDC, ማእከላት ንምቊጽጻርን ምግታእን ጥዕና) ብዛዕባ <a href='{cdcUrl}'>ንካልኦትን ንገዛእ ርእስኹምን ምሕላው</a> ዝያዳ ተምሃሩ።</p>" +
