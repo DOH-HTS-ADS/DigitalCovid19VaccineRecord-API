@@ -901,14 +901,14 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>'Imeili Faka'ofisiale Washington State Department Of Health (Potungāue Mo’ui ‘a e Siteiti ‘o Uasingatoní)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ta" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>மின்னணு Covid-19 சரிபார்ப்புப் பதிவு</h3>" +
+                    $"<h3 style='color: #f06724'>மின்னணு கொவிட்-19 சரிபார்ப்புப் பதிவு</h3>" +
                     $"<p>மின்னணு Covid-19 சரிபார்ப்புப் பதிவு முறையைப் பார்வையிட்டதற்கு நன்றி. உங்கள் Covid-19 தடுப்பூசி பதிவுக் குறியீட்டை மீட்டெடுப்பதற்கான இணைப்பு {linkExpireHours} மணிநேரத்திற்கு செல்லுபடியாகும். இணைப்பை அணுகி உங்கள் சாதனத்தில் சேமித்துவிட்டால், QR குறியீடு காலாவதியாகாது.</p>" +
                     $"<p><a href='{url}'>தடுப்பூசி பதிவைப் பார்க்கவும்</a></p>" +
                     $"<p>நோய் கட்டுப்பாடு மற்றும் தடுப்பு மையங்களில் இருந்து <a href='{cdcUrl}'>உங்களையும் பிறரையும் பாதுகாப்பது </a> Centers for Disease Control and Prevention )எப்படி என்பது பற்றி மேலும் அறிக) </p>" +
                     $"<p><b>கேள்விகள் உள்ளதா?</b></p>" +
-                    $"<p>உங்கள் மின்னணு Covid-19 தடுப்பூசி பதிவைப் பற்றி மேலும் அறிய, எங்களின் அடிக்கடி கேட்கப்படும் கேள்விகள் (<a href='{vaccineFAQUrl}'>FAQ</a>) பக்கத்தைப் பார்வையிடவும்.</p>" +
+                    $"<p>உங்கள் மின்னணு கொவிட்-19 தடுப்பூசி பதிவைப் பற்றி மேலும் அறிய, எங்களின் அடிக்கடி கேட்கப்படும் கேள்விகள் (<a href='{vaccineFAQUrl}'>FAQ</a>) பக்கத்தைப் பார்வையிடவும்.</p>" +
                     $"<p><b>தகவலை அறிந்து இருங்கள்.</b></p>" +
-                    $"<p><a href='{covidWebUrl}'>சமீபத்திய தகவலைப் பார்க்கவும்</a> Covid-19 பற்றி.</p><br/>" +
+                    $"<p><a href='{covidWebUrl}'>சமீபத்திய தகவலைப் பார்க்கவும்</a> கொவிட்-19 பற்றி.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>அதிகாரப்பூர்வ Washington State Department of Health (வாஷிங்டன் மாநில சுகாதாரத் துறை) மின்னஞ்சல்</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
