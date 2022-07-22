@@ -1229,7 +1229,7 @@ namespace Application.Common
                     $"<p>Hivi karibuni uliomba Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19 kutoka mfumo wa <a href='{webUrl}'>Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19</a>. Kwa bahati mbaya, maelezo uliyotoa hayalingani na maelezo yaliyopo kwenye mfumo wa jimbo.</a></p><br/>" +
                     $"<p>Unaweza kuwasilisha ombi lingine katika mfumo wa <a href='{webUrl}'>Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19</a> kwa nambari tofauti ya simu ya mkononi au barua pepe, unaweza <a href='{contactUsUrl}'>kuwasiliana nasi</a> ili kupata usaidizi katika kulinganisha rekodi yako na maelezo yako ya mawasiliano, au unaweza kuwasiliana na mtoaji wako ili kuhakikisha maelezo yako yamewasilishwa kwa mfumo wa jimbo.</a></a></p>" +
                     $"<p><b>Una maswali?</b></p>" +
-                    $"<p>Tembelea ukurasa wa Maswali yetu Yanayoulizwa Mara kwa Mara (<a href='{vaccineFAQUrl}'>FAQ</a>)  ili kujifunza zaidi kuhusu Rekodi yako ya Kidijitali ya Chanjo ya COVID-19.</p>" +
+                    $"<p>Tembelea ukurasa wa Maswali yetu Yanayoulizwa Mara kwa Mara (<a href='{vaccineFAQUrl}'>FAQ</a>) ili kujifunza zaidi kuhusu Rekodi yako ya Kidijitali ya Uthibitishaji wa COVID-19.</p>" +
                     $"<p><b>Endelea Kupata Habari.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Tazama maelezo ya hivi karibuni</a> kuhusu COVID-19.</p><br/>" +
                     $"<hr>" +
