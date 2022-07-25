@@ -735,12 +735,12 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>आधिकारिक Washington State Department of Health (वासिङ्गटन राज्य स्वास्थ्य विभाग) को इमेल</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "mxb" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</h3>" +
-                    $"<p>Kuta’avi sa ja ni nde’e ní Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19. Enlace tágua nani’in ní tutu vacuna COVID-19 ní tiñu ji nuu {linkExpireHours} hora. Tú ja ni kivi ní de ni tava’a ní nuu kaa ndichí ní, código QR ma koo tiñu ji.</p>" +
+                    $"<h3 style='color: #f06724'>Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19</h3>" +
+                    $"<p>Kuta’avi sa ja ni nde’e ní Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19. Enlace tágua nani’in ní tutu vacuna COVID-19 ní tiñu ji nuu 24 {linkExpireHours} hora. Tú ja ni kivi ní de ni tava’a ní nuu kaa ndichí ní, código QR ma koo tiñu ji.</p>" +
                     $"<p><a href='{url}'>Kunde’e nasa iyo nda vacuna</a></p>" +
                     $"<p>Ni’in ka ní tu’un siki nasa <a href='{cdcUrl}'>koto yo maa yo ji sava ka ñayiví</a> nuu Centers for Disease Control and Prevention (CDC, Ve’e nuu jito ji jekani nda kue’e).</p>" +
                     $"<p><b>A iyo tu’un jikatu’un ní</b></p>" +
-                    $"<p>Kunde’e ní nuu página nda tu’un jikatu’un ka (<a href='{vaccineFAQUrl}'>FAQ</a>) tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19.</p>" +
+                    $"<p>Kunde’e ní nuu página nda tu’un jikatu’un ka (<a href='{vaccineFAQUrl}'>FAQ</a>) tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu Tarjeta Vacuna COVID-19 ja iyo nuu Kaa ndichí.</p>" +
                     $"<p><b>Ndukú ni tu’un.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Kunde’e ní tu’un jáá ka</a> siki COVID-19.</p><br/>" +
                     $"<hr>" +
