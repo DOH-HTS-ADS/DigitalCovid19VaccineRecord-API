@@ -724,15 +724,15 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ne" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड</h3>" +
-                    $"<p>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड प्रणाली हेर्नुभएको धन्यवाद। तपाईंको कोभिड-19 खोप रेकर्ड कोड पुनः प्राप्ति गर्ने लिङ्क {linkExpireHours} घण्टाको लागि मान्य छ। पहुँच गरेर तपाईंको यन्त्रमा बचत भइसकेपछि, QR कोडको म्याद समाप्त हुने छैन।</p>" +
+                    $"<p>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड प्रणाली हेर्नुभएको धन्यवाद। तपाईंको कोभिड-19 खोप रेकर्ड कोड पुनः प्राप्ति गर्ने लिङ्क {linkExpireHours} घण्टाकोसम्म मान्य हुन्छ। पहुँच गरेर तपाईंको यन्त्रमा बचत भइसकेपछि, QR कोडको म्याद समाप्त हुने छैन।</p>" +
                     $"<p><a href='{url}'>खोपसम्बन्धी रेकर्ड हेर्नुहोस्</a></p>" +
-                    $"<p>Centers for Disease Control and Prevention (रोग नियन्त्रण तथा रोकथाम केन्द्रहरू (बाट <a href='{cdcUrl}'>आफ्नो र अन्य मानिसहरूको सुरक्षा कसरी गर्ने</a> भन्ने बारेमा थप कुराहरू जान्नुहोस्।</p>" +
+                    $"<p>Centers for Disease Control and Prevention (रोग नियन्त्रण तथा रोकथाम केन्द्रहरू) बाट <a href='{cdcUrl}'>आफ्नो र अन्य मानिसहरूको सुरक्षा गर्ने</a> तरिकाको बारेमा थप जान्नुहोस्।</p>" +
                     $"<p><b>प्रश्नहरू छन्?</b></p>" +
-                    $"<p>आफ्नो डिजिटल कोभिड-19 खोप रेकर्डका बारेमा थप जान्नका लागि हाम्रा प्राय: सोधिने प्रश्नहरू (<a href='{vaccineFAQUrl}'>FAQ</a>) हेर्नुहोस्।</p>" +
+                    $"<p>आफ्नो डिजिटल कोभिड-19 खोप रेकर्डका बारेमा थप जान्नका लागि हाम्रो बारम्बार सोधिने प्रश्नहरू (<a href='{vaccineFAQUrl}'>FAQ</a>) को पृष्ठ हेर्नुहोस्।</p>" +
                     $"<p><b>सूचित रहनुहोस्।</b></p>" +
                     $"<p>कोभिड-19 बारे <a href='{covidWebUrl}'>नवीनतम जानकारी हेर्नुहोस्</a> ।</p><br/>" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>आधिकारिक Washington State Department of Health) वासिङ्गटन राज्यको स्वास्थ्य विभाग( को इमेल</p>" +
+                    $"<footer><p style='text-align:center'>आधिकारिक Washington State Department of Health (वासिङ्गटन राज्य स्वास्थ्य विभाग) को इमेल</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "mxb" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</h3>" +
