@@ -791,7 +791,7 @@ namespace Application.Common
                     $"<p><b>ຕິດຕາມຂ່າວສານ.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>ເບິ່ງຂໍ້ມູນຫຼ້າສຸດ</a> ກ່ຽວກັບ ພະຍາດ ໂຄວິດ-19.</p><br/>" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>ອີເມວທາງການຂອງ Washington State Department of Health (ພະແນກ ສຸຂະພາບ)</p>" +
+                    $"<footer><p style='text-align:center'>ອີເມວທາງການຂອງ Washington State Department of Health (ພະແນກ ສຸຂະພາບ ລັດວໍຊິງຕັນ)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "km" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>កំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឹ​ COVID-19 ជាទម្រង់​ឌីជីថល​</h3>" +
