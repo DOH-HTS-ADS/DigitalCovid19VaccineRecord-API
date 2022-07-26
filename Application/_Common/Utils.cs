@@ -351,8 +351,8 @@ namespace Application.Common
                 "ur" => $"ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کا سسٹم ملاحظہ کرنے کا شکریہ۔ کووڈ-19 کی تصدیق وصول کرنے کا لنک {linkExpireHours} گھنٹے تک قابل استعمال ہو گا۔ رسائی لے کر ڈیوائس میں محفوظ کرنے کے بعد کیو آر کوڈ کی میعاد ختم نہیں ہو گی۔",
                 "ne" => $"डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड प्रणाली हेर्नुभएको धन्यवाद। तपाईंको कोभिड-19 प्रमाणीकरण पुनः प्राप्ति गर्ने लिङ्क {linkExpireHours} घण्टाकोसम्म मान्य हुन्छ। पहुँच गरेर तपाईंको यन्त्रमा बचत भइसकेपछि, QR कोडको म्याद समाप्त हुने छैन।",
                 "mxb" => $"Kuta’avi sa ja ni nde’e ní Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19. Enlace tágua nani’in ní tu’un siki nasa iyo ni nuu kue’e COVID-19 tiñu ji nuu {linkExpireHours} hora. Tú ja ni kivi ní de ni tava’a ní nuu kaa ndichí ní, código QR ma koo tiñu ji. ",
-                "mh" => $"Koṃṃool erk bwe ilomej ko laam jarom COVID-19 jaak jeje kkar. Ko kkejel nan bok ami COVID-19 jaak ane ṃṃan bwe {linkExpireHours} awa. Juon iien ak kab lọmọọr nan ami tuuḷbọọk, ko QR kabro naaj jab ḷot.",
-                "mam" => $"Chjontay ma tz’oktz tq’olb’e’na jqeya qkloj te Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj jxk’utz’ib’. Ja enlace te tu’ ttiq’ay jte cheylakxta tej tx’u’j yab’ilo te COVID-19 b’a’x teja toj jun q’ij b’ix jun qoniya mo toj {linkExpireHours} amb’il. Juxmaj uj ot tz’okxay ex ot ku’x tk’u’na toj jtey txk’utz’ib’, j-código QR ya mi kub’ najt.",
+                "mh" => $"Kommol n̄an am itok n̄an system in Rekoot in Kein Kamool COVID-19 eo am ilo online. Link eo kwar bōke n̄an kein kamool COVID-19 eo am ej jerbal n̄an {linkExpireHours} awa. QR code eo eban jemlọk n̄e kwar bōke im kakwone ilo telebon eo am.",
+                "mam" => $"Chjontay ma tz’oktz tq’olb’e’na jqeya qkloj Tqanil toj Yolb’il tun Tjyet COVID-19toj jxk’utz’ib’. Ja enlace te tu’ ttiq’ay jte cheylakxta tej tx’u’j yab’ilo te COVID-19 b’a’x teja toj jun q’ij b’ix jun qoniya mo toj {linkExpireHours} amb’il. Juxmaj uj ot tz’okxay ex ot ku’x tk’u’na toj jtey txk’utz’ib’, j-código QR ya mi kub’ najt.",
                 "lo" => $"ຂອບໃຈທີ່ເຂົ້າເບິ່ງລະບົບບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນ. ລິ້ງເພື່ອຮຽກຄົ້ນຂໍ້ມູນການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ຂອງທ່ານແມ່ນໃຊ້ໄດ້ ພາຍໃນເວລາ {linkExpireHours} ຊົ່ວໂມງ. ເມື່ອເຂົ້າເຖິງ ແລະ ບັນທຶກໄວ້ໃນອຸປະກອນຂອງທ່ານແລ້ວ, ລະຫັດ QR ຈະບໍ່ໝົດອາຍຸ.",
                 "km" => $"អរគុណ​សម្រាប់​ការ​ចូល​​មកកាន់​ប្រព័ន្ធ​កំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឹ​ COVID-19 ជាទម្រង់​ឌីជីថល។​ តំណភ្ជាប់ដើម្បី​ទទួលបាន​មកវិញ​នូវ​ការផ្ទៀងផ្ទាត់​ជំងឺ​ COVID-19 របស់អ្នក​ គឺ​មានសុពលភាព​រយៈពេល​ {linkExpireHours}ម៉ោង​។ កូដ QR នឹង​មិនផុត​សុពលភាព​ទេ​ នៅពេលបានចូលប្រើប្រាស់​និង​រក្សាទុក​ក្នុង​ឧបករណ៍​របស់អ្នក​។",
                 "kar" => $"တၢ်ဘျုးလၢနကွၢ် ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါ တၢ်မၤ  အကျဲသနူ. ပှာ်ဘျးစဲလၢနကဃုမၤန့ၢ်က့ၤန COVID-19 တၢ်အုၣ်သးအံၤဖိးသဲစးလၢ {linkExpireHours} အဂီၢ်လီၤ. ဖဲနနုာ်လီၤမၤန့ၢ်ဒီးပာ်ကီၤဃာ်တၢ်လၢနပီးလီပူၤတစုန့ၣ်, QR နီၣ်ဂံၢ်အဆၢကတီၢ် တလၢာ်ကွံာ်ဘၣ်. ",
@@ -758,20 +758,20 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Correo Washington State Department of Health (DOH, Ve’e nuu jito ja Sa’a tátan ñuu Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "mh" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Iaaṃ Jarom COVID-19 Jaak Jeje</h3>" +
-                    $"<p>Koṃṃool erk bwe ilomej ko laam jarom COVID-19 jaak jeje kkar. Ko kkejel nan bok ami COVID-19 wa jeje ane ṃṃan bwe {linkExpireHours} awa. Juon iien ak kab lọmọọr nan ami tuuḷbọọk, ko QR kabro naaj jab ḷot.</p>" +
-                    $"<p><a href='{url}'> Mmat Wa Jeje </a></p>" +
-                    $"<p>Katak bar tarrin wāwee nan <a href='{cdcUrl}'>tokwanwa amimaanpa kab bar jet</a>  jan ko Centers for Disease Control and Prevention (Buḷōn bwe Nañinmej Kabwijer kab Deṃak).</p>" +
-                    $"<p><b>Jeban kajjitōk?</b></p>" +
-                    $"<p>Ilomei arro Jọkkutkut Kajjitōk Nawāwee(<a href='{vaccineFAQUrl}'>FAQ</a>)  ālāl nan katak bar jidik tarrin aim Iaam jarom COVID-19 Wa Jeje.</p>" +
-                    $"<p><b> Pād melele</b></p>" +
-                    $"<p> <a href='{covidWebUrl}'>Mmat ko rimwik kojjela</a>  ioo COVID-19.</p><br/>" +
+                    $"<h3 style='color: #f06724'>Rekoot in Kein Kamool COVID-19 eo am ilo online</h3>" +
+                    $"<p>Kommol n̄an am itok n̄an system in Rekoot in Kein Kamool COVID-19 eo am ilo online. Link eo kwar bōke n̄an am kapellọk rekoot in wā ko an COVID-19 ej jerbal n̄an {linkExpireHours} awa. QR code eo eban jemlọk n̄e kwar bōke im kakwone ilo telebon eo am.</p>" +
+                    $"<p><a href='{url}'>Lale Rekoot in Wā eo</a></p>" +
+                    $"<p>Bōk katak ko relaplak ilo wāwein <a href='{cdcUrl}'>kejbarok eok māke im ro jet</a>  jen Centers for Disease Control and Prevention (Opiij in Lale im Bōbrae Nan̄inmej).</p>" +
+                    $"<p><b>Ewōr ke am kajitōk?</b></p>" +
+                    $"<p>Etal n̄an peij eo an Kajitōk ko Ekutkut Kajitōk (<a href='{vaccineFAQUrl}'>FAQ</a>) im bōk katak ko relaplak kōn Rekoot in Kein Kamool COVID-19 eo am ilo online.</p>" +
+                    $"<p><b>Bōk melele ko.</b></p>" +
+                    $"<p> <a href='{covidWebUrl}'>Lale melele ko rekāāl</a>  ikijen COVID-19</p><br/>" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>Wōpij Washington State Department of Health (Kutkutton konnaan jikuul in keenki) lota</p>" +
+                    $"<footer><p style='text-align:center'>Email eo an Rā eo an Ejmour ilo Washington State</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "mam" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’</h3>" +
-                    $"<p>Chjontay ma tz’oktz tq’olb’e’na jqeya qkloj te Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj jxk’utz’ib’. a enlace te tu’ ttiq’ay jte cheylakxta tej tx’u’j yab’ilo te COVID - 19 b’a’x teja toj jun q’ij b’ix jun qoniya mo toj { linkExpireHours} amb’il. Juxmaj uj ot tz’okxay ex ot ku’x tk’u’na toj jtey txk’utz’ib’, j - código QR ya mi kub’ najt.</p>" +
+                    $"<h3 style='color: #f06724'>Tqanil toj Yolb’il tun Tjyet COVID-19</h3>" +
+                    $"<p>Chjontay ma tz’oktz tq’olb’e’na jqeya qkloj Tqanil toj Yolb’il tun Tjyet COVID-19. a enlace te tu’ ttiq’ay jte cheylakxta tej tx’u’j yab’ilo te COVID-19 b’a’x teja toj jun q’ij b’ix jun qoniya mo toj { linkExpireHours} amb’il. Juxmaj uj ot tz’okxay ex ot ku’x tk’u’na toj jtey txk’utz’ib’, j-código QR ya mi kub’ najt.</p>" +
                     $"<p><a href='{url}'>Cheylakxta tej tz’ib’b’al tej tey tb’aq </a></p>" +
                     $"<p>Q’imatz kab’t q’umb’aj tumal tib’aj tzuj ti tten tu’ <a href='{cdcUrl}'>tok tklom tib’ay ex tu’ tok tklo’na qaj kab’t</a>  chu’ tzun qaj Ja’ te tej Meyolakta ex jtu’ Tajtz chi’j qaj Yab’il [Centers for Disease Control and Prevention, toy tyol me’x xjal].</p>" +
                     $"<p><b>¿At qaj tajay tzaj tqanay?</b></p>" +
@@ -791,7 +791,7 @@ namespace Application.Common
                     $"<p><b>ຕິດຕາມຂ່າວສານ.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>ເບິ່ງຂໍ້ມູນຫຼ້າສຸດ</a> ກ່ຽວກັບ ພະຍາດ ໂຄວິດ-19.</p><br/>" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>ອີເມວທາງການຂອງ Washington State Department of Health (ພະແນກ ສຸຂະພາບ)</p>" +
+                    $"<footer><p style='text-align:center'>ອີເມວທາງການຂອງ Washington State Department of Health (ພະແນກ ສຸຂະພາບ ລັດວໍຊິງຕັນ)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "km" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>កំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឹ​ COVID-19 ជាទម្រង់​ឌីជីថល​</h3>" +
@@ -807,11 +807,11 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "kar" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်ဆဲးကသံၣ်ဒီသဒၢတၢ်မၤနီၣ်မၤဃါ</h3>" +
-                    $"<p>တၢ်ဘျုးလၢနလဲၤကွၢ် ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါ တၢ်မၤအ ကျဲသနူအဃိလီၤ. ပှာ်ဘျးစဲလၢနကဃုမၤန့ၢ်က့ၤန COVID-19 ကသံၣ်ဒီသဒၢတၢ်မၤနီၣ်မၤဃါ နီၣ်ဂံၢ် အံၤဖိးသဲစးလၢ {linkExpireHours} အဂီၢ်လီၤ. ဖဲနနုာ်လီၤမၤန့ၢ်ဒီးပာ်ကီၤဃာ်တၢ်လၢနပီးလီပူၤတစုန့ၣ်, QR နီၣ်ဂံၢ်န့ၣ်အဆၢကတီၢ် တလၢာ်ကွံာ်ဘၣ်.</p>" +
+                    $"<p>တၢ်ဘျုးလၢနလဲၤကွၢ် ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါ တၢ်မၤအကျဲသနူအဃိလီၤ. ပှာ်ဘျးစဲလၢနကဃုမၤန့ၢ်က့ၤန COVID-19 ကသံၣ်ဒီသဒၢ တၢ်မၤနီၣ်မၤဃါ နီၣ်ဂံၢ် အံၤဖိးသဲစးလၢ {linkExpireHours} အဂီၢ်လီၤ. ဖဲနနုာ်လီၤမၤန့ၢ်ဒီးပာ်ကီၤဃာ် တၢ်လၢနပီးလီပူၤတစုန့ၣ်, QR နီၣ်ဂံၢ်န့ၣ်အဆၢကတီၢ် တလၢာ်ကွံာ်ဘၣ်.</p>" +
                     $"<p><a href='{url}'>ကွၢ်ကသံၣ်ဒီသဒၢတၢ်မၤနီၣ်မၤဃါ</a></p>" +
                     $"<p>မၤလိအါထီၣ်ဘၣ်ဃးဒီး နကဘၣ် <a href='{cdcUrl}'>ဒီသဒၢလီၤနနီၢ်ကစၢ်အသးဒီးပှၤအဂၤ</a> လၢ Centers for Disease Control and Prevention (တၢ်ဖီၣ်ဂၢၢ်ပၢဆှၢတၢ်ဆူးတၢ်ဆါဒီးတၢ်ဟ့ၣ်တၢ်ဒီသဒၢစဲထၢၣ်) ဒ်လဲၣ်န့ၣ်တက့ၢ်.</p>" +
                     $"<p><b>တၢ်သံကွၢ်အိၣ်ဧါ.</b></p>" +
-                    $"<p>လဲၤကွၢ်ဖဲ တၢ်သံကွၢ်လၢတၢ်သံကွၢ်အီၤခဲအံၤခဲအံၤ (<a href='{vaccineFAQUrl}'>FAQ</a>) (ထဲအဲကလံးကျိ) ကဘျံးပၤလၢ ကမၤလိအါထီၣ် ဘၣ်ဃးဒီး နဒံးကၠံၣ်တၢၣ်(လ) COVID-19 ကသံၣ်ဒီသဒၢတၢ်မၤနီၣ် မၤဃါန့ၣ်တက့ၢ်.</p>" +
+                    $"<p>လဲၤကွၢ်ဖဲ တၢ်သံကွၢ်လၢတၢ်သံကွၢ်အီၤခဲအံၤခဲအံၤ (<a href='{vaccineFAQUrl}'>FAQ (တၢ်သံကွၢ်လၢတၢ်သံကွၢ်အီၤခဲအံၤခဲအံၤ)</a>) ကဘျံးပၤလၢ ကမၤလိအါထီၣ် ဘၣ်ဃးဒီးန ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 ကသံၣ်ဒီသဒၢတၢ်မၤနီၣ်မၤဃါ န့ၣ်တက့ၢ်.</p>" +
                     $"<p><b>သ့ၣ်ညါတၢ်ဘိးဘၣ်သ့ၣ်ညါထီဘိ</b></p>" +
                     $"<p><a href='{covidWebUrl}'>ကွၢ်တၢ်ဂ့ၢ်တၢ်ကျိၤလၢခံကတၢၢ်</a> ဖဲ COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -995,8 +995,8 @@ namespace Application.Common
                 "ur" => $"آپ نے حال ہی میں ریاست سے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کی درخواست کی ہے۔ بدقسمتی سے آپ کی فراہم کردہ معلومات ہمارے سسٹم میں موجود معلومات سے مماثلت نہیں رکھتیں۔ اپنے ریکارڈ کو رابطے کی معلومات سے ملانے کے لئے ہم سے {phoneNumber} پر رابطہ کریں اور # دبائیں۔",
                 "ne" => $"तपाईंले हालै राज्यबाट डिजिटल कोभिड-19 प्रमाणीकरण रेकर्डको लागि अनुरोध गर्नुभयो। दुर्भाग्यवश, तपाईंले उपलब्ध गराउनुभएको जानकारी हाम्रो प्रणालीमा भएको जानकारीसँग मेल खाँदैन। तपाईंको रेकर्डलाई तपाईंको सम्पर्क जानकारीसँग मिलने बनाउनमा मद्दतका लागि {phoneNumber} मा हामीलाई सम्पर्क गर्नहोस्, # थिच्नुहोस्।",
                 "mxb" => $"Iyo jaku kivi ja ni jikan ní in tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19 ja iyo nuu ñuu. Kueka kuu ja, tu’un ja ni taji ní nduu kitan ji tu’un ja neva’a sa. Ka’an ní jín nda sa nuu yokaa nuu {phoneNumber}, ñukua de kuaxin ní # tágua kuu sa’a yo ja kita’an tu’un ja taji ní ji ja neva’a sa.",
-                "mh" => $"Eok kiin jeṃaanḷọk ṇawāwee a laam jarom COVID-19 jaak jeje jan ko konnaan. Jerata, ko melele eok naloma does jab match melele for arro kkar. Kokkeitaak ko ilo {phoneNumber}, kkeeṇ # bwe rejetak for mājet ami jeje nan ami kokkeitaak melele.",
-                "mam" => $"Ma’nxax nokx tqanay jun Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’ tej tnom. Aj nojsamay, jq’umb’aj tumal xi q’o’ mi nel joniy tuya jq’umb’aj tumal toj jqeya qkloj te xk’utz’ib’. Ttzaj q’ajt qeya qe toj tajlal lu {phoneNumber}, peq’ak’ax jlu # te tu’ ttiq’ay onb’al te tu’ntza tel joniy jtey ttz’ib’b’al tuya jtey tq’umb’aj tumal te tyolb’alay.",
+                "mh" => $"Kwar kajitōke Rekoot in Kein Kamool COVID-19 eo am ilo online jen kien. Būromōj, melele ko kwar likit ejjab juon wōt ibben melele ko ilo system in ad. Kūrtok kōj ilo {phoneNumber}, jiped # n̄an am bōk jibān̄ ko n̄an am bukōt rekoot eo am.",
+                "mam" => $"Ma’nxax nokx tqanay jun Tqanil toj Yolb’il tun Tjyet COVID-19. Aj nojsamay, jq’umb’aj tumal xi q’o’ mi nel joniy tuya jq’umb’aj tumal toj jqeya qkloj te xk’utz’ib’. Ttzaj q’ajt qeya qe toj tajlal lu {phoneNumber}, peq’ak’ax jlu # te tu’ ttiq’ay onb’al te tu’ntza tel joniy jtey ttz’ib’b’al tuya jtey tq’umb’aj tumal te tyolb’alay.",
                 "lo" => $"ເມື່ອບໍ່ດົນມານີ້ທ່ານໄດ້ຮ້ອງຂໍ ບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນຈາກລັດ. ໂຊກບໍ່ດີ, ຂໍ້ມູນທີ່ທ່ານສະໜອງໃຫ້ບໍ່ກົງກັບຂໍ້ມູນຢູ່ໃນລະບົບຂອງພວກເຮົາ. ຕິດຕໍ່ຫາພວກເຮົາທີ່ {phoneNumber}, ກົດ # ເພື່ອຂໍຄວາມຊ່ວຍເຫຼືອໃນການເຮັດໃຫ້ ບັນທຶກຂອງທ່ານກັບຂໍ້ມູນຕິດຕໍ່ຂອງທ່ານຊອດຊ່ອງກັນ.",
                 "km" => $"ថ្មីៗនេះ​ អ្នក​បានស្នើសុំកំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឹ​ COVID-19 ជាទម្រង់​​ឌីជីថលពីរដ្ឋ​។​ គួរឲ្យសោកស្តាយ ព័ត៌មានដែលអ្នក​បានផ្តល់ជូននោះ​ មិនត្រូវគ្នា​ជាមួយ​​នឹង​ព័ត៌មានក្នុង​ប្រព័ន្ធ​យើង​ទេ​។ ទាក់ទង​មក​​យើង​តាមរយៈលេខ​ {phoneNumber} ចុចញ្ញា​ # សម្រាប់ជំនួយក្នុងការ​ផ្ទៀងផ្ទាត់​កំណត់ត្រារបស់អ្នក​ជាមួយនឹង​ព័ត៌មានទំនាក់ទំនង​របស់អ្នក​។",
                 "kar" => $"ဖဲတယံာ်ဘၣ်နဃ့ထီၣ် ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါ လၢကီၢ်စဲၣ်န့ၣ်လီၤ. လၢတၢ်တဘူၣ်ဂ့ၤတီၢ်ဘၣ်အပူၤ, တၢ်ဂ့ၢ်တၢ်ကျိၤလၢနဟ့ၣ်လီၤန့ၣ် တဘၣ်လိာ်ဒီး တၢ်ဂ့ၢ်တၢ်ကျိၤလၢပတၢ်မၤအကျဲသနူအပူၤဘၣ်. ဆဲးကျၢပှၤဖဲ {phoneNumber}, စံၢ်လီၤ # လၢတၢ်မၤစၢၤအဂီၢ် လၢကဘၣ်လိာ်ဒီးနတၢ် မၤနီၣ်မၤဃါဒီးနတၢ်ဆဲးကျၢတၢ်ဂ့ၢ်တၢ်ကျိၤတက့ၢ်.",
@@ -1320,7 +1320,7 @@ namespace Application.Common
                     $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19</h3>" +
                     $"<p>Iyo jaku kivi ja ni jikan ní in Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19 ja iyo nuu. <a href='{webUrl}'>Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19</a>. Kueka kuu ja, tu’un ja ni taji ní nduu kitan ji tu’un ja neva’a sa nuu nda tu’un ja iyo nuu ñuu.</p><br/>" +
-                    $"<p>Kuu tetiñu ní tuku ní inka tutu nuu [a][/a]  [a][/a]  <a href='{webUrl}'>Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19</a> jín in número yokaa axi correo electrónico ja síin kaa, kuu <a href='{contactUsUrl}'>ka’an ní jín nda sa</a> tágua kuu sa’a yo ja kita’an tu’un ja taji ní ji ja neva’a sa, axi in ñayiví satatan tágua kuni ní tú ni tetiñu va’a tu’un siki ní nuu ñuu.</p>" +
+                    $"<p>Kuu tetiñu ní tuku ní inka tutu nuu <a href='{webUrl}'>Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19</a> jín in número yokaa axi correo electrónico ja síin kaa, kuu <a href='{contactUsUrl}'>ka’an ní jín nda sa</a> tágua kuu sa’a yo ja kita’an tu’un ja taji ní ji ja neva’a sa, axi in ñayiví satatan tágua kuni ní tú ni tetiñu va’a tu’un siki ní nuu ñuu.</p>" +
                     $"<p><b>A iyo tu’un jikatu’un ní</b></p>" +
                     $"<p>Kunde’e ní nuu página nda tu’un jikatu’un ka (<a href='{vaccineFAQUrl}'>FAQ</a>) tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19.</p>" +
                     $"<p><b>Ndukú ni tu’un.</b></p>" +
@@ -1329,22 +1329,22 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Correo Washington State Department of Health (DOH, Ve’e nuu jito ja Sa’a tátan ñuu Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "mh" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Iaam jarom COVID-19 Jaak Jeje</h3>" +
-                    $"<p>Eok kiin jeṃaanḷọk kajjitōk a laam jarom COVID-19 jaak jeje jan <a href='{webUrl}'>ko Kaajai COVID-19 Wotom Jeje kkar</a>. jerata, ko melele eok naloma jerbal jab mājet melele for ko konnaan kkar. </p><br/>" +
-                    $"<p>Eok kuwat lota bar juon kajjitōk for ko <a href='{webUrl}'>Kaajai COVID-19 Wotom Jeje</a>  kkar ippa a different joorkatkat teinwa nomba ak lota jipij, eok kuwat </a>kōkkeitaak koj</a>  bwe rejetak for jekkar ami jeje nana ami kokkeitaak melele, ak eok kuwat kokkeitaak ami naloma nan eok ami melele mmo kwo jjilōk nan ko konnaan kkar.</p>" +
-                    $"<p><b>Jeben kajjitōk?</b></p>" +
-                    $"<p>Ilomej arro Jokkutkut Kajjitok Nawawee (<a href='{vaccineFAQUrl}'>FAQ</a>)  alal nan katak bar jidik ami laam jarom COVID-19 jaak jeje.</p>" +
-                    $"<p><b>Pad melele.</b></p>" +
-                    $"<p><a href='{covidWebUrl}'>Mmat ko rimwik kojjela</a> on COVID-19.</p><br/>" +
+                    $"<h3 style='color: #f06724'>Rekoot in Kein Kamool COVID-19 eo am ilo online</h3>" +
+                    $"<p>Kwar kajitōk Rekoot in Kein Kamool COVID-19 eo am ilo online jen. <a href='{webUrl}'>system eo n̄an Rekoot in Kein Kamool COVID-19 eo am ilo online</a>. Būromōj, melele ko kwar likit ejjab juon wōt ibben melele ko ilo system eo an kien.</p><br/>" +
+                    $"<p>Kwōmāron̄ jakelọk bar juon kajitōk ilo system eo n̄an <a href='{webUrl}'>Rekoot in Kein Kamool COVID-19 eo am ilo online</a> kōn juon telebon nōmba eo oktak ak email address, kwōmāron̄ <a href='{contactUsUrl}'>kūrtok kōj</a> n̄an am bōk jibān̄ ilo am bukōt rekoot eo am, ak kwōmāron̄ kūrlọk taktō eo am im kajimwe melele ko kwar likit ilo system eo an kien.</p>" +
+                    $"<p><b>Ewōr ke am kajitōk?</b></p>" +
+                    $"<p>Lale peij eo an Kajitōk ko Ekutkut Kajitōk (<a href='{vaccineFAQUrl}'>FAQ</a>) n̄an am bōk katak ko relaplak kōn Rekoot in Kein Kamool COVID-19 eo am ilo online.</p>" +
+                    $"<p><b>Bōk melele ko.</b></p>" +
+                    $"<p><a href='{covidWebUrl}'>Lale melele rekāāl</a> ikijen COVID-19.</p><br/>" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>Wōpij Washington State Department of Health (Kutkutton konnaan jikuul in keenki) lota</p>" +
+                    $"<footer><p style='text-align:center'>Email eo an Rā eo an Ejmour ilo Washington State</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "mam" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’</h3>" +
-                    $"<p>Ma’nxax nokx tqanay jun Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’ tej <a href='{webUrl}'>kloj te Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib' </a>. Aj nojsamay, jq’umb’aj tumal xi q’o’ mi nel joniy tuya jq’umb’aj tumal toj jqeya qkloj te xk’utz’ib’. </ p >< br /> " +
-                    $"<p>B’a’ ttzaj tsma’na junt qanb’al toj jkloj tej <a href='{webUrl}'>Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’</a>  tuya jun tajlal yolb’il niy eqat mo tb’i tb’e jun correo electrónico junxat, b’a’ <a href='{contactUsUrl}'>ttzaj q’ajtay q’i’ja</a>  te tu’ ttiq’ay onb’al te tu’ tel yoniy jtey ttz’ib’b’al tuya jtey tq’umb’aj tumal te tyolb’alay, mo b’a’ tyolana tuya jtey q’oltzta t-onb’al te tu’ntza tab’ij te qa tej tey tq’umb’aj tumal ot tz’ex sma’ toj kloj te kojb’il.</p>" +
+                    $"<h3 style='color: #f06724'>Tqanil toj Yolb’il tun Tjyet COVID-19</h3>" +
+                    $"<p>Ma’nxax nokx tqanay Tqanil toj Yolb’il tun Tjyet COVID-19 tej <a href='{webUrl}'>kloj te Tqanil toj Yolb’il tun Tjyet COVID-19</a>. Aj nojsamay, jq’umb’aj tumal xi q’o’ mi nel joniy tuya jq’umb’aj tumal toj jqeya qkloj te xk’utz’ib’.</p>< br /> " +
+                    $"<p>B’a’ ttzaj tsma’na junt qanb’al toj jkloj tej <a href='{webUrl}'>Tqanil toj Yolb’il tun Tjyet COVID-19</a> tuya jun tajlal yolb’il niy eqat mo tb’i tb’e jun correo electrónico junxat, b’a’ <a href='{contactUsUrl}'>ttzaj q’ajtay q’i’ja</a> te tu’ ttiq’ay onb’al te tu’ tel yoniy jtey ttz’ib’b’al tuya jtey tq’umb’aj tumal te tyolb’alay, mo b’a’ tyolana tuya jtey q’oltzta t-onb’al te tu’ntza tab’ij te qa tej tey tq’umb’aj tumal ot tz’ex sma’ toj kloj te kojb’il.</p>" +
                     $"<p><b>¿At qaj tajay tzaj tqanay?</b></p>" +
-                    $"<p>Tokx toj jqeya qkloj che qaj Qanb’al jakax (<a href='{vaccineFAQUrl}'>FAQ</a>)  te tu’ ttiq’ay kab’t q’umb’aj tumal tib’aj jtey Ttz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’.</p>" +
+                    $"<p>Tokx toj jqeya qkloj che qaj Qanb’al jakax (<a href='{vaccineFAQUrl}'>FAQ Xjel Kukx in che tzaj Qanin</a>)  te tu’ ttiq’ay kab’t q’umb’aj tumal tib’aj jtey Tqanil toj Yolb’il tun Tjyet COVID-19.</p>" +
                     $"<p><b>Etkub’ tenay te ab’i’ chqil tumal tu’nay.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Ettiq’ay jq’umb’aj tumal ma’nxax nex q’umat</a>  tib’aj tx’u’j yab’il tej COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1359,7 +1359,7 @@ namespace Application.Common
                     $"<p><b>ຕິດຕາມຂ່າວສານ.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>ເບິ່ງຂໍ້ມູນຫຼ້າສຸດ</a> ກ່ຽວກັບ ພະຍາດ ໂຄວິດ-19.</p><br/>" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>ອີເມວທາງການຂອງ Washington State Department of Health (ພະແນກ ສຸຂະພາບ)</p>" +
+                    $"<footer><p style='text-align:center'>ອີເມວທາງການຂອງ Washington State Department of Health (ພະແນກ ສຸຂະພາບ ລັດວໍຊິງຕັນ)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "km" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>កំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឹ​ COVID-19 ជាទម្រង់​ឌីជីថល​</h3>" +
@@ -1377,7 +1377,7 @@ namespace Application.Common
                     $"<p>ဖဲတယံာ်ဒံးဘၣ်နဃ့ထီၣ် ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါ လၢ <a href='{webUrl}'>ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါတၢ်မၤအကျဲသနူ</a> လၢတၢ်တဘူၣ်ဂ့ၤတီၢ်ဘၣ်အပူၤ, တၢ်ဂ့ၢ်တၢ်ကျိၤလၢနဟ့ၣ်လီၤအံၤ တဘၣ်လိာ်ဒီးတၢ်ဂ့ၢ် တၢ်ကျိၤလၢကီၢ်စဲၣ်တၢ်မၤအကျဲသနူအပူၤဘၣ်. </p><br/>" +
                     $"<p>နဆှၢထီၣ်တၢ်ဃ့ထီၣ်အဂၤတခါလၢ <a href='{webUrl}'>ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သး တၢ်မၤနီၣ်မၤဃါ</a> တၢ်မၤအကျဲအပူၤဒီး လီတဲစိစိာ်စုနီၣ်ဂံၢ်လီၤဆီတဖျၢၣ် မ့တမ့ၢ် အံမ့(လ) န့ၣ်, န <a href='{contactUsUrl}'>ဆဲးကျၢပှၤလၢ</a> တၢ်မၤစၢၤအဂီၢ် လၢကဘၣ်လိာ်ဒီးနတၢ်မၤ နီၣ်မၤဃါ ဒီးနတၢ်ဆဲးကျၢတၢ်ဂ့ၢ်တၢ်ကျိၤ, မ့တမ့ၢ် နဆဲးကျၢနပှၤဟ့ၣ်တၢ်မၤစၢၤလၢက မၤလီၤတံၢ်နတၢ်ဂ့ၢ်တၢ်ကျိၤ လၢနဆှၢထီၣ်တ့ၢ်အီၤဆူကီၢ်စဲၣ်တၢ်မၤအကျဲသနူသ့န့ၣ်လီၤ.</p>" +
                     $"<p><b>တၢ်သံကွၢ်အိၣ်ဧါ.</b></p>" +
-                    $"<p>လဲၤကွၢ်ဖဲ တၢ်သံကွၢ်လၢတၢ်သံကွၢ်အီၤခဲအံၤခဲအံၤ (<a href='{vaccineFAQUrl}'>FAQ</a>) (ထဲအဲကလံးကျိ) ကဘျံးပၤလၢ ကမၤလိအါထီၣ်ဘၣ်ဃးဒီး နဒံးကၠံၣ်တၢၣ်(လ) COVID-19 ကသံၣ်ဒီသဒၢတၢ်မၤနီၣ် မၤဃါန့ၣ်တက့ၢ်.</p>" +
+                    $"<p>လဲၤကွၢ်ဖဲ တၢ်သံကွၢ်လၢတၢ်သံကွၢ်အီၤခဲအံၤခဲအံၤ (<a href='{vaccineFAQUrl}'>FAQ (တၢ်သံကွၢ်လၢတၢ်သံကွၢ်အီၤခဲအံၤခဲအံၤ)</a>) ကဘျံးပၤလၢ ကမၤလိအါထီၣ်ဘၣ်ဃးဒီး န ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါ န့ၣ်တက့ၢ်.</p>" +
                     $"<p><b>သ့ၣ်ညါတၢ်ဘိးဘၣ်သ့ၣ်ညါထီဘိ</b></p>" +
                     $"<p><a href='{covidWebUrl}'>ကွၢ်တၢ်ဂ့ၢ်တၢ်ကျိၤလၢခံကတၢၢ်</a> ဘၣ်ဃးဒီး COVID-19.</p><br/>" +
                     $"<hr>" +
