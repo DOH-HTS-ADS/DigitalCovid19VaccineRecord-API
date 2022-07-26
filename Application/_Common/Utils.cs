@@ -1320,7 +1320,7 @@ namespace Application.Common
                     $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19</h3>" +
                     $"<p>Iyo jaku kivi ja ni jikan ní in Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19 ja iyo nuu. <a href='{webUrl}'>Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19</a>. Kueka kuu ja, tu’un ja ni taji ní nduu kitan ji tu’un ja neva’a sa nuu nda tu’un ja iyo nuu ñuu.</p><br/>" +
-                    $"<p>Kuu tetiñu ní tuku ní inka tutu nuu [a][/a]  [a][/a]  <a href='{webUrl}'>Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19</a> jín in número yokaa axi correo electrónico ja síin kaa, kuu <a href='{contactUsUrl}'>ka’an ní jín nda sa</a> tágua kuu sa’a yo ja kita’an tu’un ja taji ní ji ja neva’a sa, axi in ñayiví satatan tágua kuni ní tú ni tetiñu va’a tu’un siki ní nuu ñuu.</p>" +
+                    $"<p>Kuu tetiñu ní tuku ní inka tutu nuu <a href='{webUrl}'>Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19</a> jín in número yokaa axi correo electrónico ja síin kaa, kuu <a href='{contactUsUrl}'>ka’an ní jín nda sa</a> tágua kuu sa’a yo ja kita’an tu’un ja taji ní ji ja neva’a sa, axi in ñayiví satatan tágua kuni ní tú ni tetiñu va’a tu’un siki ní nuu ñuu.</p>" +
                     $"<p><b>A iyo tu’un jikatu’un ní</b></p>" +
                     $"<p>Kunde’e ní nuu página nda tu’un jikatu’un ka (<a href='{vaccineFAQUrl}'>FAQ</a>) tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19.</p>" +
                     $"<p><b>Ndukú ni tu’un.</b></p>" +
@@ -1329,15 +1329,15 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Correo Washington State Department of Health (DOH, Ve’e nuu jito ja Sa’a tátan ñuu Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "mh" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Iaam jarom COVID-19 Jaak Jeje</h3>" +
-                    $"<p>Eok kiin jeṃaanḷọk kajjitōk a laam jarom COVID-19 jaak jeje jan <a href='{webUrl}'>ko Kaajai COVID-19 Wotom Jeje kkar</a>. jerata, ko melele eok naloma jerbal jab mājet melele for ko konnaan kkar. </p><br/>" +
-                    $"<p>Eok kuwat lota bar juon kajjitōk for ko <a href='{webUrl}'>Kaajai COVID-19 Wotom Jeje</a>  kkar ippa a different joorkatkat teinwa nomba ak lota jipij, eok kuwat </a>kōkkeitaak koj</a>  bwe rejetak for jekkar ami jeje nana ami kokkeitaak melele, ak eok kuwat kokkeitaak ami naloma nan eok ami melele mmo kwo jjilōk nan ko konnaan kkar.</p>" +
-                    $"<p><b>Jeben kajjitōk?</b></p>" +
-                    $"<p>Ilomej arro Jokkutkut Kajjitok Nawawee (<a href='{vaccineFAQUrl}'>FAQ</a>)  alal nan katak bar jidik ami laam jarom COVID-19 jaak jeje.</p>" +
-                    $"<p><b>Pad melele.</b></p>" +
-                    $"<p><a href='{covidWebUrl}'>Mmat ko rimwik kojjela</a> on COVID-19.</p><br/>" +
+                    $"<h3 style='color: #f06724'>Rekoot in Kein Kamool COVID-19 eo am ilo online</h3>" +
+                    $"<p>Kwar kajitōk Rekoot in Kein Kamool COVID-19 eo am ilo online jen. <a href='{webUrl}'>system eo n̄an Rekoot in Kein Kamool COVID-19 eo am ilo online</a>. Būromōj, melele ko kwar likit ejjab juon wōt ibben melele ko ilo system eo an kien.</p><br/>" +
+                    $"<p>Kwōmāron̄ jakelọk bar juon kajitōk ilo system eo n̄an <a href='{webUrl}'>Rekoot in Kein Kamool COVID-19 eo am ilo online</a> kōn juon telebon nōmba eo oktak ak email address, kwōmāron̄ <a href='{contactUsUrl}'>kūrtok kōj</a> n̄an am bōk jibān̄ ilo am bukōt rekoot eo am, ak kwōmāron̄ kūrlọk taktō eo am im kajimwe melele ko kwar likit ilo system eo an kien.</p>" +
+                    $"<p><b>Ewōr ke am kajitōk?</b></p>" +
+                    $"<p>Lale peij eo an Kajitōk ko Ekutkut Kajitōk (<a href='{vaccineFAQUrl}'>FAQ</a>) n̄an am bōk katak ko relaplak kōn Rekoot in Kein Kamool COVID-19 eo am ilo online.</p>" +
+                    $"<p><b>Bōk melele ko.</b></p>" +
+                    $"<p><a href='{covidWebUrl}'>Lale melele rekāāl</a> ikijen COVID-19.</p><br/>" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>Wōpij Washington State Department of Health (Kutkutton konnaan jikuul in keenki) lota</p>" +
+                    $"<footer><p style='text-align:center'>Email eo an Rā eo an Ejmour ilo Washington State</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "mam" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’</h3>" +
