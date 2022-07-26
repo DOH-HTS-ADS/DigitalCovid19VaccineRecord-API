@@ -770,8 +770,8 @@ namespace Application.Common
                     $"<footer><p style='text-align:center'>Email eo an Rā eo an Ejmour ilo Washington State</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "mam" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’</h3>" +
-                    $"<p>Chjontay ma tz’oktz tq’olb’e’na jqeya qkloj te Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj jxk’utz’ib’. a enlace te tu’ ttiq’ay jte cheylakxta tej tx’u’j yab’ilo te COVID - 19 b’a’x teja toj jun q’ij b’ix jun qoniya mo toj { linkExpireHours} amb’il. Juxmaj uj ot tz’okxay ex ot ku’x tk’u’na toj jtey txk’utz’ib’, j - código QR ya mi kub’ najt.</p>" +
+                    $"<h3 style='color: #f06724'>Tqanil toj Yolb’il tun Tjyet COVID-19</h3>" +
+                    $"<p>Chjontay ma tz’oktz tq’olb’e’na jqeya qkloj Tqanil toj Yolb’il tun Tjyet COVID-19. a enlace te tu’ ttiq’ay jte cheylakxta tej tx’u’j yab’ilo te COVID-19 b’a’x teja toj jun q’ij b’ix jun qoniya mo toj { linkExpireHours} amb’il. Juxmaj uj ot tz’okxay ex ot ku’x tk’u’na toj jtey txk’utz’ib’, j-código QR ya mi kub’ najt.</p>" +
                     $"<p><a href='{url}'>Cheylakxta tej tz’ib’b’al tej tey tb’aq </a></p>" +
                     $"<p>Q’imatz kab’t q’umb’aj tumal tib’aj tzuj ti tten tu’ <a href='{cdcUrl}'>tok tklom tib’ay ex tu’ tok tklo’na qaj kab’t</a>  chu’ tzun qaj Ja’ te tej Meyolakta ex jtu’ Tajtz chi’j qaj Yab’il [Centers for Disease Control and Prevention, toy tyol me’x xjal].</p>" +
                     $"<p><b>¿At qaj tajay tzaj tqanay?</b></p>" +
