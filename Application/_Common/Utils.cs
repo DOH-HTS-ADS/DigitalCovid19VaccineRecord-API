@@ -348,9 +348,9 @@ namespace Application.Common
                 "sm" => $"Faafetai mo le asiasi mai i faamaumauga faamaonia o le KOVITI-19. O le fesootaiga e maua ai faamaumauga o le KOVITI-19 e {linkExpireHours} itula lona aoga. A maua uma faamatalaga, ia faamauina, lelei ma sefe i lau masini, o le QR code e mafai ona faaogaina e le toe muta.",
                 "pa" => $"ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਸਿਸਟਮ 'ਤੇ ਆਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਤੁਹਾਡੀ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਨੂੰ ਮੁੜ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਲਿੰਕ {linkExpireHours} ਘੰਟਿਆਂ ਲਈ ਵੈਧ ਹੈ। ਇੱਕ ਵਾਰ ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ ਐਕਸੈਸ ਕਰਨ ਅਤੇ ਸੁਰੱਖਿਅਤ ਹੋਣ ਤੋਂ ਬਾਅਦ, QR ਕੋਡ ਦੀ ਮਿਆਦ ਖ਼ਤਮ ਨਹੀਂ ਹੋਵੇਗੀ। ਵੈਕਸੀਨ ਰਿਕਾਰਡ ਵੇਖੋ ",
                 "ps" => $"د ډیجیټل COVID-19 تائید ثبت سیسټم لیدو لپاره ستاسو مننه. ستاسو د COVID-19 تائید ترلاسه کولو لینک د {linkExpireHours} ساعتونو لپاره اعتبار لري. یوځل چې ستاسو وسیلې ته لاسرسی ولري او خوندي شي، نو د QR کوډ به پای ته ونه رسیږي. ",
-                "ur" => $"کووڈ-19 تصدیقی ریکارڈ کا سسٹم ملاحظہ کرنے کا شکریہ۔ کووڈ-19 تصدیق وصول کرنے کا لنک {linkExpireHours} گھنٹے تک کام کرے گا۔ رسائی لے کر ڈیوائس میں محفوظ کرنے کے بعد کیو آر کوڈ کی میعاد ختم نہیں ہو گی۔ ویکسین ریکارڈ دیکھیں",
-                "ne" => $"डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड प्रणाली हेर्नुभएको धन्यवाद। तपाईंको कोभिड-19 प्रमाणीकरण पुनः प्राप्ति गर्ने लिङ्क {linkExpireHours} घण्टाको लागि मान्य छ। पहुँच गरेर तपाईंको यन्त्रमा बचत भइसकेपछि, QR कोडको म्याद समाप्त हुने छैन। ",
-                "mxb" => $"Kuta’avi sa ja ni nde’e ní Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19. Enlace tágua nani’in ní tu’un siki nasa iyo ni nuu kue’e COVID-19 tiñu ji nuu {linkExpireHours} hora. Tú ja ni kivi ní de ni tava’a ní nuu kaa ndichí ní, código QR ma koo tiñu ji. ",
+                "ur" => $"ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کا سسٹم ملاحظہ کرنے کا شکریہ۔ کووڈ-19 کی تصدیق وصول کرنے کا لنک {linkExpireHours} گھنٹے تک قابل استعمال ہو گا۔ رسائی لے کر ڈیوائس میں محفوظ کرنے کے بعد کیو آر کوڈ کی میعاد ختم نہیں ہو گی۔",
+                "ne" => $"डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड प्रणाली हेर्नुभएको धन्यवाद। तपाईंको कोभिड-19 प्रमाणीकरण पुनः प्राप्ति गर्ने लिङ्क {linkExpireHours} घण्टाकोसम्म मान्य हुन्छ। पहुँच गरेर तपाईंको यन्त्रमा बचत भइसकेपछि, QR कोडको म्याद समाप्त हुने छैन।",
+                "mxb" => $"Kuta’avi sa ja ni nde’e ní Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19. Enlace tágua nani’in ní tu’un siki nasa iyo ni nuu kue’e COVID-19 tiñu ji nuu {linkExpireHours} hora. Tú ja ni kivi ní de ni tava’a ní nuu kaa ndichí ní, código QR ma koo tiñu ji. ",
                 "mh" => $"Koṃṃool erk bwe ilomej ko laam jarom COVID-19 jaak jeje kkar. Ko kkejel nan bok ami COVID-19 jaak ane ṃṃan bwe {linkExpireHours} awa. Juon iien ak kab lọmọọr nan ami tuuḷbọọk, ko QR kabro naaj jab ḷot.",
                 "mam" => $"Chjontay ma tz’oktz tq’olb’e’na jqeya qkloj te Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj jxk’utz’ib’. Ja enlace te tu’ ttiq’ay jte cheylakxta tej tx’u’j yab’ilo te COVID-19 b’a’x teja toj jun q’ij b’ix jun qoniya mo toj {linkExpireHours} amb’il. Juxmaj uj ot tz’okxay ex ot ku’x tk’u’na toj jtey txk’utz’ib’, j-código QR ya mi kub’ najt.",
                 "lo" => $"ຂອບໃຈທີ່ເຂົ້າເບິ່ງລະບົບບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນ. ລິ້ງເພື່ອຮຽກຄົ້ນຂໍ້ມູນການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ຂອງທ່ານແມ່ນໃຊ້ໄດ້ ພາຍໃນເວລາ {linkExpireHours} ຊົ່ວໂມງ. ເມື່ອເຂົ້າເຖິງ ແລະ ບັນທຶກໄວ້ໃນອຸປະກອນຂອງທ່ານແລ້ວ, ລະຫັດ QR ຈະບໍ່ໝົດອາຍຸ.",
@@ -644,7 +644,7 @@ namespace Application.Common
                     $"<p>ካብ Centers for disease Control and Prevention (CDC, ማእከላት ንምቊጽጻርን ምግታእን ጥዕና) ብዛዕባ <a href='{cdcUrl}'>ንካልኦትን ንገዛእ ርእስኹምን ምሕላው</a> ዝያዳ ተምሃሩ።</p>" +
                     $"<p><b>ሕቶታት ኣለኩም ድዩ?</b></p>" +
                     $"<p>ብዛዕባ ዲጂታላዊ ናይ ኮቪድ-19 ክታበት መረጋገጺ መዝገብ ዝያዳ ንምፍላጥ፡ ነቶም ናህና ገጽ ናይ ቀጻሊ ዝሕተቱ ሕቶታት <a href='{vaccineFAQUrl}'>ቀጻሊ ዝሕተቱ ሕቶታት</a> ብጽሕዎም።</b></p>" +
-                    $"<p><b>ሓበሬታ ሓዙ።</b></p>" +
+                    $"<p><b>ሓበሬታ ሓዙ።</b></p>" + 
                     $"<p>ብዛዕባ ኮቪድ-19 <a href='{covidWebUrl}'>ናይ ቀረባ ግዜ ሓበሬታ ራኣዩ</a> ኢኹም።</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ወግዓዊ ናይ Washington State Department of Health (ክፍሊ ጥዕና ግዝኣት ዋሽንግተን) ኢ-መይል</p>" +
@@ -723,7 +723,7 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ur" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</h3>" +
-                    $"<p dir='rtl'>کووڈ-19 تصدیقی ریکارڈ کا سسٹم ملاحظہ کرنے کا شکریہ۔ کووڈ-19 ویکسین ریکارڈ کا کوڈ وصول کرنے کا لنک {linkExpireHours} گھنٹوں تک کام کرے گا۔ رسائی لے کر ڈیوائس میں محفوظ کرنے کے بعد کیو آر کوڈ کی میعاد ختم نہیں ہو گی۔</p>" +
+                    $"<p dir='rtl'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کا سسٹم ملاحظہ کرنے کا شکریہ۔ کووڈ-19 ویکسین ریکارڈ کا کوڈ وصول کرنے کا لنک {linkExpireHours} گھنٹے تک قابل استعمال گا۔ رسائی لے کر ڈیوائس میں محفوظ کرنے کے بعد کیو آر کوڈ کی میعاد ختم نہیں ہو گی۔</p>" +
                     $"<p dir='rtl'><a href='{url}'>ویکسین ریکارڈ دیکھیں</a></p>" +
                     $"<p dir='rtl'>Centers for Disease Control and Prevention (مراکز برائے امراض پر قابو اور انسداد) سے مزید سیکھیں کہ <a href='{cdcUrl}'>خود کو اور دوسروں کو کیسے محفوظ رکھا جائے</a></p>" +
                     $"<p dir='rtl'><b>سوالات ہیں؟</b></p>" +
@@ -735,23 +735,23 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "ne" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड</h3>" +
-                    $"<p>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड प्रणाली हेर्नुभएको धन्यवाद। तपाईंको कोभिड-19 खोप रेकर्ड कोड पुनः प्राप्ति गर्ने लिङ्क {linkExpireHours} घण्टाको लागि मान्य छ। पहुँच गरेर तपाईंको यन्त्रमा बचत भइसकेपछि, QR कोडको म्याद समाप्त हुने छैन।</p>" +
+                    $"<p>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड प्रणाली हेर्नुभएको धन्यवाद। तपाईंको कोभिड-19 खोप रेकर्ड कोड पुनः प्राप्ति गर्ने लिङ्क {linkExpireHours} घण्टाकोसम्म मान्य हुन्छ। पहुँच गरेर तपाईंको यन्त्रमा बचत भइसकेपछि, QR कोडको म्याद समाप्त हुने छैन।</p>" +
                     $"<p><a href='{url}'>खोपसम्बन्धी रेकर्ड हेर्नुहोस्</a></p>" +
-                    $"<p>Centers for Disease Control and Prevention (रोग नियन्त्रण तथा रोकथाम केन्द्रहरू (बाट <a href='{cdcUrl}'>आफ्नो र अन्य मानिसहरूको सुरक्षा कसरी गर्ने</a> भन्ने बारेमा थप कुराहरू जान्नुहोस्।</p>" +
+                    $"<p>Centers for Disease Control and Prevention (रोग नियन्त्रण तथा रोकथाम केन्द्रहरू) बाट <a href='{cdcUrl}'>आफ्नो र अन्य मानिसहरूको सुरक्षा गर्ने</a> तरिकाको बारेमा थप जान्नुहोस्।</p>" +
                     $"<p><b>प्रश्नहरू छन्?</b></p>" +
-                    $"<p>आफ्नो डिजिटल कोभिड-19 खोप रेकर्डका बारेमा थप जान्नका लागि हाम्रा प्राय: सोधिने प्रश्नहरू (<a href='{vaccineFAQUrl}'>FAQ</a>) हेर्नुहोस्।</p>" +
+                    $"<p>आफ्नो डिजिटल कोभिड-19 खोप रेकर्डका बारेमा थप जान्नका लागि हाम्रो बारम्बार सोधिने प्रश्नहरू (<a href='{vaccineFAQUrl}'>FAQ</a>) को पृष्ठ हेर्नुहोस्।</p>" +
                     $"<p><b>सूचित रहनुहोस्।</b></p>" +
                     $"<p>कोभिड-19 बारे <a href='{covidWebUrl}'>नवीनतम जानकारी हेर्नुहोस्</a> ।</p><br/>" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>आधिकारिक Washington State Department of Health) वासिङ्गटन राज्यको स्वास्थ्य विभाग( को इमेल</p>" +
+                    $"<footer><p style='text-align:center'>आधिकारिक Washington State Department of Health (वासिङ्गटन राज्य स्वास्थ्य विभाग) को इमेल</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "mxb" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</h3>" +
-                    $"<p>Kuta’avi sa ja ni nde’e ní Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19. Enlace tágua nani’in ní tutu vacuna COVID-19 ní tiñu ji nuu {linkExpireHours} hora. Tú ja ni kivi ní de ni tava’a ní nuu kaa ndichí ní, código QR ma koo tiñu ji.</p>" +
+                    $"<h3 style='color: #f06724'>Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19</h3>" +
+                    $"<p>Kuta’avi sa ja ni nde’e ní Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19. Enlace tágua nani’in ní tutu vacuna COVID-19 ní tiñu ji nuu 24 {linkExpireHours} hora. Tú ja ni kivi ní de ni tava’a ní nuu kaa ndichí ní, código QR ma koo tiñu ji.</p>" +
                     $"<p><a href='{url}'>Kunde’e nasa iyo nda vacuna</a></p>" +
                     $"<p>Ni’in ka ní tu’un siki nasa <a href='{cdcUrl}'>koto yo maa yo ji sava ka ñayiví</a> nuu Centers for Disease Control and Prevention (CDC, Ve’e nuu jito ji jekani nda kue’e).</p>" +
                     $"<p><b>A iyo tu’un jikatu’un ní</b></p>" +
-                    $"<p>Kunde’e ní nuu página nda tu’un jikatu’un ka (<a href='{vaccineFAQUrl}'>FAQ</a>) tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19.</p>" +
+                    $"<p>Kunde’e ní nuu página nda tu’un jikatu’un ka (<a href='{vaccineFAQUrl}'>FAQ</a>) tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu Tarjeta Vacuna COVID-19 ja iyo nuu Kaa ndichí.</p>" +
                     $"<p><b>Ndukú ni tu’un.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Kunde’e ní tu’un jáá ka</a> siki COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -992,8 +992,8 @@ namespace Application.Common
                 "sm" => $"Sa e talosagaina talu ai nei ni fa’amaumauga fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagi mai le setete. E faamalie atu o faamatalaga na e tuuina mai e le tutusa ma faamaumauga i totonu o le matou polokalame. Faafesootai mai le numera {phoneNumber}, oomi # e maua ai se fesoasoani ina tutusa ou faamaumauga ma faamatalaga tusitusia.",
                 "pa" => $"ਤੁਸੀਂ ਹਾਲ ਹੀ ਵਿੱਚ ਸਟੇਟ ਤੋਂ ਇੱਕ ਡਿਜ਼ੀਟਲ ਕੋਵਿਡ-19 ਵੈਰੀਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਲਈ ਬੇਨਤੀ ਕੀਤੀ ਸੀ। ਬਦਕਿਸਮਤੀ ਨਾਲ, ਤੁਹਾਡੇ ਦੁਆਰਾ ਪ੍ਰਦਾਨ ਕੀਤੀ ਗਈ ਜਾਣਕਾਰੀ ਸਾਡੇ ਸਿਸਟਮ ਵਿੱਚ ਮੌਜੂਦ ਜਾਣਕਾਰੀ ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ। ਆਪਣੇ ਰਿਕਾਰਡ ਨੂੰ ਆਪਣੀ ਸੰਪਰਕ ਜਾਣਕਾਰੀ ਨਾਲ ਮਿਲਾਉਣ ਵਿੱਚ ਮਦਦ ਲਈ ਸਾਡੇ ਨਾਲ {phoneNumber} 'ਤੇ ਸੰਪਰਕ ਕਰੋ, ਅਤੇ # ਦਬਾਓ।",
                 "ps" => $"تاسو پدې وروستیو کې له دولت څخه د ډیجیټل COVID-19 تائید ثبت غوښتنه کړې. له بده مرغه، هغه معلومات چې تاسو چمتو کړي زموږ په سیسټم کې د معلوماتو سره سمون نلري. موږ سره په {phoneNumber} اړیکه ونیسئ، ستاسو د اړیکو معلوماتو سره ستاسو د ثبت په سمون کې د مرستې لپاره # کېښکلئ.",
-                "ur" => $"آپ نے حال ہی میں ریاست سے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کی درخواست کی ہے۔ بدقسمتی سے آپ کی فراہم کردہ معلومات ہمارے سسٹم میں موجود معلومات سے میل نہیں کھاتی۔ اپنے ریکارڈ کو رابطے کی معلومات سے ملانے کے لئے ہم سے {phoneNumber} پر رابطہ کریں اور # دبائیں۔",
-                "ne" => $"तपाईंले हालै राज्यबाट डिजिटल कोभिड-19 प्रमाणीकरण रेकर्डको लागि अनुरोध गर्नुभयो। दुर्भाग्यवश, तपाईंले उपलब्ध गराउनुभएको जानकारी हाम्रो प्रणालीमा भएको जानकारीसँग मेल खाँदैन। तपाईंको रेकर्ड तपाईंको सम्पर्क जानकारीसँग मेल खानमा मद्दतका लागि {phoneNumber} मा हामीलाई सम्पर्क गर्नहोस्, # थिच्नुहोस्।",
+                "ur" => $"آپ نے حال ہی میں ریاست سے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کی درخواست کی ہے۔ بدقسمتی سے آپ کی فراہم کردہ معلومات ہمارے سسٹم میں موجود معلومات سے مماثلت نہیں رکھتیں۔ اپنے ریکارڈ کو رابطے کی معلومات سے ملانے کے لئے ہم سے {phoneNumber} پر رابطہ کریں اور # دبائیں۔",
+                "ne" => $"तपाईंले हालै राज्यबाट डिजिटल कोभिड-19 प्रमाणीकरण रेकर्डको लागि अनुरोध गर्नुभयो। दुर्भाग्यवश, तपाईंले उपलब्ध गराउनुभएको जानकारी हाम्रो प्रणालीमा भएको जानकारीसँग मेल खाँदैन। तपाईंको रेकर्डलाई तपाईंको सम्पर्क जानकारीसँग मिलने बनाउनमा मद्दतका लागि {phoneNumber} मा हामीलाई सम्पर्क गर्नहोस्, # थिच्नुहोस्।",
                 "mxb" => $"Iyo jaku kivi ja ni jikan ní in tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19 ja iyo nuu ñuu. Kueka kuu ja, tu’un ja ni taji ní nduu kitan ji tu’un ja neva’a sa. Ka’an ní jín nda sa nuu yokaa nuu {phoneNumber}, ñukua de kuaxin ní # tágua kuu sa’a yo ja kita’an tu’un ja taji ní ji ja neva’a sa.",
                 "mh" => $"Eok kiin jeṃaanḷọk ṇawāwee a laam jarom COVID-19 jaak jeje jan ko konnaan. Jerata, ko melele eok naloma does jab match melele for arro kkar. Kokkeitaak ko ilo {phoneNumber}, kkeeṇ # bwe rejetak for mājet ami jeje nan ami kokkeitaak melele.",
                 "mam" => $"Ma’nxax nokx tqanay jun Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’ tej tnom. Aj nojsamay, jq’umb’aj tumal xi q’o’ mi nel joniy tuya jq’umb’aj tumal toj jqeya qkloj te xk’utz’ib’. Ttzaj q’ajt qeya qe toj tajlal lu {phoneNumber}, peq’ak’ax jlu # te tu’ ttiq’ay onb’al te tu’ntza tel joniy jtey ttz’ib’b’al tuya jtey tq’umb’aj tumal te tyolb’alay.",
@@ -1220,7 +1220,7 @@ namespace Application.Common
                     $"<p>ንስኹም ኣብ ቀረባ ግዜ ካብ <a href='{webUrl}'>ስርዓተ ዲጂታላዊ ናይ ኮቪድ-19 መረጋገጺ መዝገብ</a> ዲጂታላዊ ናይ ኮቪድ-19 ክታበት መረጋገጺ መዝገብ ሓቲትኩም። ኣጋጣሚ ኮይኑግን፡ እቲ ንስኹም ዝሃብክምዎ ሓበሬታ ከኣ ምስ’ቲ ኣብ ሲስተምና ዘሎ ሓበሬታ ኣይተሰማመዐን።</p>" +
                     $"<p><a href='{webUrl}'>ካልእ ሞባይል ቴለፎን ወይ ናይ ኢመይል ኣድራሻ ኣብዲጂታላዊ ናይ ኮቪድ-19 መረጋገጺ መዝገብ ሲስተም</a> ካልእ ሕቶ ከተእትዉ ትኽእሉ ኢኹም፡ ንሓገዝዛብ ምዝማድ ናትኩም መዝገብ ምስ ናይ መወከሲ ሓበሬታኹም ድማ ንስኹም <a href='{contactUsUrl}'>ክትዉከሱና</a> ትኽእሉ ኢኹም፡ ወይ ንኣዳላዊኹም ሓበሬታኹም ናብ ናይ ስተይት ሲስተም ከምዝኣተወ ንምርግጋጽ ክትውከስዎ ትኽእሉ ኢኹም።</p>" +
                     $"<p><b>ሕቶታት ኣለኩም ድዩ?</b></p>" +
-                    $"<p>ብዛዕባ ዲጂታላዊ ናይ ኮቪድ-19 ክታበት መረጋገጺ መዝገብ ዝያዳ ንምፍላጥ፡ ነቶም ናህና ገጽ ናይ ቀጻሊ ዝሕተቱ ሕቶታት <a href='{vaccineFAQUrl}'>ቀጻሊ ዝሕተቱ ሕቶታት</a> ብጽሕዎም።</b></p>" +
+                    $"<p>ብዛዕባ ዲጂታላዊ ናይ ኮቪድ-19 ክታበት መረጋገጺ መዝገብ ዝያዳ ንምፍላጥ፡ ነቶም ናህና ቀጻሊ ዝሕተቱ ሕቶታት <a href='{vaccineFAQUrl}'>ቀጻሊ ዝሕተቱ ሕቶታት</a> ብጽሑ</b></p>" +
                     $"<p><b>ሓበሬታ ሓዙ።</b></p>" +
                     $"<p>ብዛዕባ ኮቪድ-19 <a href='{covidWebUrl}'>ናይ ቀረባ ግዜ ሓበሬታ ራኣዩ</a> ኢኹም።</p><br/>" +
                     $"<hr>" +
@@ -1296,9 +1296,9 @@ namespace Application.Common
                 "ur" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</h3>" +
                     $"<p dir='rtl'>آپ نے حال ہی میں <a href='{webUrl}'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ سسٹم</a> سے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کی درخواست کی ہے۔ بدقسمتی سے آپ کی فراہم کردہ معلومات ریاستی سسٹم میں موجود معلومات سے مماثلت نہیں رکھتی۔ </p><br/>" +
-                    $"<p dir='rtl'>آپ کوئی اور موبائل فون نمبر یا ای میل ایڈریس استعمال کرتے ہوئے <a href='{webUrl}'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</a>  سسٹم میں دوبارہ درخواست جمع کروا سکتے ہیں، آپ اپنے ریکارڈ کو اپنے رابطے کی معلومات سے ملانے کے لئے <a href='{contactUsUrl}'>ہم سے رابطہ</a>  کر سکتے ہیں، یا آپ اپنے معالج سے رابطہ کر کے یقینی بنا سکتے ہیں کہ آپ کی معلومات ریاستی نظام میں جمع کروا دی گئی ہیں۔</p>" +
+                    $"<p dir='rtl'>آپ کوئی اور موبائل فون نمبر یا ای میل ایڈریس استعمال کرتے ہوئے <a href='{webUrl}'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</a> سسٹم میں دوبارہ درخواست جمع کروا سکتے ہیں، اپنے ریکارڈ کو اپنے رابطے کی معلومات سے ملانے کے لئے <a href='{contactUsUrl}'>ہم سے رابطہ</a> کر سکتے ہیں، یا اپنے معالج سے رابطہ کر کے یقینی بنا سکتے ہیں کہ آپ کی معلومات ریاستی نظام میں جمع کروا دی گئی ہیں۔</p>" +
                     $"<p dir='rtl'><b>سوالات ہیں؟</b></p>" +
-                    $"<p dir='rtl'>اپنے ڈیجیٹل کووڈ-19 ویکسین ریکارڈ کے متعلق مزید جاننے کے لئے ہمارا عمومی سوالات (<a href='{vaccineFAQUrl}'>FAQ</a>)  کا صفحہ ملاحظہ کریں۔</p>" +
+                    $"<p dir='rtl'>اپنے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کے متعلق مزید جاننے کے لئے ہمارا عمومی سوالات (<a href='{vaccineFAQUrl}'>FAQ</a>) کا صفحہ ملاحظہ کریں۔</p>" +
                     $"<p dir='rtl'><b>آگاہ رہیں۔</b></p>" +
                     $"<p dir='rtl'>کووڈ-19 کے متعلق <a href='{covidWebUrl}'>تازہ ترین معلومات دیکھیں</a></p><br/>" +
                     $"<hr>" +
@@ -1308,21 +1308,21 @@ namespace Application.Common
                     $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड</h3>" +
                     $"<p>तपाईंले हालै <a href='{webUrl}'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड प्रणाली</a> बाट डिजिटल कोभिड-19 प्रमाणीकरण रेकर्डको लागि अनुरोध गर्नुभयो। दुर्भाग्यवश, तपाईंले उपलब्ध गराउनुभएको जानकारी राज्यको प्रणालीमा भएको जानकारीसँग मेल खाँदैन। </p><br/>" +
-                    $"<p>तपाईं भिन्न मोबाइल फोन नम्बर वा इमेल ठेगाना प्रयोग गरी <a href='{webUrl}'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड</a> प्रणालीमा अर्को अनुरोध पेश गर्न, तपाईंको रेकर्ड तपाईंको सम्पर्क जानकारीसँग मेल खानमा मद्दतका लागि <a href='{contactUsUrl}'>हामीलाई सम्पर्क गर्न</a> वा तपाईंको जानकारी राज्यको प्रणालीमा पेश गरिएको छ भनी सुनिश्चित गर्नका लागि आफ्नो प्रदायकलाई सम्पर्क गर्न सक्नुहुन्छ।</p>" +
+                    $"<p>तपाईं भिन्न मोबाइल फोन नम्बर वा इमेल ठेगाना प्रयोग गरी <a href='{webUrl}'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड</a> प्रणालीमा अर्को अनुरोध पेश गर्न सक्नुहुन्छ, तपाईंको रेकर्डलाई तपाईंको सम्पर्क जानकारीसँग मिल्ने बनाउनमा मद्दतका लागि <a href='{contactUsUrl}'>हामीलाई सम्पर्क गर्न</a> सक्नुहुन्छ वा तपाईंको जानकारी राज्यको प्रणालीमा पेश गरिएको छ भनी सुनिश्चित गर्नका लागि आफ्नो प्रदायकलाई सम्पर्क गर्न सक्नुहुन्छ।</p>" +
                     $"<p><b>प्रश्नहरू छन्?</b></p>" +
-                    $"<p>आफ्नो डिजिटल कोभिड-19 खोप रेकर्डका बारेमा थप जान्नका लागि हाम्रा प्राय: सोधिने प्रश्नहरू (<a href='{vaccineFAQUrl}'>FAQ</a>) हेर्नुहोस्।</p>" +
+                    $"<p>आफ्नो डिजिटल कोभिड-19 प्रमाणीकरण रेकर्डका बारेमा थप जान्नका लागि हाम्रो बारम्बार सोधिने प्रश्नहरू (<a href='{vaccineFAQUrl}'>FAQ</a>) को पृष्ठ हेर्नुहोस्।</p>" +
                     $"<p><b>सूचित रहनुहोस्।</b></p>" +
                     $"<p>कोभिड-19 बारे <a href='{covidWebUrl}'>नवीनतम जानकारी हेर्नुहोस्</a> ।</p><br/>" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>आधिकारिक Washington State Department of Health(वासिङ्गटन राज्यको स्वास्थ्य विभाग) को इमेल</p>" +
+                    $"<footer><p style='text-align:center'>आधिकारिक Washington State Department of Health (वासिङ्गटन राज्य स्वास्थ्य विभाग) को इमेल</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "mxb" =>
                     $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
-                    $"<h3 style='color: #f06724'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</h3>" +
-                    $"<p>Iyo jaku kivi ja ni jikan ní in tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19 ja iyo nuu <a href='{webUrl}'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</a>. Kueka kuu ja, tu’un ja ni taji ní nduu kitan ji tu’un ja neva’a sa nuu nda tu’un ja iyo nuu ñuu. </p><br/>" +
-                    $"<p>Kuu tetiñu ní tuku ní inka tutu nuu <a href='{webUrl}'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</a> jín in número yokaa axi correo electrónico ja síin kaa, kuu <a href='{contactUsUrl}'>ka’an ní jín nda sa</a> tágua kuu sa’a yo ja kita’an tu’un ja taji ní ji ja neva’a sa, axi in ñayiví satatan tágua kuni ní tú ni tetiñu va’a tu’un siki ní nuu ñuu.</p>" +
+                    $"<h3 style='color: #f06724'>Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19</h3>" +
+                    $"<p>Iyo jaku kivi ja ni jikan ní in Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19 ja iyo nuu. <a href='{webUrl}'>Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19</a>. Kueka kuu ja, tu’un ja ni taji ní nduu kitan ji tu’un ja neva’a sa nuu nda tu’un ja iyo nuu ñuu.</p><br/>" +
+                    $"<p>Kuu tetiñu ní tuku ní inka tutu nuu [a][/a]  [a][/a]  <a href='{webUrl}'>Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19</a> jín in número yokaa axi correo electrónico ja síin kaa, kuu <a href='{contactUsUrl}'>ka’an ní jín nda sa</a> tágua kuu sa’a yo ja kita’an tu’un ja taji ní ji ja neva’a sa, axi in ñayiví satatan tágua kuni ní tú ni tetiñu va’a tu’un siki ní nuu ñuu.</p>" +
                     $"<p><b>A iyo tu’un jikatu’un ní</b></p>" +
-                    $"<p>Kunde’e ní nuu página nda tu’un jikatu’un ka (<a href='{vaccineFAQUrl}'>FAQ</a>) tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19.</p>" +
+                    $"<p>Kunde’e ní nuu página nda tu’un jikatu’un ka (<a href='{vaccineFAQUrl}'>FAQ</a>) tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19.</p>" +
                     $"<p><b>Ndukú ni tu’un.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Kunde’e ní tu’un jáá ka</a> siki COVID-19.</p><br/>" +
                     $"<hr>" +
