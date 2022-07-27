@@ -1330,7 +1330,7 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "mh" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Rekoot in Kein Kamool COVID-19 eo am ilo online</h3>" +
-                    $"<p>Kwar kajitōk Rekoot in Kein Kamool COVID-19 eo am ilo online jen. <a href='{webUrl}'>system eo n̄an Rekoot in Kein Kamool COVID-19 eo am ilo online</a>. Būromōj, melele ko kwar likit ejjab juon wōt ibben melele ko ilo system eo an kien.</p><br/>" +
+                    $"<p>Kwar kajitōk Rekoot in Kein Kamool COVID-19 eo am ilo online jen <a href='{webUrl}'>system eo n̄an Rekoot in Kein Kamool COVID-19 eo am ilo online</a>. Būromōj, melele ko kwar likit ejjab juon wōt ibben melele ko ilo system eo an kien.</p><br/>" +
                     $"<p>Kwōmāron̄ jakelọk bar juon kajitōk ilo system eo n̄an <a href='{webUrl}'>Rekoot in Kein Kamool COVID-19 eo am ilo online</a> kōn juon telebon nōmba eo oktak ak email address, kwōmāron̄ <a href='{contactUsUrl}'>kūrtok kōj</a> n̄an am bōk jibān̄ ilo am bukōt rekoot eo am, ak kwōmāron̄ kūrlọk taktō eo am im kajimwe melele ko kwar likit ilo system eo an kien.</p>" +
                     $"<p><b>Ewōr ke am kajitōk?</b></p>" +
                     $"<p>Lale peij eo an Kajitōk ko Ekutkut Kajitōk (<a href='{vaccineFAQUrl}'>FAQ</a>) n̄an am bōk katak ko relaplak kōn Rekoot in Kein Kamool COVID-19 eo am ilo online.</p>" +
