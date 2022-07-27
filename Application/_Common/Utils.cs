@@ -1418,8 +1418,8 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "chk" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Digital COVID-19 Afatan Record</h3>" +
-                    $"<p>Ke Keran chok tungor ew Digital COVID-19 Verification Record seni <a href='{webUrl}'>ewe Digital COVID-19 Verification Record system</a>. Nge, ewe poraus ke awora ese mes ngeni met poraus mi nom non an state ei system ika nenien aisois. </p><br/>" +
-                    $"<p>En mi tongeni tinanong pwan ew tungor non ewe <a href='{webUrl}'>Digital COVID-19 Verification Record</a> system ren om nounou pwan ew nampan fon ika email address, en mi tongeni <a href='{contactUsUrl}'>kokori ika churi kich</a> ren aninis ren ames fengeni met porausom me ifa usun ach sipwe kokoruk, ika en mi tongeni kokori om we selfon kompeni ren om kopwe enukunuku pwe met porausom a katonong non ewe state system.</p>" +
+                    $"<p>Ke Keran chok tungor ew Digital COVID-19 Afatan Record seni <a href='{webUrl}'>ewe Digital COVID-19 Afatan Record system</a>. Nge, ewe poraus ke awora ese mes ngeni met poraus mi nom non an state ei system ika nenien aisois. </p><br/>" +
+                    $"<p>En mi tongeni tinanong pwan ew tungor non ewe <a href='{webUrl}'>Digital COVID-19 Afatan Record</a> system ren om nounou pwan ew nampan fon ika email address, en mi tongeni <a href='{contactUsUrl}'>kokori ika churi kich</a> ren aninis ren ames fengeni met porausom me ifa usun ach sipwe kokoruk, ika en mi tongeni kokori om we selfon kompeni ren om kopwe enukunuku pwe met porausom a katonong non ewe state system.</p>" +
                     $"<p><b>Mi wor om kapaseis?</b></p>" +
                     $"<p>Feino katon ach kewe Kapas Eis Ekon Nap Ach Eis (<a href='{vaccineFAQUrl}'>FAQ</a>) pon ach we peich ren om kopwe awatenai om sinei usun noum Digital COVID-19 Afatan Record.</p>" +
                     $"<p><b>Nonom nge Sisinei.</b></p>" +
