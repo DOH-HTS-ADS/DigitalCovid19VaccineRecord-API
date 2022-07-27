@@ -855,11 +855,11 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "chk" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Digital COVID-19 Afatan Record</h3>" +
-                    $"<p>Kinisou ren om tota won ewe Digital COVID-19 Afatean Record System. Ewe link ika anen kopwe tongeni angei noum code ren om kopwe kuna noum taropwen apposen COVID-19 echok eoch kopwe eaea non {linkExpireHours} awa. Ika pwe ka fen tonong ika a nom porausen noum we fon ika kamputer, ewe QR code esap muchuno manamanin.</p>" +
+                    $"<p>Kinisou ren om tota won ewe Digital COVID-19 Afatan Record System. Ewe link ika anen kopwe tongeni angei noum code ren om kopwe kuna noum taropwen apposen COVID-19 echok eoch kopwe eaea non {linkExpireHours} awa. Ika pwe ka fen tonong ika a nom porausen noum we fon ika kamputer, ewe QR code esap muchuno manamanin.</p>" +
                     $"<p><a href='{url}'>Katon Taropwen Appos</a></p>" +
                     $"<p>Awateino om sinei usun ifa om kopwe <a href='{cdcUrl}'>tumunu me epeti inisum me inisin ekkoch</a> seni ewe Centers for Disease Control and Prevention (Ofesin Nenien Nemenemen Semwen me Pinepinen).</p>" +
                     $"<p><b>Mi wor om kapaseis?</b></p>" +
-                    $"<p>Feino katon ach kewe Kapas Eis Ekon Nap Ach Eis (<a href='{vaccineFAQUrl}'>FAQ</a>) pon ach we peich ren om kopwe awatenai om sinei usun noum Digital COVID-19 Apposun Record.</p>" +
+                    $"<p>Feino katon ach kewe Kapas Eis Ekon Nap Ach Eis (<a href='{vaccineFAQUrl}'>FAQ</a>) pon ach we peich ren om kopwe awatenai om sinei usun noum Digital COVID-19 Afatan Record.</p>" +
                     $"<p><b>Nonom nge Sisinei.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Katon minefon poraus</a> on COVID-19.</p><br/>" +
                     $"<hr>" +
