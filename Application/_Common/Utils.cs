@@ -1341,7 +1341,7 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}'></p></footer>",
                 "mam" => $"<img src='{webUrl}/imgs/MyTurn-logo.png'><br/>" +
                     $"<h3 style='color: #f06724'>Tqanil toj Yolb’il tun Tjyet COVID-19</h3>" +
-                    $"<p>Ma’nxax nokx tqanay Tqanil toj Yolb’il tun Tjyet COVID-19 tej <a href='{webUrl}'>kloj te Tqanil toj Yolb’il tun Tjyet COVID-19</a>. Aj nojsamay, jq’umb’aj tumal xi q’o’ mi nel joniy tuya jq’umb’aj tumal toj jqeya qkloj te xk’utz’ib’.</p>< br /> " +
+                    $"<p>Ma’nxax nokx tqanay Tqanil toj Yolb’il tun Tjyet COVID-19 tej <a href='{webUrl}'>kloj te Tqanil toj Yolb’il tun Tjyet COVID-19</a>. Aj nojsamay, jq’umb’aj tumal xi q’o’ mi nel joniy tuya jq’umb’aj tumal toj jqeya qkloj te xk’utz’ib’.</p><br /> " +
                     $"<p>B’a’ ttzaj tsma’na junt qanb’al toj jkloj tej <a href='{webUrl}'>Tqanil toj Yolb’il tun Tjyet COVID-19</a> tuya jun tajlal yolb’il niy eqat mo tb’i tb’e jun correo electrónico junxat, b’a’ <a href='{contactUsUrl}'>ttzaj q’ajtay q’i’ja</a> te tu’ ttiq’ay onb’al te tu’ tel yoniy jtey ttz’ib’b’al tuya jtey tq’umb’aj tumal te tyolb’alay, mo b’a’ tyolana tuya jtey q’oltzta t-onb’al te tu’ntza tab’ij te qa tej tey tq’umb’aj tumal ot tz’ex sma’ toj kloj te kojb’il.</p>" +
                     $"<p><b>¿At qaj tajay tzaj tqanay?</b></p>" +
                     $"<p>Tokx toj jqeya qkloj che qaj Qanb’al jakax (<a href='{vaccineFAQUrl}'>FAQ Xjel Kukx in che tzaj Qanin</a>)  te tu’ ttiq’ay kab’t q’umb’aj tumal tib’aj jtey Tqanil toj Yolb’il tun Tjyet COVID-19.</p>" +
