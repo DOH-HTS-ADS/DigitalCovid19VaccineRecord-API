@@ -446,7 +446,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> sobre la COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Salud del Estado de Washington</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "zh" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='数字 COVID-19 验证记录'><br/>" +
                     $"<h3 style='color: #f06724'>数字 COVID-19 验证记录</h3>" +
                     $"<p>欢迎访问数字 COVID-19 验证记录系统。用于检索您 COVID-19 疫苗记录码的链接在 {linkExpireHours} 小时内有效。在您获取到 QR 码并将其储存到您的设备后，此 QR 码将不会过期。</p>" +
@@ -458,7 +458,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>查看 COVID-19 最新信息</a>。</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (华盛顿州卫生部）官方电子邮件</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "zh-TW" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='數位 COVID-19 驗證記錄'><br/>" +
                     $"<h3 style='color: #f06724'>數位 COVID-19 驗證記錄</h3>" +
                     $"<p>歡迎造訪數位 COVID-19 驗證記錄系統。用於檢索您的 COVID-19 疫苗記錄碼的連結在 {linkExpireHours} 小時內有效。一旦您存取 QR 代碼並將其儲存到您的裝置後，此 QR 代碼將不會過期。</p>" +
@@ -470,7 +470,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>檢視 COVID-19 最新資訊</a>。</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health （華盛頓州衛生部）官方電子郵件 </p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ko" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='디지털 COVID-19 인증 기록'><br/>" +
                     $"<h3 style='color: #f06724'>디지털 COVID-19 인증 기록</h3>" +
                     $"<p>디지털 COVID-19 인증 기록 시스템을 방문해 주셔서 감사합니다. COVID-19 백신 기록 코드를 조회하는 링크는 {linkExpireHours}시간 동안 유효합니다. 확인하고 기기에 저장하면 QR 코드는 만료되지 않습니다. </p>" +
@@ -482,7 +482,7 @@ namespace Application.Common
                     $"<p>COVID-19 관련 <a href='{covidWebUrl}'>최신 정보 보기</a></p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (워싱턴주 보건부) 공식 이메일</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "vi" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Hồ sơ Xác nhận COVID-19 kỹ thuật số'><br/>" +
                     $"<h3 style='color: #f06724'>Hồ sơ Xác nhận COVID-19 kỹ thuật số</h3>" +
                     $"<p>Cảm ơn bạn đã truy cập vào hệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số. Đường liên kết để truy xuất mã hồ sơ vắc-xin COVID-19 của bạn có hiệu lực trong vòng {linkExpireHours} giờ. Sau khi đã truy cập và lưu vào thiết bị của bạn, mã QR sẽ không hết hạn.</p>" +
@@ -494,7 +494,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Email chính thức của Washington State Department of Health (Sở Y Tế Tiểu Bang Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ar" => $"<img dir='rtl' src='{webUrl}/imgs/MyTurn-logo.png' alt='سجل التحقق الرقمي من فيروس كوفيد-19'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>سجل التحقق الرقمي من فيروس كوفيد-19</h3>" +
                     $"<p dir='rtl'>شكرًا لك على زيارة نظام سجل التحقق الرقمي من فيروس كوفيد-19. يظل رابط الحصول على رمز سجل لقاح فيروس كوفيد-19 صالحًا لمدة {linkExpireHours} ساعة. وبمجرد الوصول إليه وحفظه على جهازك، لن تنتهي صلاحية رمز الاستجابة السريعة (QR).</p>" +
@@ -506,7 +506,7 @@ namespace Application.Common
                     $"<p dir='rtl'>ع<a href='{covidWebUrl}'>رض آخر المعلومات</a> (متوفر باللغة الإنجليزية فقط) عن فيروس كوفيد-19.</p>" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>البريد الإلكتروني الرسمي الخاص بـ Washington State Department of Health (إدارة الصحة في ولاية واشنطن)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "tl" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</h3>" +
                     $"<p>Salamat sa pagbisita sa system ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19. May bisa ang link para makuha ang iyong code sa pagberipika ng bakuna sa COVID-19 nang {linkExpireHours} na oras. Kapag na-aaccess at na-save na ito sa iyong device, hindi mag-e-expire ang QR code.</p>" +
@@ -518,7 +518,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> tungkol sa COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Opisyal na Email ng Washington State Department of Health (Departamento ng Kalusugan ng Estado ng Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ru" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Цифровая запись о вакцинации от COVID-19 '><br/>" +
                     $"<h3 style='color: #f06724'>Цифровая запись о вакцинации от COVID-19 </h3>" +
                     $"<p>Благодарим вас за то, что воспользовались системой цифровых записей о вакцинации от COVID-19. Ссылка на код для получения записи о вакцинации от COVID-19 действительна в течение {linkExpireHours} часов. После перехода по ссылке и сохранения записи на вашем устройстве QR-код все еще будет действительным.</p>" +
@@ -530,7 +530,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Получайте актуальную информацию</a> о COVID-19 .</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Официальный адрес электронной почты Washington State Department of Health (Департамент здравоохранения штата Вашингтон)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ja" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='COVID-19ワクチン接種電子記録'><br/>" +
                     $"<h3 style='color: #f06724'>COVID-19ワクチン接種電子記録</h3>" +
                     $"<p>COVID-19ワクチン接種電子記録システムをご利用いただきありがとうございます。COVID-19ワクチン接種記録を取得するためのリンクは {linkExpireHours} 時間有効です。リンクにアクセスし、お使 いのデバイスにワクチン接種記録を保存すると、QRコードは無期限でご利用いただけます。</p>" +
@@ -542,7 +542,7 @@ namespace Application.Common
                     $"<p>新型コロナ感染症について<a href='{covidWebUrl}'>最新情報を見る</a>。</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health（ワシントン州保健局）の公式電子メール</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "fr" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Attestation numérique de vaccination COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>Attestation numérique de vaccination COVID-19</h3>" +
                     $"<p>Merci d'avoir consulté le système d'Attestation numérique de vaccination COVID-19. Le lien pour récupérer le code QR de votre attestation de vaccination COVID-19 est valable pendant {linkExpireHours} heures. Une fois que vous l'avez enregistré sur votre appareil, le code QR n'expire pas. </p>" +
@@ -554,7 +554,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>E-mail officiel du Washington State Department of Health (ministère de la Santé de l'État de Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "tr" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Dijital COVID-19 Doğrulama Kaydı'><br/>" +
                    $"<h3 style='color: #f06724'>Dijital COVID-19 Doğrulama Kaydı</h3>" +
                    $"<p>Dijital COVID-19 Doğrulama Kaydı sistemini ziyaret ettiğiniz için teşekkür ederiz. COVID-19 aşı kaydı kodunuzu alacağınız bağlantı sadece {linkExpireHours} saat geçerlidir. Bir kez erişilip cihazınıza kaydedildikten sonra kare kodun süresi dolmaz.</p>" +
@@ -566,7 +566,7 @@ namespace Application.Common
                    $"<p>COVID-19 <a href='{covidWebUrl}'>hakkında en güncel bilgileri görüntüleyin</a>.</p><br/>" +
                    $"<hr>" +
                    $"<footer><p style='text-align:center'>Resmi Washington State Department of Health (Washington Eyaleti Sağlık Bakanlığı) E-postası</p>" +
-                   $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                   $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "uk" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Електронний запис про підтвердження вакцинації від COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>Електронний запис про підтвердження вакцинації від COVID-19</h3>" +
                     $"<p>Дякуємо, що скористалися системою «Електронний запис про підтвердження вакцинації від COVID-19». Посилання на код для отримання запису про підтвердження вакцинації від COVID-19 дійсне протягом {linkExpireHours} годин. Після переходу за посиланням і збереження запису на вашому пристрої QR-код усе ще буде дійсним.</p>" +
@@ -578,7 +578,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Перегляньте найновішу інформацію</a> про COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Офіційна електронна адреса Washington State Department of Health (Департаменту охорони здоров’я штату Вашингтон)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ro" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Certificatul digital COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>Certificatul digital COVID-19</h3>" +
                     $"<p>Vă mulțumim că ați accesat sistemul de certificate digitale COVID-19. Linkul de unde puteți prelua fișa de vaccinare COVID-19 este valabil timp de {linkExpireHours} de ore. După ce l-ați accesat și l-ați salvat în telefon, codul QR nu va expira.</p>" + 
@@ -589,7 +589,7 @@ namespace Application.Common
                     $"<p><b>Rămâneți informat.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Vizualizați cele mai recente informații</a> referitoare la COVID-19.</p><br/>" +
                     $"<footer><p style='text-align:center'>Adresa de e-mail oficială a Washington State Department of Health (Departamentului de Sănătate al Statului Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "pt" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Comprovante digital de vacinação contra a COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>Comprovante digital de vacinação contra a COVID-19</h3>" +
                     $"<p>Obrigado por visitar o sistema do Comprovante digital de vacinação contra a COVID-19. O link para recuperar o seu código de acesso ao comprovante de vacinação contra a COVID-19 é válido por {linkExpireHours} horas. Após acessar o código QR e salvá-lo em seu dispositivo, ele não expirará.</p>" + 
@@ -601,7 +601,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Veja as informações mais recentes</a> sobre a COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>E-mail do representante oficial do Washington State Department of Health (Departamento de Saúde do estado de Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                "hi" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='डिजिटल COVID-19 सत्यापन रिकॉर्ड '><br/>" +
                     $"<h3 style='color: #f06724'>डिजिटल COVID-19 सत्यापन रिकॉर्ड </h3>" +
                     $"<p>डिजिटल COVID-19 सत्यापन रिकॉर्ड प्रणाली पर जाने के लिए धन्यवाद। आपके COVID-19 वैक्सीन रिकॉर्ड कोड को पुनः प्राप्त करने की लिंक {linkExpireHours} घंटे के लिए वैध है। आपके डिवाइस पर एक्सेस करने और सहेजने के बाद, QR कोड की समय-सीमा समाप्त नहीं होगी।</p>" +
@@ -613,7 +613,7 @@ namespace Application.Common
                     $"<p>COVID-19 के बारे में <a href='{covidWebUrl}'>नवीनतम जानकारी देखें</a>। </p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (वाशिंगटन राज्य के स्वास्थ्य विभाग) का आधिकारिक ईमेल</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "de" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='COVID-19-Digitalzertifikat'><br/>" +
                     $"<h3 style='color: #f06724'>COVID-19-Digitalzertifikat</h3>" +
                     $"<p>Danke für Ihren Besuch beim COVID-19-Digitalzertifikat-System. Der Link zum Abrufen Ihres COVID-19-Passes ist {linkExpireHours} Stunden lang gültig. Nachdem Sie den QR-Code aufgerufen und auf Ihrem Gerät gespeichert haben, läuft der Code nicht ab.</p>" +
@@ -625,7 +625,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Sehen Sie sich die neuesten Informationen</a> über COVID-19 an.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Offizielle E-Mail-Adresse des Washington State Department of Health (Gesundheitsministerium des Bundesstaates Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ti" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='ዲጂታላዊ ናይ ኮቪድ-19 ክታበት መረጋገጺ መዝገብ'><br/>" +
                     $"<h3 style='color: #f06724'>ዲጂታላዊ ናይ ኮቪድ-19 ክታበት መረጋገጺ መዝገብ</h3>" +
                     $"<p>ን ዲጂታላዊ ናይ ኮቪድ-19 መረጋገጺ መዝገብ ብምብጻሕኩም ነመስግነኩም። ናይ ኮቪድ-19 ክታበት መረጋገጺ መርከቢ ሊንክ ድማ ን {linkExpireHours} ሰዓታት ቅቡል እዩ። ሓንሳብ ምስ ኣተኹምን ኣብ መሳርሒትኩም ምስ ተዓቀበን ድማ፡ እቲ ናይ QR code ዕለቱ ኣይወድቕን እዩ።</p>" +
@@ -637,7 +637,7 @@ namespace Application.Common
                     $"<p>ብዛዕባ ኮቪድ-19 <a href='{covidWebUrl}'>ናይ ቀረባ ግዜ ሓበሬታ ራኣዩ</a> ኢኹም።</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ወግዓዊ ናይ Washington State Department of Health (ክፍሊ ጥዕና ግዝኣት ዋሽንግተን) ኢ-መይል</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                "te" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్'><br/>" +
                     $"<h3 style='color: #f06724'>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్</h3>" +
                     $"<p>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్ సిస్టమ్​ని సందర్శించినందుకు మీకు ధన్యవాదాలు. మీ కొవిడ్-19 వ్యాక్సిన్ రికార్డ్​ని తిరిగి పొందే లింక్ {linkExpireHours} గంటలపాటు చెల్లుబాటు అవుతుంది. మీరు యాక్సెస్ చేసుకొని, మీ పరికరంలో సేవ్ చేసిన తరువాత, QR కోడ్ గడువు తీరదు.</p>" +
@@ -649,7 +649,7 @@ namespace Application.Common
                     $"<p>కొవిడ్-19పై <a href='{covidWebUrl}'>తాజా సమాచారాన్ని వీక్షించండి</a>.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>అధికారిక Washington State Department of Health (వాషింగ్టన్ స్టేట్ డిపార్ట్​మెంట్ ఆఫ్ హెల్త్) ఇమెయిల్</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "sw" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19</h3>" +
                     $"<p>Asante kwa kutembelea mfumo wa Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19. Kiungo cha kupata msimbo wako wa chanjo ya COVID-19 kitakuwa amilifu kwa saa {linkExpireHours}. Mara tu imefikiwa na kuhifadhiwa kwenye kifaa chako, msimbo wa QR hautaisha muda.</p>" +
@@ -661,7 +661,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Tazama maelezo ya hivi karibuni</a> kuhusu COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Barua pepe Rasmi ya Washington State Department of Health (Idara ya Afya katika Jimbo la Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "so" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Diiwaanka Xaqiijinta Tallaalka COVID-19 ee Dhijitaalka Ah'><br/>" +
                     $"<h3 style='color: #f06724'>Diiwaanka Xaqiijinta Tallaalka COVID-19 ee Dhijitaalka Ah</h3>" +
                     $"<p>Waad ku mahadsan tahay soo booqashadaada Diiwaanka Xaqiijinta Tallaalka COVID-19 ee Dhijitaalka ah. Lifaaqa aad kula soo baxeyso koodhka diiwaanka tallaalka COVID-19 ayaa ansax ah oo shaqeynayo {linkExpireHours} saacadood. Marki la galo oo lagu keydiyo taleefankaaga, koodhka jawaabta degdegga ma dhacayo.</p>" +
@@ -673,7 +673,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Arag Macluumaadki ugu danbeeyey</a>  oo ku saabsan COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Iimeelka Rasmiga Ee Washington State Department of Health (Waaxda Caafimaadka Gobolka Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "sm" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Faamaumauga Faamaonia o le KOVITI-19'><br/>" +
                     $"<h3 style='color: #f06724'>Faamaumauga Faamaonia o le KOVITI-19</h3>" +
                     $"<p>Faafetai mo le asiasi mai i faamaumauga faamaonia o le KOVITI-19. O le fesootaiga e maua ai faamaumauga o le KOVITI-19 e {linkExpireHours} itula lona aoga. A maua uma faamatalaga, ia faamauina, lelei ma sefe i lau masini, o le QR code e mafai ona faaogaina e le toe muta.</p>" +
@@ -685,7 +685,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Silasila i faamatalaga lata mai</a> o le KOVITI-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Imeli aloaia a le Washington State Department of Health (Matagaluega o le Soifua Maloloina a le Setete o Uosigitone)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "pa" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡਿਕਾਰਡ'><br/>" +
                     $"<h3 style='color: #f06724'>ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡਿਕਾਰਡ</h3>" +
                     $"<p>ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡਿਕਾਰਡ ਸਿਸਟਮ 'ਤੇ ਆਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਤੁਹਾਡੇ ਕੋਵਿਡ-19 ਵੈਕਸੀਨ ਰਿਕਾਰਡ ਕੋਡ ਨੂੰ ਮੁੜ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਲਿੰਕ {linkExpireHours} ਘੰਟਿਆਂ ਲਈ ਵੈਧ ਹੈ। ਇੱਕ ਵਾਰ ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ ਐਕਸੈਸ ਕਰਨ ਅਤੇ ਸੁਰੱਖਿਅਤ ਹੋਣ ਤੋਂ ਬਾਅਦ, QR ਕੋਡ ਦੀ ਮਿਆਦ ਖ਼ਤਮ ਨਹੀਂ ਹੋਵੇਗੀ।</p>" +
@@ -697,7 +697,7 @@ namespace Application.Common
                     $"<p>ਕੋਵਿਡ-19 ਬਾਰੇੇ <a href='{covidWebUrl}'>ਨਵੀਨਤਮ ਜਾਣਕਾਰੀ ਵੇਖੋ</a></p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (ਵਾਸ਼ਿੰਗਟਨ ਸਟੇਟ ਸਿਹਤ ਵਿਭਾਗ) ਦਾ ਅਧਿਕਾਰਤ ਈਮੇਲ ਪਤਾ</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ps" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='د ډیجیټل COVID-19 تائید ثبت'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>د ډیجیټل COVID-19 تائید ثبت</h3>" +
                     $"<p dir='rtl'>د ډیجیټل COVID-19 تائید ثبت سیسټم لیدو لپاره ستاسو مننه. ستاسو د COVID-19 واکسین ثبت کوډ بیرته ترلاسه کولو لینک د {linkExpireHours} ساعتونو لپاره د اعتبار وړ دی. یوځل چې ستاسو وسیلې ته لاسرسی ولري او خوندي شي، نو د QR کوډ به پای ته ونه رسیږي.</p>" +
@@ -709,7 +709,7 @@ namespace Application.Common
                     $"<p dir='rtl'>دCOVID-19 په<a href='{covidWebUrl}'>اړه تازه معلومات وګورئ</a>.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>د واشنګټن ایالت د روغتیا ریاست (Washington State Department of Health) رسمي بریښنالیک</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ur" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</h3>" +
                     $"<p dir='rtl'>کووڈ-19 تصدیقی ریکارڈ کا سسٹم ملاحظہ کرنے کا شکریہ۔ کووڈ-19 ویکسین ریکارڈ کا کوڈ وصول کرنے کا لنک {linkExpireHours} گھنٹوں تک کام کرے گا۔ رسائی لے کر ڈیوائس میں محفوظ کرنے کے بعد کیو آر کوڈ کی میعاد ختم نہیں ہو گی۔</p>" +
@@ -721,7 +721,7 @@ namespace Application.Common
                     $"<p dir='rtl'>کووڈ-19 کے متعلق <a href='{covidWebUrl}'>تازہ ترین معلومات دیکھیں<a/> </p><br/>" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>Washington State Department of Health (ریاست واشنگٹن محکمۂ صحت) کی سرکاری ای میل</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ne" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड'><br/>" +
                     $"<h3 style='color: #f06724'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड</h3>" +
                     $"<p>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड प्रणाली हेर्नुभएको धन्यवाद। तपाईंको कोभिड-19 खोप रेकर्ड कोड पुनः प्राप्ति गर्ने लिङ्क {linkExpireHours} घण्टाको लागि मान्य छ। पहुँच गरेर तपाईंको यन्त्रमा बचत भइसकेपछि, QR कोडको म्याद समाप्त हुने छैन।</p>" +
@@ -733,7 +733,7 @@ namespace Application.Common
                     $"<p>कोभिड-19 बारे <a href='{covidWebUrl}'>नवीनतम जानकारी हेर्नुहोस्</a> ।</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>आधिकारिक Washington State Department of Health) वासिङ्गटन राज्यको स्वास्थ्य विभाग( को इमेल</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "mxb" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</h3>" +
                     $"<p>Kuta’avi sa ja ni nde’e ní Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19. Enlace tágua nani’in ní tutu vacuna COVID-19 ní tiñu ji nuu {linkExpireHours} hora. Tú ja ni kivi ní de ni tava’a ní nuu kaa ndichí ní, código QR ma koo tiñu ji.</p>" +
@@ -745,7 +745,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Kunde’e ní tu’un jáá ka</a> siki COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Correo Washington State Department of Health (DOH, Ve’e nuu jito ja Sa’a tátan ñuu Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "mh" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Iaaṃ Jarom COVID-19 Jaak Jeje'><br/>" +
                     $"<h3 style='color: #f06724'>Iaaṃ Jarom COVID-19 Jaak Jeje</h3>" +
                     $"<p>Koṃṃool erk bwe ilomej ko laam jarom COVID-19 jaak jeje kkar. Ko kkejel nan bok ami COVID-19 wa jeje ane ṃṃan bwe {linkExpireHours} awa. Juon iien ak kab lọmọọr nan ami tuuḷbọọk, ko QR kabro naaj jab ḷot.</p>" +
@@ -757,7 +757,7 @@ namespace Application.Common
                     $"<p> <a href='{covidWebUrl}'>Mmat ko rimwik kojjela</a>  ioo COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Wōpij Washington State Department of Health (Kutkutton konnaan jikuul in keenki) lota</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "mam" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’'><br/>" +
                     $"<h3 style='color: #f06724'>Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’</h3>" +
                     $"<p>Chjontay ma tz’oktz tq’olb’e’na jqeya qkloj te Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj jxk’utz’ib’. a enlace te tu’ ttiq’ay jte cheylakxta tej tx’u’j yab’ilo te COVID - 19 b’a’x teja toj jun q’ij b’ix jun qoniya mo toj { linkExpireHours} amb’il. Juxmaj uj ot tz’okxay ex ot ku’x tk’u’na toj jtey txk’utz’ib’, j - código QR ya mi kub’ najt.</p>" +
@@ -769,7 +769,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Ettiq’ay jq’umb’aj tumal ma’nxax nex q’umat</a>  tib’aj tx’u’j yab’il tej COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Correo electrónico te chqil Ja’ nik’ub’ aq’unt te Tb’anal xumlal tej Tnom te Washington [Washington State Department of Health, toj tyol me’x xjal] </p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "lo" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='ບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນ'><br/>" +
                     $"<h3 style='color: #f06724'>ບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນ</h3>" +
                     $"<p>ຂອບໃຈທີ່ເຂົ້າເບິ່ງລະບົບບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນ. ລິ້ງເພື່ອຮຽກຄົ້ນລະຫັດບັນທຶກວັກຊີນປ້ອງກັນ ພະຍາດ ໂຄວິດ-19 ຂອງທ່ານແມ່ນໃຊ້ໄດ້ພາຍໃນເວລາ {linkExpireHours} ຊົ່ວໂມງ. ເມື່ອເຂົ້າເຖິງ ແລະ ບັນທຶກໄວ້ໃນອຸປະກອນຂອງທ່ານແລ້ວ, ລະຫັດ QR ຈະບໍ່ໝົດອາຍຸ.</p>" +
@@ -781,7 +781,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>ເບິ່ງຂໍ້ມູນຫຼ້າສຸດ</a> ກ່ຽວກັບ ພະຍາດ ໂຄວິດ-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ອີເມວທາງການຂອງ Washington State Department of Health (ພະແນກ ສຸຂະພາບ)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "km" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='កំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឹ​ COVID-19 ជាទម្រង់​ឌីជីថល'><br/>" +
                     $"<h3 style='color: #f06724'>កំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឹ​ COVID-19 ជាទម្រង់​ឌីជីថល​</h3>" +
                     $"<p>អរគុណ​សម្រាប់​ការ​ចូល​​មកកាន់​ប្រព័ន្ធ​កំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឹ​ COVID-19 ជាទម្រង់​ឌីជីថល។​ តំណភ្ជាប់ដើម្បី​ទទួលបាន​មកវិញ​នូវ​កូដកំណត់ត្រា​វ៉ាក់សាំង​ជំងឺ​​ COVID-19 របស់អ្នក​ គឺ​មានសុពលភាព​រយៈពេល​ {linkExpireHours}ម៉ោង​។ កូដ QR នឹង​មិនផុត​សុពលភាព​ទេ​ នៅពេលបានចូលប្រើប្រាស់​និង​រក្សាទុក​ក្នុង​ឧបករណ៍​របស់អ្នក​។</p>" +
@@ -793,7 +793,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>ពិនិត្យមើលព័ត៌មានថ្មីៗ​បំផុត</a> ស្តីពីជំងឺ​ COVID-19។</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>អ៊ីម៉ែលផ្លូវការរបស់​ Washington State Department of Health (ក្រសួងសុខាភិបាល​រដ្ឋ​វ៉ាស៊ីនតោន)។</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "kar" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်ဆဲးကသံၣ်ဒီသဒၢတၢ်မၤနီၣ်မၤဃါ'><br/>" +
                     $"<h3 style='color: #f06724'>ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်ဆဲးကသံၣ်ဒီသဒၢတၢ်မၤနီၣ်မၤဃါ</h3>" +
                     $"<p>တၢ်ဘျုးလၢနလဲၤကွၢ် ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါ တၢ်မၤအ ကျဲသနူအဃိလီၤ. ပှာ်ဘျးစဲလၢနကဃုမၤန့ၢ်က့ၤန COVID-19 ကသံၣ်ဒီသဒၢတၢ်မၤနီၣ်မၤဃါ နီၣ်ဂံၢ် အံၤဖိးသဲစးလၢ {linkExpireHours} အဂီၢ်လီၤ. ဖဲနနုာ်လီၤမၤန့ၢ်ဒီးပာ်ကီၤဃာ်တၢ်လၢနပီးလီပူၤတစုန့ၣ်, QR နီၣ်ဂံၢ်န့ၣ်အဆၢကတီၢ် တလၢာ်ကွံာ်ဘၣ်.</p>" +
@@ -805,7 +805,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>ကွၢ်တၢ်ဂ့ၢ်တၢ်ကျိၤလၢခံကတၢၢ်</a> ဖဲ COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health(၀ၣ်ရှ့ၣ်တၢၣ်ကီၢ်စဲၣ်တၢ်အိၣ်ဆူၣ်အိၣ်ချ့ဝဲၤကျိၤ) အံမ့(လ)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "fj" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19</h3>" +
                     $"<p>Vinaka vakalevu na nomu sikova mai na iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19. Na isema mo rawa ni raica tale kina na na ivakadinadina ni veika e vauca na COVID-19 me baleti iko ena rawa ni vakayagataki ga ena loma ni {linkExpireHours} na aua. Ni sa laurai oti qai maroroi ina nomu kompiuta se talevoni, ena rawa ni vakayagataki tiko ga na QR code.</p>" +
@@ -817,7 +817,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Kila na itukutuku vou duadua ena veika e vauca</a>  na COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>iMeli ni Washington State Department of Health (Tabana ni Bula ena Vanua o Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "fa" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='نسخه دیجیتال گواهی واکسیناسیون COVID-19'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>نسخه دیجیتال گواهی واکسیناسیون COVID-19</h3>" +
                     $"<p dir='rtl'>بابت بازدید از سیستم «نسخه دیجیتال گواهی واکسیناسیون COVID-19»، از شما متشکریم. پیوند بازیابی کد گواهی واکسیناسیون COVID-19 شما به‌مدت {linkExpireHours} ساعت معتبر است. به‌محض اینکه کد QR را دریافت و آن را در دستگاهتان ذخیره کنید، این کد دیگر منقضی نمی‌شود.</p>" +
@@ -829,7 +829,7 @@ namespace Application.Common
                     $"<p dir='rtl'><a href='{covidWebUrl}'> جدیدترین اطلاعات</a>  مربوط به COVID-19 را مشاهده کنید.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>ایمیل رسمی Washington State Department of Health (اداره سلامت ایالت واشنگتن)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "prs" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='سابقه دیجیتل تصدیق کووید-19'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>سابقه دیجیتل تصدیق کووید-19</h3>" +
                     $"<p dir='rtl'>تشکر برای بازدید از سیستم سابقه دیجیتل تصدیق کووید-19. لینک دریافت مجدد کد سابقه واکسین کووید-19 برای {linkExpireHours} ساعت معتبر است. زمانی که دسترسی پیدا کرده و در دستگاه شما ذخیره گردید، کد پاسخ سریع منقضی نخواهد شد.</p>" +
@@ -841,7 +841,7 @@ namespace Application.Common
                     $"<p dir='rtl'><a href='{covidWebUrl}'>مشاهده آخرین معلومات</a>  درباره کووید-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>ایمیل رسمی Washington State Department of Health (اداره صحت عامه ایالت واشنگتن)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "chk" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Digital COVID-19 Afatan Record'><br/>" +
                     $"<h3 style='color: #f06724'>Digital COVID-19 Afatan Record</h3>" +
                     $"<p>Kinisou ren om tota won ewe Digital COVID-19 Afatean Record System. Ewe link ika anen kopwe tongeni angei noum code ren om kopwe kuna noum taropwen apposen COVID-19 echok eoch kopwe eaea non {linkExpireHours} awa. Ika pwe ka fen tonong ika a nom porausen noum we fon ika kamputer, ewe QR code esap muchuno manamanin.</p>" +
@@ -853,7 +853,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Katon minefon poraus</a> on COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>An Washington State Department of Health (Washington State Ofesin Pekin Safei) Email</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "my" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='ဒီဂျစ်တယ်လ် ကိုဗစ်-19 အတည်ပြုချက် မှတ်တမ်း'><br/>" +
                     $"<h3 style='color: #f06724'>ဒီဂျစ်တယ်လ် ကိုဗစ်-19 အတည်ပြုချက် မှတ်တမ်း</h3>" +
                     $"<p>ဒီဂျစ်တယ်လ် ကိုဗစ်-19 အတည်ပြုချက် မှတ်တမ်း စနစ် ကို ဝင်လေ့လာသည့်အတွက် ကျေးဇူးတင်ပါသည်။ သင့် ကိုဗစ်-19 ကာကွယ်ဆေး အတည်ပြုချက် ကုဒ် ကို ထုတ်ယူရန် လင့်ခ်မှာ {linkExpireHours} နာရီကြာ သက်တမ်းရှိပါသည်။ ဝင်သုံးပြီး သင့်ကိရိယာထဲတွင် သိမ်းဆည်းထားလျှင် ကျူအာ ကုဒ်သည် သက်တမ်းကုန်ဆုံးသွားလိမ့်မည် မဟုတ်ပါ။</p>" +
@@ -865,7 +865,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>နောက်ဆုံးအချက်အလက်များကို ကြည့်မည်</a> ကိုဗစ်-19 အကြောင်း</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>တရားဝင် Washington State Department of Health(ဝါရှင်တန် ပြည်နယ် ကျန်းမာရေး ဌာန) အီးမေးလ်</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "am" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='ዲጂታል የ COVID-19 ማረጋገጫ መዝገብ'><br/>" +
                     $"<h3 style='color: #f06724'>ዲጂታል የ COVID-19 ማረጋገጫ መዝገብ</h3>" +
                     $"<p>የዲጂታል COVID-19 ማረጋገጫ መዝገብ ስርዓትን ስለጎበኙ እናመሰግናለን። የእርስዎን የ COVID-19 ክትባት መዝገብ ኮድ ለማውጣት ያለው ሊንክ ለ {linkExpireHours} ሰዓታት ያገለግላል። አንዴ አግኝተውት ወደ መሳሪያዎ ካስቀመጡት፣ የ QR ኮድዎ ጊዜው አያበቃም።</p>" +
@@ -877,7 +877,7 @@ namespace Application.Common
                     $"<p>በ COVID-19 ላይ <a href='{covidWebUrl}'>የቅርብ ጊዜውን መረጃ ይመልከቱ</a> ።</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ይፋዊ የ Washington State Department of Health (የዋሺንግተን ግዛት የጤና መምሪያ) ኢሜይል</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "om" => $"<p>Mala Mirkaneessa Ragaa Dijitaalaa COVID-19 ilaaluu keessaniif galatoomaa. Liinkin ragaa talaallii COVID-19 keessan deebisanii argachuuf yookin seevii gochuuf gargaaru sa’aatii {linkExpireHours}’f hojjata. Meeshaa itti fayyadamtan (device) irratti argachuun danda’amee erga seevii ta’een booda, koodin QR yeroon isaa irra hin darbu.</p>" +
                     $"<p><a href='{url}'>Ragaa Taalaallii Ilaalaa</a></p>" +
                     $"<p>Waa’ee akkamitti akka  <a href='{cdcUrl}'>ofii fi namoota biroo eegdan</a> caalmatti Giddu Gala To’annoo fi Ittisa Dhibee (Centers for Disease Control and Prevention) sirraa baradhaa.</p>" +
@@ -887,7 +887,7 @@ namespace Application.Common
                     $"<p>COVID-19 ilaalchisee  <a href='{covidWebUrl}'>odeeffannoo haaraa ilaalaa</a>.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Imeelii seera qabeessa kan Muummee Fayyaa Naannoo Washingtan (Washington State Department of Health)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "to" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Digital COVID-19 Verification Record (Lēkooti Fakamo’oni Huhu Malu'i COVID-19)'><br/>" +
                     $"<h3 style='color: #f06724'>Digital COVID-19 Verification Record (Lēkooti Fakamo’oni Huhu Malu'i COVID-19)</h3>" +
                     $"<p>Mālō ho’o ‘a’ahi mai ki he fa’unga ko eni ‘oku tauhi ai ‘a e Lēkooti Fakamo’oni Huhu Malu’i COVID-19. Ko e link ke ma’u’aki ho’o lēkooti huhu malu’i COVID-19 ‘e ‘aonga ‘i he houa ‘e {linkExpireHours}. Ko ho’o ma’u pē mo tauhi ki ho’o me’angāué, he’ikai toe ta’e’aonga ‘a e QR code.</p>" +
@@ -899,7 +899,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Vakai ki he fakamatala fakamuimui tahá</a> ’i he COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>'Imeili Faka'ofisiale Washington State Department Of Health (Potungāue Mo’ui ‘a e Siteiti ‘o Uasingatoní)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ta" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='மின்னணு Covid-19 சரிபார்ப்புப் பதிவு'><br/>" +
                     $"<h3 style='color: #f06724'>மின்னணு Covid-19 சரிபார்ப்புப் பதிவு</h3>" +
                     $"<p>மின்னணு Covid-19 சரிபார்ப்புப் பதிவு முறையைப் பார்வையிட்டதற்கு நன்றி. உங்கள் Covid-19 தடுப்பூசி பதிவுக் குறியீட்டை மீட்டெடுப்பதற்கான இணைப்பு {linkExpireHours} மணிநேரத்திற்கு செல்லுபடியாகும். இணைப்பை அணுகி உங்கள் சாதனத்தில் சேமித்துவிட்டால், QR குறியீடு காலாவதியாகாது.</p>" +
@@ -911,7 +911,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>சமீபத்திய தகவலைப் பார்க்கவும்</a> Covid-19 பற்றி.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>அதிகாரப்பூர்வ Washington State Department of Health (வாஷிங்டன் மாநில சுகாதாரத் துறை) மின்னஞ்சல்</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "hmn" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj'><br/>" +
                     $"<h3 style='color: #f06724'>Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj</h3>" +
                     $"<p>Ua tsaug rau kev mus saib kev ua hauj lwm rau Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj. Txoj kab txuas nkag mus txhawm rau rub koj tus khauj ntaub ntawv sau tseg txog kev txheeb xyuas kab mob COVID-19 yog siv tau li {linkExpireHours} xuab moos. Thaum tau nkag mus thiab tau muab kaw cia rau koj lub xov tooj lawm, tus khauj QR yuav tsis paub tag sij hawm lawm.</p>" +
@@ -923,7 +923,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Saib cov ntaub ntawv tawm tshiab tshaj plaws</a> txog kab mob COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Tus Email Siv Raws Cai Ntawm Xeev Washington State Department of Health (Chav Hauj Lwm ntsig txog Kev Noj Qab Haus Huv)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "th" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='บันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัล'><br/>" +
                      $"<h3 style='color: #f06724'>บันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัล</h3>" +
                      $"<p>ขอขอบคุณที่เยี่ยมชมระบบบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัล ลิงก์การเรียกดูรหัสบันทึกการฉีดวัคซีนป้องกันโควิด-19 ของคุณมีอายุ {linkExpireHours} ชั่วโมง เมื่อคุณได้เข้าถึงและบันทึกลงในอุปกรณ์ของคุณแล้ว คิวอาร์โค้ดจะไม่หมดอายุ</p>" +
@@ -935,7 +935,7 @@ namespace Application.Common
                      $"<p><a href='{covidWebUrl}'>ดูข้อมูลล่าสุด</a> เกี่ยวกับโควิด-19</p><br/>" +
                      $"<hr>" +
                      $"<footer><p style='text-align:center'>อีเมลอย่างเป็นทางการของ Washington State Department of Health (กรมอนามัยของรัฐวอชิงตัน)</p>" +
-                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 _ => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Digital COVID-19 Verification Record'><br/>" +
                   $"<h3 style='color: #f06724'>Digital COVID-19 Verification Record</h3>" +
                   $"<p>Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 vaccine record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.</p>" +
@@ -947,7 +947,7 @@ namespace Application.Common
                   $"<p><a href='{covidWebUrl}'>View the latest information</a> on COVID-19.</p><br/>" +
                   $"<hr>" +
                   $"<footer><p style='text-align:center'>Official Washington State Department of Health e-mail</p>" +
-                  $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>"
+                  $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>"
             };
         }
 
@@ -1034,7 +1034,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> sobre la COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Salud del Estado de Washington</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "zh" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='数字 COVID-19 验证记录'><br/>" +
                     $"<h3 style='color: #f06724'>数字 COVID-19 验证记录</h3>" +
                     $"<p>您最近向 <a href='{webUrl}'>数字 COVID-19 验证记录系统</a> 请求过数字 COVID-19 验证记录。很遗憾，您提供的信息与州系统中的信息不符。</p><br/>" +
@@ -1045,7 +1045,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>查看 COVID-19 最新信息</a>。</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health （华盛顿州卫生部）官方电子邮件</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "zh-TW" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='數位 COVID-19 驗證記錄'><br/>" +
                     $"<h3 style='color: #f06724'>數位 COVID-19 驗證記錄</h3>" +
                     $"<p>您最近向 <a href='{webUrl}'>數位 COVID-19 驗證記錄系統</a> 請求過數位 COVID-19 驗證記錄。很遺憾，您提供的資訊與州系統中的資訊不符。</p><br/>" +
@@ -1056,7 +1056,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>檢視最新資訊</a>，與 COVID-19 密切相關的資訊。</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health （華盛頓州衛生部）官方電子郵件</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ko" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='디지털 COVID-19 인증 기록'><br/>" +
                     $"<h3 style='color: #f06724'>디지털 COVID-19 인증 기록</h3>" +
                     $"<p>귀하는 최근 <a href='{webUrl}'>디지털 COVID-19 인증 기록 시스템</a> 에 디지털 COVID-19 인증 기록을 요청하셨습니다. 유감스럽게도 귀하가 제공하신 정보는 주정부 시스템상 정보와 일치하지 않습니다.</p><br/>" +
@@ -1067,7 +1067,7 @@ namespace Application.Common
                     $"<p>COVID-19 관련 <a href='{covidWebUrl}'>최신 정보 보기</a></p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (워싱턴주 보건부) 공식 이메일</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "vi" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Hồ sơ Xác nhận COVID-19 kỹ thuật số'><br/>" +
                     $"<h3 style='color: #f06724'>Hồ sơ Xác nhận COVID-19 kỹ thuật số</h3>" +
                     $"<p>Gần đây bạn yêu cầu Hồ sơ Xác nhận COVID-19 kỹ thuật số từ <a href='{webUrl}'>hệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số</a>. Rất tiếc, thông tin mà bạn cung cấp không khớp với thông tin có trong hệ thống của tiểu bang.</p><br/>" +
@@ -1078,7 +1078,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Email chính thức của Washington State Department of Health (Sở Y Tế Tiểu Bang Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ar" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' dir='rtl' alt='سجل التحقق الرقمي من فيروس كوفيد-19'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>سجل التحقق الرقمي من فيروس كوفيد-19</h3>" +
                     $"<p dir='rtl'>لقد قمت مؤخرًا بطلب الحصول على سجل التحقق الرقمي من فيروس كوفيد-19 من <a href='{webUrl}'>نظام سجل التحقق الرقمي من فيروس كوفيد-19</a> (متوفر باللغة الإنجليزية فقط). ولكن للأسف، المعلومات التي قمت بتقديمها لا تتوافق مع المعلومات الموجودة على نظام الولاية.</p>" +
@@ -1092,7 +1092,7 @@ namespace Application.Common
                     
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>البريد الإلكتروني الرسمي الخاص بـ Washington State Department of Health (إدارة الصحة في ولاية واشنطن)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "tl" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</h3>" +
                     $"<p>Kamakailan kang humiling ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19 mula <a href='{webUrl}'>system ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</a>. Sa kasamaang-palad, hindi tumutugma ang ibinigay mong impormasyon sa impormasyong nasa system ng estado.</p><br/>" +
@@ -1103,7 +1103,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> tungkol sa COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Opisyal na Email ng Washington State Department of Health (Departamento ng Kalusugan ng Estado ng Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ru" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Цифровая запись о вакцинации от COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>Цифровая запись о вакцинации от COVID-19</h3>" +
                     $"<p>Недавно вы запросили цифровую запись о вакцинации от COVID-19 в <a href='{webUrl}'>системе штата</a>. К сожалению, предоставленная вами информация не совпадает с информацией в системе штата.</p><br/>" +
@@ -1114,7 +1114,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Получайте актуальную информацию</a> о COVID-19 .</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Официальный адрес электронной почты Washington State Department of Health (Департамент здравоохранения штата Вашингтон)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ja" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='COVID-19ワクチン接種電子記録'><br/>" +
                     $"<h3 style='color: #f06724'>COVID-19ワクチン接種電子記録</h3>" +
                     $"<p>あなたは<a href='{webUrl}'>COVID-19ワクチン接種電子記録システム</a>からCOVID-19ワクチン接種電子記録を依頼されましたが、入力された情報はワシントン州のシステムに登録されている情報と一致しません。</p><br/>" +
@@ -1125,7 +1125,7 @@ namespace Application.Common
                     $"<p>新型コロナ感染症について<a href='{covidWebUrl}'>最新情報を見る</a>。</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health（ワシントン州保健局）の公式電子メール</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "fr" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Attestation numérique de vaccination COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>Attestation numérique de vaccination COVID-19</h3>" +
                     $"<p>Vous avez récemment demandé une Attestation numérique de vaccination COVID-19 auprès du système d'<a href='{webUrl}'>Attestation numérique de vaccination COVID-19</a>. Malheureusement, les informations que vous avez fournies ne correspondent pas à celles qui figurent dans le système de l'État.</p><br/>" +
@@ -1136,7 +1136,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>E-mail officiel du Washington State Department of Health (ministère de la Santé de l'État de Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "tr" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Dijital COVID-19 Doğrulama Kaydı'><br/>" +
                     $"<h3 style='color: #f06724'>Dijital COVID-19 Doğrulama Kaydı</h3>" +
                     $"<p>Yakın zamanda <a href='{webUrl}'>Dijital COVID-19 Doğrulama Kaydı sisteminden</a> bir Dijital COVID-19 Doğrulama Kaydı istediniz. Maalesef verdiğiniz bilgiler eyalet sistemindeki bilgilerle eşleşmiyor.</p><br/>" +
@@ -1147,7 +1147,7 @@ namespace Application.Common
                     $"<p>COVID-19 <a href='{covidWebUrl}'>hakkında en güncel bilgileri görüntüleyin</a>.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Resmi Washington State Department of Health (Washington Eyaleti Sağlık Bakanlığı) E-postası</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "uk" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Електронний запис про підтвердження вакцинації від COVID-19'><br/>" +
                    $"<h3 style='color: #f06724'>Електронний запис про підтвердження вакцинації від COVID-19</h3>" +
                    $"<p>Нещодавно ви надіслали запит на отримання доступу до електронного запису про підтвердження вакцинації від COVID-19 у <a href='{webUrl}'>системі «Електронний запис про підтвердження вакцинації від COVID-19»</a>. На жаль, інформація, яку ви надали, не збігається з інформацією в державній системі.</p><br/>" +
@@ -1158,7 +1158,7 @@ namespace Application.Common
                    $"<p><a href='{covidWebUrl}'>Перегляньте найновішу інформацію</a> про COVID-19.</p><br/>" +
                    $"<hr>" +
                    $"<footer><p style='text-align:center'>Офіційна електронна адреса Washington State Department of Health (Департаменту охорони здоров’я штату Вашингтон)</p>" +
-                   $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                   $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ro" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Certificatul digital COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>Certificatul digital COVID-19</h3>" +
                     $"<p>Ați solicitat recent un certificat digital COVID-19 de la <a href='{webUrl}'>sistemul de certificate digitale COVID-19</a>. Din păcate, informațiile furnizate de dvs. nu corespund cu datele din sistemul de stat.</p><br/>" + 
@@ -1168,7 +1168,7 @@ namespace Application.Common
                     $"<p><b>Rămâneți informat.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>Vizualizați cele mai recente informații</a> referitoare la COVID-19.</p><br/>" +
                     $"<footer><p style='text-align:center'>Adresa de e-mail oficială a Washington State Department of Health (Departamentului de Sănătate al Statului Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "pt" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Comprovante digital de vacinação contra a COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>Comprovante digital de vacinação contra a COVID-19</h3>" +
                     $"<p>Recentemente, você solicitou um Comprovante digital de vacinação contra a COVID-19 do <a href='{webUrl}'>sistema de Comprovante digital de vacinação contra a COVID-19</a>. Infelizmente, as informações fornecidas não correspondem às informações em nosso sistema.</p><br/>" + 
@@ -1179,7 +1179,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Veja as informações mais recentes</a> sobre a COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>E-mail do representante oficial do Washington State Department of Health (Departamento de Saúde do estado de Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "hi" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='डिजिटल COVID-19 सत्यापन रिकॉर्ड'><br/>" +
                     $"<h3 style='color: #f06724'>डिजिटल COVID-19 सत्यापन रिकॉर्ड</h3>" +
                     $"<p>आपने हाल ही में <a href='{webUrl}'>डिजिटल COVID-19 सत्यापन रिकॉर्ड प्रणाली </a> से डिजिटल COVID-19 सत्यापन रिकॉर्ड का अनुरोध किया है। दुर्भाग्य से, आपके द्वारा प्रदान की गई जानकारी राज्य प्रणाली की जानकारी से मेल नहीं खाती है। </p><br/>" +
@@ -1190,7 +1190,7 @@ namespace Application.Common
                     $"<p>COVID-19 के बारे में <a href='{covidWebUrl}'>नवीनतम जानकारी देखें</a>। </p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (वाशिंगटन राज्य के स्वास्थ्य विभाग) का आधिकारिक ईमेल</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "de" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='COVID-19-Digitalzertifikat'><br/>" +
                     $"<h3 style='color: #f06724'>COVID-19-Digitalzertifikat</h3>" +
                     $"<p>Sie haben kürzlich ein COVID-19-Digitalzertifikat vom <a href='{webUrl}'>COVID-19-Digitalzertifikat-System</a> angefordert. Leider stimmen die von Ihnen gemachten Angaben nicht mit den Informationen im System des Bundesstaats überein.</p><br/>" +
@@ -1201,7 +1201,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Sehen Sie sich die neuesten Informationen</a> über COVID-19 an.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Offizielle E-Mail-Adresse des Washington State Department of Health (Gesundheitsministerium des Bundesstaates Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ti" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='ዲጂታላዊ ናይ ኮቪድ-19 ክታበት መረጋገጺ መዝገብ'><br/>" +
                     $"<h3 style='color: #f06724'>ዲጂታላዊ ናይ ኮቪድ-19 ክታበት መረጋገጺ መዝገብ</h3>" +
                     $"<p>ንስኹም ኣብ ቀረባ ግዜ ካብ <a href='{webUrl}'>ስርዓተ ዲጂታላዊ ናይ ኮቪድ-19 መረጋገጺ መዝገብ</a> ዲጂታላዊ ናይ ኮቪድ-19 ክታበት መረጋገጺ መዝገብ ሓቲትኩም። ኣጋጣሚ ኮይኑግን፡ እቲ ንስኹም ዝሃብክምዎ ሓበሬታ ከኣ ምስ’ቲ ኣብ ሲስተምና ዘሎ ሓበሬታ ኣይተሰማመዐን።</p>" +
@@ -1212,7 +1212,7 @@ namespace Application.Common
                     $"<p>ብዛዕባ ኮቪድ-19 <a href='{covidWebUrl}'>ናይ ቀረባ ግዜ ሓበሬታ ራኣዩ</a> ኢኹም።</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ወግዓዊ ናይ Washington State Department of Health (ክፍሊ ጥዕና ግዝኣት ዋሽንግተን) ኢ-መይል</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "te" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్'><br/>" +
                     $"<h3 style='color: #f06724'>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్</h3>" +
                     $"<p>మీరు ఇటీవల <a href='{webUrl}'>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్ సిస్టమ్ నుంచ</a> డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్​ని అభ్యర్ధించారు. దురదృష్టవశాత్తు, మీరు అందించిన సమాచారం స్టేట్ సిస్టమ్​లో సమాచారంతో జతకావడం లేదు.</p><br/>" +
@@ -1223,7 +1223,7 @@ namespace Application.Common
                     $"<p>కొవిడ్-19పై <a href='{covidWebUrl}'>తాజా సమాచారాన్ని వీక్షించండి</a>.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>అధికారిక Washington State Department of Health (వాషింగ్టన్ స్టేట్ డిపార్ట్​మెంట్ ఆఫ్ హెల్త్) ఇమెయిల్</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "sw" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19</h3>" +
                     $"<p>Hivi karibuni uliomba Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19 kutoka mfumo wa <a href='{webUrl}'>Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19</a>. Kwa bahati mbaya, maelezo uliyotoa hayalingani na maelezo yaliyopo kwenye mfumo wa jimbo.</a></p><br/>" +
@@ -1234,7 +1234,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Tazama maelezo ya hivi karibuni</a> kuhusu COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Barua pepe Rasmi ya Washington State Department of Health (Idara ya Afya katika Jimbo la Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "so" =>
                     $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Diiwaanka Xaqiijinta Tallaalka COVID-19 ee Dhijitaalka Ah'><br/>" +
                     $"<h3 style='color: #f06724'>Diiwaanka Xaqiijinta Tallaalka COVID-19 ee Dhijitaalka Ah</h3>" +
@@ -1246,7 +1246,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Arag Macluumaadki ugu danbeeyey</a>  oo ku saabsan COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Iimeelka Rasmiga Ee Washington State Department of Health (Waaxda Caafimaadka Gobolka Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "sm" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Faamaumauga Faamaonia o le KOVITI-19'><br/>" +
                     $"<h3 style='color: #f06724'>Faamaumauga Faamaonia o le KOVITI-19</h3>" +
                     $"<p>Sa e talosagaina talu ai nei ni faamaumauga faamaonia o le KOVITI-19 <a href='{webUrl}'>Polokalame o faamaumauga o le KOVITI-19</a>. E faamalie atu, o faamatalaga na e tuuina mai, e le tutusa ma faamaumauga i le polokalame a le setete </p><br/>" +
@@ -1257,7 +1257,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Silasila i faamatalaga lata mai</a> o le KOVITI-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Imeli aloaia a le Washington State Department of Health (Matagaluega o le Soifua Maloloina a le Setete o Uosigitone)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "pa" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ'><br/>" +
                     $"<h3 style='color: #f06724'>ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ</h3>" +
                     $"<p>ਤੁਸੀਂ ਹਾਲ ਹੀ ਵਿੱਚ <a href='{webUrl}'>ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਸਿਸਟਮ</a> ਤੋਂ ਇੱਕ ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਲਈ ਬੇਨਤੀ ਕੀਤੀ ਸੀ। ਬਦਕਿਸਮਤੀ ਨਾਲ, ਤੁਹਾਡੇ ਦੁਆਰਾ ਪ੍ਰਦਾਨ ਕੀਤੀ ਗਈ ਜਾਣਕਾਰੀ ਸਟੇਟ ਦੇ ਸਿਸਟਮ ਵਿੱਚ ਮੌਜੂਦ ਜਾਣਕਾਰੀ ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ। </p><br/>" +
@@ -1268,7 +1268,7 @@ namespace Application.Common
                     $"<p>ਕੋਵਿਡ-19 ਬਾਰੇ <a href='{covidWebUrl}'>ਨਵੀਨਤਮ ਜਾਣਕਾਰੀ ਵੇਖੋ</a></p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (ਵਾਸ਼ਿੰਗਟਨ ਸਟੇਟ ਸਿਹਤ ਵਿਭਾਗ) ਦਾ ਅਧਿਕਾਰਤ ਈਮੇਲ ਪਤਾ</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ps" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='د ډیجیټل COVID-19 تائید ثبت'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>د ډیجیټل COVID-19 تائید ثبت</h3>" +
                     $"<p dir='rtl'>تاسو پدې وروستیو کې <a href='{webUrl}'>د ډیجیټل COVID-19 تائید ثبت سیسټم څخه د ډیجیټل COVID-19 تائید ثبت غوښتنه کړې</a> . له بده مرغه، هغه معلومات چې تاسو چمتو کړي د دولتي سیسټم کې د معلوماتو سره سمون نلري. </p><br/>" +
@@ -1279,7 +1279,7 @@ namespace Application.Common
                     $"<p dir='rtl'>دCOVID-19 په<a href='{covidWebUrl}'>اړه تازه معلومات وګورئ</a>.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>د واشنګټن ایالت د روغتیا ریاست (Washington State Department of Health) رسمي بریښنالیک</p>" +
-                    $"<p dir='rtl' style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p dir='rtl' style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ur" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</h3>" +
                     $"<p dir='rtl'>آپ نے حال ہی میں <a href='{webUrl}'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ سسٹم</a> سے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کی درخواست کی ہے۔ بدقسمتی سے آپ کی فراہم کردہ معلومات ریاستی سسٹم میں موجود معلومات سے مماثلت نہیں رکھتی۔ </p><br/>" +
@@ -1290,7 +1290,7 @@ namespace Application.Common
                     $"<p dir='rtl'>کووڈ-19 کے متعلق <a href='{covidWebUrl}'>تازہ ترین معلومات دیکھیں</a></p><br/>" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>Washington State Department of Health (DOH، ریاست واشنگٹن محکمۂ صحت) کی سرکاری ای میل</p>" +
-                    $"<p dir='rtl' style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p dir='rtl' style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ne" =>
                     $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड'><br/>" +
                     $"<h3 style='color: #f06724'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड</h3>" +
@@ -1302,7 +1302,7 @@ namespace Application.Common
                     $"<p>कोभिड-19 बारे <a href='{covidWebUrl}'>नवीनतम जानकारी हेर्नुहोस्</a> ।</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>आधिकारिक Washington State Department of Health(वासिङ्गटन राज्यको स्वास्थ्य विभाग) को इमेल</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "mxb" =>
                     $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</h3>" +
@@ -1314,7 +1314,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Kunde’e ní tu’un jáá ka</a> siki COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Correo Washington State Department of Health (DOH, Ve’e nuu jito ja Sa’a tátan ñuu Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "mh" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Iaam jarom COVID-19 Jaak Jeje'><br/>" +
                     $"<h3 style='color: #f06724'>Iaam jarom COVID-19 Jaak Jeje</h3>" +
                     $"<p>Eok kiin jeṃaanḷọk kajjitōk a laam jarom COVID-19 jaak jeje jan <a href='{webUrl}'>ko Kaajai COVID-19 Wotom Jeje kkar</a>. jerata, ko melele eok naloma jerbal jab mājet melele for ko konnaan kkar. </p><br/>" +
@@ -1325,7 +1325,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Mmat ko rimwik kojjela</a> on COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Wōpij Washington State Department of Health (Kutkutton konnaan jikuul in keenki) lota</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "mam" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’'><br/>" +
                     $"<h3 style='color: #f06724'>Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’</h3>" +
                     $"<p>Ma’nxax nokx tqanay jun Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’ tej <a href='{webUrl}'>kloj te Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib' </a>. Aj nojsamay, jq’umb’aj tumal xi q’o’ mi nel joniy tuya jq’umb’aj tumal toj jqeya qkloj te xk’utz’ib’. </ p >< br /> " +
@@ -1336,7 +1336,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Ettiq’ay jq’umb’aj tumal ma’nxax nex q’umat</a>  tib’aj tx’u’j yab’il tej COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Correo electrónico te chqil Ja’ nik’ub’ aq’unt te Tb’anal xumlal tej Tnom te Washington [Washington State Department of Health, toj tyol me’x xjal] </p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "lo" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='ບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນ'><br/>" +
                     $"<h3 style='color: #f06724'>ບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນ</h3>" +
                     $"<p>ເມື່ອບໍ່ດົນມານີ້ທ່ານໄດ້ຮ້ອງຂໍບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນ <a href='{webUrl}'>ລະບົບບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນ</a>. ໂຊກບໍ່ດີ, ຂໍ້ມູນທີ່ທ່ານສະໜອງໃຫ້ບໍ່ກົງກັບຂໍ້ມູນຢູ່ໃນລະບົບຂອງລັດ. </p><br/>" +
@@ -1347,7 +1347,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>ເບິ່ງຂໍ້ມູນຫຼ້າສຸດ</a> ກ່ຽວກັບ ພະຍາດ ໂຄວິດ-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ອີເມວທາງການຂອງ Washington State Department of Health (ພະແນກ ສຸຂະພາບ)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "km" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='កំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឹ​ COVID-19 ជាទម្រង់​ឌីជីថល'><br/>" +
                     $"<h3 style='color: #f06724'>កំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឹ​ COVID-19 ជាទម្រង់​ឌីជីថល​</h3>" +
                     $"<p>ថ្មីៗនេះ​ អ្នក​បានស្នើសុំកំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឹ​ COVID-19 ជាទម្រង់​ឌីជីថលពី <a href='{webUrl}'>ប្រព័ន្ធ​កំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឺ​ COVID-19 ជាទម្រង់​ឌីជីថល​។</a> គួរឲ្យសោកស្តាយ ព័ត៌មានដែលអ្នក​បានផ្តល់ជូននោះ​ មិនត្រូវគ្នា​ជាមួយ​​នឹង​ព័ត៌មានក្នុង​ប្រព័ន្ធរបស់រដ្ឋ​​យើង​ទេ​។ </p><br/>" +
@@ -1358,7 +1358,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>ពិនិត្យមើលព័ត៌មានថ្មីៗ​បំផុត​</a> ស្តីពីជំងឺ​ COVID-19។</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>អ៊ីម៉ែលផ្លូវការរបស់​ Washington State Department of Health (ក្រសួងសុខាភិបាល​រដ្ឋ​វ៉ាស៊ីនតោន)។</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "kar" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါ'><br/>" +
                     $"<h3 style='color: #f06724'>ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါ</h3>" +
                     $"<p>ဖဲတယံာ်ဒံးဘၣ်နဃ့ထီၣ် ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါ လၢ <a href='{webUrl}'>ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါတၢ်မၤအကျဲသနူ</a> လၢတၢ်တဘူၣ်ဂ့ၤတီၢ်ဘၣ်အပူၤ, တၢ်ဂ့ၢ်တၢ်ကျိၤလၢနဟ့ၣ်လီၤအံၤ တဘၣ်လိာ်ဒီးတၢ်ဂ့ၢ် တၢ်ကျိၤလၢကီၢ်စဲၣ်တၢ်မၤအကျဲသနူအပူၤဘၣ်. </p><br/>" +
@@ -1369,7 +1369,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>ကွၢ်တၢ်ဂ့ၢ်တၢ်ကျိၤလၢခံကတၢၢ်</a> ဘၣ်ဃးဒီး COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>၀ၣ် Washington State Department of Health (ရှ့ၣ်တၢၣ်ကီၢ်စဲၣ်တၢ်အိၣ်ဆူၣ်အိၣ်ချ့ဝဲၤကျိၤ)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "fj" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19</h3>" +
                     $"<p>O se qai kerea ga na iVolatukutuku Vakalivaliva e vakadeitaka ni o sa Cula ena icula ni COVID-19 mai na <a href='{webUrl}'>misini ni iVolatukutuku Vakalivaliva e vakadeitaka ni o sa Cula ena icula ni COVID-19</a> . Na itukutuku oni vakarautaka e sega ni tautauvata kei na kena e maroroi tu ena matanitu. </p><br/>" +
@@ -1380,7 +1380,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Kila na itukutuku vou duadua ena veika e vauca</a>  na COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>iMeli ni Washington State Department of Health (Tabana ni Bula ena Vanua o Washington)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "fa" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='نسخه دیجیتال گواهی واکسیناسیون COVID-19'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>نسخه دیجیتال گواهی واکسیناسیون COVID-19</h3>" +
                     $"<p dir='rtl'>شما به‌تازگی «نسخه دیجیتال گواهی واکسیناسیون COVID-19» را از <a href='{webUrl}'>سیستم نسخه دیجیتال گواهی واکسیناسیون COVID-19</a>  درخواست کرده‌اید. متأسفانه، اطلاعاتی که ارائه کرده‌اید با اطلاعات موجود در سیستم ایالتی مطابقت ندارد. </p><br/>" +
@@ -1391,7 +1391,7 @@ namespace Application.Common
                     $"<p dir='rtl'><a href='{covidWebUrl}'>جدیدترین اطلاعات</a>  مربوط به COVID-19 را مشاهده کنید.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>ایمیل رسمی Washington State Department of Health (اداره سلامت ایالت واشنگتن)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "prs" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='سابقه دیجیتل تصدیق کووید-19'><br/>" +
                     $"<h3 dir='rtl' style='color: #f06724'>سابقه دیجیتل تصدیق کووید-19</h3>" +
                     $"<p dir='rtl'>شما به تازگی فورم سابقه دیجیتل تصدیق کووید-19 را درخواست کردید <a href='{webUrl}'>سیستم سابقه دیجیتل تصدیق کووید-19</a> . متاسفانه، اطلاعاتی که شما ارائه نمودید با اطلاعات سیستم کشور مطابقت ندارد. </p><br/>" +
@@ -1402,7 +1402,7 @@ namespace Application.Common
                     $"<p dir='rtl'><a href='{covidWebUrl}'>مشاهده آخرین معلومات</a>  درباره کووید-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>ایمیل رسمی Washington State Department of Health (اداره صحت ایالت واشنگتن)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "chk" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Digital COVID-19 Afatan Record'><br/>" +
                     $"<h3 style='color: #f06724'>Digital COVID-19 Afatan Record</h3>" +
                     $"<p>Ke Keran chok tungor ew Digital COVID-19 Verification Record seni <a href='{webUrl}'>ewe Digital COVID-19 Verification Record system</a>. Nge, ewe poraus ke awora ese mes ngeni met poraus mi nom non an state ei system ika nenien aisois. </p><br/>" +
@@ -1413,7 +1413,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Katon minefon poraus</a> on COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>An Washington State Department of Health (Washington State Ofesin Pekin Safei) Email</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "my" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='ဒီဂျစ်တယ်လ် ကိုဗစ်-19 အတည်ပြုချက် မှတ်တမ်း'><br/>" +
                     $"<h3 style='color: #f06724'>ဒီဂျစ်တယ်လ် ကိုဗစ်-19 အတည်ပြုချက် မှတ်တမ်း</h3>" +
                     $"<p>မကြာသေးမီက သင်သည် <a href='{webUrl}'>ဒီဂျစ်တယ်လ် ကိုဗစ်-19 အတည်ပြုချက် မှတ်တမ်း စနစ်</a>  ထံမှ ဒီဂျစ်တယ်လ် ကိုဗစ်-19 အတည်ပြုချက် မှတ်တမ်း တစ်ခုကို တောင်းဆိုခဲ့ပါသည်။ ကံမကောင်းစွာဖြင့် သင်ပေးထားသော အချက်အလက်သည် ကျွန်ုပ်တို့ ပြည်နယ်စနစ်အတွင်းရှိ အချက်အလက် နှင့် ကိုက်ညီမှုမရှိပါ။ </p><br/>" +
@@ -1424,7 +1424,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>နောက်ဆုံးအချက်အလက်များကို ကြည့်မည်</a> ကိုဗစ်-19 အကြောင်း</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (တရားဝင် ဝါရှင်တန် ပြည်နယ် ကျန်းမာရေး ဌာန အီးမေးလ်)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "am" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='ዲጂታል የ COVID-19 ማረጋገጫ መዝገብ'><br/>" +
                     $"<h3 style='color: #f06724'>ዲጂታል የ COVID-19 ማረጋገጫ መዝገብ</h3>" +
                     $"<p>በቅርቡ ከ<a href='{webUrl}'>ዲጂታል የ COVID-19 ማረጋገጫ መዝገብ ስርዓት</a>  ዲጂታል የ COVID-19 ማረጋገጫ መዝገብ ጠይቀዋል። እንደ አለመታደል ሆኖ ያቀረቡት መረጃ በግዛቱ ሲስተም ውስጥ ካለው መረጃ ጋር አይዛመድም። </p><br/>" +
@@ -1435,7 +1435,7 @@ namespace Application.Common
                     $"<p>በ COVID-19 ላይ <a href='{covidWebUrl}'>የቅርብ ጊዜውን መረጃ ይመልከቱ</a> ።</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ይፋዊ የ Washington State Department of Health (የዋሺንግተን ግዛት የጤና መምሪያ) ኢሜይል</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "om" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Mirkaneessa Ragaa Dijitaalaa COVID-19'><br/>" +
                     $"<h3 style='color: #f06724'>Mirkaneessa Ragaa Dijitaalaa COVID-19</h3>" +
                     $"<p>Dhiyeenyatti <a href='{webUrl}'>Mala Mirkaneessa Ragaa Dijitaalaa COVID-19</a> irraa Ragaa Mirkaneessa Dijitaalaa COVID-19 gaafattaniirtu. Akka carraa ta’ee, odeeffannoon isin laattan kan siistama keenya keessa jiruun wal hin simu. </p><br/>" +
@@ -1446,7 +1446,7 @@ namespace Application.Common
                     $"<p>COVID-19 ilaalchisee  <a href='{covidWebUrl}'>odeeffannoo haaraa ilaalaa</a>.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Imeelii seera qabeessa kan Muummee Fayyaa Isteeta Washingtan (Washington State Department of Health)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "to" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Digital COVID-19 Verification Record (Lēkooti Fakamo’oni Huhu Malu'i COVID-19)'><br/>" +
                     $"<h3 style='color: #f06724'>Digital COVID-19 Verification Record (Lēkooti Fakamo’oni Huhu Malu'i COVID-19)</h3>" +
                     $"<p>Na’a ke toki kolé ni mai ‘a e foomu Lēkooti Fakamo’oni ho’o Huhu Malu’i COVID-19 meí he <a href='{webUrl}'>fa’unga tauhi Lēkooti Fakamo’oni ki he Huhu Malu’i COVID-19</a>. Me’apango, ko e fakamatala ‘oku ke ‘omí ‘oku ‘ikai tatau ia mo e fakamatala ‘oku mau tauhí. </p><br/>" +
@@ -1457,7 +1457,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Vakai ki he fakamatala fakamuimui tahá</a> ’i he COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>'Imeili Faka'ofisiale Washington State Department Of Health (Potungāue Mo’ui ‘a e Siteiti ‘o Uasingatoní)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ta" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='மின்னணு Covid-19 சரிபார்ப்புப் பதிவு'><br/>" +
                     $"<h3 style='color: #f06724'>மின்னணு Covid-19 சரிபார்ப்புப் பதிவு</h3>" +
                     $"<p>சமீபத்தில் <a href='{webUrl}'>மின்னணு Covid-19 சரிபார்ப்புப் பதிவு அமைப்பிலிருந்த</a> மின்னணு Covid-19 சரிபார்ப்புப் பதிவைக் கோரியுள்ளீர்கள். துரதிர்ஷ்டவசமாக, நீங்கள் வழங்கிய தகவல் மாநில அமைப்பில் உள்ள தகவலுடன் பொருந்தவில்லை. </p><br/>" +
@@ -1468,7 +1468,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>சமீபத்திய தகவலைப் பார்க்கவும</a> Covid-19 இல்.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>அதிகாரப்பூர்வ Washington State Department of Health (வாஷிங்டன் மாநில சுகாதாரத் துறை) மின்னஞ்சல்</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "hmn" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj'><br/>" +
                     $"<h3 style='color: #f06724'>Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj</h3>" +
                     $"<p>Tsis ntev los no koj tau thov Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj los ntawm <a href='{webUrl}'>kev ua hauj lwm rau Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj</a>. Hmoov tsis zoo, cov ntaub ntawv uas koj tau muab tsis raug raws li cov ntaub ntawv uas nyob rau hauv xeev txheej teg kev ua hauj lwm. </p><br/>" +
@@ -1479,7 +1479,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>Saib cov ntaub ntawv tawm tshiab tshaj plaws</a> txog kab mob COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Tus Email Siv Raws Cai Ntawm Xeev Washington State Department of Health (Chav Hauj Lwm ntsig txog Kev Noj Qab Haus Huv)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "th" => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='บันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัล '><br/>" +
                     $"<h3 style='color: #f06724'>บันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัล </h3>" +
                     $"<p>คุณเพิ่งขอบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัลจาก<a href='{webUrl}'>ระบบบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัล</a> ขออภัย ข้อมูลที่คุณให้ไม่ตรงกับข้อมูลในระบบของรัฐ </p><br/>" +
@@ -1490,7 +1490,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>ดูข้อมูลล่าสุด</a> เกี่ยวกับโควิด-19</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>อีเมลอย่างเป็นทางการของ Washington State Department of Health (กรมอนามัยของรัฐวอชิงตัน)</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>",
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 _ => $"<img src='{webUrl}/imgs/MyTurn-logo.png' alt='Digital COVID-19 Verification Record'><br/>" +
                     $"<h3 style='color: #f06724'>Digital COVID-19 Verification Record</h3>" +
                     $"<p>You recently requested a Digital COVID-19 Verification Record from the <a href='{webUrl}'>Digital COVID-19 Verification Record system</a>. Unfortunately, the information you provided does not match information in the state system. " +
@@ -1501,7 +1501,7 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>View the latest information</a> on COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Official Washington State Department of Health e-mail</p>" +
-                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington Department of Health Logo'></p></footer>"
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>"
             };
         }
 
