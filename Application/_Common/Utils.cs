@@ -51,7 +51,10 @@ namespace Application.Common
             { "227", "Moderna" },
             { "221", "Moderna" },
             { "225", "Sanofi Pasteur" },
-            { "226", "Sanofi Pasteur" }
+            { "226", "Sanofi Pasteur" },
+            { "229", "Moderna" },
+            { "300", "Pfizer" },
+            { "301", "Pfizer" }
         }.ToImmutableDictionary();
 
         private static AppSettings _appSettings;
@@ -265,7 +268,7 @@ namespace Application.Common
                         var message = new SendGridMessage();
                         message.AddTo(emailRecipient, $"{UppercaseFirst(request.FirstName)} {UppercaseFirst(request.LastName)}");
                         message.SetFrom(_sendGridSettings.SenderEmail, _sendGridSettings.Sender);
-                        message.SetSubject("Digital COVID-19 Vaccine Record");
+                        message.SetSubject("Digital COVID-19 Verification Record");
                         message.PlainTextContent = FormatNotFoundSms(request.Language, _appSettings.SupportPhoneNumber);
                         message.HtmlContent = FormatNotFoundHtml(request.Language, _appSettings.WebUrl, _appSettings.ContactUsUrl, _appSettings.VaccineFAQUrl, _appSettings.CovidWebUrl, _appSettings.EmailLogoUrl);
                         await _emailService.SendEmailAsync(message, emailRecipient, request.Id);
@@ -949,8 +952,8 @@ namespace Application.Common
                      $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 _ => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><br/>" +
                   $"<h1 style='color: #C84C0E'>Digital COVID-19 Verification Record</h1>" +
-                  $"<p>Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 vaccine record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.</p>" +
-                  $"<p><a href='{url}'>View Vaccine Record</a></p>" +
+                  $"<p>Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 verification record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.</p>" +
+                  $"<p><a href='{url}'>View Verification Record</a></p>" +
                   $"<p>Learn more about how to <a href='{cdcUrl}'>protect yourself and others</a> from the Centers for Disease Control and Prevention.</p>" +
                   $"<p><b>Have questions?</b></p>" +
                   $"<p>Visit our <a href='{vaccineFAQUrl}'>(FAQ)</a> page to learn more about your Digital COVID-19 Verification Record.</p>" +
