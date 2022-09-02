@@ -51,7 +51,10 @@ namespace Application.Common
             { "227", "Moderna" },
             { "221", "Moderna" },
             { "225", "Sanofi Pasteur" },
-            { "226", "Sanofi Pasteur" }
+            { "226", "Sanofi Pasteur" },
+            { "229", "Moderna" },
+            { "300", "Pfizer" },
+            { "301", "Pfizer" }
         }.ToImmutableDictionary();
 
         private static AppSettings _appSettings;
