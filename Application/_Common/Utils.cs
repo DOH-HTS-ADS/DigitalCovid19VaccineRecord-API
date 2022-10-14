@@ -956,7 +956,7 @@ namespace Application.Common
                   $"<p><a href='{url}'>View Verification Record</a></p>" +
                   $"<p>Learn more about how to <a href='{cdcUrl}'>protect yourself and others</a> from the Centers for Disease Control and Prevention.</p>" +
                   $"<p><b>Have questions?</b></p>" +
-                  $"<p>Visit our <a href='{vaccineFAQUrl}'>(FAQ)</a> page to learn more about your Digital COVID-19 Verification Record.</p>" +
+                  $"<p>Visit our <a href='{vaccineFAQUrl}'>Frequently Asked Questions (FAQ)</a> page to learn more about your Digital COVID-19 Verification Record.</p>" +
                   $"<p><b>Stay Informed.</b></p>" +
                   $"<p><a href='{covidWebUrl}'>View the latest information</a> on COVID-19.</p><br/>" +
                   $"<hr>" +
@@ -1509,7 +1509,7 @@ namespace Application.Common
                     $"<p>You recently requested a Digital COVID-19 Verification Record from the <a href='{webUrl}'>Digital COVID-19 Verification Record system</a>. Unfortunately, the information you provided does not match information in the state system. " +
                     $"<p>You can submit another request in the <a href='{webUrl}'>Digital COVID-19 Verification Record system</a> with a different mobile phone number or email address, you can <a href='{contactUsUrl}'>contact us</a> for help in matching your record to your contact information, or you can contact your provider to ensure your information has been submitted to the state system.</p>" +
                     $"<p><b>Have questions?</b></p>" +
-                    $"<p>Visit our Frequently Asked Questions <a href='{vaccineFAQUrl}'>(FAQ)</a> page to learn more about your Digital COVID-19 Verification Record.</p>" +
+                    $"<p>Visit our <a href='{vaccineFAQUrl}'>Frequently Asked Questions (FAQ)</a> page to learn more about your Digital COVID-19 Verification Record.</p>" +
                     $"<p><b>Stay Informed.</b></p>" +
                     $"<p><a href='{covidWebUrl}'>View the latest information</a> on COVID-19.</p><br/>" +
                     $"<hr>" +
