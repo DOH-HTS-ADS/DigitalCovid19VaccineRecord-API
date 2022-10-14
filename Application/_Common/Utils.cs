@@ -467,7 +467,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>查看疫苗记录</a></p>" +
                     $"<p>从 Centers for Disease Control and Prevention（CDC，疾病控制与预防中心）了解更多关于如何<a href='{cdcUrl}'>保护自己和他人</a> 的相关信息。</p>" +
                     $"<p><b>仍有疑问？</b></p>" +
-                    $"<p>请访问我们的常见问题解答 (<a href='{vaccineFAQUrl}'>FAQ</a>) 页面，以了解有关您的数字 COVID-19 疫苗记录的更多信息。</p>" +
+                    $"<p>请访问我们的<a href='{vaccineFAQUrl}'>常见问题解答 (FAQ)</a> 页面，以了解有关您的数字 COVID-19 疫苗记录的更多信息。</p>" +
                     $"<p><b>保持关注。</b></p>" +
                     $"<p><a href='{covidWebUrl}'>查看 COVID-19 最新信息</a>。</p><br/>" +
                     $"<hr>" +
@@ -1054,7 +1054,7 @@ namespace Application.Common
                     $"<p>您最近向 <a href='{webUrl}'>数字 COVID-19 验证记录系统</a> 请求过数字 COVID-19 验证记录。很遗憾，您提供的信息与州系统中的信息不符。</p><br/>" +
                     $"<p>您可以使用不同的手机号码或电子邮件地址在 <a href='{webUrl}'>数字 COVID-19 验证记录</a> 系统中提交另一个请求，您还可以 <a href='{contactUsUrl}'>联系我们</a> 寻求帮助，将您的记录与您的联系信息进行匹配，或者您可以联系您的医疗保健提供者以确保您的信息已提交至州系统。</p>" +
                     $"<p><b>仍有疑问？</b></p>" +
-                    $"<p>请访问我们的常见问题解答 (<a href='{vaccineFAQUrl}'>FAQ</a>) 页面，以了解有关您的数字 COVID-19 验证记录的更多信息。</p>" +
+                    $"<p>请访问我们的<a href='{vaccineFAQUrl}'>常见问题解答 (FAQ)</a> 页面，以了解有关您的数字 COVID-19 验证记录的更多信息。</p>" +
                     $"<p><b>保持关注。</b></p>" +
                     $"<p><a href='{covidWebUrl}'>查看 COVID-19 最新信息</a>。</p><br/>" +
                     $"<hr>" +
