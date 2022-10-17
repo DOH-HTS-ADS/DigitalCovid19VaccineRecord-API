@@ -1,11 +1,10 @@
+﻿/****** Object:  StoredProcedure [dbo].[GetVaccineCredentialStatusRelaxed]    Script Date: 9/22/2022 2:24:57 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-
-ALTER   PROC [dbo].[GetVaccineCredentialStatusRelaxed] @FirstName [NVARCHAR](160),@LastName [NVARCHAR](160),@DateOfBirth [NVARCHAR](50),@PhoneNumber [NVARCHAR](50),@EmailAddress [NVARCHAR](256) AS
-
+CREATE OR ALTER   PROC [dbo].[GetVaccineCredentialStatusRelaxed] @FirstName [NVARCHAR](160),@LastName [NVARCHAR](160),@DateOfBirth [NVARCHAR](50),@PhoneNumber [NVARCHAR](50),@EmailAddress [NVARCHAR](256) AS
 BEGIN
 	SET NOCOUNT ON;
 	BEGIN TRY
@@ -151,13 +150,10 @@ BEGIN
                     WHEN [MatchValue] & @match7 = @match7 THEN 7
                     WHEN [MatchValue] & @match8 = @match8 THEN 8
                     WHEN [MatchValue] & @match9 = @match9 THEN 9
-
-                    ELSE -1
+                    ELSE NULL
                     END
             FROM bitmask
            WHERE [MatchValue] <> 0
-		   UNION SELECT NULL, -1
-
                )
 
           , rankedRslt
