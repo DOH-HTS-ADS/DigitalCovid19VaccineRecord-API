@@ -54,7 +54,9 @@ namespace Application.Common
             { "226", "Sanofi COVID-19 (Non-US)" },
             { "229", "Moderna COVID-19 mRNA Bivalent" },
             { "300", "Pfizer COVID-19 mRNA Bivalent" },
-            { "301", "Pfizer COVID-19 mRNA Bivalent" }
+            { "301", "Pfizer COVID-19 mRNA Bivalent" },
+            { "230", "Moderna COVID-19 mRNA Bivalent" },
+            { "302", "Pfizer COVID-19 mRNA Bivalent" }
         }.ToImmutableDictionary();
 
         private static AppSettings _appSettings;
