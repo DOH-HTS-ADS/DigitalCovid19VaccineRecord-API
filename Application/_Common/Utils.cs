@@ -828,7 +828,7 @@ namespace Application.Common
                     $"<p><a href='{url}'><a href='{url}'>Raica na iVolatukutuku ni veika e vauca na iCula<a href='{url}'></a></p>" +
                     $"<p>Vulica e levu tale na tikina ena sala mo <a href='{cdcUrl}'>taqomaki iko kina vei ira eso tale</a>  mai na Centers for Disease Control and Prevention (Tabana ni Tatarovi kei na Veitaqomaki mai na Mate).</p>" +
                     $"<h2>Taro?</h2>" +
-                    $"<p>Rai ena tabana e tiko kina na Taro e Tarogi Wasoma <a href='{vaccineFAQUrl}'>(FAQ)</a>  mo kila e levu tale na tikina e vauca na iVolatukutuku Vakalivaliva ni Veika e Vauca na COVID-19.</p>" +
+                    $"<p>Rai ena tabana e tiko kina na <a href='{vaccineFAQUrl}'>Taro e Tarogi Wasoma (FAQ)</a>  mo kila e levu tale na tikina e vauca na iVolatukutuku Vakalivaliva ni Veika e Vauca na COVID-19.</p>" +
                     $"<h2>Mo Kila na Veika e Yaco Tiko.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Kila na itukutuku vou duadua ena veika e vauca</a>  na COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1390,7 +1390,7 @@ namespace Application.Common
                     $"<p>O se qai kerea ga iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19mai na <a href='{webUrl}'>misini ni iVolatukutuku Vakalivaliva ni iVakadinadina ni Veika e Vauca na COVID-19</a>. Na itukutuku oni vakarautaka e sega ni tautauvata kei na kena e maroroi tu ena matanitu.</p><br/>" +
                     $"<p>Oni rawa ni vakauta tale mai e dua kerekere ena <a href='{webUrl}'>iVolatukutuku ni iVakadinadina ni Veika e Vauca na COVID-19</a> ena dua tale na naba ni talevoni se imeli, o rawa ni <a href='{contactUsUrl}'>veitaratara kei keitou</a> me rawa ni keitou veivuke me salavata na itukutuku o vakarautaka kei na itukutuku ni veitaratara me baleti iko e tiko vei keitou, se o rawa ni veitaratara ina vanua o lai laurai kina mo taroga ke sa maroroi ina matanitu na kemu itukutuku.</p>" +
                     $"<h2>Taro?</h2>" +
-                    $"<p>Rai ena tabana e tiko kina na Taro e Tarogi Wasoma (<a href='{vaccineFAQUrl}'>FAQ</a>) mo kila e levu tale na tikina e vauca na iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19.</p>" +
+                    $"<p>Rai ena tabana e tiko kina na <a href='{vaccineFAQUrl}'>Taro e Tarogi Wasoma (FAQ)</a> mo kila e levu tale na tikina e vauca na iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19.</p>" +
                     $"<h2>Mo Kila na Veika e Yaco Tiko.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Kila na itukutuku vou duadua ena veika e vauca</a>  na COVID-19.</p><br/>" +
                     $"<hr>" +
