@@ -577,7 +577,7 @@ namespace Application.Common
                    $"<p><a href='{url}'>Aşı Kaydını Görüntüleyin</a></p>" +
                    $"<p><a href='{cdcUrl}'>Kendinizi ve sevdiklerinizi nasıl koruyacağınızı</a> Centers for Disease Control and Prevention (CDC, Hastalık Kontrol ve Korunma Merkezleri)'nden öğrenebilirsiniz.</p>" +
                    $"<h2>Sorularınız mı var?</h2>" +
-                   $"<p>Dijital COVID-19 Aşı Kaydınız hakkında daha fazla bilgi almak için Sıkça Sorulan Sorular <a href='{vaccineFAQUrl}'>(SSS)</a> bölümümüzü ziyaret edin.</p>" +
+                   $"<p>Dijital COVID-19 Aşı Kaydınız hakkında daha fazla bilgi almak için <a href='{vaccineFAQUrl}'>Sıkça Sorulan Sorular (SSS)</a> bölümümüzü ziyaret edin.</p>" +
                    $"<h2>Güncel bilgilere sahip olun.</h2>" +
                    $"<p>COVID-19 <a href='{covidWebUrl}'>hakkında en güncel bilgileri görüntüleyin</a>.</p><br/>" +
                    $"<hr>" +
@@ -1158,7 +1158,7 @@ namespace Application.Common
                     $"<p>Yakın zamanda <a href='{webUrl}'>Dijital COVID-19 Doğrulama Kaydı sisteminden</a> bir Dijital COVID-19 Doğrulama Kaydı istediniz. Maalesef verdiğiniz bilgiler eyalet sistemindeki bilgilerle eşleşmiyor.</p><br/>" +
                     $"<p><a href='{webUrl}'>Dijital COVID-19 Doğrulama Kaydı</a> sisteminden farklı bir cep telefonu numarası ya da e-posta adresi ile başka bir istekte bulabilir, kaydınızı iletişim bilgilerinizle eşleştirme konusunda yardım almak için <a href='{contactUsUrl}'>bize ulaşabilir</a> ya da bilgilerinizin eyalet sistemine gönderildiğinden emin olmak için sağlayıcınızla iletişime geçebilirsiniz.</p>" +
                     $"<h2>Sorularınız mı var?</h2>" +
-                    $"<p>Dijital COVID-19 Doğrulama Kaydı’nız hakkında daha fazla bilgi almak için Sıkça Sorulan Sorular <a href='{vaccineFAQUrl}'>(SSS)</a> bölümümüzü ziyaret edin.</p>" +
+                    $"<p>Dijital COVID-19 Doğrulama Kaydı’nız hakkında daha fazla bilgi almak için <a href='{vaccineFAQUrl}'>Sıkça Sorulan Sorular (SSS)</a> bölümümüzü ziyaret edin.</p>" +
                     $"<h2>Güncel bilgilere sahip olun.</h2>" +
                     $"<p>COVID-19 <a href='{covidWebUrl}'>hakkında en güncel bilgileri görüntüleyin</a>.</p><br/>" +
                     $"<hr>" +
