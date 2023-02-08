@@ -612,7 +612,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Ver o comprovante de vacinação</a></p>" +
                     $"<p>Saiba mais sobre como <a href='{cdcUrl}'>proteger a si mesmo e aos outros</a> com o Centers for Disease Control and Prevention (CDC, Centro para Controle e Prevenção de Doenças).</p>" +
                     $"<h2>Tem dúvidas?</h2>" +
-                    $"<p>Acesse a nossa página de Perguntas frequentes (<a href='{vaccineFAQUrl}'>FAQ</a>) para saber mais sobre o seu Comprovante digital de vacinação contra a COVID-19.</p>" +
+                    $"<p>Acesse a nossa página de <a href='{vaccineFAQUrl}'>Perguntas frequentes (FAQ)</a> para saber mais sobre o seu Comprovante digital de vacinação contra a COVID-19.</p>" +
                     $"<h2>Mantenha-se informado.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Veja as informações mais recentes</a> sobre a COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1190,7 +1190,7 @@ namespace Application.Common
                     $"<p>Recentemente, você solicitou um Comprovante digital de vacinação contra a COVID-19 do <a href='{webUrl}'>sistema de Comprovante digital de vacinação contra a COVID-19</a>. Infelizmente, as informações fornecidas não correspondem às informações em nosso sistema.</p><br/>" + 
                     $"<p>É possível enviar outra solicitação ao sistema de <a href='{webUrl}'>Comprovante digital de vacinação contra a COVID-19</a> com um número de celular ou endereço de e-mail diferente. <a href='{contactUsUrl}'>Entre em contato conosco</a> para obter ajuda com a correspondência entre os dados de contato e as informações em seu comprovante, ou entre em contato com o seu provedor para garantir que suas informações foram enviadas para o sistema do estado.</p>" +
                     $"<h2>Tem dúvidas?</h2>" +
-                    $"<p>Visite a nossa página de Perguntas frequentes (<a href='{vaccineFAQUrl}'>FAQ</a>) para saber mais sobre o seu Comprovante digital de vacinação contra a COVID-19.</p>" +
+                    $"<p>Visite a nossa página de <a href='{vaccineFAQUrl}'>Perguntas frequentes (FAQ)</a> para saber mais sobre o seu Comprovante digital de vacinação contra a COVID-19.</p>" +
                     $"<h2>Mantenha-se informado.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Veja as informações mais recentes</a> sobre a COVID-19.</p><br/>" +
                     $"<hr>" +
