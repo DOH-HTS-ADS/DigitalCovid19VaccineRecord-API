@@ -565,7 +565,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Afficher l'attestation de vaccination</a></p>" +
                     $"<p>Pour en savoir plus sur la façon de <a href='{cdcUrl}'>vous protéger et protéger les autres</a>, consultez le site Internet des Centers for Disease Control and Prevention (centres de contrôle et de prévention des maladies).</p>" +
                     $"<h2>Vous avez des questions?</h2>" +
-                    $"<p>Consultez notre Foire Aux Questions (<a href='{vaccineFAQUrl}'>FAQ</a>)  pour en savoir plus sur votre Attestation numérique de vaccination COVID-19.</p>" +
+                    $"<p>Consultez notre <a href='{vaccineFAQUrl}'>Foire Aux Questions (FAQ)</a> pour en savoir plus sur votre Attestation numérique de vaccination COVID-19.</p>" +
                     $"<h2>Informez-vous.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1147,7 +1147,7 @@ namespace Application.Common
                     $"<p>Vous avez récemment demandé une Attestation numérique de vaccination COVID-19 auprès du système d'<a href='{webUrl}'>Attestation numérique de vaccination COVID-19</a>. Malheureusement, les informations que vous avez fournies ne correspondent pas à celles qui figurent dans le système de l'État.</p><br/>" +
                     $"<p>Vous pouvez soumettre une autre demande dans le système d'<a href='{webUrl}'>Attestation numérique de vaccination COVID-19</a> en indiquant un autre numéro de téléphone mobile ou une autre adresse e-mail, vous pouvez <a href='{contactUsUrl}'>nous contacter</a> pour obtenir de l'aide afin d'associer votre attestation à vos coordonnées, ou vous pouvez contacter votre professionnel de santé pour vérifier que vos informations ont été transmises au système de l'État.</p>" +
                     $"<h2>Vous avez des questions?</h2>" +
-                    $"<p>Consultez notre page Foire Aux Questions (<a href='{vaccineFAQUrl}'>FAQ</a>) pour en savoir plus sur votre Attestation numérique de vaccination COVID-19.</p>" +                    
+                    $"<p>Consultez notre page <a href='{vaccineFAQUrl}'>Foire Aux Questions (FAQ)</a> pour en savoir plus sur votre Attestation numérique de vaccination COVID-19.</p>" +                    
                     $"<h2>Informez-vous.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><br/>" +
                     $"<hr>" +
