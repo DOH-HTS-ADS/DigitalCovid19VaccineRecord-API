@@ -636,7 +636,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Impfpass anzeigen </a></p>" +
                     $"<p>Erfahren Sie von den Centers for Disease Control and Prevention (Zentren für Seuchenbekämpfung und Prävention) mehr darüber, wie Sie <a href='{cdcUrl}'>sich selbst und andere schützen</a> können.</p>" +
                     $"<h2>Haben Sie Fragen?</h2>" +
-                    $"<p>Besuchen Sie unsere Seite mit häufig gestellten Fragen (<a href='{vaccineFAQUrl}'>FAQ</a>) , um mehr über Ihren digitalen COVID-19-Impfpass zu erfahren.</p>" +
+                    $"<p>Besuchen Sie unsere Seite mit <a href='{vaccineFAQUrl}'>häufig gestellten Fragen (FAQ)</a> , um mehr über Ihren digitalen COVID-19-Impfpass zu erfahren.</p>" +
                     $"<h2>Bleiben Sie auf dem Laufenden.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Sehen Sie sich die neuesten Informationen</a> über COVID-19 an.</p><br/>" +
                     $"<hr>" +
@@ -1212,7 +1212,7 @@ namespace Application.Common
                     $"<p>Sie haben kürzlich ein COVID-19-Digitalzertifikat vom <a href='{webUrl}'>COVID-19-Digitalzertifikat-System</a> angefordert. Leider stimmen die von Ihnen gemachten Angaben nicht mit den Informationen im System des Bundesstaats überein.</p><br/>" +
                     $"<p>Sie können im <a href='{webUrl}'>COVID-19-Digitalzertifikat</a>-System eine erneute Anfrage mit einer anderen Handynummer oder E-Mail-Adresse senden, Sie können <a href='{contactUsUrl}'>Kontakt</a> zu uns aufnehmen, damit wir Ihnen bei der Zuordnung Ihres Zertifikats zu Ihren Kontaktdaten helfen, oder Sie können Ihren Anbieter kontaktieren, sich zu vergewissern, dass Ihre Daten an das System des Bundesstaats übermittelt wurden.</p>" +
                     $"<h2>Haben Sie Fragen?</h2>" +
-                    $"<p>Besuchen Sie unsere Seite mit häufig gestellten Fragen (<a href='{vaccineFAQUrl}'>FAQ</a>), um mehr über Ihr COVID-19-Digitalzertifikat zu erfahren.</p>" +
+                    $"<p>Besuchen Sie unsere Seite mit <a href='{vaccineFAQUrl}'>häufig gestellten Fragen (FAQ)</a>, um mehr über Ihr COVID-19-Digitalzertifikat zu erfahren.</p>" +
                     $"<h2>Bleiben Sie auf dem Laufenden.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Sehen Sie sich die neuesten Informationen</a> über COVID-19 an.</p><br/>" +
                     $"<hr>" +
