@@ -529,7 +529,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Tingnan ang Rekord ng Bakuna</a></p>" +
                     $"<p>Matuto pa tungkol sa kung paano <a href='{cdcUrl}'>protektahan ang iyong sarili at ang ibang tao</a> mula sa impormasyon mula sa Centers for Disease Control and Prevention (Mga Sentro sa Pagkontrol at Pag-iwas sa Sakit).</p>" +
                     $"<h2>May mga tanong?</h2>" +
-                    $"<p>Bisitahin ang aming page ng Mga Madalas Itanong (<a href='{vaccineFAQUrl}'>FAQ</a>) para matuto pa tungkol sa iyong Digital na Rekord ng Bakuna sa COVID-19.</p>" +
+                    $"<p>Bisitahin ang aming page ng <a href='{vaccineFAQUrl}'>Mga Madalas Itanong (FAQ)</a> para matuto pa tungkol sa iyong Digital na Rekord ng Bakuna sa COVID-19.</p>" +
                     $"<h2>Manatiling May Kaalaman.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> tungkol sa COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1114,7 +1114,7 @@ namespace Application.Common
                     $"<p>Kamakailan kang humiling ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19 mula <a href='{webUrl}'>system ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</a>. Sa kasamaang-palad, hindi tumutugma ang ibinigay mong impormasyon sa impormasyong nasa system ng estado.</p><br/>" +
                     $"<p>Maaari kang magsumite sa isa pang kahilingan sa system ng <a href='{webUrl}'>Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</a> gamit ang ibang numero ng mobile na telepono o email address, <a href='{contactUsUrl}'>makipag-ugnayan sa amin</a> para sa tulong sa pagtugma ng iyong rekord sa impormasyon sa pakikipag-ugnayan mo, o makipag-ugnayan sa iyong provider para tiyaking isinumite sa system ng estado ang iyong impormasyon.</p>" +
                     $"<h2>May mga tanong?</h2>" +
-                    $"<p>Bisitahin ang aming page ng Mga Madalas Itanong (<a href='{vaccineFAQUrl}'>FAQ</a>) para matuto pa tungkol sa iyong Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19.</p>" +
+                    $"<p>Bisitahin ang aming page ng <a href='{vaccineFAQUrl}'>Mga Madalas Itanong (FAQ)</a> para matuto pa tungkol sa iyong Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19.</p>" +
                     $"<h2>Manatiling May Kaalaman.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> tungkol sa COVID-19.</p><br/>" +
                     $"<hr>" +
