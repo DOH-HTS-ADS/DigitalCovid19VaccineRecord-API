@@ -898,7 +898,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Ragaa Taalaallii Ilaalaa</a></p>" +
                     $"<p>Waa’ee akkamitti akka  <a href='{cdcUrl}'>ofii fi namoota biroo eegdan</a> caalmatti Giddu Gala To’annoo fi Ittisa Dhibee (Centers for Disease Control and Prevention) irraa baradhaa.</p>" +
                     $"<h2>Gaaffii qabduu?</h2>" +
-                    $"<p>Waa’ee Mirkaneessa Ragaa Dijitaalaa COVID-19 gaaffii yoo qabaattan, fuula Gaaffilee Yeroo Heddu Gaafataman  (<a href='{vaccineFAQUrl}'>FAQ</a>) ilaalaa.</p>" +
+                    $"<p>Waa’ee Mirkaneessa Ragaa Dijitaalaa COVID-19 gaaffii yoo qabaattan, fuula <a href='{vaccineFAQUrl}'>Gaaffilee Yeroo Heddu Gaafataman (FAQ)</a> ilaalaa.</p>" +
                     $"<h2>Odeeffannoo Argadhaa.</h2>" +
                     $"<p>COVID-19 ilaalchisee  <a href='{covidWebUrl}'>odeeffannoo haaraa ilaalaa</a>.</p><br/>" +
                     $"<hr>" +
@@ -1456,7 +1456,7 @@ namespace Application.Common
                     $"<p>Dhiyeenyatti <a href='{webUrl}'>Mala Mirkaneessa Ragaa Dijitaalaa COVID-19</a> irraa Ragaa Mirkaneessa Dijitaalaa COVID-19 gaafattaniirtu. Akka carraa ta’ee, odeeffannoon isin laattan kan siistama keenya keessa jiruun wal hin simu. </p><br/>" +
                     $"<p>Lakkoofsa bilbilaa yookin imeelii biraatin gaaffii biraa mala  <a href='{webUrl}'>Mirkaneessa Ragaa Dijitaalaa COVID-19</a> irratti galchuu dandeessu, ragaan keessan qunnamtii odeeffannoo keessan wajjin akka wal simuuf deeggarsa yoo feetan  <a href='{contactUsUrl}'>nu qunnamuu</a> dandeessu yookin odeeffannoon keessan siistama naannoo keessa galuu mirkaneeffachuuf dhiyeessaa keessan qunnamuu dandeessu.</p>" +
                     $"<h2>Gaaffii qabduu?</h2>" +
-                    $"<p>Waa’ee Mirkaneessa Ragaa Dijitaalaa COVID-19 keessanii caalmatti baruuf, fuula Gaaffilee Yeroo Heddu Gaafataman  (<a href='{vaccineFAQUrl}'>FAQ</a>) ilaalaa.</p>" +
+                    $"<p>Waa’ee Mirkaneessa Ragaa Dijitaalaa COVID-19 keessanii caalmatti baruuf, fuula <a href='{vaccineFAQUrl}'>Gaaffilee Yeroo Heddu Gaafataman (FAQ)</a> ilaalaa.</p>" +
                     $"<h2>Odeeffannoo Argadhaa.</h2>" +
                     $"<p>COVID-19 ilaalchisee  <a href='{covidWebUrl}'>odeeffannoo haaraa ilaalaa</a>.</p><br/>" +
                     $"<hr>" +
