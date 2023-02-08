@@ -934,7 +934,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Saib Ntaub Ntawv Sau Tseg Txog Tshuaj Tiv Thaiv Kab Mob </a></p>" +
                     $"<p>Kawm paub txiv txog txoj hauv kev los <a href='{cdcUrl}'>pov thaiv koj tus kheej thiab lwm tus neeg</a> los ntawm Centers for Disease Control and Prevention (Cov Chaw Tswj thiab Pov Thaiv Kab Mob).</p>" +
                     $"<h2>Puas muaj cov lus nug?</h2>" +
-                    $"<p>Mus saib peb nplooj vev xaib muaj Cov Lus Nug Uas Nquag Nug (<a href='{vaccineFAQUrl}'>FAQ</a>) ) txhawm rau kawm paub ntxiv txog koj li Ntaub Ntawv Sau Tseg Txog Tshuaj Tiv Thaiv Kab Mob COVID-19 Ua Dis Cis Tauj</p>" +
+                    $"<p>Mus saib peb nplooj vev xaib muaj <a href='{vaccineFAQUrl}'>Cov Lus Nug Uas Nquag Nug (FAQ)</a> txhawm rau kawm paub ntxiv txog koj li Ntaub Ntawv Sau Tseg Txog Tshuaj Tiv Thaiv Kab Mob COVID-19 Ua Dis Cis Tauj</p>" +
                     $"<h2>Soj Qab Saib Kev Paub.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Saib cov ntaub ntawv tawm tshiab tshaj plaws</a> txog kab mob COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1489,7 +1489,7 @@ namespace Application.Common
                     $"<p>Tsis ntev los no koj tau thov Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj los ntawm <a href='{webUrl}'>kev ua hauj lwm rau Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj</a>. Hmoov tsis zoo, cov ntaub ntawv uas koj tau muab tsis raug raws li cov ntaub ntawv uas nyob rau hauv xeev txheej teg kev ua hauj lwm. </p><br/>" +
                     $"<p>Koj tuaj yeem xa tau lwm qhov kev thov nyob rau hauv kev ua hauj lwm rau <a href='{webUrl}'>Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj</a> nrog rau lwm tus nab npawb xov tooj ntawm tes los sis tus email, koj tuaj yeem <a href='{contactUsUrl}'>txuas lus tau rau peb</a> txhawm rau thov kev pab ua kom koj cov ntaub ntawv sau tseg raug raws li koj cov ntaub ntawv sib txuas lus, los sis koj tuaj yeem txuas lus tau rau koj tus kws pab kho mob txhawm rau ua kom ntseeg siab tias koj cov ntaub ntawv tau xa rau xeev txheej teg kev ua hauj lwm lawm.</p>" +
                     $"<h2>Puas muaj cov lus nug?</h2>" +
-                    $"<p>Saib peb nplooj vev xaib muaj Cov Lus Nug Uas Nquag Nug (<a href='{vaccineFAQUrl}'>FAQ</a>) (Lus Askiv nkaus xwb) txhawm rau kawm paub ntxiv txog koj li Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj.</p>" +
+                    $"<p>Saib peb nplooj vev xaib muaj <a href='{vaccineFAQUrl}'>Cov Lus Nug Uas Nquag Nug (FAQ)</a> (Lus Askiv nkaus xwb) txhawm rau kawm paub ntxiv txog koj li Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj.</p>" +
                     $"<h2>Soj Qab Saib Kev Paub.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Saib cov ntaub ntawv tawm tshiab tshaj plaws</a> txog kab mob COVID-19.</p><br/>" +
                     $"<hr>" +
