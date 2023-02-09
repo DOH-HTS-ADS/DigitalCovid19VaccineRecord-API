@@ -672,7 +672,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Tazama Rekodi ya Chanjo .</a></p>" +
                     $"<p>Jifunze zaidi kuhusu jinsi ya <a href='{cdcUrl}'>kujilinda pamoja na wengine</a> kutoka Centers for Disease Control and Prevention (Vituo vya Udhibiti na Uzuiaji wa Ugonjwa).</p>" +
                     $"<h2>Una maswali?</h2>" +
-                    $"<p>Tembelea ukurasa wa Maswali yetu Yanayoulizwa Mara kwa Mara (<a href='{vaccineFAQUrl}'>FAQ</a>)  ili kujifunza zaidi kuhusu Rekodi yako ya Kidijitali ya Chanjo ya COVID-19.</p>" +
+                    $"<p>Tembelea ukurasa wa <a href='{vaccineFAQUrl}'>Maswali yetu Yanayoulizwa Mara kwa Mara (FAQ)</a>  ili kujifunza zaidi kuhusu Rekodi yako ya Kidijitali ya Chanjo ya COVID-19.</p>" +
                     $"<h2>Endelea Kupata Habari.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Tazama maelezo ya hivi karibuni</a> kuhusu COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1245,7 +1245,7 @@ namespace Application.Common
                     $"<p>Hivi karibuni uliomba Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19 kutoka mfumo wa <a href='{webUrl}'>Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19</a>. Kwa bahati mbaya, maelezo uliyotoa hayalingani na maelezo yaliyopo kwenye mfumo wa jimbo.</a></p><br/>" +
                     $"<p>Unaweza kuwasilisha ombi lingine katika mfumo wa <a href='{webUrl}'>Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19</a> kwa nambari tofauti ya simu ya mkononi au barua pepe, unaweza <a href='{contactUsUrl}'>kuwasiliana nasi</a> ili kupata usaidizi katika kulinganisha rekodi yako na maelezo yako ya mawasiliano, au unaweza kuwasiliana na mtoaji wako ili kuhakikisha maelezo yako yamewasilishwa kwa mfumo wa jimbo.</a></a></p>" +
                     $"<h2>Una maswali?</h2>" +
-                    $"<p>Tembelea ukurasa wa Maswali yetu Yanayoulizwa Mara kwa Mara (<a href='{vaccineFAQUrl}'>FAQ</a>) ili kujifunza zaidi kuhusu Rekodi yako ya Kidijitali ya Uthibitishaji wa COVID-19.</p>" +
+                    $"<p>Tembelea ukurasa wa <a href='{vaccineFAQUrl}'>Maswali yetu Yanayoulizwa Mara kwa Mara (FAQ)</a> ili kujifunza zaidi kuhusu Rekodi yako ya Kidijitali ya Uthibitishaji wa COVID-19.</p>" +
                     $"<h2>Endelea Kupata Habari.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Tazama maelezo ya hivi karibuni</a> kuhusu COVID-19.</p><br/>" +
                     $"<hr>" +
