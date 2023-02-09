@@ -756,7 +756,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Kunde’e nasa iyo nda vacuna</a></p>" +
                     $"<p>Ni’in ka ní tu’un siki nasa <a href='{cdcUrl}'>koto yo maa yo ji sava ka ñayiví</a> nuu Centers for Disease Control and Prevention (CDC, Ve’e nuu jito ji jekani nda kue’e).</p>" +
                     $"<h2>A iyo tu’un jikatu’un ní</h2>" +
-                    $"<p>Kunde’e ní nuu página nda tu’un jikatu’un ka (<a href='{vaccineFAQUrl}'>FAQ</a>) tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu Tarjeta Vacuna COVID-19 ja iyo nuu Kaa ndichí.</p>" +
+                    $"<p>Kunde’e ní nuu página <a href='{vaccineFAQUrl}'>nda tu’un jikatu’un ka (FAQ)</a> tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu Tarjeta Vacuna COVID-19 ja iyo nuu Kaa ndichí.</p>" +
                     $"<h2>Ndukú ni tu’un.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Kunde’e ní tu’un jáá ka</a> siki COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1324,7 +1324,7 @@ namespace Application.Common
                     $"<p>Iyo jaku kivi ja ni jikan ní in tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19 ja iyo nuu <a href='{webUrl}'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</a>. Kueka kuu ja, tu’un ja ni taji ní nduu kitan ji tu’un ja neva’a sa nuu nda tu’un ja iyo nuu ñuu. </p><br/>" +
                     $"<p>Kuu tetiñu ní tuku ní inka tutu nuu <a href='{webUrl}'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</a> jín in número yokaa axi correo electrónico ja síin kaa, kuu <a href='{contactUsUrl}'>ka’an ní jín nda sa</a> tágua kuu sa’a yo ja kita’an tu’un ja taji ní ji ja neva’a sa, axi in ñayiví satatan tágua kuni ní tú ni tetiñu va’a tu’un siki ní nuu ñuu.</p>" +
                     $"<h2>A iyo tu’un jikatu’un ní</h2>" +
-                    $"<p>Kunde’e ní nuu página nda tu’un jikatu’un ka (<a href='{vaccineFAQUrl}'>FAQ</a>) tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19.</p>" +
+                    $"<p>Kunde’e ní nuu página <a href='{vaccineFAQUrl}'>nda tu’un jikatu’un ka (FAQ)</a> tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19.</p>" +
                     $"<h2>Ndukú ni tu’un.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Kunde’e ní tu’un jáá ka</a> siki COVID-19.</p><br/>" +
                     $"<hr>" +
