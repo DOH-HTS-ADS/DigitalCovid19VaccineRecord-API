@@ -768,7 +768,7 @@ namespace Application.Common
                     $"<p><a href='{url}'> Mmat Wa Jeje </a></p>" +
                     $"<p>Katak bar tarrin wāwee nan <a href='{cdcUrl}'>tokwanwa amimaanpa kab bar jet</a>  jan ko Centers for Disease Control and Prevention (Buḷōn bwe Nañinmej Kabwijer kab Deṃak).</p>" +
                     $"<h2>Jeban kajjitōk?</h2>" +
-                    $"<p>Ilomei arro Jọkkutkut Kajjitōk Nawāwee(<a href='{vaccineFAQUrl}'>FAQ</a>)  ālāl nan katak bar jidik tarrin aim Iaam jarom COVID-19 Wa Jeje.</p>" +
+                    $"<p>Ilomei arro <a href='{vaccineFAQUrl}'>Jọkkutkut Kajjitōk Nawāwee (FAQ)</a>  ālāl nan katak bar jidik tarrin aim Iaam jarom COVID-19 Wa Jeje.</p>" +
                     $"<h2> Pād melele</h2>" +
                     $"<p> <a href='{covidWebUrl}'>Mmat ko rimwik kojjela</a>  ioo COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1335,7 +1335,7 @@ namespace Application.Common
                     $"<p>Eok kiin jeṃaanḷọk kajjitōk a laam jarom COVID-19 jaak jeje jan <a href='{webUrl}'>ko Kaajai COVID-19 Wotom Jeje kkar</a>. jerata, ko melele eok naloma jerbal jab mājet melele for ko konnaan kkar. </p><br/>" +
                     $"<p>Eok kuwat lota bar juon kajjitōk for ko <a href='{webUrl}'>Kaajai COVID-19 Wotom Jeje</a>  kkar ippa a different joorkatkat teinwa nomba ak lota jipij, eok kuwat </a>kōkkeitaak koj</a>  bwe rejetak for jekkar ami jeje nana ami kokkeitaak melele, ak eok kuwat kokkeitaak ami naloma nan eok ami melele mmo kwo jjilōk nan ko konnaan kkar.</p>" +
                     $"<h2>Jeben kajjitōk?</h2>" +
-                    $"<p>Ilomej arro Jokkutkut Kajjitok Nawawee (<a href='{vaccineFAQUrl}'>FAQ</a>)  alal nan katak bar jidik ami laam jarom COVID-19 jaak jeje.</p>" +
+                    $"<p>Ilomej arro <a href='{vaccineFAQUrl}'>Jokkutkut Kajjitok Nawawee (FAQ)</a> alal nan katak bar jidik ami laam jarom COVID-19 jaak jeje.</p>" +
                     $"<h2>Pad melele.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Mmat ko rimwik kojjela</a> on COVID-19.</p><br/>" +
                     $"<hr>" +
