@@ -468,9 +468,9 @@ namespace Application.Common
                     $"<p>欢迎访问数字 COVID-19 验证记录系统。用于检索您 COVID-19 疫苗记录码的链接在 {linkExpireHours} 小时内有效。在您获取到 QR 码并将其储存到您的设备后，此 QR 码将不会过期。</p>" +
                     $"<p><a href='{url}'>查看疫苗记录</a></p>" +
                     $"<p>从 Centers for Disease Control and Prevention（CDC，疾病控制与预防中心）了解更多关于如何<a href='{cdcUrl}'>保护自己和他人</a> 的相关信息。</p>" +
-                    $"<p><b>仍有疑问？</b></p>" +
+                    $"<h2>仍有疑问？</h2>" +
                     $"<p>请访问我们的<a href='{vaccineFAQUrl}'>常见问题解答 (FAQ)</a> 页面，以了解有关您的数字 COVID-19 疫苗记录的更多信息。</p>" +
-                    $"<p><b>保持关注。</b></p>" +
+                    $"<h2>保持关注。</h2>" +
                     $"<p><a href='{covidWebUrl}'>查看 COVID-19 最新信息</a>。</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (华盛顿州卫生部）官方电子邮件</p>" +
@@ -480,9 +480,9 @@ namespace Application.Common
                     $"<p>歡迎造訪數位 COVID-19 驗證記錄系統。用於檢索您的 COVID-19 疫苗記錄碼的連結在 {linkExpireHours} 小時內有效。一旦您存取 QR 代碼並將其儲存到您的裝置後，此 QR 代碼將不會過期。</p>" +
                     $"<p><a href='{url}'>檢視疫苗記錄</a></p>" +
                     $"<p>從 Centers for Disease Control and Prevention（CDC，疾病控制與預防中心）瞭解更多關於如何<a href='{cdcUrl}'>保護自己和他人</a> 的相關資訊。</p>" +
-                    $"<p><b>仍有疑問？</b></p>" +
+                    $"<h2>仍有疑問？</h2>" +
                     $"<p>請造訪我們的<a href='{vaccineFAQUrl}'>常見問題解答 (FAQ)</a>頁面，以瞭解有關您的數位 COVID-19 疫苗記錄的更多資訊。</p>" +
-                    $"<p><b>保持關注。</b></p>" +
+                    $"<h2>保持關注。</h2>" +
                     $"<p><a href='{covidWebUrl}'>檢視 COVID-19 最新資訊</a>。</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health （華盛頓州衛生部）官方電子郵件 </p>" +
@@ -492,9 +492,9 @@ namespace Application.Common
                     $"<p>디지털 COVID-19 인증 기록 시스템을 방문해 주셔서 감사합니다. COVID-19 백신 기록 코드를 조회하는 링크는 {linkExpireHours}시간 동안 유효합니다. 확인하고 기기에 저장하면 QR 코드는 만료되지 않습니다. </p>" +
                     $"<p><a href='{url}'>백신 기록 보기</a></p>" +
                     $"<p>Centers for Disease Control and Prevention(질병통제예방센터)에서 <a href='{cdcUrl}'>나와 타인을 보호</a> 하는 방법에 대해 자세히 확인해 보십시오.</p>" +
-                    $"<p><b>궁금한 사항이 있으신가요?</b></p>" +
-                    $"<p>디지털 COVID-19 백신 기록에 대해 자세히 알아보려면 <a href='{vaccineFAQUrl}'>자주 묻는 질문(FAQ)</a> 페이지를 참조해 주십시오.</p>" +
-                    $"<p><b>최신 정보를 확인하십시오.</b></p>" +
+                    $"<h2>궁금한 사항이 있으신가요?</h2>" +
+                    $"<p>디지털 COVID-19 백신 기록에 대해 <a href='{vaccineFAQUrl}'>자세히 알아보려면 자주 묻는 질문(FAQ)</a> 페이지를 참조해 주십시오.</p>" +
+                    $"<h2>최신 정보를 확인하십시오.</h2>" +
                     $"<p>COVID-19 관련 <a href='{covidWebUrl}'>최신 정보 보기</a></p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (워싱턴주 보건부) 공식 이메일</p>" +
@@ -597,7 +597,7 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ro" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><br/>" +
                     $"<h1 style='color: #C84C0E'>Certificatul digital COVID-19</h1>" +
-                    $"<p>Vă mulțumim că ați accesat sistemul de certificate digitale COVID-19. Linkul de unde puteți prelua fișa de vaccinare COVID-19 este valabil timp de {linkExpireHours} de ore. După ce l-ați accesat și l-ați salvat în telefon, codul QR nu va expira.</p>" + 
+                    $"<p>Vă mulțumim că ați accesat sistemul de certificate digitale COVID-19. Linkul de unde puteți prelua fișa de vaccinare COVID-19 este valabil timp de {linkExpireHours} de ore. După ce l-ați accesat și l-ați salvat în telefon, codul QR nu va expira.</p>" +
                     $"<p><a href='{url}'>Vizualizați fișa de vaccinare</a></p>" +
                     $"<p>Aflați mai multe despre cum să <a href='{cdcUrl}'>vă protejați pe dvs. și pe ceilalți</a> de la Centers for Disease Control and Prevention (Centrele pentru controlul și prevenirea bolilor).</p>" +
                     $"<h2>Aveți întrebări?</h2>" +
@@ -608,7 +608,7 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "pt" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><br/>" +
                     $"<h1 style='color: #C84C0E'>Comprovante digital de vacinação contra a COVID-19</h1>" +
-                    $"<p>Obrigado por visitar o sistema do Comprovante digital de vacinação contra a COVID-19. O link para recuperar o seu código de acesso ao comprovante de vacinação contra a COVID-19 é válido por {linkExpireHours} horas. Após acessar o código QR e salvá-lo em seu dispositivo, ele não expirará.</p>" + 
+                    $"<p>Obrigado por visitar o sistema do Comprovante digital de vacinação contra a COVID-19. O link para recuperar o seu código de acesso ao comprovante de vacinação contra a COVID-19 é válido por {linkExpireHours} horas. Após acessar o código QR e salvá-lo em seu dispositivo, ele não expirará.</p>" +
                     $"<p><a href='{url}'>Ver o comprovante de vacinação</a></p>" +
                     $"<p>Saiba mais sobre como <a href='{cdcUrl}'>proteger a si mesmo e aos outros</a> com o Centers for Disease Control and Prevention (CDC, Centro para Controle e Prevenção de Doenças).</p>" +
                     $"<h2>Tem dúvidas?</h2>" +
@@ -649,7 +649,7 @@ namespace Application.Common
                     $"<p>ካብ Centers for disease Control and Prevention (CDC, ማእከላት ንምቊጽጻርን ምግታእን ጥዕና) ብዛዕባ <a href='{cdcUrl}'>ንካልኦትን ንገዛእ ርእስኹምን ምሕላው</a> ዝያዳ ተምሃሩ።</p>" +
                     $"<h2>ሕቶታት ኣለኩም ድዩ?</h2>" +
                     $"<p>ብዛዕባ ዲጂታላዊ ናይ ኮቪድ-19 ክታበት መረጋገጺ መዝገብ ዝያዳ ንምፍላጥ፡ ነቶም ናህና ገጽ ናይ ቀጻሊ ዝሕተቱ ሕቶታት <a href='{vaccineFAQUrl}'>ቀጻሊ ዝሕተቱ ሕቶታት</a> ብጽሕዎም።</h2>" +
-                    $"<h2>ሓበሬታ ሓዙ።</h2>" + 
+                    $"<h2>ሓበሬታ ሓዙ።</h2>" +
                     $"<p>ብዛዕባ ኮቪድ-19 <a href='{covidWebUrl}'>ናይ ቀረባ ግዜ ሓበሬታ ራኣዩ</a> ኢኹም።</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ወግዓዊ ናይ Washington State Department of Health (ክፍሊ ጥዕና ግዝኣት ዋሽንግተን) ኢ-መይል</p>" +
@@ -776,7 +776,7 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "mam" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><br/>" +
                     $"<h1 style='color: #C84C0E'>Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’</h1>" +
-                    $"<p>Chjontay ma tz’oktz tq’olb’e’na jqeya qkloj te Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj jxk’utz’ib’. a enlace te tu’ ttiq’ay jte cheylakxta tej tx’u’j yab’ilo te COVID - 19 b’a’x teja toj jun q’ij b’ix jun qoniya mo toj { linkExpireHours} amb’il. Juxmaj uj ot tz’okxay ex ot ku’x tk’u’na toj jtey txk’utz’ib’, j - código QR ya mi kub’ najt.</p>" +
+                    $"<p>Chjontay ma tz’oktz tq’olb’e’na jqeya qkloj te Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj jxk’utz’ib’. a enlace te tu’ ttiq’ay jte cheylakxta tej tx’u’j yab’ilo te COVID - 19 b’a’x teja toj jun q’ij b’ix jun qoniya mo toj {linkExpireHours} amb’il. Juxmaj uj ot tz’okxay ex ot ku’x tk’u’na toj jtey txk’utz’ib’, j - código QR ya mi kub’ najt.</p>" +
                     $"<p><a href='{url}'>Cheylakxta tej tz’ib’b’al tej tey tb’aq </a></p>" +
                     $"<p>Q’imatz kab’t q’umb’aj tumal tib’aj tzuj ti tten tu’ <a href='{cdcUrl}'>tok tklom tib’ay ex tu’ tok tklo’na qaj kab’t</a>  chu’ tzun qaj Ja’ te tej Meyolakta ex jtu’ Tajtz chi’j qaj Yab’il [Centers for Disease Control and Prevention, toy tyol me’x xjal].</p>" +
                     $"<h2>¿At qaj tajay tzaj tqanay?</h2>" +
@@ -957,9 +957,9 @@ namespace Application.Common
                   $"<p>Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 verification record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.</p>" +
                   $"<p><a href='{url}'>View Verification Record</a></p>" +
                   $"<p>Learn more about how to <a href='{cdcUrl}'>protect yourself and others</a> from the Centers for Disease Control and Prevention.</p>" +
-                  $"<p><b>Have questions?</b></p>" +
+                  $"<h2>Have questions?</h2>" +
                   $"<p>Visit our <a href='{vaccineFAQUrl}'>Frequently Asked Questions (FAQ)</a> page to learn more about your Digital COVID-19 Verification Record.</p>" +
-                  $"<p><b>Stay Informed.</b></p>" +
+                  $"<h2>Stay Informed.</h2>" +
                   $"<p><a href='{covidWebUrl}'>View the latest information</a> on COVID-19.</p><br/>" +
                   $"<hr>" +
                   $"<footer><p style='text-align:center'>Official Washington State Department of Health e-mail</p>" +
@@ -1055,9 +1055,9 @@ namespace Application.Common
                     $"<h1 style='color: #C84C0E'>数字 COVID-19 验证记录</h1>" +
                     $"<p>您最近向 <a href='{webUrl}'>数字 COVID-19 验证记录系统</a> 请求过数字 COVID-19 验证记录。很遗憾，您提供的信息与州系统中的信息不符。</p><br/>" +
                     $"<p>您可以使用不同的手机号码或电子邮件地址在 <a href='{webUrl}'>数字 COVID-19 验证记录</a> 系统中提交另一个请求，您还可以 <a href='{contactUsUrl}'>联系我们</a> 寻求帮助，将您的记录与您的联系信息进行匹配，或者您可以联系您的医疗保健提供者以确保您的信息已提交至州系统。</p>" +
-                    $"<p><b>仍有疑问？</b></p>" +
+                    $"<h2>仍有疑问？</h2>" +
                     $"<p>请访问我们的<a href='{vaccineFAQUrl}'>常见问题解答 (FAQ)</a> 页面，以了解有关您的数字 COVID-19 验证记录的更多信息。</p>" +
-                    $"<p><b>保持关注。</b></p>" +
+                    $"<h2>保持关注。</h2>" +
                     $"<p><a href='{covidWebUrl}'>查看 COVID-19 最新信息</a>。</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health （华盛顿州卫生部）官方电子邮件</p>" +
@@ -1066,9 +1066,9 @@ namespace Application.Common
                     $"<h1 style='color: #C84C0E'>數位 COVID-19 驗證記錄</h1>" +
                     $"<p>您最近向 <a href='{webUrl}'>數位 COVID-19 驗證記錄系統</a> 請求過數位 COVID-19 驗證記錄。很遺憾，您提供的資訊與州系統中的資訊不符。</p><br/>" +
                     $"<p>您可以使用不同的手機號碼或電子郵件地址在 <a href='{webUrl}'>數位 COVID-19 驗證記錄</a> 系統中提交另一個請求，您還可以 <a href='{contactUsUrl}'>與我們連絡</a> 尋求幫助，將您的記錄與您的連絡資訊進行匹配，或者您可以連絡您的醫療保健提供者以確保您的資訊已提交至州系統。</p>" +
-                    $"<p><b>仍有疑問？</b></p>" +
+                    $"<h2>仍有疑問？</h2>" +
                     $"<p>請造訪我們的<a href='{vaccineFAQUrl}'>常見問題解答 (FAQ)</a> 頁面，瞭解有關您的數位 COVID-19 驗證記錄的更多資訊。</p>" +
-                    $"<p><b>保持關注。</b></p>" +
+                    $"<h2>保持關注。</h2>" +
                     $"<p><a href='{covidWebUrl}'>檢視最新資訊</a>，與 COVID-19 密切相關的資訊。</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health （華盛頓州衛生部）官方電子郵件</p>" +
@@ -1077,9 +1077,9 @@ namespace Application.Common
                     $"<h1 style='color: #C84C0E'>디지털 COVID-19 인증 기록</h1>" +
                     $"<p>귀하는 최근 <a href='{webUrl}'>디지털 COVID-19 인증 기록 시스템</a> 에 디지털 COVID-19 인증 기록을 요청하셨습니다. 유감스럽게도 귀하가 제공하신 정보는 주정부 시스템상 정보와 일치하지 않습니다.</p><br/>" +
                     $"<p>다른 휴대전화 번호나 이메일 주소로 <a href='{webUrl}'>디지털 COVID-19 인증 기록 시스템</a> 에 별도의 요청을 제출하실 수 있습니다. <a href='{contactUsUrl}'>저희에게 연락</a> 하여 귀하의 기록을 연락처 정보와 일치시키는 데 도움을 받으시거나, 담당 의료서비스 제공자에게 문의하여 귀하의 정보가 주정부 시스템에 제출되었는지 확인하실 수 있습니다.</p>" +
-                    $"<p><b>궁금한 사항이 있으신가요?</b></p>" +
-                    $"<p>디지털 COVID-19 인증 기록에 대해 자세히 알아보려면 <a href='{vaccineFAQUrl}'>자주 묻는 질문(FAQ)</a> 페이지를 참조해 주십시오.</p>" +
-                    $"<p><b>최신 정보를 확인하십시오.</b></p>" +
+                    $"<h2>궁금한 사항이 있으신가요?</h2>" +
+                    $"<p>디지털 COVID-19 인증 기록에 대해  <a href='{vaccineFAQUrl}'>자세히 알아보려면자주 묻는 질문(FAQ)</a> 페이지를 참조해 주십시오.</p>" +
+                    $"<h2>최신 정보를 확인하십시오.</h2>" +
                     $"<p>COVID-19 관련 <a href='{covidWebUrl}'>최신 정보 보기</a></p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (워싱턴주 보건부) 공식 이메일</p>" +
@@ -1105,7 +1105,7 @@ namespace Application.Common
                     $"<p dir='rtl'>قم بزيارة صفحة <a href='{vaccineFAQUrl}'>الأسئلة الشائعة</a> (متوفر باللغة الإنجليزية فقط) الخاصة بنا للاطلاع على مزيدٍ من المعلومات حول السجل الرقمي للقاح كوفيد-19 الخاص بك.</p>" +
                     $"<h2 dir='rtl'>ابقَ مطلعًا.</h2>" +
                     $"<p dir='rtl'><a href='{covidWebUrl}'>عرض آخر المعلومات </a> (متوفر باللغة الإنجليزية فقط) عن فيروس كوفيد-19.</p>" +
-                    
+
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>البريد الإلكتروني الرسمي الخاص بـ Washington State Department of Health (إدارة الصحة في ولاية واشنطن)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -1177,7 +1177,7 @@ namespace Application.Common
                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ro" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><br/>" +
                     $"<h1 style='color: #C84C0E'>Certificatul digital COVID-19</h1>" +
-                    $"<p>Ați solicitat recent un certificat digital COVID-19 de la <a href='{webUrl}'>sistemul de certificate digitale COVID-19</a>. Din păcate, informațiile furnizate de dvs. nu corespund cu datele din sistemul de stat.</p><br/>" + 
+                    $"<p>Ați solicitat recent un certificat digital COVID-19 de la <a href='{webUrl}'>sistemul de certificate digitale COVID-19</a>. Din păcate, informațiile furnizate de dvs. nu corespund cu datele din sistemul de stat.</p><br/>" +
                     $"<p>Puteți să trimiteți o nouă solicitare către sistemul de <a href='{webUrl}'>certificate digitale COVID-19</a> de la un alt număr de telefon mobil sau de pe o altă adresă de e-mail, puteți să ne <a href='{contactUsUrl}'>contactați</a> pentru asistență la potrivirea fișei dvs. de vaccinare cu informațiile de contact sau puteți să luați legătura cu furnizorul serviciilor medicale pentru a vă asigura ca datele dvs. au fost introduse în sistemul de stat.</p>" +
                     $"<h2>Aveți întrebări?</h2>" +
                     $"<p>Accesați pagina Întrebări frecvente (<a href='{vaccineFAQUrl}'>Întrebări frecvente</a>) pentru a afla mai multe despre certificatul digital COVID-19.</p>" +
@@ -1187,7 +1187,7 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "pt" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><br/>" +
                     $"<h1 style='color: #C84C0E'>Comprovante digital de vacinação contra a COVID-19</h1>" +
-                    $"<p>Recentemente, você solicitou um Comprovante digital de vacinação contra a COVID-19 do <a href='{webUrl}'>sistema de Comprovante digital de vacinação contra a COVID-19</a>. Infelizmente, as informações fornecidas não correspondem às informações em nosso sistema.</p><br/>" + 
+                    $"<p>Recentemente, você solicitou um Comprovante digital de vacinação contra a COVID-19 do <a href='{webUrl}'>sistema de Comprovante digital de vacinação contra a COVID-19</a>. Infelizmente, as informações fornecidas não correspondem às informações em nosso sistema.</p><br/>" +
                     $"<p>É possível enviar outra solicitação ao sistema de <a href='{webUrl}'>Comprovante digital de vacinação contra a COVID-19</a> com um número de celular ou endereço de e-mail diferente. <a href='{contactUsUrl}'>Entre em contato conosco</a> para obter ajuda com a correspondência entre os dados de contato e as informações em seu comprovante, ou entre em contato com o seu provedor para garantir que suas informações foram enviadas para o sistema do estado.</p>" +
                     $"<h2>Tem dúvidas?</h2>" +
                     $"<p>Visite a nossa página de <a href='{vaccineFAQUrl}'>Perguntas frequentes (FAQ)</a> para saber mais sobre o seu Comprovante digital de vacinação contra a COVID-19.</p>" +
@@ -1510,9 +1510,9 @@ namespace Application.Common
                     $"<h1 style='color: #C84C0E'>Digital COVID-19 Verification Record</h1>" +
                     $"<p>You recently requested a Digital COVID-19 Verification Record from the <a href='{webUrl}'>Digital COVID-19 Verification Record system</a>. Unfortunately, the information you provided does not match information in the state system. " +
                     $"<p>You can submit another request in the <a href='{webUrl}'>Digital COVID-19 Verification Record system</a> with a different mobile phone number or email address, you can <a href='{contactUsUrl}'>contact us</a> for help in matching your record to your contact information, or you can contact your provider to ensure your information has been submitted to the state system.</p>" +
-                    $"<p><b>Have questions?</b></p>" +
+                    $"<h2>Have questions?</h2>" +
                     $"<p>Visit our <a href='{vaccineFAQUrl}'>Frequently Asked Questions (FAQ)</a> page to learn more about your Digital COVID-19 Verification Record.</p>" +
-                    $"<p><b>Stay Informed.</b></p>" +
+                    $"<h2>Stay Informed.</h2>" +
                     $"<p><a href='{covidWebUrl}'>View the latest information</a> on COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Official Washington State Department of Health e-mail</p>" +
