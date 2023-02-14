@@ -894,7 +894,9 @@ namespace Application.Common
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ይፋዊ የ Washington State Department of Health (የዋሺንግተን ግዛት የጤና መምሪያ) ኢሜይል</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
-                "om" => $"<p>Mala Mirkaneessa Ragaa Dijitaalaa COVID-19 ilaaluu keessaniif galatoomaa. Liinkin ragaa talaallii COVID-19 keessan deebisanii argachuuf yookin seevii gochuuf gargaaru sa’aatii {linkExpireHours}’f hojjata. Meeshaa itti fayyadamtan (device) irratti argachuun danda’amee erga seevii ta’een booda, koodin QR yeroon isaa irra hin darbu.</p>" +
+                "om" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><br/>" +
+                    $"<h1 style='color: #C84C0E'>Mirkaneessa Ragaa Dijitaalaa COVID-19</h1>" +
+                    $"<p>Mala Mirkaneessa Ragaa Dijitaalaa COVID-19 ilaaluu keessaniif galatoomaa. Liinkin ragaa talaallii COVID-19 keessan deebisanii argachuuf yookin seevii gochuuf gargaaru sa’aatii {linkExpireHours}’f hojjata. Meeshaa itti fayyadamtan (device) irratti argachuun danda’amee erga seevii ta’een booda, koodin QR yeroon isaa irra hin darbu.</p>" +
                     $"<p><a href='{url}'>Ragaa Taalaallii Ilaalaa</a></p>" +
                     $"<p>Waa’ee akkamitti akka  <a href='{cdcUrl}'>ofii fi namoota biroo eegdan</a> caalmatti Giddu Gala To’annoo fi Ittisa Dhibee (Centers for Disease Control and Prevention) irraa baradhaa.</p>" +
                     $"<h2>Gaaffii qabduu?</h2>" +
