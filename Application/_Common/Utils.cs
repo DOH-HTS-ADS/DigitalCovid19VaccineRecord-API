@@ -505,7 +505,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Xem Hồ sơ Vắc-xin</a></p>" +
                     $"<p>Tìm hiểu thêm về cách <a href='{cdcUrl}'>tự bảo vệ mình và bảo vệ người khác</a> từ Centers for Disease Control and Prevention (CDC, Trung Tâm Kiểm Soát và Phòng Ngừa Dịch Bệnh).</p>" +
                     $"<h2>Bạn có câu hỏi?</h2>" +
-                    $"<p>Truy cập vào trang Các Câu Hỏi Thường Gặp (<a href='{vaccineFAQUrl}'>FAQ</a>) để tìm hiểu thêm về Hồ Sơ Vắc-xin COVID-19 kỹ thuật số của bạn.</p>" +
+                    $"<p>Truy cập vào trang <a href='{vaccineFAQUrl}'>Các Câu Hỏi Thường Gặp (FAQ)</a> để tìm hiểu thêm về Hồ Sơ Vắc-xin COVID-19 kỹ thuật số của bạn.</p>" +
                     $"<h2>Luôn cập nhật thông tin.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -529,7 +529,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Tingnan ang Rekord ng Bakuna</a></p>" +
                     $"<p>Matuto pa tungkol sa kung paano <a href='{cdcUrl}'>protektahan ang iyong sarili at ang ibang tao</a> mula sa impormasyon mula sa Centers for Disease Control and Prevention (Mga Sentro sa Pagkontrol at Pag-iwas sa Sakit).</p>" +
                     $"<h2>May mga tanong?</h2>" +
-                    $"<p>Bisitahin ang aming page ng Mga Madalas Itanong (<a href='{vaccineFAQUrl}'>FAQ</a>) para matuto pa tungkol sa iyong Digital na Rekord ng Bakuna sa COVID-19.</p>" +
+                    $"<p>Bisitahin ang aming page ng <a href='{vaccineFAQUrl}'>Mga Madalas Itanong (FAQ)</a> para matuto pa tungkol sa iyong Digital na Rekord ng Bakuna sa COVID-19.</p>" +
                     $"<h2>Manatiling May Kaalaman.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> tungkol sa COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -541,7 +541,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Посмотреть запись о вакцинации</a></p>" +
                     $"<p>Узнайте больше о том, как <a href='{cdcUrl}'>защитить себя и других</a> согласно рекомендациям Centers for Disease Control and Prevention (Центры по контролю и профилактике заболеваний).</p>" +
                     $"<h2>Возникли вопросы?</h2>" +
-                    $"<p>Чтобы узнать больше о цифровой записи о вакцинации от COVID-19, перейдите на нашу страницу «Часто задаваемые вопросы»(<a href='{vaccineFAQUrl}'>FAQ</a>).</p>" +
+                    $"<p>Чтобы узнать больше о цифровой записи о вакцинации от COVID-19, перейдите на нашу страницу <a href='{vaccineFAQUrl}'>«Часто задаваемые вопросы» (FAQ)</a>.</p>" +
                     $"<h2>Оставайтесь в курсе.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Получайте актуальную информацию</a> о COVID-19 .</p><br/>" +
                     $"<hr>" +
@@ -565,7 +565,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Afficher l'attestation de vaccination</a></p>" +
                     $"<p>Pour en savoir plus sur la façon de <a href='{cdcUrl}'>vous protéger et protéger les autres</a>, consultez le site Internet des Centers for Disease Control and Prevention (centres de contrôle et de prévention des maladies).</p>" +
                     $"<h2>Vous avez des questions?</h2>" +
-                    $"<p>Consultez notre Foire Aux Questions (<a href='{vaccineFAQUrl}'>FAQ</a>)  pour en savoir plus sur votre Attestation numérique de vaccination COVID-19.</p>" +
+                    $"<p>Consultez notre <a href='{vaccineFAQUrl}'>Foire Aux Questions (FAQ)</a> pour en savoir plus sur votre Attestation numérique de vaccination COVID-19.</p>" +
                     $"<h2>Informez-vous.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -577,7 +577,7 @@ namespace Application.Common
                    $"<p><a href='{url}'>Aşı Kaydını Görüntüleyin</a></p>" +
                    $"<p><a href='{cdcUrl}'>Kendinizi ve sevdiklerinizi nasıl koruyacağınızı</a> Centers for Disease Control and Prevention (CDC, Hastalık Kontrol ve Korunma Merkezleri)'nden öğrenebilirsiniz.</p>" +
                    $"<h2>Sorularınız mı var?</h2>" +
-                   $"<p>Dijital COVID-19 Aşı Kaydınız hakkında daha fazla bilgi almak için Sıkça Sorulan Sorular <a href='{vaccineFAQUrl}'>(SSS)</a> bölümümüzü ziyaret edin.</p>" +
+                   $"<p>Dijital COVID-19 Aşı Kaydınız hakkında daha fazla bilgi almak için <a href='{vaccineFAQUrl}'>Sıkça Sorulan Sorular (SSS)</a> bölümümüzü ziyaret edin.</p>" +
                    $"<h2>Güncel bilgilere sahip olun.</h2>" +
                    $"<p>COVID-19 <a href='{covidWebUrl}'>hakkında en güncel bilgileri görüntüleyin</a>.</p><br/>" +
                    $"<hr>" +
@@ -612,31 +612,31 @@ namespace Application.Common
                     $"<p><a href='{url}'>Ver o comprovante de vacinação</a></p>" +
                     $"<p>Saiba mais sobre como <a href='{cdcUrl}'>proteger a si mesmo e aos outros</a> com o Centers for Disease Control and Prevention (CDC, Centro para Controle e Prevenção de Doenças).</p>" +
                     $"<h2>Tem dúvidas?</h2>" +
-                    $"<p>Acesse a nossa página de Perguntas frequentes (<a href='{vaccineFAQUrl}'>FAQ</a>) para saber mais sobre o seu Comprovante digital de vacinação contra a COVID-19.</p>" +
+                    $"<p>Acesse a nossa página de <a href='{vaccineFAQUrl}'>Perguntas frequentes (FAQ)</a> para saber mais sobre o seu Comprovante digital de vacinação contra a COVID-19.</p>" +
                     $"<h2>Mantenha-se informado.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Veja as informações mais recentes</a> sobre a COVID-19.</p><br/>" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>E-mail do representante oficial do Washington State Department of Health (Departamento de Saúde do estado de Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
-                "hi" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><br/>" +
-                     $"<h1 style='color: #C84C0E'>डिजिटल COVID-19 सत्यापन रिकॉर्ड </h1>" +
-                     $"<p>डिजिटल COVID-19 सत्यापन रिकॉर्ड प्रणाली पर जाने के लिए धन्यवाद। आपके COVID-19 वैक्सीन रिकॉर्ड कोड को पुनः प्राप्त करने की लिंक {linkExpireHours} घंटे के लिए वैध है। आपके डिवाइस पर एक्सेस करने और सहेजने के बाद, QR कोड की समय-सीमा समाप्त नहीं होगी।</p>" +
-                     $"<p><a href='{url}'>वैक्सीन रिकॉर्ड देखें </a></p>" +
-                     $"<p>Centers for Disease Control and Prevention(रोग नियंत्रण और रोकथाम केंद्र) से <a href='{cdcUrl}'>स्वयं और दूसरों की रक्षा</a> करने के तरीके के बारे में और जानें।</p>" +
-                     $"<h2>आपके कोई प्रश्न हैं?</h2>" +
-                     $"<p>अपने डिजिटल COVID-19 वैक्सीन रिकॉर्ड के बारे में अधिक जानने के लिए हमारे अक्सर पूछे जाने वाले प्रश्नों (<a href='{vaccineFAQUrl}'>FAQ</a>) के पेज पर जाएँ।</p>" +
-                     $"<h2>सूचित रहें।</h2>" +
-                     $"<p>COVID-19 के बारे में <a href='{covidWebUrl}'>नवीनतम जानकारी देखें</a>। </p><br/>" +
-                     $"<hr>" +
-                     $"<footer><p style='text-align:center'>Washington State Department of Health (वाशिंगटन राज्य के स्वास्थ्य विभाग) का आधिकारिक ईमेल</p>" +
-                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
+               "hi" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><br/>" +
+                    $"<h1 style='color: #C84C0E'>डिजिटल COVID-19 सत्यापन रिकॉर्ड </h1>" +
+                    $"<p>डिजिटल COVID-19 सत्यापन रिकॉर्ड प्रणाली पर जाने के लिए धन्यवाद। आपके COVID-19 वैक्सीन रिकॉर्ड कोड को पुनः प्राप्त करने की लिंक {linkExpireHours} घंटे के लिए वैध है। आपके डिवाइस पर एक्सेस करने और सहेजने के बाद, QR कोड की समय-सीमा समाप्त नहीं होगी।</p>" +
+                    $"<p><a href='{url}'>वैक्सीन रिकॉर्ड देखें </a></p>" +
+                    $"<p>Centers for Disease Control and Prevention(रोग नियंत्रण और रोकथाम केंद्र) से <a href='{cdcUrl}'>स्वयं और दूसरों की रक्षा</a> करने के तरीके के बारे में और जानें।</p>" +
+                    $"<h2>आपके कोई प्रश्न हैं?</h2>" +
+                    $"<p>अपने डिजिटल COVID-19 वैक्सीन रिकॉर्ड के बारे में अधिक जानने के लिए हमारे <a href='{vaccineFAQUrl}'>अक्सर पूछे जाने वाले प्रश्नों (FAQ)</a> के पेज पर जाएँ।</p>" +
+                    $"<h2>सूचित रहें।</h2>" +
+                    $"<p>COVID-19 के बारे में <a href='{covidWebUrl}'>नवीनतम जानकारी देखें</a>। </p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Washington State Department of Health (वाशिंगटन राज्य के स्वास्थ्य विभाग) का आधिकारिक ईमेल</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "de" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><br/>" +
                     $"<h1 style='color: #C84C0E'>COVID-19-Digitalzertifikat</h1>" +
                     $"<p>Danke für Ihren Besuch beim COVID-19-Digitalzertifikat-System. Der Link zum Abrufen Ihres COVID-19-Passes ist {linkExpireHours} Stunden lang gültig. Nachdem Sie den QR-Code aufgerufen und auf Ihrem Gerät gespeichert haben, läuft der Code nicht ab.</p>" +
                     $"<p><a href='{url}'>Impfpass anzeigen </a></p>" +
                     $"<p>Erfahren Sie von den Centers for Disease Control and Prevention (Zentren für Seuchenbekämpfung und Prävention) mehr darüber, wie Sie <a href='{cdcUrl}'>sich selbst und andere schützen</a> können.</p>" +
                     $"<h2>Haben Sie Fragen?</h2>" +
-                    $"<p>Besuchen Sie unsere Seite mit häufig gestellten Fragen (<a href='{vaccineFAQUrl}'>FAQ</a>) , um mehr über Ihren digitalen COVID-19-Impfpass zu erfahren.</p>" +
+                    $"<p>Besuchen Sie unsere Seite mit <a href='{vaccineFAQUrl}'>häufig gestellten Fragen (FAQ)</a> , um mehr über Ihren digitalen COVID-19-Impfpass zu erfahren.</p>" +
                     $"<h2>Bleiben Sie auf dem Laufenden.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Sehen Sie sich die neuesten Informationen</a> über COVID-19 an.</p><br/>" +
                     $"<hr>" +
@@ -654,25 +654,25 @@ namespace Application.Common
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ወግዓዊ ናይ Washington State Department of Health (ክፍሊ ጥዕና ግዝኣት ዋሽንግተን) ኢ-መይል</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
-                "te" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><br/>" +
-                     $"<h1 style='color: #C84C0E'>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్</h1>" +
-                     $"<p>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్ సిస్టమ్​ని సందర్శించినందుకు మీకు ధన్యవాదాలు. మీ కొవిడ్-19 వ్యాక్సిన్ రికార్డ్​ని తిరిగి పొందే లింక్ {linkExpireHours} గంటలపాటు చెల్లుబాటు అవుతుంది. మీరు యాక్సెస్ చేసుకొని, మీ పరికరంలో సేవ్ చేసిన తరువాత, QR కోడ్ గడువు తీరదు.</p>" +
-                     $"<p><a href='{url}'>వ్యాక్సిన్ రికార్డ్​ని వీక్షించండి </a></p>" +
-                     $"<p><a href='{cdcUrl}'>మిమ్మల్ని మరియు ఇతరుల నుంచి</a> సంరక్షించుకోవడం ఎలా అనే దానిని Centers for Disease Control and Prevention (సెంటర్స్ ఫర్ డిసీజ్ కంట్రోల్ అండ్ ప్రివెన్షన్) నుంచి తెలుసుకోండి. </p>" +
-                     $"<h2>మీకు ఏమైనా ప్రశ్నలున్నాయా?</h2>" +
-                     $"<p>డిజిటల్ కొవిడ్-19 వ్యాక్సిన్ రికార్డ్ గురించి మరింత తెలుసుకోవడానికి మా తరచుగా అడిగే ప్రశ్నలు (<a href='{vaccineFAQUrl}'>FAQ</a>) పేజీని సందర్శించండి.</p>" +
-                     $"<h2>అవగాహనతో ఉండండి.</h2>" +
-                     $"<p>కొవిడ్-19పై <a href='{covidWebUrl}'>తాజా సమాచారాన్ని వీక్షించండి</a>.</p><br/>" +
-                     $"<hr>" +
-                     $"<footer><p style='text-align:center'>అధికారిక Washington State Department of Health (వాషింగ్టన్ స్టేట్ డిపార్ట్​మెంట్ ఆఫ్ హెల్త్) ఇమెయిల్</p>" +
-                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
+               "te" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><br/>" +
+                    $"<h1 style='color: #C84C0E'>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్</h1>" +
+                    $"<p>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్ సిస్టమ్​ని సందర్శించినందుకు మీకు ధన్యవాదాలు. మీ కొవిడ్-19 వ్యాక్సిన్ రికార్డ్​ని తిరిగి పొందే లింక్ {linkExpireHours} గంటలపాటు చెల్లుబాటు అవుతుంది. మీరు యాక్సెస్ చేసుకొని, మీ పరికరంలో సేవ్ చేసిన తరువాత, QR కోడ్ గడువు తీరదు.</p>" +
+                    $"<p><a href='{url}'>వ్యాక్సిన్ రికార్డ్​ని వీక్షించండి </a></p>" +
+                    $"<p><a href='{cdcUrl}'>మిమ్మల్ని మరియు ఇతరుల నుంచి</a> సంరక్షించుకోవడం ఎలా అనే దానిని Centers for Disease Control and Prevention (సెంటర్స్ ఫర్ డిసీజ్ కంట్రోల్ అండ్ ప్రివెన్షన్) నుంచి తెలుసుకోండి. </p>" +
+                    $"<h2>మీకు ఏమైనా ప్రశ్నలున్నాయా?</h2>" +
+                    $"<p>డిజిటల్ కొవిడ్-19 వ్యాక్సిన్ రికార్డ్ గురించి మరింత తెలుసుకోవడానికి మా <a href='{vaccineFAQUrl}'>తరచుగా అడిగే ప్రశ్నలు (FAQ)</a> పేజీని సందర్శించండి.</p>" +
+                    $"<h2>అవగాహనతో ఉండండి.</h2>" +
+                    $"<p>కొవిడ్-19పై <a href='{covidWebUrl}'>తాజా సమాచారాన్ని వీక్షించండి</a>.</p><br/>" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>అధికారిక Washington State Department of Health (వాషింగ్టన్ స్టేట్ డిపార్ట్​మెంట్ ఆఫ్ హెల్త్) ఇమెయిల్</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "sw" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><br/>" +
                     $"<h1 style='color: #C84C0E'>Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19</h1>" +
                     $"<p>Asante kwa kutembelea mfumo wa Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19. Kiungo cha kupata msimbo wako wa chanjo ya COVID-19 kitakuwa amilifu kwa saa {linkExpireHours}. Mara tu imefikiwa na kuhifadhiwa kwenye kifaa chako, msimbo wa QR hautaisha muda.</p>" +
                     $"<p><a href='{url}'>Tazama Rekodi ya Chanjo .</a></p>" +
                     $"<p>Jifunze zaidi kuhusu jinsi ya <a href='{cdcUrl}'>kujilinda pamoja na wengine</a> kutoka Centers for Disease Control and Prevention (Vituo vya Udhibiti na Uzuiaji wa Ugonjwa).</p>" +
                     $"<h2>Una maswali?</h2>" +
-                    $"<p>Tembelea ukurasa wa Maswali yetu Yanayoulizwa Mara kwa Mara (<a href='{vaccineFAQUrl}'>FAQ</a>)  ili kujifunza zaidi kuhusu Rekodi yako ya Kidijitali ya Chanjo ya COVID-19.</p>" +
+                    $"<p>Tembelea ukurasa wa <a href='{vaccineFAQUrl}'>Maswali yetu Yanayoulizwa Mara kwa Mara (FAQ)</a>  ili kujifunza zaidi kuhusu Rekodi yako ya Kidijitali ya Chanjo ya COVID-19.</p>" +
                     $"<h2>Endelea Kupata Habari.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Tazama maelezo ya hivi karibuni</a> kuhusu COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -708,7 +708,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>ਵੈਕਸੀਨ ਰਿਕਾਰਡ ਵੇਖੋ </a></p>" +
                     $"<p>Centers for Disease Control and Prevention (ਬਿਮਾਰੀ ਨਿਯੰਤ੍ਰਣ ਅਤੇ ਰੋਕਥਾਮ ਕੇਂਦਰ) ਤੋਂ <a href='{cdcUrl}'>ਆਪਣੀ ਅਤੇ ਦੂਜਿਆਂ ਦੀ ਰੱਖਿਆ ਕਰਨ</a>  ਦੇ ਤਰੀਕੇ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰੋ।</p>" +
                     $"<h2>ਕੀ ਤੁਹਾਡੇ ਕੋਈ ਸਵਾਲ ਹਨ?</h2>" +
-                    $"<p>ਆਪਣੇ ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੈਕਸੀਨ ਰਿਕਾਰਡ ਬਾਰੇ ਹੋਰ ਜਾਣਨ ਲਈ ਸਾਡੇ <a href='{vaccineFAQUrl}'>ਅਕਸਰ ਪੁੱਛੇ ਜਾਣ ਵਾਲੇ ਸਵਾਲ</a>(FAQ)  ਪੰਨੇ 'ਤੇ ਜਾਓ।</p>" +
+                    $"<p>ਆਪਣੇ ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੈਕਸੀਨ ਰਿਕਾਰਡ ਬਾਰੇ ਹੋਰ ਜਾਣਨ ਲਈ ਸਾਡੇ <a href='{vaccineFAQUrl}'>ਅਕਸਰ ਪੁੱਛੇ ਜਾਣ ਵਾਲੇ ਸਵਾਲ (FAQ)</a>  ਪੰਨੇ 'ਤੇ ਜਾਓ।</p>" +
                     $"<h2>ਸੂਚਿਤ ਰਹੋ।</h2>" +
                     $"<p>ਕੋਵਿਡ-19 ਬਾਰੇੇ <a href='{covidWebUrl}'>ਨਵੀਨਤਮ ਜਾਣਕਾਰੀ ਵੇਖੋ</a></p><br/>" +
                     $"<hr>" +
@@ -720,7 +720,7 @@ namespace Application.Common
                     $"<p dir='rtl'><a href='{url}'>د واکسین ریکارډ وګورئ </a></p>" +
                     $"<p dir='rtl'><a href='{cdcUrl}'>خپل ځان او نور خلک</a> څنګه وساتئ په اړه نور معلومات د ناروغیو کنټرول او مخنیوي مرکزونو (Centers for Disease Control and Prevention) څخه زده کړئ.</p>" +
                     $"<h2 dir='rtl'>ایا پوښتنې لرئ؟</h2>" +
-                    $"<p dir='rtl'>د خپل ډیجیټل COVID-19 واکسین ثبت په اړه د نورې زده کړې لپاره زموږ په مکرر ډول پوښتل شوي پوښتنو (<a href='{vaccineFAQUrl}'>FAQ</a>)  پاڼې څخه لیدنه وکړئ.</p>" +
+                    $"<p dir='rtl'>د خپل ډیجیټل COVID-19 <a href='{vaccineFAQUrl}'>واکسین ثبت په اړه د نورې زده کړې لپاره زموږ په مکرر ډول پوښتل شوي پوښتنو (FAQ)</a>  پاڼې څخه لیدنه وکړئ.</p>" +
                     $"<h2 dir='rtl'>باخبر اوسئ.</h2>" +
                     $"<p dir='rtl'>دCOVID-19 په<a href='{covidWebUrl}'>اړه تازه معلومات وګورئ</a>.</p><br/>" +
                     $"<hr>" +
@@ -732,7 +732,7 @@ namespace Application.Common
                     $"<p dir='rtl'><a href='{url}'>ویکسین ریکارڈ دیکھیں</a></p>" +
                     $"<p dir='rtl'>Centers for Disease Control and Prevention (مراکز برائے امراض پر قابو اور انسداد) سے مزید سیکھیں کہ <a href='{cdcUrl}'>خود کو اور دوسروں کو کیسے محفوظ رکھا جائے</a></p>" +
                     $"<h2 dir='rtl'>سوالات ہیں؟</h2>" +
-                    $"<p dir='rtl'>اپنے ڈیجیٹل کووڈ-19 ویکسین ریکارڈ کے متعلق مزید جاننے کے لئے ہمارا عمومی سوالات (<a href='{vaccineFAQUrl}'>FAQ</a>)  کا صفحہ ملاحظہ کریں۔</p>" +
+                    $"<p dir='rtl'>اپنے ڈیجیٹل کووڈ-19 ویکسین ریکارڈ کے متعلق مزید جاننے کے لئے ہمارا <a href='{vaccineFAQUrl}'>عمومی سوالات (FAQ)</a>  کا صفحہ ملاحظہ کریں۔</p>" +
                     $"<h2 dir='rtl'>آگاہ رہیں۔</h2>" +
                     $"<p dir='rtl'>کووڈ-19 کے متعلق <a href='{covidWebUrl}'>تازہ ترین معلومات دیکھیں<a/> </p><br/>" +
                     $"<hr>" +
@@ -744,7 +744,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>खोपसम्बन्धी रेकर्ड हेर्नुहोस्</a></p>" +
                     $"<p>Centers for Disease Control and Prevention (रोग नियन्त्रण तथा रोकथाम केन्द्रहरू) बाट <a href='{cdcUrl}'>आफ्नो र अन्य मानिसहरूको सुरक्षा गर्ने</a> तरिकाको बारेमा थप जान्नुहोस्।</p>" +
                     $"<h2>प्रश्नहरू छन्?</h2>" +
-                    $"<p>आफ्नो डिजिटल कोभिड-19 खोप रेकर्डका बारेमा थप जान्नका लागि हाम्रो बारम्बार सोधिने प्रश्नहरू (<a href='{vaccineFAQUrl}'>FAQ</a>) को पृष्ठ हेर्नुहोस्।</p>" +
+                    $"<p>आफ्नो डिजिटल कोभिड-19 खोप रेकर्डका बारेमा थप जान्नका लागि हाम्रो <a href='{vaccineFAQUrl}'>बारम्बार सोधिने प्रश्नहरू (FAQ)</a> को पृष्ठ हेर्नुहोस्।</p>" +
                     $"<h2>सूचित रहनुहोस्।</h2>" +
                     $"<p>कोभिड-19 बारे <a href='{covidWebUrl}'>नवीनतम जानकारी हेर्नुहोस्</a> ।</p><br/>" +
                     $"<hr>" +
@@ -756,7 +756,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Kunde’e nasa iyo nda vacuna</a></p>" +
                     $"<p>Ni’in ka ní tu’un siki nasa <a href='{cdcUrl}'>koto yo maa yo ji sava ka ñayiví</a> nuu Centers for Disease Control and Prevention (CDC, Ve’e nuu jito ji jekani nda kue’e).</p>" +
                     $"<h2>A iyo tu’un jikatu’un ní</h2>" +
-                    $"<p>Kunde’e ní nuu página nda tu’un jikatu’un ka (<a href='{vaccineFAQUrl}'>FAQ</a>) tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu Tarjeta Vacuna COVID-19 ja iyo nuu Kaa ndichí.</p>" +
+                    $"<p>Kunde’e ní nuu página <a href='{vaccineFAQUrl}'>nda tu’un jikatu’un ka (FAQ)</a> tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu Tarjeta Vacuna COVID-19 ja iyo nuu Kaa ndichí.</p>" +
                     $"<h2>Ndukú ni tu’un.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Kunde’e ní tu’un jáá ka</a> siki COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -768,7 +768,7 @@ namespace Application.Common
                     $"<p><a href='{url}'> Mmat Wa Jeje </a></p>" +
                     $"<p>Katak bar tarrin wāwee nan <a href='{cdcUrl}'>tokwanwa amimaanpa kab bar jet</a>  jan ko Centers for Disease Control and Prevention (Buḷōn bwe Nañinmej Kabwijer kab Deṃak).</p>" +
                     $"<h2>Jeban kajjitōk?</h2>" +
-                    $"<p>Ilomei arro Jọkkutkut Kajjitōk Nawāwee(<a href='{vaccineFAQUrl}'>FAQ</a>)  ālāl nan katak bar jidik tarrin aim Iaam jarom COVID-19 Wa Jeje.</p>" +
+                    $"<p>Ilomei arro <a href='{vaccineFAQUrl}'>Jọkkutkut Kajjitōk Nawāwee (FAQ)</a>  ālāl nan katak bar jidik tarrin aim Iaam jarom COVID-19 Wa Jeje.</p>" +
                     $"<h2> Pād melele</h2>" +
                     $"<p> <a href='{covidWebUrl}'>Mmat ko rimwik kojjela</a>  ioo COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -804,7 +804,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>ពិនិត្យ​មើល​កំណត់ត្រាវ៉ាក់សាំង</a></p>" +
                     $"<p>ស្វែងយល់បន្ថែម​អំពីរបៀប <a href='{cdcUrl}'>​ការពារខ្លួនអ្នក​និងអ្នកដទៃ​ព</a> Centers for Disease Control and Prevention (មជ្ឈមណ្ឌល​គ្រប់គ្រង​និង​បង្ការជំងឺ​)៖</p>" +
                     $"<h2>មានសំណួរមែនទេ?</h2>" +
-                    $"<p>ចូលទៅកាន់ទំព័រ​​សំណួរចោទសួរជាញឹកញាប់ (<a href='{vaccineFAQUrl}'>FAQ</a>)  របស់យើង​ដើម្បី​ស្វែងយល់​បន្ថែមអំពី​កំណត់ត្រា​វ៉ាក់សាំង​ COVID-19 ជាទម្រង់ឌីជីថល។</p>" +
+                    $"<p>ចូលទៅកាន់ទំព័រ<a href='{vaccineFAQUrl}'>​​សំណួរចោទសួរជាញឹកញាប់ (FAQ)</a>  របស់យើង​ដើម្បី​ស្វែងយល់​បន្ថែមអំពី​កំណត់ត្រា​វ៉ាក់សាំង​ COVID-19 ជាទម្រង់ឌីជីថល។</p>" +
                     $"<h2>បន្តទទួលបានដំណឹង​​។</h2>" +
                     $"<p><a href='{covidWebUrl}'>ពិនិត្យមើលព័ត៌មានថ្មីៗ​បំផុត</a> ស្តីពីជំងឺ​ COVID-19។</p><br/>" +
                     $"<hr>" +
@@ -828,7 +828,7 @@ namespace Application.Common
                     $"<p><a href='{url}'><a href='{url}'>Raica na iVolatukutuku ni veika e vauca na iCula<a href='{url}'></a></p>" +
                     $"<p>Vulica e levu tale na tikina ena sala mo <a href='{cdcUrl}'>taqomaki iko kina vei ira eso tale</a>  mai na Centers for Disease Control and Prevention (Tabana ni Tatarovi kei na Veitaqomaki mai na Mate).</p>" +
                     $"<h2>Taro?</h2>" +
-                    $"<p>Rai ena tabana e tiko kina na Taro e Tarogi Wasoma <a href='{vaccineFAQUrl}'>(FAQ)</a>  mo kila e levu tale na tikina e vauca na iVolatukutuku Vakalivaliva ni Veika e Vauca na COVID-19.</p>" +
+                    $"<p>Rai ena tabana e tiko kina na <a href='{vaccineFAQUrl}'>Taro e Tarogi Wasoma (FAQ)</a>  mo kila e levu tale na tikina e vauca na iVolatukutuku Vakalivaliva ni Veika e Vauca na COVID-19.</p>" +
                     $"<h2>Mo Kila na Veika e Yaco Tiko.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Kila na itukutuku vou duadua ena veika e vauca</a>  na COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -898,7 +898,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Ragaa Taalaallii Ilaalaa</a></p>" +
                     $"<p>Waa’ee akkamitti akka  <a href='{cdcUrl}'>ofii fi namoota biroo eegdan</a> caalmatti Giddu Gala To’annoo fi Ittisa Dhibee (Centers for Disease Control and Prevention) irraa baradhaa.</p>" +
                     $"<h2>Gaaffii qabduu?</h2>" +
-                    $"<p>Waa’ee Mirkaneessa Ragaa Dijitaalaa COVID-19 gaaffii yoo qabaattan, fuula Gaaffilee Yeroo Heddu Gaafataman  (<a href='{vaccineFAQUrl}'>FAQ</a>) ilaalaa.</p>" +
+                    $"<p>Waa’ee Mirkaneessa Ragaa Dijitaalaa COVID-19 gaaffii yoo qabaattan, fuula <a href='{vaccineFAQUrl}'>Gaaffilee Yeroo Heddu Gaafataman (FAQ)</a> ilaalaa.</p>" +
                     $"<h2>Odeeffannoo Argadhaa.</h2>" +
                     $"<p>COVID-19 ilaalchisee  <a href='{covidWebUrl}'>odeeffannoo haaraa ilaalaa</a>.</p><br/>" +
                     $"<hr>" +
@@ -922,7 +922,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>தடுப்பூசி பதிவைப் பார்க்கவும்</a></p>" +
                     $"<p>நோய் கட்டுப்பாடு மற்றும் தடுப்பு மையங்களில் இருந்து <a href='{cdcUrl}'>உங்களையும் பிறரையும் பாதுகாப்பது </a> Centers for Disease Control and Prevention )எப்படி என்பது பற்றி மேலும் அறிக) </p>" +
                     $"<h2>கேள்விகள் உள்ளதா?</h2>" +
-                    $"<p>உங்கள் மின்னணு கொவிட்-19 தடுப்பூசி பதிவைப் பற்றி மேலும் அறிய, எங்களின் அடிக்கடி கேட்கப்படும் கேள்விகள் (<a href='{vaccineFAQUrl}'>FAQ</a>) பக்கத்தைப் பார்வையிடவும்.</p>" +
+                    $"<p>உங்கள் மின்னணு கொவிட்-19 தடுப்பூசி பதிவைப் பற்றி மேலும் அறிய, எங்களின் <a href='{vaccineFAQUrl}'>அடிக்கடி கேட்கப்படும் கேள்விகள் (FAQ)</a> பக்கத்தைப் பார்வையிடவும்.</p>" +
                     $"<h2>தகவலை அறிந்து இருங்கள்.</h2>" +
                     $"<p><a href='{covidWebUrl}'>சமீபத்திய தகவலைப் பார்க்கவும்</a> கொவிட்-19 பற்றி.</p><br/>" +
                     $"<hr>" +
@@ -934,7 +934,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Saib Ntaub Ntawv Sau Tseg Txog Tshuaj Tiv Thaiv Kab Mob </a></p>" +
                     $"<p>Kawm paub txiv txog txoj hauv kev los <a href='{cdcUrl}'>pov thaiv koj tus kheej thiab lwm tus neeg</a> los ntawm Centers for Disease Control and Prevention (Cov Chaw Tswj thiab Pov Thaiv Kab Mob).</p>" +
                     $"<h2>Puas muaj cov lus nug?</h2>" +
-                    $"<p>Mus saib peb nplooj vev xaib muaj Cov Lus Nug Uas Nquag Nug (<a href='{vaccineFAQUrl}'>FAQ</a>) ) txhawm rau kawm paub ntxiv txog koj li Ntaub Ntawv Sau Tseg Txog Tshuaj Tiv Thaiv Kab Mob COVID-19 Ua Dis Cis Tauj</p>" +
+                    $"<p>Mus saib peb nplooj vev xaib muaj <a href='{vaccineFAQUrl}'>Cov Lus Nug Uas Nquag Nug (FAQ)</a> txhawm rau kawm paub ntxiv txog koj li Ntaub Ntawv Sau Tseg Txog Tshuaj Tiv Thaiv Kab Mob COVID-19 Ua Dis Cis Tauj</p>" +
                     $"<h2>Soj Qab Saib Kev Paub.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Saib cov ntaub ntawv tawm tshiab tshaj plaws</a> txog kab mob COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -946,7 +946,7 @@ namespace Application.Common
                      $"<p><a href='{url}'>ดูบันทึกวัคซีน</a></p>" +
                      $"<p>เรียนรู้เพิ่มเติมเกี่ยวกับวิธีการ<a href='{cdcUrl}'>ป้องกันตัวเองและผู้อื่น</a> จาก Centers for Disease Control and Prevention (ศูนย์ควบคุมและป้องกันโรค)</p>" +
                      $"<h2>มีคำถามหรือไม่</h2>" +
-                     $"<p>โปรดไปยังส่วนคำถามที่พบบ่อย (<a href='{vaccineFAQUrl}'>FAQ</a>) เพื่อเรียนรู้เพิ่มเติมเกี่ยวกับบันทึกการฉีดวัคซีนป้องกันโควิด-19 แบบดิจิทัลของคุณ</p>" +
+                     $"<p>โปรดไปยังส่วน<a href='{vaccineFAQUrl}'>คำถามที่พบบ่อย (FAQ)</a> เพื่อเรียนรู้เพิ่มเติมเกี่ยวกับบันทึกการฉีดวัคซีนป้องกันโควิด-19 แบบดิจิทัลของคุณ</p>" +
                      $"<h2>คอยติดตามข่าวสาร</h2>" +
                      $"<p><a href='{covidWebUrl}'>ดูข้อมูลล่าสุด</a> เกี่ยวกับโควิด-19</p><br/>" +
                      $"<hr>" +
@@ -1089,7 +1089,7 @@ namespace Application.Common
                     $"<p>Gần đây bạn yêu cầu Hồ sơ Xác nhận COVID-19 kỹ thuật số từ <a href='{webUrl}'>hệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số</a>. Rất tiếc, thông tin mà bạn cung cấp không khớp với thông tin có trong hệ thống của tiểu bang.</p><br/>" +
                     $"<p>Bạn có thể gửi yêu cầu khác trong hệ thống <a href='{webUrl}'>Hồ sơ Xác nhận COVID-19 kỹ thuật số</a> với một số điện thoại di động hoặc địa chỉ email khác, bạn có thể <a href='{contactUsUrl}'>liên hệ với chúng tôi</a> để được trợ giúp khớp thông tin hồ sơ với thông tin liên lạc của bạn, hoặc bạn có thể liên lạc với nhà cung cấp của mình để đảm bảo rằng thông tin của bạn đã được gửi đến hệ thống của tiểu bang.</p>" +
                     $"<h2>Có câu hỏi?</h2>" +
-                    $"<p>Truy cập vào trang Câu Hỏi Thường Gặp <a href='{vaccineFAQUrl}'>FAQ</a> để tìm hiểu thêm về Hồ Sơ Xác nhận COVID-19 kỹ thuật số của bạn.</p>" +
+                    $"<p>Truy cập vào trang <a href='{vaccineFAQUrl}'>Các Câu Hỏi Thường Gặp (FAQ)</a> để tìm hiểu thêm về Hồ Sơ Xác nhận COVID-19 kỹ thuật số của bạn.</p>" +
                     $"<h2>Luôn cập nhật thông tin.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1114,7 +1114,7 @@ namespace Application.Common
                     $"<p>Kamakailan kang humiling ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19 mula <a href='{webUrl}'>system ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</a>. Sa kasamaang-palad, hindi tumutugma ang ibinigay mong impormasyon sa impormasyong nasa system ng estado.</p><br/>" +
                     $"<p>Maaari kang magsumite sa isa pang kahilingan sa system ng <a href='{webUrl}'>Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</a> gamit ang ibang numero ng mobile na telepono o email address, <a href='{contactUsUrl}'>makipag-ugnayan sa amin</a> para sa tulong sa pagtugma ng iyong rekord sa impormasyon sa pakikipag-ugnayan mo, o makipag-ugnayan sa iyong provider para tiyaking isinumite sa system ng estado ang iyong impormasyon.</p>" +
                     $"<h2>May mga tanong?</h2>" +
-                    $"<p>Bisitahin ang aming page ng Mga Madalas Itanong (<a href='{vaccineFAQUrl}'>FAQ</a>) para matuto pa tungkol sa iyong Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19.</p>" +
+                    $"<p>Bisitahin ang aming page ng <a href='{vaccineFAQUrl}'>Mga Madalas Itanong (FAQ)</a> para matuto pa tungkol sa iyong Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19.</p>" +
                     $"<h2>Manatiling May Kaalaman.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> tungkol sa COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1125,7 +1125,7 @@ namespace Application.Common
                     $"<p>Недавно вы запросили цифровую запись о вакцинации от COVID-19 в <a href='{webUrl}'>системе штата</a>. К сожалению, предоставленная вами информация не совпадает с информацией в системе штата.</p><br/>" +
                     $"<p>Вы можете подать еще один запрос в <a href='{webUrl}'>системе цифровых записей о вакцинации от COVID-19</a>, используя другой номер мобильного телефона или адрес электронной почты, а также <a href='{contactUsUrl}'>связаться с нами</a> , чтобы получить помощь в сверке данных, указанных в вашей записи, с вашей контактной информацией, или обратиться к своему лечащему врачу, чтобы убедиться, что ваша информация была внесена в систему штата.</p>" +
                     $"<h2>Возникли вопросы?</h2>" +
-                    $"<p>Чтобы узнать больше о цифровой записи о вакцинации от COVID-19, перейдите на нашу страницу «Часто задаваемые вопросы»(<a href='{vaccineFAQUrl}'>FAQ</a>).</p>" +
+                    $"<p>Чтобы узнать больше о цифровой записи о вакцинации от COVID-19, перейдите на нашу страницу <a href='{vaccineFAQUrl}'>«Часто задаваемые вопросы» (FAQ)</a>.</p>" +
                     $"<h2>Оставайтесь в курсе.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Получайте актуальную информацию</a> о COVID-19 .</p><br/>" +
                     $"<hr>" +
@@ -1147,7 +1147,7 @@ namespace Application.Common
                     $"<p>Vous avez récemment demandé une Attestation numérique de vaccination COVID-19 auprès du système d'<a href='{webUrl}'>Attestation numérique de vaccination COVID-19</a>. Malheureusement, les informations que vous avez fournies ne correspondent pas à celles qui figurent dans le système de l'État.</p><br/>" +
                     $"<p>Vous pouvez soumettre une autre demande dans le système d'<a href='{webUrl}'>Attestation numérique de vaccination COVID-19</a> en indiquant un autre numéro de téléphone mobile ou une autre adresse e-mail, vous pouvez <a href='{contactUsUrl}'>nous contacter</a> pour obtenir de l'aide afin d'associer votre attestation à vos coordonnées, ou vous pouvez contacter votre professionnel de santé pour vérifier que vos informations ont été transmises au système de l'État.</p>" +
                     $"<h2>Vous avez des questions?</h2>" +
-                    $"<p>Consultez notre page Foire Aux Questions (<a href='{vaccineFAQUrl}'>FAQ</a>) pour en savoir plus sur votre Attestation numérique de vaccination COVID-19.</p>" +
+                    $"<p>Consultez notre page <a href='{vaccineFAQUrl}'>Foire Aux Questions (FAQ)</a> pour en savoir plus sur votre Attestation numérique de vaccination COVID-19.</p>" +                    
                     $"<h2>Informez-vous.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1158,7 +1158,7 @@ namespace Application.Common
                     $"<p>Yakın zamanda <a href='{webUrl}'>Dijital COVID-19 Doğrulama Kaydı sisteminden</a> bir Dijital COVID-19 Doğrulama Kaydı istediniz. Maalesef verdiğiniz bilgiler eyalet sistemindeki bilgilerle eşleşmiyor.</p><br/>" +
                     $"<p><a href='{webUrl}'>Dijital COVID-19 Doğrulama Kaydı</a> sisteminden farklı bir cep telefonu numarası ya da e-posta adresi ile başka bir istekte bulabilir, kaydınızı iletişim bilgilerinizle eşleştirme konusunda yardım almak için <a href='{contactUsUrl}'>bize ulaşabilir</a> ya da bilgilerinizin eyalet sistemine gönderildiğinden emin olmak için sağlayıcınızla iletişime geçebilirsiniz.</p>" +
                     $"<h2>Sorularınız mı var?</h2>" +
-                    $"<p>Dijital COVID-19 Doğrulama Kaydı’nız hakkında daha fazla bilgi almak için Sıkça Sorulan Sorular <a href='{vaccineFAQUrl}'>(SSS)</a> bölümümüzü ziyaret edin.</p>" +
+                    $"<p>Dijital COVID-19 Doğrulama Kaydı’nız hakkında daha fazla bilgi almak için <a href='{vaccineFAQUrl}'>Sıkça Sorulan Sorular (SSS)</a> bölümümüzü ziyaret edin.</p>" +
                     $"<h2>Güncel bilgilere sahip olun.</h2>" +
                     $"<p>COVID-19 <a href='{covidWebUrl}'>hakkında en güncel bilgileri görüntüleyin</a>.</p><br/>" +
                     $"<hr>" +
@@ -1190,7 +1190,7 @@ namespace Application.Common
                     $"<p>Recentemente, você solicitou um Comprovante digital de vacinação contra a COVID-19 do <a href='{webUrl}'>sistema de Comprovante digital de vacinação contra a COVID-19</a>. Infelizmente, as informações fornecidas não correspondem às informações em nosso sistema.</p><br/>" +
                     $"<p>É possível enviar outra solicitação ao sistema de <a href='{webUrl}'>Comprovante digital de vacinação contra a COVID-19</a> com um número de celular ou endereço de e-mail diferente. <a href='{contactUsUrl}'>Entre em contato conosco</a> para obter ajuda com a correspondência entre os dados de contato e as informações em seu comprovante, ou entre em contato com o seu provedor para garantir que suas informações foram enviadas para o sistema do estado.</p>" +
                     $"<h2>Tem dúvidas?</h2>" +
-                    $"<p>Visite a nossa página de Perguntas frequentes (<a href='{vaccineFAQUrl}'>FAQ</a>) para saber mais sobre o seu Comprovante digital de vacinação contra a COVID-19.</p>" +
+                    $"<p>Visite a nossa página de <a href='{vaccineFAQUrl}'>Perguntas frequentes (FAQ)</a> para saber mais sobre o seu Comprovante digital de vacinação contra a COVID-19.</p>" +
                     $"<h2>Mantenha-se informado.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Veja as informações mais recentes</a> sobre a COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1201,7 +1201,7 @@ namespace Application.Common
                     $"<p>आपने हाल ही में <a href='{webUrl}'>डिजिटल COVID-19 सत्यापन रिकॉर्ड प्रणाली </a> से डिजिटल COVID-19 सत्यापन रिकॉर्ड का अनुरोध किया है। दुर्भाग्य से, आपके द्वारा प्रदान की गई जानकारी राज्य प्रणाली की जानकारी से मेल नहीं खाती है। </p><br/>" +
                     $"<p>आप एक अलग मोबाइल फोन नंबर या ईमेल एड्रेस के साथ <a href='{webUrl}'>डिजिटल COVID-19 सत्यापन रिकॉर्ड</a> प्रणाली में एक और अनुरोध सबमिट कर सकते हैं, आप अपनी संपर्क जानकारी को अपने रिकॉर्ड से मिलान करने में मदद के लिए <a href='{contactUsUrl}'>हमसे संपर्क कर सकते हैं </a>, या आप यह सुनिश्चित करने के लिए अपने प्रदाता से संपर्क कर सकते हैं कि आपकी जानकारी राज्य प्रणाली को प्रस्तुत की गई है या नहीं।</p>" +
                     $"<h2>आपके कोई प्रश्न हैं?</h2>" +
-                    $"<p>अपने डिजिटल COVID-19 वेरिफिकेशन रिकॉर्ड के बारे में अधिक जानने के लिए हमारे अक्सर पूछे जाने वाले प्रश्न (<a href='{vaccineFAQUrl}'>FAQ</a>) पृष्ठ पर जाएँ।</p>" +
+                    $"<p>अपने डिजिटल COVID-19 वेरिफिकेशन रिकॉर्ड के बारे में अधिक जानने के लिए हमारे <a href='{vaccineFAQUrl}'>अक्सर पूछे जाने वाले प्रश्न (FAQ)</a> पृष्ठ पर जाएँ।</p>" +
                     $"<h2>सूचित रहें।</h2>" +
                     $"<p>COVID-19 के बारे में <a href='{covidWebUrl}'>नवीनतम जानकारी देखें</a>। </p><br/>" +
                     $"<hr>" +
@@ -1212,7 +1212,7 @@ namespace Application.Common
                     $"<p>Sie haben kürzlich ein COVID-19-Digitalzertifikat vom <a href='{webUrl}'>COVID-19-Digitalzertifikat-System</a> angefordert. Leider stimmen die von Ihnen gemachten Angaben nicht mit den Informationen im System des Bundesstaats überein.</p><br/>" +
                     $"<p>Sie können im <a href='{webUrl}'>COVID-19-Digitalzertifikat</a>-System eine erneute Anfrage mit einer anderen Handynummer oder E-Mail-Adresse senden, Sie können <a href='{contactUsUrl}'>Kontakt</a> zu uns aufnehmen, damit wir Ihnen bei der Zuordnung Ihres Zertifikats zu Ihren Kontaktdaten helfen, oder Sie können Ihren Anbieter kontaktieren, sich zu vergewissern, dass Ihre Daten an das System des Bundesstaats übermittelt wurden.</p>" +
                     $"<h2>Haben Sie Fragen?</h2>" +
-                    $"<p>Besuchen Sie unsere Seite mit häufig gestellten Fragen (<a href='{vaccineFAQUrl}'>FAQ</a>), um mehr über Ihr COVID-19-Digitalzertifikat zu erfahren.</p>" +
+                    $"<p>Besuchen Sie unsere Seite mit <a href='{vaccineFAQUrl}'>häufig gestellten Fragen (FAQ)</a>, um mehr über Ihr COVID-19-Digitalzertifikat zu erfahren.</p>" +
                     $"<h2>Bleiben Sie auf dem Laufenden.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Sehen Sie sich die neuesten Informationen</a> über COVID-19 an.</p><br/>" +
                     $"<hr>" +
@@ -1234,7 +1234,7 @@ namespace Application.Common
                     $"<p>మీరు ఇటీవల <a href='{webUrl}'>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్ సిస్టమ్ నుంచ</a> డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్​ని అభ్యర్ధించారు. దురదృష్టవశాత్తు, మీరు అందించిన సమాచారం స్టేట్ సిస్టమ్​లో సమాచారంతో జతకావడం లేదు.</p><br/>" +
                     $"<p>మీరు వేరే మొబైల్ నెంబరు లేదా ఇమెయిల్ చిరునామాతో <a href='{webUrl}'>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డు</a> సిస్టమ్​లో మరో అభ్యర్ధన సబ్మిట్ చేయవచ్చు, మీరు మీ రికార్డులను మీ కాంటాక్ట్ సమాచారంతో జత చేయడానికి <a href='{contactUsUrl}'>మమ్మల్ని సంప్రదించవచ్చు</a>, లేదా మీ సమాచారం రాష్ట్ర సిస్టమ్​కు సబ్మిట్ చేసినట్లుగా ధృవీకరించుకోవడానికి మీరు మీ ప్రొవైడర్​ని సంప్రదించవచ్చు.</p>" +
                     $"<h2>మీకు ఏమైనా ప్రశ్నలున్నాయా?</h2>" +
-                    $"<p>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్ గురించి మరింత తెలుసుకోవడానికి మా తరచుగా అడిగే ప్రశ్నలు (<a href='{vaccineFAQUrl}'>FAQ</a>) పేజీని సందర్శించండి.</p>" +
+                    $"<p>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్ గురించి మరింత తెలుసుకోవడానికి మా <a href='{vaccineFAQUrl}'>తరచుగా అడిగే ప్రశ్నలు (FAQ)</a> పేజీని సందర్శించండి.</p>" +
                     $"<h2>అవగాహనతో ఉండండి.</h2>" +
                     $"<p>కొవిడ్-19పై <a href='{covidWebUrl}'>తాజా సమాచారాన్ని వీక్షించండి</a>.</p><br/>" +
                     $"<hr>" +
@@ -1245,7 +1245,7 @@ namespace Application.Common
                     $"<p>Hivi karibuni uliomba Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19 kutoka mfumo wa <a href='{webUrl}'>Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19</a>. Kwa bahati mbaya, maelezo uliyotoa hayalingani na maelezo yaliyopo kwenye mfumo wa jimbo.</a></p><br/>" +
                     $"<p>Unaweza kuwasilisha ombi lingine katika mfumo wa <a href='{webUrl}'>Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19</a> kwa nambari tofauti ya simu ya mkononi au barua pepe, unaweza <a href='{contactUsUrl}'>kuwasiliana nasi</a> ili kupata usaidizi katika kulinganisha rekodi yako na maelezo yako ya mawasiliano, au unaweza kuwasiliana na mtoaji wako ili kuhakikisha maelezo yako yamewasilishwa kwa mfumo wa jimbo.</a></a></p>" +
                     $"<h2>Una maswali?</h2>" +
-                    $"<p>Tembelea ukurasa wa Maswali yetu Yanayoulizwa Mara kwa Mara (<a href='{vaccineFAQUrl}'>FAQ</a>) ili kujifunza zaidi kuhusu Rekodi yako ya Kidijitali ya Uthibitishaji wa COVID-19.</p>" +
+                    $"<p>Tembelea ukurasa wa <a href='{vaccineFAQUrl}'>Maswali yetu Yanayoulizwa Mara kwa Mara (FAQ)</a> ili kujifunza zaidi kuhusu Rekodi yako ya Kidijitali ya Uthibitishaji wa COVID-19.</p>" +
                     $"<h2>Endelea Kupata Habari.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Tazama maelezo ya hivi karibuni</a> kuhusu COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1278,7 +1278,7 @@ namespace Application.Common
                     $"<p>ਤੁਸੀਂ ਹਾਲ ਹੀ ਵਿੱਚ <a href='{webUrl}'>ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਸਿਸਟਮ</a> ਤੋਂ ਇੱਕ ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਲਈ ਬੇਨਤੀ ਕੀਤੀ ਸੀ। ਬਦਕਿਸਮਤੀ ਨਾਲ, ਤੁਹਾਡੇ ਦੁਆਰਾ ਪ੍ਰਦਾਨ ਕੀਤੀ ਗਈ ਜਾਣਕਾਰੀ ਸਟੇਟ ਦੇ ਸਿਸਟਮ ਵਿੱਚ ਮੌਜੂਦ ਜਾਣਕਾਰੀ ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ। </p><br/>" +
                     $"<p>ਤੁਸੀਂ ਕਿਸੇ ਵੱਖਰੇ ਮੋਬਾਈਲ ਨੰਬਰ ਜਾਂ ਈਮੇਲ ਪਤੇ ਨਾਲ <a href='{webUrl}'>ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ</a>  ਸਿਸਟਮ ਵਿੱਚ ਇੱਕ ਹੋਰ ਬੇਨਤੀ ਸਬਮਿਟ ਕਰ ਸਕਦੇ ਹੋ, ਆਪਣੇ ਰਿਕਾਰਡ ਨੂੰ ਆਪਣੀ ਸੰਪਰਕ ਜਾਣਕਾਰੀ ਨਾਲ ਮਿਲਾਉਣ ਵਿੱਚ ਮਦਦ ਲਈ ਤੁਸੀਂ <a href='{contactUsUrl}'>ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰ</a>  ਸਕਦੇ ਹੋ, ਜਾਂ ਇਹ ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ ਤੁਸੀਂ ਆਪਣੇ ਸਿਹਤ ਸੰਭਾਲ ਪ੍ਰਦਾਤਾ ਨਾਲ ਸੰਪਰਕ ਕਰ ਸਕਦੇ ਹੋ ਕਿ ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਸਟੇਟ ਦੇ ਸਿਸਟਮ ਵਿੱਚ ਸਬਮਿਟ ਕਰ ਦਿੱਤੀ ਗਈ ਹੈ।</p>" +
                     $"<h2>ਕੀ ਤੁਹਾਡੇ ਕੋਈ ਸਵਾਲ ਹਨ?</h2>" +
-                    $"<p>ਆਪਣੇ ਡਿਜ਼ੀਟਲ ਕੋਵਿਡ-19 ਵੈਰੀਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਬਾਰੇ ਹੋਰ ਜਾਣਨ ਲਈ ਸਾਡੇ <a href='{vaccineFAQUrl}'>ਅਕਸਰ ਪੁੱਛੇ ਜਾਣ ਵਾਲੇ ਸਵਾਲ</a></p>" +
+                    $"<p>ਆਪਣੇ ਡਿਜ਼ੀਟਲ ਕੋਵਿਡ-19 ਵੈਰੀਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਬਾਰੇ ਹੋਰ ਜਾਣਨ ਲਈ ਸਾਡੇ <a href='{vaccineFAQUrl}'>ਅਕਸਰ ਪੁੱਛੇ ਜਾਣ ਵਾਲੇ ਸਵਾਲ (FAQ)</a></p>" +
                     $"<h2>ਸੂਚਿਤ ਰਹੋ।</h2>" +
                     $"<p>ਕੋਵਿਡ-19 ਬਾਰੇ <a href='{covidWebUrl}'>ਨਵੀਨਤਮ ਜਾਣਕਾਰੀ ਵੇਖੋ</a></p><br/>" +
                     $"<hr>" +
@@ -1289,7 +1289,7 @@ namespace Application.Common
                     $"<p dir='rtl'>تاسو پدې وروستیو کې <a href='{webUrl}'>د ډیجیټل COVID-19 تائید ثبت سیسټم څخه د ډیجیټل COVID-19 تائید ثبت غوښتنه کړې</a>. له بده مرغه، هغه معلومات چې تاسو چمتو کړي د دولتي سیسټم کې د معلوماتو سره سمون نلري. </p><br/>" +
                     $"<p dir='rtl'>تاسو کولی شئ د <a href='{webUrl}'>ډیجیټل COVID-19 تائید ثبت</a> سیسټم کې د مختلف ګرځنده تلیفون شمیرې یا بریښنالیک ادرس سره بله غوښتنه وسپارئ، تاسو کولی شي خپل ثبت د خپل اړیکې معلوماتو سره د سمولو مرستې لپاره <a href='{contactUsUrl}'>زموږ سره اړیکه ونیسئ</a> ، یا تاسو کولی شئ له خپل چمتو کونکي سره اړیکه ونیسئ ترڅو ډاډمن شي چې ستاسو معلومات دولتي سیسټم ته سپارل شوي دي.</p>" +
                     $"<h2 dir='rtl'>ایا پوښتنې لرئ؟</h2>" +
-                    $"<p dir='rtl'>د خپل ډیجیټل COVID-19 واکسین ثبت په اړه د نورې زده کړې لپاره زموږ په مکرر ډول پوښتل شوي پوښتنو (<a href='{vaccineFAQUrl}'>FAQ</a>) پاڼې څخه لیدنه وکړئ.</p>" +
+                    $"<p dir='rtl'>د خپل ډیجیټل COVID-19 <a href='{vaccineFAQUrl}'>واکسین ثبت په اړه د نورې زده کړې لپاره زموږ په مکرر ډول پوښتل شوي پوښتنو (FAQ)</a> پاڼې څخه لیدنه وکړئ.</p>" +
                     $"<h2 dir='rtl'>باخبر اوسئ.</h2>" +
                     $"<p dir='rtl'>دCOVID-19 په<a href='{covidWebUrl}'>اړه تازه معلومات وګورئ</a>.</p><br/>" +
                     $"<hr>" +
@@ -1300,7 +1300,7 @@ namespace Application.Common
                     $"<p dir='rtl'>آپ نے حال ہی میں <a href='{webUrl}'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ سسٹم</a> سے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کی درخواست کی ہے۔ بدقسمتی سے آپ کی فراہم کردہ معلومات ریاستی سسٹم میں موجود معلومات سے مماثلت نہیں رکھتی۔ </p><br/>" +
                     $"<p dir='rtl'>آپ کوئی اور موبائل فون نمبر یا ای میل ایڈریس استعمال کرتے ہوئے <a href='{webUrl}'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</a> سسٹم میں دوبارہ درخواست جمع کروا سکتے ہیں، اپنے ریکارڈ کو اپنے رابطے کی معلومات سے ملانے کے لئے <a href='{contactUsUrl}'>ہم سے رابطہ</a> کر سکتے ہیں، یا اپنے معالج سے رابطہ کر کے یقینی بنا سکتے ہیں کہ آپ کی معلومات ریاستی نظام میں جمع کروا دی گئی ہیں۔</p>" +
                     $"<h2 dir='rtl'>سوالات ہیں؟</h2>" +
-                    $"<p dir='rtl'>اپنے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کے متعلق مزید جاننے کے لئے ہمارا عمومی سوالات (<a href='{vaccineFAQUrl}'>FAQ</a>) کا صفحہ ملاحظہ کریں۔</p>" +
+                    $"<p dir='rtl'>اپنے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کے متعلق مزید جاننے کے لئے ہمارا <a href='{vaccineFAQUrl}'>عمومی سوالات (FAQ)</a> کا صفحہ ملاحظہ کریں۔</p>" +
                     $"<h2 dir='rtl'>آگاہ رہیں۔</h2>" +
                     $"<p dir='rtl'>کووڈ-19 کے متعلق <a href='{covidWebUrl}'>تازہ ترین معلومات دیکھیں</a></p><br/>" +
                     $"<hr>" +
@@ -1312,7 +1312,7 @@ namespace Application.Common
                     $"<p>तपाईंले हालै <a href='{webUrl}'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड प्रणाली</a> बाट डिजिटल कोभिड-19 प्रमाणीकरण रेकर्डको लागि अनुरोध गर्नुभयो। दुर्भाग्यवश, तपाईंले उपलब्ध गराउनुभएको जानकारी राज्यको प्रणालीमा भएको जानकारीसँग मेल खाँदैन। </p><br/>" +
                     $"<p>तपाईं भिन्न मोबाइल फोन नम्बर वा इमेल ठेगाना प्रयोग गरी <a href='{webUrl}'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड</a> प्रणालीमा अर्को अनुरोध पेश गर्न सक्नुहुन्छ, तपाईंको रेकर्डलाई तपाईंको सम्पर्क जानकारीसँग मिल्ने बनाउनमा मद्दतका लागि <a href='{contactUsUrl}'>हामीलाई सम्पर्क गर्न</a> सक्नुहुन्छ वा तपाईंको जानकारी राज्यको प्रणालीमा पेश गरिएको छ भनी सुनिश्चित गर्नका लागि आफ्नो प्रदायकलाई सम्पर्क गर्न सक्नुहुन्छ।</p>" +
                     $"<h2>प्रश्नहरू छन्?</h2>" +
-                    $"<p>आफ्नो डिजिटल कोभिड-19 प्रमाणीकरण रेकर्डका बारेमा थप जान्नका लागि हाम्रो बारम्बार सोधिने प्रश्नहरू (<a href='{vaccineFAQUrl}'>FAQ</a>) को पृष्ठ हेर्नुहोस्।</p>" +
+                    $"<p>आफ्नो डिजिटल कोभिड-19 प्रमाणीकरण रेकर्डका बारेमा थप जान्नका लागि हाम्रो <a href='{vaccineFAQUrl}'>बारम्बार सोधिने प्रश्नहरू (FAQ)</a> को पृष्ठ हेर्नुहोस्।</p>" +
                     $"<h2>सूचित रहनुहोस्।</h2>" +
                     $"<p>कोभिड-19 बारे <a href='{covidWebUrl}'>नवीनतम जानकारी हेर्नुहोस्</a> ।</p><br/>" +
                     $"<hr>" +
@@ -1324,7 +1324,7 @@ namespace Application.Common
                     $"<p>Iyo jaku kivi ja ni jikan ní in tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19 ja iyo nuu <a href='{webUrl}'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</a>. Kueka kuu ja, tu’un ja ni taji ní nduu kitan ji tu’un ja neva’a sa nuu nda tu’un ja iyo nuu ñuu. </p><br/>" +
                     $"<p>Kuu tetiñu ní tuku ní inka tutu nuu <a href='{webUrl}'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</a> jín in número yokaa axi correo electrónico ja síin kaa, kuu <a href='{contactUsUrl}'>ka’an ní jín nda sa</a> tágua kuu sa’a yo ja kita’an tu’un ja taji ní ji ja neva’a sa, axi in ñayiví satatan tágua kuni ní tú ni tetiñu va’a tu’un siki ní nuu ñuu.</p>" +
                     $"<h2>A iyo tu’un jikatu’un ní</h2>" +
-                    $"<p>Kunde’e ní nuu página nda tu’un jikatu’un ka (<a href='{vaccineFAQUrl}'>FAQ</a>) tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19.</p>" +
+                    $"<p>Kunde’e ní nuu página <a href='{vaccineFAQUrl}'>nda tu’un jikatu’un ka (FAQ)</a> tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19.</p>" +
                     $"<h2>Ndukú ni tu’un.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Kunde’e ní tu’un jáá ka</a> siki COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1335,7 +1335,7 @@ namespace Application.Common
                     $"<p>Eok kiin jeṃaanḷọk kajjitōk a laam jarom COVID-19 jaak jeje jan <a href='{webUrl}'>ko Kaajai COVID-19 Wotom Jeje kkar</a>. jerata, ko melele eok naloma jerbal jab mājet melele for ko konnaan kkar. </p><br/>" +
                     $"<p>Eok kuwat lota bar juon kajjitōk for ko <a href='{webUrl}'>Kaajai COVID-19 Wotom Jeje</a>  kkar ippa a different joorkatkat teinwa nomba ak lota jipij, eok kuwat </a>kōkkeitaak koj</a>  bwe rejetak for jekkar ami jeje nana ami kokkeitaak melele, ak eok kuwat kokkeitaak ami naloma nan eok ami melele mmo kwo jjilōk nan ko konnaan kkar.</p>" +
                     $"<h2>Jeben kajjitōk?</h2>" +
-                    $"<p>Ilomej arro Jokkutkut Kajjitok Nawawee (<a href='{vaccineFAQUrl}'>FAQ</a>)  alal nan katak bar jidik ami laam jarom COVID-19 jaak jeje.</p>" +
+                    $"<p>Ilomej arro <a href='{vaccineFAQUrl}'>Jokkutkut Kajjitok Nawawee (FAQ)</a> alal nan katak bar jidik ami laam jarom COVID-19 jaak jeje.</p>" +
                     $"<h2>Pad melele.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Mmat ko rimwik kojjela</a> on COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1368,7 +1368,7 @@ namespace Application.Common
                     $"<p>ថ្មីៗនេះ​ អ្នក​បានស្នើសុំកំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឹ​ COVID-19 ជាទម្រង់​ឌីជីថលពី <a href='{webUrl}'>ប្រព័ន្ធ​កំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឺ​ COVID-19 ជាទម្រង់​ឌីជីថល​។</a> គួរឲ្យសោកស្តាយ ព័ត៌មានដែលអ្នក​បានផ្តល់ជូននោះ​ មិនត្រូវគ្នា​ជាមួយ​​នឹង​ព័ត៌មានក្នុង​ប្រព័ន្ធរបស់រដ្ឋ​​យើង​ទេ​។ </p><br/>" +
                     $"<p>អ្នកអាចប្រគល់សំណើផ្សេងទៀតនៅក្នុងប្រព័ន្ធ​ <a href='{webUrl}'>កំណត់ត្រាផ្ទៀងផ្ទាត់ជំងឺ COVID-19 ជាទម្រង់ឌីជីថល</a> ដែលមានលេខទូរសព្ទចល័ត និងអាសយដ្ឋានអ៊ីម៉ែលខុសគ្នា អ្នកអាច <a href='{contactUsUrl}'>ទាក់ទងមកយើង​</a> សម្រាប់ជំនួយក្នុងការផ្ទៀងផ្ទាត់កំណត់ត្រារបស់អ្នកជាមួយនឹងព័ត៌មានទំនាក់ទំនងរបស់អ្នក ឬអ្នកអាចទាក់ទងទៅកាន់អ្នកផ្តល់សេវារបស់អ្នកដើម្បីធានាថាព័ត៌មានត្រូវបានប្រគល់ទៅកាន់ប្រព័ន្ធរបស់រដ្ឋ។</p>" +
                     $"<h2>មានសំណួរមែនទេ?</h2>" +
-                    $"<p>ចូលទៅកាន់ទំព័រសំណួរចោទសួរជាញឹកញាប់ (<a href='{vaccineFAQUrl}'>FAQ</a>) របស់យើងដើម្បីស្វែងយល់បន្ថែមអំពីកំណត់ត្រាផ្ទៀងផ្ទាត់ជំងឺ COVID-19 ជាទម្រង់ឌីជីថលរបស់អ្នក។</p>" +
+                    $"<p>ចូលទៅកាន់ទំព័រ<a href='{vaccineFAQUrl}'>សំណួរចោទសួរជាញឹកញាប់ (FAQ)</a> របស់យើងដើម្បីស្វែងយល់បន្ថែមអំពីកំណត់ត្រាផ្ទៀងផ្ទាត់ជំងឺ COVID-19 ជាទម្រង់ឌីជីថលរបស់អ្នក។</p>" +
                     $"<h2>បន្តទទួលបានដំណឹង​​។</h2>" +
                     $"<p><a href='{covidWebUrl}'>ពិនិត្យមើលព័ត៌មានថ្មីៗ​បំផុត​</a> ស្តីពីជំងឺ​ COVID-19។</p><br/>" +
                     $"<hr>" +
@@ -1390,7 +1390,7 @@ namespace Application.Common
                     $"<p>O se qai kerea ga iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19mai na <a href='{webUrl}'>misini ni iVolatukutuku Vakalivaliva ni iVakadinadina ni Veika e Vauca na COVID-19</a>. Na itukutuku oni vakarautaka e sega ni tautauvata kei na kena e maroroi tu ena matanitu.</p><br/>" +
                     $"<p>Oni rawa ni vakauta tale mai e dua kerekere ena <a href='{webUrl}'>iVolatukutuku ni iVakadinadina ni Veika e Vauca na COVID-19</a> ena dua tale na naba ni talevoni se imeli, o rawa ni <a href='{contactUsUrl}'>veitaratara kei keitou</a> me rawa ni keitou veivuke me salavata na itukutuku o vakarautaka kei na itukutuku ni veitaratara me baleti iko e tiko vei keitou, se o rawa ni veitaratara ina vanua o lai laurai kina mo taroga ke sa maroroi ina matanitu na kemu itukutuku.</p>" +
                     $"<h2>Taro?</h2>" +
-                    $"<p>Rai ena tabana e tiko kina na Taro e Tarogi Wasoma (<a href='{vaccineFAQUrl}'>FAQ</a>) mo kila e levu tale na tikina e vauca na iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19.</p>" +
+                    $"<p>Rai ena tabana e tiko kina na <a href='{vaccineFAQUrl}'>Taro e Tarogi Wasoma (FAQ)</a> mo kila e levu tale na tikina e vauca na iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19.</p>" +
                     $"<h2>Mo Kila na Veika e Yaco Tiko.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Kila na itukutuku vou duadua ena veika e vauca</a>  na COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1456,7 +1456,7 @@ namespace Application.Common
                     $"<p>Dhiyeenyatti <a href='{webUrl}'>Mala Mirkaneessa Ragaa Dijitaalaa COVID-19</a> irraa Ragaa Mirkaneessa Dijitaalaa COVID-19 gaafattaniirtu. Akka carraa ta’ee, odeeffannoon isin laattan kan siistama keenya keessa jiruun wal hin simu. </p><br/>" +
                     $"<p>Lakkoofsa bilbilaa yookin imeelii biraatin gaaffii biraa mala  <a href='{webUrl}'>Mirkaneessa Ragaa Dijitaalaa COVID-19</a> irratti galchuu dandeessu, ragaan keessan qunnamtii odeeffannoo keessan wajjin akka wal simuuf deeggarsa yoo feetan  <a href='{contactUsUrl}'>nu qunnamuu</a> dandeessu yookin odeeffannoon keessan siistama naannoo keessa galuu mirkaneeffachuuf dhiyeessaa keessan qunnamuu dandeessu.</p>" +
                     $"<h2>Gaaffii qabduu?</h2>" +
-                    $"<p>Waa’ee Mirkaneessa Ragaa Dijitaalaa COVID-19 keessanii caalmatti baruuf, fuula Gaaffilee Yeroo Heddu Gaafataman  (<a href='{vaccineFAQUrl}'>FAQ</a>) ilaalaa.</p>" +
+                    $"<p>Waa’ee Mirkaneessa Ragaa Dijitaalaa COVID-19 keessanii caalmatti baruuf, fuula <a href='{vaccineFAQUrl}'>Gaaffilee Yeroo Heddu Gaafataman (FAQ)</a> ilaalaa.</p>" +
                     $"<h2>Odeeffannoo Argadhaa.</h2>" +
                     $"<p>COVID-19 ilaalchisee  <a href='{covidWebUrl}'>odeeffannoo haaraa ilaalaa</a>.</p><br/>" +
                     $"<hr>" +
@@ -1478,7 +1478,7 @@ namespace Application.Common
                     $"<p>சமீபத்தில் <a href='{webUrl}'>மின்னணு Covid-19 சரிபார்ப்புப் பதிவு அமைப்பிலிருந்த</a> மின்னணு Covid-19 சரிபார்ப்புப் பதிவைக் கோரியுள்ளீர்கள். துரதிர்ஷ்டவசமாக, நீங்கள் வழங்கிய தகவல் மாநில அமைப்பில் உள்ள தகவலுடன் பொருந்தவில்லை. </p><br/>" +
                     $"<p>வேறு மொபைல் எண் அல்லது மின்னஞ்சல் முகவரியுடன் <a href='{webUrl}'>மின்னணு Covid-19 சரிபார்ப்புப் பதிவு</a>  அமைப்பில் மற்றொரு கோரிக்கையைச் சமர்ப்பிக்கலாம், உங்கள் தொடர்புத் தகவலுடன் உங்கள் பதிவைப் பொருத்துவதற்கான உதவிக்கு, நீங்கள் <a href='{contactUsUrl}'>எங்களைத் தொடர்புகொள்ளலாம்</a>  , அல்லது உங்கள் தகவல் மாநில அமைப்பில் சமர்ப்பிக்கப்பட்டுள்ளதா என்பதை உறுதிப்படுத்த உங்கள் வழங்குநரைத் தொடர்பு கொள்ளலாம்.</p>" +
                     $"<h2>கேள்விகள் உள்ளதா?</h2>" +
-                    $"<p>உங்கள் மின்னணு கொவிட்-19 சரிபார்ப்புப் பதிவு பற்றி மேலும் அறிய, எங்களின் அடிக்கடி கேட்கப்படும் கேள்விகள் (<a href='{vaccineFAQUrl}'>FAQ</a>)  பக்கத்தைப் பார்வையிடவும்.</p>" +
+                    $"<p>உங்கள் மின்னணு கொவிட்-19 சரிபார்ப்புப் பதிவு பற்றி மேலும் அறிய, எங்களின் <a href='{vaccineFAQUrl}'>அடிக்கடி கேட்கப்படும் கேள்விகள் (FAQ)</a>  பக்கத்தைப் பார்வையிடவும்.</p>" +
                     $"<h2>தகவலை அறிந்து இருங்கள்.</h2>" +
                     $"<p><a href='{covidWebUrl}'>சமீபத்திய தகவலைப் பார்க்கவும்</a> கொவிட்-19 இல்.</p><br/>" +
                     $"<hr>" +
@@ -1489,7 +1489,7 @@ namespace Application.Common
                     $"<p>Tsis ntev los no koj tau thov Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj los ntawm <a href='{webUrl}'>kev ua hauj lwm rau Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj</a>. Hmoov tsis zoo, cov ntaub ntawv uas koj tau muab tsis raug raws li cov ntaub ntawv uas nyob rau hauv xeev txheej teg kev ua hauj lwm. </p><br/>" +
                     $"<p>Koj tuaj yeem xa tau lwm qhov kev thov nyob rau hauv kev ua hauj lwm rau <a href='{webUrl}'>Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj</a> nrog rau lwm tus nab npawb xov tooj ntawm tes los sis tus email, koj tuaj yeem <a href='{contactUsUrl}'>txuas lus tau rau peb</a> txhawm rau thov kev pab ua kom koj cov ntaub ntawv sau tseg raug raws li koj cov ntaub ntawv sib txuas lus, los sis koj tuaj yeem txuas lus tau rau koj tus kws pab kho mob txhawm rau ua kom ntseeg siab tias koj cov ntaub ntawv tau xa rau xeev txheej teg kev ua hauj lwm lawm.</p>" +
                     $"<h2>Puas muaj cov lus nug?</h2>" +
-                    $"<p>Saib peb nplooj vev xaib muaj Cov Lus Nug Uas Nquag Nug (<a href='{vaccineFAQUrl}'>FAQ</a>) (Lus Askiv nkaus xwb) txhawm rau kawm paub ntxiv txog koj li Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj.</p>" +
+                    $"<p>Saib peb nplooj vev xaib muaj <a href='{vaccineFAQUrl}'>Cov Lus Nug Uas Nquag Nug (FAQ)</a> (Lus Askiv nkaus xwb) txhawm rau kawm paub ntxiv txog koj li Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj.</p>" +
                     $"<h2>Soj Qab Saib Kev Paub.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Saib cov ntaub ntawv tawm tshiab tshaj plaws</a> txog kab mob COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1500,7 +1500,7 @@ namespace Application.Common
                     $"<p>คุณเพิ่งขอบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัลจาก<a href='{webUrl}'>ระบบบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัล</a> ขออภัย ข้อมูลที่คุณให้ไม่ตรงกับข้อมูลในระบบของรัฐ </p><br/>" +
                     $"<p>คุณสามารถส่งคำขออื่นได้ในระบบ<a href='{webUrl}'>บันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัล</a> โดยใช้หมายเลขโทรศัพท์มือถือหรือที่อยู่อีเมลอื่น คุณสามารถ<a href='{contactUsUrl}'>ติดต่อเรา</a> เพื่อขอความช่วยเหลือในการจับคู่บันทึกของคุณกับข้อมูลติดต่อของคุณ หรือคุณสามารถติดต่อผู้ให้บริการของคุณเพื่อให้แน่ใจว่ามีการส่งข้อมูลของคุณไปยังระบบของรัฐแล้ว</p>" +
                     $"<h2>มีคำถามหรือไม่</h2>" +
-                    $"<p>โปรดไปยังส่วนคำถามที่พบบ่อย (<a href='{vaccineFAQUrl}'>FAQ</a>) เพื่อเรียนรู้เพิ่มเติมเกี่ยวกับบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัลของคุณ</p>" +
+                    $"<p>โปรดไปยังส่วน<a href='{vaccineFAQUrl}'>คำถามที่พบบ่อย (FAQ)</a> เพื่อเรียนรู้เพิ่มเติมเกี่ยวกับบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัลของคุณ</p>" +
                     $"<h2>คอยติดตามข่าวสาร</h2>" +
                     $"<p><a href='{covidWebUrl}'>ดูข้อมูลล่าสุด</a> เกี่ยวกับโควิด-19</p><br/>" +
                     $"<hr>" +
