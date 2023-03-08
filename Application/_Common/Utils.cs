@@ -780,7 +780,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Cheylakxta tej tz’ib’b’al tej tey tb’aq </a></p>" +
                     $"<p>Q’imatz kab’t q’umb’aj tumal tib’aj tzuj ti tten tu’ <a href='{cdcUrl}'>tok tklom tib’ay ex tu’ tok tklo’na qaj kab’t</a>  chu’ tzun qaj Ja’ te tej Meyolakta ex jtu’ Tajtz chi’j qaj Yab’il [Centers for Disease Control and Prevention, toy tyol me’x xjal].</p>" +
                     $"<h2>¿At qaj tajay tzaj tqanay?</h2>" +
-                    $"<p>Tokx toj jqeya qkloj che qaj Qanb’al jakax (<a href='{vaccineFAQUrl}'>FAQ</a>)  te tu’ ttiq’ay kab’t q’umb’aj tumal tib’aj jtey Ttz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’.</p>" +
+                    $"<p>Tokx toj jqeya qkloj che qaj Qanb’al jakax (<a href='{vaccineFAQUrl}'>Qe Xjel Kukx in che Tzaj Qanin (FAQ)</a>) te tu’ ttiq’ay kab’t q’umb’aj tumal tib’aj jtey Ttz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’.</p>" +
                     $"<h2>Etkub’ tenay te ab’i’ chqil tumal tu’nay.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Ettiq’ay jq’umb’aj tumal ma’nxax nex q’umat</a>  tib’aj tx’u’j yab’il tej COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1348,7 +1348,7 @@ namespace Application.Common
                     $"<p>Ma’nxax nokx tqanay jun Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’ tej <a href='{webUrl}'>kloj te Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib' </a>. Aj nojsamay, jq’umb’aj tumal xi q’o’ mi nel joniy tuya jq’umb’aj tumal toj jqeya qkloj te xk’utz’ib’. </ p >< br /> " +
                     $"<p>B’a’ ttzaj tsma’na junt qanb’al toj jkloj tej <a href='{webUrl}'>Tz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’</a>  tuya jun tajlal yolb’il niy eqat mo tb’i tb’e jun correo electrónico junxat, b’a’ <a href='{contactUsUrl}'>ttzaj q’ajtay q’i’ja</a>  te tu’ ttiq’ay onb’al te tu’ tel yoniy jtey ttz’ib’b’al tuya jtey tq’umb’aj tumal te tyolb’alay, mo b’a’ tyolana tuya jtey q’oltzta t-onb’al te tu’ntza tab’ij te qa tej tey tq’umb’aj tumal ot tz’ex sma’ toj kloj te kojb’il.</p>" +
                     $"<h2>¿At qaj tajay tzaj tqanay?</h2>" +
-                    $"<p>Tokx toj jqeya qkloj che qaj Qanb’al jakax (<a href='{vaccineFAQUrl}'>FAQ Xjel Kukx in che tzaj Qanin</a>)  te tu’ ttiq’ay kab’t q’umb’aj tumal tib’aj jtey Tqanil toj Yolb’il tun Tjyet COVID-19.</p>" +
+                    $"<p>Tokx toj jqeya qkloj che qaj Qanb’al jakax (<a href='{vaccineFAQUrl}'>Qe Xjel Kukx in che Tzaj Qanin (FAQ)</a>) te tu’ ttiq’ay kab’t q’umb’aj tumal tib’aj jtey Tqanil toj Yolb’il tun Tjyet COVID-19.</p>" +
                     $"<h2>Etkub’ tenay te ab’i’ chqil tumal tu’nay.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Ettiq’ay jq’umb’aj tumal ma’nxax nex q’umat</a>  tib’aj tx’u’j yab’il tej COVID-19.</p><br/>" +
                     $"<hr>" +
