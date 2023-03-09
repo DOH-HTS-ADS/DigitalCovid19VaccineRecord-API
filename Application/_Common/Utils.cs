@@ -852,7 +852,7 @@ namespace Application.Common
                     $"<p dir='rtl'><a href='{url}'>مشاهده سابقه واکسین </a></p>" +
                     $"<p dir='rtl'>از Centers for Disease Control and Prevention (مراکز کنترول امراض و وقایه) درباره چگونه <a href='{cdcUrl}'>محافطت کردن از خود و دیگران</a>  بیشتر یاد بگیرید.</p>" +
                     $"<h2 dir='rtl'>سوالاتی دارید؟</h2>" +
-                    $"<p dir='rtl'><a href='{vaccineFAQUrl}'>از صفحه سوالات مکرراً پرسیده شده ما (FAQ) </a> برای یادگیری بیشتر درباره سابقه دیجیتل واکسین کووید-19 بازدید کنید.</p>" +
+                    $"<p dir='rtl'><a href='{vaccineFAQUrl}'>از صفحه سوالات مکرراً پرسیده شده ما (FAQ)</a>  برای یادگیری بیشتر درباره سابقه دیجیتل واکسین کووید-19 بازدید کنید.</p>" +
                     $"<h2 dir='rtl'>مطلع بمانید.</h2>" +
                     $"<p dir='rtl'><a href='{covidWebUrl}'>مشاهده آخرین معلومات</a>  درباره کووید-19.</p><br/>" +
                     $"<hr>" +
@@ -864,7 +864,7 @@ namespace Application.Common
                     $"<p><a href='{url}'>Katon Taropwen Appos</a></p>" +
                     $"<p>Awateino om sinei usun ifa om kopwe <a href='{cdcUrl}'>tumunu me epeti inisum me inisin ekkoch</a> seni ewe Centers for Disease Control and Prevention (Ofesin Nenien Nemenemen Semwen me Pinepinen).</p>" +
                     $"<h2>Mi wor om kapaseis?</h2>" +
-                    $"<p>Feino katon ach kewe Kapas Eis Ekon Nap Ach Eis (<a href='{vaccineFAQUrl}'>FAQ</a>) pon ach we peich ren om kopwe awatenai om sinei usun noum Digital COVID-19 Afatan Record.</p>" +
+                    $"<p>Feino katon ach kewe Kapas Eis Ekon Nap Ach Eis <a href='{vaccineFAQUrl}'>(Chechemeni kapas ais (FAQ))</a> pon ach we peich ren om kopwe awatenai om sinei usun noum Digital COVID-19 Afatan Record.</p>" +
                     $"<h2>Nonom nge Sisinei.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Katon minefon poraus</a> on COVID-19.</p><br/>" +
                     $"<hr>" +
@@ -1414,7 +1414,7 @@ namespace Application.Common
                     $"<p dir='rtl'>شما به تازگی فورم سابقه دیجیتل تصدیق کووید-19 را درخواست کردید <a href='{webUrl}'>سیستم سابقه دیجیتل تصدیق کووید-19</a> . متاسفانه، اطلاعاتی که شما ارائه نمودید با اطلاعات سیستم کشور مطابقت ندارد. </p><br/>" +
                     $"<p dir='rtl'>شما می توانید درخواست دیگری را در سیستم <a href='{webUrl}'>سابقه دیجیتل تصدیق کووید-19</a>  با یک نمبر تلفون یا ایمیل آدرسی متفاوت تسلیم نمایید، شما می توانید برای کمک به منظور مطابقت دادن سابقه خود با اطلاعات تماس خود <a href='{contactUsUrl}'>با ما تماس بگیرید</a>  ، یا شما می توانید به ارائه دهنده واکسین خود تماس گرفته تا مطمئن شوید اطلاعات شما به سیستم کشور تسلیم گردیده است.</p>" +
                     $"<h2 dir='rtl'>سوالاتی دارید؟</h2>" +
-                    $"<p dir='rtl'><a href='{vaccineFAQUrl}'>از صفحه سوالات مکرراً پرسیده شده ما (FAQ) </a> برای یادگیری بیشتر درباره سابقه دیجیتل واکسین کووید-19 بازدید کنید.</p>" +
+                    $"<p dir='rtl'><a href='{vaccineFAQUrl}'>از صفحه سوالات مکرراً پرسیده شده ما (FAQ)</a>  برای یادگیری بیشتر درباره سابقه دیجیتل واکسین کووید-19 بازدید کنید.</p>" +
                     $"<h2 dir='rtl'>مطلع بمانید.</h2>" +
                     $"<p dir='rtl'><a href='{covidWebUrl}'>مشاهده آخرین معلومات</a>  درباره کووید-19.</p><br/>" +
                     $"<hr>" +
@@ -1425,7 +1425,7 @@ namespace Application.Common
                     $"<p>Ke Keran chok tungor ew Digital COVID-19 Afatan Record seni <a href='{webUrl}'>ewe Digital COVID-19 Afatan Record system</a>. Nge, ewe poraus ke awora ese mes ngeni met poraus mi nom non an state ei system ika nenien aisois. </p><br/>" +
                     $"<p>En mi tongeni tinanong pwan ew tungor non ewe <a href='{webUrl}'>Digital COVID-19 Afatan Record</a> system ren om nounou pwan ew nampan fon ika email address, en mi tongeni <a href='{contactUsUrl}'>kokori ika churi kich</a> ren aninis ren ames fengeni met porausom me ifa usun ach sipwe kokoruk, ika en mi tongeni kokori om we selfon kompeni ren om kopwe enukunuku pwe met porausom a katonong non ewe state system.</p>" +
                     $"<h2>Mi wor om kapaseis?</h2>" +
-                    $"<p>Feino katon ach kewe Kapas Eis Ekon Nap Ach Eis (<a href='{vaccineFAQUrl}'>FAQ</a>) pon ach we peich ren om kopwe awatenai om sinei usun noum Digital COVID-19 Afatan Record.</p>" +
+                    $"<p>Feino katon ach kewe Kapas Eis Ekon Nap Ach Eis <a href='{vaccineFAQUrl}'>(Chechemeni kapas ais (FAQ))</a> pon ach we peich ren om kopwe awatenai om sinei usun noum Digital COVID-19 Afatan Record.</p>" +
                     $"<h2>Nonom nge Sisinei.</h2>" +
                     $"<p><a href='{covidWebUrl}'>Katon minefon poraus</a> on COVID-19.</p><br/>" +
                     $"<hr>" +
