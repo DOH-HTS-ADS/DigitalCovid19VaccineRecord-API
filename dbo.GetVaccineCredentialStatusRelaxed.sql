@@ -151,13 +151,11 @@ BEGIN
                     WHEN [MatchValue] & @match7 = @match7 THEN 7
                     WHEN [MatchValue] & @match8 = @match8 THEN 8
                     WHEN [MatchValue] & @match9 = @match9 THEN 9
-
-                    ELSE -1
+                    ELSE NULL
                     END
             FROM bitmask
            WHERE [MatchValue] <> 0
-		   UNION SELECT NULL, -1
-
+		   
                )
 
           , rankedRslt
@@ -168,6 +166,16 @@ BEGIN
                , [rc] = COUNT(*) OVER (PARTITION BY [MatchCase])  -- returns number of patients at each match case level
             FROM scoredRslt
            WHERE [MatchCase] IS NOT NULL
+		   UNION 
+		   SELECT NULL, -1, 1, 1
+		   WHERE NOT EXISTS(
+		   SELECT [ASIIS_PAT_ID]
+               , [MatchCase]
+               , [rr] = DENSE_RANK() OVER (ORDER BY [MatchCase])  -- returns order of quality of match across all patients
+               , [rc] = COUNT(*) OVER (PARTITION BY [MatchCase])  -- returns number of patients at each match case level
+            FROM scoredRslt
+           WHERE [MatchCase] IS NOT NULL
+		   )
                )
 
           SELECT @UserID = 
