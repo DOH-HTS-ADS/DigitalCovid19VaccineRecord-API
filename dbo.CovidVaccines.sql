@@ -91,10 +91,11 @@ vm AS (
     (
         vm.DELETION_DATE IS NULL
     ) 
-    AND 
+    -- Bug fix 5580 - Do not exclude vaccines over two years old
+    /*AND 
     (
         vm.VACC_DATE > DATEADD(YEAR, - 2, GETDATE())
-    )
+    )*/
 ), 
 pr AS (
     SELECT        
