@@ -459,7 +459,7 @@ namespace Application.Common
                     $"<h2>¿Tiene alguna pregunta?</h2>" +
                     $"<p>Visite nuestra página de <a href='{vaccineFAQUrl}'>preguntas frecuentes</a> para obtener más información sobre el Registro digital de vacunación contra la COVID-19.</p>" +
                     $"<h2>Manténgase informado.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> sobre la COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> sobre la COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Salud del Estado de Washington</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -471,7 +471,7 @@ namespace Application.Common
                     $"<h2>仍有疑问？</h2>" +
                     $"<p>请访问我们的<a href='{vaccineFAQUrl}'>常见问题解答 (FAQ)</a> 页面，以了解有关您的数字 COVID-19 疫苗记录的更多信息。</p>" +
                     $"<h2>保持关注。</h2>" +
-                    $"<p><a href='{covidWebUrl}'>查看 COVID-19 最新信息</a>。</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>查看 COVID-19 最新信息</a>。</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (华盛顿州卫生部）官方电子邮件</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -483,7 +483,7 @@ namespace Application.Common
                     $"<h2>仍有疑問？</h2>" +
                     $"<p>請造訪我們的<a href='{vaccineFAQUrl}'>常見問題解答 (FAQ)</a>頁面，以瞭解有關您的數位 COVID-19 疫苗記錄的更多資訊。</p>" +
                     $"<h2>保持關注。</h2>" +
-                    $"<p><a href='{covidWebUrl}'>檢視 COVID-19 最新資訊</a>。</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>檢視 COVID-19 最新資訊</a>。</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health （華盛頓州衛生部）官方電子郵件 </p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -495,7 +495,7 @@ namespace Application.Common
                     $"<h2>궁금한 사항이 있으신가요?</h2>" +
                     $"<p>디지털 COVID-19 백신 기록에 대해 자세히 알아보려면 <a href='{vaccineFAQUrl}'>자주 묻는 질문(FAQ)</a> 페이지를 참조해 주십시오.</p>" +
                     $"<h2>최신 정보를 확인하십시오.</h2>" +
-                    $"<p>COVID-19 관련 <a href='{covidWebUrl}'>최신 정보 보기</a></p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>COVID-19 관련 <a href='{covidWebUrl}'>최신 정보 보기</a></p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (워싱턴주 보건부) 공식 이메일</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -507,7 +507,7 @@ namespace Application.Common
                     $"<h2>Bạn có câu hỏi?</h2>" +
                     $"<p>Truy cập vào trang <a href='{vaccineFAQUrl}'>Các Câu Hỏi Thường Gặp (FAQ)</a> để tìm hiểu thêm về Hồ Sơ Vắc-xin COVID-19 kỹ thuật số của bạn.</p>" +
                     $"<h2>Luôn cập nhật thông tin.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Email chính thức của Washington State Department of Health (Sở Y Tế Tiểu Bang Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -531,7 +531,7 @@ namespace Application.Common
                     $"<h2>May mga tanong?</h2>" +
                     $"<p>Bisitahin ang aming page ng <a href='{vaccineFAQUrl}'>Mga Madalas Itanong (FAQ)</a> para matuto pa tungkol sa iyong Digital na Rekord ng Bakuna sa COVID-19.</p>" +
                     $"<h2>Manatiling May Kaalaman.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> tungkol sa COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> tungkol sa COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Opisyal na Email ng Washington State Department of Health (Departamento ng Kalusugan ng Estado ng Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -543,7 +543,7 @@ namespace Application.Common
                     $"<h2>Возникли вопросы?</h2>" +
                     $"<p>Чтобы узнать больше о цифровой записи о вакцинации от COVID-19, перейдите на нашу страницу <a href='{vaccineFAQUrl}'>«Часто задаваемые вопросы» (FAQ)</a>.</p>" +
                     $"<h2>Оставайтесь в курсе.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Получайте актуальную информацию</a> о COVID-19 .</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Получайте актуальную информацию</a> о COVID-19 .</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Официальный адрес электронной почты Washington State Department of Health (Департамент здравоохранения штата Вашингтон)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -555,7 +555,7 @@ namespace Application.Common
                     $"<h2>何か質問はありますか？</h2>" +
                     $"<p>COVID-19ワクチン接種電子記録についての詳細は、<a href='{vaccineFAQUrl}'>よくある質問（FAQ)</a>ページをご覧ください。</p>" +
                     $"<h2>最新の情報を入手する </h2>" +
-                    $"<p>新型コロナ感染症について<a href='{covidWebUrl}'>最新情報を見る</a>。</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>新型コロナ感染症について<a href='{covidWebUrl}'>最新情報を見る</a>。</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health（ワシントン州保健局）の公式電子メール</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -567,7 +567,7 @@ namespace Application.Common
                     $"<h2>Vous avez des questions?</h2>" +
                     $"<p>Consultez notre <a href='{vaccineFAQUrl}'>Foire Aux Questions (FAQ)</a> pour en savoir plus sur votre Attestation numérique de vaccination COVID-19.</p>" +
                     $"<h2>Informez-vous.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>E-mail officiel du Washington State Department of Health (ministère de la Santé de l'État de Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -579,7 +579,7 @@ namespace Application.Common
                    $"<h2>Sorularınız mı var?</h2>" +
                    $"<p>Dijital COVID-19 Aşı Kaydınız hakkında daha fazla bilgi almak için <a href='{vaccineFAQUrl}'>Sıkça Sorulan Sorular (SSS)</a> bölümümüzü ziyaret edin.</p>" +
                    $"<h2>Güncel bilgilere sahip olun.</h2>" +
-                   $"<p>COVID-19 <a href='{covidWebUrl}'>hakkında en güncel bilgileri görüntüleyin</a>.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                   $"<p>COVID-19 <a href='{covidWebUrl}'>hakkında en güncel bilgileri görüntüleyin</a>.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                    $"<hr>" +
                    $"<footer><p style='text-align:center'>Resmi Washington State Department of Health (Washington Eyaleti Sağlık Bakanlığı) E-postası</p>" +
                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -591,7 +591,7 @@ namespace Application.Common
                     $"<h2>Маєте запитання?</h2>" +
                     $"<p>Щоб дізнатися більше про ваш електронний запис про підтвердження вакцинації від COVID-19, перегляньте розділ <a href='{vaccineFAQUrl}'>Найпоширеніші запитання</a>.</p>" +
                     $"<h2>Будьте в курсі.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Перегляньте найновішу інформацію</a> про COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Перегляньте найновішу інформацію</a> про COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Офіційна електронна адреса Washington State Department of Health (Департаменту охорони здоров’я штату Вашингтон)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -603,7 +603,7 @@ namespace Application.Common
                     $"<h2>Aveți întrebări?</h2>" +
                     $"<p>Accesați pagina Întrebări frecvente (<a href='{vaccineFAQUrl}'>Întrebări frecvente</a>) pentru a afla mai multe despre certificatul digital COVID-19.</p>" +
                     $"<h2>Rămâneți informat.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Vizualizați cele mai recente informații</a> referitoare la COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Vizualizați cele mai recente informații</a> referitoare la COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<footer><p style='text-align:center'>Adresa de e-mail oficială a Washington State Department of Health (Departamentului de Sănătate al Statului Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "pt" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
@@ -614,7 +614,7 @@ namespace Application.Common
                     $"<h2>Tem dúvidas?</h2>" +
                     $"<p>Acesse a nossa página de <a href='{vaccineFAQUrl}'>Perguntas frequentes (FAQ)</a> para saber mais sobre o seu Comprovante digital de vacinação contra a COVID-19.</p>" +
                     $"<h2>Mantenha-se informado.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Veja as informações mais recentes</a> sobre a COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Veja as informações mais recentes</a> sobre a COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>E-mail do representante oficial do Washington State Department of Health (Departamento de Saúde do estado de Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -626,7 +626,7 @@ namespace Application.Common
                     $"<h2>आपके कोई प्रश्न हैं?</h2>" +
                     $"<p>अपने डिजिटल COVID-19 वैक्सीन रिकॉर्ड के बारे में अधिक जानने के लिए हमारे <a href='{vaccineFAQUrl}'>अक्सर पूछे जाने वाले प्रश्नों (FAQ)</a> के पेज पर जाएँ।</p>" +
                     $"<h2>सूचित रहें।</h2>" +
-                    $"<p>COVID-19 के बारे में <a href='{covidWebUrl}'>नवीनतम जानकारी देखें</a>। </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>COVID-19 के बारे में <a href='{covidWebUrl}'>नवीनतम जानकारी देखें</a>। </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (वाशिंगटन राज्य के स्वास्थ्य विभाग) का आधिकारिक ईमेल</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -638,7 +638,7 @@ namespace Application.Common
                     $"<h2>Haben Sie Fragen?</h2>" +
                     $"<p>Besuchen Sie unsere Seite mit <a href='{vaccineFAQUrl}'>häufig gestellten Fragen (FAQ)</a> , um mehr über Ihren digitalen COVID-19-Impfpass zu erfahren.</p>" +
                     $"<h2>Bleiben Sie auf dem Laufenden.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Sehen Sie sich die neuesten Informationen</a> über COVID-19 an.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Sehen Sie sich die neuesten Informationen</a> über COVID-19 an.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Offizielle E-Mail-Adresse des Washington State Department of Health (Gesundheitsministerium des Bundesstaates Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -650,7 +650,7 @@ namespace Application.Common
                     $"<h2>ሕቶታት ኣለኩም ድዩ?</h2>" +
                     $"<p>ብዛዕባ ዲጂታላዊ ናይ ኮቪድ-19 ክታበት መረጋገጺ መዝገብ ዝያዳ ንምፍላጥ፡ ነቶም ናህና ገጽ ናይ ቀጻሊ ዝሕተቱ ሕቶታት <a href='{vaccineFAQUrl}'>ቀጻሊ ዝሕተቱ ሕቶታት</a> ብጽሕዎም።</h2>" +
                     $"<h2>ሓበሬታ ሓዙ።</h2>" +
-                    $"<p>ብዛዕባ ኮቪድ-19 <a href='{covidWebUrl}'>ናይ ቀረባ ግዜ ሓበሬታ ራኣዩ</a> ኢኹም።</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>ብዛዕባ ኮቪድ-19 <a href='{covidWebUrl}'>ናይ ቀረባ ግዜ ሓበሬታ ራኣዩ</a> ኢኹም።</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ወግዓዊ ናይ Washington State Department of Health (ክፍሊ ጥዕና ግዝኣት ዋሽንግተን) ኢ-መይል</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -662,7 +662,7 @@ namespace Application.Common
                     $"<h2>మీకు ఏమైనా ప్రశ్నలున్నాయా?</h2>" +
                     $"<p>డిజిటల్ కొవిడ్-19 వ్యాక్సిన్ రికార్డ్ గురించి మరింత తెలుసుకోవడానికి మా <a href='{vaccineFAQUrl}'>తరచుగా అడిగే ప్రశ్నలు (FAQ)</a> పేజీని సందర్శించండి.</p>" +
                     $"<h2>అవగాహనతో ఉండండి.</h2>" +
-                    $"<p>కొవిడ్-19పై <a href='{covidWebUrl}'>తాజా సమాచారాన్ని వీక్షించండి</a>.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>కొవిడ్-19పై <a href='{covidWebUrl}'>తాజా సమాచారాన్ని వీక్షించండి</a>.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>అధికారిక Washington State Department of Health (వాషింగ్టన్ స్టేట్ డిపార్ట్​మెంట్ ఆఫ్ హెల్త్) ఇమెయిల్</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -674,7 +674,7 @@ namespace Application.Common
                     $"<h2>Una maswali?</h2>" +
                     $"<p>Tembelea ukurasa wa <a href='{vaccineFAQUrl}'>Maswali yetu Yanayoulizwa Mara kwa Mara (FAQ)</a>  ili kujifunza zaidi kuhusu Rekodi yako ya Kidijitali ya Chanjo ya COVID-19.</p>" +
                     $"<h2>Endelea Kupata Habari.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Tazama maelezo ya hivi karibuni</a> kuhusu COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Tazama maelezo ya hivi karibuni</a> kuhusu COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Barua pepe Rasmi ya Washington State Department of Health (Idara ya Afya katika Jimbo la Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -686,7 +686,7 @@ namespace Application.Common
                     $"<h2>Su'aalo ma qabtaa?</h2>" +
                     $"<p>Booqo boggeena (<a href='{vaccineFAQUrl}'>Su'aalaha Badanaa La Iswaydiiyo</a>)  si aad wax badan uga ogaato Diiwaankaaga Xaqiijinta Tallaalka COVID-19 ee Dhijitaalka ah.</p>" +
                     $"<h2>La Soco Xogta.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Arag Macluumaadki ugu danbeeyey</a>  oo ku saabsan COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Arag Macluumaadki ugu danbeeyey</a>  oo ku saabsan COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Iimeelka Rasmiga Ee Washington State Department of Health (Waaxda Caafimaadka Gobolka Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -698,7 +698,7 @@ namespace Application.Common
                     $"<h2>E iai ni fesili?</h2>" +
                     $"<p>Asiasi ane i mataupu e masani ona fesiligia (<a href='{vaccineFAQUrl}'>Fesili Masani ma Tali</a>) itulau e faalauteleina ai lou silafia i Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga i Upega Tafa’ilagi</p>" +
                     $"<h2>Ia silafia pea.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Silasila i faamatalaga lata mai</a> o le KOVITI-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Silasila i faamatalaga lata mai</a> o le KOVITI-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Imeli aloaia a le Washington State Department of Health (Matagaluega o le Soifua Maloloina a le Setete o Uosigitone)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -710,7 +710,7 @@ namespace Application.Common
                     $"<h2>ਕੀ ਤੁਹਾਡੇ ਕੋਈ ਸਵਾਲ ਹਨ?</h2>" +
                     $"<p>ਆਪਣੇ ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੈਕਸੀਨ ਰਿਕਾਰਡ ਬਾਰੇ ਹੋਰ ਜਾਣਨ ਲਈ ਸਾਡੇ <a href='{vaccineFAQUrl}'>ਅਕਸਰ ਪੁੱਛੇ ਜਾਣ ਵਾਲੇ ਸਵਾਲ (FAQ)</a>  ਪੰਨੇ 'ਤੇ ਜਾਓ।</p>" +
                     $"<h2>ਸੂਚਿਤ ਰਹੋ।</h2>" +
-                    $"<p>ਕੋਵਿਡ-19 ਬਾਰੇੇ <a href='{covidWebUrl}'>ਨਵੀਨਤਮ ਜਾਣਕਾਰੀ ਵੇਖੋ</a></p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>ਕੋਵਿਡ-19 ਬਾਰੇੇ <a href='{covidWebUrl}'>ਨਵੀਨਤਮ ਜਾਣਕਾਰੀ ਵੇਖੋ</a></p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (ਵਾਸ਼ਿੰਗਟਨ ਸਟੇਟ ਸਿਹਤ ਵਿਭਾਗ) ਦਾ ਅਧਿਕਾਰਤ ਈਮੇਲ ਪਤਾ</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -722,7 +722,7 @@ namespace Application.Common
                     $"<h2 dir='rtl'>ایا پوښتنې لرئ؟</h2>" +
                     $"<p dir='rtl'>د خپل ډیجیټل واکسین ثبت په اړه د نورې زده کړې لپاره زموږ په COVID-19 <a href='{vaccineFAQUrl}'>مکرر ډول پوښتل شوي پوښتنو (FAQ)</a>  پاڼې څخه لیدنه وکړئ.</p>" +
                     $"<h2 dir='rtl'>باخبر اوسئ.</h2>" +
-                    $"<p dir='rtl'>دCOVID-19 په<a href='{covidWebUrl}'>اړه تازه معلومات وګورئ</a>.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p dir='rtl'>دCOVID-19 په<a href='{covidWebUrl}'>اړه تازه معلومات وګورئ</a>.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>د واشنګټن ایالت د روغتیا ریاست (Washington State Department of Health) رسمي بریښنالیک</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -734,7 +734,7 @@ namespace Application.Common
                     $"<h2 dir='rtl'>سوالات ہیں؟</h2>" +
                     $"<p dir='rtl'>اپنے ڈیجیٹل کووڈ-19 ویکسین ریکارڈ کے متعلق مزید جاننے کے لئے ہمارا <a href='{vaccineFAQUrl}'>عمومی سوالات (FAQ)</a>  کا صفحہ ملاحظہ کریں۔</p>" +
                     $"<h2 dir='rtl'>آگاہ رہیں۔</h2>" +
-                    $"<p dir='rtl'>کووڈ-19 کے متعلق <a href='{covidWebUrl}'>تازہ ترین معلومات دیکھیں<a/> </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p dir='rtl'>کووڈ-19 کے متعلق <a href='{covidWebUrl}'>تازہ ترین معلومات دیکھیں<a/> </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>Washington State Department of Health (ریاست واشنگٹن محکمۂ صحت) کی سرکاری ای میل</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -746,7 +746,7 @@ namespace Application.Common
                     $"<h2>प्रश्नहरू छन्?</h2>" +
                     $"<p>आफ्नो डिजिटल कोभिड-19 खोप रेकर्डका बारेमा थप जान्नका लागि हाम्रो <a href='{vaccineFAQUrl}'>बारम्बार सोधिने प्रश्नहरू (FAQ)</a> को पृष्ठ हेर्नुहोस्।</p>" +
                     $"<h2>सूचित रहनुहोस्।</h2>" +
-                    $"<p>कोभिड-19 बारे <a href='{covidWebUrl}'>नवीनतम जानकारी हेर्नुहोस्</a> ।</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>कोभिड-19 बारे <a href='{covidWebUrl}'>नवीनतम जानकारी हेर्नुहोस्</a> ।</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>आधिकारिक Washington State Department of Health) वासिङ्गटन राज्यको स्वास्थ्य विभाग( को इमेल</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -758,7 +758,7 @@ namespace Application.Common
                     $"<h2>A iyo tu’un jikatu’un ní</h2>" +
                     $"<p>Kunde’e ní nuu página <a href='{vaccineFAQUrl}'>nda tu’un jikatu’un ka (FAQ)</a> tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu Tarjeta Vacuna COVID-19 ja iyo nuu Kaa ndichí.</p>" +
                     $"<h2>Ndukú ni tu’un.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Kunde’e ní tu’un jáá ka</a> siki COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Kunde’e ní tu’un jáá ka</a> siki COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Correo Washington State Department of Health (DOH, Ve’e nuu jito ja Sa’a tátan ñuu Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -770,7 +770,7 @@ namespace Application.Common
                     $"<h2>Jeban kajjitōk?</h2>" +
                     $"<p>Ilomei arro <a href='{vaccineFAQUrl}'>Jọkkutkut Kajjitōk Nawāwee (FAQ)</a>  ālāl nan katak bar jidik tarrin aim Iaam jarom COVID-19 Wa Jeje.</p>" +
                     $"<h2> Pād melele</h2>" +
-                    $"<p> <a href='{covidWebUrl}'>Mmat ko rimwik kojjela</a>  ioo COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p> <a href='{covidWebUrl}'>Mmat ko rimwik kojjela</a>  ioo COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Wōpij Washington State Department of Health (Kutkutton konnaan jikuul in keenki) lota</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -782,7 +782,7 @@ namespace Application.Common
                     $"<h2>¿At qaj tajay tzaj tqanay?</h2>" +
                     $"<p>Tokx toj jqeya qkloj che qaj Qanb’al jakax (<a href='{vaccineFAQUrl}'>Qe Xjel Kukx in che Tzaj Qanin (FAQ)</a>) te tu’ ttiq’ay kab’t q’umb’aj tumal tib’aj jtey Ttz’ib’b’al te cheylakxta tej tx’u’j yab’il te COVID-19 toj xk’utz’ib’.</p>" +
                     $"<h2>Etkub’ tenay te ab’i’ chqil tumal tu’nay.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Ettiq’ay jq’umb’aj tumal ma’nxax nex q’umat</a>  tib’aj tx’u’j yab’il tej COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Ettiq’ay jq’umb’aj tumal ma’nxax nex q’umat</a>  tib’aj tx’u’j yab’il tej COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Correo electrónico te chqil Ja’ nik’ub’ aq’unt te Tb’anal xumlal tej Tnom te Washington [Washington State Department of Health, toj tyol me’x xjal] </p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -794,7 +794,7 @@ namespace Application.Common
                     $"<h2>ມີ​ຄຳ​ຖາມ​ບໍ?</h2>" +
                     $"<p>ເຂົ້າເບິ່ງໜ້າ<a href='{vaccineFAQUrl}'>ຄໍາ​ຖາມ​ທີ່​ຖືກ​ຖາມ​ເລື້ອຍໆ (FAQ)</a> ເພື່ອຮຽນ​ຮູ້​ເພີ່ມເຕີມກ່ຽວກັບບັນທຶກວັກຊີນປ້ອງກັນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນຂອງທ່ານ.</p>" +
                     $"<h2>ຕິດຕາມຂ່າວສານ.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>ເບິ່ງຂໍ້ມູນຫຼ້າສຸດ</a> ກ່ຽວກັບ ພະຍາດ ໂຄວິດ-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>ເບິ່ງຂໍ້ມູນຫຼ້າສຸດ</a> ກ່ຽວກັບ ພະຍາດ ໂຄວິດ-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ອີເມວທາງການຂອງ Washington State Department of Health (ພະແນກ ສຸຂະພາບ)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -806,7 +806,7 @@ namespace Application.Common
                     $"<h2>មានសំណួរមែនទេ?</h2>" +
                     $"<p>ចូលទៅកាន់ទំព័រ <a href='{vaccineFAQUrl}'>​​សំណួរចោទសួរជាញឹកញាប់ (FAQ)</a> របស់យើង​ដើម្បី​ស្វែងយល់​បន្ថែមអំពី​កំណត់ត្រា​វ៉ាក់សាំង​ COVID-19 ជាទម្រង់ឌីជីថល។</p>" +
                     $"<h2>បន្តទទួលបានដំណឹង​​។</h2>" +
-                    $"<p><a href='{covidWebUrl}'>ពិនិត្យមើលព័ត៌មានថ្មីៗ​បំផុត</a> ស្តីពីជំងឺ​ COVID-19។</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>ពិនិត្យមើលព័ត៌មានថ្មីៗ​បំផុត</a> ស្តីពីជំងឺ​ COVID-19។</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>អ៊ីម៉ែលផ្លូវការរបស់​ Washington State Department of Health (ក្រសួងសុខាភិបាល​រដ្ឋ​វ៉ាស៊ីនតោន)។</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -818,7 +818,7 @@ namespace Application.Common
                     $"<h2>တၢ်သံကွၢ်အိၣ်ဧါ.</h2>" +
                     $"<p>လဲၤကွၢ်ဖဲ တၢ်သံကွၢ်လၢတၢ်သံကွၢ်အီၤခဲအံၤခဲအံၤ (<a href='{vaccineFAQUrl}'>တၢ်သံကွၢ်လၢဘၣ်တၢ်သံကွၢ်အီၤခဲအံၤခဲအံၤတဖၣ် (FAQ)</a>) ကဘျံးပၤလၢ ကမၤလိအါထီၣ် ဘၣ်ဃးဒီးန ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 ကသံၣ်ဒီသဒၢတၢ်မၤနီၣ်မၤဃါ န့ၣ်တက့ၢ်.</p>" +
                     $"<h2>သ့ၣ်ညါတၢ်ဘိးဘၣ်သ့ၣ်ညါထီဘိ</h2>" +
-                    $"<p><a href='{covidWebUrl}'>ကွၢ်တၢ်ဂ့ၢ်တၢ်ကျိၤလၢခံကတၢၢ်</a> ဖဲ COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>ကွၢ်တၢ်ဂ့ၢ်တၢ်ကျိၤလၢခံကတၢၢ်</a> ဖဲ COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health(၀ၣ်ရှ့ၣ်တၢၣ်ကီၢ်စဲၣ်တၢ်အိၣ်ဆူၣ်အိၣ်ချ့ဝဲၤကျိၤ) အံမ့(လ)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -830,7 +830,7 @@ namespace Application.Common
                     $"<h2>Taro?</h2>" +
                     $"<p>Rai ena tabana e tiko kina na <a href='{vaccineFAQUrl}'>Taro e Tarogi Wasoma (FAQ)</a>  mo kila e levu tale na tikina e vauca na iVolatukutuku Vakalivaliva ni Veika e Vauca na COVID-19.</p>" +
                     $"<h2>Mo Kila na Veika e Yaco Tiko.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Kila na itukutuku vou duadua ena veika e vauca</a>  na COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Kila na itukutuku vou duadua ena veika e vauca</a>  na COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>iMeli ni Washington State Department of Health (Tabana ni Bula ena Vanua o Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -842,7 +842,7 @@ namespace Application.Common
                     $"<h2 dir='rtl'>پرسشی دارید؟</h2>" +
                     $"<p dir='rtl'>برای کسب اطلاعات بیشتر در‌مورد «نسخه دیجیتال گواهی واکسیناسیون COVID-19»، از صفحه <a href='{vaccineFAQUrl}'>سؤالات متداول (FAQ)</a> ما دیدن کنید.</p>" +
                     $"<h2 dir='rtl'>آگاه و مطلع بمانید.</h2>" +
-                    $"<p dir='rtl'><a href='{covidWebUrl}'> جدیدترین اطلاعات</a>  مربوط به COVID-19 را مشاهده کنید.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p dir='rtl'><a href='{covidWebUrl}'> جدیدترین اطلاعات</a>  مربوط به COVID-19 را مشاهده کنید.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>ایمیل رسمی Washington State Department of Health (اداره سلامت ایالت واشنگتن)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -854,7 +854,7 @@ namespace Application.Common
                     $"<h2 dir='rtl'>سوالاتی دارید؟</h2>" +
                     $"<p dir='rtl'><a href='{vaccineFAQUrl}'>از صفحه سوالات مکرراً پرسیده شده ما (FAQ)</a>  برای یادگیری بیشتر درباره سابقه دیجیتل واکسین کووید-19 بازدید کنید.</p>" +
                     $"<h2 dir='rtl'>مطلع بمانید.</h2>" +
-                    $"<p dir='rtl'><a href='{covidWebUrl}'>مشاهده آخرین معلومات</a>  درباره کووید-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p dir='rtl'><a href='{covidWebUrl}'>مشاهده آخرین معلومات</a>  درباره کووید-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>ایمیل رسمی Washington State Department of Health (اداره صحت عامه ایالت واشنگتن)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -866,7 +866,7 @@ namespace Application.Common
                     $"<h2>Mi wor om kapaseis?</h2>" +
                     $"<p>Feino katon ach kewe Kapas Eis Ekon Nap Ach Eis <a href='{vaccineFAQUrl}'>(Chechemeni kapas ais (FAQ))</a> pon ach we peich ren om kopwe awatenai om sinei usun noum Digital COVID-19 Afatan Record.</p>" +
                     $"<h2>Nonom nge Sisinei.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Katon minefon poraus</a> on COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Katon minefon poraus</a> on COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>An Washington State Department of Health (Washington State Ofesin Pekin Safei) Email</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -878,7 +878,7 @@ namespace Application.Common
                     $"<h2>မေးခွန်းများရှိပါသလား။</h2>" +
                     $"<p>သင့် ဒီဂျစ်တယ်လ် ကိုဗစ်-19 ကာကွယ်ဆေး မှတ်တမ်းအကြောင်း ပိုမိုသိရှိလိုလျှင် ကျွန်ုပ်တို့၏ မေးလေ့မေးထရှိသောမေးခွန်းများ (<a href='{vaccineFAQUrl}'>မေးလေ့မေးထရှိသောမေးခွန်းများ</a>)  ကို ဝင်ကြည့်ပါ။</p>" +
                     $"<h2>အချက်အလက်သိအောင်လုပ်ထားပါ</h2>" +
-                    $"<p><a href='{covidWebUrl}'>နောက်ဆုံးအချက်အလက်များကို ကြည့်မည်</a> ကိုဗစ်-19 အကြောင်း</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>နောက်ဆုံးအချက်အလက်များကို ကြည့်မည်</a> ကိုဗစ်-19 အကြောင်း</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>တရားဝင် Washington State Department of Health(ဝါရှင်တန် ပြည်နယ် ကျန်းမာရေး ဌာန) အီးမေးလ်</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -890,7 +890,7 @@ namespace Application.Common
                     $"<h2>ጥያቄዎች አሉዎት?</h2>" +
                     $"<p>ስለ ዲጂታል የ COVID-19 ክትባት መዝገብ የበለጠ ለማወቅ የእኛን <a href='{vaccineFAQUrl}'>ተዘውትረው የሚጠየቁ ጥያቄዎች</a> ገጽ ይጎብኙ።</p>" +
                     $"<h2>መረጃ ይኑርዎት።</h2>" +
-                    $"<p>በ COVID-19 ላይ <a href='{covidWebUrl}'>የቅርብ ጊዜውን መረጃ ይመልከቱ</a> ።</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>በ COVID-19 ላይ <a href='{covidWebUrl}'>የቅርብ ጊዜውን መረጃ ይመልከቱ</a> ።</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ይፋዊ የ Washington State Department of Health (የዋሺንግተን ግዛት የጤና መምሪያ) ኢሜይል</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -902,7 +902,7 @@ namespace Application.Common
                     $"<h2>Gaaffii qabduu?</h2>" +
                     $"<p>Waa’ee Mirkaneessa Ragaa Dijitaalaa COVID-19 gaaffii yoo qabaattan, fuula <a href='{vaccineFAQUrl}'>Gaaffilee Yeroo Heddu Gaafataman (FAQ)</a> ilaalaa.</p>" +
                     $"<h2>Odeeffannoo Argadhaa.</h2>" +
-                    $"<p>COVID-19 ilaalchisee  <a href='{covidWebUrl}'>odeeffannoo haaraa ilaalaa</a>.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>COVID-19 ilaalchisee  <a href='{covidWebUrl}'>odeeffannoo haaraa ilaalaa</a>.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Imeelii seera qabeessa kan Muummee Fayyaa Naannoo Washingtan (Washington State Department of Health)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -914,7 +914,7 @@ namespace Application.Common
                     $"<h2>‘I ai ha ngaahi fehu’i?</h2>" +
                     $"<p>Vakai ki he’emau peesi Ngaahi Fehu’i ‘oku Fa’a ‘Eke Mai (<a href='{vaccineFAQUrl}'>Ngaahi Fehu’i ‘oku fa’a ‘Eke Mai</a>) ke toe ‘ilo lahiange fekau’aki mo ho’o Lēkooti Huhu Malu’i COVID-19.</p>" +
                     $"<h2>‘Ilo’i Maʻu Pē.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Vakai ki he fakamatala fakamuimui tahá</a> ’i he COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Vakai ki he fakamatala fakamuimui tahá</a> ’i he COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>'Imeili Faka'ofisiale Washington State Department Of Health (Potungāue Mo’ui ‘a e Siteiti ‘o Uasingatoní)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -926,7 +926,7 @@ namespace Application.Common
                     $"<h2>கேள்விகள் உள்ளதா?</h2>" +
                     $"<p>உங்கள் மின்னணு கொவிட்-19 தடுப்பூசி பதிவைப் பற்றி மேலும் அறிய, எங்களின் <a href='{vaccineFAQUrl}'>அடிக்கடி கேட்கப்படும் கேள்விகள் (FAQ)</a> பக்கத்தைப் பார்வையிடவும்.</p>" +
                     $"<h2>தகவலை அறிந்து இருங்கள்.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>சமீபத்திய தகவலைப் பார்க்கவும்</a> கொவிட்-19 பற்றி.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>சமீபத்திய தகவலைப் பார்க்கவும்</a> கொவிட்-19 பற்றி.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>அதிகாரப்பூர்வ Washington State Department of Health (வாஷிங்டன் மாநில சுகாதாரத் துறை) மின்னஞ்சல்</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -938,7 +938,7 @@ namespace Application.Common
                     $"<h2>Puas muaj cov lus nug?</h2>" +
                     $"<p>Mus saib peb nplooj vev xaib muaj <a href='{vaccineFAQUrl}'>Cov Lus Nug Uas Nquag Nug (FAQ)</a> txhawm rau kawm paub ntxiv txog koj li Ntaub Ntawv Sau Tseg Txog Tshuaj Tiv Thaiv Kab Mob COVID-19 Ua Dis Cis Tauj</p>" +
                     $"<h2>Soj Qab Saib Kev Paub.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Saib cov ntaub ntawv tawm tshiab tshaj plaws</a> txog kab mob COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Saib cov ntaub ntawv tawm tshiab tshaj plaws</a> txog kab mob COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Tus Email Siv Raws Cai Ntawm Xeev Washington State Department of Health (Chav Hauj Lwm ntsig txog Kev Noj Qab Haus Huv)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -950,7 +950,7 @@ namespace Application.Common
                      $"<h2>มีคำถามหรือไม่</h2>" +
                      $"<p>โปรดไปยังส่วน<a href='{vaccineFAQUrl}'>คำถามที่พบบ่อย (FAQ)</a> เพื่อเรียนรู้เพิ่มเติมเกี่ยวกับบันทึกการฉีดวัคซีนป้องกันโควิด-19 แบบดิจิทัลของคุณ</p>" +
                      $"<h2>คอยติดตามข่าวสาร</h2>" +
-                     $"<p><a href='{covidWebUrl}'>ดูข้อมูลล่าสุด</a> เกี่ยวกับโควิด-19</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                     $"<p><a href='{covidWebUrl}'>ดูข้อมูลล่าสุด</a> เกี่ยวกับโควิด-19</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                      $"<hr>" +
                      $"<footer><p style='text-align:center'>อีเมลอย่างเป็นทางการของ Washington State Department of Health (กรมอนามัยของรัฐวอชิงตัน)</p>" +
                      $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -962,7 +962,7 @@ namespace Application.Common
                   $"<h2>Have questions?</h2>" +
                   $"<p>Visit our <a href='{vaccineFAQUrl}'>Frequently Asked Questions (FAQ)</a> page to learn more about your Digital COVID-19 Verification Record.</p>" +
                   $"<h2>Stay Informed.</h2>" +
-                  $"<p><a href='{covidWebUrl}'>View the latest information</a> on COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                  $"<p><a href='{covidWebUrl}'>View the latest information</a> on COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                   $"<hr>" +
                   $"<footer><p style='text-align:center'>Official Washington State Department of Health e-mail</p>" +
                   $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>"
@@ -1044,56 +1044,56 @@ namespace Application.Common
             {
                 "es" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Registro digital de verificación de COVID-19</h1>" +
-                    $"<p>Recientemente solicitó un Registro digital de verificación de COVID-19 del <a href='{webUrl}'>sistema de Registro digital de verificación de COVID-19</a>. Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema estatal.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Recientemente solicitó un Registro digital de verificación de COVID-19 del <a href='{webUrl}'>sistema de Registro digital de verificación de COVID-19</a>. Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema estatal.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>Puede presentar otra solicitud en el sistema de <a href='{webUrl}'>Registro digital de verificación de COVID-19</a> con un número de teléfono o dirección de correo electrónico diferente; puede <a href='{contactUsUrl}'>comunicarse con nosotros</a> para que lo ayudemos a fin de que su información de contacto coincida con los registros; o bien, puede comunicarse con su proveedor para asegurarse de que la información ha sido enviada al sistema estatal.</p>" +
                     $"<h2>¿Tiene preguntas?</h2>" +
                     $"<p>Visite nuestra página de <a href='{vaccineFAQUrl}'>preguntas frecuentes</a> para obtener más información sobre el Registro digital de verificación de COVID-19.</p>" +
                     $"<h2>Manténgase informado.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> sobre la COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Consulte la información más reciente</a> sobre la COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Correo electrónico oficial del Departamento de Salud del Estado de Washington</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "zh" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>数字 COVID-19 验证记录</h1>" +
-                    $"<p>您最近向 <a href='{webUrl}'>数字 COVID-19 验证记录系统</a> 请求过数字 COVID-19 验证记录。很遗憾，您提供的信息与州系统中的信息不符。</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>您最近向 <a href='{webUrl}'>数字 COVID-19 验证记录系统</a> 请求过数字 COVID-19 验证记录。很遗憾，您提供的信息与州系统中的信息不符。</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>您可以使用不同的手机号码或电子邮件地址在 <a href='{webUrl}'>数字 COVID-19 验证记录</a> 系统中提交另一个请求，您还可以 <a href='{contactUsUrl}'>联系我们</a> 寻求帮助，将您的记录与您的联系信息进行匹配，或者您可以联系您的医疗保健提供者以确保您的信息已提交至州系统。</p>" +
                     $"<h2>仍有疑问？</h2>" +
                     $"<p>请访问我们的<a href='{vaccineFAQUrl}'>常见问题解答 (FAQ)</a> 页面，以了解有关您的数字 COVID-19 验证记录的更多信息。</p>" +
                     $"<h2>保持关注。</h2>" +
-                    $"<p><a href='{covidWebUrl}'>查看 COVID-19 最新信息</a>。</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>查看 COVID-19 最新信息</a>。</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health （华盛顿州卫生部）官方电子邮件</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "zh-TW" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>數位 COVID-19 驗證記錄</h1>" +
-                    $"<p>您最近向 <a href='{webUrl}'>數位 COVID-19 驗證記錄系統</a> 請求過數位 COVID-19 驗證記錄。很遺憾，您提供的資訊與州系統中的資訊不符。</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>您最近向 <a href='{webUrl}'>數位 COVID-19 驗證記錄系統</a> 請求過數位 COVID-19 驗證記錄。很遺憾，您提供的資訊與州系統中的資訊不符。</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>您可以使用不同的手機號碼或電子郵件地址在 <a href='{webUrl}'>數位 COVID-19 驗證記錄</a> 系統中提交另一個請求，您還可以 <a href='{contactUsUrl}'>與我們連絡</a> 尋求幫助，將您的記錄與您的連絡資訊進行匹配，或者您可以連絡您的醫療保健提供者以確保您的資訊已提交至州系統。</p>" +
                     $"<h2>仍有疑問？</h2>" +
                     $"<p>請造訪我們的<a href='{vaccineFAQUrl}'>常見問題解答 (FAQ)</a> 頁面，瞭解有關您的數位 COVID-19 驗證記錄的更多資訊。</p>" +
                     $"<h2>保持關注。</h2>" +
-                    $"<p><a href='{covidWebUrl}'>檢視最新資訊</a>，與 COVID-19 密切相關的資訊。</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>檢視最新資訊</a>，與 COVID-19 密切相關的資訊。</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health （華盛頓州衛生部）官方電子郵件</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ko" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>디지털 COVID-19 인증 기록</h1>" +
-                    $"<p>귀하는 최근 <a href='{webUrl}'>디지털 COVID-19 인증 기록 시스템</a> 에 디지털 COVID-19 인증 기록을 요청하셨습니다. 유감스럽게도 귀하가 제공하신 정보는 주정부 시스템상 정보와 일치하지 않습니다.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>귀하는 최근 <a href='{webUrl}'>디지털 COVID-19 인증 기록 시스템</a> 에 디지털 COVID-19 인증 기록을 요청하셨습니다. 유감스럽게도 귀하가 제공하신 정보는 주정부 시스템상 정보와 일치하지 않습니다.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>다른 휴대전화 번호나 이메일 주소로 <a href='{webUrl}'>디지털 COVID-19 인증 기록 시스템</a> 에 별도의 요청을 제출하실 수 있습니다. <a href='{contactUsUrl}'>저희에게 연락</a> 하여 귀하의 기록을 연락처 정보와 일치시키는 데 도움을 받으시거나, 담당 의료서비스 제공자에게 문의하여 귀하의 정보가 주정부 시스템에 제출되었는지 확인하실 수 있습니다.</p>" +
                     $"<h2>궁금한 사항이 있으신가요?</h2>" +
                     $"<p>디지털 COVID-19 인증 기록에 대해 자세히 알아보려면 <a href='{vaccineFAQUrl}'>자주 묻는 질문(FAQ)</a> 페이지를 참조해 주십시오.</p>" +
                     $"<h2>최신 정보를 확인하십시오.</h2>" +
-                    $"<p>COVID-19 관련 <a href='{covidWebUrl}'>최신 정보 보기</a></p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>COVID-19 관련 <a href='{covidWebUrl}'>최신 정보 보기</a></p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (워싱턴주 보건부) 공식 이메일</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "vi" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Hồ sơ Xác nhận COVID-19 kỹ thuật số</h1>" +
-                    $"<p>Gần đây bạn yêu cầu Hồ sơ Xác nhận COVID-19 kỹ thuật số từ <a href='{webUrl}'>hệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số</a>. Rất tiếc, thông tin mà bạn cung cấp không khớp với thông tin có trong hệ thống của tiểu bang.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Gần đây bạn yêu cầu Hồ sơ Xác nhận COVID-19 kỹ thuật số từ <a href='{webUrl}'>hệ thống Hồ sơ Xác nhận COVID-19 kỹ thuật số</a>. Rất tiếc, thông tin mà bạn cung cấp không khớp với thông tin có trong hệ thống của tiểu bang.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>Bạn có thể gửi yêu cầu khác trong hệ thống <a href='{webUrl}'>Hồ sơ Xác nhận COVID-19 kỹ thuật số</a> với một số điện thoại di động hoặc địa chỉ email khác, bạn có thể <a href='{contactUsUrl}'>liên hệ với chúng tôi</a> để được trợ giúp khớp thông tin hồ sơ với thông tin liên lạc của bạn, hoặc bạn có thể liên lạc với nhà cung cấp của mình để đảm bảo rằng thông tin của bạn đã được gửi đến hệ thống của tiểu bang.</p>" +
                     $"<h2>Có câu hỏi?</h2>" +
                     $"<p>Truy cập vào trang <a href='{vaccineFAQUrl}'>Các Câu Hỏi Thường Gặp (FAQ)</a> để tìm hiểu thêm về Hồ Sơ Xác nhận COVID-19 kỹ thuật số của bạn.</p>" +
                     $"<h2>Luôn cập nhật thông tin.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Xem thông tin mới nhất</a> về COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Email chính thức của Washington State Department of Health (Sở Y Tế Tiểu Bang Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -1101,8 +1101,8 @@ namespace Application.Common
                     $"<h1 dir='rtl' style='color: #C84C0E'>سجل التحقق الرقمي من فيروس كوفيد-19</h1>" +
                     $"<p dir='rtl'>لقد قمت مؤخرًا بطلب الحصول على سجل التحقق الرقمي من فيروس كوفيد-19 من <a href='{webUrl}'>نظام سجل التحقق الرقمي من فيروس كوفيد-19</a> (متوفر باللغة الإنجليزية فقط). ولكن للأسف، المعلومات التي قمت بتقديمها لا تتوافق مع المعلومات الموجودة على نظام الولاية.</p>" +
                     //$"<p dir='rtl'>لقد قمت مؤخرًا بطلب الحصول على سجل التحقق الرقمي من فيروس <a href='{webUrl}'>كوفيد-19 من نظام سجل التحقق الرقمي من فيروس كوفيد-19</a> . ولكن للأسف، المعلومات التي قمت بتقديمها لا تتوافق مع المعلومات الموجودة على نظام الولاية.</p>" +
-                    //$"<p dir='rtl'>يمكنك التقدم بطلب آخر في نظام <a href='{webUrl}'>كوفيد-19 من نظام سجل التحقق الرقمي من فيروس كوفيد-19</a> باستخدام رقم هاتف محمول أو بريد إلكتروني مختلف، أو  يمكنك <a href='{contactUsUrl}'>التواصل معنا</a> للحصول على مساعدة في تحقيق التطابق بين سجلك ومعلومات التواصل الخاصة بك، أو يمكنك التواصل مع مُقدِّم الخدمة المعنّي بك للتأكد من إرسال معلوماتك إلى نظام الولاية.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
-                    $"<p dir='rtl'>يمكنك التقدم بطلب آخر في نظام <a href='{webUrl}'>سجل التحقق الرقمي من فيروس كوفيد-19</a> (متوفر باللغة الإنجليزية فقط) باستخدام رقم هاتف محمول أو بريد إلكتروني مختلف، أو يمكنك <a href='{contactUsUrl}'>التواصل معنا</a> (متوفر باللغة الإنجليزية فقط) للحصول على مساعدة في تحقيق التطابق بين سجلك ومعلومات التواصل الخاصة بك، أو يمكنك التواصل مع مُقدِّم الخدمة المعنّي بك للتأكد من إرسال معلوماتك إلى نظام الولاية.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    //$"<p dir='rtl'>يمكنك التقدم بطلب آخر في نظام <a href='{webUrl}'>كوفيد-19 من نظام سجل التحقق الرقمي من فيروس كوفيد-19</a> باستخدام رقم هاتف محمول أو بريد إلكتروني مختلف، أو  يمكنك <a href='{contactUsUrl}'>التواصل معنا</a> للحصول على مساعدة في تحقيق التطابق بين سجلك ومعلومات التواصل الخاصة بك، أو يمكنك التواصل مع مُقدِّم الخدمة المعنّي بك للتأكد من إرسال معلوماتك إلى نظام الولاية.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
+                    $"<p dir='rtl'>يمكنك التقدم بطلب آخر في نظام <a href='{webUrl}'>سجل التحقق الرقمي من فيروس كوفيد-19</a> (متوفر باللغة الإنجليزية فقط) باستخدام رقم هاتف محمول أو بريد إلكتروني مختلف، أو يمكنك <a href='{contactUsUrl}'>التواصل معنا</a> (متوفر باللغة الإنجليزية فقط) للحصول على مساعدة في تحقيق التطابق بين سجلك ومعلومات التواصل الخاصة بك، أو يمكنك التواصل مع مُقدِّم الخدمة المعنّي بك للتأكد من إرسال معلوماتك إلى نظام الولاية.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<h2 dir='rtl'>هل لديك أي أسئلة؟ </h2>" +
                     $"<p dir='rtl'>قم بزيارة صفحة <a href='{vaccineFAQUrl}'>الأسئلة الشائعة</a> (متوفر باللغة الإنجليزية فقط) الخاصة بنا للاطلاع على مزيدٍ من المعلومات حول السجل الرقمي للقاح كوفيد-19 الخاص بك.</p>" +
                     $"<h2 dir='rtl'>ابقَ مطلعًا.</h2>" +
@@ -1113,110 +1113,110 @@ namespace Application.Common
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "tl" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</h1>" +
-                    $"<p>Kamakailan kang humiling ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19 mula <a href='{webUrl}'>system ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</a>. Sa kasamaang-palad, hindi tumutugma ang ibinigay mong impormasyon sa impormasyong nasa system ng estado.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Kamakailan kang humiling ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19 mula <a href='{webUrl}'>system ng Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</a>. Sa kasamaang-palad, hindi tumutugma ang ibinigay mong impormasyon sa impormasyong nasa system ng estado.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>Maaari kang magsumite sa isa pang kahilingan sa system ng <a href='{webUrl}'>Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19</a> gamit ang ibang numero ng mobile na telepono o email address, <a href='{contactUsUrl}'>makipag-ugnayan sa amin</a> para sa tulong sa pagtugma ng iyong rekord sa impormasyon sa pakikipag-ugnayan mo, o makipag-ugnayan sa iyong provider para tiyaking isinumite sa system ng estado ang iyong impormasyon.</p>" +
                     $"<h2>May mga tanong?</h2>" +
                     $"<p>Bisitahin ang aming page ng <a href='{vaccineFAQUrl}'>Mga Madalas Itanong (FAQ)</a> para matuto pa tungkol sa iyong Digital na Rekord sa Pagberipika ng Pagpapabakuna sa COVID-19.</p>" +
                     $"<h2>Manatiling May Kaalaman.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> tungkol sa COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Tingnan ang pinakabagong impormasyon</a> tungkol sa COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Opisyal na Email ng Washington State Department of Health (Departamento ng Kalusugan ng Estado ng Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ru" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Цифровая запись о вакцинации от COVID-19</h1>" +
-                    $"<p>Недавно вы запросили цифровую запись о вакцинации от COVID-19 в <a href='{webUrl}'>системе штата</a>. К сожалению, предоставленная вами информация не совпадает с информацией в системе штата.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Недавно вы запросили цифровую запись о вакцинации от COVID-19 в <a href='{webUrl}'>системе штата</a>. К сожалению, предоставленная вами информация не совпадает с информацией в системе штата.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>Вы можете подать еще один запрос в <a href='{webUrl}'>системе цифровых записей о вакцинации от COVID-19</a>, используя другой номер мобильного телефона или адрес электронной почты, а также <a href='{contactUsUrl}'>связаться с нами</a> , чтобы получить помощь в сверке данных, указанных в вашей записи, с вашей контактной информацией, или обратиться к своему лечащему врачу, чтобы убедиться, что ваша информация была внесена в систему штата.</p>" +
                     $"<h2>Возникли вопросы?</h2>" +
                     $"<p>Чтобы узнать больше о цифровой записи о вакцинации от COVID-19, перейдите на нашу страницу <a href='{vaccineFAQUrl}'>«Часто задаваемые вопросы» (FAQ)</a>.</p>" +
                     $"<h2>Оставайтесь в курсе.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Получайте актуальную информацию</a> о COVID-19 .</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Получайте актуальную информацию</a> о COVID-19 .</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Официальный адрес электронной почты Washington State Department of Health (Департамент здравоохранения штата Вашингтон)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ja" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>COVID-19ワクチン接種電子記録</h1>" +
-                    $"<p>あなたは<a href='{webUrl}'>COVID-19ワクチン接種電子記録システム</a>からCOVID-19ワクチン接種電子記録を依頼されましたが、入力された情報はワシントン州のシステムに登録されている情報と一致しません。</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>あなたは<a href='{webUrl}'>COVID-19ワクチン接種電子記録システム</a>からCOVID-19ワクチン接種電子記録を依頼されましたが、入力された情報はワシントン州のシステムに登録されている情報と一致しません。</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>別の携帯電話番号または電子メールアドレスを使用して<a href='{webUrl}'>コロナワクチン接種電子記録</a>システムにあらためて依頼を送信できます。あなたの記録と連絡先情報を一致させる上でサポートが必要な場合は<a href='{contactUsUrl}'>問い合わせください</a>。またはワクチン提供機関に連絡して、あなたの情報がワシントン州のシステムに送信済みであるか確認できます。</p>" +
                     $"<h2>ご不明な点がありますか？</h2>" +
                     $"<p>COVID-19ワクチン接種電子記録についての詳細は、<a href='{vaccineFAQUrl}'>よくある質問（FAQ)</a>ページをご覧ください。</p>" +
                     $"<h2>最新の情報を入手する </h2>" +
-                    $"<p>新型コロナ感染症について<a href='{covidWebUrl}'>最新情報を見る</a>。</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>新型コロナ感染症について<a href='{covidWebUrl}'>最新情報を見る</a>。</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health（ワシントン州保健局）の公式電子メール</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "fr" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Attestation numérique de vaccination COVID-19</h1>" +
-                    $"<p>Vous avez récemment demandé une Attestation numérique de vaccination COVID-19 auprès du système d'<a href='{webUrl}'>Attestation numérique de vaccination COVID-19</a>. Malheureusement, les informations que vous avez fournies ne correspondent pas à celles qui figurent dans le système de l'État.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Vous avez récemment demandé une Attestation numérique de vaccination COVID-19 auprès du système d'<a href='{webUrl}'>Attestation numérique de vaccination COVID-19</a>. Malheureusement, les informations que vous avez fournies ne correspondent pas à celles qui figurent dans le système de l'État.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>Vous pouvez soumettre une autre demande dans le système d'<a href='{webUrl}'>Attestation numérique de vaccination COVID-19</a> en indiquant un autre numéro de téléphone mobile ou une autre adresse e-mail, vous pouvez <a href='{contactUsUrl}'>nous contacter</a> pour obtenir de l'aide afin d'associer votre attestation à vos coordonnées, ou vous pouvez contacter votre professionnel de santé pour vérifier que vos informations ont été transmises au système de l'État.</p>" +
                     $"<h2>Vous avez des questions?</h2>" +
                     $"<p>Consultez notre page <a href='{vaccineFAQUrl}'>Foire Aux Questions (FAQ)</a> pour en savoir plus sur votre Attestation numérique de vaccination COVID-19.</p>" +                    
                     $"<h2>Informez-vous.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Voir les dernières informations</a> à propos du COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>E-mail officiel du Washington State Department of Health (ministère de la Santé de l'État de Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "tr" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Dijital COVID-19 Doğrulama Kaydı</h1>" +
-                    $"<p>Yakın zamanda <a href='{webUrl}'>Dijital COVID-19 Doğrulama Kaydı sisteminden</a> bir Dijital COVID-19 Doğrulama Kaydı istediniz. Maalesef verdiğiniz bilgiler eyalet sistemindeki bilgilerle eşleşmiyor.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Yakın zamanda <a href='{webUrl}'>Dijital COVID-19 Doğrulama Kaydı sisteminden</a> bir Dijital COVID-19 Doğrulama Kaydı istediniz. Maalesef verdiğiniz bilgiler eyalet sistemindeki bilgilerle eşleşmiyor.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p><a href='{webUrl}'>Dijital COVID-19 Doğrulama Kaydı</a> sisteminden farklı bir cep telefonu numarası ya da e-posta adresi ile başka bir istekte bulabilir, kaydınızı iletişim bilgilerinizle eşleştirme konusunda yardım almak için <a href='{contactUsUrl}'>bize ulaşabilir</a> ya da bilgilerinizin eyalet sistemine gönderildiğinden emin olmak için sağlayıcınızla iletişime geçebilirsiniz.</p>" +
                     $"<h2>Sorularınız mı var?</h2>" +
                     $"<p>Dijital COVID-19 Doğrulama Kaydı’nız hakkında daha fazla bilgi almak için <a href='{vaccineFAQUrl}'>Sıkça Sorulan Sorular (SSS)</a> bölümümüzü ziyaret edin.</p>" +
                     $"<h2>Güncel bilgilere sahip olun.</h2>" +
-                    $"<p>COVID-19 <a href='{covidWebUrl}'>hakkında en güncel bilgileri görüntüleyin</a>.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>COVID-19 <a href='{covidWebUrl}'>hakkında en güncel bilgileri görüntüleyin</a>.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Resmi Washington State Department of Health (Washington Eyaleti Sağlık Bakanlığı) E-postası</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "uk" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                    $"<h1 style='color: #C84C0E'>Електронний запис про підтвердження вакцинації від COVID-19</h1>" +
-                   $"<p>Нещодавно ви надіслали запит на отримання доступу до електронного запису про підтвердження вакцинації від COVID-19 у <a href='{webUrl}'>системі «Електронний запис про підтвердження вакцинації від COVID-19»</a>. На жаль, інформація, яку ви надали, не збігається з інформацією в державній системі.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                   $"<p>Нещодавно ви надіслали запит на отримання доступу до електронного запису про підтвердження вакцинації від COVID-19 у <a href='{webUrl}'>системі «Електронний запис про підтвердження вакцинації від COVID-19»</a>. На жаль, інформація, яку ви надали, не збігається з інформацією в державній системі.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                    $"<p>Ви можете подати інший запит у системі <a href='{webUrl}'>Електронний запис про підтвердження вакцинації від COVID-19</a>, використовуючи інший номер мобільного телефону або адресу електронної пошти, <a href='{contactUsUrl}'>зв’язатися з нами</a>, щоб отримати допомогу в зіставленні інформації у вашому записі з вашою контактною інформацією, або звернутися до свого лікаря, щоб переконатися, що вашу інформацію передано до державної системи.</p>" +
                    $"<h2>Маєте запитання?</h2>" +
                    $"<p>Щоб дізнатися більше про систему «Електронний запис про підтвердження вакцинації від COVID-19», перегляньте розділ <a href='{vaccineFAQUrl}'>Найпоширеніші запитання</a>.</p>" +
                    $"<h2>Будьте в курсі.</h2>" +
-                   $"<p><a href='{covidWebUrl}'>Перегляньте найновішу інформацію</a> про COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                   $"<p><a href='{covidWebUrl}'>Перегляньте найновішу інформацію</a> про COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                    $"<hr>" +
                    $"<footer><p style='text-align:center'>Офіційна електронна адреса Washington State Department of Health (Департаменту охорони здоров’я штату Вашингтон)</p>" +
                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ro" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Certificatul digital COVID-19</h1>" +
-                    $"<p>Ați solicitat recent un certificat digital COVID-19 de la <a href='{webUrl}'>sistemul de certificate digitale COVID-19</a>. Din păcate, informațiile furnizate de dvs. nu corespund cu datele din sistemul de stat.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Ați solicitat recent un certificat digital COVID-19 de la <a href='{webUrl}'>sistemul de certificate digitale COVID-19</a>. Din păcate, informațiile furnizate de dvs. nu corespund cu datele din sistemul de stat.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>Puteți să trimiteți o nouă solicitare către sistemul de <a href='{webUrl}'>certificate digitale COVID-19</a> de la un alt număr de telefon mobil sau de pe o altă adresă de e-mail, puteți să ne <a href='{contactUsUrl}'>contactați</a> pentru asistență la potrivirea fișei dvs. de vaccinare cu informațiile de contact sau puteți să luați legătura cu furnizorul serviciilor medicale pentru a vă asigura ca datele dvs. au fost introduse în sistemul de stat.</p>" +
                     $"<h2>Aveți întrebări?</h2>" +
                     $"<p>Accesați pagina Întrebări frecvente (<a href='{vaccineFAQUrl}'>Întrebări frecvente</a>) pentru a afla mai multe despre certificatul digital COVID-19.</p>" +
                     $"<h2>Rămâneți informat.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Vizualizați cele mai recente informații</a> referitoare la COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Vizualizați cele mai recente informații</a> referitoare la COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<footer><p style='text-align:center'>Adresa de e-mail oficială a Washington State Department of Health (Departamentului de Sănătate al Statului Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "pt" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Comprovante digital de vacinação contra a COVID-19</h1>" +
-                    $"<p>Recentemente, você solicitou um Comprovante digital de vacinação contra a COVID-19 do <a href='{webUrl}'>sistema de Comprovante digital de vacinação contra a COVID-19</a>. Infelizmente, as informações fornecidas não correspondem às informações em nosso sistema.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Recentemente, você solicitou um Comprovante digital de vacinação contra a COVID-19 do <a href='{webUrl}'>sistema de Comprovante digital de vacinação contra a COVID-19</a>. Infelizmente, as informações fornecidas não correspondem às informações em nosso sistema.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>É possível enviar outra solicitação ao sistema de <a href='{webUrl}'>Comprovante digital de vacinação contra a COVID-19</a> com um número de celular ou endereço de e-mail diferente. <a href='{contactUsUrl}'>Entre em contato conosco</a> para obter ajuda com a correspondência entre os dados de contato e as informações em seu comprovante, ou entre em contato com o seu provedor para garantir que suas informações foram enviadas para o sistema do estado.</p>" +
                     $"<h2>Tem dúvidas?</h2>" +
                     $"<p>Visite a nossa página de <a href='{vaccineFAQUrl}'>Perguntas frequentes (FAQ)</a> para saber mais sobre o seu Comprovante digital de vacinação contra a COVID-19.</p>" +
                     $"<h2>Mantenha-se informado.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Veja as informações mais recentes</a> sobre a COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Veja as informações mais recentes</a> sobre a COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>E-mail do representante oficial do Washington State Department of Health (Departamento de Saúde do estado de Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "hi" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>डिजिटल COVID-19 सत्यापन रिकॉर्ड</h1>" +
-                    $"<p>आपने हाल ही में <a href='{webUrl}'>डिजिटल COVID-19 सत्यापन रिकॉर्ड प्रणाली </a> से डिजिटल COVID-19 सत्यापन रिकॉर्ड का अनुरोध किया है। दुर्भाग्य से, आपके द्वारा प्रदान की गई जानकारी राज्य प्रणाली की जानकारी से मेल नहीं खाती है। </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>आपने हाल ही में <a href='{webUrl}'>डिजिटल COVID-19 सत्यापन रिकॉर्ड प्रणाली </a> से डिजिटल COVID-19 सत्यापन रिकॉर्ड का अनुरोध किया है। दुर्भाग्य से, आपके द्वारा प्रदान की गई जानकारी राज्य प्रणाली की जानकारी से मेल नहीं खाती है। </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>आप एक अलग मोबाइल फोन नंबर या ईमेल एड्रेस के साथ <a href='{webUrl}'>डिजिटल COVID-19 सत्यापन रिकॉर्ड</a> प्रणाली में एक और अनुरोध सबमिट कर सकते हैं, आप अपनी संपर्क जानकारी को अपने रिकॉर्ड से मिलान करने में मदद के लिए <a href='{contactUsUrl}'>हमसे संपर्क कर सकते हैं </a>, या आप यह सुनिश्चित करने के लिए अपने प्रदाता से संपर्क कर सकते हैं कि आपकी जानकारी राज्य प्रणाली को प्रस्तुत की गई है या नहीं।</p>" +
                     $"<h2>आपके कोई प्रश्न हैं?</h2>" +
                     $"<p>अपने डिजिटल COVID-19 वेरिफिकेशन रिकॉर्ड के बारे में अधिक जानने के लिए हमारे <a href='{vaccineFAQUrl}'>अक्सर पूछे जाने वाले प्रश्न (FAQ)</a> पृष्ठ पर जाएँ।</p>" +
                     $"<h2>सूचित रहें।</h2>" +
-                    $"<p>COVID-19 के बारे में <a href='{covidWebUrl}'>नवीनतम जानकारी देखें</a>। </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>COVID-19 के बारे में <a href='{covidWebUrl}'>नवीनतम जानकारी देखें</a>। </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (वाशिंगटन राज्य के स्वास्थ्य विभाग) का आधिकारिक ईमेल</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "de" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>COVID-19-Digitalzertifikat</h1>" +
-                    $"<p>Sie haben kürzlich ein COVID-19-Digitalzertifikat vom <a href='{webUrl}'>COVID-19-Digitalzertifikat-System</a> angefordert. Leider stimmen die von Ihnen gemachten Angaben nicht mit den Informationen im System des Bundesstaats überein.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Sie haben kürzlich ein COVID-19-Digitalzertifikat vom <a href='{webUrl}'>COVID-19-Digitalzertifikat-System</a> angefordert. Leider stimmen die von Ihnen gemachten Angaben nicht mit den Informationen im System des Bundesstaats überein.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>Sie können im <a href='{webUrl}'>COVID-19-Digitalzertifikat</a>-System eine erneute Anfrage mit einer anderen Handynummer oder E-Mail-Adresse senden, Sie können <a href='{contactUsUrl}'>Kontakt</a> zu uns aufnehmen, damit wir Ihnen bei der Zuordnung Ihres Zertifikats zu Ihren Kontaktdaten helfen, oder Sie können Ihren Anbieter kontaktieren, sich zu vergewissern, dass Ihre Daten an das System des Bundesstaats übermittelt wurden.</p>" +
                     $"<h2>Haben Sie Fragen?</h2>" +
                     $"<p>Besuchen Sie unsere Seite mit <a href='{vaccineFAQUrl}'>häufig gestellten Fragen (FAQ)</a>, um mehr über Ihr COVID-19-Digitalzertifikat zu erfahren.</p>" +
                     $"<h2>Bleiben Sie auf dem Laufenden.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Sehen Sie sich die neuesten Informationen</a> über COVID-19 an.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Sehen Sie sich die neuesten Informationen</a> über COVID-19 an.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Offizielle E-Mail-Adresse des Washington State Department of Health (Gesundheitsministerium des Bundesstaates Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -1227,119 +1227,119 @@ namespace Application.Common
                     $"<h2>ሕቶታት ኣለኩም ድዩ?</h2>" +
                     $"<p>ብዛዕባ ዲጂታላዊ ናይ ኮቪድ-19 ክታበት መረጋገጺ መዝገብ ዝያዳ ንምፍላጥ፡ ነቶም ናህና ቀጻሊ ዝሕተቱ ሕቶታት <a href='{vaccineFAQUrl}'>ቀጻሊ ዝሕተቱ ሕቶታት</a> ብጽሑ</h2>" +
                     $"<h2>ሓበሬታ ሓዙ።</h2>" +
-                    $"<p>ብዛዕባ ኮቪድ-19 <a href='{covidWebUrl}'>ናይ ቀረባ ግዜ ሓበሬታ ራኣዩ</a> ኢኹም።</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>ብዛዕባ ኮቪድ-19 <a href='{covidWebUrl}'>ናይ ቀረባ ግዜ ሓበሬታ ራኣዩ</a> ኢኹም።</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ወግዓዊ ናይ Washington State Department of Health (ክፍሊ ጥዕና ግዝኣት ዋሽንግተን) ኢ-መይል</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "te" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్</h1>" +
-                    $"<p>మీరు ఇటీవల <a href='{webUrl}'>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్ సిస్టమ్ నుంచ</a> డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్​ని అభ్యర్ధించారు. దురదృష్టవశాత్తు, మీరు అందించిన సమాచారం స్టేట్ సిస్టమ్​లో సమాచారంతో జతకావడం లేదు.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>మీరు ఇటీవల <a href='{webUrl}'>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్ సిస్టమ్ నుంచ</a> డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్​ని అభ్యర్ధించారు. దురదృష్టవశాత్తు, మీరు అందించిన సమాచారం స్టేట్ సిస్టమ్​లో సమాచారంతో జతకావడం లేదు.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>మీరు వేరే మొబైల్ నెంబరు లేదా ఇమెయిల్ చిరునామాతో <a href='{webUrl}'>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డు</a> సిస్టమ్​లో మరో అభ్యర్ధన సబ్మిట్ చేయవచ్చు, మీరు మీ రికార్డులను మీ కాంటాక్ట్ సమాచారంతో జత చేయడానికి <a href='{contactUsUrl}'>మమ్మల్ని సంప్రదించవచ్చు</a>, లేదా మీ సమాచారం రాష్ట్ర సిస్టమ్​కు సబ్మిట్ చేసినట్లుగా ధృవీకరించుకోవడానికి మీరు మీ ప్రొవైడర్​ని సంప్రదించవచ్చు.</p>" +
                     $"<h2>మీకు ఏమైనా ప్రశ్నలున్నాయా?</h2>" +
                     $"<p>డిజిటల్ కొవిడ్-19 ధృవీకరణ రికార్డ్ గురించి మరింత తెలుసుకోవడానికి మా <a href='{vaccineFAQUrl}'>తరచుగా అడిగే ప్రశ్నలు (FAQ)</a> పేజీని సందర్శించండి.</p>" +
                     $"<h2>అవగాహనతో ఉండండి.</h2>" +
-                    $"<p>కొవిడ్-19పై <a href='{covidWebUrl}'>తాజా సమాచారాన్ని వీక్షించండి</a>.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>కొవిడ్-19పై <a href='{covidWebUrl}'>తాజా సమాచారాన్ని వీక్షించండి</a>.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>అధికారిక Washington State Department of Health (వాషింగ్టన్ స్టేట్ డిపార్ట్​మెంట్ ఆఫ్ హెల్త్) ఇమెయిల్</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "sw" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19</h1>" +
-                    $"<p>Hivi karibuni uliomba Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19 kutoka mfumo wa <a href='{webUrl}'>Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19</a>. Kwa bahati mbaya, maelezo uliyotoa hayalingani na maelezo yaliyopo kwenye mfumo wa jimbo.</a></p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Hivi karibuni uliomba Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19 kutoka mfumo wa <a href='{webUrl}'>Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19</a>. Kwa bahati mbaya, maelezo uliyotoa hayalingani na maelezo yaliyopo kwenye mfumo wa jimbo.</a></p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>Unaweza kuwasilisha ombi lingine katika mfumo wa <a href='{webUrl}'>Rekodi ya Kidijitali ya Uthibitishaji wa COVID-19</a> kwa nambari tofauti ya simu ya mkononi au barua pepe, unaweza <a href='{contactUsUrl}'>kuwasiliana nasi</a> ili kupata usaidizi katika kulinganisha rekodi yako na maelezo yako ya mawasiliano, au unaweza kuwasiliana na mtoaji wako ili kuhakikisha maelezo yako yamewasilishwa kwa mfumo wa jimbo.</a></a></p>" +
                     $"<h2>Una maswali?</h2>" +
                     $"<p>Tembelea ukurasa wa <a href='{vaccineFAQUrl}'>Maswali yetu Yanayoulizwa Mara kwa Mara (FAQ)</a> ili kujifunza zaidi kuhusu Rekodi yako ya Kidijitali ya Uthibitishaji wa COVID-19.</p>" +
                     $"<h2>Endelea Kupata Habari.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Tazama maelezo ya hivi karibuni</a> kuhusu COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Tazama maelezo ya hivi karibuni</a> kuhusu COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Barua pepe Rasmi ya Washington State Department of Health (Idara ya Afya katika Jimbo la Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "so" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Diiwaanka Xaqiijinta Tallaalka COVID-19 ee Dhijitaalka Ah</h1>" +
-                    $"<p>Waxaad dhawaan ka codsatay Diiwaanka Xaqiijinta Tallaalka COVID-19 ee Dhijitaalka ah <a href='{webUrl}'>Nidaamka Diiwaanka Xaqiijinta Tallaalka COVID-19 ee Dhijitaalka Ah</a> . Nasiib daro, macluumaadka aad bixisay ma waafaqsana macluumaadka kujira nidaamka gobolka. </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Waxaad dhawaan ka codsatay Diiwaanka Xaqiijinta Tallaalka COVID-19 ee Dhijitaalka ah <a href='{webUrl}'>Nidaamka Diiwaanka Xaqiijinta Tallaalka COVID-19 ee Dhijitaalka Ah</a> . Nasiib daro, macluumaadka aad bixisay ma waafaqsana macluumaadka kujira nidaamka gobolka. </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>Waxaad codsi kale ku gudbin kartaa nidaamka <a href='{webUrl}'>Diiwaanka Xaqiijinta Tallaalka COVID-19 ee Dhijitaalka Ah</a>  taleefoon lambar ama ciwaanka iimeel kale, <a href='{contactUsUrl}'>nalasoo xiriir</a>  si aad uhesho caawimaada islahaysiinta diiwaankaaga iyo macluumaadkaaga xiriirka, ama waxaad la xariiri kartaa bixiyahaaga tallaalka si loo xaqiijiyo in macluumaadkaada loo gudbiyey nidaamka gobolka.</p>" +
                     $"<h2>Su'aalo ma qabtaa?</h2>" +
                     $"<p>Booqo boggeena (<a href='{vaccineFAQUrl}'>Su'aalaha Badanaa La Iswaydiiyo</a>)  si aad wax badan uga ogaato Diiwaankaaga Xaqiijinta Tallaalka COVID-19 ee Dhijitaalka ah.</p>" +
                     $"<h2>La Soco Xogta.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Arag Macluumaadki ugu danbeeyey</a>  oo ku saabsan COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Arag Macluumaadki ugu danbeeyey</a>  oo ku saabsan COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Iimeelka Rasmiga Ee Washington State Department of Health (Waaxda Caafimaadka Gobolka Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "sm" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Faamaumauga Faamaonia o le KOVITI-19</h1>" +
-                    $"<p>Sa e talosagaina talu ai nei ni faamaumauga faamaonia o le KOVITI-19 <a href='{webUrl}'>Polokalame o faamaumauga o le KOVITI-19</a>. E faamalie atu, o faamatalaga na e tuuina mai, e le tutusa ma faamaumauga i le polokalame a le setete </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Sa e talosagaina talu ai nei ni faamaumauga faamaonia o le KOVITI-19 <a href='{webUrl}'>Polokalame o faamaumauga o le KOVITI-19</a>. E faamalie atu, o faamatalaga na e tuuina mai, e le tutusa ma faamaumauga i le polokalame a le setete </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>E mafai ona toe talosagaina ni <a href='{webUrl}'>Faamaumauga Faamaonia o le KOVITI-19</a> e manaomia se numera telefoni feaveai ese, poo se tuatusi imeli, e mafai foi <a href='{contactUsUrl}'>faafesootai mai matou</a> mo se fesoasoani e faamautinoa ou faaamaumauga pe faafesootai le auaunaga ina ia faamautuina ua mauaina uma ou faamatalaga i polokalame a le setete.</p>" +
                     $"<h2>E iai ni fesili?</h2>" +
                     $"<p>Asiasi ane i mataupu e masani ona fesiligia (<a href='{vaccineFAQUrl}'>Fesili Masani ma Tali</a>) e faalauteleina ai lou silafia i Fa’amaumauga Fa’amaonia o le KOVITI-19 i luga o Upega Tafa’ilagi.</p>" +
                     $"<h2>Ia silafia Pea.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Silasila i faamatalaga lata mai</a> o le KOVITI-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Silasila i faamatalaga lata mai</a> o le KOVITI-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Imeli aloaia a le Washington State Department of Health (Matagaluega o le Soifua Maloloina a le Setete o Uosigitone)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "pa" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ</h1>" +
-                    $"<p>ਤੁਸੀਂ ਹਾਲ ਹੀ ਵਿੱਚ <a href='{webUrl}'>ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਸਿਸਟਮ</a> ਤੋਂ ਇੱਕ ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਲਈ ਬੇਨਤੀ ਕੀਤੀ ਸੀ। ਬਦਕਿਸਮਤੀ ਨਾਲ, ਤੁਹਾਡੇ ਦੁਆਰਾ ਪ੍ਰਦਾਨ ਕੀਤੀ ਗਈ ਜਾਣਕਾਰੀ ਸਟੇਟ ਦੇ ਸਿਸਟਮ ਵਿੱਚ ਮੌਜੂਦ ਜਾਣਕਾਰੀ ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ। </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>ਤੁਸੀਂ ਹਾਲ ਹੀ ਵਿੱਚ <a href='{webUrl}'>ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਸਿਸਟਮ</a> ਤੋਂ ਇੱਕ ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਲਈ ਬੇਨਤੀ ਕੀਤੀ ਸੀ। ਬਦਕਿਸਮਤੀ ਨਾਲ, ਤੁਹਾਡੇ ਦੁਆਰਾ ਪ੍ਰਦਾਨ ਕੀਤੀ ਗਈ ਜਾਣਕਾਰੀ ਸਟੇਟ ਦੇ ਸਿਸਟਮ ਵਿੱਚ ਮੌਜੂਦ ਜਾਣਕਾਰੀ ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ। </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>ਤੁਸੀਂ ਕਿਸੇ ਵੱਖਰੇ ਮੋਬਾਈਲ ਨੰਬਰ ਜਾਂ ਈਮੇਲ ਪਤੇ ਨਾਲ <a href='{webUrl}'>ਡਿਜੀਟਲ ਕੋਵਿਡ-19 ਵੇਰਿਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ</a>  ਸਿਸਟਮ ਵਿੱਚ ਇੱਕ ਹੋਰ ਬੇਨਤੀ ਸਬਮਿਟ ਕਰ ਸਕਦੇ ਹੋ, ਆਪਣੇ ਰਿਕਾਰਡ ਨੂੰ ਆਪਣੀ ਸੰਪਰਕ ਜਾਣਕਾਰੀ ਨਾਲ ਮਿਲਾਉਣ ਵਿੱਚ ਮਦਦ ਲਈ ਤੁਸੀਂ <a href='{contactUsUrl}'>ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰ</a>  ਸਕਦੇ ਹੋ, ਜਾਂ ਇਹ ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ ਤੁਸੀਂ ਆਪਣੇ ਸਿਹਤ ਸੰਭਾਲ ਪ੍ਰਦਾਤਾ ਨਾਲ ਸੰਪਰਕ ਕਰ ਸਕਦੇ ਹੋ ਕਿ ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਸਟੇਟ ਦੇ ਸਿਸਟਮ ਵਿੱਚ ਸਬਮਿਟ ਕਰ ਦਿੱਤੀ ਗਈ ਹੈ।</p>" +
                     $"<h2>ਕੀ ਤੁਹਾਡੇ ਕੋਈ ਸਵਾਲ ਹਨ?</h2>" +
                     $"<p>ਆਪਣੇ ਡਿਜ਼ੀਟਲ ਕੋਵਿਡ-19 ਵੈਰੀਫਿਕੇਸ਼ਨ ਰਿਕਾਰਡ ਬਾਰੇ ਹੋਰ ਜਾਣਨ ਲਈ ਸਾਡੇ <a href='{vaccineFAQUrl}'>ਅਕਸਰ ਪੁੱਛੇ ਜਾਣ ਵਾਲੇ ਸਵਾਲ (FAQ)</a></p>" +
                     $"<h2>ਸੂਚਿਤ ਰਹੋ।</h2>" +
-                    $"<p>ਕੋਵਿਡ-19 ਬਾਰੇ <a href='{covidWebUrl}'>ਨਵੀਨਤਮ ਜਾਣਕਾਰੀ ਵੇਖੋ</a></p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>ਕੋਵਿਡ-19 ਬਾਰੇ <a href='{covidWebUrl}'>ਨਵੀਨਤਮ ਜਾਣਕਾਰੀ ਵੇਖੋ</a></p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (ਵਾਸ਼ਿੰਗਟਨ ਸਟੇਟ ਸਿਹਤ ਵਿਭਾਗ) ਦਾ ਅਧਿਕਾਰਤ ਈਮੇਲ ਪਤਾ</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ps" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 dir='rtl' style='color: #C84C0E'>د ډیجیټل COVID-19 تائید ثبت</h1>" +
-                    $"<p dir='rtl'>تاسو پدې وروستیو کې <a href='{webUrl}'>د ډیجیټل COVID-19 تائید ثبت سیسټم څخه د ډیجیټل COVID-19 تائید ثبت غوښتنه کړې</a>. له بده مرغه، هغه معلومات چې تاسو چمتو کړي د دولتي سیسټم کې د معلوماتو سره سمون نلري. </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p dir='rtl'>تاسو پدې وروستیو کې <a href='{webUrl}'>د ډیجیټل COVID-19 تائید ثبت سیسټم څخه د ډیجیټل COVID-19 تائید ثبت غوښتنه کړې</a>. له بده مرغه، هغه معلومات چې تاسو چمتو کړي د دولتي سیسټم کې د معلوماتو سره سمون نلري. </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p dir='rtl'>تاسو کولی شئ د <a href='{webUrl}'>ډیجیټل COVID-19 تائید ثبت</a> سیسټم کې د مختلف ګرځنده تلیفون شمیرې یا بریښنالیک ادرس سره بله غوښتنه وسپارئ، تاسو کولی شي خپل ثبت د خپل اړیکې معلوماتو سره د سمولو مرستې لپاره <a href='{contactUsUrl}'>زموږ سره اړیکه ونیسئ</a> ، یا تاسو کولی شئ له خپل چمتو کونکي سره اړیکه ونیسئ ترڅو ډاډمن شي چې ستاسو معلومات دولتي سیسټم ته سپارل شوي دي.</p>" +
                     $"<h2 dir='rtl'>ایا پوښتنې لرئ؟</h2>" +
                     $"<p dir='rtl'>د خپل ډیجیټل واکسین ثبت په اړه د نورې زده کړې لپاره زموږ په COVID-19 <a href='{vaccineFAQUrl}'>مکرر ډول پوښتل شوي پوښتنو (FAQ)</a> پاڼې څخه لیدنه وکړئ.</p>" +
                     $"<h2 dir='rtl'>باخبر اوسئ.</h2>" +
-                    $"<p dir='rtl'>دCOVID-19 په<a href='{covidWebUrl}'>اړه تازه معلومات وګورئ</a>.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p dir='rtl'>دCOVID-19 په<a href='{covidWebUrl}'>اړه تازه معلومات وګورئ</a>.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>د واشنګټن ایالت د روغتیا ریاست (Washington State Department of Health) رسمي بریښنالیک</p>" +
                     $"<p dir='rtl' style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ur" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 dir='rtl' style='color: #C84C0E'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</h1>" +
-                    $"<p dir='rtl'>آپ نے حال ہی میں <a href='{webUrl}'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ سسٹم</a> سے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کی درخواست کی ہے۔ بدقسمتی سے آپ کی فراہم کردہ معلومات ریاستی سسٹم میں موجود معلومات سے مماثلت نہیں رکھتی۔ </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p dir='rtl'>آپ نے حال ہی میں <a href='{webUrl}'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ سسٹم</a> سے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کی درخواست کی ہے۔ بدقسمتی سے آپ کی فراہم کردہ معلومات ریاستی سسٹم میں موجود معلومات سے مماثلت نہیں رکھتی۔ </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p dir='rtl'>آپ کوئی اور موبائل فون نمبر یا ای میل ایڈریس استعمال کرتے ہوئے <a href='{webUrl}'>ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ</a> سسٹم میں دوبارہ درخواست جمع کروا سکتے ہیں، اپنے ریکارڈ کو اپنے رابطے کی معلومات سے ملانے کے لئے <a href='{contactUsUrl}'>ہم سے رابطہ</a> کر سکتے ہیں، یا اپنے معالج سے رابطہ کر کے یقینی بنا سکتے ہیں کہ آپ کی معلومات ریاستی نظام میں جمع کروا دی گئی ہیں۔</p>" +
                     $"<h2 dir='rtl'>سوالات ہیں؟</h2>" +
                     $"<p dir='rtl'>اپنے ڈیجیٹل کووڈ-19 تصدیقی ریکارڈ کے متعلق مزید جاننے کے لئے ہمارا <a href='{vaccineFAQUrl}'>عمومی سوالات (FAQ)</a> کا صفحہ ملاحظہ کریں۔</p>" +
                     $"<h2 dir='rtl'>آگاہ رہیں۔</h2>" +
-                    $"<p dir='rtl'>کووڈ-19 کے متعلق <a href='{covidWebUrl}'>تازہ ترین معلومات دیکھیں</a></p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p dir='rtl'>کووڈ-19 کے متعلق <a href='{covidWebUrl}'>تازہ ترین معلومات دیکھیں</a></p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>Washington State Department of Health (DOH، ریاست واشنگٹن محکمۂ صحت) کی سرکاری ای میل</p>" +
                     $"<p dir='rtl' style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ne" =>
                     $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड</h1>" +
-                    $"<p>तपाईंले हालै <a href='{webUrl}'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड प्रणाली</a> बाट डिजिटल कोभिड-19 प्रमाणीकरण रेकर्डको लागि अनुरोध गर्नुभयो। दुर्भाग्यवश, तपाईंले उपलब्ध गराउनुभएको जानकारी राज्यको प्रणालीमा भएको जानकारीसँग मेल खाँदैन। </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>तपाईंले हालै <a href='{webUrl}'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड प्रणाली</a> बाट डिजिटल कोभिड-19 प्रमाणीकरण रेकर्डको लागि अनुरोध गर्नुभयो। दुर्भाग्यवश, तपाईंले उपलब्ध गराउनुभएको जानकारी राज्यको प्रणालीमा भएको जानकारीसँग मेल खाँदैन। </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>तपाईं भिन्न मोबाइल फोन नम्बर वा इमेल ठेगाना प्रयोग गरी <a href='{webUrl}'>डिजिटल कोभिड-19 प्रमाणीकरण रेकर्ड</a> प्रणालीमा अर्को अनुरोध पेश गर्न सक्नुहुन्छ, तपाईंको रेकर्डलाई तपाईंको सम्पर्क जानकारीसँग मिल्ने बनाउनमा मद्दतका लागि <a href='{contactUsUrl}'>हामीलाई सम्पर्क गर्न</a> सक्नुहुन्छ वा तपाईंको जानकारी राज्यको प्रणालीमा पेश गरिएको छ भनी सुनिश्चित गर्नका लागि आफ्नो प्रदायकलाई सम्पर्क गर्न सक्नुहुन्छ।</p>" +
                     $"<h2>प्रश्नहरू छन्?</h2>" +
                     $"<p>आफ्नो डिजिटल कोभिड-19 प्रमाणीकरण रेकर्डका बारेमा थप जान्नका लागि हाम्रो <a href='{vaccineFAQUrl}'>बारम्बार सोधिने प्रश्नहरू (FAQ)</a> को पृष्ठ हेर्नुहोस्।</p>" +
                     $"<h2>सूचित रहनुहोस्।</h2>" +
-                    $"<p>कोभिड-19 बारे <a href='{covidWebUrl}'>नवीनतम जानकारी हेर्नुहोस्</a> ।</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>कोभिड-19 बारे <a href='{covidWebUrl}'>नवीनतम जानकारी हेर्नुहोस्</a> ।</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>आधिकारिक Washington State Department of Health(वासिङ्गटन राज्यको स्वास्थ्य विभाग) को इमेल</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "mxb" =>
                     $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</h1>" +
-                    $"<p>Iyo jaku kivi ja ni jikan ní in tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19 ja iyo nuu <a href='{webUrl}'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</a>. Kueka kuu ja, tu’un ja ni taji ní nduu kitan ji tu’un ja neva’a sa nuu nda tu’un ja iyo nuu ñuu. </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Iyo jaku kivi ja ni jikan ní in tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19 ja iyo nuu <a href='{webUrl}'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</a>. Kueka kuu ja, tu’un ja ni taji ní nduu kitan ji tu’un ja neva’a sa nuu nda tu’un ja iyo nuu ñuu. </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>Kuu tetiñu ní tuku ní inka tutu nuu <a href='{webUrl}'>Tutu nuu kaa ndichí siki tu’un nasa iyo ní jín kue’e COVID-19</a> jín in número yokaa axi correo electrónico ja síin kaa, kuu <a href='{contactUsUrl}'>ka’an ní jín nda sa</a> tágua kuu sa’a yo ja kita’an tu’un ja taji ní ji ja neva’a sa, axi in ñayiví satatan tágua kuni ní tú ni tetiñu va’a tu’un siki ní nuu ñuu.</p>" +
                     $"<h2>A iyo tu’un jikatu’un ní</h2>" +
                     $"<p>Kunde’e ní nuu página <a href='{vaccineFAQUrl}'>nda tu’un jikatu’un ka (FAQ)</a> tágua ni’in ka ní tu’un siki nasa chi’in ni sivi ní nuu Tutu nuu Kaa ndichí siki Tu’un Nasa iyo ní jín kue’e COVID-19.</p>" +
                     $"<h2>Ndukú ni tu’un.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Kunde’e ní tu’un jáá ka</a> siki COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Kunde’e ní tu’un jáá ka</a> siki COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Correo Washington State Department of Health (DOH, Ve’e nuu jito ja Sa’a tátan ñuu Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "mh" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Iaam jarom COVID-19 Jaak Jeje</h1>" +
-                    $"<p>Eok kiin jeṃaanḷọk kajjitōk a laam jarom COVID-19 jaak jeje jan <a href='{webUrl}'>ko Kaajai COVID-19 Wotom Jeje kkar</a>. jerata, ko melele eok naloma jerbal jab mājet melele for ko konnaan kkar. </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Eok kiin jeṃaanḷọk kajjitōk a laam jarom COVID-19 jaak jeje jan <a href='{webUrl}'>ko Kaajai COVID-19 Wotom Jeje kkar</a>. jerata, ko melele eok naloma jerbal jab mājet melele for ko konnaan kkar. </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>Eok kuwat lota bar juon kajjitōk for ko <a href='{webUrl}'>Kaajai COVID-19 Wotom Jeje</a>  kkar ippa a different joorkatkat teinwa nomba ak lota jipij, eok kuwat </a>kōkkeitaak koj</a>  bwe rejetak for jekkar ami jeje nana ami kokkeitaak melele, ak eok kuwat kokkeitaak ami naloma nan eok ami melele mmo kwo jjilōk nan ko konnaan kkar.</p>" +
                     $"<h2>Jeben kajjitōk?</h2>" +
                     $"<p>Ilomej arro <a href='{vaccineFAQUrl}'>Jokkutkut Kajjitok Nawawee (FAQ)</a> alal nan katak bar jidik ami laam jarom COVID-19 jaak jeje.</p>" +
                     $"<h2>Pad melele.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Mmat ko rimwik kojjela</a> on COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Mmat ko rimwik kojjela</a> on COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Wōpij Washington State Department of Health (Kutkutton konnaan jikuul in keenki) lota</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -1350,161 +1350,161 @@ namespace Application.Common
                     $"<h2>¿At qaj tajay tzaj tqanay?</h2>" +
                     $"<p>Tokx toj jqeya qkloj che qaj Qanb’al jakax (<a href='{vaccineFAQUrl}'>Qe Xjel Kukx in che Tzaj Qanin (FAQ)</a>) te tu’ ttiq’ay kab’t q’umb’aj tumal tib’aj jtey Tqanil toj Yolb’il tun Tjyet COVID-19.</p>" +
                     $"<h2>Etkub’ tenay te ab’i’ chqil tumal tu’nay.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Ettiq’ay jq’umb’aj tumal ma’nxax nex q’umat</a>  tib’aj tx’u’j yab’il tej COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Ettiq’ay jq’umb’aj tumal ma’nxax nex q’umat</a>  tib’aj tx’u’j yab’il tej COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Correo electrónico te chqil Ja’ nik’ub’ aq’unt te Tb’anal xumlal tej Tnom te Washington [Washington State Department of Health, toj tyol me’x xjal] </p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "lo" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>ບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນ</h1>" +
-                    $"<p>ເມື່ອບໍ່ດົນມານີ້ທ່ານໄດ້ຮ້ອງຂໍບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນ <a href='{webUrl}'>ລະບົບບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນ</a>. ໂຊກບໍ່ດີ, ຂໍ້ມູນທີ່ທ່ານສະໜອງໃຫ້ບໍ່ກົງກັບຂໍ້ມູນຢູ່ໃນລະບົບຂອງລັດ. </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>ເມື່ອບໍ່ດົນມານີ້ທ່ານໄດ້ຮ້ອງຂໍບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນ <a href='{webUrl}'>ລະບົບບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນ</a>. ໂຊກບໍ່ດີ, ຂໍ້ມູນທີ່ທ່ານສະໜອງໃຫ້ບໍ່ກົງກັບຂໍ້ມູນຢູ່ໃນລະບົບຂອງລັດ. </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>ທ່ານສາມາດສົ່ງຄໍາຮ້ອງຂໍອື່ນໃນລະບົບ <a href='{webUrl}'>ບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນ</a> ດ້ວຍເບີໂທລະສັບ ຫຼື ທີ່ຢູ່ອີເມວອື່ນ, ທ່ານສາມາດ <a href='{contactUsUrl}'>ຕິດຕໍ່ຫາພວກເຮົາ</a> ເພື່ອຂໍຄວາມຊ່ວຍເຫຼືອໃນການເຮັດບັນທຶກຂອງທ່ານ ກັບຂໍ້ມູນການຕິດຕໍ່ຂອງທ່ານກົງກັນ ຫຼື ທ່ານສາມາດຕິດຕໍ່ຫາຜູ້ໃຫ້ບໍລິການ ຂອງທ່ານເພື່ອໃຫ້ແນ່ໃຈວ່າຂໍ້ມູນຂອງທ່ານໄດ້ຖືກສົ່ງໃຫ້ລະບົບຂອງລັດແລ້ວ.</p>" +
                     $"<h2>ມີ​ຄຳ​ຖາມ​ບໍ?</h2>" +
                     $"<p>ເຂົ້າເບິ່ງໜ້າ<a href='{vaccineFAQUrl}'>ຄໍາ​ຖາມ​ທີ່​ຖືກ​ຖາມ​ເລື້ອຍໆ (FAQ)</a> ເພື່ອຮຽນ​ຮູ້​ເພີ່ມເຕີມກ່ຽວກັບບັນທຶກການຢັ້ງຢືນ ພະຍາດ ໂຄວິດ-19 ແບບດີຈີຕອນຂອງທ່ານ.</p>" +
                     $"<h2>ຕິດຕາມຂ່າວສານ.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>ເບິ່ງຂໍ້ມູນຫຼ້າສຸດ</a> ກ່ຽວກັບ ພະຍາດ ໂຄວິດ-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>ເບິ່ງຂໍ້ມູນຫຼ້າສຸດ</a> ກ່ຽວກັບ ພະຍາດ ໂຄວິດ-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ອີເມວທາງການຂອງ Washington State Department of Health (ພະແນກ ສຸຂະພາບ)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "km" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>កំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឹ​ COVID-19 ជាទម្រង់​ឌីជីថល​</h1>" +
-                    $"<p>ថ្មីៗនេះ​ អ្នក​បានស្នើសុំកំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឹ​ COVID-19 ជាទម្រង់​ឌីជីថលពី <a href='{webUrl}'>ប្រព័ន្ធ​កំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឺ​ COVID-19 ជាទម្រង់​ឌីជីថល​។</a> គួរឲ្យសោកស្តាយ ព័ត៌មានដែលអ្នក​បានផ្តល់ជូននោះ​ មិនត្រូវគ្នា​ជាមួយ​​នឹង​ព័ត៌មានក្នុង​ប្រព័ន្ធរបស់រដ្ឋ​​យើង​ទេ​។ </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>ថ្មីៗនេះ​ អ្នក​បានស្នើសុំកំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឹ​ COVID-19 ជាទម្រង់​ឌីជីថលពី <a href='{webUrl}'>ប្រព័ន្ធ​កំណត់ត្រា​ផ្ទៀងផ្ទាត់​ជំងឺ​ COVID-19 ជាទម្រង់​ឌីជីថល​។</a> គួរឲ្យសោកស្តាយ ព័ត៌មានដែលអ្នក​បានផ្តល់ជូននោះ​ មិនត្រូវគ្នា​ជាមួយ​​នឹង​ព័ត៌មានក្នុង​ប្រព័ន្ធរបស់រដ្ឋ​​យើង​ទេ​។ </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>អ្នកអាចប្រគល់សំណើផ្សេងទៀតនៅក្នុងប្រព័ន្ធ​ <a href='{webUrl}'>កំណត់ត្រាផ្ទៀងផ្ទាត់ជំងឺ COVID-19 ជាទម្រង់ឌីជីថល</a> ដែលមានលេខទូរសព្ទចល័ត និងអាសយដ្ឋានអ៊ីម៉ែលខុសគ្នា អ្នកអាច <a href='{contactUsUrl}'>ទាក់ទងមកយើង​</a> សម្រាប់ជំនួយក្នុងការផ្ទៀងផ្ទាត់កំណត់ត្រារបស់អ្នកជាមួយនឹងព័ត៌មានទំនាក់ទំនងរបស់អ្នក ឬអ្នកអាចទាក់ទងទៅកាន់អ្នកផ្តល់សេវារបស់អ្នកដើម្បីធានាថាព័ត៌មានត្រូវបានប្រគល់ទៅកាន់ប្រព័ន្ធរបស់រដ្ឋ។</p>" +
                     $"<h2>មានសំណួរមែនទេ?</h2>" +
                     $"<p>ចូលទៅកាន់ទំព័រ <a href='{vaccineFAQUrl}'>សំណួរចោទសួរជាញឹកញាប់ (FAQ)</a> របស់យើងដើម្បីស្វែងយល់បន្ថែមអំពីកំណត់ត្រាផ្ទៀងផ្ទាត់ជំងឺ COVID-19 ជាទម្រង់ឌីជីថលរបស់អ្នក។</p>" +
                     $"<h2>បន្តទទួលបានដំណឹង​​។</h2>" +
-                    $"<p><a href='{covidWebUrl}'>ពិនិត្យមើលព័ត៌មានថ្មីៗ​បំផុត​</a> ស្តីពីជំងឺ​ COVID-19។</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>ពិនិត្យមើលព័ត៌មានថ្មីៗ​បំផុត​</a> ស្តីពីជំងឺ​ COVID-19។</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>អ៊ីម៉ែលផ្លូវការរបស់​ Washington State Department of Health (ក្រសួងសុខាភិបាល​រដ្ឋ​វ៉ាស៊ីនតោន)។</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "kar" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါ</h1>" +
-                    $"<p>ဖဲတယံာ်ဒံးဘၣ်နဃ့ထီၣ် ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါ လၢ <a href='{webUrl}'>ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါတၢ်မၤအကျဲသနူ</a> လၢတၢ်တဘူၣ်ဂ့ၤတီၢ်ဘၣ်အပူၤ, တၢ်ဂ့ၢ်တၢ်ကျိၤလၢနဟ့ၣ်လီၤအံၤ တဘၣ်လိာ်ဒီးတၢ်ဂ့ၢ် တၢ်ကျိၤလၢကီၢ်စဲၣ်တၢ်မၤအကျဲသနူအပူၤဘၣ်. </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>ဖဲတယံာ်ဒံးဘၣ်နဃ့ထီၣ် ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါ လၢ <a href='{webUrl}'>ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါတၢ်မၤအကျဲသနူ</a> လၢတၢ်တဘူၣ်ဂ့ၤတီၢ်ဘၣ်အပူၤ, တၢ်ဂ့ၢ်တၢ်ကျိၤလၢနဟ့ၣ်လီၤအံၤ တဘၣ်လိာ်ဒီးတၢ်ဂ့ၢ် တၢ်ကျိၤလၢကီၢ်စဲၣ်တၢ်မၤအကျဲသနူအပူၤဘၣ်. </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>နဆှၢထီၣ်တၢ်ဃ့ထီၣ်အဂၤတခါလၢ <a href='{webUrl}'>ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သး တၢ်မၤနီၣ်မၤဃါ</a> တၢ်မၤအကျဲအပူၤဒီး လီတဲစိစိာ်စုနီၣ်ဂံၢ်လီၤဆီတဖျၢၣ် မ့တမ့ၢ် အံမ့(လ) န့ၣ်, န <a href='{contactUsUrl}'>ဆဲးကျၢပှၤလၢ</a> တၢ်မၤစၢၤအဂီၢ် လၢကဘၣ်လိာ်ဒီးနတၢ်မၤ နီၣ်မၤဃါ ဒီးနတၢ်ဆဲးကျၢတၢ်ဂ့ၢ်တၢ်ကျိၤ, မ့တမ့ၢ် နဆဲးကျၢနပှၤဟ့ၣ်တၢ်မၤစၢၤလၢက မၤလီၤတံၢ်နတၢ်ဂ့ၢ်တၢ်ကျိၤ လၢနဆှၢထီၣ်တ့ၢ်အီၤဆူကီၢ်စဲၣ်တၢ်မၤအကျဲသနူသ့န့ၣ်လီၤ.</p>" +
                     $"<h2>တၢ်သံကွၢ်အိၣ်ဧါ.</h2>" +
                     $"<p>လဲၤကွၢ်ဖဲ တၢ်သံကွၢ်လၢတၢ်သံကွၢ်အီၤခဲအံၤခဲအံၤ (<a href='{vaccineFAQUrl}'>တၢ်သံကွၢ်လၢဘၣ်တၢ်သံကွၢ်အီၤခဲအံၤခဲအံၤတဖၣ် (FAQ)</a>) ကဘျံးပၤလၢ ကမၤလိအါထီၣ်ဘၣ်ဃးဒီး န ဒံးကၠံၣ်တၢၣ်(လ) COVID-19 တၢ်အုၣ်သးတၢ်မၤနီၣ်မၤဃါ န့ၣ်တက့ၢ်.</p>" +
                     $"<h2>သ့ၣ်ညါတၢ်ဘိးဘၣ်သ့ၣ်ညါထီဘိ</h2>" +
-                    $"<p><a href='{covidWebUrl}'>ကွၢ်တၢ်ဂ့ၢ်တၢ်ကျိၤလၢခံကတၢၢ်</a> ဘၣ်ဃးဒီး COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>ကွၢ်တၢ်ဂ့ၢ်တၢ်ကျိၤလၢခံကတၢၢ်</a> ဘၣ်ဃးဒီး COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>၀ၣ် Washington State Department of Health (ရှ့ၣ်တၢၣ်ကီၢ်စဲၣ်တၢ်အိၣ်ဆူၣ်အိၣ်ချ့ဝဲၤကျိၤ)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "fj" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19</h1>" +
-                    $"<p>O se qai kerea ga iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19mai na <a href='{webUrl}'>misini ni iVolatukutuku Vakalivaliva ni iVakadinadina ni Veika e Vauca na COVID-19</a>. Na itukutuku oni vakarautaka e sega ni tautauvata kei na kena e maroroi tu ena matanitu.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>O se qai kerea ga iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19mai na <a href='{webUrl}'>misini ni iVolatukutuku Vakalivaliva ni iVakadinadina ni Veika e Vauca na COVID-19</a>. Na itukutuku oni vakarautaka e sega ni tautauvata kei na kena e maroroi tu ena matanitu.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>Oni rawa ni vakauta tale mai e dua kerekere ena <a href='{webUrl}'>iVolatukutuku ni iVakadinadina ni Veika e Vauca na COVID-19</a> ena dua tale na naba ni talevoni se imeli, o rawa ni <a href='{contactUsUrl}'>veitaratara kei keitou</a> me rawa ni keitou veivuke me salavata na itukutuku o vakarautaka kei na itukutuku ni veitaratara me baleti iko e tiko vei keitou, se o rawa ni veitaratara ina vanua o lai laurai kina mo taroga ke sa maroroi ina matanitu na kemu itukutuku.</p>" +
                     $"<h2>Taro?</h2>" +
                     $"<p>Rai ena tabana e tiko kina na <a href='{vaccineFAQUrl}'>Taro e Tarogi Wasoma (FAQ)</a> mo kila e levu tale na tikina e vauca na iVolatukutuku Vakalivaliva ni iVakadinadina ni veika e Vauca na COVID-19.</p>" +
                     $"<h2>Mo Kila na Veika e Yaco Tiko.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Kila na itukutuku vou duadua ena veika e vauca</a>  na COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Kila na itukutuku vou duadua ena veika e vauca</a>  na COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>iMeli ni Washington State Department of Health (Tabana ni Bula ena Vanua o Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "fa" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 dir='rtl' style='color: #C84C0E'>نسخه دیجیتال گواهی واکسیناسیون COVID-19</h1>" +
-                    $"<p dir='rtl'>شما به‌تازگی «نسخه دیجیتال گواهی واکسیناسیون COVID-19» را از <a href='{webUrl}'>سیستم نسخه دیجیتال گواهی واکسیناسیون COVID-19</a>  درخواست کرده‌اید. متأسفانه، اطلاعاتی که ارائه کرده‌اید با اطلاعات موجود در سیستم ایالتی مطابقت ندارد. </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p dir='rtl'>شما به‌تازگی «نسخه دیجیتال گواهی واکسیناسیون COVID-19» را از <a href='{webUrl}'>سیستم نسخه دیجیتال گواهی واکسیناسیون COVID-19</a>  درخواست کرده‌اید. متأسفانه، اطلاعاتی که ارائه کرده‌اید با اطلاعات موجود در سیستم ایالتی مطابقت ندارد. </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p dir='rtl'>می‌توانید با استفاده از یک شماره تلفن همراه یا نشانی ایمیل متفاوت، درخواست دیگری از‌طریق سیستم <a href='{webUrl}'>نسخه دیجیتال گواهی واکسیناسیون COVID-19</a> ارسال کنید، می‌توانید <a href='{contactUsUrl}'>با ما تماس بگیرید</a> تا برای مطابقت گواهی واکسیناسیون با اطلاعات تماستان به شما کمک کنیم، یا می‌توانید با ارائه‌دهنده خود تماس بگیرید تا مطمئن شوید که اطلاعات شما به سیستم ایالتی ارسال شده است.</p>" +
                     $"<h2 dir='rtl'>پرسشی دارید؟</h2>" +
                     $"<p dir='rtl'>برای کسب اطلاعات بیشتر در‌مورد «نسخه دیجیتال گواهی واکسیناسیون COVID-19»، به صفحه <a href='{vaccineFAQUrl}'>سؤالات متداول (FAQ)</a> ما مراجعه کنید.</p>" +
                     $"<h2 dir='rtl'>آگاه و مطلع بمانید.</h2>" +
-                    $"<p dir='rtl'><a href='{covidWebUrl}'>جدیدترین اطلاعات</a>  مربوط به COVID-19 را مشاهده کنید.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p dir='rtl'><a href='{covidWebUrl}'>جدیدترین اطلاعات</a>  مربوط به COVID-19 را مشاهده کنید.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>ایمیل رسمی Washington State Department of Health (اداره سلامت ایالت واشنگتن)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "prs" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 dir='rtl' style='color: #C84C0E'>سابقه دیجیتل تصدیق کووید-19</h1>" +
-                    $"<p dir='rtl'>شما به تازگی فورم سابقه دیجیتل تصدیق کووید-19 را درخواست کردید <a href='{webUrl}'>سیستم سابقه دیجیتل تصدیق کووید-19</a> . متاسفانه، اطلاعاتی که شما ارائه نمودید با اطلاعات سیستم کشور مطابقت ندارد. </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p dir='rtl'>شما به تازگی فورم سابقه دیجیتل تصدیق کووید-19 را درخواست کردید <a href='{webUrl}'>سیستم سابقه دیجیتل تصدیق کووید-19</a> . متاسفانه، اطلاعاتی که شما ارائه نمودید با اطلاعات سیستم کشور مطابقت ندارد. </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p dir='rtl'>شما می توانید درخواست دیگری را در سیستم <a href='{webUrl}'>سابقه دیجیتل تصدیق کووید-19</a>  با یک نمبر تلفون یا ایمیل آدرسی متفاوت تسلیم نمایید، شما می توانید برای کمک به منظور مطابقت دادن سابقه خود با اطلاعات تماس خود <a href='{contactUsUrl}'>با ما تماس بگیرید</a>  ، یا شما می توانید به ارائه دهنده واکسین خود تماس گرفته تا مطمئن شوید اطلاعات شما به سیستم کشور تسلیم گردیده است.</p>" +
                     $"<h2 dir='rtl'>سوالاتی دارید؟</h2>" +
                     $"<p dir='rtl'><a href='{vaccineFAQUrl}'>از صفحه سوالات مکرراً پرسیده شده ما (FAQ)</a>  برای یادگیری بیشتر درباره سابقه دیجیتل واکسین کووید-19 بازدید کنید.</p>" +
                     $"<h2 dir='rtl'>مطلع بمانید.</h2>" +
-                    $"<p dir='rtl'><a href='{covidWebUrl}'>مشاهده آخرین معلومات</a>  درباره کووید-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p dir='rtl'><a href='{covidWebUrl}'>مشاهده آخرین معلومات</a>  درباره کووید-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p dir='rtl' style='text-align:center'>ایمیل رسمی Washington State Department of Health (اداره صحت ایالت واشنگتن)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "chk" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Digital COVID-19 Afatan Record</h1>" +
-                    $"<p>Ke Keran chok tungor ew Digital COVID-19 Afatan Record seni <a href='{webUrl}'>ewe Digital COVID-19 Afatan Record system</a>. Nge, ewe poraus ke awora ese mes ngeni met poraus mi nom non an state ei system ika nenien aisois. </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Ke Keran chok tungor ew Digital COVID-19 Afatan Record seni <a href='{webUrl}'>ewe Digital COVID-19 Afatan Record system</a>. Nge, ewe poraus ke awora ese mes ngeni met poraus mi nom non an state ei system ika nenien aisois. </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>En mi tongeni tinanong pwan ew tungor non ewe <a href='{webUrl}'>Digital COVID-19 Afatan Record</a> system ren om nounou pwan ew nampan fon ika email address, en mi tongeni <a href='{contactUsUrl}'>kokori ika churi kich</a> ren aninis ren ames fengeni met porausom me ifa usun ach sipwe kokoruk, ika en mi tongeni kokori om we selfon kompeni ren om kopwe enukunuku pwe met porausom a katonong non ewe state system.</p>" +
                     $"<h2>Mi wor om kapaseis?</h2>" +
                     $"<p>Feino katon ach kewe Kapas Eis Ekon Nap Ach Eis <a href='{vaccineFAQUrl}'>(Chechemeni kapas ais (FAQ))</a> pon ach we peich ren om kopwe awatenai om sinei usun noum Digital COVID-19 Afatan Record.</p>" +
                     $"<h2>Nonom nge Sisinei.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Katon minefon poraus</a> on COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Katon minefon poraus</a> on COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>An Washington State Department of Health (Washington State Ofesin Pekin Safei) Email</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "my" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>ဒီဂျစ်တယ်လ် ကိုဗစ်-19 အတည်ပြုချက် မှတ်တမ်း</h1>" +
-                    $"<p>မကြာသေးမီက သင်သည် <a href='{webUrl}'>ဒီဂျစ်တယ်လ် ကိုဗစ်-19 အတည်ပြုချက် မှတ်တမ်း စနစ်</a>  ထံမှ ဒီဂျစ်တယ်လ် ကိုဗစ်-19 အတည်ပြုချက် မှတ်တမ်း တစ်ခုကို တောင်းဆိုခဲ့ပါသည်။ ကံမကောင်းစွာဖြင့် သင်ပေးထားသော အချက်အလက်သည် ကျွန်ုပ်တို့ ပြည်နယ်စနစ်အတွင်းရှိ အချက်အလက် နှင့် ကိုက်ညီမှုမရှိပါ။ </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>မကြာသေးမီက သင်သည် <a href='{webUrl}'>ဒီဂျစ်တယ်လ် ကိုဗစ်-19 အတည်ပြုချက် မှတ်တမ်း စနစ်</a>  ထံမှ ဒီဂျစ်တယ်လ် ကိုဗစ်-19 အတည်ပြုချက် မှတ်တမ်း တစ်ခုကို တောင်းဆိုခဲ့ပါသည်။ ကံမကောင်းစွာဖြင့် သင်ပေးထားသော အချက်အလက်သည် ကျွန်ုပ်တို့ ပြည်နယ်စနစ်အတွင်းရှိ အချက်အလက် နှင့် ကိုက်ညီမှုမရှိပါ။ </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>သင်သည် အခြား ဖုန်းနံပါတ် သို့မဟုတ် အီးမေးလ်လိပ်စာ တစ်ခုဖြင့် <a href='{webUrl}'>ဒီဂျစ်တယ်လ် ကိုဗစ်-19 အတည်ပြုချက် မှတ်တမ်း</a> စနစ်ထဲတွင် တောင်းဆိုမှု နောက်တစ်ခုကို တင်ပြနိုင်သည်၊ သင့် ဆက်သွယ်ရန် အချက်အလက်အား သင့်မှတ်တမ်းနှင့်ကိုက်ညီစေရန် အကူအညီလိုလျှင် <a href='{contactUsUrl}'>ကျွန်ုပ်တို့ကို ဆက်သွယ်</a> နိုင်သည် သို့မဟုတ် သင့်အချက်အလက်အား ပြည်နယ်စနစ်ထဲသို့ တင်ပြထားခြင်းရှိမရှိကို သင့်စောင့်ရှောက်သူအား မေးမြန်းနိုင်ပါသည်။</p>" +
                     $"<h2>မေးခွန်းများရှိပါသလား။</h2>" +
                     $"<p>သင့် ဒီဂျစ်တယ်လ် ကိုဗစ်-19 အတည်ပြုချက် မှတ်တမ်းအကြောင်း ပိုမိုသိရှိလိုလျှင် ကျွန်ုပ်တို့၏ မေးလေ့မေးထရှိသောမေးခွန်းများ (<a href='{vaccineFAQUrl}'>မေးလေ့မေးထရှိသောမေးခွန်းများ</a>)ကို ဝင်ကြည့်ပါ။</p>" +
                     $"<h2>အချက်အလက်သိအောင်လုပ်ထားပါ</h2>" +
-                    $"<p><a href='{covidWebUrl}'>နောက်ဆုံးအချက်အလက်များကို ကြည့်မည်</a> ကိုဗစ်-19 အကြောင်း</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>နောက်ဆုံးအချက်အလက်များကို ကြည့်မည်</a> ကိုဗစ်-19 အကြောင်း</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Washington State Department of Health (တရားဝင် ဝါရှင်တန် ပြည်နယ် ကျန်းမာရေး ဌာန အီးမေးလ်)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "am" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>ዲጂታል የ COVID-19 ማረጋገጫ መዝገብ</h1>" +
-                    $"<p>በቅርቡ ከ<a href='{webUrl}'>ዲጂታል የ COVID-19 ማረጋገጫ መዝገብ ስርዓት</a>  ዲጂታል የ COVID-19 ማረጋገጫ መዝገብ ጠይቀዋል። እንደ አለመታደል ሆኖ ያቀረቡት መረጃ በግዛቱ ሲስተም ውስጥ ካለው መረጃ ጋር አይዛመድም። </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>በቅርቡ ከ<a href='{webUrl}'>ዲጂታል የ COVID-19 ማረጋገጫ መዝገብ ስርዓት</a>  ዲጂታል የ COVID-19 ማረጋገጫ መዝገብ ጠይቀዋል። እንደ አለመታደል ሆኖ ያቀረቡት መረጃ በግዛቱ ሲስተም ውስጥ ካለው መረጃ ጋር አይዛመድም። </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>ሌላ ጥያቄ በ<a href='{webUrl}'>ዲጂታል COVID-19 ማረጋገጫ መዝገብ</a> በተለየ የሞባይል ስልክ ቁጥር ወይም ኢሜይል አድራሻ ማስገባት ይችላሉ፣ መዝገብዎን ከመገኛ መረጃዎ ጋር በማዛመድ የእኛን እርዳታ ያግኙ <a href='{contactUsUrl}'>ያግኙን</a> ፣ ወይም መረጃዎ ለግዛት ስርዓት መመዝገቡን ለማረጋገጥ አቅራቢዎን ማነጋገር ይችላሉ።</p>" +
                     $"<h2>ጥያቄዎች አሉዎት?</h2>" +
                     $"<p>ስለ ዲጂታል የ COVID-19 ክትባት መዝገብ የበለጠ ለማወቅ የእኛን <a href='{vaccineFAQUrl}'>ተዘውትረው የሚጠየቁ ጥያቄዎች</a> ገጽ ይጎብኙ።</p>" +
                     $"<h2>መረጃ ይኑርዎት።</h2>" +
-                    $"<p>በ COVID-19 ላይ <a href='{covidWebUrl}'>የቅርብ ጊዜውን መረጃ ይመልከቱ</a> ።</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>በ COVID-19 ላይ <a href='{covidWebUrl}'>የቅርብ ጊዜውን መረጃ ይመልከቱ</a> ።</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ይፋዊ የ Washington State Department of Health (የዋሺንግተን ግዛት የጤና መምሪያ) ኢሜይል</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "om" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Mirkaneessa Ragaa Dijitaalaa COVID-19</h1>" +
-                    $"<p>Dhiyeenyatti <a href='{webUrl}'>Mala Mirkaneessa Ragaa Dijitaalaa COVID-19</a> irraa Ragaa Mirkaneessa Dijitaalaa COVID-19 gaafattaniirtu. Akka carraa ta’ee, odeeffannoon isin laattan kan siistama keenya keessa jiruun wal hin simu. </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Dhiyeenyatti <a href='{webUrl}'>Mala Mirkaneessa Ragaa Dijitaalaa COVID-19</a> irraa Ragaa Mirkaneessa Dijitaalaa COVID-19 gaafattaniirtu. Akka carraa ta’ee, odeeffannoon isin laattan kan siistama keenya keessa jiruun wal hin simu. </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>Lakkoofsa bilbilaa yookin imeelii biraatin gaaffii biraa mala  <a href='{webUrl}'>Mirkaneessa Ragaa Dijitaalaa COVID-19</a> irratti galchuu dandeessu, ragaan keessan qunnamtii odeeffannoo keessan wajjin akka wal simuuf deeggarsa yoo feetan  <a href='{contactUsUrl}'>nu qunnamuu</a> dandeessu yookin odeeffannoon keessan siistama naannoo keessa galuu mirkaneeffachuuf dhiyeessaa keessan qunnamuu dandeessu.</p>" +
                     $"<h2>Gaaffii qabduu?</h2>" +
                     $"<p>Waa’ee Mirkaneessa Ragaa Dijitaalaa COVID-19 keessanii caalmatti baruuf, fuula <a href='{vaccineFAQUrl}'>Gaaffilee Yeroo Heddu Gaafataman (FAQ)</a> ilaalaa.</p>" +
                     $"<h2>Odeeffannoo Argadhaa.</h2>" +
-                    $"<p>COVID-19 ilaalchisee  <a href='{covidWebUrl}'>odeeffannoo haaraa ilaalaa</a>.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>COVID-19 ilaalchisee  <a href='{covidWebUrl}'>odeeffannoo haaraa ilaalaa</a>.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Imeelii seera qabeessa kan Muummee Fayyaa Isteeta Washingtan (Washington State Department of Health)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "to" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Digital COVID-19 Verification Record (Lēkooti Fakamo’oni Huhu Malu'i COVID-19)</h1>" +
-                    $"<p>Na’a ke toki kolé ni mai ‘a e foomu Lēkooti Fakamo’oni Huhu Malu’i COVID-19 meí he <a href='{webUrl}'>fa’unga tauhi Lēkooti Fakamo’oni Huhu Malu’i COVID-19</a>. Me’apango, ko e fakamatala ‘oku ke ‘omí ‘oku ‘ikai tatau ia mo e fakamatala ‘oku mau tauhí.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Na’a ke toki kolé ni mai ‘a e foomu Lēkooti Fakamo’oni Huhu Malu’i COVID-19 meí he <a href='{webUrl}'>fa’unga tauhi Lēkooti Fakamo’oni Huhu Malu’i COVID-19</a>. Me’apango, ko e fakamatala ‘oku ke ‘omí ‘oku ‘ikai tatau ia mo e fakamatala ‘oku mau tauhí.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>Te ke lava ‘o fakahū ha’o toe kole ‘I he fa’unga <a href='{webUrl}'>Lēkooti Fakamo’oni Huhu Malu’i COVID-19</a> ’aki ha fika telefoni kehe pe tu’asila ‘imeili, te ke lava ‘o fetu’utaki mai  ki ha tokoni ki hono fakahoa ho’o lēkooti ki ho’o fakamatalá, pe ko ho’o fetu’utaki ho’o toketā ke fakapapau’i ‘oku fakahū atu ho’o fakamatalá.</p>" +
                     $"<h2>‘I ai ha ngaahi fehu’i?</h2>" +
                     $"<p>Vakai ki he’emau peesi Ngaahi Fehu’i ‘oku Fa’a ‘Eke Mai (<a href='{vaccineFAQUrl}'>Ngaahi Fehu’i ‘oku fa’a ‘Eke Mai</a>) ke toe ‘ilo lahiange fekau’aki mo ho’o Lēkooti Fakamo’oni Huhu Malu’i COVID-19.</p>" +
                     $"<h2>‘Ilo’i Maʻu Pē.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Vakai ki he fakamatala fakamuimui tahá</a> ’i he COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Vakai ki he fakamatala fakamuimui tahá</a> ’i he COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>'Imeili Faka'ofisiale Washington State Department Of Health (Potungāue Mo’ui ‘a e Siteiti ‘o Uasingatoní)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ta" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>மின்னணு Covid-19 சரிபார்ப்புப் பதிவு</h1>" +
-                    $"<p>சமீபத்தில் <a href='{webUrl}'>மின்னணு Covid-19 சரிபார்ப்புப் பதிவு அமைப்பிலிருந்த</a> மின்னணு Covid-19 சரிபார்ப்புப் பதிவைக் கோரியுள்ளீர்கள். துரதிர்ஷ்டவசமாக, நீங்கள் வழங்கிய தகவல் மாநில அமைப்பில் உள்ள தகவலுடன் பொருந்தவில்லை. </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>சமீபத்தில் <a href='{webUrl}'>மின்னணு Covid-19 சரிபார்ப்புப் பதிவு அமைப்பிலிருந்த</a> மின்னணு Covid-19 சரிபார்ப்புப் பதிவைக் கோரியுள்ளீர்கள். துரதிர்ஷ்டவசமாக, நீங்கள் வழங்கிய தகவல் மாநில அமைப்பில் உள்ள தகவலுடன் பொருந்தவில்லை. </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>வேறு மொபைல் எண் அல்லது மின்னஞ்சல் முகவரியுடன் <a href='{webUrl}'>மின்னணு Covid-19 சரிபார்ப்புப் பதிவு</a>  அமைப்பில் மற்றொரு கோரிக்கையைச் சமர்ப்பிக்கலாம், உங்கள் தொடர்புத் தகவலுடன் உங்கள் பதிவைப் பொருத்துவதற்கான உதவிக்கு, நீங்கள் <a href='{contactUsUrl}'>எங்களைத் தொடர்புகொள்ளலாம்</a>  , அல்லது உங்கள் தகவல் மாநில அமைப்பில் சமர்ப்பிக்கப்பட்டுள்ளதா என்பதை உறுதிப்படுத்த உங்கள் வழங்குநரைத் தொடர்பு கொள்ளலாம்.</p>" +
                     $"<h2>கேள்விகள் உள்ளதா?</h2>" +
                     $"<p>உங்கள் மின்னணு கொவிட்-19 சரிபார்ப்புப் பதிவு பற்றி மேலும் அறிய, எங்களின் <a href='{vaccineFAQUrl}'>அடிக்கடி கேட்கப்படும் கேள்விகள் (FAQ)</a>  பக்கத்தைப் பார்வையிடவும்.</p>" +
                     $"<h2>தகவலை அறிந்து இருங்கள்.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>சமீபத்திய தகவலைப் பார்க்கவும்</a> கொவிட்-19 இல்.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>சமீபத்திய தகவலைப் பார்க்கவும்</a> கொவிட்-19 இல்.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>அதிகாரப்பூர்வ Washington State Department of Health (வாஷிங்டன் மாநில சுகாதாரத் துறை) மின்னஞ்சல்</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "hmn" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj</h1>" +
-                    $"<p>Tsis ntev los no koj tau thov Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj los ntawm <a href='{webUrl}'>kev ua hauj lwm rau Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj</a>. Hmoov tsis zoo, cov ntaub ntawv uas koj tau muab tsis raug raws li cov ntaub ntawv uas nyob rau hauv xeev txheej teg kev ua hauj lwm. </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>Tsis ntev los no koj tau thov Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj los ntawm <a href='{webUrl}'>kev ua hauj lwm rau Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj</a>. Hmoov tsis zoo, cov ntaub ntawv uas koj tau muab tsis raug raws li cov ntaub ntawv uas nyob rau hauv xeev txheej teg kev ua hauj lwm. </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>Koj tuaj yeem xa tau lwm qhov kev thov nyob rau hauv kev ua hauj lwm rau <a href='{webUrl}'>Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj</a> nrog rau lwm tus nab npawb xov tooj ntawm tes los sis tus email, koj tuaj yeem <a href='{contactUsUrl}'>txuas lus tau rau peb</a> txhawm rau thov kev pab ua kom koj cov ntaub ntawv sau tseg raug raws li koj cov ntaub ntawv sib txuas lus, los sis koj tuaj yeem txuas lus tau rau koj tus kws pab kho mob txhawm rau ua kom ntseeg siab tias koj cov ntaub ntawv tau xa rau xeev txheej teg kev ua hauj lwm lawm.</p>" +
                     $"<h2>Puas muaj cov lus nug?</h2>" +
                     $"<p>Saib peb nplooj vev xaib muaj <a href='{vaccineFAQUrl}'>Cov Lus Nug Uas Nquag Nug (FAQ)</a> (Lus Askiv nkaus xwb) txhawm rau kawm paub ntxiv txog koj li Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj.</p>" +
                     $"<h2>Soj Qab Saib Kev Paub.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Saib cov ntaub ntawv tawm tshiab tshaj plaws</a> txog kab mob COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>Saib cov ntaub ntawv tawm tshiab tshaj plaws</a> txog kab mob COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Tus Email Siv Raws Cai Ntawm Xeev Washington State Department of Health (Chav Hauj Lwm ntsig txog Kev Noj Qab Haus Huv)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "th" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>บันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัล </h1>" +
-                    $"<p>คุณเพิ่งขอบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัลจาก<a href='{webUrl}'>ระบบบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัล</a> ขออภัย ข้อมูลที่คุณให้ไม่ตรงกับข้อมูลในระบบของรัฐ </p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p>คุณเพิ่งขอบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัลจาก<a href='{webUrl}'>ระบบบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัล</a> ขออภัย ข้อมูลที่คุณให้ไม่ตรงกับข้อมูลในระบบของรัฐ </p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<p>คุณสามารถส่งคำขออื่นได้ในระบบ<a href='{webUrl}'>บันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัล</a> โดยใช้หมายเลขโทรศัพท์มือถือหรือที่อยู่อีเมลอื่น คุณสามารถ<a href='{contactUsUrl}'>ติดต่อเรา</a> เพื่อขอความช่วยเหลือในการจับคู่บันทึกของคุณกับข้อมูลติดต่อของคุณ หรือคุณสามารถติดต่อผู้ให้บริการของคุณเพื่อให้แน่ใจว่ามีการส่งข้อมูลของคุณไปยังระบบของรัฐแล้ว</p>" +
                     $"<h2>มีคำถามหรือไม่</h2>" +
                     $"<p>โปรดไปยังส่วน<a href='{vaccineFAQUrl}'>คำถามที่พบบ่อย (FAQ)</a> เพื่อเรียนรู้เพิ่มเติมเกี่ยวกับบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัลของคุณ</p>" +
                     $"<h2>คอยติดตามข่าวสาร</h2>" +
-                    $"<p><a href='{covidWebUrl}'>ดูข้อมูลล่าสุด</a> เกี่ยวกับโควิด-19</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>ดูข้อมูลล่าสุด</a> เกี่ยวกับโควิด-19</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>อีเมลอย่างเป็นทางการของ Washington State Department of Health (กรมอนามัยของรัฐวอชิงตัน)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
@@ -1515,7 +1515,7 @@ namespace Application.Common
                     $"<h2>Have questions?</h2>" +
                     $"<p>Visit our <a href='{vaccineFAQUrl}'>Frequently Asked Questions (FAQ)</a> page to learn more about your Digital COVID-19 Verification Record.</p>" +
                     $"<h2>Stay Informed.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>View the latest information</a> on COVID-19.</p><p style='margin: 0; padding: 0; line-height: 1.2;' />" +
+                    $"<p><a href='{covidWebUrl}'>View the latest information</a> on COVID-19.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Official Washington State Department of Health e-mail</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>"
