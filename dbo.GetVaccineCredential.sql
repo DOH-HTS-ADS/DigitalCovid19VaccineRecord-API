@@ -108,7 +108,7 @@ BEGIN
 			 , vm.[ASIIS_FAC_ID]
              , [LotNum] = ISNULL(vm.[LOT_NUM],N'N/A')
 			 , [VaxCode] = vt.[CDC_VACC_CODE]
-			 , [ord] = ROW_NUMBER() OVER (ORDER BY vm.[VACC_DATE] DESC)
+			 , [ord] = ROW_NUMBER() OVER (ORDER BY vm.[VACC_DATE])
           FROM [dbo].[H33_VACCINATION_MASTER] vm
 		  JOIN vt
 		    ON vm.[ASIIS_VACC_CODE] = vt.[ASIIS_VACC_CODE]

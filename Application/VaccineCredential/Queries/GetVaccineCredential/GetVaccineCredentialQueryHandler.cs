@@ -107,17 +107,11 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                     // 1.  Get the json credential in clean ( no spacing ) format.
                     Vci cred = _credCreator.GetCredential(responseVc);
 
-                    // make sure cred only has max doses. (fhirBundle index starts at 0, dose entries starts at 1)
-                    // US 5675: doses in order from newest to oldest with original two doses
-                    // If entryCount exceeds max doses plus one then doses need to be removed while still keeping
-                    // the first two oldest doses.
-                    var MAX_DOSES = Convert.ToInt32(_appSettings.NumberOfDoses);
-                    var entryCount = cred.vc.credentialSubject.fhirBundle.entry.Count;
-                    if (entryCount > MAX_DOSES + 1)
+                    //make sure cred only has at most 5 doses. (fhirBundle index starts at 0)
+                    if (cred.vc.credentialSubject.fhirBundle.entry.Count > Convert.ToInt32(_appSettings.NumberOfDoses) + 1)
                     {
-                        var cntRemove = entryCount - (MAX_DOSES + 1);
-                        var firstElementToRemove = (MAX_DOSES - 1);
-                        cred.vc.credentialSubject.fhirBundle.entry.RemoveRange(firstElementToRemove, cntRemove);
+                        var cntRemove = cred.vc.credentialSubject.fhirBundle.entry.Count - (Convert.ToInt32(_appSettings.NumberOfDoses) + 1);
+                        cred.vc.credentialSubject.fhirBundle.entry.RemoveRange(1, cntRemove);
                     }
 
                     var dob = "";
@@ -127,7 +121,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                     }
 
                     var doses = new List<Dose>();
-                    for (int ix = 1; ix < entryCount; ix++)
+                    for (int ix = 1; ix < cred.vc.credentialSubject.fhirBundle.entry.Count; ix++)
                     {
                         var d = cred.vc.credentialSubject.fhirBundle.entry[ix];
                         var doa = "";
