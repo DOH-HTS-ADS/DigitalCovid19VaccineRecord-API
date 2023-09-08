@@ -107,11 +107,12 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                     // 1.  Get the json credential in clean ( no spacing ) format.
                     Vci cred = _credCreator.GetCredential(responseVc);
 
-                    //make sure cred only has at most 5 doses. (fhirBundle index starts at 0)
+                    // make sure cred only has max doses. (fhirBundle index starts at 0, dose entries starts at 1)
+                    // US 5675: doses in order from newest to oldest with original two doses
                     if (cred.vc.credentialSubject.fhirBundle.entry.Count > Convert.ToInt32(_appSettings.NumberOfDoses) + 1)
                     {
                         var cntRemove = cred.vc.credentialSubject.fhirBundle.entry.Count - (Convert.ToInt32(_appSettings.NumberOfDoses) + 1);
-                        cred.vc.credentialSubject.fhirBundle.entry.RemoveRange(1, cntRemove);
+                        cred.vc.credentialSubject.fhirBundle.entry.RemoveRange((Convert.ToInt32(_appSettings.NumberOfDoses) - 1), cntRemove);
                     }
 
                     var dob = "";
