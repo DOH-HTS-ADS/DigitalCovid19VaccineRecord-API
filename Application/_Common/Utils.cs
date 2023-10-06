@@ -378,8 +378,8 @@ namespace Application.Common
                 "ta" => $"மின்னணு கொவிட்-19 சரிபார்ப்புப் பதிவு முறையைப் பார்வையிட்டதற்கு நன்றி. உங்கள் கொவிட்-19 சரிபார்ப்பைப் பெறுவதற்கான இணைப்பு {linkExpireHours} மணிநேரத்திற்கு செல்லுபடியாகும். இணைப்பை அணுகி உங்கள் சாதனத்தில் சேமித்துவிட்டால், QR குறியீடு காலாவதியாகாது.",
                 "hmn" => $"Ua tsaug rau kev mus saib kev ua hauj lwm rau Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj. Txoj kab txuas nkag mus txhawm rau rub koj li kev txheeb xyuas kab mob COVID-19 yog siv tau li {linkExpireHours} xuab moos. Thaum tau nkag mus thiab tau muab kaw cia rau koj lub xov tooj lawm, tus khauj QR yuav tsis paub tag sij hawm lawm.",
                 "th" => $"ขอขอบคุณที่เยี่ยมชมระบบบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัล ลิงก์การเรียกดูข้อมูลการยืนยันเกี่ยวกับโควิด-19 ของคุณมีอายุ {linkExpireHours} ชั่วโมง เมื่อคุณได้เข้าถึงและบันทึกลงในอุปกรณ์ของคุณแล้ว คิวอาร์โค้ดจะไม่หมดอายุ ",
-                "mr" => $"डिजिटल कोविड-19 पडताळणी नोंदीच्या यंत्रणेला भेट देण्यासाठी आपले आभारी आहोत. तुमची कोविड-19 पडताळणी शोधून काढणारी ही लिंक {linkExpireHours} ชั่วโมง เมื่อคุณได้เข้าถึงและบันทึกลงในอุปกรณ์ของคุณแล้ว คิวอาร์โค้ดจะไม่หมดอายุ ",
-                _ => $"Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 verification is valid for {linkExpireHours} तासांसाठी वैध राहील. एकदा पाहून तुमच्या उपकरणावर जतन केले की या क्यूआर कोडची मुदत संपणार नाही.",
+                "mr" => $"डिजिटल कोविड-19 पडताळणी नोंदीच्या यंत्रणेला भेट देण्यासाठी आपले आभारी आहोत. तुमची कोविड-19 पडताळणी शोधून काढणारी ही लिंक {linkExpireHours} तासांसाठी वैध राहील. एकदा पाहून तुमच्या उपकरणावर जतन केले की या क्यूआर कोडची मुदत संपणार नाही. ",
+                _ => $"Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 verification is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.",
             };
         }
 
