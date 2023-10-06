@@ -378,6 +378,7 @@ namespace Application.Common
                 "ta" => $"மின்னணு கொவிட்-19 சரிபார்ப்புப் பதிவு முறையைப் பார்வையிட்டதற்கு நன்றி. உங்கள் கொவிட்-19 சரிபார்ப்பைப் பெறுவதற்கான இணைப்பு {linkExpireHours} மணிநேரத்திற்கு செல்லுபடியாகும். இணைப்பை அணுகி உங்கள் சாதனத்தில் சேமித்துவிட்டால், QR குறியீடு காலாவதியாகாது.",
                 "hmn" => $"Ua tsaug rau kev mus saib kev ua hauj lwm rau Kev Txheeb Xyuas Ntaub Ntawv Sau Tseg Txog Kab Mob COVID-19 Ua Dis Cis Tauj. Txoj kab txuas nkag mus txhawm rau rub koj li kev txheeb xyuas kab mob COVID-19 yog siv tau li {linkExpireHours} xuab moos. Thaum tau nkag mus thiab tau muab kaw cia rau koj lub xov tooj lawm, tus khauj QR yuav tsis paub tag sij hawm lawm.",
                 "th" => $"ขอขอบคุณที่เยี่ยมชมระบบบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัล ลิงก์การเรียกดูข้อมูลการยืนยันเกี่ยวกับโควิด-19 ของคุณมีอายุ {linkExpireHours} ชั่วโมง เมื่อคุณได้เข้าถึงและบันทึกลงในอุปกรณ์ของคุณแล้ว คิวอาร์โค้ดจะไม่หมดอายุ ",
+                "mr" => $"डिजिटल कोविड-19 पडताळणी नोंदीच्या यंत्रणेला भेट देण्यासाठी आपले आभारी आहोत. तुमची कोविड-19 पडताळणी शोधून काढणारी ही लिंक {linkExpireHours} तासांसाठी वैध राहील. एकदा पाहून तुमच्या उपकरणावर जतन केले की या क्यूआर कोडची मुदत संपणार नाही. ",
                 _ => $"Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 verification is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.",
             };
         }
@@ -428,6 +429,7 @@ namespace Application.Common
                 "ta" => $"{url}",
                 "hmn" => $"{url}",
                 "th" => $"{url}",
+                "mr" => $"{url}",
                 _ => $"{url}",
             };
         }
@@ -960,6 +962,18 @@ namespace Application.Common
                      $"<hr>" +
                      $"<footer><p style='text-align:center'>อีเมลอย่างเป็นทางการของ Washington State Department of Health (กรมอนามัยของรัฐวอชิงตัน)</p>" +
                      $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
+                "mr" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
+                     $"<h1 style='color: #C84C0E'>डिजिटल कोविड-19 पडताळणी नोंद</h1>" +
+                     $"<p>डिजिटल कोविड-19 पडताळणी नोंदीच्या यंत्रणेला भेट देण्यासाठी आपले आभारी आहोत. तुमची कोविड-19 पडताळणी शोधून काढणारी ही लिंक {linkExpireHours} तासांसाठी वैध राहील. एकदा पाहून तुमच्या उपकरणावर जतन केले की या क्यूआर कोडची मुदत संपणार नाही.</p>" +
+                     $"<p><a href='{url}'>लसीकरणाची नोंद पहा</a></p>" +
+                     $"<p>Centers for Disease Control and Prevention (रोग नियंत्रण आणि प्रतिबंध केंद्र) कडून <a href='{cdcUrl}'>स्वतःचे आणि इतरांचे संरक्षण करा</a> विषयी आणखी जाणून घ्या.</p>" +
+                     $"<h2>काही प्रश्न आहेत का?</h2>" +
+                     $"<p>तुमच्या डिजिटल कोविड-19 पडताळणी नोंदीविषयी अधिक जाणून घेण्यासाठी आमच्या वारंवार विचारले जाणारे प्रश्न<a href='{vaccineFAQUrl}'>FAQ</a> पेजला भेट द्या.</p>" +
+                     $"<h2>अद्ययावत माहिती राखा.</h2>" +
+                     $"<p><a href='{covidWebUrl}'>कोविड-19 वरील </a>अद्ययावत माहिती पहा</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
+                     $"<hr>" +
+                     $"<footer><p style='text-align:center'>औपचारिक Washington State Department of Health (वॉशिंग्टन स्टेट डिपार्टमेंट ऑफ हेल्थ) ई-मेल</p>" +
+                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 _ => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                   $"<h1 style='color: #C84C0E'>Digital COVID-19 Verification Record</h1>" +
                   $"<p>Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 verification record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.</p>" +
@@ -1022,6 +1036,7 @@ namespace Application.Common
                 "ta" => $"நீங்கள் சமீபத்தில் மாநிலத்திடம் மின்னணு கொவிட்-19 சரிபார்ப்புப் பதிவு ஐக் கோரியுள்ளீர்கள். துரதிர்ஷ்டவசமாக, நீங்கள் வழங்கிய தகவல் எங்கள் அமைப்பில் உள்ள தகவலுடன் பொருந்தவில்லை. {phoneNumber} என்ற எண்ணில் எங்களைத் தொடர்பு கொள்ளவும், உங்கள் பதிவை உங்கள் தொடர்புத் தகவலுடன் பொருத்துவதற்கான உதவிக்கு # ஐ அழுத்தவும்.",
                 "hmn" => $"Tsis ntev los no koj tau thov cov ntaub ntawv sau tseg txog kev txheeb xyuas kab mob COVID-19 dis cis tauj los ntawm lub xeev. Hmoov tsis zoo, cov ntaub ntawv uas koj tau muab tsis raug raws li cov ntaub ntawv uas nyob rau hauv peb txheej teg kev ua hauj lwm. Txuas lus rau peb ntawm tus xov tooj {phoneNumber}, nias # rau kev pab ua kom koj cov ntaub ntawv sau tseg raug raws li koj cov ntaub ntawv sib txuas lus.",
                 "th" => $"คุณเพิ่งขอบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัลจากรัฐ ขออภัย ข้อมูลที่คุณให้ไม่ตรงกับข้อมูลในระบบของเรา โปรดติดต่อเราที่ {phoneNumber} แล้วกด # เพื่อขอความช่วยเหลือในการจับคู่บันทึกของคุณกับข้อมูลการติดต่อของคุณ",
+                "mr" => $"तुम्ही अलीकडेच राज्याकडून डिजिटल कोविड-19 पडताळणी नोंदीसाठी विनंती केली होती. दुर्दैवाने, तुम्ही पुरविलेली माहिती आमच्या यंत्रणेतील माहितीशी जुळत नाही. तुमची नोंद तुमच्या संपर्क माहितीशी जुळण्यासाठी मदतीसाठी आमच्याशी {phoneNumber} येथे संपर्क करा, # दाबा.",
                 _ => $"You recently requested a digital COVID-19 verification record from the state. Unfortunately, the information you provided does not match information in our system. Contact us at {phoneNumber}, press # for help in matching your record to your contact information."
             };
         }
@@ -1513,6 +1528,17 @@ namespace Application.Common
                     $"<p><a href='{covidWebUrl}'>ดูข้อมูลล่าสุด</a> เกี่ยวกับโควิด-19</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>อีเมลอย่างเป็นทางการของ Washington State Department of Health (กรมอนามัยของรัฐวอชิงตัน)</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
+                "mr" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
+                    $"<h1 style='color: #C84C0E'>डिजिटल कोविड-19 पडताळणी नोंद</h1>" +
+                    $"<p>तुम्ही अलीकडेच <a href='{webUrl}'>डिजिटल कोविड-19 पडताळणी नोंदीची यंत्रणा</a> कडून डिजिटल कोविड-19 पडताळणीच्या नोंदीची विनंती केली. दुर्दैवाने, तुम्ही पुरविलेली माहिती राज्य यंत्रणेतील माहितीशी जुळत नाही.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
+                    $"<p>तुम्ही एका वेगळ्या मोबाईल फोन क्रमांक किंवा इमेल अॅड्रेससह <a href='{webUrl}'>डिजिटल कोविड-19 पडताळणी नोंद</a> यंत्रणेत दुसरी विनंती सदर करू शकता, तुम्ही तुमची संपर्क माहिती तुमच्या नोंदीशी जुळण्यात मदत करण्यासाठी <a href='{contactUsUrl}'>आमच्याशी संपर्क करू</a> शकता, किंवा तुमची माहिती राज्य यंत्रणेत सदर केल्याची खात्री करण्यासाठी तुमच्या पुरवठादाराशी संपर्क करू शकता.</p>" +
+                    $"<h2>काही प्रश्न आहेत का?</h2>" +
+                    $"<p>तुमच्या डिजिटल कोविड-19 पडताळणी नोंदीविषयी अधिक जाणून घेण्यासाठी आमच्या वारंवार विचारले जाणारे प्रश्न <a href='{vaccineFAQUrl}'>FAQ</a> पेजला भेट द्या.</p>" +
+                    $"<h2>अद्ययावत माहिती राखा.</h2>" +
+                    $"<p>कोविड-19 वरील <a href='{covidWebUrl}'>अद्ययावत माहिती पहा</a></p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>औपचारिक Washington State Department of Health (वॉशिंग्टन स्टेट डिपार्टमेंट ऑफ हेल्थ) ई-मेल</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 _ => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Digital COVID-19 Verification Record</h1>" +
