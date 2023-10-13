@@ -970,9 +970,9 @@ namespace Application.Common
                      $"<p><a href='{url}'>लसीकरणाची नोंद पहा</a></p>" +
                      $"<p>Centers for Disease Control and Prevention (रोग नियंत्रण आणि प्रतिबंध केंद्र) कडून <a href='{cdcUrl}'>स्वतःचे आणि इतरांचे संरक्षण करा</a> विषयी आणखी जाणून घ्या.</p>" +
                      $"<h2>काही प्रश्न आहेत का?</h2>" +
-                     $"<p>तुमच्या डिजिटल कोविड-19 पडताळणी नोंदीविषयी अधिक जाणून घेण्यासाठी आमच्या वारंवार विचारले जाणारे प्रश्न<a href='{vaccineFAQUrl}'>FAQ</a> पेजला भेट द्या.</p>" +
+                     $"<p>तुमच्या डिजिटल कोविड-19 पडताळणी नोंदीविषयी अधिक जाणून घेण्यासाठी आमच्या वारंवार विचारले जाणारे प्रश्न <a href='{vaccineFAQUrl}'>FAQ</a> पेजला भेट द्या.</p>" +
                      $"<h2>अद्ययावत माहिती राखा.</h2>" +
-                     $"<p><a href='{covidWebUrl}'>कोविड-19 वरील </a>अद्ययावत माहिती पहा</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
+                     $"<p>कोविड-19 वरील <a href='{covidWebUrl}'>अद्ययावत माहिती पहा</a></p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                      $"<hr>" +
                      $"<footer><p style='text-align:center'>औपचारिक Washington State Department of Health (वॉशिंग्टन स्टेट डिपार्टमेंट ऑफ हेल्थ) ई-मेल</p>" +
                      $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
