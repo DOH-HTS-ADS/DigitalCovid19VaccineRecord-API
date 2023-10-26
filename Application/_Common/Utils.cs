@@ -380,6 +380,7 @@ namespace Application.Common
                 "th" => $"ขอขอบคุณที่เยี่ยมชมระบบบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัล ลิงก์การเรียกดูข้อมูลการยืนยันเกี่ยวกับโควิด-19 ของคุณมีอายุ {linkExpireHours} ชั่วโมง เมื่อคุณได้เข้าถึงและบันทึกลงในอุปกรณ์ของคุณแล้ว คิวอาร์โค้ดจะไม่หมดอายุ ",
                 "mr" => $"डिजिटल कोविड-19 पडताळणी नोंदीच्या यंत्रणेला भेट देण्यासाठी आपले आभारी आहोत. तुमची कोविड-19 पडताळणी शोधून काढणारी ही लिंक {linkExpireHours} तासांसाठी वैध राहील. एकदा पाहून तुमच्या उपकरणावर जतन केले की या क्यूआर कोडची मुदत संपणार नाही. ",
                 "gu" => $"ડિજિટલ COVID-19 વેરિફિકેશન રેકોર્ડ સિસ્ટમની મુલાકાત લેવા બદલ તમારો આભાર. તમારા COVID -19 વેરિફિકેશનને પુનઃપ્રાપ્ત કરવાની લિંક {linkExpireHours} કલાક માટે માન્ય છે. એકવાર તમારા ડિવાઇસમાં ઍક્સેસ અને સેવ થયા પછી, QR કોડની મુદત પૂરી થશે નહીં.",
+                "ml" => $"ഡിജിറ്റൽ കോവിഡ്-19 വെരിഫിക്കേഷൻ റെക്കോർഡ് സിസ്റ്റം സന്ദർശിച്ചതിന് നന്ദി. നിങ്ങളുടെ കോവിഡ്-19 വെരിഫിക്കേഷൻ വീണ്ടെടുക്കാനുള്ള ലിങ്ക് 24 മണിക്കൂർ സാധുതയുള്ളതാണ്. ഒരിക്കൽ ആക്സസ് ചെയ്ത് നിങ്ങളുടെ ഉപകരണത്തിലേക്ക് സേവ് ചെയ്യുന്നതോടെ QR കോഡ് കാലഹരണപ്പെടില്ല.",
                 _ => $"Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 verification is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.",
             };
         }
@@ -988,6 +989,18 @@ namespace Application.Common
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ઓફિશ્યિલ Washington State Department of Health (વોશિંગ્ટન સ્ટેટ ડિપાર્ટમેન્ટ ઓફ હેલ્થ) ઇ-મેઇલ</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
+                "ml" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
+                    $"<h1 style='color: #C84C0E'>ഡിജിറ്റൽ കോവിഡ്-19 വെരിഫിക്കേഷൻ റെക്കോർഡ്</h1>" +
+                    $"<p>ഡിജിറ്റൽ കോവിഡ്-19 വെരിഫിക്കേഷൻ റെക്കോർഡ് സിസ്റ്റം സന്ദർശിച്ചതിന് നന്ദി. നിങ്ങളുടെ കോവിഡ്-19 വാക്സിൻ റെക്കോർഡ് കോഡ് വീണ്ടെടുക്കാനുള്ള ലിങ്കിന് 24 മണിക്കൂർ സാധുതയുണ്ട്. ഒരിക്കൽ ആക്സസ് ചെയ്ത് നിങ്ങളുടെ ഉപകരണത്തിലേക്ക് സേവ് ചെയ്യുന്നതോടെ QR കോഡ് കാലഹരണപ്പെടില്ല.</p>" +
+                    $"<p><a href='{url}'>വാക്സിൻ റെക്കോർഡ് കാണുക</a></p>" +
+                    $"<p>Centers for Disease Control and Prevention (ഡിസീസ് കൺട്രോൾ ആൻഡ് പ്രിവൻഷൻ കേന്ദ്രങ്ങൾ)-ൽ നിന്ന്, <a href='{cdcUrl}'>നിങ്ങളെയും മറ്റുള്ളവരെയും എങ്ങനെ സംരക്ഷിക്കാം</a> എന്നതിനെ സംബന്ധിച്ച് കൂടുതൽ അറിയുക.</p>" +
+                    $"<h2>ചോദ്യങ്ങളുണ്ടോ?</h2>" +
+                    $"<p>നിങ്ങളുടെ ഡിജിറ്റൽ കോവിഡ്-19 വാക്സിൻ റെക്കോർഡിനെ സംബന്ധിച്ച് കൂടുതൽ അറിയാൻ ഞങ്ങളുടെ പതിവായി ചോദിക്കുന്ന ചോദ്യങ്ങൾ (<a href='{vaccineFAQUrl}'>FAQ</a>) പേജ് സന്ദർശിക്കുക.</p>" +
+                    $"<h2>കാര്യങ്ങൾ അറിഞ്ഞിരിക്കുക.</h2>" +
+                    $"<p>കോവിഡ്-19 നെ കുറിച്ചുള്ള <a href='{covidWebUrl}'>ഏറ്റവും പുതിയ വിവരങ്ങൾ കാണുക.</a></p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Washington State Department of Health (വാഷിംഗ്ടൺ സംസ്ഥാന ആരോഗ്യ വകുപ്പ്)-ന്റെ ഔദ്യോഗിക ഇ-മെയിൽ</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 _ => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                   $"<h1 style='color: #C84C0E'>Digital COVID-19 Verification Record</h1>" +
                   $"<p>Thank you for visiting the Digital COVID-19 Verification Record system. The link to retrieve your COVID-19 verification record code is valid for {linkExpireHours} hours. Once accessed and saved to your device, the QR code will not expire.</p>" +
@@ -1052,6 +1065,7 @@ namespace Application.Common
                 "th" => $"คุณเพิ่งขอบันทึกการยืนยันเกี่ยวกับโควิด-19 แบบดิจิทัลจากรัฐ ขออภัย ข้อมูลที่คุณให้ไม่ตรงกับข้อมูลในระบบของเรา โปรดติดต่อเราที่ {phoneNumber} แล้วกด # เพื่อขอความช่วยเหลือในการจับคู่บันทึกของคุณกับข้อมูลการติดต่อของคุณ",
                 "mr" => $"तुम्ही अलीकडेच राज्याकडून डिजिटल कोविड-19 पडताळणी नोंदीसाठी विनंती केली होती. दुर्दैवाने, तुम्ही पुरविलेली माहिती आमच्या यंत्रणेतील माहितीशी जुळत नाही. तुमची नोंद तुमच्या संपर्क माहितीशी जुळण्यासाठी मदतीसाठी आमच्याशी {phoneNumber} येथे संपर्क करा, # दाबा.",
                 "gu" => $"તમે તાજેતરમાં જ રાજ્ય પાસેથી ડિજિટલ COVID-19 વેરિફિકેશન રેકોર્ડની વિનંતી કરી હતી. કમનસીબે, તમે પૂરી પાડેલી માહિતી અમારી સિસ્ટમમાંની માહિતી સાથે મેળ ખાતી નથી. {phoneNumber} પર અમારો સંપર્ક કરો, તમારા રેકોર્ડને તમારી સંપર્ક માહિતી સાથે મેચ કરવા માટે મદદ માટે # દબાવો.",
+                "ml" => $"നിങ്ങൾ അടുത്തയിടെ സംസ്ഥാനത്തുനിന്നുള്ള ഒരു ഡിജിറ്റൽ കോവിഡ്-19 വെരിഫിക്കേഷൻ റിക്കോർഡ് അഭ്യർത്ഥിച്ചു. നിർഭാഗ്യവശാൽ, നിങ്ങൾ നൽകിയ വിവരങ്ങൾ ഞങ്ങളുടെ സിസ്റ്റത്തിലുള്ള വിവരങ്ങളുമായി പൊരുത്തപ്പെടുന്നില്ല. 800-525-0127-ൽ ഞങ്ങളെ ബന്ധപ്പെടുക, നിങ്ങളുടെ റെക്കോർഡ് നിങ്ങളുടെ കോൺടാക്റ്റ് വിവരങ്ങളുമായി പൊരുത്തപ്പെടുത്താനുള്ള സഹായത്തിനായി # അമർത്തുക.",
                 _ => $"You recently requested a digital COVID-19 verification record from the state. Unfortunately, the information you provided does not match information in our system. Contact us at {phoneNumber}, press # for help in matching your record to your contact information."
             };
         }
@@ -1565,6 +1579,17 @@ namespace Application.Common
                     $"<p>COVID-19 વિશેની <a href='{covidWebUrl}'>નવીનતમ માહિતી જુઓ.</a></p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>ઓફિશ્યિલ Washington State Department of Health (વોશિંગ્ટન સ્ટેટ ડિપાર્ટમેન્ટ ઓફ હેલ્થ) ઇ-મેઇલ</p>" +
+                    $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
+                "ml" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
+                    $"<h1 style='color: #C84C0E'>ഡിജിറ്റൽ കോവിഡ്-19 വെരിഫിക്കേഷൻ റെക്കോർഡ്</h1>" +
+                    $"<p>നിങ്ങൾ അടുത്തയിടെ <a href='{webUrl}'> നിന്ന് ഒരു ഡിജിറ്റൽ കോവിഡ്-19 വെരിഫിക്കേഷൻ റെക്കോർഡ് അഭ്യർത്ഥിച്ചു. നിർഭാഗ്യവശാൽ, നിങ്ങൾ നൽകിയ വിവരങ്ങൾ സംസ്ഥാന സിസ്റ്റത്തിലുള്ള വിവരങ്ങളുമായി പൊരുത്തപ്പെടുന്നില്ല.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
+                    $"<p>മറ്റൊരു മൊബൈൽ ഫോൺ നമ്പർ അല്ലെങ്കിൽ ഇമെയിൽ വിലാസം ഉപയോഗിച്ച് നിങ്ങൾക്ക് <a href='{webUrl}'>ഡിജിറ്റൽ കോവിഡ്-19 വെരിഫിക്കേഷൻ റെക്കോർഡ്</a> സിസ്റ്റത്തിൽ മറ്റൊരു അഭ്യർത്ഥന സമർപ്പിക്കാവുന്നതാണ്, നിങ്ങളുടെ റെക്കോർഡ് നിങ്ങളുടെ കോൺടാക്റ്റ് വിവരങ്ങളുമായി പൊരുത്തപ്പെടുത്താനുള്ള സഹായത്തിനായി നിങ്ങൾക്ക് <a href='{contactUsUrl}'>ഞങ്ങളെ ബന്ധപ്പെടാവുന്നതാണ്</a> അല്ലെങ്കിൽ നിങ്ങളുടെ വിവരങ്ങൾ സംസ്ഥാന സിസ്റ്റത്തിലേക്ക് സമർപ്പിച്ചിട്ടുണ്ടെന്ന് ഉറപ്പാക്കാൻ നിങ്ങളുടെ സേവനദാതാവിനെ നിങ്ങൾക്ക് ബന്ധപ്പെടാം.</p>" +
+                    $"<h2>ചോദ്യങ്ങളുണ്ടോ?</h2>" +
+                    $"<p>നിങ്ങളുടെ ഡിജിറ്റൽ കോവിഡ്-19 വെരിഫിക്കേഷൻ റെക്കോർഡിനെ കുറിച്ച് കൂടുതൽ അറിയാൻ ഞങ്ങളുടെ പതിവായി ചോദിക്കുന്ന ചോദ്യങ്ങൾ (<a href='{vaccineFAQUrl}'>FAQ</a>) പേജ് സന്ദർശിക്കുക.</p>" +
+                    $"<h2>കാര്യങ്ങൾ അറിഞ്ഞിരിക്കുക.</h2>" +
+                    $"<p>കോവിഡ്-19 നെ കുറിച്ചുള്ള <a href='{covidWebUrl}'>ഏറ്റവും പുതിയ വിവരങ്ങൾ കാണുക.</a></p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
+                    $"<hr>" +
+                    $"<footer><p style='text-align:center'>Washington State Department of Health (വാഷിംഗ്ടൺ സംസ്ഥാന ആരോഗ്യ വകുപ്പ്)-ന്റെ ഔദ്യോഗിക ഇ-മെയിൽ</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 _ => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Digital COVID-19 Verification Record</h1>" +
