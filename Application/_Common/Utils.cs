@@ -1157,7 +1157,7 @@ namespace Application.Common
                 "ht" => $"Dènyeman, ou te mande yon dosye verifikasyon COVID-19 nimerik nan men Eta a. Malerezman, enfòmasyon ou te bay yo pa koresponn ak enfòmasyon ki nan sistèm nou an. Kontakte nou nan 866-397-0337 oswa 360-236-3595 pou w jwenn èd pou fè dosye w la koresponn ak enfòmasyon kontak ou yo.",
                 "hy" => $"Վերջերս պետությունից խնդրե՞լ եք թվային COVID-19 հաստատման արձանագրություն: Ցավոք, ձեր տրամադրած տեղեկատվությունը չի համապատասխանում մեր համակարգի տեղեկատվությանը: Կապվեք մեզ հետ 866-397-0337 կամ 360-236-3595 հեռախոսահամարներով՝ ձեր արձանագրությունը ձեր կոնտակտային տվյալներին համապատասխանեցնելու հարցում օգնության համար:",
                 "it" => $"Hai inoltrato una richiesta recente per ottenere una certificazione COVID-19 digitale dallo stato. Sfortunatamente, le informazioni che hai fornito non corrispondono a quelle inserite nel nostro sistema. Ti invitiamo a contattarci al numero 866-397-0337 o 360-236-3595 per assistenza nel far corrispondere il tuo documento alle tue informazioni di contatto.",
-                _ => $"You recently requested a digital COVID-19 verification record from the state. Unfortunately, the information that you provided does not match the information in our system. Contact us at 866-397-0337 or 360-326-3595 for help in matching your record to your contact information."
+                _ => $"You recently requested a digital COVID-19 verification record from the state. Unfortunately, the information that you provided does not match the information in our system. Contact us at 866-397-0337 or 360-236-3595 for help in matching your record to your contact information."
             };
         }
 
