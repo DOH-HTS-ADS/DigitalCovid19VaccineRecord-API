@@ -1677,10 +1677,10 @@ namespace Application.Common
                     $"<p>മറ്റൊരു മൊബൈൽ ഫോൺ നമ്പർ അല്ലെങ്കിൽ ഇമെയിൽ വിലാസം ഉപയോഗിച്ച് നിങ്ങൾക്ക് <a href='{webUrl}'>ഡിജിറ്റൽ കോവിഡ്-19 വെരിഫിക്കേഷൻ റെക്കോർഡ്</a> സിസ്റ്റത്തിൽ മറ്റൊരു അഭ്യർത്ഥന സമർപ്പിക്കാവുന്നതാണ്, നിങ്ങളുടെ റെക്കോർഡ് നിങ്ങളുടെ കോൺടാക്റ്റ് വിവരങ്ങളുമായി പൊരുത്തപ്പെടുത്താനുള്ള സഹായത്തിനായി നിങ്ങൾക്ക് <a href='{contactUsUrl}'>ഞങ്ങളെ ബന്ധപ്പെടാവുന്നതാണ്</a> അല്ലെങ്കിൽ നിങ്ങളുടെ വിവരങ്ങൾ സംസ്ഥാന സിസ്റ്റത്തിലേക്ക് സമർപ്പിച്ചിട്ടുണ്ടെന്ന് ഉറപ്പാക്കാൻ നിങ്ങളുടെ സേവനദാതാവിനെ നിങ്ങൾക്ക് ബന്ധപ്പെടാം.</p>" +
                     $"<h2>ചോദ്യങ്ങളുണ്ടോ?</h2>" +
                     $"<p>നിങ്ങളുടെ ഡിജിറ്റൽ കോവിഡ്-19 വെരിഫിക്കേഷൻ റെക്കോർഡിനെ കുറിച്ച് കൂടുതൽ അറിയാൻ ഞങ്ങളുടെ പതിവായി ചോദിക്കുന്ന ചോദ്യങ്ങൾ (<a href='{vaccineFAQUrl}'>FAQ</a>) പേജ് സന്ദർശിക്കുക.</p>" +
-                    $"<h2>માહિતગાર રહો.</h2>" +
-                    $"<p>COVID-19 વિશેની <a href='{covidWebUrl}'>નવીનતમ માહિતી જુઓ.</a></p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
+                    $"<h2>കാര്യങ്ങൾ അറിഞ്ഞിരിക്കുക.</h2>" +
+                    $"<p>കോവിഡ്-19 നെ കുറിച്ചുള്ള <a href='{covidWebUrl}'>ഏറ്റവും പുതിയ വിവരങ്ങൾ കാണുക.</a></p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
-                    $"<footer><p style='text-align:center'>ઓફિશ્યિલ Washington State Department of Health (વોશિંગ્ટન સ્ટેટ ડિપાર્ટમેન્ટ ઓફ હેલ્થ) ઇ-મેઇલ</p>" +
+                    $"<footer><p style='text-align:center'>Washington State Department of Health (വാഷിംഗ്ടൺ സംസ്ഥാന ആരോഗ്യ വകുപ്പ്)-ന്റെ ഔദ്യോഗിക ഇ-മെയിൽ</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
                 "ca" => $"<img src='{webUrl}/imgs/waverifylogo.png' alt='WA Verify Logo'><p style='margin: 0; padding: 0; line-height: 0;' />" +
                     $"<h1 style='color: #C84C0E'>Certificat COVID-19 digital</h1>" +
