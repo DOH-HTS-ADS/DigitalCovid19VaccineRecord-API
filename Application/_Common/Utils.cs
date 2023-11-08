@@ -1058,7 +1058,7 @@ namespace Application.Common
                     $"<h2>Ou gen kesyon?</h2>" +
                     $"<p>Ale nan paj Kesyon Moun Poze Souvan (<a href='{vaccineFAQUrl}'>FAQ</a>) nou an pou w jwenn plis enfòmasyon sou Dosye Vaksinasyon COVID-19 Nimerik ou an.</p>" +
                     $"<h2>Rete Enfòme.</h2>" +
-                    $"<p><a href='{covidWebUrl}'>Gade dènye enfòmasyon</a></p> sou COVID-19 la.<p style='margin: 0; padding: 0; line-height: 2.4;' />" +
+                    $"<p><a href='{covidWebUrl}'>Gade dènye enfòmasyon</a> sou COVID-19 la.</p><p style='margin: 0; padding: 0; line-height: 2.4;' />" +
                     $"<hr>" +
                     $"<footer><p style='text-align:center'>Imèl Ofisyèl Washington State Department of Health (Depatman Sante Eta Washington)</p>" +
                     $"<p style='text-align:center'><img src='{emailLogoUrl}' alt='Washington State Department of Health Logo'></p></footer>",
