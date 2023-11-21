@@ -1106,7 +1106,7 @@ namespace Application.Common
             phoneNumber = "\u200e" + phoneNumber;
             return lang switch
             {
-                "es" => $"Recientemente solicitó un Registro digital de verificación de COVID-19 del estado. Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema. Comuníquese al {phoneNumber} y, luego, presione numeral (#) para obtener ayuda a fin de que su información de contacto coincida con los registros.",
+                "es" => $"Recientemente solicitó un Registro digital de verificación de COVID-19 del estado. Desafortunadamente, la información que ingresó no coincide con la que tenemos en nuestro sistema. Comuníquese al 866-397-0337 o 360-236-3595 para obtener ayuda a fin de que su información de contacto coincida con los registros.",
                 "zh" => $"您最近向州政府请求过数字 COVID-19 验证记录。很遗憾，您提供的信息与我们系统中的信息不符。请拨打 {phoneNumber} 与我们联系，按 # 可获取将您的记录与您的联系信息进行匹配的援助。",
                 "zh-TW" => $"您最近向州政府請求過數位 COVID-19 驗證記錄。很遺憾，您提供的資訊與我們系統中的資訊不符。請撥打 {phoneNumber} 與我們連絡，按 # 獲取援助以將您的記錄與您的連絡資訊進行匹配。 ",
                 "ko" => $"귀하는 최근 주정부에 디지털 COVID-19 인증 기록을 요청하셨습니다. 유감스럽게도 귀하가 제공하신 정보는 저희 시스템상 정보와 일치하지 않습니다. {phoneNumber} 번으로 전화하여, # 버튼을 누르고 귀하의 기록과 연락처 정보 일치를 확인하는 데 도움을 받으시기 바랍니다.",
