@@ -8,7 +8,7 @@ namespace Application.Common.Interfaces
 {
     public interface IAzureSynapseService
     {
-        Task<Vc> GetVaccineCredentialSubjectAsync(string id, string auditId, CancellationToken cancellationToken);
+        Task<Vc> GetVaccineCredentialSubjectAsync(string id, string middleName, string auditId, CancellationToken cancellationToken);
 
         Task<string> GetVaccineCredentialStatusAsync(GetVaccineCredentialStatusQuery request, CancellationToken cancellationToken);
 

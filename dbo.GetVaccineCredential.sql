@@ -4,7 +4,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE OR ALTER   PROC [dbo].[GetVaccineCredential] @UserID [INTEGER] AS
+CREATE OR ALTER   PROC [dbo].[GetVaccineCredential] @UserID [INTEGER], @MiddleName [NVARCHAR](160) AS
 BEGIN
 	SET NOCOUNT ON;
 	BEGIN TRY
@@ -17,7 +17,6 @@ BEGIN
 		DECLARE @debug INT = 0;
 		DECLARE @LastName NVARCHAR(160);
 		DECLARE @FirstName NVARCHAR(160);
-		DECLARE @MiddleName NVARCHAR(160);
         DECLARE @Suffix NVARCHAR(10);
 		DECLARE @BirthDate NVARCHAR(20); -- (yyyy-mm-dd) from DATETIME2
 		DECLARE	@VaxCount INTEGER; -- WHILE loop limit
@@ -161,7 +160,6 @@ BEGIN
 		SELECT @VaxCount = [VaxCount]
 		     , @LastName = [LastName]
 		     , @FirstName = [FirstName]
-		     , @MiddleName = [MiddleName]
              , @Suffix = [Suffix]
 			 , @BirthDate = [BirthDate]
 		  FROM hdr;

@@ -11,6 +11,8 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
         [Required]
         public string Id { get; set; }
 
+        public string MiddleName { get; set; }
+
         /// <summary>
         /// REQUIRED. Secret Pin
         /// </summary>

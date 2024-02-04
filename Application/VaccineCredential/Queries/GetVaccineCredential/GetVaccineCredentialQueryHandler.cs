@@ -55,6 +55,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
             }
             var id = "";
             string pin;
+            string middleName;
             DateTime dateCreated;
             // 0.  Decrypt id with secretkey to get date~id
             try
@@ -75,7 +76,8 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                 }
                 var dateBack = Convert.ToInt64(decrypted.Split("~")[0]);
                 pin = decrypted.Split("~")[1];
-                id = decrypted.Split("~")[2];
+                middleName = decrypted.Split("~")[2];
+                id = decrypted.Split("~")[3];
                 dateCreated = new DateTime(dateBack);
             }
             catch (Exception exception)
@@ -97,7 +99,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
             }
 
             // Get Vaccine Credential
-            Vc responseVc = await _azureSynapseService.GetVaccineCredentialSubjectAsync(id, request.Id, cancellationToken);
+            Vc responseVc = await _azureSynapseService.GetVaccineCredentialSubjectAsync(id, middleName, request.Id, cancellationToken);
             _logger.LogInformation($"GET VACCINE CREDENTIAL: id={id}; responseFoundVc={responseVc != null}; request.Id={request.Id}");
 
             if (responseVc != null)
@@ -144,6 +146,8 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                     }
                     var firstName = cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].given[0];
 
+                    middleName = cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].given[1];
+
                     var lastName = cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].family;
 
                     var suffix = String.IsNullOrEmpty(cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].suffix[0]) ? null : cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].suffix[0];
@@ -176,6 +180,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
 
                     // Wallet Content
                     string walletContent = string.Empty;
+                    string commonHealthContent = string.Empty;
                     if (!string.IsNullOrEmpty(request.WalletCode))
                     {
                         switch (request.WalletCode.ToUpper())
@@ -192,6 +197,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                                 });
 
                                 walletContent = $"{_appSettings.GoogleWalletUrl}{ _jwtSign.SignWithRsaKey(Encoding.UTF8.GetBytes(jsonGoogleWallet))}";
+                                commonHealthContent = $"{_appSettings.CommonHealthUrl}{shcs[0].Replace("shc:/", "")}";
                                 break;
 
                             default:
@@ -204,6 +210,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                         Doses = doses,
                         DOB = dob,
                         FirstName = firstName,
+                        MiddleName = middleName,
                         LastName = lastName,
                         Suffix = suffix,
                         FileNameSmartCard = "WACovid19HealthCard.smart-health-card",
@@ -212,7 +219,8 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                         FileNameQr = "QR_Code.png",
                         FileContentQr = Convert.ToBase64String(pngQr),
                         MimeTypeQr = "image/png",
-                        WalletContent = walletContent
+                        WalletContent = walletContent,
+                        CommonHealthContent = commonHealthContent
                     };
 
                     _logger.LogInformation($"RECEIVED-QR: id={id}; subject={firstName.Substring(0, 1)}.{lastName.Substring(0, 1)}.; request.Id={request.Id}");

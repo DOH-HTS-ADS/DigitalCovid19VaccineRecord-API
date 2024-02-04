@@ -15,6 +15,9 @@ namespace Application.Options
         public string CodeSecret { get; set; }
 
         [Required(AllowEmptyStrings = false)]
+        public string CommonHealthUrl { get; set; }
+
+        [Required(AllowEmptyStrings = false)]
         public string ContactUsUrl { get; set; }
 
         [Required(AllowEmptyStrings = false)]

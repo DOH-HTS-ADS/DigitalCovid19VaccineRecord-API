@@ -35,7 +35,7 @@ namespace Infrastructure.AzureSynapse
 
         #region IAzureSynapseService Implementation
 
-        public async Task<Vc> GetVaccineCredentialSubjectAsync(string id, string requestId, CancellationToken cancellationToken)
+        public async Task<Vc> GetVaccineCredentialSubjectAsync(string id, string middleName, string requestId, CancellationToken cancellationToken)
         {
             Vc vaccineCredential = null;
 
@@ -49,6 +49,7 @@ namespace Infrastructure.AzureSynapse
                 cmdVc.CommandText = _azureSynapseSettings.IdQuery;
                 cmdVc.CommandType = System.Data.CommandType.StoredProcedure;
                 cmdVc.Parameters.AddWithValue("@UserId", id);
+                cmdVc.Parameters.AddWithValue("@MiddleName", middleName);
 
                 conn.Open();
                 _logger.LogInformation($"CALLING: {_azureSynapseSettings.IdQuery}; parameters:@UserId={id}; request.Id={requestId}");
@@ -103,7 +104,7 @@ namespace Infrastructure.AzureSynapse
                         if (rdVc2 != null)
                         {
                             Guid = Convert.ToString(rdVc2.GetValue(0));
-                            _logger.LogInformation($"RESPONSE DETAIL: {_azureSynapseSettings.RelaxedQuery}; rdVc: UserId={rdVc2.GetValue(0).ToString()}, msg={rdVc2.GetString(1)}; request.Id={request.Id}");
+                            _logger.LogInformation($"RESPONSE DETAIL: {_azureSynapseSettings.RelaxedQuery}; rdVc: UserId={rdVc2.GetValue(0).ToString()}, msg={rdVc2.GetString(1)}, MiddleName={rdVc2.GetString(2)}; request.Id={request.Id}");
 
                         }
                     } 
