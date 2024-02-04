@@ -77,6 +77,7 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                 var dateBack = Convert.ToInt64(decrypted.Split("~")[0]);
                 pin = decrypted.Split("~")[1];
                 middleName = decrypted.Split("~")[2];
+                middleName = middleName?.ToUpper();
                 id = decrypted.Split("~")[3];
                 dateCreated = new DateTime(dateBack);
             }
