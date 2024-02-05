@@ -147,8 +147,6 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
                     }
                     var firstName = cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].given[0];
 
-                    middleName = cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].given[1];
-
                     var lastName = cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].family;
 
                     var suffix = String.IsNullOrEmpty(cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].suffix[0]) ? null : cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].suffix[0];
