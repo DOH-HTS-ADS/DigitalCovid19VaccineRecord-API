@@ -104,7 +104,7 @@ namespace Infrastructure.AzureSynapse
                         if (rdVc2 != null)
                         {
                             Guid = Convert.ToString(rdVc2.GetValue(0));
-                            _logger.LogInformation($"RESPONSE DETAIL: {_azureSynapseSettings.RelaxedQuery}; rdVc: UserId={rdVc2.GetValue(0).ToString()}, msg={rdVc2.GetString(1)}, MiddleName={rdVc2.GetString(2)}; request.Id={request.Id}");
+                            _logger.LogInformation($"RESPONSE DETAIL: {_azureSynapseSettings.RelaxedQuery}; rdVc: UserId={rdVc2.GetValue(0).ToString()}, msg={rdVc2.GetString(1)}; request.Id={request.Id}");
 
                         }
                     } 
