@@ -12,6 +12,8 @@ namespace Application.VaccineCredential.Queries.GetVaccineStatus
         [Required]
         public string FirstName { get; set; }
 
+        public string MiddleName { get; set; }
+
         /// <summary>
         /// REQUIRED. User's Last Name.
         /// </summary>

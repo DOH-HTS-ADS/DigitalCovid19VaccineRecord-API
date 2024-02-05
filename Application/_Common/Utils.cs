@@ -217,7 +217,7 @@ namespace Application.Common
             {
                 //Generate link url with the GUID and send text or email based on the request preference.
                 //Encyrpt the response with  aesencrypt
-                var code = DateTime.Now.Ticks + "~" + request.Pin + "~" + response;
+                var code = DateTime.Now.Ticks + "~" + request.Pin + "~" + request.MiddleName + "~" + response;
                 var encrypted = _aesEncryptionService.EncryptGcm(code, _appSettings.CodeSecret);
                 logger.LogInformation($"ENCRYPTION: encrypted={encrypted}; request.Id={request.Id}");
 

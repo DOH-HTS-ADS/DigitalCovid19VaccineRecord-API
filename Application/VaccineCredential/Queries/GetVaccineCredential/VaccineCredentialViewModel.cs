@@ -11,8 +11,10 @@ namespace Application.VaccineCredential.Queries.GetVaccineCredential
         public string FileContentSmartCard { get; set; }  //base64 Encoded
         public string FileNameSmartCard { get; set; }
         public string WalletContent { get; set; }
+        public string CommonHealthContent { get; set; }
         public string MimeTypeSmartCard { get; set; }
         public string FirstName { get; set; }
+        public string MiddleName { get; set; }
         public string LastName { get; set; }
         public string Suffix { get; set; }
         public string DOB { get; set; }
