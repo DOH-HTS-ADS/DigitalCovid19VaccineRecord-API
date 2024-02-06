@@ -31,11 +31,25 @@ namespace Infrastructure
 
         public GoogleWallet GetGoogleCredential(Vci cred, string shc)
         {
+            // Start with first name
+            string patNamText = $"{cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].given[0]}";
+            // Add middle name if there is one
+            if (cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].given.Count > 1 && !String.IsNullOrEmpty(cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].given[1]))
+            {
+                patNamText += $" {cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].given[1]}";
+            } 
+            // Add last name
+            patNamText += $" {cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].family}";
+            // Add suffix if there is one
+            if (!String.IsNullOrEmpty(cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].suffix[0]))
+            {
+                patNamText += $" {cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].suffix[0]}";
+            }
             var patientDetail = new PatientDetails()
             {
                 dateOfBirth = cred.vc.credentialSubject.fhirBundle.entry[0].resource.birthDate,
                 identityAssuranceLevel = "IAL1.4",
-                patientName = String.IsNullOrEmpty(cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].suffix[0]) ? $"{ cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].given[0]} {cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].family}" : $"{ cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].given[0]} {cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].family} {cred.vc.credentialSubject.fhirBundle.entry[0].resource.name[0].suffix[0]}"
+                patientName = patNamText
             };
 
             var vaccinationRecords = new List<VaccinationRecord>();
