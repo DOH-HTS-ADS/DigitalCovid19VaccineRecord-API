@@ -22,7 +22,7 @@ namespace Application.Common.Behaviors
             _currentUserService = currentUserService;
         }
 
-        public async Task<TResponse> Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate<TResponse> next)
+        public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
         {
             if (_validators.Any())
             {
@@ -38,11 +38,6 @@ namespace Application.Common.Behaviors
                 }
             }
             return await next();
-        }
-
-        public Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }
