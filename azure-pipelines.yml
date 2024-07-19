@@ -17,10 +17,10 @@ stages:
     displayName: Build and publish solution
     steps:
     - task: UseDotNet@2
-      displayName: 'Use .NET Core SDK 5.0'
+      displayName: 'Use .NET Core SDK 8.0'
       inputs:
         packageType: 'sdk'
-        version: '5.0.x'
+        version: '8.0.x'
     - task: DotNetCoreCLI@2
       displayName: Restore
       inputs:
