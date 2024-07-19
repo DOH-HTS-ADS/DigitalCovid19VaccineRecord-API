@@ -111,7 +111,10 @@ namespace InfrastructureTests
         public bool RsaVerify(byte[] signature, byte[] data)
         {
             var ipCert = new System.Security.Cryptography.X509Certificates.X509Certificate2(googleCertificate);
-            var rsa = (RSACryptoServiceProvider)ipCert.PublicKey.Key;
+            var rsaServer = new RSACryptoServiceProvider(1024);
+            var publicKeyXml = rsaServer.ToXmlString(false);
+            var rsa = new RSACryptoServiceProvider(1024);
+            rsa.FromXmlString(publicKeyXml);
             return rsa.VerifyData(data, signature, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1);
         }
 

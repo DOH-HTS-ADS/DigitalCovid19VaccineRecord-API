@@ -24,7 +24,7 @@ namespace Infrastructure
         {
             var key = Encoding.UTF8.GetBytes(keyString);
 
-            using var aesAlg = Aes.Create("AesManaged");
+            using var aesAlg = Aes.Create();
             using var encryptor = aesAlg.CreateEncryptor(key, aesAlg.IV);
             using var msEncrypt = new MemoryStream();
             using (var csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
@@ -57,7 +57,7 @@ namespace Infrastructure
 
             var key = Encoding.UTF8.GetBytes(keyString);
 
-            using var aesAlg = Aes.Create("AesManaged");
+            using var aesAlg = Aes.Create();
             using var decryptor = aesAlg.CreateDecryptor(key, iv);
             string result;
             using (var msDecrypt = new MemoryStream(cipher))
@@ -84,7 +84,7 @@ namespace Infrastructure
         {
             var key = Encoding.UTF8.GetBytes(keyString);
 
-            using var aesAlg = new AesGcm(key);
+            using var aesAlg = new AesGcm(key, 16);
             var textToEncrypt = Encoding.UTF8.GetBytes(text);
             var codeText = new byte[textToEncrypt.Length];
 
@@ -111,7 +111,7 @@ namespace Infrastructure
             Buffer.BlockCopy(fullCipher, nonce.Length, tag, 0, tag.Length);
             Buffer.BlockCopy(fullCipher, nonce.Length + tag.Length, ciphertext, 0, ciphertext.Length);
 
-            using var aesAlg = new AesGcm(key);
+            using var aesAlg = new AesGcm(key, 16);
 
             aesAlg.Decrypt(nonce, ciphertext, tag, plaintext);
             var outText = Encoding.UTF8.GetString(plaintext);
