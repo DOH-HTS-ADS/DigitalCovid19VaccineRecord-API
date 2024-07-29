@@ -22,9 +22,9 @@ namespace VaccineCredential.Api.Controllers
             {
                 return scr;
             }
-            Response.Headers.Add("X-RateLimit-Limit", rateLimit.Limit.ToString());
-            Response.Headers.Add("X-RateLimit-Remaining", rateLimit.Remaining.ToString());
-            Response.Headers.Add("X-RateLimit-Reset", rateLimit.TimeRemaining.ToString());
+            Response.Headers["X-RateLimit-Limit"] = rateLimit.Limit.ToString();
+            Response.Headers["X-RateLimit-Remaining"] = rateLimit.Remaining.ToString();
+            Response.Headers["X-RateLimit-Reset"] = rateLimit.TimeRemaining.ToString();
             if (rateLimit.Remaining < 0)
             {
                 scr = StatusCode(429);

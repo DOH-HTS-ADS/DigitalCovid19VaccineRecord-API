@@ -84,10 +84,8 @@ namespace Infrastructure
                 MessageEncoding = QueueMessageEncoding.Base64
             };
             var clientCredential = new QueueClient(options.ConnectionString, options.QueueName, qOptions);
-            var clientAlternate = new QueueClient(options.ConnectionString, options.AlternateQueueName, qOptions);
 
             services.AddSingleton(x => clientCredential);
-            services.AddSingleton(x => clientAlternate);
         }
 
         #endregion Private Helpers
